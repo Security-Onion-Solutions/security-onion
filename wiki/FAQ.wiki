@@ -16,3 +16,11 @@ Sguil Password:  password<br>
 
 Like other Ubuntu-based distributions, there is no root password.  To perform administrative tasks, use the securityonion account (it has been added to /etc/sudoers).  Graphical utilities requesting administrative access should prompt for password; enter the securityonion password.  Command-line utilities that require administrative access can be prefixed with "sudo".  For example, to add a user:<br>
 sudo adduser mynewuseraccount
+
+= Where do I send questions/problems/suggestions? =
+
+The Security Onion mailing list is provided by Google Groups.  You can send email to:<br>
+<a href="mailto:security-onion@googlegroups.com">security-onion@googlegroups.com<br>
+OR<br>
+click here:<br>
+<a href="http://groups.google.com/group/security-onion">Security Onion Mailing List</a>
