@@ -14,5 +14,5 @@ Sguil Password:  password<br>
 
 = What is the root password? =
 
-Like other Ubuntu-based distributions, there is no root password.  To perform administrative tasks, use the securityonion account (it has been added to /etc/sudoers).  Graphical utilities requesting administrative access should prompt for password; enter the securityonion password.  Command-line utilities that require administrative access can be prefixed with "sudo".  For example, to add a user:
+Like other Ubuntu-based distributions, there is no root password.  To perform administrative tasks, use the securityonion account (it has been added to /etc/sudoers).  Graphical utilities requesting administrative access should prompt for password; enter the securityonion password.  Command-line utilities that require administrative access can be prefixed with "sudo".  For example, to add a user:<br>
 sudo adduser mynewuseraccount
