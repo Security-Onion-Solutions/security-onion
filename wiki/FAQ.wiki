@@ -1,0 +1,18 @@
+#summary Frequently Asked Questions
+
+= What is the OS username/password? =
+
+OS Username:  securityonion
+OS Password:  securityonion
+
+= What is the Sguil username/password? =
+
+Sguil Username:  sguil
+Sguil Password:  password
+
+(Please note that this is sguil with a 'g', NOT a 'q'!)
+
+= What is the root password? =
+
+Like other Ubuntu-based distributions, there is no root password.  To perform administrative tasks, use the securityonion account (it has been added to /etc/sudoers).  Graphical utilities requesting administrative access should prompt for password; enter the securityonion password.  Command-line utilities that require administrative access can be prefixed with "sudo".  For example, to add a user:
+sudo adduser mynewuseraccount
