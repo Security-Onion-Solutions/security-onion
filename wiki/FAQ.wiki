@@ -7,8 +7,8 @@ OS Password:  securityonion<br>
 
 = What is the Sguil username/password? =
 
-Sguil Username:  sguil
-Sguil Password:  password
+Sguil Username:  sguil<br>
+Sguil Password:  password<br>
 
 (Please note that this is sguil with a 'g', NOT a 'q'!)
 
