@@ -2,8 +2,8 @@
 
 = What is the OS username/password? =
 
-OS Username:  securityonion
-OS Password:  securityonion
+OS Username:  securityonion<br>
+OS Password:  securityonion<br>
 
 = What is the Sguil username/password? =
 
