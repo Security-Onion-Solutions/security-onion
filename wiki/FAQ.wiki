@@ -25,6 +25,12 @@ Password: securityonion<br>
 <br>
 Post-installation checklist:<br>
 -Create a new user account for yourself.<br>
+-Add your new user account to the sudoers file using the visudo utility.<br>
+-Add your new user account to the "admin" group using the following command:<br>
+sudo addgroup username admin<br>
+(replacing username with your new username)<br>
+-Logout of the securityonion user account.<br>
+-Login using your new user account.<br>
 -Remove the securityonion user account.<br>
 -Install any available Ubuntu updates.<br>
 -Update the Snort rules (manually or using the included oinkmaster or pulledpork).<br>
