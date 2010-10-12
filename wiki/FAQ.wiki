@@ -1,10 +1,5 @@
 #summary Frequently Asked Questions
 
-= What is the OS username/password? =
-
-OS Username:  securityonion<br>
-OS Password:  securityonion<br>
-
 = What is the Sguil username/password? =
 
 Sguil Username:  sguil<br>
