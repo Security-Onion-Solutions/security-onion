@@ -12,6 +12,10 @@ Sguil Password:  password<br>
 Like other Ubuntu-based distributions, there is no root password.  To perform administrative tasks, use the securityonion account (it has been added to /etc/sudoers).  Graphical utilities requesting administrative access should prompt for password; enter the securityonion password.  Command-line utilities that require administrative access can be prefixed with "sudo".  For example, to add a user:<br>
 sudo adduser mynewuseraccount
 
+= What is the MySQL password? =
+
+securityonion
+
 = How do I install Security Onion to my hard drive? =
 
 You can use the Install shortcut on the Desktop to install Security Onion to your hard drive. Once you've completed the installation process and have rebooted into your new installation, you will want to do the following:<br>
