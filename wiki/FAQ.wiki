@@ -2,10 +2,11 @@
 
 = What is the Sguil username/password? =
 
+Older versions of Security Onion had the Sguil username/password hardcoded to:<br>
 Sguil Username:  sguil<br>
 Sguil Password:  password<br>
-
-(Please note that this is sguil with a 'g', NOT a 'q'!)
+<br>
+Security Onion 20110101 has a new Setup script that allows you to set your own username/password for Sguil.
 
 = What is the root password? =
 
@@ -14,16 +15,16 @@ sudo adduser mynewuseraccount
 
 = What is the MySQL password? =
 
-securityonion
+Older versions of Security Onion had the MySQL password set to:<br>
+securityonion<br>
+
+Security Onion 20110101 has a blank MySQL password to allow the NSMnow administration scripts to be add/delete sensors properly.
 
 = How do I install Security Onion to my hard drive? =
 
 You can use the Install shortcut on the Desktop to install Security Onion to your hard drive. Once you've completed the installation process and have rebooted into your new installation, you will want to do the following:<br>
 - Install any available Ubuntu updates.<br>
-- Run the Setup desktop shortcut to:<br>
- -Specify your HOME_NET variable.<br>
- -Download the latest rules from ET and, optionally, VRT.<br>
- -Choose between Snort and Suricata as your IDS engine.<br>
+- Run the Setup desktop shortcut and follow the prompts.<br>
 
 = Where do I send questions/problems/suggestions? =
 
