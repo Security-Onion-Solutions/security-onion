@@ -18,7 +18,7 @@ sudo adduser mynewuseraccount
 Older versions of Security Onion had the MySQL password set to:<br>
 securityonion<br>
 
-Security Onion 20110101 has a blank MySQL password to allow the NSMnow administration scripts to be add/delete sensors properly.
+Security Onion 20110101 has a blank MySQL password to allow the NSMnow administration scripts to add/delete sensors properly.
 
 = How do I install Security Onion to my hard drive? =
 
