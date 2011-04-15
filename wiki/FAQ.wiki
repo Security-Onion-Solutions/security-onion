@@ -37,6 +37,10 @@ click here:<br>
 = What to I need to modify in order to have the log files stored on a different mount point? =
 
 There are two ways to do this:<br>
-- Edit all of the individual configuration files in /etc/nsm/ to change the current logging location of /nsm to the new logging location.<br>
+- Mount a separate drive to /nsm.  This can be done in the Ubuntu installer or after installation is complete.<br>
 OR<br>
-- Simply make /nsm a symlink to the new logging location.<br>
+- Make /nsm a symlink to the new logging location.  If you do this, you'll need to do the following to avoid AppArmor issues:<br>
+ - go to /etc/apparmor.d<br>
+ - edit usr.sbin.mysqld, copy the nsm line, and change /nsm to the new location<br>
+ - edit usr.sbin.tcpdump, copy the nsm line, and change /nsm to the new location<br>
+ - service apparmor restart<br>
