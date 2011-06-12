@@ -1,5 +1,15 @@
 #summary Frequently Asked Questions
 
+= What's the recommended procedure for installing Security Onion? =
+
+- Boot the ISO and select Install (either from the boot menu or from the Live desktop).
+- Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.
+- Reboot into your new installation and login with the credentials you
+specified in the installer.
+- Install Ubuntu updates using the Update Manager in the upper right corner.
+- Double-click the Setup shortcut and follow the prompts.
+- Use Sguil or Squert to manage your IDS alerts.
+
 = What is the Sguil username/password? =
 
 Older versions of Security Onion had the Sguil username/password hardcoded to:<br>
