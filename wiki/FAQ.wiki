@@ -2,21 +2,13 @@
 
 = What's the recommended procedure for installing Security Onion? =
 
-- Boot the ISO and select Install (either from the boot menu or from the Live desktop).
-- Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.
+- Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
+- Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.<br>
 - Reboot into your new installation and login with the credentials you
-specified in the installer.
-- Install Ubuntu updates using the Update Manager in the upper right corner.
-- Double-click the Setup shortcut and follow the prompts.
-- Use Sguil or Squert to manage your IDS alerts.
-
-= What is the Sguil username/password? =
-
-Older versions of Security Onion had the Sguil username/password hardcoded to:<br>
-Sguil Username:  sguil<br>
-Sguil Password:  password<br>
-<br>
-Security Onion 20110101 has a new Setup script that allows you to set your own username/password for Sguil.
+specified in the installer.<br>
+- Install Ubuntu updates using the Update Manager in the upper right corner.<br>
+- Double-click the Setup shortcut and follow the prompts.<br>
+- Use Sguil or Squert to manage your IDS alerts.<br>
 
 = What is the root password? =
 
@@ -25,16 +17,7 @@ sudo adduser mynewuseraccount
 
 = What is the MySQL password? =
 
-Older versions of Security Onion had the MySQL password set to:<br>
-securityonion<br>
-
-Security Onion 20110101 has a blank MySQL password to allow the NSMnow administration scripts to add/delete sensors properly.
-
-= How do I install Security Onion to my hard drive? =
-
-You can use the Install shortcut on the Desktop to install Security Onion to your hard drive. Once you've completed the installation process and have rebooted into your new installation, you will want to do the following:<br>
-- Install any available Ubuntu updates.<br>
-- Run the Setup desktop shortcut and follow the prompts.<br>
+Security Onion has a blank MySQL password to allow the NSMnow administration scripts to add/delete sensors properly.  MySQL only allows connections from localhost.  Once you've run through Setup and configured your sensors, you might want to change the MySQL password.
 
 = Where do I send questions/problems/suggestions? =
 
