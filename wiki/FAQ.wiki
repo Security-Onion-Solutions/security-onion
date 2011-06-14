@@ -12,7 +12,7 @@ specified in the installer.<br>
 
 = What is the root password? =
 
-Like other Ubuntu-based distributions, there is no root password.  To perform administrative tasks, use the securityonion account (it has been added to /etc/sudoers).  Graphical utilities requesting administrative access should prompt for password; enter the securityonion password.  Command-line utilities that require administrative access can be prefixed with "sudo".  For example, to add a user:<br>
+Like other Ubuntu-based distributions, there is no root password.  Your default user account has been given sudo permissions.  Graphical utilities requesting administrative access should prompt for password; enter your user password. Command-line utilities that require administrative access can be prefixed with "sudo". For example, to add a user:<br>
 sudo adduser mynewuseraccount
 
 = What is the MySQL password? =
