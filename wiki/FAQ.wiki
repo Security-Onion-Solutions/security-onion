@@ -9,9 +9,20 @@ specified in the installer.<br>
 - Set the OS timezone to UTC using the following commands:<br>
 echo "Etc/UTC" | sudo tee /etc/timezone<br>
 sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
+- If you're behind a proxy, configure your proxy settings as shown below.<br>
 - Install Ubuntu updates using the Update Manager in the upper right corner.<br>
 - Double-click the Setup shortcut and follow the prompts.<br>
 - Use Sguil or Squert to manage your IDS alerts.<br>
+
+= What do I need to do if I'm behind a proxy? =
+
+Put your proxy server settings in /etc/environment like this:<br>
+export http_proxy=https://server:port<br>
+export https_proxy=https://server:port<br>
+export ftp_proxy=https://server:port<br>
+
+If you're going to run something using sudo, remember to use the "-i" option to force it to process the environment variables.  For example:<br>
+sudo -i bash /path/to/security-onion-upgrade.sh<br>
 
 = What is the root password? =
 
@@ -39,16 +50,6 @@ OR<br>
  - edit usr.sbin.mysqld, copy the nsm line, and change /nsm to the new location<br>
  - edit usr.sbin.tcpdump, copy the nsm line, and change /nsm to the new location<br>
  - service apparmor restart<br>
-
-= What do I need to do to get the upgrade script to work behind a proxy? =
-
-Put your proxy server settings in /etc/environment like this:<br>
-export http_proxy=https://server:port<br>
-export https_proxy=https://server:port<br>
-export ftp_proxy=https://server:port<br>
-
-Then run the upgrade script with root credentials using sudo and the "-i" option to force it to process the environment variables:<br>
-sudo -i bash /path/to/security-onion-upgrade.sh<br>
 
 = Where do I send questions/problems/suggestions? =
 
