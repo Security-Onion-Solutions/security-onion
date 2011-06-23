@@ -6,6 +6,9 @@
 - Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.<br>
 - Reboot into your new installation and login with the credentials you
 specified in the installer.<br>
+- Set the OS timezone to UTC using the following commands:<br>
+echo "Etc/UTC" | sudo tee /etc/timezone<br>
+sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
 - Install Ubuntu updates using the Update Manager in the upper right corner.<br>
 - Double-click the Setup shortcut and follow the prompts.<br>
 - Use Sguil or Squert to manage your IDS alerts.<br>
