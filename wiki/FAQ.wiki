@@ -22,13 +22,12 @@ sudo adduser mynewuseraccount
 
 Security Onion has a blank MySQL password to allow the NSMnow administration scripts to add/delete sensors properly.  MySQL only allows connections from localhost.  Once you've run through Setup and configured your sensors, you might want to change the MySQL password.
 
-= Where do I send questions/problems/suggestions? =
+= Why is my disk filling up? =
+Sguil uses Snort to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is a cronjob at /etc/cron.d/sensor-newday that should delete old pcaps when the disk reaches 90% of capacity.  However, if the OS timezone is NOT set to UTC, this script may not be purging correctly.  Make sure your OS timezone is set to UTC.<br>
 
-The Security Onion mailing list is provided by Google Groups.  You can send email to:<br>
-<a href="mailto:security-onion@googlegroups.com">security-onion@googlegroups.com<br>
-OR<br>
-click here:<br>
-<a href="http://groups.google.com/group/security-onion">Security Onion Mailing List</a>
+= How do I set the OS timezone to UTC? =
+echo "Etc/UTC" | sudo tee /etc/timezone<br>
+sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
 
 = What to I need to modify in order to have the log files stored on a different mount point? =
 
@@ -40,3 +39,21 @@ OR<br>
  - edit usr.sbin.mysqld, copy the nsm line, and change /nsm to the new location<br>
  - edit usr.sbin.tcpdump, copy the nsm line, and change /nsm to the new location<br>
  - service apparmor restart<br>
+
+= What do I need to do to get the upgrade script to work behind a proxy? =
+
+Put your proxy server settings in /etc/environment like this:<br>
+export http_proxy=https://server:port<br>
+export https_proxy=https://server:port<br>
+export ftp_proxy=https://server:port<br>
+
+Then run the upgrade script with root credentials using sudo and the "-i" option to force it to process the environment variables:<br>
+sudo -i bash /path/to/security-onion-upgrade.sh<br>
+
+= Where do I send questions/problems/suggestions? =
+
+The Security Onion mailing list is provided by Google Groups.  You can send email to:<br>
+<a href="mailto:security-onion@googlegroups.com">security-onion@googlegroups.com<br>
+OR<br>
+click here:<br>
+<a href="http://groups.google.com/group/security-onion">Security Onion Mailing List</a>
