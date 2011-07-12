@@ -11,6 +11,7 @@ echo "Etc/UTC" | sudo tee /etc/timezone<br>
 sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
 - If you're behind a proxy, configure your proxy settings as shown below.<br>
 - Install Ubuntu updates using the Update Manager in the upper right corner.<br>
+- Install Security Onion updates as shown below.<br>
 - Double-click the Setup shortcut and follow the prompts.<br>
 - Use Sguil or Squert to manage your IDS alerts.<br>
 
@@ -23,6 +24,12 @@ export ftp_proxy=https://server:port<br>
 
 If you're going to run something using sudo, remember to use the "-i" option to force it to process the environment variables.  For example:<br>
 sudo -i bash /path/to/security-onion-upgrade.sh<br>
+
+= How do I install Security Onion updates? =
+
+If you're behind a proxy server, make sure that you've configured your proxy server settings as shown above.  Then run the following command (note that it's all one line):
+
+sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
 
 = What is the root password? =
 
