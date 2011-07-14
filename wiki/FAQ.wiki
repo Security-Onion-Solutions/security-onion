@@ -13,6 +13,8 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
 - Install Ubuntu updates using the Update Manager in the upper right corner.<br>
 - Install Security Onion updates as shown below.<br>
 - Double-click the Setup shortcut and follow the prompts.<br>
+- If you have Internet access, create an IDS alert by opening a terminal and typing the following:<br>
+curl http://testmyids.com<br>
 - Use Sguil or Squert to manage your IDS alerts.<br>
 
 = What do I need to do if I'm behind a proxy? =
