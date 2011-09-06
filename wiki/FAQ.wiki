@@ -65,6 +65,9 @@ OR<br>
  - edit usr.sbin.tcpdump, copy the nsm line, and change /nsm to the new location<br>
  - service apparmor restart<br>
 
+= How do I configure Sguil to send alerts via email? =
+<a href="http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F">http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F</a>
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  You can send email to:<br>
