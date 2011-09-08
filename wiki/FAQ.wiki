@@ -68,7 +68,7 @@ OR<br>
 = How do I configure Sguil to send alerts via email? =
 <a href="http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F">http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F</a>
 
-= How do I change the font(s) in the Sguil client? =
+= How do I change the fonts in the Sguil client? =
 
 In the Sguil client, click the File menu and then go to "Change Font".  You can change both the Standard and Fixed fonts.  Fonts are a personal issue, but I like the following:<br>
 Standard: Liberation Sans, size 8<br>
