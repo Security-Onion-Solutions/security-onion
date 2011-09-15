@@ -18,4 +18,4 @@ https://help.ubuntu.com/community/AutomaticSecurityUpdates<br>
 - Double-click the Setup shortcut and follow the prompts.<br>
 - If you have Internet access, create an IDS alert by opening a terminal and typing the following:<br>
 curl http://testmyids.com<br>
-- Use Sguil or Squert to manage your IDS alerts.<br>
+- Login to Sguil or Squert and manage your IDS alerts.<br>
