@@ -2,6 +2,7 @@
 
 = What's the recommended procedure for installing Security Onion? =
 
+- Download the most recent ISO image and verify the MD5/SHA1 checksums.<br>
 - Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
 - Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.<br>
 - Reboot into your new installation and login with the credentials you
