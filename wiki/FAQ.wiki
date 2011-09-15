@@ -63,7 +63,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="text"<br>
 
 Run sudo update-grub when done. This is easily reversed too if you need to change back.
 
-= How do I get Security Onion to recognize more then 4GB of RAM? =
+= How do I get Security Onion to recognize more than 4GB of RAM? =
 Install the PAE kernel as described here:
 <a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a>
 
