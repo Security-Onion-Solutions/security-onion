@@ -1,0 +1,20 @@
+#summary Security Onion Installation Procedure
+
+= What's the recommended procedure for installing Security Onion? =
+
+- Download the most recent ISO image and verify the MD5/SHA1 checksums.<br>
+- Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
+- Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.<br>
+- Reboot into your new installation and login with the credentials you
+specified in the installer.<br>
+- Set the OS timezone to UTC using the following commands:<br>
+echo "Etc/UTC" | sudo tee /etc/timezone<br>
+sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
+- If you're behind a proxy, configure your proxy settings as shown below.<br>
+- Install Ubuntu updates using the Update Manager in the upper right corner.  You may also want to configure Ubuntu to automatically install updates:<br>
+https://help.ubuntu.com/community/AutomaticSecurityUpdates<br>
+- Install Security Onion updates as shown below.<br>
+- Double-click the Setup shortcut and follow the prompts.<br>
+- If you have Internet access, create an IDS alert by opening a terminal and typing the following:<br>
+curl http://testmyids.com<br>
+- Use Sguil or Squert to manage your IDS alerts.<br>
