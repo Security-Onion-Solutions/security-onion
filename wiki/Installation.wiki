@@ -8,7 +8,7 @@
 - Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.<br>
 - Reboot into your new installation and login with the credentials you
 specified in the installer.<br>
-- Set the OS timezone to UTC by opening a terminal and copying/pasting the following commands:<br>
+- Set the OS timezone to UTC by copying/pasting the following commands into a terminal:<br>
 echo "Etc/UTC" | sudo tee /etc/timezone<br>
 sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
 - If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
