@@ -13,7 +13,7 @@ echo "Etc/UTC" | sudo tee /etc/timezone<br>
 sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
 - If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
 - Install Ubuntu updates using the Update Manager in the upper right corner.  You may also want to <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">configure Ubuntu to automatically install updates</a>.<br>
-- Install Security Onion updates as shown below.<br>
+- <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
 - Double-click the Setup shortcut and follow the prompts.<br>
 - If you have Internet access, create an IDS alert by opening a terminal and typing the following:<br>
 curl http://testmyids.com<br>
