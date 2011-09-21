@@ -12,6 +12,9 @@
 
 <a href="http://code.google.com/p/security-onion/wiki/Upgrade">http://code.google.com/p/security-onion/wiki/Upgrade</a>
 
+= Why do apt-get and the Update Manager show tcl8.5 as held back? =
+<a href="http://code.google.com/p/security-onion/wiki/tcl">http://code.google.com/p/security-onion/wiki/tcl</a>
+
 = What is the root password? =
 
 Like other Ubuntu-based distributions, there is no root password.  Your default user account has been given sudo permissions.  Graphical utilities requesting administrative access should prompt for password; enter your user password. Command-line utilities that require administrative access can be prefixed with "sudo". For example, to add a user:<br>
