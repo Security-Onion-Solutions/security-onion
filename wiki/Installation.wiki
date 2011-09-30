@@ -5,7 +5,7 @@
 - <a href="http://sourceforge.net/projects/security-onion/files/">Download the most recent Security Onion ISO image from here</a> (you may have to scroll to the bottom of the page).<br>
 - Verify the MD5 and/or SHA1 checksums of the downloaded ISO image.<br>
 - Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
-- Follow the prompts in the installer.  When asked about partitioning, you should create a dedicated /nsm partition and assign a good amount of disk space to it since this partition will be storing full packet captures.<br>
+- Follow the prompts in the installer.  When asked about partitioning, you may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.<br>
 - Reboot into your new installation and login with the credentials you
 specified in the installer.<br>
 - Set the OS timezone to UTC by copying/pasting the following commands into a terminal:<br>
