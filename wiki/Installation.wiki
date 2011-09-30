@@ -1,5 +1,7 @@
 #summary Security Onion Installation Procedure
 
+= Please read the following before downloading! =
+
 = What's the recommended procedure for installing Security Onion? =
 
 - <a href="http://sourceforge.net/projects/security-onion/files/">Download the most recent Security Onion ISO image from here</a> (you may have to scroll to the bottom of the page).<br>
