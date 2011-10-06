@@ -70,6 +70,9 @@ Run sudo update-grub when done. This is easily reversed too if you need to chang
 Install the PAE kernel as described here:<br>
 <a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a>
 
+= How do I disable the graphical Network Manager and configuring networking from the command line? =
+<a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a>
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
