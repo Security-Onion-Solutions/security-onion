@@ -9,4 +9,6 @@ export https_proxy=https://server:port
 export ftp_proxy=https://server:port
 }}}
 If you're going to run something using sudo, remember to use the "-i" option to force it to process the environment variables.  For example:<br>
-sudo -i bash /path/to/security-onion-upgrade.sh<br>
+{{{
+sudo -i bash /path/to/security-onion-upgrade.sh
+}}}
