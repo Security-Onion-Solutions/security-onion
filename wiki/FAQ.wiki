@@ -32,8 +32,10 @@ Security Onion has a blank MySQL password to allow the NSMnow administration scr
 Sguil uses Snort to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is a cronjob at /etc/cron.d/sensor-newday that should delete old pcaps when the disk reaches 90% of capacity.  However, if the OS timezone is NOT set to UTC, this script may not be purging correctly.  Make sure your OS timezone is set to UTC.<br>
 
 = How do I set the OS timezone to UTC? =
+{{{
 echo "Etc/UTC" | sudo tee /etc/timezone<br>
-sudo dpkg-reconfigure --frontend noninteractive tzdata<br>
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+}}}
 
 = What to I need to modify in order to have the log files stored on a different mount point? =
 
@@ -60,9 +62,9 @@ Fixed: Liberation Mono, size 8<br>
 From <a href="http://ubuntuforums.org/showthread.php?t=1690118">http://ubuntuforums.org/showthread.php?t=1690118</a>:
 
 In /etc/default/grub, change this line:<br>
-GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"<br>
+{{{GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"}}}<br>
 to:<br>
-GRUB_CMDLINE_LINUX_DEFAULT="text"<br>
+{{{GRUB_CMDLINE_LINUX_DEFAULT="text"}}}<br>
 
 Run sudo update-grub when done. This is easily reversed too if you need to change back.
 
@@ -75,12 +77,30 @@ Install the PAE kernel as described here:<br>
 NOTE! You may lose network connectivity during this process! Do not attempt over SSH!<br>
 <br>
 Stop Network Manager:<br>
-sudo /etc/init.d/network-manager stop<br>
+{{{sudo /etc/init.d/network-manager stop}}}<br>
 <br>
 Prevent Network Manager from starting at next boot:<br>
-sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED<br>
+{{{sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED}}}<br>
 <br>
-Configure your interfaces in /etc/network/interfaces as described here:<br>
+Configure your interfaces in /etc/network/interfaces like this:<br>
+{{{
+## To configure a dynamic IP address
+auto eth0
+iface eth0 inet dhcp
+
+## Or configure a static IP
+auto eth0
+iface eth0 inet static
+  address 192.168.1.14
+  gateway 192.168.1.1
+  netmask 255.255.255.0
+  network 192.168.1.0
+  broadcast 192.168.1.255
+}}}
+Restart networking:<br>
+{{{sudo /etc/init.d/networking restart}}}<br>
+<br>
+For more information, please see:<br>
 <a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a>
 
 = Where do I send questions/problems/suggestions? =
