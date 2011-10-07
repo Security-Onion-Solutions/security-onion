@@ -3,6 +3,5 @@
 = How do I install Security Onion updates? =
 
 If you're behind a proxy server, make sure that you've configured your proxy server settings as shown <a href="http://code.google.com/p/security-onion/wiki/Proxy">here</a>.  Then run the following command (note that it's all one line):
-{{{
+
 sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
-}}}
