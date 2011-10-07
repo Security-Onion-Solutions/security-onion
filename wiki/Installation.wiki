@@ -20,5 +20,7 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 - <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
 - Double-click the Setup shortcut on the Desktop and follow the prompts.<br>
 - If you have Internet access, create an IDS alert by opening a terminal and typing the following:<br>
-curl http://testmyids.com<br>
+{{{
+curl http://testmyids.com
+}}}
 - Login to Sguil or Squert and manage your IDS alerts.<br>
