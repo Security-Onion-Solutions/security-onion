@@ -33,7 +33,7 @@ Sguil uses Snort to record full packet captures to disk.  These pcaps are stored
 
 = How do I set the OS timezone to UTC? =
 {{{
-echo "Etc/UTC" | sudo tee /etc/timezone<br>
+echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
 }}}
 
