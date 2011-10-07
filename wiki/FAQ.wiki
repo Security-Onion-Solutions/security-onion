@@ -58,15 +58,22 @@ Standard: Liberation Sans, size 8<br>
 Fixed: Liberation Mono, size 8<br>
 
 = How do I boot Security Onion to text mode (CLI instead of GUI)? =
-
-From <a href="http://ubuntuforums.org/showthread.php?t=1690118">http://ubuntuforums.org/showthread.php?t=1690118</a>:
-
 In /etc/default/grub, change this line:<br>
-{{{GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"}}}<br>
+{{{
+GRUB_CMDLINE_LINUX_DEFAULT="splash quiet"
+}}}
 to:<br>
-{{{GRUB_CMDLINE_LINUX_DEFAULT="text"}}}<br>
+{{{
+GRUB_CMDLINE_LINUX_DEFAULT="text"
+}}}
 
-Run sudo update-grub when done. This is easily reversed too if you need to change back.
+Then run:<br>
+{{{
+sudo update-grub
+}}}
+
+For more information, please see:<br>
+<a href="http://ubuntuforums.org/showthread.php?t=1690118">http://ubuntuforums.org/showthread.php?t=1690118</a>
 
 = How do I get Security Onion to recognize more than 4GB of RAM? =
 Install the PAE kernel as described here:<br>
