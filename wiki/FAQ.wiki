@@ -71,6 +71,16 @@ Install the PAE kernel as described here:<br>
 <a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a>
 
 = How do I disable the graphical Network Manager and configuring networking from the command line? =
+
+NOTE! You may lose network connectivity during this process! Do not attempt over SSH!<br>
+<br>
+Stop Network Manager:<br>
+sudo /etc/init.d/network-manager stop<br>
+<br>
+Prevent Network Manager from starting at next boot:<br>
+sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED<br>
+<br>
+Configure your interfaces in /etc/network/interfaces as described here:<br>
 <a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a>
 
 = Where do I send questions/problems/suggestions? =
