@@ -15,6 +15,8 @@
 - Reboot into your new installation and login with the credentials you
 specified in the installer.<br>
 <br>
+- <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
+<br>
 - Set the OS timezone to UTC by copying/pasting the following commands into a terminal:<br>
 {{{
 echo "Etc/UTC" | sudo tee /etc/timezone
