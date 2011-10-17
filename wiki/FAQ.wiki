@@ -91,11 +91,15 @@ Prevent Network Manager from starting at next boot:<br>
 <br>
 Configure your interfaces in /etc/network/interfaces like this:<br>
 {{{
-## To configure a dynamic IP address
+auto lo
+iface lo inet loopback
+
+# Management interface DHCP
 auto eth0
 iface eth0 inet dhcp
+  post-up ethtool -K eth0 tx off rx off tso off ufo off gso off gro off lro off
 
-## Or configure a static IP
+# OR if using STATIC IP instead of DHCP
 auto eth0
 iface eth0 inet static
   address 192.168.1.14
@@ -103,6 +107,12 @@ iface eth0 inet static
   netmask 255.255.255.0
   network 192.168.1.0
   broadcast 192.168.1.255
+  post-up ethtool -K eth0 tx off rx off tso off ufo off gso off gro off lro off
+
+# Connected to TAP or SPAN port for all Internet traffic
+auto eth1
+iface eth1 inet manual
+  post-up ethtool -K eth1 tx off rx off tso off ufo off gso off gro off lro off
 }}}
 Restart networking:<br>
 {{{sudo /etc/init.d/networking restart}}}<br>
