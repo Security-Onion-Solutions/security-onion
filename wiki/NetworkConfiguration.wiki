@@ -33,6 +33,8 @@ auto eth1
 iface eth1 inet manual
   post-up ethtool -K eth1 tx off rx off tso off ufo off gso off gro off lro off
 }}}
+Configure DNS in /etc/resolv.conf.<br>
+<br>
 Restart networking:<br>
 {{{sudo /etc/init.d/networking restart}}}<br>
 <br>
