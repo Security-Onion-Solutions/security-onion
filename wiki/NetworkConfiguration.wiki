@@ -31,6 +31,10 @@ iface eth0 inet static
 # Connected to TAP or SPAN port for all Internet traffic
 auto eth1
 iface eth1 inet manual
+  up ifconfig $IFACE 0.0.0.0 up
+  up ip link set $IFACE promisc on
+  down ip link set $IFACE promisc off
+  down ifconfig $IFACE down
   post-up ethtool -K eth1 tx off rx off tso off ufo off gso off gro off lro off
 }}}
 Configure DNS in /etc/resolv.conf.<br>
