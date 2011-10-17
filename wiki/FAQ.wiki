@@ -81,44 +81,7 @@ Install the PAE kernel as described here:<br>
 
 = How do I disable the graphical Network Manager and configuring networking from the command line? =
 
-NOTE! You may lose network connectivity during this process! Do not attempt over SSH!<br>
-<br>
-Stop Network Manager:<br>
-{{{sudo /etc/init.d/network-manager stop}}}<br>
-<br>
-Prevent Network Manager from starting at next boot:<br>
-{{{sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED}}}<br>
-<br>
-Configure your interfaces in /etc/network/interfaces like this:<br>
-{{{
-auto lo
-iface lo inet loopback
-
-# Management interface DHCP
-auto eth0
-iface eth0 inet dhcp
-  post-up ethtool -K eth0 tx off rx off tso off ufo off gso off gro off lro off
-
-# OR if using STATIC IP instead of DHCP
-auto eth0
-iface eth0 inet static
-  address 192.168.1.14
-  gateway 192.168.1.1
-  netmask 255.255.255.0
-  network 192.168.1.0
-  broadcast 192.168.1.255
-  post-up ethtool -K eth0 tx off rx off tso off ufo off gso off gro off lro off
-
-# Connected to TAP or SPAN port for all Internet traffic
-auto eth1
-iface eth1 inet manual
-  post-up ethtool -K eth1 tx off rx off tso off ufo off gso off gro off lro off
-}}}
-Restart networking:<br>
-{{{sudo /etc/init.d/networking restart}}}<br>
-<br>
-For more information, please see:<br>
-<a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a>
+<a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">http://code.google.com/p/security-onion/wiki/NetworkConfiguration</a>
 
 = Where do I send questions/problems/suggestions? =
 
