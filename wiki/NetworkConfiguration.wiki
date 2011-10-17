@@ -16,7 +16,7 @@ iface lo inet loopback
 # Management interface DHCP
 auto eth0
 iface eth0 inet dhcp
-  post-up ethtool -K eth0 tx off rx off tso off ufo off gso off gro off lro off
+  post-up ethtool -K $IFACE tx off rx off tso off ufo off gso off gro off lro off
 
 # OR if using STATIC IP instead of DHCP
 auto eth0
@@ -26,7 +26,7 @@ iface eth0 inet static
   netmask 255.255.255.0
   network 192.168.1.0
   broadcast 192.168.1.255
-  post-up ethtool -K eth0 tx off rx off tso off ufo off gso off gro off lro off
+  post-up ethtool -K $IFACE tx off rx off tso off ufo off gso off gro off lro off
 
 # Connected to TAP or SPAN port for all Internet traffic
 auto eth1
@@ -35,7 +35,7 @@ iface eth1 inet manual
   up ip link set $IFACE promisc on
   down ip link set $IFACE promisc off
   down ifconfig $IFACE down
-  post-up ethtool -K eth1 tx off rx off tso off ufo off gso off gro off lro off
+  post-up ethtool -K $IFACE tx off rx off tso off ufo off gso off gro off lro off
 }}}
 Configure DNS in /etc/resolv.conf.<br>
 <br>
