@@ -31,7 +31,7 @@ iface eth0 inet static
 # Connected to TAP or SPAN port for all Internet traffic
 auto eth1
 iface eth1 inet manual
-  up ifconfig $IFACE 0.0.0.0 up
+  up ifconfig $IFACE -arp up
   up ip link set $IFACE promisc on
   down ip link set $IFACE promisc off
   down ifconfig $IFACE down
