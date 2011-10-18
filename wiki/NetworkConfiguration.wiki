@@ -8,7 +8,7 @@ Stop Network Manager:<br>
 Prevent Network Manager from starting at next boot:<br>
 {{{sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED}}}<br>
 <br>
-Configure your interfaces in /etc/network/interfaces like this:<br>
+Configure your network interfaces in /etc/network/interfaces.  You'll want a management interface (using either static IP *or* DHCP) and one or more sniffing interfaces like this:<br>
 {{{
 auto lo
 iface lo inet loopback
@@ -38,7 +38,7 @@ iface eth1 inet manual
   post-up ethtool -K $IFACE tx off rx off tso off gso off gro off
 
 }}}
-Configure DNS in /etc/resolv.conf.<br>
+If necessary, configure DNS in /etc/resolv.conf.<br>
 <br>
 Restart networking:<br>
 {{{sudo /etc/init.d/networking restart}}}<br>
