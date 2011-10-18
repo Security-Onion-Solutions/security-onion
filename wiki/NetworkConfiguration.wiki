@@ -8,7 +8,7 @@ Stop Network Manager:<br>
 Prevent Network Manager from starting at next boot:<br>
 {{{sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED}}}<br>
 <br>
-Configure your network interfaces in /etc/network/interfaces.  You'll want a management interface (using either static IP *or* DHCP) and one or more sniffing interfaces.  Offloading functions should be disabled to ensure that Snort/Suricata get an accurate view of the traffic:<br>
+Configure your network interfaces in /etc/network/interfaces.  You'll want a management interface (using either static IP *or* DHCP) and one or more sniffing interfaces.  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic:<br>
 {{{
 auto lo
 iface lo inet loopback
