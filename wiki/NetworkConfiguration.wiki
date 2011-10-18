@@ -43,7 +43,7 @@ If necessary, configure DNS in /etc/resolv.conf.<br>
 Restart networking:<br>
 {{{sudo /etc/init.d/networking restart}}}<br>
 <br>
-If you already had sensors running on these interfaces, you might want to restart them:<br>
+If you already had sensors running on these interfaces, you should restart them:<br>
 {{{sudo nsm_sensor_ps-restart}}}<br>
 <br>
 For more information, please see:<br>
