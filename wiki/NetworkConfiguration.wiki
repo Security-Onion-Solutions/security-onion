@@ -48,5 +48,5 @@ If you already had sensors running on these interfaces, you should restart them:
 <br>
 For more information, please see:<br>
 <a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a><br>
-<a href="http://manual.snort.org/node7.html">http://manual.snort.org/node7.html</a>
+<a href="http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html">http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html</a>
 }}}
