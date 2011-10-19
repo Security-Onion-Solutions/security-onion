@@ -30,7 +30,7 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 <br>
 - Double-click the Setup shortcut on the Desktop and follow the prompts.<br>
 <br>
-- If you have Internet access, create an IDS alert by opening a terminal and typing the following:<br>
+- If you have Internet access, create an IDS alert by typing the following at a terminal:<br>
 {{{
 curl http://testmyids.com
 }}}
