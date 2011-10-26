@@ -83,6 +83,29 @@ Install the PAE kernel as described here:<br>
 
 <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">http://code.google.com/p/security-onion/wiki/NetworkConfiguration</a>
 
+= Why can't I upgrade past version 20110628? = 
+
+If your /etc/nsm/securityonion.conf says:<br>
+{{{
+VERSION=20110628
+}}}
+<br>
+and if running the upgrade says:<br>
+{{{
+Your Security Onion installation is up to date.
+}}}
+<br>
+then a previous upgrade to 20110709 was interrupted.  You can try editing /etc/nsm/securityonion.conf using one of the following:<br>
+{{{
+VERSION 20110628
+}}}
+*OR*<br>
+{{{
+VERSION=20110709
+}}}
+<br>
+and then re-running the upgrade.<br>
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
