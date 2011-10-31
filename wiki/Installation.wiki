@@ -15,11 +15,6 @@
 - Reboot into your new installation and login with the credentials you
 specified in the installer.<br>
 <br>
-- Set the OS timezone to UTC by copying/pasting the following commands into a terminal:<br>
-{{{
-echo "Etc/UTC" | sudo tee /etc/timezone
-sudo dpkg-reconfigure --frontend noninteractive tzdata
-}}}
 - <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
 <br>
 - If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
@@ -28,6 +23,11 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 <br>
 - <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
 <br>
+- Set the OS timezone to UTC by copying/pasting the following commands into a terminal.  If you're running Security Onion 20111103 or newer, this is automatically done for you by Setup in the next step.<br>
+{{{
+echo "Etc/UTC" | sudo tee /etc/timezone
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+}}}
 - Double-click the Setup shortcut on the Desktop and follow the prompts.<br>
 <br>
 - If you have Internet access, create an IDS alert by typing the following at a terminal:<br>
