@@ -95,16 +95,12 @@ and if running the upgrade says:<br>
 Your Security Onion installation is up to date.
 }}}
 <br>
-then a previous upgrade from 20110628 to 20110709 was interrupted.  This upgrade changed the config file format from spaces to equal signs.  You can try editing /etc/nsm/securityonion.conf using one of the following:<br>
-{{{
-VERSION 20110628
-}}}
-*OR*<br>
+then a previous upgrade from 20110628 to 20110709 was interrupted.  This upgrade changed the config file format from spaces to equal signs.  Edit the VERSION in /etc/nsm/securityonion.conf as follows:<br>
 {{{
 VERSION=20110709
 }}}
 <br>
-and then re-running the upgrade.<br>
+and then re-run the upgrade.<br>
 
 = Where do I send questions/problems/suggestions? =
 
