@@ -6,7 +6,7 @@
 
 - <a href="http://sourceforge.net/projects/security-onion/files/">Download the most recent Security Onion ISO image from here</a> (you may have to scroll to the bottom of the page).<br>
 <br>
-- Verify the MD5 and/or SHA1 checksums of the downloaded ISO image.<br>
+- Verify the MD5 and/or SHA1 checksums of the downloaded ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information button.<br>
 <br>
 - Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
 <br>
