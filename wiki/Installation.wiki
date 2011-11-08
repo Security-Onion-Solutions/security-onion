@@ -38,3 +38,5 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 curl http://testmyids.com
 }}}
 - Login to Sguil or Squert and manage your IDS alerts.<br>
+<br>
+- Full-time analysts may wish to run Security Onion in a VM on their workstation, then launch Sguil and connect to the IP/hostname of their production Sguil sensor.  To change the resolution of your Security Onion VM, install the Virtual Tools or use xrandr.  Use 'xrandr' by itself for a list of available sizes and 'xrandr -s <WxH>' to set the size.
