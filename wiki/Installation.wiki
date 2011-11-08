@@ -45,7 +45,7 @@ For a list of available screen resolutions:<br>
 {{{
 xrandr
 }}}
-To set the size:<br>
+To set the resolution:<br>
 {{{
 xrandr -s WxH
 }}}
