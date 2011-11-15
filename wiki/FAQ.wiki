@@ -102,6 +102,9 @@ VERSION=20110709
 <br>
 and then re-run the upgrade.<br>
 
+= How do I receive an email when my sensor stops receiving traffic? =
+<a href="http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html">http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html</a><br>
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
