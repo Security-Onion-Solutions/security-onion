@@ -48,7 +48,7 @@ For a list of available screen resolutions:<br>
 {{{
 xrandr
 }}}
-To set the resolution:<br>
+To set the resolution (replace W and H with the actual Width and Height desired):<br>
 {{{
 xrandr -s WxH
 }}}
