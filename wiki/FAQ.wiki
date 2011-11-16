@@ -36,8 +36,8 @@ Sguil uses Snort to record full packet captures to disk.  These pcaps are stored
 echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
 sudo cp /etc/localtime /var/ossec/etc/localtime
-chown root:ossec /var/ossec/etc/localtime
-service ossec restart
+sudo chown root:ossec /var/ossec/etc/localtime
+sudo service ossec restart
 }}}
 
 = What to I need to modify in order to have the log files stored on a different mount point? =
