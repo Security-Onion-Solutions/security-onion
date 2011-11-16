@@ -35,6 +35,7 @@ Sguil uses Snort to record full packet captures to disk.  These pcaps are stored
 {{{
 echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
+sudo service rsyslog restart
 sudo cp /etc/localtime /var/ossec/etc/localtime
 sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
