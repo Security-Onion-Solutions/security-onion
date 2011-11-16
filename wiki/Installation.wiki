@@ -26,10 +26,11 @@ specified in the installer.<br>
 <br>
 - <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
 <br>
-- Set the OS timezone to UTC by copying/pasting the following commands into a terminal.  If you're running Security Onion 20111103 or newer, you can skip this as it done automatically for you by Setup in the next step.<br>
+- Set the OS timezone to UTC by copying/pasting the following commands into a terminal.  If you're running Security Onion 20111116 or newer, you can skip this as it done automatically for you by Setup in the next step.<br>
 {{{
 echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
+sudo service rsyslog restart
 sudo cp /etc/localtime /var/ossec/etc/localtime
 sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
