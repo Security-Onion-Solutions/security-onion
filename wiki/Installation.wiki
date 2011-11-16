@@ -30,6 +30,9 @@ specified in the installer.<br>
 {{{
 echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
+sudo cp /etc/localtime /var/ossec/etc/localtime
+sudo chown root:ossec /var/ossec/etc/localtime
+sudo service ossec restart
 }}}
 - Double-click the Setup shortcut on the Desktop and follow the prompts.<br>
 <br>
