@@ -108,6 +108,14 @@ and then re-run the upgrade.<br>
 
 = How do I receive an email when my sensor stops receiving traffic? =
 <a href="http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html">http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html</a><br>
+<a href="http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html">http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html</a><br>
+
+= How do I disable the screensaver? =
+- Click Applications.<br>
+- Click Settings.<br>
+- Click Screensaver.<br>
+- Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver".<br>
+- Close the Screensaver Preferences window.<br>
 
 = Where do I send questions/problems/suggestions? =
 
