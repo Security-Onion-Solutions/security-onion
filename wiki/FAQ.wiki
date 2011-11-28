@@ -117,6 +117,13 @@ and then re-run the upgrade.<br>
   # Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver".<br>
   # Close the Screensaver Preferences window.<br>
 
+= I'm currently running Snort.  How do I switch to Suricata? =
+First, make sure you're running the latest version of Security Onion.  Then run the following commands:
+{{{
+sudo nsm_sensor_ps-stop --only-snort-alert
+sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf
+sudo /usr/local/bin/pulledpork_update.sh 
+}}}
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
