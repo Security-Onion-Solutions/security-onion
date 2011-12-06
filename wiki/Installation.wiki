@@ -10,7 +10,7 @@
 <br>
 - Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
 <br>
-- Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind.  If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition to ensure that you don't have any Grub booting issues.  Also, you may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.<br>
+- Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind.  If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  Also, you may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.<br>
 <br>
 - Reboot into your new installation and login with the credentials you
 specified in the installer.<br>
