@@ -4,29 +4,25 @@
 
 = What's the recommended procedure for installing Security Onion? =
 
-- <a href="http://sourceforge.net/projects/security-onion/files/">Download the most recent Security Onion ISO image from here</a> (you may have to scroll to the bottom of the page).<br>
+- If you're just evaluating Security Onion, the short answer is:<br>
+  # <a href="http://sourceforge.net/projects/security-onion/files/">Download</a>, verify, and boot the ISO image.<br>
+  # Run through the Xubuntu installer.<br>
+  # Reboot into your new installation and double-click the Setup shortcut.  Follow the prompts.<br>
+  # Analyze alerts using Sguil and/or Squert.<br>
 <br>
-- Verify the MD5 and/or SHA1 checksums of the downloaded ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information button.<br>
+- If you're going to be deploying Security Onion in production, the longer answer is as follows.<br>
 <br>
-- Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
-<br>
-- Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind.  If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  Also, you may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.<br>
-<br>
-- Reboot into your new installation and login with the credentials you
-specified in the installer.<br>
-<br>
-- <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
-<br>
-- If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
-<br>
-- If your machine has more than 4GB of RAM, install the PAE kernel  as described here:<br>
-<a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a><br>
-<br>
-- Install Ubuntu updates using the Update Manager in the upper right corner and reboot if necessary.  <a href="http://code.google.com/p/security-onion/wiki/tcl">tcl/tk updates are on hold and you should NOT attempt to manually install any tcl/tk updates!</a>  You may want to <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">configure Ubuntu to automatically install updates</a>.  <br>
-<br>
-- <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
-<br>
-- Set the OS timezone to UTC by copying/pasting the following commands into a terminal.  If you're running Security Onion 20111116 or newer, you can skip this as it done automatically for you by Setup in the next step.<br>
+  # <a href="http://sourceforge.net/projects/security-onion/files/">Download the most recent Security Onion ISO image from here</a> (you may have to scroll to the bottom of the page).<br>
+  # Verify the MD5 and/or SHA1 checksums of the downloaded ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information button.<br>
+  # Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
+  # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind.  If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  Also, you may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.<br>
+  # Reboot into your new installation and login with the credentials you specified in the installer.<br>
+  # <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
+  # If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
+  # If your machine has more than 4GB of RAM, <a href="https://help.ubuntu.com/community/EnablingPAE">install the PAE kernel</a>.<br>
+  # Install Ubuntu updates using the Update Manager in the upper right corner and reboot if necessary.  <a href="http://code.google.com/p/security-onion/wiki/tcl">tcl/tk updates are on hold and you should NOT attempt to manually install any tcl/tk updates!</a>  You may want to <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">configure Ubuntu to automatically install updates</a>.  <br>
+  # <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
+  # Set the OS timezone to UTC by copying/pasting the following commands into a terminal.  If you're running Security Onion 20111116 or newer, you can skip this as it done automatically for you by Setup in the next step.<br>
 {{{
 echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
@@ -35,21 +31,19 @@ sudo cp /etc/localtime /var/ossec/etc/localtime
 sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
 }}}
-- Double-click the Setup shortcut on the Desktop and follow the prompts.<br>
-<br>
-- If you have Internet access, create an IDS alert by typing the following at a terminal:<br>
+  # Double-click the Setup shortcut on the Desktop and follow the prompts.<br>
+  # If you have Internet access, create an IDS alert by typing the following at a terminal:<br>
 {{{
 curl http://testmyids.com
 }}}
-- Login to Sguil or Squert and manage your IDS alerts.<br>
-<br>
-- Full-time analysts may wish to run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor.  To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.<br>
-<br>
-For a list of available screen resolutions:<br>
+  # Login to Sguil or Squert and manage your IDS alerts.<br>
+  # Full-time analysts may wish to run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor.  
+  # To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.  
+  # For a list of available screen resolutions:<br>
 {{{
 xrandr
 }}}
-To set the resolution (replace W and H with the actual Width and Height desired):<br>
+  # To set the screen resolution (replace W and H with the actual Width and Height desired):<br>
 {{{
 xrandr -s WxH
 }}}
