@@ -37,6 +37,10 @@ sudo service ossec restart
 curl http://testmyids.com
 }}}
   # Login to Sguil or Squert and manage your IDS alerts.<br>
+  # If necessary, add new Sguil user accounts with the following (when prompted, enter "securityonion" as the server name):<br>
+{{{
+sudo /usr/local/sbin/nsm_server_user-add
+}}}
   # Full-time analysts may wish to run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor.  
   # To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.  
   # For a list of available screen resolutions:<br>
