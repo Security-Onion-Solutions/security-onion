@@ -124,6 +124,13 @@ sudo nsm_sensor_ps-stop --only-snort-alert
 sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf
 sudo /usr/local/bin/pulledpork_update.sh 
 }}}
+
+= How do I add a new user to Sguil? =
+You can add new Sguil user accounts with the following (when prompted, enter "securityonion" as the server name):<br>
+{{{
+sudo /usr/local/sbin/nsm_server_user-add
+}}}
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
