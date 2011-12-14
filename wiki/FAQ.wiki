@@ -136,4 +136,6 @@ sudo /usr/local/sbin/nsm_server_user-add
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
 <a href="http://groups.google.com/group/security-onion">Security Onion Mailing List</a><br>
 You can then send your question/problem/suggestion via the Google Groups web interface OR by sending an email to:<br>
-<a href="mailto:security-onion@googlegroups.com">security-onion@googlegroups.com</a>
+<a href="mailto:security-onion@googlegroups.com">security-onion@googlegroups.com</a><br>
+In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:<br>
+<a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">http://www.chiark.greenend.org.uk/~sgtatham/bugs.html</a>
