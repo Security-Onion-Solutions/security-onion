@@ -29,7 +29,7 @@ Squert authenticates against the Sguil username database, so you should be able 
 Security Onion has a blank MySQL password to allow the NSMnow administration scripts to add/delete sensors properly.  MySQL only allows connections from localhost.  Once you've run through Setup and configured your sensors, you might want to change the MySQL password.
 
 = Why is my disk filling up? =
-Sguil uses Snort to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is a cronjob at /etc/cron.d/sensor-newday that should delete old pcaps when the disk reaches 90% of capacity.  However, if the OS timezone is NOT set to UTC, this script may not be purging correctly.  Make sure your OS timezone is set to UTC.<br>
+Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
 
 = How do I set the OS timezone to UTC? =
 {{{
