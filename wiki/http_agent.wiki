@@ -11,12 +11,13 @@ If you have a small installation and want to put all URLs into the database it i
 {{{
 none||ANY||ANY||ANY||ANY||ANY||ANY||%%REGEXP%%^URL||1
 }}}
-
+<p>
 If you want to use it to treat unfamiliar or specific URLs as events then you will need to setup the exclusions file. This file can be used in one of two ways:
 
 1) If INVERT_MATCH is set to 0 in http_agent.conf anything that matches an entry in http_agent.exclude will be ignored.
 
 2) If INVERT_MATCH is set to 1 in http_agent.conf anything that matches an entry in http_agent.exclude will be sent to Sguild.
+
 
 *Example 1: Match everything from the following TLD's (INVERT_MATCH set to 1)*
  
@@ -26,6 +27,7 @@ If you want to use it to treat unfamiliar or specific URLs as events then you wi
 *.cn
 *.lv
 }}}
+
 
 *Example 2: Ignore everything from the following FQDN's (INVERT_MATCH set to 0)*
 
