@@ -131,6 +131,18 @@ You can add new Sguil user accounts with the following (when prompted, enter "se
 sudo /usr/local/sbin/nsm_server_user-add
 }}}
 
+= When I search in Sguil, I get an error code 24 "out of resources".  How do I fix that? =
+{{{
+sudo nsm_server_ps-stop
+sudo service mysql stop
+# Edit /etc/mysql/my.cnf and add the following in the [mysqld] section (without the # comment sign):
+# open-files-limit        = 4096
+sudo service mysql start
+sudo nsm_server_ps-start
+}}}
+For more information, please see:<br>
+<a href="http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F">http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a><br>
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
