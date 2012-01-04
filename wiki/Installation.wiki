@@ -14,6 +14,7 @@
 <br>
   # <a href="http://sourceforge.net/projects/security-onion/files/">Download the most recent Security Onion ISO image from here</a> (you may have to scroll to the bottom of the page).<br>
   # Verify the MD5 and/or SHA1 checksums of the downloaded ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information button.<br>
+  # (If deploying a master server and one or more slave sensors, you'll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master first.)<br>
   # Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
   # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind.  If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  Also, you may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.<br>
   # Reboot into your new installation and login with the credentials you specified in the installer.<br>
@@ -31,7 +32,7 @@ sudo cp /etc/localtime /var/ossec/etc/localtime
 sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
 }}}
-  # Double-click the Setup shortcut on the Desktop and follow the prompts.<br>
+  # Double-click the Setup shortcut on the Desktop and follow the prompts.  If this is a sensor that will report to a master server, then Setup will prompt you for an SSH account on the master server that has sudo privileges.  Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors.<br>
   # If you have Internet access, create an IDS alert by typing the following at a terminal:<br>
 {{{
 curl http://testmyids.com
