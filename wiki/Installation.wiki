@@ -8,7 +8,7 @@
   # <a href="http://sourceforge.net/projects/security-onion/files/">Download</a>, verify, and boot the ISO image.<br>
   # Run through the Xubuntu installer.<br>
   # Reboot into your new installation and double-click the Setup shortcut.  Follow the prompts.<br>
-  # Analyze alerts using Sguil and/or Squert.<br>
+  # Analyze alerts using Sguil, Squert, or Snorby.<br>
 <br>
 - If you're going to be deploying Security Onion in production, the longer answer is as follows.<br>
 <br>
@@ -37,7 +37,7 @@ sudo service ossec restart
 {{{
 curl http://testmyids.com
 }}}
-  # Login to Sguil or Squert and manage your IDS alerts.<br>
+  # Login to Sguil, Squert, or Snorby and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs for in-depth analysis.<br>
   # If necessary, add new Sguil user accounts with the following (when prompted, enter "securityonion" as the server name):<br>
 {{{
 sudo /usr/local/sbin/nsm_server_user-add
