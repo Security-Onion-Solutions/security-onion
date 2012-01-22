@@ -151,3 +151,6 @@ You can then send your question/problem/suggestion via the Google Groups web int
 <a href="mailto:security-onion@googlegroups.com">security-onion@googlegroups.com</a><br>
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:<br>
 <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">http://www.chiark.greenend.org.uk/~sgtatham/bugs.html</a>
+
+= How can I install FreeNX on Security Onion =
+[Freenx Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
