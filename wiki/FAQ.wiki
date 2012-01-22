@@ -153,4 +153,4 @@ In order to be as effective and efficient as possible, please consider the follo
 <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">http://www.chiark.greenend.org.uk/~sgtatham/bugs.html</a>
 
 = How can I install FreeNX on Security Onion =
-[Freenx Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
+[FreeNX Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
