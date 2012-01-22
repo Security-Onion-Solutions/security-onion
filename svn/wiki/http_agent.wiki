@@ -1,0 +1,38 @@
+= Preamble =
+
+The http_agent for Sguil was created to add URL events (httpry, Suricata, Bro) to Sguil. This page outlines the usage scenarios for this agent.
+
+It is important to note that in most cases (> 50,000 URLs/day) you do not want this agent to place all URL data into your database, that is not what it was designed for. This agent is intended to complement your signatures; running with a customized exclusions file that is tailored to your environment.
+
+= Using the http_agent with Sguil =
+
+If you have a small installation and want to put all URLs into the database it is wise to autocat these events. This can be achieved by adding the following line to Sguil's autocat.conf:
+
+{{{
+none||ANY||ANY||ANY||ANY||ANY||ANY||%%REGEXP%%^URL||1
+}}}
+<p>
+If you want to use it to treat unfamiliar or specific URLs as events then you will need to setup the exclusions file. This file can be used in one of two ways:
+
+1) If INVERT_MATCH is set to 0 in http_agent.conf anything that matches an entry in http_agent.exclude will be ignored.
+
+2) If INVERT_MATCH is set to 1 in http_agent.conf anything that matches an entry in http_agent.exclude will be sent to Sguild.
+
+
+*Example 1: Match everything from the following TLD's (INVERT_MATCH set to 1)*
+ 
+{{{
+*.ua
+*.ru
+*.cn
+*.lv
+}}}
+
+
+*Example 2: Ignore everything from the following FQDN's (INVERT_MATCH set to 0)*
+
+{{{
+*.facebook.com
+*.dropbox.com
+*.twitter.com
+}}}
