@@ -154,3 +154,6 @@ In order to be as effective and efficient as possible, please consider the follo
 
 = How can I install FreeNX on Security Onion =
 [FreeNX Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
+
+= How can I add and test local rules = 
+[AddingLocalRules Adding local rules and testing them with scapy]
