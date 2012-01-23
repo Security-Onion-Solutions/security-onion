@@ -1,8 +1,9 @@
 #summary Adding local rules and testing them with scapy
 = Introduction =
 
+Adding local rules in Security Onion is a rather straightforward process.  However, generating custom traffic to test the alert can sometimes be a challenge.  Here, we will show you how to add the local rule and then use the python library scapy to trigger the alert.
 
-= Details =
+= Steps =
 
   # Open the /etc/nsm/rules/local.rules file.
      You can gain access to the local.rules file in two ways.  
