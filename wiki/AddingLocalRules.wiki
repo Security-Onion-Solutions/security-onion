@@ -61,18 +61,8 @@ send(ip/tcp/payload)
      <a href="http://security-onion.googlecode.com/svn/wiki/images/local-rules/sguil-transcript_check-payload.png">
         <img src="http://security-onion.googlecode.com/svn/wiki/images/local-rules/thumbs/thumb_sguil-transcript_check-payload.png"></img>
      </a>
- 
-  # You can learn more about snort and writing snort signatures from the [http://manual.snort.com/node26.html Snort Manual]
 
-  # You can learn more about scapy at [http://www.secdev.org/projects/scapy secdev.org]
+  * You can learn more about snort and writing snort signatures from the [http://manual.snort.com/node26.html Snort Manual]
+  * You can learn more about scapy at [http://www.secdev.org/projects/scapy secdev.org]
 
   
-
-
-
-
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
