@@ -143,6 +143,16 @@ sudo nsm_server_ps-start
 For more information, please see:<br>
 <a href="http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F">http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a><br>
 
+= How can I install FreeNX on Security Onion =
+[FreeNX Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
+
+= How can I add and test local rules = 
+[AddingLocalRules Adding local rules and testing them with scapy]
+
+= Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically? =
+Yes, there are issues with the Snorby dashboard and Sensor Cache job right now.  I'll be working with
+the Snorby team to get those fixed soon.  In the meantime, you can skip the Dashboard and go directly to the Events tab in Snorby. Alternatively, you could use Sguil and/or Squert.
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
@@ -151,9 +161,3 @@ You can then send your question/problem/suggestion via the Google Groups web int
 <a href="mailto:security-onion@googlegroups.com">security-onion@googlegroups.com</a><br>
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:<br>
 <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">http://www.chiark.greenend.org.uk/~sgtatham/bugs.html</a>
-
-= How can I install FreeNX on Security Onion =
-[FreeNX Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
-
-= How can I add and test local rules = 
-[AddingLocalRules Adding local rules and testing them with scapy]
