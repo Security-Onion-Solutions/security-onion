@@ -16,7 +16,12 @@
   # Verify the MD5 and/or SHA1 checksums of the downloaded ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information button.<br>
   # (If deploying a master server and one or more slave sensors, you'll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master first.)<br>
   # Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
-  # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind.  If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  Also, you may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.  Full packet capture can fill a disk quickly, so we have an hourly cronjob that purges old pcaps once the disk reaches 90% capacity.  However, if you have a small disk and/or are monitoring a large amount of traffic, you may fill that last 10% before the next hourly purge.  Therefore, the total disk space for the partition where /nsm is located should be AT LEAST 10X your average hourly network traffic to avoid issues.  The more disk space you have, the more log retention you'll have for doing investigations after the fact.  Plus, disk is cheap!<br>
+  # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind:
+    * If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  
+    * You may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.  
+    * Full packet capture can fill a disk quickly, so we have an hourly cronjob that purges old pcaps once the disk reaches 90% capacity.  However, if you have a small disk and/or are monitoring a large amount of traffic, you may fill that last 10% before the next hourly purge.  Therefore, the total disk space for the partition where /nsm is located should be AT LEAST 10X your average hourly network traffic to avoid issues.  
+    * The more disk space you have, the more log retention you'll have for doing investigations after the fact.  
+    * Disk is cheap, get all you can!<br>
   # Reboot into your new installation and login with the credentials you specified in the installer.<br>
   # <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
   # If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
@@ -34,12 +39,7 @@ curl http://testmyids.com
 sudo /usr/local/sbin/nsm_server_user-add
 }}}
   # Full-time analysts may wish to run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor.  
-  # To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.  
-  # For a list of available screen resolutions:<br>
-{{{
-xrandr
-}}}
-  # To set the screen resolution (replace W and H with the actual Width and Height desired):<br>
+  # To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.  For a list of available screen resolutions, simply execute "xrandr".  To set the screen resolution (replace W and H with the actual Width and Height desired):
 {{{
 xrandr -s WxH
 }}}
