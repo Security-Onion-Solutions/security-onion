@@ -12,6 +12,7 @@
 <br>
 - If you're going to be deploying Security Onion in production, the longer answer is as follows.<br>
 <br>
+  # Before you start, make sure your sensor(s) have lots of storage available. Full packet capture can fill a disk quickly, so we have an hourly cronjob that purges old pcaps once the disk reaches 90% capacity.  However, if you have a small disk and/or are monitoring a large amount of traffic, you may fill that last 10% before the next hourly purge.  Additionally, the purge scripts are designed with the idea that you want to keep at LEAST 1 day's worth of full packet capture on disk, so they won't delete any pcaps with today's date on them.  For example, suppose you are monitoring a 50 Mb/s link, here are some quick calculations: 50Mb/s  = 6.25 MB/s = 375 MB/minute = 22,500 MB/hour = 540,000 MB/day.  So you're going to need about 540GB for one day's worth of pcaps. Note that this is just pcaps (other logs will take up additional storage), so in this case, I'd recommend going with 1TB or more.  The more disk space you have, the more log retention you'll have for doing investigations after the fact. Disk is cheap, get all you can!<br>
   # <a href="http://sourceforge.net/projects/security-onion/files/">Download the most recent Security Onion ISO image from here</a> (you may have to scroll to the bottom of the page).<br>
   # Verify the MD5 and/or SHA1 checksums of the downloaded ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information button.<br>
   # (If deploying a master server and one or more slave sensors, you'll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master first.)<br>
@@ -19,9 +20,6 @@
   # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind:
     * If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  
     * You may want to put /nsm on a dedicated partition/disk and assign a good amount of disk space since it will be storing full packet captures.  
-    * Full packet capture can fill a disk quickly, so we have an hourly cronjob that purges old pcaps once the disk reaches 90% capacity.  However, if you have a small disk and/or are monitoring a large amount of traffic, you may fill that last 10% before the next hourly purge.  Therefore, the total disk space for the partition where /nsm is located should be AT LEAST 10X your average hourly network traffic to avoid issues.  
-    * The more disk space you have, the more log retention you'll have for doing investigations after the fact.  
-    * Disk is cheap, get all you can!<br>
   # Reboot into your new installation and login with the credentials you specified in the installer.<br>
   # <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
   # If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
