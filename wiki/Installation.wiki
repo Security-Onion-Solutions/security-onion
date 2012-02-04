@@ -5,7 +5,7 @@
 = What's the recommended procedure for installing Security Onion? =
 
 - If you're just evaluating Security Onion, the short answer is:<br>
-  # You might be able to get by with 512MB RAM, but you really need 1GB or more.<br>
+  # Hardware requirements: you might be able to get by with 512MB RAM, but you really need 1GB or more.  Be aware that full packet captures may fill your disk quickly, so size your storage appropriately.<br>
   # <a href="http://sourceforge.net/projects/security-onion/files/">Download</a>, verify, and boot the ISO image.<br>
   # Run through the Xubuntu installer.<br>
   # Reboot into your new installation and double-click the Setup shortcut.  Follow the prompts.<br>
