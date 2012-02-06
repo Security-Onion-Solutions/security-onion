@@ -1,3 +1,5 @@
+#summary Using the http_agent
+
 = Preamble =
 
 The http_agent for Sguil was created to add URL events (httpry, Suricata, Bro) to Sguil. This page outlines the usage scenarios for this agent.
