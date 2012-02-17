@@ -158,6 +158,32 @@ the Snorby team to get those fixed soon.  In the meantime, you can skip the Dash
 <a href="https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion">https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a><br>
 After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.
 
+= What's the difference between a "server" and a "sensor"? =
+box<br>
+Definition: A physical or virtual machine running the Security Onion operating system.<br>
+<br>
+server<br>
+Definition: A set of processes that receive data from sensors and allow analysts to see and investigate that data.  The set of processes includes sguild, mysql, and snorby.  The server is also responsible for ruleset management.<br>
+Naming convention: The collection of server processes has a server name separate from the hostname of the box.  Security Onion always sets the server name to "securityonion".<br>
+Configuration files: /etc/nsm/securityonion/<br>
+Controlled by:  /usr/local/sbin/nsm_server <br>
+<br>
+server box<br>
+Definition: A machine running the server processes.  May optionally be running sensor processes.<br>
+Example 1: User runs Quick Setup on machine with hostname securityonion and two ethernet interfaces.  Setup creates a server and two sensors (securityonion-eth0 and securityonion-eth1).<br>
+Example 2: User runs Advanced Setup and chooses Server.  Setup creates a server only (no sensor processes).<br>
+<br>
+sensor<br>
+Definition: A set of processes listening on a network interface.  The set of processes currently includes Snort/Suricata, daemonlogger, sancp, argus, pads, httpry, and bro (although this is in constant flux as we add new capabilities and find better tools for existing capabilities).<br>
+Naming convention: $HOSTNAME-$INTERFACE<br>
+Configuration files: /etc/nsm/$HOSTNAME-$INTERFACE/<br>
+Example: sensor1-eth0<br>
+Controlled by:  /usr/local/sbin/nsm_sensor<br>
+<br>
+sensor box<br>
+Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
+Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
