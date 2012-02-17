@@ -143,10 +143,10 @@ sudo nsm_server_ps-start
 For more information, please see:<br>
 <a href="http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F">http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a><br>
 
-= How can I install FreeNX on Security Onion =
+= How can I install FreeNX on Security Onion? =
 [FreeNX Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
 
-= How can I add and test local rules = 
+= How can I add and test local rules? = 
 [AddingLocalRules Adding local rules and testing them with scapy]
 
 = Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically? =
