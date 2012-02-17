@@ -31,7 +31,16 @@ Security Onion has a blank MySQL password to allow the NSMnow administration scr
 = Why is my disk filling up? =
 Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
 
-= How do I set the OS timezone to UTC? =
+= Why does Security Onion use UTC? =
+Security Onion uses UTC because that is the recommended/required setting for Sguil:<br>
+<a href="http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html">http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html</a><br>
+<a href="https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem">https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem</a><br>
+<br>
+Trying to use a non-UTC timezone can result in the following:<br>
+- Time zones that have daylight saving time have a one-hour time warp twice a year.  This manifests itself in Sguil not being able to pull transcripts for events within that one-hour time period.  This is avoided by using UTC, since there is no daylight saving time.<br>
+- Something similar can happen on a daily basis under certain conditions.  If there is a discrepancy between the OS timezone and the Sguil UTC settings, then Sguil will be unable to pull transcripts for events in a window of time around midnight coinciding with the timezone's offset from UTC.<br>
+Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
+The Setup wizard (/usr/local/bin/setup) does the following to set the OS and all services to UTC:
 {{{
 echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
