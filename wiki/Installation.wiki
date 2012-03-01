@@ -32,8 +32,12 @@
 {{{
 curl http://testmyids.com
 }}}
-  # Login to Sguil, Squert, or Snorby and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs for in-depth analysis.<br>
-  # If necessary, add new Sguil user accounts with the following (when prompted, enter "securityonion" as the server name):<br>
+  # Full-time analysts should run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor.  This allows you to investigate pcaps without fear of impacting your production server/sensors.  To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.  For a list of available screen resolutions, simply execute "xrandr".  To set the screen resolution (replace W and H with the actual Width and Height desired):
+{{{
+xrandr -s WxH
+}}}
+  # Login to Sguil, Squert (https://server/squert/), or Snorby (https://server:3000) and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs (/nsm/bro/logs/) for in-depth analysis.<br>
+  # Optional: add new Sguil user accounts with the following:<br>
 {{{
 sudo /usr/local/sbin/nsm_server_user-add
 }}}
@@ -44,8 +48,4 @@ sudo nsm_server_ps-restart
   # Optional: if you'd like Snorby to be able to send emails, you'll need to modify a few files (on the master server).  First, modify /usr/local/share/snorby/config/snorby_config.yml and change the "domain" setting in the Production section to be the FQDN of your Snorby server.  Next, modify /usr/local/share/snorby/config/initializers/mail_config.rb as needed for your mail server.  Finally, kill the "thin" and "delayed_job" processes and then restart Snorby by executing:<br>
 {{{
 sudo /usr/local/share/snorby/snorby_start
-}}}
-  # Full-time analysts may wish to run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor.  To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.  For a list of available screen resolutions, simply execute "xrandr".  To set the screen resolution (replace W and H with the actual Width and Height desired):
-{{{
-xrandr -s WxH
 }}}
