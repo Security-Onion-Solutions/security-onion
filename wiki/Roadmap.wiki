@@ -1,7 +1,13 @@
 #summary The Future of Security Onion
-  * March/April 2012
-    * ELSA, web-based interface for logs
+Please note that this is all subject to change!
+  * March 2012
+    * Snort 2.9.2.1
+    * Update Snorby (hopefully with better packaging method)
+  * April 2012
+    * ELSA (web-based interface for logs)
   * May/June/July 2012 - Big Distro Rebuild (BDR)
     * Lubuntu 12.04
     * 64-bit
+    * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
     * Considering pfring for higher performance
+    * Development on the existing 32-bit version of Security Onion will stop so that we can focus on the future
