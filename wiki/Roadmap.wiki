@@ -2,6 +2,7 @@
 Please note that this is all subject to change!
   * March 2012
     * Snort 2.9.2.1
+    * Remove httpry in favor of Bro's http logging
     * Update Snorby (hopefully with better packaging method)
   * April 2012
     * ELSA (web-based interface for logs)
