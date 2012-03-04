@@ -1,0 +1,11 @@
+#summary Some common troubleshooting steps
+
+= Introduction =
+
+Having problems?  Try the suggestions below.
+
+
+= Details =
+
+  * Check the [FAQ].
+  * Search the mailing list: <a href="http://groups.google.com/group/security-onion">http://groups.google.com/group/security-onion</a>
