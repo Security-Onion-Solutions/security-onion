@@ -7,5 +7,34 @@ Having problems?  Try the suggestions below.
 
 = Details =
 
+  * Are you running the latest version of Security Onion?
+{{{
+sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
+}}}
   * Check the [FAQ].
   * Search the mailing list: <a href="http://groups.google.com/group/security-onion">http://groups.google.com/group/security-onion</a>
+  * Make sure you're not out of disk space:
+{{{
+df -h
+}}}
+  * Check the status of your processes:
+{{{
+sudo service nsm status
+}}}
+  * Try restarting the processes:
+{{{
+sudo service nsm restart
+}}}
+  * Check log files in /var/log/nsm/ for any errors or possible clues.
+  * If this is a sensor sending alerts to master server, is autossh running?
+{{{
+ps aux |grep autoss[h]
+}}}
+  * If you're having problems with Snorby, check its log files in /usr/local/share/snorby/log/ and see if its processes are running:
+{{{
+ps aux |grep thi[n]
+ps aux |grep dela[y]
+}}}
+
+  * Are you able to duplicate the problem on a fresh Security Onion installation?
+  * If all else fails, please join our <a href="http://groups.google.com/group/security-onion">mailing list</a> and send a DETAILED email including the output of the commands above.  Also consider the following when posing your question/problem to the group: <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">http://www.chiark.greenend.org.uk/~sgtatham/bugs.html</a>
