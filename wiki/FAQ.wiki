@@ -159,8 +159,8 @@ For more information, please see:<br>
 [AddingLocalRules Adding local rules and testing them with scapy]
 
 = Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically? =
-Yes, there are issues with the Snorby dashboard and Sensor Cache job right now.  I'll be working with
-the Snorby team to get those fixed soon.  In the meantime, you can skip the Dashboard and go directly to the Events tab in Snorby. Alternatively, you could use Sguil and/or Squert.
+First, make sure you're running the latest version of Security Onion.  Then check this thread on the mailing list to see if you're missing an index on one of the MySQL tables:<br>
+<a href="https://groups.google.com/d/topic/security-onion/zugnYFXh7Do/discussion">https://groups.google.com/d/topic/security-onion/zugnYFXh7Do/discussion</a>
 
 = Why does Snort segfault every day at 7:01 AM? =
 7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
