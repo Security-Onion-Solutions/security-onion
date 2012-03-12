@@ -119,11 +119,11 @@ and then re-run the upgrade.<br>
 <a href="http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html">http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html</a><br>
 <a href="http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html">http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html</a><br>
 
-= I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I disable the screensaver? =
+= I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver? =
   # Click Applications.<br>
   # Click Settings.<br>
   # Click Screensaver.<br>
-  # Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver".<br>
+  # Screensaver Preferences window appears.  Click the Mode dropdown and select "Disable Screen Saver" or "Blank Screen Only".<br>
   # Close the Screensaver Preferences window.<br>
 
 = I'm currently running Snort.  How do I switch to Suricata? =
