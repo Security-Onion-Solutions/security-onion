@@ -1,11 +1,13 @@
 #summary The Future of Security Onion
 Please note that this is all subject to change!
   * March 2012
+    * Break monolithic Snorby package into separate packages and deploy latest Snorby
     * Snort 2.9.2.1
-    * Remove httpry in favor of Bro's http logging
-    * Update Snorby (hopefully with better packaging method)
+    * Issue 226 - Rename Bro workers - http://code.google.com/p/security-onion/issues/detail?id=226
+    * Issue 219 - Default web page - http://code.google.com/p/security-onion/issues/detail?id=219
   * April 2012
-    * ELSA (web-based interface for logs)
+    * Issue 146 - ELSA (web-based interface for logs) - http://code.google.com/p/security-onion/issues/detail?id=146
+    * Issue 205 - Remove httpry and httpry_agent in favor of Bro's http logging searchable with ELSA - http://code.google.com/p/security-onion/issues/detail?id=205
   * May/June/July 2012 - Big Distro Rebuild (BDR)
     * Lubuntu 12.04
     * 64-bit
