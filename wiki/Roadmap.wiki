@@ -1,11 +1,11 @@
 #summary The Future of Security Onion
 Please note that this is all subject to change!
   * March 2012
-    * Break monolithic Snorby package into separate packages and deploy latest Snorby
-    * Snort 2.9.2.1
+    * Issue 233:	Snorby 2.4.1
+    * Issue 114: Provide single location for configuring BPF filters
+    * Issue 197:	Snort 2.9.2.1
     * Issue 226: Rename Bro workers
     * Issue 219: Default web page
-    * Issue 114: Provide single location for configuring BPF filters
   * April 2012
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 205: Remove httpry and httpry_agent in favor of Bro's http logging searchable with ELSA 
