@@ -197,6 +197,14 @@ sensor box<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
 Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
 
+= How do I configure the OS to be able to send email (like cronjobs)? =
+{{{
+# Install mail server
+sudo apt-get -y install mailutils
+# Configure mail server
+sudo dpkg-reconfigure exim4-config
+}}}
+
 = Where do I send questions/problems/suggestions? =
 
 The Security Onion mailing list is provided by Google Groups.  Please join the mailing list here:<br>
