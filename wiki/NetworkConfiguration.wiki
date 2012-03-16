@@ -1,3 +1,5 @@
+#summary Network Configuration for Production Deployment
+
 = Disabling the graphical Network Manager and configuring networking from the command line =
 
 NOTE! You may lose network connectivity during this process! Have a backup plan if attempting over SSH!<br>
