@@ -163,7 +163,7 @@ First, make sure you're running the latest version of Security Onion.  Then chec
 <a href="https://groups.google.com/d/topic/security-onion/zugnYFXh7Do/discussion">https://groups.google.com/d/topic/security-onion/zugnYFXh7Do/discussion</a><br>
 If so, run the following command:
 {{{
-    mysql -uroot -e 'create index index_timestamp_cid_sid on event (timestamp, cid, sid);'
+    mysql -uroot -D snorby -e 'create index index_timestamp_cid_sid on event (timestamp, cid, sid);'
 }}}
 
 = Why does Snort segfault every day at 7:01 AM? =
