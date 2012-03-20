@@ -2,7 +2,7 @@
 
 = What's the recommended procedure for installing Security Onion? =
 
-<a href="http://code.google.com/p/security-onion/wiki/Installation">http://code.google.com/p/security-onion/wiki/Installation</a>
+[Installation]
 
 = What do I need to do if I'm behind a proxy? =
 
