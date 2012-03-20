@@ -39,10 +39,12 @@ sudo service ossec restart
 <a href="http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html">http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html</a>
 
 = How do I configure the OS itself to send emails? =
+Install the mail server:
 {{{
-# Install mail server
 sudo apt-get -y install mailutils
-# Configure mail server
+}}}
+Configure the mail server
+{{{
 sudo dpkg-reconfigure exim4-config
 }}}
 Once you've done that and verified that it works, you might want to create a daily cronjob to execute /usr/bin/sostat and email you the output:
