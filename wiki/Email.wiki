@@ -35,7 +35,7 @@ sudo service ossec restart
 }}}
 
 = How can I get an email alert when my sensor stops seeing traffic? =
-<a href="http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html">http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html</a>
+<a href="http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html">http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html</a><br>
 <a href="http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html">http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html</a>
 
 = How do I configure the OS itself to send emails? =
