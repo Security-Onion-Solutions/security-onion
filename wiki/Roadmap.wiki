@@ -1,7 +1,8 @@
 #summary The Future of Security Onion
 Please note that this is all subject to change!
   * March 2012
-    * Issue 233:	Snorby 2.4.1
+    * Issue 233:	Snorby 2.5.0
+    * Issue 235: Need statistics/diagnostics script
     * Issue 114: Provide single location for configuring BPF filters
     * Issue 197:	Snort 2.9.2.1
     * Issue 226: Rename Bro workers
