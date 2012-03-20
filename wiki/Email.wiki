@@ -23,11 +23,10 @@ Modify /var/ossec/etc/ossec.conf as follows:
 {{{
   <global>
     <email_notification>yes</email_notification>
-    <email_to>doug.burks@mandiant.com</email_to>
-    <smtp_server>smtp.mandiant.com</smtp_server>
-    <email_from>ossec@mandiant.com</email_from>
+    <email_to>YourUsername@YourDomain.com</email_to>
+    <smtp_server>YourMailRelay.YourDomain.com</smtp_server>
+    <email_from>ossec@YourDomain.com</email_from>
     <email_maxperhour>100</email_maxperhour>
-    <logall>yes</logall>
   </global>
 }}}
 Then restart OSSEC:
