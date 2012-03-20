@@ -43,7 +43,7 @@ Install the mail server:
 {{{
 sudo apt-get -y install mailutils
 }}}
-Configure the mail server
+Configure the mail server:
 {{{
 sudo dpkg-reconfigure exim4-config
 }}}
