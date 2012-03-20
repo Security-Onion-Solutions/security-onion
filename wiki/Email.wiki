@@ -59,3 +59,10 @@ EMAIL=YourUsername@YourDomain.com
 
 01 12    * * *   root    HOSTNAME=`hostname`; /usr/bin/sostat | mail -s "$HOSTNAME stats" $EMAIL
 }}}
+
+= How do I configure Bro to send emails? =
+Edit the MailTo directive in /usr/local/etc/broctl.cfg.  Then update and restart Bro:
+{{{
+sudo broctl install
+sudo broctl restart
+}}}
