@@ -5,6 +5,7 @@ Please note that this is all subject to change!
     * Issue 235: Need statistics/diagnostics script
     * Issue 114: Provide single location for configuring BPF filters
     * Issue 197:	Snort 2.9.2.1
+    * Issue 218: /etc/nsm/gen-msg.map out of date
     * Issue 226: Rename Bro workers
     * Issue 219: Default web page
   * April 2012
