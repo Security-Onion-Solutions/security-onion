@@ -58,4 +58,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 EMAIL=YourUsername@YourDomain.com
 
 01 12    * * *   root    HOSTNAME=`hostname`; /usr/bin/sostat | mail -s "$HOSTNAME stats" $EMAIL
-}
+}}}
