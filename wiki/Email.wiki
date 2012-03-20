@@ -4,9 +4,13 @@
 This page describes how to configure email for alerting and reporting.
 
 = How do I configure Sguil to send alerts via email?<br> =
-Mmodify /etc/nsm/securityonion/sguild.email (on the master server) as needed and restart sguild:
+Modify /etc/nsm/securityonion/sguild.email (on the master server) as needed and restart sguild:
 {{{
 sudo nsm_server_ps-restart
+}}}
+Sguild should then output the email configuration in its log file which you can confirm with:
+{{{
+head -20 /var/log/nsm/securityonion/sguild.log
 }}}
 For more information, please see:<br>
 <a href="http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F">http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F</a>
