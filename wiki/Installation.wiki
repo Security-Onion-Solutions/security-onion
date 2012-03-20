@@ -45,5 +45,4 @@ xrandr -s WxH
 {{{
 sudo /usr/local/sbin/nsm_server_user-add
 }}}
-  # Optional: if you'd like to configure email for alerting and reporting, please see:<br>
-[Email]
+  # Optional: [Email configure email for alerting and reporting]
