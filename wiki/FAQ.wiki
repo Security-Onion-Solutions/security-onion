@@ -2,7 +2,7 @@
 
 = What's the recommended procedure for installing Security Onion? =
 
-[Installation]
+[Installation Installation Procedure]
 
 = What do I need to do if I'm behind a proxy? =
 
