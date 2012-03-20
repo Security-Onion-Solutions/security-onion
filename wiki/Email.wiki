@@ -8,7 +8,7 @@ Modify /etc/nsm/securityonion/sguild.email (on the master server) as needed and 
 {{{
 sudo nsm_server_ps-restart
 }}}
-Sguild should then output the email configuration in its log file which you can confirm with:
+You can then verify the email configuration by looking at the top of sguild's log file:
 {{{
 head -20 /var/log/nsm/securityonion/sguild.log
 }}}
