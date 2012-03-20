@@ -5,8 +5,8 @@ This page describes how to configure email for alerting and reporting.
 
 = Details =
 
-How do I configure Sguil to send alerts via email?
-http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F
+How do I configure Sguil to send alerts via email?<br>
+<a href="http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F">http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F</a>
 
 # Install mail server
 sudo apt-get -y install mailutils
