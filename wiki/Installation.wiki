@@ -49,7 +49,4 @@ sudo /usr/local/sbin/nsm_server_user-add
 {{{
 sudo nsm_server_ps-restart
 }}}
-  # Optional: if you'd like Snorby to be able to send emails, you'll need to modify a few files (on the master server).  First, modify /usr/local/share/snorby/config/snorby_config.yml and change the "domain" setting in the Production section to be the FQDN of your Snorby server.  Next, modify /usr/local/share/snorby/config/initializers/mail_config.rb as needed for your mail server.  Finally, kill the "thin" and "delayed_job" processes and then restart Snorby by executing:<br>
-{{{
-sudo /usr/local/share/snorby/snorby_start
-}}}
+  # Optional: if you'd like Snorby to be able to send emails, you'll need to modify a few files (on the master server).  First, modify /usr/local/share/snorby/config/snorby_config.yml and change the "domain" setting in the Production section to be the FQDN of your Snorby server.  Next, modify /usr/local/share/snorby/config/initializers/mail_config.rb as needed for your mail server.
