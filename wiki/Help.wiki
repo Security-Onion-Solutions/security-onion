@@ -26,9 +26,9 @@ sudo service nsm restart
 {{{
 ps aux |grep autoss[h]
 }}}
-  * If you're having problems with Snorby, check its log files in /usr/local/share/snorby/log/ and see if its processes are running:
+  * If you're having problems with Snorby, check the log files in /usr/local/share/snorby/log/ and /var/log/apache2/ and see if its processes are running:
 {{{
-ps aux |grep dela[y]
+ps aux |grep delayed_jo[b]
 }}}
   * Are you able to duplicate the problem on a fresh Security Onion installation?
   * Check the <a href="http://code.google.com/p/security-onion/issues/list">Issue Tracker</a> to see if this is a known issue that we are working on.
