@@ -19,6 +19,9 @@
 
 [Passwords]
 
+= How do I configure email for alerting and reporting? =
+[Email]
+
 = Why is my disk filling up? =
 Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
 
@@ -51,9 +54,6 @@ OR<br>
  - edit usr.sbin.mysqld, copy the nsm line, and change /nsm to the new location<br>
  - edit usr.sbin.tcpdump, copy the nsm line, and change /nsm to the new location<br>
  - service apparmor restart<br>
-
-= How do I configure Sguil to send alerts via email? =
-<a href="http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F">http://nsmwiki.org/Sguil_FAQ#Can_sguil_page_me_when_it_sees_a_particular_alert.3F</a>
 
 = How do I change the fonts in the Sguil client? =
 
@@ -105,10 +105,6 @@ VERSION=20110709
 }}}
 <br>
 and then re-run the upgrade.<br>
-
-= How do I receive an email when my sensor stops receiving traffic? =
-<a href="http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html">http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html</a><br>
-<a href="http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html">http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html</a><br>
 
 = I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver? =
   # Click Applications.<br>
@@ -183,14 +179,6 @@ Controlled by:  /usr/local/sbin/nsm_sensor<br>
 sensor box<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
 Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
-
-= How do I configure the OS to be able to send email (like cronjobs)? =
-{{{
-# Install mail server
-sudo apt-get -y install mailutils
-# Configure mail server
-sudo dpkg-reconfigure exim4-config
-}}}
 
 = Where do I send questions/problems/suggestions? =
 
