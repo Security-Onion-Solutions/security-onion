@@ -17,7 +17,7 @@ sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-o
 {{{
 sudo sostat
 }}}
-  * If any of the NSM processes show up as failed, restart them:
+  * If any of the NSM processes show up as failed, try restarting them:
 {{{
 sudo service nsm restart
 }}}
