@@ -13,15 +13,11 @@ sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-o
 }}}
   * Check the [FAQ].
   * Search the mailing list: <a href="http://groups.google.com/group/security-onion">http://groups.google.com/group/security-onion</a>
-  * Make sure you're not out of disk space:
+  * Run "sostat" for some diagnostics:
 {{{
-df -h
+sudo sostat
 }}}
-  * Check the status of your processes:
-{{{
-sudo service nsm status
-}}}
-  * Try restarting the processes:
+  * If any of the NSM processes show up as failed, restart them:
 {{{
 sudo service nsm restart
 }}}
@@ -34,7 +30,6 @@ ps aux |grep autoss[h]
 {{{
 ps aux |grep dela[y]
 }}}
-
   * Are you able to duplicate the problem on a fresh Security Onion installation?
   * Check the <a href="http://code.google.com/p/security-onion/issues/list">Issue Tracker</a> to see if this is a known issue that we are working on.
   * If all else fails, please join our <a href="http://groups.google.com/group/security-onion">mailing list</a> and send a DETAILED email including the output of the commands above.  Also consider the following when posing your question/problem to the group: <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">http://www.chiark.greenend.org.uk/~sgtatham/bugs.html</a>
