@@ -15,18 +15,9 @@
 = Why do apt-get and the Update Manager show tcl8.5 as held back? =
 [tcl tcl notes]
 
-= What is the root password? =
+= What is the password for root/mysql/Squert? =
 
-Like other Ubuntu-based distributions, there is no root password.  Your default user account has been given sudo permissions.  Graphical utilities requesting administrative access should prompt for password; enter your user password. Command-line utilities that require administrative access can be prefixed with "sudo". For example, to add a user:<br>
-sudo adduser mynewuseraccount
-
-= What is the Squert password? =
-
-Squert authenticates against the Sguil username database, so you should be able to login to Squert using the same username/password you use to login to Sguil.
-
-= What is the MySQL password? =
-
-Security Onion has a blank MySQL password to allow the NSMnow administration scripts to add/delete sensors properly.  MySQL only allows connections from localhost.  Once you've run through Setup and configured your sensors, you might want to change the MySQL password.
+[Passwords]
 
 = Why is my disk filling up? =
 Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
