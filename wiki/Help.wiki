@@ -32,7 +32,6 @@ ps aux |grep autoss[h]
 }}}
   * If you're having problems with Snorby, check its log files in /usr/local/share/snorby/log/ and see if its processes are running:
 {{{
-ps aux |grep thi[n]
 ps aux |grep dela[y]
 }}}
 
