@@ -128,11 +128,17 @@ sudo /usr/local/sbin/nsm_server_user-add
 }}}
 
 = I get periodic MySQL crashes and/or error code 24 "out of resources" when searching in Sguil.  How do I fix that? =
+First, stop sguil and mysql:
 {{{
 sudo nsm_server_ps-stop
 sudo service mysql stop
-# Edit /etc/mysql/my.cnf and add the following in the [mysqld] section (without the # comment sign):
-# open-files-limit        = 4096
+}}}
+Next, edit /etc/mysql/my.cnf and add the following in the [mysqld] section:
+{{{
+open-files-limit        = 4096
+}}}
+Finally, start mysql and sguil:
+{{{
 sudo service mysql start
 sudo nsm_server_ps-start
 }}}
