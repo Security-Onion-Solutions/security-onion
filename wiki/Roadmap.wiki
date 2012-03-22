@@ -19,3 +19,4 @@ Please note that this is all subject to change!
     * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
     * Considering pfring for higher performance
     * Development on the existing 32-bit version of Security Onion will stop so that we can focus on the future
+    * Issue 240:	Squert 1.0
