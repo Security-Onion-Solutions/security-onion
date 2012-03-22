@@ -15,7 +15,7 @@ sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-o
   * Search the mailing list: <a href="http://groups.google.com/group/security-onion">http://groups.google.com/group/security-onion</a>
   * Run "sostat" for some diagnostics:
 {{{
-sudo sostat
+sudo sostat | more
 }}}
   * If any of the NSM processes show up as failed, try restarting them:
 {{{
