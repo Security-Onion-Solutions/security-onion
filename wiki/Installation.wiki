@@ -41,6 +41,8 @@ curl http://testmyids.com
 xrandr -s WxH
 }}}
   # Login to Sguil, Squert (https://server/squert/), or Snorby (https://server:3000) and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs (/nsm/bro/logs/) for in-depth analysis.<br>
+  # Please note that any IDS/NSM system needs to be tuned for the network it's monitoring.  Please see [Managing Alerts].  Your goal should be to run only the signatures you really care about.
+  # Also note that you should be looking at and categorizing alerts every day.  Your goal should be to categorize all events every day.  Neglecting to do so may result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis.<br> 
   # Optional: add new Sguil user accounts with the following:<br>
 {{{
 sudo /usr/local/sbin/nsm_server_user-add
