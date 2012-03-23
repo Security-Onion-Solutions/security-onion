@@ -155,6 +155,15 @@ For more information, please see:<br>
 All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.0 in Security Onion 20120312:<br>
 <a href="http://securityonion.blogspot.com/2012/03/security-onion-20120312-now-available.html">http://securityonion.blogspot.com/2012/03/security-onion-20120312-now-available.html</a>
 
+= Why isn't Snorby showing GeoIP data properly? =
+Try forcing the GeoIP job to run by doing the following:
+{{{
+cd /usr/local/share/snorby/
+sudo RAILS_ENV=production bundle exec rails c
+Snorby::Jobs::GeoipUpdatedbJob.new(true).perform
+quit
+}}}
+
 = Why does Snort segfault every day at 7:01 AM? =
 7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
 <a href="https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion">https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a><br>
