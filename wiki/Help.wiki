@@ -24,11 +24,11 @@ sudo service nsm restart
   * Check log files in /var/log/nsm/ for any errors or possible clues.
   * If this is a sensor sending alerts to master server, is autossh running?
 {{{
-pgrep -l -f autossh
+pgrep -lf autossh
 }}}
   * If you're having problems with Snorby, check the log files in /usr/local/share/snorby/log/ and /var/log/apache2/ and see if its processes are running:
 {{{
-pgrep -l -f delayed_job
+pgrep -lf delayed_job
 }}}
   * Are you able to duplicate the problem on a fresh Security Onion installation?
   * Check the <a href="http://code.google.com/p/security-onion/issues/list">Issue Tracker</a> to see if this is a known issue that we are working on.
