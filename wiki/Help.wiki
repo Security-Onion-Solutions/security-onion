@@ -15,7 +15,7 @@ sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-o
   * Search the mailing list: <a href="http://groups.google.com/group/security-onion">http://groups.google.com/group/security-onion</a>
   * Run "sostat" for some diagnostics:
 {{{
-sudo sostat | more
+sudo sostat | less
 }}}
   * If any of the NSM processes show up as failed, try restarting them:
 {{{
@@ -24,11 +24,11 @@ sudo service nsm restart
   * Check log files in /var/log/nsm/ for any errors or possible clues.
   * If this is a sensor sending alerts to master server, is autossh running?
 {{{
-ps aux |grep autoss[h]
+pgrep -l -f autossh
 }}}
   * If you're having problems with Snorby, check the log files in /usr/local/share/snorby/log/ and /var/log/apache2/ and see if its processes are running:
 {{{
-ps aux |grep delayed_jo[b]
+pgrep -l -f delayed_job
 }}}
   * Are you able to duplicate the problem on a fresh Security Onion installation?
   * Check the <a href="http://code.google.com/p/security-onion/issues/list">Issue Tracker</a> to see if this is a known issue that we are working on.
