@@ -24,6 +24,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
 *Documentation Team*
   * Doug Burks
   * Scott Runnels
+  * Paul Halliday
   * Eric Ooi
 
 = Help Wanted =
