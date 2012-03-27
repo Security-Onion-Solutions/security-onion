@@ -53,4 +53,4 @@ You should check this on a daily basis to make sure your sensor is not dropping 
 sudo /usr/local/sbin/nsm_server_user-add
 }}}
   # Optional: [Email configure email for alerting and reporting]
-  # Optional: Need "remote desktop" access to your Security Onion sensor? [Freenx Install FreeNX.]
+  # Optional: Need "remote desktop" access to your Security Onion sensor? [FreeNX Install FreeNX.]
