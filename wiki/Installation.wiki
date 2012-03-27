@@ -41,10 +41,16 @@ curl http://testmyids.com
 xrandr -s WxH
 }}}
   # Login to Sguil, Squert (https://server/squert/), or Snorby (https://server:3000) and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs (/nsm/bro/logs/) for in-depth analysis.<br>
+  # Run the following to see how your sensor is coping with the load:
+{{{
+sudo sostat
+}}}
+You should check this on a daily basis to make sure your sensor is not dropping packets.  Consider adding it to a cronjob and having it emailed to you (see the "configure email" link below).
   # Please note that any IDS/NSM system needs to be tuned for the network it's monitoring.  Please see [ManagingAlerts].  You should only run the signatures you really care about.
-  # Also note that you should be looking at and categorizing events every day with the goal being to categorize all events every day.  Neglecting to do so may result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis.<br> 
+  # Also note that you should be looking at and categorizing events every day with the goal being to categorize all events every day.  Even if you don't use the Sguil console for your primary analysis, you need to log into into it periodically and F8 old events to keep the RealTime queue from getting too big.  Neglecting to do so may result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis.<br> 
   # Optional: add new Sguil user accounts with the following:<br>
 {{{
 sudo /usr/local/sbin/nsm_server_user-add
 }}}
   # Optional: [Email configure email for alerting and reporting]
+  # Optional: Need "remote desktop" access to your Security Onion sensor? [Freenx Install FreeNX.]
