@@ -22,6 +22,9 @@
 = How do I configure email for alerting and reporting? =
 [Email]
 
+= Where can I read more about the tools contained within Security Onion? =
+[Tools]
+
 = Why is my disk filling up? =
 Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
 
