@@ -1,0 +1,26 @@
+#summary A list of tools included in Security Onion and links to their homepages and documentation.
+
+= Snort =
+Homepage - <a href="http://snort.org">http://snort.org</a>
+
+= Suricata =
+Homepage - <a href="http://www.openinfosecfoundation.org/">http://www.openinfosecfoundation.org/</a>
+
+= Sguil =
+Homepage - <a href="http://sguil.net">http://sguil.net</a><br>
+NSMWiki: <a href="http://nsmwiki.org/">http://nsmwiki.org/</a>
+
+= Squert =
+Homepage - <a href="http://www.squertproject.org/">http://www.squertproject.org/</a>
+
+= Snorby =
+Homepage - <a href="http://snorby.org/">http://snorby.org/</a>
+
+= Bro =
+Homepage - <a href="http://bro-ids.org/">http://bro-ids.org/</a>
+
+= NetworkMiner =
+Homepage - <a href="http://www.netresec.com/?page=NetworkMiner">http://www.netresec.com/?page=NetworkMiner</a>
+
+= Xplico =
+Homepage - <a href="http://www.xplico.org/">http://www.xplico.org/</a>
