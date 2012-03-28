@@ -124,6 +124,14 @@ sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf
 sudo /usr/local/bin/pulledpork_update.sh 
 }}}
 
+= I'm currently running Suricata.  How do I switch to Snort? =
+First, make sure you're running the latest version of Security Onion.  Then run the following commands:
+{{{
+sudo nsm_sensor_ps-stop --only-snort-alert
+sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf
+sudo /usr/local/bin/pulledpork_update.sh 
+}}}
+
 = How do I add a new user to Sguil? =
 You can add new Sguil user accounts with the following (if prompted for server name, enter "securityonion"):<br>
 {{{
