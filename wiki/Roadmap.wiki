@@ -7,9 +7,9 @@ Please note that this is all subject to change!
     * Issue 197:	Snort 2.9.2.1
     * Issue 218: /etc/nsm/gen-msg.map out of date
     * Issue 114: Provide single location for configuring BPF filters
+  * April 2012
     * Issue 226: Rename Bro workers
     * Issue 219: Default web page
-  * April 2012
     * Issue 205: Remove httpry in favor of Bro's http logging
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 239:	autossh should use OpenSSH ServerAliveInterval and ServerAliveCountMax options
