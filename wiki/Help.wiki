@@ -13,6 +13,7 @@ sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-o
 }}}
   * Check the [FAQ].
   * Search the mailing list: <a href="http://groups.google.com/group/security-onion">http://groups.google.com/group/security-onion</a>
+  * Search the documentation and mailing lists of the tools contained within Security Onion: [Tools]
   * Run "sostat" for some diagnostics:
 {{{
 sudo sostat | less
