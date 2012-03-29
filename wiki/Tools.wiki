@@ -1,5 +1,8 @@
 #summary A list of tools included in Security Onion and links to their homepages and documentation.
 
+= Thanks =
+Security Onion would like to thank the following open-source projects for their contribution to our community!
+
 = Snort =
 Homepage - <a href="http://snort.org">http://snort.org</a>
 
