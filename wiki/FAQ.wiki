@@ -180,6 +180,22 @@ quit
 <a href="https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion">https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a><br>
 After updating the rules, Snort is restarted, and the segfault occurs in the OLD instance of Snort (not the NEW instance).  Therefore, the segfault is merely a nuisance log entry and can safely be ignored.
 
+= Barnyard2 is failing with an error like "ERROR: sguil: Expected Confirm 13324 and got: Failed to insert 13324: mysqlexec/db server: Duplicate entry '9-13324' for key 'PRIMARY'".  How do I fix this? =
+
+Sometimes, just restarting Barnyard will clear this up:
+{{{
+sudo nsm_sensor_ps-restart --only-barnyard2
+}}}
+
+Other times, restarting Sguild and then restarting Barnyard will clear it up:
+{{{
+sudo nsm_server_ps-restart
+sudo nsm_sensor_ps-restart --only-barnyard2
+}}}
+
+If that still doesn't fix it, you may have to perform MySQL surgery as described in the Sguil FAQ:
+<a href="http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error">http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a>
+
 = What's the difference between a "server" and a "sensor"? =
 box<br>
 Definition: A physical or virtual machine running the Security Onion operating system.<br>
