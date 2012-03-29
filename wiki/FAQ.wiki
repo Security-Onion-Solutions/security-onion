@@ -25,7 +25,7 @@
 = Where can I read more about the tools contained within Security Onion? =
 [Tools]
 
-= How do I configure a BPF for Snort/Suricata/Daemonlogger? =
+= How do I configure a BPF for Snort/Suricata/Daemonlogger/Bro? =
 [BPF]
 
 = Why is my disk filling up? =
