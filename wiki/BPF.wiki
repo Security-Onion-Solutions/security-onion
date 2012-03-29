@@ -1,10 +1,8 @@
 #summary BPF support in Security Onion
 
-= Introduction =
+= Snort/Suricata/Daemonlogger =
 
 As of Security Onion 20120329, we have support for a central bpf.conf that is passed to Snort, Suricata, and daemonlogger.
-
-= Details =
 
 First, make sure you're running Security Onion 20120329 or higher:<br>
 http://securityonion.blogspot.com/2012/03/security-onion-20120329-now-available.html
