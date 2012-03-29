@@ -20,6 +20,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Tom De Vries
   * Joe Stevensen
   * David Zawdie
+  * Scott Burkhart
 
 *Documentation Team*
   * Doug Burks
