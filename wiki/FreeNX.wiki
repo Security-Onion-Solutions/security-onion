@@ -53,7 +53,7 @@ sudo cp nxsetup /usr/lib/nx/nxsetup
 sudo /usr/lib/nx/nxsetup --install
 }}}
   # During setup indicate you wish to create new RSA keys by typing 'Y' at the prompt and continuing
-  # After setup is complete you will need to grab a copy of the new RSA private key. This will be needed when configuring the server connection on your desktop machine. It is located at var/lib/nxserver/home.ssh/client.id_dsa.key. I'll usually cat it out to the terminal window as it will be needed in the next step. 
+  # After setup is complete you will need to grab a copy of the new RSA private key. This will be needed when configuring the server connection on your desktop machine. It is located at var/lib/nxserver/home/.ssh/client.id_dsa.key. I'll usually cat it out to the terminal window as it will be needed in the next step. 
 
 Now that the FreeNX Server is up and running if you were to attempt to launch Sguil from the desktop link you'll notice that nothing happens. This is due to a symlink change made during the installation that affects the execution of the 'wish' command. Execution of 'wish' launches /usr/bin/wish which is a symlink to /etc/alternatives/wish. Prior to the FreeNX Server installation the symlink /etc/alternatives/wish pointed to /usr/bin/wish8.5 and now points to a newly created symlink /usr/bin/wish-default which points to /usr/bin/wish8.4. You need to change it back so that exection of 'wish', by Sguil, will launch tk8.5 and not tk8.4.
 
