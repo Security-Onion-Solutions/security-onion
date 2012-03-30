@@ -17,10 +17,11 @@ Please note that this is all subject to change!
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 239:	autossh should use OpenSSH ServerAliveInterval and ServerAliveCountMax options
     * Issue 245:	Snort 2.9.2.2
-  * May/June/July 2012 - Big Distro Rebuild (BDR)
-    * Lubuntu 12.04
-    * 64-bit
-    * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
-    * Considering pfring for higher performance
-    * Development on the existing 32-bit version of Security Onion will stop so that we can focus on the future
-    * Issue 240:	Squert 1.0
+  * May/June/July 2012
+    * Issue 247:  Big Distro Rebuild (BDR)
+      * Lubuntu 12.04
+      * 64-bit
+      * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
+      * Considering pfring for higher performance
+      * Development on the existing 32-bit version of Security Onion will stop so that we can focus on the future
+      * Issue 240:	Squert 1.0
