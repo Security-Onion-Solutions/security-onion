@@ -5,11 +5,7 @@ https://www.openpacket.org/
 
 http://sourceforge.net/apps/mediawiki/networkminer/index.php?title=Publicly_available_PCAP_files
 
-http://bittwistw.com/
-
-http://twitter.com/bittwistw
-
-http://old.honeynet.org/scans/scan27/
+http://old.honeynet.org/scans/
 
 http://www.novell.com/connectionmagazine/laurachappell.html
 
