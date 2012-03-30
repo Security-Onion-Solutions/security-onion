@@ -27,6 +27,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Scott Runnels
   * Paul Halliday
   * Eric Ooi
+  * Liam Randall
 
 = Help Wanted =
 Security Onion needs more volunteers in all of the areas defined above.  If Security Onion has provided value to you and/or your organization, please consider giving back to the community by donating your time to the above needs!  If interested, please contact me via email (I won't publish it here, but you can find it on our mailing list).  Thanks!
