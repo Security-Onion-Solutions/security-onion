@@ -20,7 +20,7 @@ Please note that this is all subject to change!
     * Issue 248: sostat doesn't handle single-digit date properly
   * May/June/July 2012
     * Issue 247:  Big Distro Rebuild (BDR)
-      * Lubuntu 12.04
+      * Lubuntu/Xubuntu 12.04
       * 64-bit
       * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
       * Considering pfring for higher performance
