@@ -11,8 +11,8 @@ Please note that this is all subject to change!
     * Issue 242:	Set Suricata runmode to autofp
     * Issue 243:	Remove VLAN setting from pcap_agent.conf
   * April 2012
-    * Issue 226: Rename Bro workers
     * Issue 219: Default web page
+    * Issue 226: Rename Bro workers
     * Issue 205: Remove httpry in favor of Bro's http logging
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 239:	autossh should use OpenSSH ServerAliveInterval and ServerAliveCountMax options
