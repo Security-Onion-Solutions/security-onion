@@ -1,0 +1,18 @@
+#summary Some notes about Ubuntu's UFW firewall
+
+= UFW Documentation=
+
+https://help.ubuntu.com/community/UFW
+
+= Show open ports =
+
+{{{
+sudo ufw status
+}}}
+
+= Open a port =
+Suppose you want to open port 9876 for Xplico:
+
+{{{
+sudo ufw allow 9876/tcp
+}}}
