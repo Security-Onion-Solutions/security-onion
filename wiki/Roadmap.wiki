@@ -18,8 +18,8 @@ Please note that this is all subject to change!
     * Issue 239:	autossh should use OpenSSH ServerAliveInterval and ServerAliveCountMax options
     * Issue 252:	NetworkMiner 1.3
     * Issue 253:	Add NetworkMiner option to Sguil client
-    * Issue 250:	Setup needs to delete /var/www/squert/.scripts/Ip2c/*.md5 before running ip2c.tcl
-    * Issue 251:	/var/www/squert/.scripts/Ip2c/ip2c.tcl needs to run once a week
+    * Issue 250:	Setup needs to delete Squert's ip2c md5 files before running ip2c.tcl
+    * Issue 251:	Squert's ip2c.tcl needs to run once a week
     * Issue 245:	Snort 2.9.2.2
     * Issue 248: sostat doesn't handle single-digit date properly
   * May/June/July 2012
