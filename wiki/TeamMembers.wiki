@@ -31,5 +31,11 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Liam Randall
   * Lawrence Abrams
 
+*Marketing Team*
+We need folks to help spread the word about Security Onion by blogging, tweeting, and using other forms of social media.
+
+*Artwork*
+We need folks to design artwork for the next major version of the distro.
+
 = Help Wanted =
 Security Onion needs more volunteers in all of the areas defined above.  If Security Onion has provided value to you and/or your organization, please consider giving back to the community by donating your time to the above needs!  If interested, please contact me via email (I won't publish it here, but you can find it on our mailing list).  Thanks!
