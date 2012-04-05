@@ -7,6 +7,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
 *Core Development Team*
   * Doug Burks
   * Scott Runnels
+  * We need package maintainers for the next major version of the distro!
 
 *Testing/QA Team*
   * Doug Burks
@@ -22,6 +23,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * David Zawdie
   * Scott Burkhart
   * Sunil Gupta
+  * We can always use more testers!  If interested, please join the <a href="http://groups.google.com/group/security-onion-testing">security-onion-testing mailing list</a>.
 
 *Documentation Team*
   * Doug Burks
