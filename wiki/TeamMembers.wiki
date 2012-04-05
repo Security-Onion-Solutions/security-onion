@@ -33,10 +33,12 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Eric Ooi
   * Liam Randall
   * Lawrence Abrams
+  * Mark Hillick
 
 *Marketing Team*
   * Doug Burks
   * Scott Runnels
+  * Mark Hillick
   * We need folks to help spread the word about Security Onion by blogging, tweeting, and other social media.
 
 *Artwork*
