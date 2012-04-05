@@ -37,7 +37,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
 *Marketing Team*
   * Doug Burks
   * Scott Runnels
-  * We need folks to help spread the word about Security Onion by blogging, tweeting, and other forms of social media.
+  * We need folks to help spread the word about Security Onion by blogging, tweeting, and other social media.
 
 *Artwork*
   * We need folks to design artwork for the next major version of the distro.
