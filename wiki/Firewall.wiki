@@ -19,3 +19,5 @@ Suppose you want to open port 9876 for Xplico:
 {{{
 sudo ufw allow 9876/tcp
 }}}
+
+= UFW - Uncomplicated Firewall=
