@@ -64,3 +64,28 @@ sudo ufw deny 53/tcp
 {{{
 sudo ufw deny 53/udp
 }}}
+==Delete Existing Rule=
+To delete a rule, simply prefix the original rule with delete. For *example:* if the original rule was:
+{{{
+ufw deny 80/tcp
+}}}
+
+Use this to delete it:
+{{{
+sudo ufw delete deny 80/tcp
+}}}
+==Services=
+You can also allow or deny by service name since ufw reads from /etc/services. To see get a list of services:
+{{{
+less /etc/services
+}}}
+==Allow by Service Name=
+*example:* to allow ssh by name
+{{{
+sudo ufw allow ssh
+}}}
+==Deny by Service Name=
+*example:* to deny ssh by name
+{{{
+sudo ufw deny ssh
+}}}
