@@ -1,19 +1,5 @@
 #summary Some notes about Ubuntu's UFW firewall
 
-= UFW Documentation=
-
-https://help.ubuntu.com/community/UFW
-
-= Xplico =
-Xplico runs on port 9876, which is not open to the outside world by default.
-
-= Open a port =
-Suppose you want to open port 9876 for Xplico:
-
-{{{
-sudo ufw allow 9876/tcp
-}}}
-
 = UFW - Uncomplicated Firewall=
 The default firewall configuration tool for Ubuntu is ufw. Developed to ease iptables firewall configuration, ufw provides a user friendly way to create an IPv4 or IPv6 host-based firewall. By default UFW is enabled on security onion.
 
