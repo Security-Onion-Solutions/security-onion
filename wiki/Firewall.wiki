@@ -70,8 +70,20 @@ sudo ufw allow ssh
 sudo ufw deny ssh
 }}}
 
-==Show open ports=
+=Status=
+Checking the status of ufw will tell you if ufw is enabled or disabled and also list the current ufw rules that are applied to your iptables.
 
+To check the status of ufw.
 {{{
 sudo ufw status
+
+Firewall loaded
+To                      Action  	From
+--                      ------  	----
+22:tcp                	DENY    	192.168.99.44
+22:udp               	DENY    	192.168.99.44
+22:tcp                	DENY    	192.168.99.77
+22:udp                	DENY    	192.168.99.77
+22:tcp                 	ALLOW   	192.168.99.0/24
+22:udp                	ALLOW   	192.168.99.0/24
 }}}
