@@ -70,7 +70,7 @@ sudo ufw allow ssh
 sudo ufw deny ssh
 }}}
 
-=Status=
+==Status=
 Checking the status of ufw will tell you if ufw is enabled or disabled and also list the current ufw rules that are applied to your iptables.
 
 To check the status of ufw.
