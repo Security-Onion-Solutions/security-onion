@@ -21,3 +21,27 @@ sudo ufw allow 9876/tcp
 }}}
 
 = UFW - Uncomplicated Firewall=
+The default firewall configuration tool for Ubuntu is ufw. Developed to ease iptables firewall configuration, ufw provides a user friendly way to create an IPv4 or IPv6 host-based firewall. By default UFW is enabled on security onion.
+
+Note: Gufw is a GUI front end for the ufw.
+
+==Enable and Disable=
+example: to turn ufw on:
+sudo ufw enable
+example: to turn ufw off:
+sudo ufw disable
+Allow and Deny
+***Allow***
+example: to allow incoming tcp and udp packet port 53
+sudo ufw allow 53
+example:  to allow incoming tcp packets on port 53
+sudo ufw allow 53/tcp
+example: to allow incoming up packets on port 53
+sudo ufw allow 53/udp
+***Deny***
+example: To deny tcp and udp packets on port 53
+sudo ufw deny 53
+example: To deny incoming tcp packets on port 53
+sudo ufw deny 53/tcp
+example: To deny incoming udp packets on port 53
+sudo ufw deny 53/udp
