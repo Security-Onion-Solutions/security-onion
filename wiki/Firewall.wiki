@@ -30,10 +30,13 @@ Note: Gufw is a GUI front end for the ufw.
 {{{
 sudo ufw enable
 }}}
-example: to turn ufw off:
+*example:* to turn ufw off:
+{{{
 sudo ufw disable
-Allow and Deny
-***Allow***
+}}}
+==Allow and Deny=
+
+===Allow=
 example: to allow incoming tcp and udp packet port 53
 sudo ufw allow 53
 example:  to allow incoming tcp packets on port 53
