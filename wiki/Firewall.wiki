@@ -52,9 +52,15 @@ sudo ufw allow 53/udp
 }}}
 
 ===Deny=
-example: To deny tcp and udp packets on port 53
+*example:* To deny tcp and udp packets on port 53
+{{{
 sudo ufw deny 53
-example: To deny incoming tcp packets on port 53
+}}}
+*example:* To deny incoming tcp packets on port 53
+{{{
 sudo ufw deny 53/tcp
-example: To deny incoming udp packets on port 53
+}}}
+*example:* To deny incoming udp packets on port 53
+{{{
 sudo ufw deny 53/udp
+}}}
