@@ -27,7 +27,9 @@ Note: Gufw is a GUI front end for the ufw.
 
 ==Enable and Disable=
 *example:* to turn ufw on:
+{{{
 sudo ufw enable
+}}}
 example: to turn ufw off:
 sudo ufw disable
 Allow and Deny
