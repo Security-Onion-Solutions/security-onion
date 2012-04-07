@@ -87,3 +87,5 @@ To                      Action  	From
 22:tcp                 	ALLOW   	192.168.99.0/24
 22:udp                	ALLOW   	192.168.99.0/24
 }}}
+
+*note:* if you change the listening port for ssh. make sure you allow it in the ufw!
