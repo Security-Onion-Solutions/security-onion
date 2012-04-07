@@ -4,12 +4,6 @@
 
 https://help.ubuntu.com/community/UFW
 
-= Show open ports =
-
-{{{
-sudo ufw status
-}}}
-
 = Xplico =
 Xplico runs on port 9876, which is not open to the outside world by default.
 
@@ -88,4 +82,10 @@ sudo ufw allow ssh
 *example:* to deny ssh by name
 {{{
 sudo ufw deny ssh
+}}}
+
+==Show open ports=
+
+{{{
+sudo ufw status
 }}}
