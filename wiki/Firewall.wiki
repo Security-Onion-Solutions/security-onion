@@ -65,7 +65,7 @@ sudo ufw deny 53/tcp
 sudo ufw deny 53/udp
 }}}
 ==Delete Existing Rule=
-To delete a rule, simply prefix the original rule with delete. For *example:* if the original rule was:
+To delete a rule, simply prefix the original rule with delete.
 {{{
 ufw deny 80/tcp
 }}}
