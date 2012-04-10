@@ -8,8 +8,6 @@ export http_proxy=https://server:port
 export https_proxy=https://server:port
 export ftp_proxy=https://server:port
 }}}
-NOTE: You MAY also need to include the PERL_LWP_ENV_PROXY variable for PulledPork (waiting on confirmation).<br>
-<br>
 If you're going to run something using sudo, remember to use the "-i" option to force it to process the environment variables.  For example:<br>
 {{{
 sudo -i bash /path/to/security-onion-upgrade.sh
