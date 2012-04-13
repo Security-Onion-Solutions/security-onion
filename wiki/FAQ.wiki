@@ -1,22 +1,18 @@
 #summary Frequently Asked Questions
 
 = What's the recommended procedure for installing Security Onion? =
-
 [Installation Installation Procedure]
 
 = What do I need to do if I'm behind a proxy? =
-
 [Proxy Proxy Configuration]
 
 = How do I install Security Onion updates? =
-
 [Upgrade Upgrade Procedure]
 
 = Why do apt-get and the Update Manager show tcl8.5 as held back? =
 [tcl tcl notes]
 
 = What is the password for root/mysql/Squert? =
-
 [Passwords]
 
 = How do I configure email for alerting and reporting? =
@@ -30,6 +26,9 @@
 
 = Where can I find interesting pcaps to replay? =
 [Pcaps]
+
+= What are the default firewall settings and how do I change them? =
+[Firewall]
 
 = Can Security Onion run in IPS mode? =
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
