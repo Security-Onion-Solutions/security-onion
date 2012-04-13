@@ -1,7 +1,7 @@
 #summary Some notes about Ubuntu's UFW firewall
 
 = UFW - Uncomplicated Firewall=
-The default firewall configuration tool for Ubuntu is ufw. Developed to ease iptables firewall configuration, ufw provides a user friendly way to create an IPv4 or IPv6 host-based firewall. By default UFW is enabled on security onion.
+The default firewall configuration tool for Ubuntu is ufw. By default UFW is enabled on security onion.
 
 Note: [https://help.ubuntu.com/community/Gufw Gufw] is a GUI front end for the ufw.
 
