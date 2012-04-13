@@ -15,9 +15,9 @@ sudo ufw disable
 }}}
 ==Allow/Deny=
 
-*example:* allow irc port 6667
+*example:* allow port 9876 for Xplico
 {{{
-sudo ufw allow 6667
+sudo ufw allow 9876/tcp
 }}}
 *example:* allow irc port range 6667 - 7000
 {{{
