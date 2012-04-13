@@ -10,7 +10,7 @@ Note: [https://help.ubuntu.com/community/Gufw Gufw] is a GUI front end for the u
 {{{
 sudo ufw enable
 }}}
-*example:* to turn ufw off:
+
 {{{
 sudo ufw disable
 }}}
@@ -31,4 +31,4 @@ sudo ufw deny 443
 less /etc/services
 }}}
 
-for more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
+Note: for more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
