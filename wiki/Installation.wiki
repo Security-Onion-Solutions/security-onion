@@ -6,7 +6,7 @@
 
 - If you're just evaluating Security Onion, the short answer is:<br>
   # Hardware requirements: you might be able to get by with 512MB RAM, but you really need 1GB or more.  Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
-  # <a href="http://sourceforge.net/projects/security-onion/files/">Download</a>, verify, and boot the ISO image.<br>
+  # <a href="http://sourceforge.net/projects/security-onion/files/">Download the ISO image</a>, verify its checksum, and boot from it.<br>
   # Run through the Xubuntu installer.<br>
   # Reboot into your new installation and double-click the Setup shortcut.  Follow the prompts.<br>
   # Analyze alerts using Sguil, Squert, or Snorby.<br>
