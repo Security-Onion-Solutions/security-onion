@@ -6,7 +6,6 @@ The default firewall configuration tool for Ubuntu is ufw. By default UFW is ena
 Note: [https://help.ubuntu.com/community/Gufw Gufw] is a GUI front end for the ufw.
 
 ==Enable/Disable=
-*example:* to turn ufw on:
 {{{
 sudo ufw enable
 }}}
@@ -28,7 +27,6 @@ sudo ufw allow 6667:7000
 {{{
 sudo ufw deny 443
 }}}
-less /etc/services
-}}}
+
 ===Note: for more info you can visit the UFW documentation site.
 https://help.ubuntu.com/community/UFW===
