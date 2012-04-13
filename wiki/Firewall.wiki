@@ -3,8 +3,6 @@
 = UFW - Uncomplicated Firewall=
 The default firewall configuration tool for Ubuntu is ufw. By default UFW is enabled on security onion.
 
-Note: [https://help.ubuntu.com/community/Gufw Gufw] is a GUI front end for the ufw.
-
 ==Enable/Disable=
 {{{
 sudo ufw enable
@@ -29,3 +27,5 @@ sudo ufw deny 443
 }}}
 
 for more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
+
+Note: [https://help.ubuntu.com/community/Gufw Gufw] is a GUI front end for the ufw.
