@@ -30,6 +30,5 @@ sudo ufw deny 443
 }}}
 less /etc/services
 }}}
-
-Note: for more info you can visit the UFW documentation site.
-https://help.ubuntu.com/community/UFW
+===Note: for more info you can visit the UFW documentation site.
+https://help.ubuntu.com/community/UFW===
