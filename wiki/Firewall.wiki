@@ -28,5 +28,4 @@ sudo ufw allow 6667:7000
 sudo ufw deny 443
 }}}
 
-===Note: for more info you can visit the UFW documentation site.
-https://help.ubuntu.com/community/UFW===
+for more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
