@@ -13,6 +13,7 @@ Please note that this is all subject to change!
   * April 2012
     * Issue 219: Default web page
     * Issue 226: Rename Bro workers
+    * Issue 255: Add /etc/cron.d/nsm-watchdog back to nsmnow-admin-scripts package
     * Issue 205: Remove httpry in favor of Bro's http logging
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 239:	autossh should use OpenSSH ServerAliveInterval and ServerAliveCountMax options
