@@ -5,7 +5,7 @@ The default firewall configuration tool for Ubuntu is ufw. By default UFW is ena
 
 Note: [https://help.ubuntu.com/community/Gufw Gufw] is a GUI front end for the ufw.
 
-==Enable and Disable=
+==Enable/Disable=
 *example:* to turn ufw on:
 {{{
 sudo ufw enable
@@ -14,78 +14,21 @@ sudo ufw enable
 {{{
 sudo ufw disable
 }}}
-==Allow and Deny=
+==Allow/Deny=
 
-===Allow=
-
-*example:* to allow incoming tcp and udp packet port 53
+*example:* allow irc port 6667
 {{{
-sudo ufw allow 53
+sudo ufw allow 6667
 }}}
-*example:* to allow incoming tcp packets on port 53
+*example:* allow irc port range 6667 - 7000
 {{{
-sudo ufw allow 53/tcp
+sudo ufw allow 6667:7000
 }}}
-*example:* to allow incoming up packets on port 53
+*example:* deny https
 {{{
-sudo ufw allow 53/udp
+sudo ufw deny 443
 }}}
-
-===Deny=
-*example:* To deny tcp and udp packets on port 53
-{{{
-sudo ufw deny 53
-}}}
-*example:* To deny incoming tcp packets on port 53
-{{{
-sudo ufw deny 53/tcp
-}}}
-*example:* To deny incoming udp packets on port 53
-{{{
-sudo ufw deny 53/udp
-}}}
-==Delete Existing Rule=
-To delete a rule, simply prefix the original rule with delete.
-{{{
-ufw deny 80/tcp
-}}}
-
-Use this to delete it:
-{{{
-sudo ufw delete deny 80/tcp
-}}}
-==Services=
-You can also allow or deny by service name since ufw reads from /etc/services. To see get a list of services:
-{{{
 less /etc/services
 }}}
-==Allow by Service Name=
-*example:* to allow ssh by name
-{{{
-sudo ufw allow ssh
-}}}
-==Deny by Service Name=
-*example:* to deny ssh by name
-{{{
-sudo ufw deny ssh
-}}}
 
-==Status=
-Checking the status of ufw will tell you if ufw is enabled or disabled and also list the current ufw rules that are applied to your iptables.
-
-To check the status of ufw.
-{{{
-sudo ufw status
-
-Firewall loaded
-To                      Action  	From
---                      ------  	----
-22:tcp                	DENY    	192.168.99.44
-22:udp               	DENY    	192.168.99.44
-22:tcp                	DENY    	192.168.99.77
-22:udp                	DENY    	192.168.99.77
-22:tcp                 	ALLOW   	192.168.99.0/24
-22:udp                	ALLOW   	192.168.99.0/24
-}}}
-
-*note:* if you change the listening port for ssh. make sure you allow it in the ufw!
+for more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
