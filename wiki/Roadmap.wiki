@@ -23,12 +23,13 @@ Please note that this is all subject to change!
     * Issue 256: Update Setup to allow running multiple times in sensor-->server config
     * Issue 257: Setup should create snort.stats if user chooses Suricata
     * Issue 245: Snort 2.9.2.2
+  * May 2012
     * Issue 205: Remove httpry in favor of Bro's http logging
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 239: autossh should use OpenSSH ServerAliveInterval and ServerAliveCountMax options
     * Issue 252: NetworkMiner 1.3
     * Issue 253: Add NetworkMiner option to Sguil client
-  * May/June/July 2012
+  * June/July/August 2012
     * Issue 247:  Big Distro Rebuild (BDR)
       * Lubuntu/Xubuntu 12.04
       * 64-bit
