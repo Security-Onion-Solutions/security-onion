@@ -30,6 +30,9 @@
 = What are the default firewall settings and how do I change them? =
 [Firewall]
 
+= Can I be alerted when an interface stops receiving traffic? =
+[SensorStopsSeeingTraffic]
+
 = Can Security Onion run in IPS mode? =
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
