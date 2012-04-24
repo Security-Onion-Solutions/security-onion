@@ -13,10 +13,8 @@ http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.h
 Here's another option contributed by Jerry Shenk:
 {{{
 #!/bin/sh
-#script to monitor Security Onion activity for the past hour to alert
-on inactivity
-#Inactivity could be due to a connection having been removed or some
-process failing
+#script to monitor Security Onion activity for the past hour to alert on inactivity
+#Inactivity could be due to a connection having been removed or some process failing
 MAILTO=idsadmin@copmany.com
 DATE=`date`
 SUBJECT="`hostname` Security Onion inactivity alert `date`"
