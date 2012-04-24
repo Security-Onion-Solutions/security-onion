@@ -1,5 +1,47 @@
 #summary Alerting when an interface stops receiving traffic
 
+Just like in everything, there's always more than one way to do it!  Here's one option:
+
 http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html
 
 http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html
+
+Here's another option contributed by Jerry Shenk:
+{{{
+#!/bin/sh
+#script to monitor Security Onion activity for the past hour to alert
+on inactivity
+#Inactivity could be due to a connection having been removed or some
+process failing
+MAILTO=idsadmin@copmany.com
+DATE=`date`
+SUBJECT="`hostname` Security Onion inactivity alert `date`"
+LIMIT=5
+REPORT=/root/so-lasthour.txt
+
+echo $SUBJECT > /root/edgerouter.log
+
+if test ` mysql -N -B --user root --database securityonion_db -e
+"SELECT COUNT(signature)as cnt, signature FROM event WHERE status<>1
+and timestamp>=date_sub(now(), interval 3 hour) GROUP BY signature
+ORDER BY cnt DESC LIMIT 20;" | grep -c .` -le $LIMIT
+  then
+     echo "Too few events"
+
+     echo "non-URL signatures" > $REPORT
+     mysql -N -B --user root --database securityonion_db -e "SELECT
+COUNT(signature)as cnt, signature FROM event WHERE status<>1 and
+timestamp>=date_sub(now(), interval 3 hour) GROUP BY signature ORDER
+BY cnt DESC LIMIT 20;" >> $REPORT
+     echo "" >> $REPORT
+     echo "URL signatures" >> $REPORT
+     mysql -N -B --user root --database securityonion_db -e "SELECT
+COUNT(signature)as cnt, signature FROM event WHERE status=1 and
+timestamp>=date_sub(now(), interval 3 hour) GROUP BY signature ORDER
+BY cnt DESC LIMIT 20;" >> $REPORT
+     cat $REPORT | mail -s "$SUBJECT" $MAILTO
+
+  else
+     echo "Acceptible number of events"
+  fi
+}}}
