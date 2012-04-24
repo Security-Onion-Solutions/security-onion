@@ -1,0 +1,5 @@
+#summary Alerting when an interface stops receiving traffic
+
+http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html
+
+http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html
