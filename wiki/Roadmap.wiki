@@ -23,6 +23,7 @@ Please note that this is all subject to change!
     * Issue 256: Update Setup to allow running multiple times in sensor-->server config
     * Issue 257: Setup should create snort.stats if user chooses Suricata
     * Issue 245: Snort 2.9.2.2
+    * Issue 259: Update Security Onion logo
   * May 2012
     * Issue 205: Remove httpry in favor of Bro's http logging
     * Issue 146: ELSA (web-based interface for logs)
