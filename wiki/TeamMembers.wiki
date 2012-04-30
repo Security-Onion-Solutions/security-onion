@@ -39,10 +39,11 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Doug Burks
   * Scott Runnels
   * Mark Hillick
-  * We need folks to help spread the word about Security Onion by blogging, tweeting, and other social media.
+  * We need more folks to help spread the word about Security Onion by blogging, tweeting, and other social media.
 
 *Artwork*
-  * We need folks to design artwork for the next major version of the distro.
+  * Jack Blanchard
+  * We need more folks to design artwork for the next major version of the distro.
 
 = Help Wanted =
 Security Onion needs more volunteers in all of the areas defined above.  If Security Onion has provided value to you and/or your organization, please consider giving back to the community by donating your time to the above needs!  If interested, please contact Doug Burks via email (if you're on our mailing list you know what the address is).  Thanks!
