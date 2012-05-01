@@ -35,27 +35,23 @@ sudo broctl restart
 
 From Phillip Wang:
 
-Just to contribute, and for others to reference, here are some examples of what I've got working:
+"Just to contribute, and for others to reference, here are some examples of what I've got working"
 
 {{{
 #Nothing from src host to dst port
-
 !(src host xxx.xxx.xxx.xxx && dst port 161) &&
 
 #Nothing from src host to dst host and dst port
-
 !(src host xxx.xxx.xxx.xxx && dst host xxx.xxx.xxx.xxx && dst port 80) &&
 
 #Nothing to or from:
-
 !(host xxx.xxx.xxx.xxx) &&
 
 #Last entry has no final &&
-
 !(host xxx.xxx.xxx.xxx)
 }}}
 
-From Seth Hall:
+From Seth Hall regarding VLAN tags:
 
 "(not (host 192.168.53.254 or host 192.168.53.60 or host 192.168.53.69 or host 192.168.53.234)) or (vlan and (not (host 192.168.53.254 or host 192.168.53.60 or host 192.168.53.69 or host 192.168.53.234)))
 
