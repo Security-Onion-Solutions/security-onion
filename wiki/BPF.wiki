@@ -67,7 +67,7 @@ Once the "vlan" tag is included in the filter, all subsequent expressions to the
 
 Also, I'm assuming that any tools you are running will support vlan tags and no tags simultaneously.  Bro 2.0 should work fine at least.
 
-= Troubleshooting =
+= Troubleshooting BPF using tcpdump =
 
 http://taosecurity.blogspot.com/2004/09/understanding-tcpdumps-d-option-have.html
 
