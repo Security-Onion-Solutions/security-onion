@@ -48,5 +48,7 @@ Also, I'm assuming that any tools you are running will support vlan tags and no 
 = Troubleshooting =
 
 http://taosecurity.blogspot.com/2004/09/understanding-tcpdumps-d-option-have.html
+
 http://taosecurity.blogspot.com/2004/12/understanding-tcpdumps-d-option-part-2.html
+
 http://taosecurity.blogspot.com/2008/12/bpf-for-ip-or-vlan-traffic.html 
