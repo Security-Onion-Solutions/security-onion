@@ -31,4 +31,3 @@ note:  make sure you allow the new ssh port in the ufw if you're using the firew
 {{{
 sudo ufw allow 31337/tcp
 }}}
-
