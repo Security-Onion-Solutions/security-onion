@@ -9,6 +9,7 @@ note: you can use your favorite text editor (e.g., vi, gedit, nano, emacs) to ed
 vi /etc/ssh/sshd_conf 
 }}}
  
+<a href="http://s1165.photobucket.com/albums/q581/labrams132/?action=view&amp;current=ScreenShot2012-04-07at105424PM.png" target="_blank"><img src="http://i1165.photobucket.com/albums/q581/labrams132/ScreenShot2012-04-07at105424PM.png" border="0" alt="Photobucket"></a>
 
 Perform a graceful restart on the ssh daemon so that it will now start listening on port 31337.
 
