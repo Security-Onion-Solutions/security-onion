@@ -105,6 +105,9 @@ Security Onion would like to thank the following open-source projects for their 
 <a href="http://oinkmaster.sourceforge.net/">http://oinkmaster.sourceforge.net/</a><br>
 "Oinkmaster is a script that will help you update and manage your Snort rules. It is released under the BSD license and will work on most platforms that can run Perl scripts, e.g. Linux, BSD, Windows, Mac OS X, Solaris, etc. Oinkmaster can be used to update and manage the VRT licensed rules, the community rules, the bleeding-snort rules and other third party rules, including your own local rules."
 
+== OSSEC ==
+<a href="http://www.ossec.net/">http://www.ossec.net/</a><br>
+"OSSEC is an Open Source Host-based Intrusion Detection System. It performs log analysis, file integrity checking, policy monitoring, rootkit detection, real-time alerting and active response."
 == ostinato ==
 <a href="http://code.google.com/p/ostinato/">http://code.google.com/p/ostinato/</a><br>
 "Ostinato is an open-source, cross-platform network packet crafter/traffic generator and analyzer with a friendly GUI. Craft and send packets of several streams with different protocols at different rates."
