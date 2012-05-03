@@ -21,7 +21,7 @@ sudo nsm_sensor_ps-restart
 
 = Bro =
 
-Since there is one Bro config for ALL interfaces on the machine (as opposed to Snort/Suricata/Daemonlogger where we have one config for each interface), it cannot use the above configuration.  The recommended way to configure a BPF for Bro is to add the following to local.bro:
+Since there is one Bro config for ALL interfaces on the machine (as opposed to Snort/Suricata/Daemonlogger where we have one config for each interface), it cannot use the above configuration.  The recommended way to configure a BPF for Bro is to add the following to /nsm/bro/spool/policy/site/local.bro:
 {{{
 redef cmd_line_bpf_filter = "whatever your filter is";
 }}}
