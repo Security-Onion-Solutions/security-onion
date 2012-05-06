@@ -213,6 +213,16 @@ sudo nsm_sensor_ps-restart --only-barnyard2
 If that still doesn't fix it, you may have to perform MySQL surgery on the database "securityonion_db" as described in the Sguil FAQ:
 <a href="http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error">http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a>
 
+= How do I access Xplico with a hostname instead of IP address? =
+From Gianluca Costa:
+"Xplico has embedded (in its PHP code) a Http-proxy, this proxy is used to show the web pages, emulating, for example, the original cache of the user.
+By default the XI url must be an IP address (wiki: http://wiki.xplico.org/doku.php?id=interface#browser ), the only exception to this rule is the url http://demo.xplico.org (for obvious reasons).
+If you use as url a name (not an ip) then XI give you a blank page, because XI searches your url in the decoded data.
+
+To change this behavior you must modify the PHP code:<br>
+ - file /opt/xplico/xi/cake/dispatcher.php<br>
+ - replace demo.xplico.org with your host name (used in the url)<br>"
+
 = What's the difference between a "server" and a "sensor"? =
 box<br>
 Definition: A physical or virtual machine running the Security Onion operating system.<br>
