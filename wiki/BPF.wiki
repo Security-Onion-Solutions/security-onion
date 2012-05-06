@@ -7,7 +7,7 @@ As of Security Onion 20120329, we have support for a central bpf.conf that is pa
 First, make sure you're running Security Onion 20120329 or higher:<br>
 http://securityonion.blogspot.com/2012/03/security-onion-20120329-now-available.html
 
-This update will create a bpf.conf file for each sensor interface on your system.  For example, if you have two sensor interfaces (eth0 and eth1), you'll now have two bpf.conf files:
+This update will create a bpf.conf file for each sensor interface on your system.  For example, if you have two sensor interfaces (eth0 and eth1), you'll now have two bpf.conf files:<br>
 /etc/nsm/$HOSTNAME-eth0/bpf.conf<br>
 /etc/nsm/$HOSTNAME-eth1/bpf.conf
 
