@@ -8,7 +8,7 @@ First, make sure you're running Security Onion 20120329 or higher:<br>
 http://securityonion.blogspot.com/2012/03/security-onion-20120329-now-available.html
 
 This update will create a bpf.conf file for each sensor interface on your system.  For example, if you have two sensor interfaces (eth0 and eth1), you'll now have two bpf.conf files:
-/etc/nsm/$HOSTNAME-eth0/bpf.conf
+/etc/nsm/$HOSTNAME-eth0/bpf.conf<br>
 /etc/nsm/$HOSTNAME-eth1/bpf.conf
 
 The NSM scripts now pass the "-F /etc/nsm/$HOSTNAME-$INTERFACE/bpf.conf" to Snort and Suricata and "-f /etc/nsm/$HOSTNAME-$INTERFACE/bpf.conf" to daemonlogger.  However, Suricata's afpacket mode currently doesn't support bpf.  I've created Suricata feature request #440 for this:<br>
