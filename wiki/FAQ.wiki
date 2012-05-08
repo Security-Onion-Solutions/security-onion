@@ -180,8 +180,8 @@ For more information, please see:<br>
 [AddingLocalRules Adding local rules and testing them with scapy]
 
 = Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically? =
-All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.0 in Security Onion 20120312:<br>
-<a href="http://securityonion.blogspot.com/2012/03/security-onion-20120312-now-available.html">http://securityonion.blogspot.com/2012/03/security-onion-20120312-now-available.html</a>
+All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
+<a href="http://securityonion.blogspot.com/2012/03/security-onion-20120321-now-available.html">http://securityonion.blogspot.com/2012/03/security-onion-20120321-now-available.html</a>
 
 = Why isn't Snorby showing GeoIP data properly? =
 Try forcing the GeoIP job to run by doing the following:
