@@ -210,6 +210,13 @@ sudo nsm_server_ps-restart
 sudo nsm_sensor_ps-restart --only-barnyard2
 }}}
 
+If that doesn't work, then try also restarting mysql:
+{{{
+sudo service mysql restart
+sudo nsm_server_ps-restart
+sudo nsm_sensor_ps-restart --only-barnyard2
+}}}
+
 If that still doesn't fix it, you may have to perform MySQL surgery on the database "securityonion_db" as described in the Sguil FAQ:
 <a href="http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error">http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a>
 
