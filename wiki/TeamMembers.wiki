@@ -24,6 +24,8 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Scott Burkhart
   * Sunil Gupta
   * Victor Julien
+  * Mark Hillick
+  * Jason Boss
   * We can always use more testers!  If interested, please join the <a href="http://groups.google.com/group/security-onion-testing">security-onion-testing mailing list</a>.
 
 *Documentation Team*
