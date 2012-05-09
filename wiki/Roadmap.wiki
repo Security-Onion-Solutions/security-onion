@@ -26,7 +26,7 @@ Please note that this is all subject to change!
     * Issue 259: Update Security Onion logo
   * May 2012
     * Issue 239: autossh tunnel from sensor to server needs to be more robust
-    * Issue 205: Remove httpry in favor of Bro's http logging
+    * Issue 205: Bro's http.log needs to be per-interface
     * Issue 264: NSM scripts are missing the bro cron job
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 252: NetworkMiner 1.3
