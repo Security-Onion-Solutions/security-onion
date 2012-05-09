@@ -28,6 +28,7 @@ Please note that this is all subject to change!
     * Issue 239: autossh tunnel from sensor to server needs to be more robust
     * Issue 205: Bro's http.log needs to be per-interface
     * Issue 264: NSM package is missing the bro cron job
+    * Issue 265: Upgrade httpry_agent to http_agent to support Bro logs
     * Issue 146: ELSA (web-based interface for logs)
     * Issue 252: NetworkMiner 1.3
     * Issue 253: Add NetworkMiner option to Sguil client
