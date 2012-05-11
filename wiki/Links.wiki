@@ -1,0 +1,25 @@
+#summary Random Links to other sites talking about Security Onion
+
+http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
+
+http://eyeis.net/2012/03/clap-be-amazed-now-go-defend/
+
+http://security.crudtastic.com/?p=569
+
+http://www.gigaco.com/tag/security-onion/
+
+http://www.infosecisland.com/videos-view/19641-Security-Onion-Intrusion-Detection-System-Setup-Tutorial.html
+
+http://hakin9.org/security-onion-exploiting-software-032012/
+
+http://stackoverflow.com/tags/snort/info
+
+http://pauldotcom.com/2012/01/security-onion---snorby-now-in.html
+
+http://www.hackeire.net/2011/11/hackeire-2011-ramblings-part-1.html
+
+http://www.hackeire.net/2011/12/hackeire-2011-ramblings-part-2.html
+
+http://www.networkworld.com/community/blog/peeling-security-onion
+
+http://holisticinfosec.org/toolsmith/pdf/may2011.pdf
