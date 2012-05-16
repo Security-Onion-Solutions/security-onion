@@ -1,5 +1,7 @@
 #summary Random Links to other sites talking about Security Onion
 
+http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html
+
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
 
 http://eyeis.net/2012/03/clap-be-amazed-now-go-defend/
