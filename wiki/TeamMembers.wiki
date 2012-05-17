@@ -36,6 +36,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Liam Randall
   * Lawrence Abrams
   * Mark Hillick
+  * Joe Hargis
 
 *Marketing Team*
   * Doug Burks
