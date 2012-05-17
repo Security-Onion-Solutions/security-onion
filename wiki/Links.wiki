@@ -1,5 +1,7 @@
 #summary Random Links to other sites talking about Security Onion
 
+http://tadaka.net/downloads/SecurityOnion-UTOS2012.pdf
+
 http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html
 
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
