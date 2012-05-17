@@ -20,8 +20,7 @@ The iwidgets package is part of the incr tcl extension and is
 available as a port/package most systems.
 See http://www.tcltk.com/iwidgets/ for more info.
 }}}
-This is related to the previous question.  See:
-[tcl tcl notes]
+This is related to the previous question.  See [tcl tcl notes].
 
 = What is the password for root/mysql/Squert? =
 [Passwords]
