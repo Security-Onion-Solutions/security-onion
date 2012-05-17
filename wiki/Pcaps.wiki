@@ -17,6 +17,10 @@ https://www.openpacket.org/post/showthread/49
 
 https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Public_Data_Sets
 
+http://wiki.wireshark.org/SampleCaptures#Sample_Captures
+
+http://forensicscontest.com/puzzles
+
 = tcpreplay =
 You can use tcpreplay to replay any of these pcaps on your Security Onion sensor.  For example, please see:
 http://securityonion.blogspot.com/2011/01/introduction-to-sguil-and-squert-part-3.html
