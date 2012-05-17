@@ -25,9 +25,6 @@ This is related to the previous question.  See [tcl tcl notes].
 = What is the password for root/mysql/Squert? =
 [Passwords]
 
-= What can I do to decrease the size of my MySQL database? =
-You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
-
 = How do I configure email for alerting and reporting? =
 [Email]
 
@@ -45,6 +42,9 @@ You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
 = Can I be alerted when an interface stops receiving traffic? =
 [SensorStopsSeeingTraffic]
+
+= What can I do to decrease the size of my MySQL database? =
+You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
 = Can Security Onion run in IPS mode? =
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
