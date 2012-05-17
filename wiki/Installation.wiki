@@ -47,7 +47,7 @@ sudo sostat | less
 }}}
   # Please note that any IDS/NSM system needs to be tuned for the network it's monitoring.  Please see [ManagingAlerts].  You should only run the signatures you really care about.
   # Also note that you should be looking at and categorizing events every day with the goal being to categorize all events every day.  Even if you don't use the Sguil console for your primary analysis, you need to log into into it periodically and F8 old events to keep the RealTime queue from getting too big.  Neglecting to do so may result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis.<br> 
-  # Set the DAYSTOKEEP variable in /etc/nsm/securityonion.conf (on the server running the Sguil database) to however many days you want to keep in your archive.  The default is 365, but you may need to adjust it based on your available disk space and your organization's response policy.
+  # Set the DAYSTOKEEP variable in /etc/nsm/securityonion.conf (on the server running the Sguil database) to however many days you want to keep in your archive.  The default is 365, but you may need to adjust it based on your organization's response policy and your available disk space.
   # Optional: Exclude unnecessary traffic from your monitoring using [BPF].
   # Optional: add new Sguil user accounts with the following:<br>
 {{{
