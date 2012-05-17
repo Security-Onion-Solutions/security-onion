@@ -12,6 +12,17 @@
 = Why do apt-get and the Update Manager show tcl8.5 as held back? =
 [tcl tcl notes]
 
+= Why do I get the following error when starting Sguil? =
+{{{
+Application initialization failed: no display name and no $DISPLAY environment variable
+ERROR: Cannot fine the Iwidgets extension.
+The iwidgets package is part of the incr tcl extension and is
+available as a port/package most systems.
+See http://www.tcltk.com/iwidgets/ for more info.
+}}}
+This is related to the previous question.  See:
+[tcl tcl notes]
+
 = What is the password for root/mysql/Squert? =
 [Passwords]
 
