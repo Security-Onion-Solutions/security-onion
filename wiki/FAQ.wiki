@@ -25,6 +25,9 @@ This is related to the previous question.  See [tcl tcl notes].
 = What is the password for root/mysql/Squert? =
 [Passwords]
 
+= What can I do to decrease the size of my MySQL database? =
+You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
+
 = How do I configure email for alerting and reporting? =
 [Email]
 
