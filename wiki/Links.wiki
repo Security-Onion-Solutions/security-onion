@@ -24,16 +24,21 @@ http://www.gigaco.com/tag/security-onion/
 InfoSec Island Security Onion Intrusion Detection System Setup Tutorial<br>
 http://www.infosecisland.com/videos-view/19641-Security-Onion-Intrusion-Detection-System-Setup-Tutorial.html
 
+Hakin9.org<br>
 http://hakin9.org/security-onion-exploiting-software-032012/
 
+Stack Overflow<br>
 http://stackoverflow.com/tags/snort/info
 
+PaulDotCom<br>
 http://pauldotcom.com/2012/01/security-onion---snorby-now-in.html
 
+Hackeire<br>
 http://www.hackeire.net/2011/11/hackeire-2011-ramblings-part-1.html
-
 http://www.hackeire.net/2011/12/hackeire-2011-ramblings-part-2.html
 
+Network World<br>
 http://www.networkworld.com/community/blog/peeling-security-onion
 
+Holistic InfoSec<br>
 http://holisticinfosec.org/toolsmith/pdf/may2011.pdf
