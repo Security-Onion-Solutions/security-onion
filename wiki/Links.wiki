@@ -1,9 +1,9 @@
 #summary Random Links to other sites talking about Security Onion
 
-2012 UTOSC - Peeling Back the Security Onion - Jason Wood - Video
+2012 UTOSC - Peeling Back the Security Onion - Jason Wood - Video<br>
 http://www.youtube.com/watch?v=KUnAJe8_ysw
 
-2012 UTOSC - Peeling Back the Security Onion - Jason Wood - Slides
+2012 UTOSC - Peeling Back the Security Onion - Jason Wood - Slides<br>
 http://tadaka.net/downloads/SecurityOnion-UTOS2012.pdf
 
 http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html
