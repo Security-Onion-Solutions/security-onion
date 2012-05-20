@@ -21,6 +21,7 @@ http://security.crudtastic.com/?p=569
 Liam Randall<br>
 http://www.gigaco.com/tag/security-onion/
 
+InfoSec Island Security Onion Intrusion Detection System Setup Tutorial<br>
 http://www.infosecisland.com/videos-view/19641-Security-Onion-Intrusion-Detection-System-Setup-Tutorial.html
 
 http://hakin9.org/security-onion-exploiting-software-032012/
