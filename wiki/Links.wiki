@@ -15,8 +15,10 @@ http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules
 Brad Shoop: Clap…Be Amazed…Now Go Defend<br>
 http://eyeis.net/2012/03/clap-be-amazed-now-go-defend/
 
+Ash: File Execution Vulnerability & Security Onion – Basics<br>
 http://security.crudtastic.com/?p=569
 
+Liam Randall<br>
 http://www.gigaco.com/tag/security-onion/
 
 http://www.infosecisland.com/videos-view/19641-Security-Onion-Intrusion-Detection-System-Setup-Tutorial.html
