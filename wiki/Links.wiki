@@ -9,6 +9,7 @@ http://tadaka.net/downloads/SecurityOnion-UTOS2012.pdf
 SecurityOnion on a netbook with port mirroring on WRT54g<br>
 http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html
 
+Packet Pushers Show 95 – Security Onion With Doug Burks -or- Why IDS Rules and IPS Drools<br>
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
 
 http://eyeis.net/2012/03/clap-be-amazed-now-go-defend/
