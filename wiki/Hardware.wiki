@@ -1,7 +1,9 @@
 #summary Hardware requirements for a production deployment
 
 = Packets =
-You need some way of getting packets into your sensor.  Usually this is via tap or SPAN/monitor port.
+You need some way of getting packets into your sensor.  Usually this is via tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
+http://www.dual-comm.com/port-mirroring-LAN_switch.htm<br>
+http://www.roc-noc.com/mikrotik/routerboard/rb250gs.html
 
 = NIC =
 Make sure you get a good quality network card.  I've had good experiences with Intel.
