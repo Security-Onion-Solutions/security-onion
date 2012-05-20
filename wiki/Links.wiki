@@ -6,6 +6,7 @@ http://www.youtube.com/watch?v=KUnAJe8_ysw
 2012 UTOSC - Peeling Back the Security Onion - Jason Wood - Slides<br>
 http://tadaka.net/downloads/SecurityOnion-UTOS2012.pdf
 
+SecurityOnion on a netbook with port mirroring on WRT54g<br>
 http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html
 
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
