@@ -1,17 +1,18 @@
 #summary Random Links to other sites talking about Security Onion
 
-2012 UTOSC - Peeling Back the Security Onion - Jason Wood - Video<br>
+Jason Wood: 2012 UTOSC - Peeling Back the Security Onion - Video<br>
 http://www.youtube.com/watch?v=KUnAJe8_ysw
 
-2012 UTOSC - Peeling Back the Security Onion - Jason Wood - Slides<br>
+Jason Wood: 2012 UTOSC - Peeling Back the Security Onion - Slides<br>
 http://tadaka.net/downloads/SecurityOnion-UTOS2012.pdf
 
-SecurityOnion on a netbook with port mirroring on WRT54g<br>
+Mark Hillick: SecurityOnion on a netbook with port mirroring on WRT54g<br>
 http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html
 
 Packet Pushers Show 95 – Security Onion With Doug Burks -or- Why IDS Rules and IPS Drools<br>
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
 
+Brad Shoop: Clap…Be Amazed…Now Go Defend<br>
 http://eyeis.net/2012/03/clap-be-amazed-now-go-defend/
 
 http://security.crudtastic.com/?p=569
