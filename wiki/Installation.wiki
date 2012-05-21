@@ -4,7 +4,7 @@
 
 = What's the recommended procedure for installing Security Onion? =
 
-- If you're just evaluating Security Onion, the short answer is:<br>
+- If you just want to quickly evaluate Security Onion, the short answer is:<br>
   # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface.  Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
   # <a href="http://sourceforge.net/projects/security-onion/files/">Download the ISO image</a>, verify its checksum, and boot from it.<br>
   # Run through the Xubuntu installer.<br>
