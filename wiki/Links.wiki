@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Brad Shoop: Splunkin the Onion<br>
+http://eyeis.net/wp-content/uploads/2012/05/DC404-Splunkin-the-Onion.pdf
+
 Jason Wood: 2012 UTOSC - Peeling Back the Security Onion - Video<br>
 http://www.youtube.com/watch?v=KUnAJe8_ysw
 
