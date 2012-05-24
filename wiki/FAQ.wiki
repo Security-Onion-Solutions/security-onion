@@ -88,6 +88,13 @@ OR<br>
  - edit usr.sbin.tcpdump, copy the nsm line, and change /nsm to the new location<br>
  - service apparmor restart<br>
 
+= How do I stop monitoring an interface? =
+Execute the following command, replacing HOSTNAME-INTERFACE with the name of the sensor:
+{{{
+sudo nsm_sensor_ps-stop —sensor-name=HOSTNAME-INTERFACE
+}}}
+Then remove the relevant entry from /etc/nsm/sensortab.
+
 = How do I change the fonts in the Sguil client? =
 
 In the Sguil client, click the File menu and then go to "Change Font".  You can change both the Standard and Fixed fonts.  Fonts are a personal issue, but I like the following:<br>
