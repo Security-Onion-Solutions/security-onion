@@ -53,10 +53,14 @@ ethtool -g ethX
 If necessary, configure DNS in /etc/resolv.conf.<br>
 <br>
 Restart networking:<br>
-{{{sudo /etc/init.d/networking restart}}}<br>
+{{{
+sudo /etc/init.d/networking restart
+}}}<br>
 <br>
 If you already had sensors running on these interfaces, you should restart them:<br>
-{{{sudo nsm_sensor_ps-restart}}}<br>
+{{{
+sudo nsm_sensor_ps-restart
+}}}<br>
 <br>
 For more information on network configuration in Ubuntu, please see:<br>
 <a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a>
