@@ -91,7 +91,7 @@ OR<br>
 = How do I stop monitoring an interface? =
 Execute the following command, replacing HOSTNAME-INTERFACE with the name of the sensor:
 {{{
-sudo nsm_sensor_ps-stop —sensor-name=HOSTNAME-INTERFACE
+sudo nsm_sensor_ps-stop --sensor-name=HOSTNAME-INTERFACE
 }}}
 Then remove the relevant entry from /etc/nsm/sensortab.
 
