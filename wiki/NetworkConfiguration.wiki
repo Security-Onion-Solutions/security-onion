@@ -10,7 +10,8 @@ Stop Network Manager:<br>
 Prevent Network Manager from starting at next boot:<br>
 {{{sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED}}}<br>
 <br>
-Configure your network interfaces in /etc/network/interfaces.  You'll want a management interface (using either static IP *or* DHCP) and one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic:<br>
+Configure your network interfaces in /etc/network/interfaces.  You'll want a management interface (using either static IP *or* DHCP) and one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <br>
+<a href="http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html">http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html</a>):<br>
 {{{
 auto lo
 iface lo inet loopback
@@ -59,6 +60,5 @@ If you already had sensors running on these interfaces, you should restart them:
 {{{sudo nsm_sensor_ps-restart}}}<br>
 <br>
 For more information, please see:<br>
-<a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a><br>
-<a href="http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html">http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html</a>
+<a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a>
 }}}
