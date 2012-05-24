@@ -30,7 +30,7 @@ iface eth0 inet static
   broadcast 192.168.1.255
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 
-# Connected to TAP or SPAN port for all Internet traffic
+# Connected to TAP or SPAN port for traffic monitoring
 auto eth1
 iface eth1 inet manual
   up ifconfig $IFACE -arp up
