@@ -56,11 +56,11 @@ Restart networking:
 {{{
 sudo /etc/init.d/networking restart
 }}}
-<br>
+
 If you already had sensors running on these interfaces, you should restart them:
 {{{
 sudo nsm_sensor_ps-restart
 }}}
-<br>
+
 For more information on network configuration in Ubuntu, please see:<br>
 <a href="https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic">https://help.ubuntu.com/community/NetworkConfigurationCommandLine/Automatic</a>
