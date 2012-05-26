@@ -32,11 +32,9 @@ Please note that this is all subject to change!
     * Issue 266: Remove httpry from NSM scripts
     * Issue 261: Add Mark Baggett's reassembler.py
     * Issue 146: ELSA (web-based interface for logs)
-    * Issue 252: NetworkMiner 1.3
-    * Issue 253: Add NetworkMiner option to Sguil client
   * June/July/August 2012
     * Issue 247:  Big Distro Rebuild (BDR)
-      * Lubuntu/Xubuntu 12.04
+      * Lubuntu 12.04
       * 64-bit
       * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
       * Considering pfring for higher performance
