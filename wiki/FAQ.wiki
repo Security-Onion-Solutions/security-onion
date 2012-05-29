@@ -55,6 +55,16 @@ This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Securit
 http://ubuntuforums.org/showthread.php?t=1674759<br>
 https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422<br>
 
+= Why does my VMware image rename eth0 to eth1? =
+This is due to an incorrect or duplicate MAC address.  To fix this:
+
+{{{
+cd /etc/udev/rules.d
+sudo cp 70-persistent-net.rules /root/
+sudo rm 70-persistent-net.rules
+sudo reboot
+}}}
+
 = Why is my disk filling up? =
 Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
 
