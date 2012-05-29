@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Entreprenur.com: Free Tools for Improving Online Security<br>
+http://www.entrepreneur.com/article/223572
+
 Brad Shoop: Splunkin the Onion<br>
 http://eyeis.net/wp-content/uploads/2012/05/DC404-Splunkin-the-Onion.pdf
 
