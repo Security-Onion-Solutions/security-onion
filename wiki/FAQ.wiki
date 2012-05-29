@@ -77,7 +77,7 @@ sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
 }}}
 
-= What to I need to modify in order to have the log files stored on a different mount point? =
+= What do I need to modify in order to have the log files stored on a different mount point? =
 
 There are two ways to do this:<br>
 - Mount a separate drive to /nsm.  This can be done in the Ubuntu installer or after installation is complete.<br>
@@ -276,6 +276,9 @@ Controlled by:  /usr/local/sbin/nsm_sensor<br>
 sensor box<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
 Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
+
+= What's the directory structure of /nsm? =
+[DirectoryStructure /nsm Directory Structure]
 
 = Where do I send questions/problems/suggestions? =
 
