@@ -51,6 +51,9 @@ ethtool -g ethX
 }}}
 
 If necessary, configure DNS in /etc/resolv.conf.<br>
+http://en.wikipedia.org/wiki/Resolv.conf<br>
+http://www.cyberciti.biz/tips/howto-ubuntu-linux-convert-dhcp-network-configuration-to-static-ip-configuration.html<br>
+http://manpages.ubuntu.com/manpages/lucid/man5/resolver.5.html<br>
 <br>
 Restart networking:
 {{{
