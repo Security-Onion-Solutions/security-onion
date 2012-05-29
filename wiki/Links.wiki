@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Security Onion mentioned in Jon Schipp's presentation at AIDE 2012<br>
+http://www.irongeek.com/i.php?page=videos/aide2012/an-introduction-to-traffic-analysis-a-pragmatic-approach-jon-shipp
+
 Entreprenur.com: Free Tools for Improving Online Security<br>
 http://www.entrepreneur.com/article/223572
 
