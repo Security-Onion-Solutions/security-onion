@@ -10,5 +10,5 @@ export ftp_proxy=https://server:port
 }}}
 If you're going to run something using sudo, remember to use the "-i" option to force it to process the environment variables.  For example:<br>
 {{{
-sudo -i bash /path/to/security-onion-upgrade.sh
+sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
 }}}
