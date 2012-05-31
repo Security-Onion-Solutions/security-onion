@@ -25,6 +25,15 @@
   # <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
   # If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
   # If your machine has more than 4GB of RAM, <a href="https://help.ubuntu.com/community/EnablingPAE">install the PAE kernel</a>.<br>
+  # Increase kernel network buffers:<br>
+{{{
+echo "net.core.netdev_max_backlog = 10000
+net.core.rmem_default = 16777216
+net.core.rmem_max = 33554432
+net.ipv4.tcp_mem = 194688 259584 389376
+net.ipv4.tcp_rmem = 1048576 4194304 33554432" | sudo tee -a /etc/sysctl.d/30-securityonion.conf
+sudo sysctl -p /etc/sysctl.d/30-securityonion.conf
+}}}
   # Install Ubuntu updates using the Update Manager in the upper right corner and reboot if necessary.  <a href="http://code.google.com/p/security-onion/wiki/tcl">tcl/tk updates are on hold and you should NOT attempt to manually install any tcl/tk updates!</a>  You may want to <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">configure Ubuntu to automatically install updates</a>.  <br>
   # <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
   # Double-click the Setup shortcut on the Desktop and follow the prompts.  If this is a sensor that will report to a master server, then Setup will prompt you for an SSH account on the master server that has sudo privileges.  Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors.  To do this, create a new user using the adduser command and then add the user to the admin group.  Once Setup is complete, the user can be removed from the admin group.<br>
