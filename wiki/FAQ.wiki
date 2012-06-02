@@ -56,12 +56,9 @@ http://ubuntuforums.org/showthread.php?t=1674759<br>
 https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422<br>
 
 = Why does my VMware image rename eth0 to eth1? =
-This is due to an incorrect or duplicate MAC address.  To fix this:
-
+Usually this happens when you clone a VM.  VMware asks if you moved it or copied it.  If you select "copied", it will change the MAC address to avoid duplication.  At the next boot, Ubuntu's udev will see a new MAC address and create a new network interface (eth1).  To fix this:
 {{{
-cd /etc/udev/rules.d
-sudo cp 70-persistent-net.rules /root/
-sudo rm 70-persistent-net.rules
+sudo rm /etc/udev/rules.d/70-persistent-net.rules
 sudo reboot
 }}}
 
