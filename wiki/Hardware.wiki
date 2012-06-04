@@ -2,8 +2,12 @@
 
 = Packets =
 You need some way of getting packets into your sensor.  Usually this is via tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
+
+Shear simplicity and portability (USB-powered):<br>
 http://www.dual-comm.com/port-mirroring-LAN_switch.htm<br>
-http://www.roc-noc.com/mikrotik/routerboard/rb250gs.html
+
+Dirt cheap and versatile:<br>
+http://www.roc-noc.com/mikrotik/routerboard/rb250gs.html<br>
 
 = NIC =
 Make sure you get a good quality network card.  I've had good experiences with Intel.
