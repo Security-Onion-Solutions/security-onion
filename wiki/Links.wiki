@@ -30,6 +30,9 @@ http://eyeis.net/2012/03/clap-be-amazed-now-go-defend/
 Ash: File Execution Vulnerability & Security Onion – Basics<br>
 http://security.crudtastic.com/?p=569
 
+Andy Ratcliff: Installing Security Onion IDS/NSM on vSphere 5 with SPAN traffic from a Cisco switch<br>
+http://infosecmatters.blogspot.com/2012/04/installing-security-onion-idsnsm-on.html
+
 Liam Randall<br>
 http://www.gigaco.com/tag/security-onion/
 
