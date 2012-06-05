@@ -43,23 +43,21 @@ sudo service ossec restart
 [SensorStopsSeeingTraffic]
 
 = How do I configure the OS itself to send emails? =
-Install and configure your favorite mail server.  Depending on your needs, this could be something simple like nullmailer or something more complex like exim4:
-{{{
-# nullmailer instructions provided by Michael Iverson
+Install and configure your favorite mail server.  Depending on your needs, this could be something simple like nullmailer (recommended) or something more complex like exim4:
 
+Here are some nullmailer instructions provided by Michael Iverson:
+{{{
 sudo apt-get install nullmailer
-# edit /etc/mailname to hold your "from" domain name. (If you were google, you'd use "gmail.com".
+# edit /etc/mailname to hold your "from" domain name. (If you were google, you'd use "gmail.com".)
 # edit /etc/nullmailer/adminaddr to contain the address you want mail to root to be routed to.
 # edit /etc/nullmailer/remotes to contain the mail server to forward email to. 
 }}}
-<b>OR</b>
+<b>OR</b> here are some exim4 instructions:
 {{{
-# exim4 instructions
-
 sudo apt-get -y install mailutils
 sudo dpkg-reconfigure exim4-config
 }}}
-Once you've done that and verified that it works, you might want to create a daily cronjob to execute /usr/bin/sostat and email you the output:
+Once you've configured your mail server and verified that it can send email properly, you might want to create a daily cronjob to execute /usr/bin/sostat and email you the output:
 {{{
 # /etc/cron.d/sostat
 #
