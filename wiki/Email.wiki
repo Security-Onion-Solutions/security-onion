@@ -47,6 +47,7 @@ sudo apt-get install nullmailer
 # edit /etc/nullmailer/adminaddr to contain the address you want mail to root to be routed to.
 # edit /etc/nullmailer/remotes to contain the mail server to forward email to. 
 }}}
+<b>OR</b>
 {{{
 # exim4 instructions
 
