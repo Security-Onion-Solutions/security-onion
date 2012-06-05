@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Andy Ratcliff: Security Onion vs DVWA<br>
+http://infosecmatters.blogspot.com/2012/06/sql-command-injection-lab-part-2.html
+
 Security Onion mentioned in Jon Schipp's presentation at AIDE 2012<br>
 http://www.irongeek.com/i.php?page=videos/aide2012/an-introduction-to-traffic-analysis-a-pragmatic-approach-jon-shipp
 
