@@ -69,7 +69,7 @@ EMAIL=YourUsername@YourDomain.com
 = How do I configure Bro to send emails? =
 Edit /usr/local/etc/broctl.cfg and set the following:
 {{{
-MailTo = your.email@example.com
+MailTo = YourUsername@YourDomain.com
 sendmail = /usr/sbin/sendmail
 }}}
 Then update and restart Bro:
