@@ -40,7 +40,8 @@ sudo service ossec restart
 = How do I configure the OS itself to send emails? =
 Install and configure your favorite mail server.  Depending on your needs, this could be something simple like nullmailer or something more complex like exim4:
 {{{
-# nullmailer instructions
+# nullmailer instructions provided by Michael Iverson
+
 sudo apt-get install nullmailer
 # edit /etc/mailname to hold your "from" domain name. (If you were google, you'd use "gmail.com".
 # edit /etc/nullmailer/adminaddr to contain the address you want mail to root to be routed to.
@@ -48,6 +49,7 @@ sudo apt-get install nullmailer
 }}}
 {{{
 # exim4 instructions
+
 sudo apt-get -y install mailutils
 sudo dpkg-reconfigure exim4-config
 }}}
