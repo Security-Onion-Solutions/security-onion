@@ -83,7 +83,7 @@ You should then start receiving hourly connection summary emails.  You may also 
 {{{
 # redef Notice::policy += { [$action = Notice::ACTION_ALARM, $priority = 0] };
 }}}
-Don't forget to update and restart Bro as shown above.  If that's too much email, you might want to comment it out that line again and instead only email selected notices like this:
+(Don't forget to update and restart Bro as shown above.)  If that's too much email, you might want to comment it out that line again and instead only email selected notices like this:
 {{{
 redef Notice::emailed_types += {
        HTTP::Incorrect_File_Type,
