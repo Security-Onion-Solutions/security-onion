@@ -38,7 +38,17 @@ sudo service ossec restart
 [SensorStopsSeeingTraffic]
 
 = How do I configure the OS itself to send emails? =
-Install the mail server:
+Install and configure your favorite mail server.  This could be something simple like nullmailer:
+{{{
+sudo apt-get install nullmailer
+
+edit /etc/mailname to hold your "from" domain name. (If you were google, you'd use "gmail.com".
+
+edit /etc/nullmailer/adminaddr to contain the address you want mail to root to be routed to.
+
+edit /etc/nullmailer/remotes to contain the mail server to forward email to. 
+}}}
+OR something more complex like exim4 (depending on your needs):
 {{{
 sudo apt-get -y install mailutils
 }}}
@@ -60,7 +70,12 @@ EMAIL=YourUsername@YourDomain.com
 }}}
 
 = How do I configure Bro to send emails? =
-Edit the MailTo directive in /usr/local/etc/broctl.cfg.  Then update and restart Bro:
+Edit /usr/local/etc/broctl.cfg and set the following:
+{{{
+MailTo = your.email@example.com
+sendmail = /usr/sbin/sendmail
+}}}
+Then update and restart Bro:
 {{{
 sudo broctl install
 sudo broctl restart
