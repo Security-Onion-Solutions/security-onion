@@ -39,9 +39,6 @@ Then restart OSSEC:
 sudo service ossec restart
 }}}
 
-= How can I get an email alert when my sensor stops seeing traffic? =
-[SensorStopsSeeingTraffic]
-
 = How do I configure the OS itself to send emails? =
 Install and configure your favorite mail server.  Depending on your needs, this could be something simple like nullmailer (recommended) or something more complex like exim4.
 
@@ -95,3 +92,6 @@ redef Notice::emailed_types += {
        HTTP::Malware_Hash_Registry_Match,
 };
 }}}
+
+= How can I get an email alert when my sensor stops seeing traffic? =
+If you configured Bro as shown above, it should automatically do this for you.  More options can be found on the [SensorStopsSeeingTraffic] page.
