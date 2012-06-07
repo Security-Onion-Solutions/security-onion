@@ -124,6 +124,10 @@ Security Onion would like to thank the following open-source projects for their 
 <a href="http://www.cs.uit.no/~daniels/PingTunnel/">http://www.cs.uit.no/~daniels/PingTunnel/</a><br>
 "Ptunnel is an application that allows you to reliably tunnel TCP connections to a remote host using ICMP echo request and reply packets, commonly known as ping requests and replies. At first glance, this might seem like a rather useless thing to do, but it can actually come in handy in some cases."
 
+== Reassembler ==
+http://isc.sans.edu/diary.html?storyid=13282
+"If you provide reassembler.py with a pcap that contains fragments, it will reassemble the packets using each of the 5 reassembly engines and show you the result."
+
 == scapy ==
 <a href="http://www.secdev.org/projects/scapy/">http://www.secdev.org/projects/scapy/</a><br>
 "Scapy is a powerful interactive packet manipulation program. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, match requests and replies, and much more. It can easily handle most classical tasks like scanning, tracerouting, probing, unit tests, attacks or network discovery (it can replace hping, 85% of nmap, arpspoof, arp-sk, arping, tcpdump, tethereal, p0f, etc.). It also performs very well at a lot of other specific tasks that most other tools can't handle, like sending invalid frames, injecting your own 802.11 frames, combining technics (VLAN hopping+ARP cache poisoning, VOIP decoding on WEP encrypted channel, ...), etc."
