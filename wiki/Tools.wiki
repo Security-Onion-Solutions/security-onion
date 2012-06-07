@@ -125,7 +125,7 @@ Security Onion would like to thank the following open-source projects for their 
 "Ptunnel is an application that allows you to reliably tunnel TCP connections to a remote host using ICMP echo request and reply packets, commonly known as ping requests and replies. At first glance, this might seem like a rather useless thing to do, but it can actually come in handy in some cases."
 
 == Reassembler ==
-http://isc.sans.edu/diary.html?storyid=13282
+http://isc.sans.edu/diary.html?storyid=13282<br>
 "If you provide reassembler.py with a pcap that contains fragments, it will reassemble the packets using each of the 5 reassembly engines and show you the result."
 
 == scapy ==
