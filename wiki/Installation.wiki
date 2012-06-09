@@ -19,7 +19,7 @@
   # Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
   # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind:
     * If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  
-    * The Sguil database can grow fairly large (100GB or more for decent-size networks) and is stored at /var/lib/mysql/, so you may want to put /var on a dedicated partition/disk and assign a good amount of disk space to it.  Also see the DAYSTOKEEP instructions near the end of this procedure.
+    * The Sguil database on the server (doesn't exist on sensor-only installations) can grow fairly large (100GB or more for decent-size networks) and is stored at /var/lib/mysql/, so you may want to put /var on a dedicated partition/disk and assign a good amount of disk space to it.  Also see the DAYSTOKEEP instructions near the end of this procedure.
     * Sensors store full packet captures at /nsm/sensor_data/, so you may want to put /nsm on a dedicated partition/disk and assign as much disk space as possible (1TB or more).  
   # Reboot into your new installation and login with the credentials you specified in the installer.<br>
   # <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
