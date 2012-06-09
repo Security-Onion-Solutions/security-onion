@@ -1,7 +1,7 @@
 #summary Configuring email for alerting and reporting
 = Introduction =
 
-This page describes how to configure email for alerting and reporting.  Applications such as Snorby, Sguil, and OSSEC have their own mail configuration and don't rely on a mail server in the OS itself.  However, you may still want to install a mail server in the OS so that you can get daily emails from the sostat script.
+This page describes how to configure email for alerting and reporting.  Applications such as Snorby, Sguil, and OSSEC have their own mail configuration and don't rely on a mail server in the OS itself.  However, you may still want to install a mail server in the OS so that you can get daily emails from the sostat script and from Bro.
 
 = How do I configure Snorby to send emails? =
 Modify /usr/local/share/snorby/config/initializers/mail_config.rb (on the master server) as needed for your mail server.  Then restart the Snorby delayed_job process:
