@@ -50,6 +50,7 @@ curl http://testmyids.com
 xrandr -s WxH
 }}}
   # Login to Sguil, Squert (https://server/squert/), or Snorby (https://server:3000) and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs (/nsm/bro/logs/) for in-depth analysis.<br>
+  # Harden your server and sensors by [Firewall firewalling] off any unused ports.
   # Run the following to see how your sensor is coping with the load.  You should check this on a daily basis to make sure your sensor is not dropping packets.  Consider adding it to a cronjob and having it emailed to you (see the "configure email" link below).
 {{{
 sudo sostat | less
