@@ -183,7 +183,7 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      {{{
      sudo vi /etc/pulledpork/disablesid.conf
      }}}
-     You can also access the disabledsid.conf file by clicking Applications->IDS Rules->Disable Downloaded Rules.  You will need to provide your password.  
+     You can also access the disablesid.conf file by clicking Applications->IDS Rules->Disable Downloaded Rules.  You will need to provide your password.  
   # Append the signature you wish to disable in the format gid:sid.  The generator ID is most likely going to be a "1" in most cases.  You can check the generator ID by checking the exact signature.  If a gid is not listed, it is assumed to be "1".
      {{{
      # Disable the GPL SNMP public access udp signature
@@ -227,7 +227,7 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
      alert icmp $HOME_NET any -> !$OVERACTIVE any (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:9001411; rev:1;)
      }}}
      We also gave the alert a unique signature id (sid) by bumping it into the 90,000,000 range and set the revision to 1.
-   # Now that we have a signature that will generate alerts a little more selectively, we need to disable the original signature.  Like above, we edit the /etc/pulledpork/disabledsid.conf file and add:
+   # Now that we have a signature that will generate alerts a little more selectively, we need to disable the original signature.  Like above, we edit the /etc/pulledpork/disablesid.conf file and add:
    {{{
    1:1411
    }}}
