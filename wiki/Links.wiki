@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Brett Cunningham and Micah Kays: Honeypot monitoring with Security Onion<br>
+http://5x5sec.blogspot.com/2012/06/honeypot-design.html
+
 Andy Ratcliff: Security Onion vs DVWA<br>
 http://infosecmatters.blogspot.com/2012/06/sql-command-injection-lab-part-1.html<br>
 http://infosecmatters.blogspot.com/2012/06/sql-command-injection-lab-part-2.html
