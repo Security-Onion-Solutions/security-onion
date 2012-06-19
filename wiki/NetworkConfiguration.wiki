@@ -22,7 +22,9 @@ auto eth0
 iface eth0 inet dhcp
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 
-# OR Management interface using STATIC IP (instead of DHCP)
+# OR 
+
+# Management interface using STATIC IP (instead of DHCP)
 auto eth0
 iface eth0 inet static
   address 192.168.1.14
@@ -31,6 +33,8 @@ iface eth0 inet static
   network 192.168.1.0
   broadcast 192.168.1.255
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
+
+# AND one or more of the following
 
 # Connected to TAP or SPAN port for traffic monitoring
 auto eth1
