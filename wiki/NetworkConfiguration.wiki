@@ -17,12 +17,12 @@ Configure your network interfaces in /etc/network/interfaces.  You'll want a man
 auto lo
 iface lo inet loopback
 
-# Management interface DHCP
+# Management interface using DHCP
 auto eth0
 iface eth0 inet dhcp
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 
-# OR if using STATIC IP instead of DHCP
+# OR Management interface using STATIC IP (instead of DHCP)
 auto eth0
 iface eth0 inet static
   address 192.168.1.14
