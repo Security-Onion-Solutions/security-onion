@@ -34,7 +34,11 @@ net.ipv4.tcp_mem = 194688 259584 389376
 net.ipv4.tcp_rmem = 1048576 4194304 33554432" | sudo tee -a /etc/sysctl.d/30-securityonion.conf
 sudo sysctl -p /etc/sysctl.d/30-securityonion.conf
 }}}
-  # Install Ubuntu updates using the Update Manager in the upper right corner and reboot if necessary.  <a href="http://code.google.com/p/security-onion/wiki/tcl">tcl/tk updates are on hold and you should NOT attempt to manually install any tcl/tk updates!</a>  You may want to <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">configure Ubuntu to automatically install updates</a>.  <br>
+  # Install Ubuntu updates using the Update Manager in the upper right corner and reboot if necessary.  Alternatively, you can install updates from the command-line using the following:
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade
+}}}
+<a href="http://code.google.com/p/security-onion/wiki/tcl">tcl/tk updates are on hold and you should NOT attempt to manually install any tcl/tk updates!</a>  You may want to <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">configure Ubuntu to automatically install updates</a>.  <br>
   # <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
   # Double-click the Setup shortcut on the Desktop and follow the prompts.  If this is a sensor that will report to a master server, then Setup will prompt you for an SSH account on the master server that has sudo privileges.  Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors.  To do this, create a new user using the adduser command and then add the user to the admin group.  Once Setup is complete, the user can be removed from the admin group.<br>
   # If you're monitoring IP address ranges other than the private RFC1918 address space (192.168.0.0/16,10.0.0.0/8,172.16.0.0/12), you should update your sensor configuration with the correct IP ranges.  Sensor configuration files can be found in /etc/nsm/HOSTNAME-INTERFACE/.  Modify either snort.conf or suricata.yaml (depending on which IDS engine you chose during Setup) and update the HOME_NET variable.  Also update sancp.conf and pads.conf.  Then update Bro's network configuration in /usr/local/etc/networks.cfg.  Finally, restart the sensor processes:
