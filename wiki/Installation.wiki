@@ -28,8 +28,8 @@
   # Increase kernel network buffers:<br>
 {{{
 echo "net.core.netdev_max_backlog = 10000
-net.core.rmem_default = 16777216
-net.core.rmem_max = 33554432
+net.core.rmem_default = 50000000
+net.core.rmem_max = 50000000
 net.ipv4.tcp_mem = 194688 259584 389376
 net.ipv4.tcp_rmem = 1048576 4194304 33554432" | sudo tee -a /etc/sysctl.d/30-securityonion.conf
 sudo sysctl -p /etc/sysctl.d/30-securityonion.conf
