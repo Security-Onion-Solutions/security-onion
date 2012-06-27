@@ -10,7 +10,7 @@ Dirt cheap and versatile:<br>
 http://www.roc-noc.com/mikrotik/routerboard/rb250gs.html<br>
 
 = NIC =
-Make sure you get a good quality network card.  I've had good experiences with Intel.
+You'll need at least two network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get a good quality network card.  I've had good experiences with Intel.
 
 = RAM =
 
