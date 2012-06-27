@@ -12,7 +12,7 @@ Prevent Network Manager from starting at next boot:<br>
 {{{
 sudo mv /etc/init/network-manager.conf /etc/init/network-manager.conf.DISABLED
 }}}
-Configure your network interfaces in /etc/network/interfaces.  You'll want a management interface using either DHCP OR *preferably* static IP (and preferably connected to a dedicated management network).  You'll then need one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href="http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html">http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html</a>):<br>
+Configure your network interfaces in /etc/network/interfaces.  You'll want a management interface (preferably connected to a dedicated management network) using either DHCP OR *preferably* static IP and one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href="http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html">http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html</a>):<br>
 {{{
 auto lo
 iface lo inet loopback
