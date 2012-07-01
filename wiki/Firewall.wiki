@@ -1,4 +1,5 @@
 #summary Some notes about Ubuntu's UFW firewall
+#labels Phase-Deploy
 
 = UFW - Uncomplicated Firewall=
 The default firewall configuration tool for Ubuntu is ufw. By default UFW is enabled on security onion.
@@ -26,6 +27,33 @@ sudo ufw allow 6667:7000
 sudo ufw deny 443
 }}}
 
-for more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
+==What Ports Are Opened/Listening=
+*example*
+{{{
+sudo ufw status
+}}}
+*example output*
+{{{
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere
+8000/tcp                   ALLOW       Anywhere
+7734/tcp                   ALLOW       Anywhere
+7736/tcp                   ALLOW       Anywhere
+443/tcp                    ALLOW       Anywhere
+3000/tcp                   ALLOW       Anywhere
+172.30.15.16 80/tcp        ALLOW       172.30.15.10
+3154/tcp                   ALLOW       Anywhere
+}}}
+
+Above you can see that there is one rule that restricts traffic to the source ip, destination ip and tcp port. This rule was added after installing [http://code.google.com/p/dvwa/ DVWA] on the same VM as Security Onion in order to test the detection of some basic web application attacks. The rule looks like so - 
+
+{{{
+sudo ufw allow proto tcp from 172.30.15.10/32 to 172.30.15.16 port 80
+}}}
+
+For more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
 
 Note: [https://help.ubuntu.com/community/Gufw Gufw] is a GUI front end for the ufw.
