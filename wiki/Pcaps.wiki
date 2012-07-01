@@ -2,34 +2,34 @@
 
 = Links =
 
-* https://www.openpacket.org/
+  * https://www.openpacket.org/
 
-* http://sourceforge.net/apps/mediawiki/networkminer/index.php?title=Publicly_available_PCAP_files
+  * http://sourceforge.net/apps/mediawiki/networkminer/index.php?title=Publicly_available_PCAP_files
 
-* http://old.honeynet.org/scans/
+  * http://old.honeynet.org/scans/
 
-* http://www.novell.com/connectionmagazine/laurachappell.html
+  * http://www.novell.com/connectionmagazine/laurachappell.html
 
-* http://cctf.shmoo.com/
+  * http://cctf.shmoo.com/
 
-* http://ee.lbl.gov/anonymized-traces.html
+  * http://ee.lbl.gov/anonymized-traces.html
 
-* https://www.openpacket.org/post/showthread/49
+  * https://www.openpacket.org/post/showthread/49
 
-* https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Public_Data_Sets
+  * https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Public_Data_Sets
 
-* http://wiki.wireshark.org/SampleCaptures#Sample_Captures
+  * http://wiki.wireshark.org/SampleCaptures#Sample_Captures
 
-* http://forensicscontest.com/puzzles
+  * http://forensicscontest.com/puzzles
 
-* https://www.evilfingers.com/repository/pcaps.php
+  * https://www.evilfingers.com/repository/pcaps.php
 
-* https://www.openpacket.org/capture
+  * https://www.openpacket.org/capture
 
-* http://www.honeynet.org/node/504
+  * http://www.honeynet.org/node/504
 
-* http://www.defcon.org/html/links/dc-ctf.html  (You have to follow some of the links, which redirect to competitor blogs but there's lots of goodness).
+  * http://www.defcon.org/html/links/dc-ctf.html  (You have to follow some of the links, which redirect to competitor blogs but there's lots of goodness).
 
 = tcpreplay =
-You can use tcpreplay to replay any of these pcaps on your Security Onion sensor.  For example, please see:
-http://securityonion.blogspot.com/2011/01/introduction-to-sguil-and-squert-part-3.html
+You can use tcpreplay to replay any of these pcaps on your Security Onion sensor.  For example, please see 
+[http://securityonion.blogspot.com/2011/01/introduction-to-sguil-and-squert-part-3.html here] for a quick, easy use-case and what you should see in the Sguil console.
