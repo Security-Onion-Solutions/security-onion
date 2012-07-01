@@ -63,6 +63,6 @@ send(ip/tcp/payload)
      </a>
 
   * You can learn more about snort and writing snort signatures from the [http://manual.snort.com/node26.html Snort Manual]
-  * You can learn more about scapy at [http://www.secdev.org/projects/scapy secdev.org]
+  * You can learn more about scapy at [http://www.secdev.org/projects/scapy secdev.org] and [http://itgeekchronicles.co.uk/2012/05/31/scapy-guide-the-release/ itgeekchronicles.co.uk].
 
   
