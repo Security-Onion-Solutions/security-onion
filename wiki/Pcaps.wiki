@@ -1,25 +1,34 @@
-#summary Where to find pcaps
+#summary Where to find pcaps to test your Security Onion installation with
 
 = Links =
-https://www.openpacket.org/
 
-http://sourceforge.net/apps/mediawiki/networkminer/index.php?title=Publicly_available_PCAP_files
+* https://www.openpacket.org/
 
-http://old.honeynet.org/scans/
+* http://sourceforge.net/apps/mediawiki/networkminer/index.php?title=Publicly_available_PCAP_files
 
-http://www.novell.com/connectionmagazine/laurachappell.html
+* http://old.honeynet.org/scans/
 
-http://cctf.shmoo.com/
+* http://www.novell.com/connectionmagazine/laurachappell.html
 
-http://ee.lbl.gov/anonymized-traces.html
+* http://cctf.shmoo.com/
 
-https://www.openpacket.org/post/showthread/49
+* http://ee.lbl.gov/anonymized-traces.html
 
-https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Public_Data_Sets
+* https://www.openpacket.org/post/showthread/49
 
-http://wiki.wireshark.org/SampleCaptures#Sample_Captures
+* https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Public_Data_Sets
 
-http://forensicscontest.com/puzzles
+* http://wiki.wireshark.org/SampleCaptures#Sample_Captures
+
+* http://forensicscontest.com/puzzles
+
+* https://www.evilfingers.com/repository/pcaps.php
+
+* https://www.openpacket.org/capture
+
+* http://www.honeynet.org/node/504
+
+* http://www.defcon.org/html/links/dc-ctf.html  (You have to follow some of the links, which redirect to competitor blogs but there's lots of goodness).
 
 = tcpreplay =
 You can use tcpreplay to replay any of these pcaps on your Security Onion sensor.  For example, please see:
