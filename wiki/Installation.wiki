@@ -53,7 +53,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
       * create a second account on the SERVER and add it to the admin group
       * run through Setup on the second SENSOR
       * on the SERVER, remove the account from the admin group, but leave the account active
-  # If you're monitoring IP address ranges other than the private RFC1918 address space (192.168.0.0/16,10.0.0.0/8,172.16.0.0/12), you should update your sensor configuration with the correct IP ranges.  Sensor configuration files can be found in /etc/nsm/HOSTNAME-INTERFACE/.  Modify either snort.conf or suricata.yaml (depending on which IDS engine you chose during Setup) and update the HOME_NET variable.  Also update sancp.conf and pads.conf.  Then update Bro's network configuration in /usr/local/etc/networks.cfg.  Finally, restart the sensor processes:
+  # If you're monitoring IP address ranges other than the private RFC1918 address space (192.168.0.0/16,10.0.0.0/8,172.16.0.0/12), you should update your sensor configuration with the correct IP ranges.  Sensor configuration files can be found in /etc/nsm/HOSTNAME-INTERFACE/.  Modify either snort.conf or suricata.yaml (depending on which IDS engine you chose during Setup) and update the HOME_NET variable.  Also update the network variable in pads.conf and the HOME_NET variable in sancp.conf (may just want to use 0.0.0.0).  Then update Bro's network configuration in /usr/local/etc/networks.cfg.  Finally, restart the sensor processes:
 {{{
 sudo nsm_sensor_ps-restart
 }}}
