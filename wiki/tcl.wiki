@@ -15,20 +15,20 @@ If you force tcl8.5 to install, it will install the threaded version and Sguil w
 If you accidentally installed the threaded version of tcl8.5, you should be able to get back to a working configuration using the following steps:
 {{{
 # get the correct version for SO
-wget -q http://sourceforge.net/​projects/security-onion/files/​20110607/tcl8.5_8.5.8-2_i386.​deb
+wget http://sourceforge.net/projects/security-onion/files/20110607/tcl8.5_8.5.8-2_i386.deb
 
 # remove the wrong version
-dpkg -r tcl tcl8.3-dev tk8.4 itcl3 itk3 iwidgets4
+sudo dpkg -r tcl tcl8.3-dev tk8.4 itcl3 itk3 iwidgets4
 
 # install the correct version
-dpkg -i tcl8.5_8.5.8-2_i386.deb
-apt-get -y install tk8.5 itcl3 itk3 iwidgets4 expect
+sudo dpkg -i tcl8.5_8.5.8-2_i386.deb
+sudo apt-get -y install tk8.5 itcl3 itk3 iwidgets4 expect
 
 # set the default tcl version
-update-alternatives --set tclsh /usr/bin/tclsh8.5 
+sudo update-alternatives --set tclsh /usr/bin/tclsh8.5 
 
 # put the packages back on hold
-wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4
+sudo wajig hold tcl8.5 tk8.5 tcl8.4 itcl3 itk3 iwidgets4
 }}}
 
 = See Also =
