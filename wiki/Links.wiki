@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Ashley Deuble: Using and Configuring Security Onion to detect and prevent Web Application Attacks<br>
+http://www.sans.org/reading_room/whitepapers/detection/configuring-security-onion-detect-prevent-web-application-attacks_33980
+
 Brett Cunningham and Micah Kays: Honeypot monitoring with Security Onion<br>
 http://5x5sec.blogspot.com/2012/06/honeypot-design.html
 
