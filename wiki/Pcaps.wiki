@@ -28,6 +28,8 @@
 
   * http://www.honeynet.org/node/504
 
+  * https://github.com/markofu/hackeire/tree/master/2011/pcap
+
   * http://www.defcon.org/html/links/dc-ctf.html  (You have to follow some of the links, which redirect to competitor blogs but there's lots of goodness).
 
 = tcpreplay =
