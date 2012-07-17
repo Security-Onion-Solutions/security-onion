@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Richard Bejtlich: How to Break Into Security, Bejtlich Edition
+http://krebsonsecurity.com/2012/07/how-to-break-into-security-bejtlich-edition/
+
 Ashley Deuble: Using and Configuring Security Onion to detect and prevent Web Application Attacks<br>
 http://www.sans.org/reading_room/whitepapers/detection/rss/_33980
 
