@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+dfirn00b: Using Security Onion to Find ZeroAccess Trojan<br>
+http://dfirjournal.wordpress.com/2012/07/19/more-zeroaccess/
+
 Richard Bejtlich: How to Break Into Security, Bejtlich Edition<br>
 http://krebsonsecurity.com/2012/07/how-to-break-into-security-bejtlich-edition/
 
