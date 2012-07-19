@@ -1,5 +1,8 @@
 #summary Random Links to other sites talking about Security Onion
 
+Brett Cunningham (@jbc22) and Micah Kays (cczkays): Honeypot - Adventures with Security Onion<br>
+http://marryware.blogspot.com/2012/07/honeypot-adventures-with-security-onion.html
+
 dfirn00b: Using Security Onion to Find ZeroAccess Trojan<br>
 http://dfirjournal.wordpress.com/2012/07/19/more-zeroaccess/
 
