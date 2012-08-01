@@ -31,8 +31,7 @@ Please note that this is all subject to change!
     * Issue 265: Upgrade httpry_agent to http_agent to support Bro logs
     * Issue 266: Remove httpry from NSM scripts
     * Issue 261: Add Mark Baggett's reassembler.py
-  * June 2012
-  * July/August 2012
+  * June/July/August 2012
     * Issue 247:  Big Distro Rebuild (BDR)
       * ISO image will be based on Xubuntu 12.04 64-bit
       * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
