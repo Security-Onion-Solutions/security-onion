@@ -32,13 +32,11 @@ Please note that this is all subject to change!
     * Issue 266: Remove httpry from NSM scripts
     * Issue 261: Add Mark Baggett's reassembler.py
   * June 2012
-    * Issue 146: ELSA (web-based interface for logs)
   * July/August 2012
     * Issue 247:  Big Distro Rebuild (BDR)
-      * Lubuntu 12.04
-      * 64-bit
+      * ISO image will be based on Xubuntu 12.04 64-bit
       * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
       * Considering pfring for higher performance
       * Development on the existing 32-bit version of Security Onion will stop so that we can focus on the future
       * There will be no in-place upgrade path since we're moving from 32-bit to 64-bit
-      * Issue 240:	Squert 1.0
+      * Issue 146: ELSA (web-based interface for logs)
