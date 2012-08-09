@@ -43,7 +43,7 @@ ip.src = "192.168.100.3"
 # Since we specified port 7789 in our snort rule, 
 tcp = TCP()
 tcp.dport = 7789
-tpc.sport = 1234
+tcp.sport = 1234
 
 # Set the playload
 payload = "Toolsmith"
