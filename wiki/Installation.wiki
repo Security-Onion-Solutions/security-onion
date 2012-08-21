@@ -13,8 +13,7 @@
 <br>
 - If you're going to be deploying Security Onion in production, the longer answer is as follows:<br>
   # Before you start, make sure your sensor(s) are capable.  Check the [Hardware] page.<br>
-  # <a href="http://sourceforge.net/projects/security-onion/files/">Click here and scroll to the bottom of the page.</a>  Download the ISO image.<br>
-  # Verify the MD5 and/or SHA1 checksums of the downloaded ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").<br>
+  # <a href="http://sourceforge.net/projects/security-onion/files/">Click here and scroll to the bottom of the page.</a>  Click the ISO image to begin the download.  Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i"). Once the ISO image download has completed, verify the checksum.<br>
   # (If deploying a master server and one or more slave sensors, you'll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master first.)<br>
   # Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
   # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind:
