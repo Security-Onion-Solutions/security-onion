@@ -1,0 +1,11 @@
+#summary Security Onion Mailing Lists
+
+=Security Onion Mailing List=
+Subscribe to this mailing list for announcements and general user support questions.
+
+http://groups.google.com/group/security-onion
+
+=Testing Mailing List=
+Subscribe to this mailing list if you'd like to test upcoming versions of Security Onion packages before they are released.
+
+http://groups.google.com/group/security-onion-testing
