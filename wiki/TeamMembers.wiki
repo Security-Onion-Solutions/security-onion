@@ -44,6 +44,7 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Doug Burks
   * Scott Runnels
   * Mark Hillick
+  * Brad Shoop
   * We need more folks to help spread the word about Security Onion by blogging, tweeting, and other social media.
 
 *Artwork*
