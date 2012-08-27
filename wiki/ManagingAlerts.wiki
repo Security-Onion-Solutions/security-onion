@@ -69,7 +69,7 @@ You can enter the mysql shell or issue mysql one-liner's from the command line.
 To enter the mysql shell, issue the following command
 
   {{{
-  msyql -uroot -Dsecurityonion_db
+  mysql -uroot -Dsecurityonion_db
   }}}  
 
 
