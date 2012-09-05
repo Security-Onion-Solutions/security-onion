@@ -220,7 +220,7 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
      For starters let's create some variables in /etc/nsm/rules/local.rules to define the traffic.
      First we're going to define a variable for our called overactive hosts called OVERACTIVE
      {{{
-     var OVERACTIVE 192.168.0.31,192.168.0.33,192.168.0.5,192.168.0.51
+     var OVERACTIVE [192.168.0.31,192.168.0.33,192.168.0.5,192.168.0.51]
      }}}
      We can plug this information into our snort rule format,
      {{{
