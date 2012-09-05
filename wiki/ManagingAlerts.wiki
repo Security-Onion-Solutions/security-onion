@@ -94,7 +94,7 @@ Giving the following query to mysql will return a table much like you see below.
   +--------+----------------------------------------------------------------------------------+--------------+
   | cnt    | signature                                                                        | signature_id |
   +--------+----------------------------------------------------------------------------------+--------------+
-  | 900286 | GPL SNMP public access udp                                                       |         1411 |
+  | 900286 | GPL SNMP public access udp                                                       |      2101411 |
   |   4709 | ET POLICY Dropbox.com Offsite File Backup in Use                                 |      2012647 |
   |   2334 | ET POLICY GNU/Linux APT User-Agent Outbound likely related to package management |      2013504 |
   |   1169 | GPL SHELLCODE x86 inc ebx NOOP                                                   |         1390 |
@@ -124,7 +124,7 @@ Again we can see that the top signature is the "GPL SNMP public access udp" aler
 If we're going to take action on this alert, it's best to ensure that these alerts are benign as part of our tuning process.  See which machines generated these alerts can be helpful in making that decision.
 
   {{{
-  SELECT COUNT(*) AS ip_cnt, INET_NTOA(src_ip) FROM event WHERE status=0 AND signature_id=1411 GROUP BY src_ip ORDER BY ip_cnt DESC;
+  SELECT COUNT(*) AS ip_cnt, INET_NTOA(src_ip) FROM event WHERE status=0 AND signature_id=2101411 GROUP BY src_ip ORDER BY ip_cnt DESC;
   }}}
 
 
@@ -147,7 +147,7 @@ We can gather a little more information by using a query that also returns the d
 
 
   {{{
-  SELECT COUNT(*) as ip_cnt, INET_NTOA(src_ip), INET_NTOA(dst_ip) FROM event WHERE status=0 and signature_id=1411 GROUP BY dst_ip ORDER BY ip_cnt DESC;
+  SELECT COUNT(*) as ip_cnt, INET_NTOA(src_ip), INET_NTOA(dst_ip) FROM event WHERE status=0 and signature_id=2101411 GROUP BY dst_ip ORDER BY ip_cnt DESC;
   }}}
 
   {{{
@@ -187,7 +187,7 @@ As mentioned before, take care in disabling signatures as it can be likely that 
   # Append the signature you wish to disable in the format gid:sid.  The generator ID is most likely going to be a "1" in most cases.  You can check the generator ID by checking the exact signature.  If a gid is not listed, it is assumed to be "1".
      {{{
      # Disable the GPL SNMP public access udp signature
-     1:1411
+     1:2101411
      }}}
   # Run the pulled pork update script on the server
      {{{
@@ -214,7 +214,7 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
      Here is the rule that has been generating so many alerts on our sensor(s)
      {{{
      macphisto@SecOnion-Dev:~$ grep -i "GPL SNMP public access udp" /etc/nsm/rules/downloaded.rules 
-  alert udp $EXTERNAL_NET any -> $HOME_NET 161 (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:1411; rev:11;)
+  alert udp $EXTERNAL_NET any -> $HOME_NET 161 (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:2101411; rev:11;)
      }}}
      We can rewrite the rule so it's a little less active. We will rewrite the rule to ignore this kind of alert if the destination is any of the hosts we've identified.
      For starters let's create some variables in /etc/nsm/rules/local.rules to define the traffic.
@@ -224,12 +224,12 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
      }}}
      We can plug this information into our snort rule format,
      {{{
-     alert icmp $HOME_NET any -> !$OVERACTIVE any (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:9001411; rev:1;)
+     alert udp $HOME_NET any -> !$OVERACTIVE any (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:9001411; rev:1;)
      }}}
      We also gave the alert a unique signature id (sid) by bumping it into the 90,000,000 range and set the revision to 1.
    # Now that we have a signature that will generate alerts a little more selectively, we need to disable the original signature.  Like above, we edit the /etc/pulledpork/disablesid.conf file and add:
    {{{
-   1:1411
+   1:2101411
    }}}
    # Update pulled pork and restart snort
    {{{
