@@ -283,3 +283,16 @@ To set the sguild server to autoconfigure events, you need to edit the file /etc
    {{{
    sudo /usr/local/sbin/nsm_server_ps-restart
    }}}
+
+==Sguil Days To Keep==
+You can configure Sguil's database retention by editing securityonion.conf and changing the DAYSTOKEEP setting (the default is 365 days):
+   {{{
+   /etc/nsm/securityonion.conf
+   }}}
+
+You can also use this setting to perform a Sguil database purge by editing the DAYSTOKEEP and manually running:
+   {{{
+   sudo nsm_server_ps-stop 
+   sudo /usr/local/bin/sguil_db_purge
+   sudo nsm_server_ps-restart
+   }}}
