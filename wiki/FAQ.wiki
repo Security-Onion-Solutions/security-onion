@@ -226,7 +226,7 @@ sudo a2dissite snorby
 }}}
 2. Edit the barnyard2.conf for each sensor: 
 {{{
-sudo nano /etc/nsm/<sensor-name>/barnyard2.conf
+sudo nano /etc/nsm/$HOSTNAME-$INTERFACE/barnyard2.conf
 }}}
 3. Remove or comment out the output database line:
 {{{
