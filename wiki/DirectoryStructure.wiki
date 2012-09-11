@@ -3,16 +3,16 @@
 = /nsm Directory Structure =
 
 == /nsm ==
-Backup, bro, sensor (if configured as sensor), and server (if configured as server) data.
+Backup, Bro, sensor (if configured as sensor), and server (if configured as server) data.
 
 == /nsm/backup ==
 Backup of Security Onion update scripts/files.
 
 == /nsm/bro ==
-Bro logs and configuration files.
+Bro IDS logs.
 
 == /nsm/sensor_data ==
-Sensor data including argus and IDS alerts organized by sensor name ($HOSTNAME-$INTERFACE).
+Sensor data including argus, IDS alerts, and full pcap organized by sensor name ($HOSTNAME-$INTERFACE).
 
 == /nsm/server_data ==
 Server data including IDS rulesets.
