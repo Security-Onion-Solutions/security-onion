@@ -228,9 +228,13 @@ sudo a2dissite snorby
 {{{
 sudo nano /etc/nsm/<sensor-name>/barnyard2.conf
 }}}
-Remove or comment out the output database line:
+3. Remove or comment out the output database line:
 {{{
 output database: alert, mysql, user=root dbname=snorby host=127.0.0.1
+}}}
+4. Restart barnyard2:
+{{{
+sudo nsm_sensor_ps-restart --only-barnyard2
 }}}
 
 = Why does Snort segfault every day at 7:01 AM? =
