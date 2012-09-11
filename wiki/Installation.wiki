@@ -66,7 +66,7 @@ curl http://testmyids.com
 xrandr -s WxH
 }}}
   # Login to Sguil, Squert (https://server/squert/), or Snorby (https://server:3000) and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs (/nsm/bro/logs/) for in-depth analysis.<br>
-  # Be aware that Snorby uses highcharts.  Read the <a href="http://shop.highsoft.com/highcharts.html">highcharts license</a> to determine if you need to purchase a commercial license.  If you feel that you would be required to purchase a commercial license but are unwilling/unable to, please disable/remove Snorby.<br>
+  # Be aware that Snorby uses highcharts.  Read the <a href="http://shop.highsoft.com/highcharts.html">highcharts license</a> to determine if you need to purchase a commercial license.  If you feel that you would be required to purchase a commercial license but are unwilling/unable to, please <a href="http://code.google.com/p/security-onion/wiki/FAQ">disable/remove Snorby</a> (See: "How do I disable Snorby?").<br>
   # Harden your server and sensors by disabling any unneeded services and [Firewall firewalling] off any unused ports.
   # Run the following to see how your sensor is coping with the load.  You should check this on a daily basis to make sure your sensor is not dropping packets.  Consider adding it to a cronjob and having it emailed to you (see the "configure email" link below).
 {{{
