@@ -219,6 +219,20 @@ Snorby::Jobs::GeoipUpdatedbJob.new(true).perform
 quit
 }}}
 
+= How do I disable Snorby? =
+1. Disable Snorby in the Apache configuration:
+{{{
+sudo a2dissite snorby
+}}}
+2. Edit the barnyard2.conf for each sensor: 
+{{{
+sudo nano /etc/nsm/<sensor-name>/barnyard2.conf
+}}}
+Remove or comment out the output database line:
+{{{
+output database: alert, mysql, user=root dbname=snorby host=127.0.0.1
+}}}
+
 = Why does Snort segfault every day at 7:01 AM? =
 7:01 AM is the time of the daily PulledPork rules update.  If you're running Snort with the VRT ruleset, this includes updating the SO rules.  There is a known issue when running Snort with the VRT ruleset and updating the SO rules:<br>
 <a href="https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion">https://groups.google.com/d/topic/pulledpork-users/1bQDkh3AhNs/discussion</a><br>
