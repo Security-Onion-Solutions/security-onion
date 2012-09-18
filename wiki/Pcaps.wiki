@@ -4,7 +4,7 @@
 
   * https://www.openpacket.org/
 
-  * http://sourceforge.net/apps/mediawiki/networkminer/index.php?title=Publicly_available_PCAP_files
+  * http://www.netresec.com/?page=PcapFiles
 
   * http://old.honeynet.org/scans/
 
