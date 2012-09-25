@@ -225,10 +225,13 @@ u.save
 quit
 }}}
 = Why isn't Snorby showing GeoIP data properly? =
-Try forcing the GeoIP job to run by doing the following:
+Try forcing the GeoIP job to run by doing the following.  First, open the Rails console:
 {{{
 cd /usr/local/share/snorby/
 sudo RAILS_ENV=production bundle exec rails c
+}}}
+In the Rails console, initiate the GeoIP job:
+{{{
 Snorby::Jobs::GeoipUpdatedbJob.new(true).perform
 quit
 }}}
