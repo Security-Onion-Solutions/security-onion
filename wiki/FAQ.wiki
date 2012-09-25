@@ -210,6 +210,20 @@ For more information, please see:<br>
 All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
 <a href="http://securityonion.blogspot.com/2012/03/security-onion-20120321-now-available.html">http://securityonion.blogspot.com/2012/03/security-onion-20120321-now-available.html</a>
 
+= I've forgotten my Snorby password.  How do I reset it? =
+First, open the Rails console:
+{{{
+cd /usr/local/share/snorby/
+sudo RAILS_ENV=production bundle exec rails c
+}}}
+In the Rails console, reset your Snorby password as follows:
+{{{
+u = User.find_by_email("foo@bar.com")
+u.password="NewUnencryptedPassword123"
+u.password_confirmation="NewUnencryptedPassword123"
+u.save
+quit
+}}}
 = Why isn't Snorby showing GeoIP data properly? =
 Try forcing the GeoIP job to run by doing the following:
 {{{
