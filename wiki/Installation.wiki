@@ -2,7 +2,7 @@
 
 = Please read the following before downloading! =
 
-If you're looking for the new Security Onion 12.04 Beta, please see the [Beta] page.
+This page is for the old Security Onion based on Ubuntu 10.04.  If you're looking for the new Security Onion 12.04 Beta, please see the [Beta] page.
 
 = What's the recommended procedure for installing Security Onion? =
 
