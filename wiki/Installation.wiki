@@ -2,6 +2,8 @@
 
 = Please read the following before downloading! =
 
+If you're looking for the new Security Onion 12.04 Beta, please see the [Beta] page.
+
 = What's the recommended procedure for installing Security Onion? =
 
 - If you just want to quickly evaluate Security Onion, the short answer is:<br>
