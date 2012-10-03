@@ -240,7 +240,24 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
 COMING SOON
 
 ==Suppressions==
-COMING SOON
+A suppression rule allows you to make some finer grained decisions about certain rules without the onus of rewriting them.  With this functionality we can suppress rules based on their signature, the source or destination address and even the IP or full CIDR network block.  This way, you still have the basic ruleset, but the situations in which they fire are altered.  It's important to note that with this functionality, care should be given to the suppressions being written to make sure they do not suppress legitimate alerts.
+
+Sticking with our current example of disabling the "GPL SNMP public access udp" alert we can build a suppression rule that limits this signature from firing for machines in which this behavior is deemed acceptable.  For example, you would often see this rule firing rapidly for any service that queries SNMP on a regular basic.  Services like Nagios produce a great many of these alerts.  In this example, we will operate on the following known information:
+
+|| Source IP Address ||   172.16.42.109 ||
+||Generator ID||  1 ||
+||Signature ID||  2101411 ||
+
+The format for a suppression is very straight forward.  Below is the basic format for a suppression with the configurable areas marked in bold text.  
+
+suppress gen_id *gen-id*, sid_id *sid-id*, track *[by_src|by_dst]*, ip *IP/MASK-BITS*
+
+We can simply transplant the known information for the bold text above and place the following in our threshold.conf file (SecurityOnion 10.04 based version:  /etc/nsm/$HOSTNAME-$NIC/threshold.conf SecurityOnion 12.04 based version: /etc/nsm/threshold.conf):
+
+{{{
+suppress gen_id 1, sid_id 2101411, track by_src, ip 172.16.42.109
+}}}
+
 
 ==Autocategorize events==
 This solution only applies to sguil.  If you use Snorby, it would be best to investigate one of the other solutions.
