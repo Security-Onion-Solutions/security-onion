@@ -252,7 +252,7 @@ The format for a suppression is very straight forward.  Below is the basic forma
 
 suppress gen_id *gen-id*, sid_id *sid-id*, track *[by_src|by_dst]*, ip *IP/MASK-BITS*
 
-We can simply transplant the known information for the bold text above and place the following in our threshold.conf file (SecurityOnion 10.04 based version:  /etc/nsm/$HOSTNAME-$NIC/threshold.conf SecurityOnion 12.04 based version: /etc/nsm/threshold.conf):
+We can simply transplant the known information for the bold text above and place the following in our threshold.conf file (SecurityOnion 10.04 based version:  /etc/nsm/$HOSTNAME-$NIC/threshold.conf SecurityOnion 12.04 based version: /etc/nsm/rules/threshold.conf):
 
 {{{
 suppress gen_id 1, sid_id 2101411, track by_src, ip 172.16.42.109
