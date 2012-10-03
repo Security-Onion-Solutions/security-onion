@@ -258,6 +258,12 @@ We can simply transplant the known information for the bold text above and place
 suppress gen_id 1, sid_id 2101411, track by_src, ip 172.16.42.109
 }}}
 
+Once the correct suppression has been placed in threshold.conf, restart the alert engine:
+
+{{{
+sudo nsm_sensor_ps-restart --only-snort-alert 
+}}}
+
 
 ==Autocategorize events==
 This solution only applies to sguil.  If you use Snorby, it would be best to investigate one of the other solutions.
