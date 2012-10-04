@@ -67,5 +67,5 @@ I haven't finished packaging our Bro scripts, so Bro will still be logging all h
 We still need to replace daemonlogger with netsniff-ng for higher performance.
 
 = Feedback =
-If you have questions or problems, please send a detailed email to our TESTING mailing list:
+If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):
 http://groups.google.com/group/security-onion-testing
