@@ -43,5 +43,5 @@ sudo sosetup
 sguil.tk
 }}}
 = Feedback =
-If you have questions or problems, please send a detailed email to our mailing list:
-http://groups.google.com/group/security-onion
+If you have questions or problems, please send a detailed email to our TESTING mailing list:
+http://groups.google.com/group/security-onion-testing
