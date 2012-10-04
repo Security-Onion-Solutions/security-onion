@@ -60,6 +60,9 @@ PRADS is a replacement for both PADS and SANCP.  There are several known issues 
 https://github.com/gamelinux/prads/issues/19<br>
 https://github.com/gamelinux/prads/issues/21<br>
 
+= Known Issues: Bro http.log =
+I haven't finished packaging our Bro scripts, so Bro will still be logging all http traffic to http.log per its default.  This is fine if you're only monitoring a single network interface.  But if you're monitoring multiple network interfaces, our scripts expect the http.log to be split per interface.  This means that those monitoring multiple network interfaces won't have http logs in Sguil at the moment.
+
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list:
 http://groups.google.com/group/security-onion-testing
