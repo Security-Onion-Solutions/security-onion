@@ -57,8 +57,8 @@ sudo apt-get -y install securityonion-all
 
 = Known Issues: PRADS =
 PRADS is a replacement for both PADS and SANCP.  There are several known issues with PRADS:<br>
-https://github.com/gamelinux/prads/issues/19
-https://github.com/gamelinux/prads/issues/21
+https://github.com/gamelinux/prads/issues/19<br>
+https://github.com/gamelinux/prads/issues/21<br>
 
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list:
