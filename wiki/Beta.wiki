@@ -42,6 +42,19 @@ sudo sosetup
 {{{
 sguil.tk
 }}}
+
+= Known Issues =
+If you're currently testing the new Security Onion 12.04 Beta and installed the packages before October 4 and do an "apt-get upgrade", the OSSEC package may require some manual intervention: 
+  * if prompted about /etc/ossec-init.conf, just press Enter to accept the default of "N, keep the current version" 
+  * afterwards, if OSSEC isn't running, then you'll need to purge the package and reinstall it: 
+{{{
+sudo apt-get purge ossec-hids-server 
+}}}
+  * this will remove some securityonion metapackages, so let's reinstall them (and OSSEC):
+{{{
+sudo apt-get -y install securityonion-all 
+}}}
+
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list:
 http://groups.google.com/group/security-onion-testing
