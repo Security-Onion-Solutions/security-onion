@@ -22,7 +22,7 @@ See http://www.tcltk.com/iwidgets/ for more info.
 }}}
 This is related to the previous question.  See [tcl tcl notes].
 
-= What is the password for root/mysql/Squert? =
+= What is the password for root/mysql/Sguil/Squert/Snorby/ELSA? =
 [Passwords]
 
 = How do I configure email for alerting and reporting? =
@@ -126,9 +126,13 @@ sudo update-grub
 For more information, please see:<br>
 <a href="http://ubuntuforums.org/showthread.php?t=1690118">http://ubuntuforums.org/showthread.php?t=1690118</a>
 
+In Security Onion 12.04, you can install our packages on top of Ubuntu Server (minimal installation, no GUI).
+
 = How do I get Security Onion to recognize more than 4GB of RAM? =
 Install the PAE kernel as described here:<br>
 <a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a>
+
+Security Onion 12.04 has full 64-bit support which supports more than 4GB RAM by default.
 
 = How do I disable the graphical Network Manager and configuring networking from the command line? =
 
@@ -299,6 +303,8 @@ ntop defaults to port 3000, which is already being used by Snorby.  You can chan
 GETOPT="-w 0 -W 4000"
 }}}
 This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!
+
+In Security Onion 12.04, Snorby no longer runs on port 3000, so this shouldn't be an issue.
 
 = What's the difference between a "server" and a "sensor"? =
 box<br>
