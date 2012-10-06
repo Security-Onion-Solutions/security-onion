@@ -45,9 +45,9 @@ sguil.tk
 
 = Metapackages =
 The instructions above used the securityonion-all metapackage to install ALL of our individual packages.  We have some more focused metapackages that you can use for a more focused deployment:
-securityonion-client
-securityonion-sensor
-securityonion-server
+  * securityonion-client
+  * securityonion-sensor
+  * securityonion-server
 
 = Known Issues: OSSEC Upgrade =
 If you're currently testing the new Security Onion 12.04 Beta and installed the packages before October 4 and do an "apt-get upgrade", the OSSEC package may require some manual intervention: 
