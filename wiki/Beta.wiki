@@ -44,7 +44,7 @@ sguil.tk
 }}}
 
 = Metapackages =
-The instructions above used the securityonion-all metapackage (about 300MB) to install ALL of our individual packages.  We have some more focused metapackages that you can use for a more focused deployment:
+The instructions above used the securityonion-all metapackage to install ALL of our individual packages (about 300MB).  We have some more focused metapackages that you can use for a more focused deployment:
   * securityonion-client (about 50MB)
   * securityonion-sensor (about 50MB)
   * securityonion-server (about 200MB)
