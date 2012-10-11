@@ -250,12 +250,12 @@ Sticking with our current example of disabling the "GPL SNMP public access udp" 
 
 The format for a suppression is very straight forward.  Below is the basic format for a suppression with the configurable areas marked in bold text.  
 
-suppress gen_id *gen-id*, sid_id *sid-id*, track *[by_src|by_dst]*, ip *IP/MASK-BITS*
+suppress gen_id *gen-id*, sig_id *sid-id*, track *[by_src|by_dst]*, ip *IP/MASK-BITS*
 
 We can simply transplant the known information for the bold text above and place the following in our threshold.conf file (for SecurityOnion 10.04 based version, check the configuration file being loaded with snort or suricata, for the SecurityOnion 12.04 based version use /etc/nsm/rules/threshold.conf):
 
 {{{
-suppress gen_id 1, sid_id 2101411, track by_src, ip 172.16.42.109
+suppress gen_id 1, sig_id 2101411, track by_src, ip 172.16.42.109
 }}}
 
 Once the correct suppression has been placed in threshold.conf, restart the alert engine:
