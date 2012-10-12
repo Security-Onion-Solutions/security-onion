@@ -14,11 +14,14 @@ Please keep in mind that this is not ready for production usage yet.  We're stil
 +1GB RAM for EACH network interface that you choose to monitor <br>
 + >=512MB RAM if you choose to enable ELSA 
 
+HIGHLY RECOMMENDED
+64-bit
+Intel NICs
 LOTS of disk space for full packet capture!
 
 = Installation Instructions =
 
-  * Install your desired flavor of Ubuntu 12.04 (Ubuntu, Kubuntu, Lubuntu, Xubuntu, or Ubuntu Server). 
+  * Install your desired flavor of Ubuntu 12.04 (Ubuntu, Kubuntu, Lubuntu, Xubuntu, or Ubuntu Server). You should be able to use 32-bit or 64-bit, but 64-bit is highly recommended!
   * Apply any available Ubuntu updates and reboot if necessary.
   * If you're running a VM, now would be a good time to snapshot it so you can revert later if you need to.
   * Tell MySQL not to prompt for root password: 
