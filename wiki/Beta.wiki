@@ -22,8 +22,15 @@ Please keep in mind that this is not ready for production usage yet.  We're stil
 
 = Installation Instructions =
 
-  * Install your desired flavor of Ubuntu 12.04 (Ubuntu, Kubuntu, Lubuntu, Xubuntu, or Ubuntu Server). You should be able to use 32-bit or 64-bit, but 64-bit is highly recommended (assuming your hardware supports it).
-  * Apply any available Ubuntu updates and reboot if necessary.
+  * Download your desired flavor of Ubuntu 12.04.  You should be able to use 32-bit or 64-bit, but 64-bit is highly recommended (assuming your hardware supports it):
+   * Ubuntu Server (no GUI)- http://www.ubuntu.com/download/server
+   * Ubuntu Desktop - http://www.ubuntu.com/download/desktop
+   * Kubuntu - http://www.kubuntu.org/getkubuntu/download
+   * Xubuntu - http://xubuntu.org/getxubuntu/
+   * Lubuntu - https://help.ubuntu.com/community/Lubuntu/GetLubuntu
+  * Verify the checksum of the downloaded ISO image.
+  * Boot the ISO image, proceed through the Ubuntu installer, and reboot into your new installation.
+  * Apply any available Ubuntu updates and reboot.
   * If you're running a VM, now would be a good time to snapshot it so you can revert later if you need to.
   * Tell MySQL not to prompt for root password: 
 {{{
