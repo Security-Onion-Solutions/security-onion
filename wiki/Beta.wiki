@@ -52,7 +52,7 @@ sudo sosetup
 }}}
   * Follow the prompts!
   * Once you've completed the Setup wizard, open the Chromium web browser and go to https://localhost for links to Squert, Snorby, and ELSA.
-  * To open the Sguil client, find the icon in the Security Onion menu (Xubuntu/Lubuntu) or just type:
+  * To launch the Sguil client, find the icon in the Security Onion menu (Xubuntu/Lubuntu) or just type:
 {{{
 sguil.tk
 }}}
