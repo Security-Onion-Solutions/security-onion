@@ -30,7 +30,10 @@ Please keep in mind that this is not ready for production usage yet.  We're stil
    * Lubuntu - https://help.ubuntu.com/community/Lubuntu/GetLubuntu
   * Verify the checksum of the downloaded ISO image.
   * Boot the ISO image, proceed through the Ubuntu installer, and reboot into your new installation.
-  * Apply any available Ubuntu updates and reboot.
+  * Apply any available Ubuntu updates and reboot:
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
+}}}
   * If you're running a VM, now would be a good time to snapshot it so you can revert later if you need to.
   * Tell MySQL not to prompt for root password: 
 {{{
