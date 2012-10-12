@@ -17,9 +17,9 @@ Please keep in mind that this is not ready for production usage yet.  We're stil
 
 = Hardware Recommendations =
 64-bit<br>
-RAM - as much as your server holds!<br>
-Disk - as much as your server holds!<br>
 Intel NICs<br>
+as much RAM as your server holds!<br>
+as much Disk as your server holds!<br>
 
 = Installation Instructions =
 
