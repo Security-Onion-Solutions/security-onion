@@ -1,8 +1,8 @@
 #summary Security Onion Mailing Lists
 
-In many cases, we'll end up asking for the following, so please include it in your email:
-sudo sostat
-(redacting sensitive info as necessary)
+In many cases, we'll end up asking for the following, so please include it in your email:<br>
+sudo sostat<br>
+(redacting sensitive info as necessary)<br>
 
 =Security Onion Mailing List=
 Subscribe to this mailing list for announcements and general user support questions.  (If you're using the old version of Security Onion based on Ubuntu 10.04, use this list.)
