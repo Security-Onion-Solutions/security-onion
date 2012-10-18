@@ -206,8 +206,11 @@ sudo nsm_server_ps-start
 For more information, please see:<br>
 <a href="http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F">http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a><br>
 
-= How can I install FreeNX on Security Onion? =
-[FreeNX Installing FreeNX on Security Onion Wiki Article] - Contributed by Lance Honer
+= How can I remote control my Security Onion box? =
+A few options:
+  * You can use [FreeNX] but there tend to be issues with tcl/tk (described in the linked wiki article).
+  * <a href="http://www.xrdp.org/">xrdp</a> - sudo apt-get install xrdp 
+  * "ssh -X" - any program started in the SSH session will be displayed on your local desktop (requires a local X server)
 
 = How can I add and test local rules? = 
 [AddingLocalRules Adding local rules and testing them with scapy]
