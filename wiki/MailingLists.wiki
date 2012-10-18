@@ -1,6 +1,10 @@
 #summary Security Onion Mailing Lists
 
 =Questions/Problems=
+
+In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
+http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
+
 In many cases, we'll end up asking for the following, so please include it in your email:<br>
 sudo sostat<br>
 (redacting sensitive info as necessary)<br>
