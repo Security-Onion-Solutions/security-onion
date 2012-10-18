@@ -92,5 +92,5 @@ There is a known issue with sphinxsearch (used by ELSA) not starting properly on
 sudo service sphinxsearch restart
 }}}
 = Feedback =
-If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):
+If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):<br>
 [MailingLists Security Onion Mailing Lists]
