@@ -29,7 +29,9 @@ Please keep in mind that this is not ready for production usage yet.  We're stil
    * Xubuntu - http://xubuntu.org/getxubuntu/
    * Lubuntu - https://help.ubuntu.com/community/Lubuntu/GetLubuntu
   * Verify the checksum of the downloaded ISO image.
-  * Boot the ISO image, proceed through the Ubuntu installer, and reboot into your new installation.
+  * Boot the ISO image.
+  * Proceed through the Ubuntu installer.  If prompted, do not install any additional packages (MySQL, etc.).  Our packages will automatically install those later.
+  * Reboot into your new installation.
   * Apply any available Ubuntu updates and reboot:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
