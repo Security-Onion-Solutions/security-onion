@@ -30,7 +30,7 @@ Please keep in mind that this is not ready for production usage yet.  We're stil
    * Lubuntu - https://help.ubuntu.com/community/Lubuntu/GetLubuntu
   * Verify the checksum of the downloaded ISO image.
   * Boot the ISO image.
-  * Proceed through the Ubuntu installer.  If prompted, do not install any additional packages (MySQL, etc.).  Our packages will automatically install those later.
+  * Proceed through the Ubuntu installer.  If prompted, do not install any additional packages (MySQL, etc.).  Our packages will automatically install all dependencies later.
   * Reboot into your new installation.
   * Apply any available Ubuntu updates and reboot:
 {{{
