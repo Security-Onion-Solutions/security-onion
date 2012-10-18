@@ -64,7 +64,7 @@ The instructions above used the securityonion-all metapackage to install ALL of 
   * securityonion-elsa and securityonion-elsa-extras (about 50MB)
   * securityonion-server (about 200MB)
 
-= Known Issues: OSSEC Upgrade =
+= Known Issue: OSSEC Upgrade =
 If you're currently testing the new Security Onion 12.04 Beta and installed the packages before October 4 and do an "apt-get upgrade", the OSSEC package may require some manual intervention: 
   * if prompted about /etc/ossec-init.conf, just press Enter to accept the default of "N, keep the current version" 
   * afterwards, if OSSEC isn't running, then you'll need to purge the package and reinstall it: 
@@ -81,9 +81,14 @@ PRADS is a replacement for both PADS and SANCP.  There are several known issues 
 https://github.com/gamelinux/prads/issues/19<br>
 https://github.com/gamelinux/prads/issues/21<br>
 
-= Known Issues: daemonlogger and netsniff-ng =
+= Known Issue: daemonlogger and netsniff-ng =
 We still need to replace daemonlogger with netsniff-ng for higher performance.
 
+=Known Issue: sphinxsearch=
+There is a known issue with sphinxsearch (used by ELSA) not starting properly on boot.  Until a proper fix is available, you can manually restart sphinxsearch with the following:
+{{{
+sudo service sphinxsearch restart
+}}}
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):
 http://groups.google.com/group/security-onion-testing
