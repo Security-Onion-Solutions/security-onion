@@ -342,4 +342,4 @@ Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<b
 
 = Where do I send questions/problems/suggestions? =
 
-[MailingLists]
+[MailingLists Security Onion Mailing Lists]
