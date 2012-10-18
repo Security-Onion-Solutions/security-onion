@@ -9,12 +9,12 @@ In many cases, we'll end up asking for the following, so please include it in yo
 sudo sostat<br>
 (redacting sensitive info as necessary)<br>
 
-=Security Onion Mailing List=
+=Security-Onion Mailing List=
 Subscribe to this mailing list for announcements and general user support questions.  (If you're using the old version of Security Onion based on Ubuntu 10.04, use this list.)
 
 http://groups.google.com/group/security-onion
 
-=Testing Mailing List=
+=Security-Onion-Testing Mailing List=
 Subscribe to this mailing list if you'd like to test upcoming versions of Security Onion packages before they are released.  (If you're using the new beta version of Security Onion based on Ubuntu 12.04, use this list.)
 
 http://groups.google.com/group/security-onion-testing
