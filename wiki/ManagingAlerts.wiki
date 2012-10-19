@@ -332,7 +332,7 @@ You can configure Sguil's database retention by editing securityonion.conf and c
    /etc/nsm/securityonion.conf
    }}}
 
-You can also use this setting to perform a Sguil database purge by lowering the DAYSTOKEEP variable to a small number (like 7) and manually running:
+You can also use this setting to perform a Sguil database purge by lowering the DAYSTOKEEP variable to a small number (like 7 or 1) and manually running:
    {{{
    sudo sguil-db-purge
    }}}
