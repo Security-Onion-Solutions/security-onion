@@ -13,12 +13,12 @@ In order to be as effective and efficient as possible, please consider the follo
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
 =Mailing Lists=
-==Security-Onion Mailing List==
+==Security-Onion==
 This mailing list is for announcements and general user support questions.  (If you're using the old version of Security Onion based on Ubuntu 10.04, use this list.)
 
 http://groups.google.com/group/security-onion
 
-==Security-Onion-Testing Mailing List==
+==Security-Onion-Testing==
 Subscribe to this mailing list if you'd like to test upcoming versions of Security Onion packages before they are released.  (If you're using the new beta version of Security Onion based on Ubuntu 12.04, use this list.)
 
 http://groups.google.com/group/security-onion-testing
