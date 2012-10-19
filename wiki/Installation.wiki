@@ -6,14 +6,14 @@ This page is for the old Security Onion based on Ubuntu 10.04.  If you're lookin
 
 = What's the recommended procedure for installing Security Onion? =
 
-== If you just want to quickly evaluate Security Onion, follow these steps ==
+== If you just want to quickly evaluate Security Onion, follow these steps: ==
   # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface.  Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
   # <a href="http://sourceforge.net/projects/security-onion/files/">Download the ISO image</a>, verify its checksum, and boot from it.<br>
   # Run through the Xubuntu installer.<br>
   # Reboot into your new installation and double-click the Setup shortcut.  Follow the prompts.<br>
   # Analyze alerts using Sguil, Squert, or Snorby.<br>
 <br>
-== If you're going to be deploying Security Onion in production, follow these steps==
+== If you're going to be deploying Security Onion in production, follow these steps:==
   # Before you start, make sure your sensor(s) are capable.  Check the [Hardware] page.<br>
   # <a href="http://sourceforge.net/projects/security-onion/files/">Click here and scroll to the bottom of the page.</a>  Click the ISO image to begin the download.  Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i"). Once the ISO image download has completed, verify the checksum.<br>
   # (If deploying a master server and one or more slave sensors, you'll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master first.)<br>
