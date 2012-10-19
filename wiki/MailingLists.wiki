@@ -9,7 +9,7 @@ In many cases, we'll end up asking for the output of the following command, so p
 {{{
 sudo sostat
 }}}
-(redacting sensitive info as necessary)<br>
+(You may wish to redact sensitive info as necessary.)<br>
 
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
