@@ -1,5 +1,8 @@
 #summary Security Onion Mailing Lists
 
+=Moderation=
+Please keep in mind that our mailing lists are moderated, so your email will have to be approved before it is published to the list.  If at first you don't see your email appear in the mailing list, there is no need to re-send your email.  It has been queued and will be approved if appropriate.
+
 =Questions/Problems=
 
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
@@ -9,12 +12,13 @@ In many cases, we'll end up asking for the following, so please include it in yo
 sudo sostat<br>
 (redacting sensitive info as necessary)<br>
 
-=Security-Onion Mailing List=
+=Mailing Lists=
+==Security-Onion Mailing List==
 This mailing list is for announcements and general user support questions.  (If you're using the old version of Security Onion based on Ubuntu 10.04, use this list.)
 
 http://groups.google.com/group/security-onion
 
-=Security-Onion-Testing Mailing List=
+==Security-Onion-Testing Mailing List==
 Subscribe to this mailing list if you'd like to test upcoming versions of Security Onion packages before they are released.  (If you're using the new beta version of Security Onion based on Ubuntu 12.04, use this list.)
 
 http://groups.google.com/group/security-onion-testing
