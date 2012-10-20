@@ -21,7 +21,9 @@ Please keep in mind that this is not ready for production usage yet.  We're stil
   * as much Disk as your server holds!<br>
 
 =Ubuntu 12.04 vs Ubuntu 12.10=
-A few folks have asked about the new Ubuntu 12.10.  12.10 is not an LTS release and is untested/unsupported for Security Onion.  We only test/support LTS releases.
+Ubuntu 12.04 is an LTS (Long Term Support) release and is fully tested/supported for Security Onion.<br>
+
+12.10 is not an LTS release and is untested/unsupported for Security Onion.
 
 = Installation Instructions =
 
