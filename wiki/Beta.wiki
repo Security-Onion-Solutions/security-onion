@@ -82,6 +82,7 @@ sudo apt-get -y install securityonion-all
 PRADS is a replacement for both PADS and SANCP.  There are several known issues with PRADS:<br>
 https://github.com/gamelinux/prads/issues/19<br>
 https://github.com/gamelinux/prads/issues/21<br>
+https://github.com/gamelinux/prads/issues/26<br>
 
 = Known Issue: daemonlogger and netsniff-ng =
 We still need to replace daemonlogger with netsniff-ng for higher performance.
