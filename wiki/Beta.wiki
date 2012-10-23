@@ -53,7 +53,7 @@ sudo add-apt-repository -y ppa:securityonion/test
 sudo apt-get update
 sudo apt-get -y install securityonion-all 
 }}}
-  * Run the Setup wizard
+  * Run the Setup wizard (if running over a remote SSH connection, make sure you use "ssh -X" to enable X-Forwarding):
 {{{
 sudo sosetup
 }}}
