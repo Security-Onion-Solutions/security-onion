@@ -18,14 +18,14 @@ Next, configure your network interfaces in /etc/network/interfaces.
 You'll want a management interface (preferably connected to a dedicated management network) using either DHCP OR *preferably* static IP.  If your management interface uses DHCP and you have Bro in cluster mode, it will complain whenever your DHCP address changes and you'll have to update your IP in Bro's node.cfg file.  Static IP is highly recommended to prevent this issue.
 
 ===Sniffing interface(s)===
-You'll want one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href="http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html">http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html</a>):<br>
+You'll want one or more interfaces dedicated to sniffing (no IP address).  NIC offloading functions such as tso, gso, and gro should be disabled to ensure that Snort/Suricata get an accurate view of the traffic (see <a href="http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html">http://securityonion.blogspot.com/2011/10/when-is-full-packet-capture-not-full.html</a>).
 
 ===Sample /etc/network/interfaces===
 {{{
 auto lo
 iface lo inet loopback
 
-# Management interface using DHCP
+# Management interface using DHCP (not recommended due to Bro issue described above)
 auto eth0
 iface eth0 inet dhcp
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
