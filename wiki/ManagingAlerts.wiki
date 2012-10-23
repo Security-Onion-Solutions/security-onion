@@ -197,6 +197,7 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      {{{
      sudo /usr/local/bin/pulledpork_update.sh
      }}}
+     In the current Security Onion Beta, pulledpork_update.sh is /usr/bin/rule-update
 
 ==Rewrite the signature==
 Sometimes a signature is simply written too broadly for the particular use on a sensor.  In this case, a small rewrite to the signature can make it so we can weed out. 
@@ -235,6 +236,7 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
    {{{
    sudo /usr/local/bin/pulledpork_update.sh
    }}}
+   In the current Security Onion Beta, pulledpork_update.sh is /usr/bin/rule-update
 
 ==Threshold==
 COMING SOON
