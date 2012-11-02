@@ -37,6 +37,10 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
   * Boot the ISO image.
   * Proceed through the Ubuntu installer.  If prompted, do not install any additional packages (MySQL, etc.).  Our packages will automatically install all dependencies later.
   * Reboot into your new installation.
+  * If you installed a GUI, login using the username/password you specified in the Ubuntu installer.  If you installed Ubuntu Server (no GUI), you'll want to SSH into your new installation from another machine using the -X option to enable X-Forwarding:
+{{{
+ssh -X username@ip.of.securityonion.server
+}}}
   * Apply any available Ubuntu updates and reboot:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
@@ -53,7 +57,7 @@ sudo add-apt-repository -y ppa:securityonion/test
 sudo apt-get update
 sudo apt-get -y install securityonion-all 
 }}}
-  * Run the Setup wizard (if running over a remote SSH connection, make sure you use "ssh -X" to enable X-Forwarding):
+  * Run the Setup wizard:
 {{{
 sudo sosetup
 }}}
