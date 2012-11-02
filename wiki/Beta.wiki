@@ -96,9 +96,14 @@ https://github.com/gamelinux/prads/issues/21<br>
 We still need to replace daemonlogger with netsniff-ng for higher performance.
 
 =Known Issue: sphinxsearch=
-There is a known issue with sphinxsearch (used by ELSA) not starting properly on boot.  Until a proper fix is available, you can manually restart sphinxsearch with the following:
+There is a known issue with sphinxsearch (used by ELSA) not starting properly on boot.  As a quick-and-dirty bandaid until we have a proper fix, I modified my /etc/init.d/sphinxsearch as follows:<br>
+changed the "start)" case to "oldstart)" and then made "start" a synonym for restart by changing:
 {{{
-sudo service sphinxsearch restart
+restart|reload|force-reload) 
+}}}
+to:
+{{{ 
+start|restart|reload|force-reload) 
 }}}
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):<br>
