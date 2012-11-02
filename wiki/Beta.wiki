@@ -37,7 +37,7 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
   * Boot the ISO image.
   * Proceed through the Ubuntu installer.  If prompted, do not install any additional packages (MySQL, etc.).  Our packages will automatically install all dependencies later.
   * Reboot into your new installation.
-  * If you installed a GUI, login using the username/password you specified in the Ubuntu installer.  If you installed Ubuntu Server (no GUI), you'll want to SSH into your new installation from another machine using the -X option to enable X-Forwarding:
+  * If you installed a GUI, login using the username/password you specified in the Ubuntu installer.  If you installed Ubuntu Server (no GUI), you'll want to SSH into your new installation from another machine with an X server using the -X option to enable X-Forwarding:
 {{{
 ssh -X username@ip.of.securityonion.server
 }}}
