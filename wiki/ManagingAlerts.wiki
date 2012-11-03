@@ -236,7 +236,7 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
    {{{
    sudo /usr/local/bin/pulledpork_update.sh
    }}}
-   In the current Security Onion Beta, pulledpork_update.sh is /usr/bin/rule-update
+   PLEASE NOTE: In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to /usr/bin/rule-update.
 
 ==Threshold==
 COMING SOON
