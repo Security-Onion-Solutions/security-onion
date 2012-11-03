@@ -189,15 +189,15 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      # Disable the GPL SNMP public access udp signature
      1:2101411
      }}}
-  # Run the pulled pork update script on the server
+  # Run the rule update on the server:
      {{{
      sudo /usr/local/bin/pulledpork_update.sh
      }}}
-  # Run the pulled pork update script on the slave machines
+  # Run the rule update on the slave machines:
      {{{
      sudo /usr/local/bin/pulledpork_update.sh
      }}}
-     In the current Security Onion Beta, pulledpork_update.sh is /usr/bin/rule-update
+     PLEASE NOTE: In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to /usr/bin/rule-update.
 
 ==Rewrite the signature==
 Sometimes a signature is simply written too broadly for the particular use on a sensor.  In this case, a small rewrite to the signature can make it so we can weed out. 
@@ -232,7 +232,7 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
    {{{
    1:2101411
    }}}
-   # Update pulled pork and restart snort
+   # Run a rule update:
    {{{
    sudo /usr/local/bin/pulledpork_update.sh
    }}}
