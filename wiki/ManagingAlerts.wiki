@@ -240,12 +240,11 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
    PLEASE NOTE: In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to /usr/bin/rule-update.
 
 ==modifysid.conf==
-Another option is to use PulledPork's modifysid.conf to do the above.  There are several examples in the modifysid.conf file, so we won't repeat those here.
-  # Edit the modifysid.conf configuration file.
+Another option is to use PulledPork's modifysid.conf to do the above.  There are several examples in the modifysid.conf file, so we won't repeat them here.  Edit the modifysid.conf configuration file:
      {{{
      sudo vi /etc/pulledpork/modifysid.conf
      }}}
-     PLEASE NOTE: In the current Security Onion 12.04 Beta, the PulledPork directory is /etc/nsm/pulledpork/.
+PLEASE NOTE: In the current Security Onion 12.04 Beta, the PulledPork directory is /etc/nsm/pulledpork/.
 ==Threshold==
 COMING SOON
 
