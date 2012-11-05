@@ -12,7 +12,7 @@ However, Network Security Monitoring, as a practice, is not a solution you can p
 Given the large number of analyst tools available in SecurityOnion by default there are multiple ways to see signatures that are producing too many alerts.  We'll take a look at identifying the alerts using Snorby, Squert, Sguil, and the command line.  
 
 ==From Snorby==
-You can access the Snorby interface from a web browser using the URL [https://IP_ADDRESS:3000] and supplying the username and password you set during the setup of SecurityOnion.
+You can access the Snorby interface from a web browser using the URL [https://IP_ADDRESS:3000] and supplying the username and password you set during the setup of SecurityOnion.  If you're using the new Security Onion 12.04, it would be [https://IP_ADDRESS:444].
 
 The following screenshots are from a test network where I have left the sensors untuned.  I've selected "This Year" to show all events in the last year and each screenshot below shows the output when Signatures, Sources, and Destinations are selected.
 
