@@ -57,15 +57,11 @@ sudo add-apt-repository -y ppa:securityonion/test
 sudo apt-get update
 sudo apt-get -y install securityonion-all 
 }}}
-  * Run the Setup wizard:
+  * Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
 {{{
 sudo sosetup
 }}}
-  * If you're running Ubuntu Server (no GUI) and get an error like the following, then you need to make sure you used "ssh -X" to enable X-Forwarding:
-{{{
-(zenity:32342): Gtk-WARNING **: cannot open display:
-}}}
-  * Follow the prompts!
+  * Follow the prompts in the Setup wizard!
   * Once you've completed the Setup wizard, open the Chromium web browser and go to https://localhost for links to Squert, Snorby, and ELSA.
   * To launch the Sguil client, find the icon in the Security Onion menu (Xubuntu/Lubuntu) or just type:
 {{{
