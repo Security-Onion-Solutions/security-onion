@@ -61,7 +61,7 @@ sudo apt-get -y install securityonion-all
 {{{
 sudo sosetup
 }}}
-If you're running Ubuntu Server (no GUI) and get an error like the following, then you need to make sure you used "ssh -X" to enable X-Forwarding:
+  * If you're running Ubuntu Server (no GUI) and get an error like the following, then you need to make sure you used "ssh -X" to enable X-Forwarding:
 {{{
 (zenity:32342): Gtk-WARNING **: cannot open display:
 }}}
