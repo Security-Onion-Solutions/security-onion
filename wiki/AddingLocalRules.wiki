@@ -25,7 +25,7 @@ sudo nsm_sensor_ps-restart --only-snort
      {{{
 sudo /usr/local/bin/pulledpork_update.sh
      }}}
-     If you built the rule correctly, then snort should be back up and running. 
+     (PLEASE NOTE: In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to /usr/bin/rule-update.)  If you built the rule correctly, then snort should be back up and running. 
   # Generate some traffic to trigger the alert.
      To generate traffic we are going to use the python library scapy to craft packets with specific information to ensure we trigger the alert with the information we want.
      {{{
