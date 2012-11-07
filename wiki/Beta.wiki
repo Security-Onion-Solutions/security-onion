@@ -42,7 +42,7 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
 {{{
 ssh -X username@ip.of.securityonion.server
 }}}
-  * Apply any available Ubuntu updates and reboot:
+  * Apply any available Ubuntu updates (including new kernel packages) and reboot:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
