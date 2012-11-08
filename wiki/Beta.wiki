@@ -27,7 +27,7 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
 
 = Installation Instructions =
 
-  * Please read these instructions CAREFULLY and follow them EXACTLY.
+  * Please read these instructions CAREFULLY and follow them EXACTLY.  Commands have been formatted for easy copy/paste to avoid typos.
   * Download your desired flavor of Ubuntu 12.04.  You should be able to use 32-bit or 64-bit, but 64-bit is highly recommended (assuming your hardware supports it):
    * Ubuntu Server (no GUI)- http://www.ubuntu.com/download/server
    * Ubuntu Desktop - http://www.ubuntu.com/download/desktop
@@ -42,7 +42,7 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
 {{{
 ssh -X username@ip.of.securityonion.server
 }}}
-  * Apply any available Ubuntu updates (including new kernel packages) and reboot:
+  * Apply any available Ubuntu updates (including new kernel packages) and reboot (this is required for the pf_ring DKMS module to build properly):
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
@@ -76,7 +76,9 @@ The instructions above used the securityonion-all metapackage to install ALL of 
   * securityonion-elsa and securityonion-elsa-extras (about 50MB)
   * securityonion-server (about 200MB)
 
-= Known Issue: OSSEC Upgrade =
+= Known Issues =
+
+==OSSEC Upgrade==
 If you're currently testing the new Security Onion 12.04 Beta and installed the packages before October 4 and do an "apt-get upgrade", the OSSEC package may require some manual intervention: 
   * if prompted about /etc/ossec-init.conf, just press Enter to accept the default of "N, keep the current version" 
   * afterwards, if OSSEC isn't running, then you'll need to purge the package and reinstall it: 
@@ -88,14 +90,14 @@ sudo apt-get purge ossec-hids-server
 sudo apt-get -y install securityonion-all 
 }}}
 
-= Known Issues: PRADS =
+==PRADS==
 PRADS is a replacement for both PADS and SANCP.  Currently, PRADS does not capture the service banner like PADS used to:<br>
 https://github.com/gamelinux/prads/issues/19<br>
 
-= Known Issue: daemonlogger and netsniff-ng =
+==daemonlogger and netsniff-ng==
 We still need to replace daemonlogger with netsniff-ng for higher performance.
 
-=Known Issue: sphinxsearch=
+==sphinxsearch==
 There is a known issue with sphinxsearch (used by ELSA) not starting properly on boot.  As a quick-and-dirty bandaid until we have a proper fix, I modified my /etc/init.d/sphinxsearch as follows:<br>
 changed the "start)" case to "oldstart)" and then made "start" a synonym for restart by changing:
 {{{
@@ -105,6 +107,19 @@ to:
 {{{ 
 start|restart|reload|force-reload) 
 }}}
+
+==ELSA==
+The following ELSA issues are known and are being worked on:
+  * GeoIP
+  * Incorrect or missing parsers for Bro's dns.log, http.log, notice.log, capture_loss.log and software.log
+  * UnixDate error message
+
+==Bro path==
+Bro binaries are in /opt/bro/bin/, which is not in your $PATH by default.  We'll be updating the $PATH variable in a future package.
+
+==pcap_agent==
+Sometimes the pcap_agent doesn't start correctly.
+
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):<br>
 [MailingLists Security Onion Mailing Lists]
