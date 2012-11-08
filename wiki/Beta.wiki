@@ -78,7 +78,13 @@ The instructions above used the securityonion-all metapackage to install ALL of 
 
 = Known Issues =
 
-==OSSEC Upgrade==
+===pf_ring DKMS module===
+If you got errors while building the pf_ring DKMS module, do the following:
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
+}}}
+
+===OSSEC Upgrade===
 If you're currently testing the new Security Onion 12.04 Beta and installed the packages before October 4 and do an "apt-get upgrade", the OSSEC package may require some manual intervention: 
   * if prompted about /etc/ossec-init.conf, just press Enter to accept the default of "N, keep the current version" 
   * afterwards, if OSSEC isn't running, then you'll need to purge the package and reinstall it: 
@@ -90,14 +96,14 @@ sudo apt-get purge ossec-hids-server
 sudo apt-get -y install securityonion-all 
 }}}
 
-==PRADS==
+===PRADS===
 PRADS is a replacement for both PADS and SANCP.  Currently, PRADS does not capture the service banner like PADS used to:<br>
 https://github.com/gamelinux/prads/issues/19<br>
 
-==daemonlogger and netsniff-ng==
+===daemonlogger and netsniff-ng===
 We still need to replace daemonlogger with netsniff-ng for higher performance.
 
-==sphinxsearch==
+===sphinxsearch===
 There is a known issue with sphinxsearch (used by ELSA) not starting properly on boot.  As a quick-and-dirty bandaid until we have a proper fix, I modified my /etc/init.d/sphinxsearch as follows:<br>
 changed the "start)" case to "oldstart)" and then made "start" a synonym for restart by changing:
 {{{
@@ -108,16 +114,16 @@ to:
 start|restart|reload|force-reload) 
 }}}
 
-==ELSA==
+===ELSA===
 The following ELSA issues are known and are being worked on:
   * GeoIP
   * Incorrect or missing parsers for Bro's dns.log, http.log, notice.log, capture_loss.log and software.log
   * UnixDate error message
 
-==Bro path==
+===Bro path===
 Bro binaries are in /opt/bro/bin/, which is not in your $PATH by default.  We'll be updating the $PATH variable in a future package.
 
-==pcap_agent==
+===pcap_agent===
 Sometimes the pcap_agent doesn't start correctly.
 
 = Feedback =
