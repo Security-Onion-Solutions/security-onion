@@ -40,6 +40,8 @@ iface eth0 inet static
   netmask 255.255.255.0
   network 192.168.1.0
   broadcast 192.168.1.255
+  # If running Security Onion 12.04, you'll need to configure DNS here
+  dns-nameservers 192.168.1.1 192.168.1.2
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 
 # AND one or more of the following
