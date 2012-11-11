@@ -1,6 +1,6 @@
 #summary Frequently Asked Questions
 
-NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet.
+= NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. =
 
 = What's the recommended procedure for installing Security Onion? =
 [Installation Installation Procedure]
