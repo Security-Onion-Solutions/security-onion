@@ -4,7 +4,7 @@
 
 Security Onion 12.04 Beta is now available and ready for testing!  Thanks to everybody who has helped get us this far!
 
-All of our packages are in an Ubuntu Launchpad PPA.  That means you can start with your preferred flavor of Ubuntu 12.04, add our PPA and packages, and be up an running in just a few minutes!
+All of our packages are in an Ubuntu Launchpad PPA.  That means you can start with your preferred flavor of Ubuntu 12.04, add our PPA and packages, and be up and running in just a few minutes!
 
 = Warning! =
 Please keep in mind that this is not ready for production usage yet.  We're still in BETA and I reserve the right to break all the packages in the "test" repo at any time!
