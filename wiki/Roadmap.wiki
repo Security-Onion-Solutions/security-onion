@@ -1,36 +1,5 @@
 #summary The Future of Security Onion
 Please note that this is all subject to change!
-  * March 2012
-    * Issue 233:	Snorby 2.5.0
-    * Issue 235: Need statistics/diagnostics script
-    * Issue 237:	Snorby 2.5.1
-    * Issue 197:	Snort 2.9.2.1
-    * Issue 218: /etc/nsm/gen-msg.map out of date
-    * Issue 114: Provide single location for configuring BPF filters
-    * Issue 224:	typo in nsm_sensor-ps-start
-    * Issue 242:	Set Suricata runmode to autofp
-    * Issue 243:	Remove VLAN setting from pcap_agent.conf
-  * April 2012
-    * Issue 219: Default web page
-    * Issue 226: Rename Bro workers
-    * Issue 255: Add /etc/cron.d/nsm-watchdog back to nsmnow-admin-scripts package
-    * Issue 254: tcpflow 1.1.1 connection counter breaks Sguil's transcript window
-    * Issue 248: sostat doesn't handle single-digit date properly
-    * Issue 258: sostat should display the size of each pcap directory
-    * Issue 155: Modify Setup script so that IDS Engine choice is a list instead of Yes or No default
-    * Issue 250: Setup needs to delete Squert's ip2c md5 files before running ip2c.tcl
-    * Issue 251: Squert's ip2c.tcl needs to run once a week
-    * Issue 256: Update Setup to allow running multiple times in sensor-->server config
-    * Issue 257: Setup should create snort.stats if user chooses Suricata
-    * Issue 245: Snort 2.9.2.2
-    * Issue 259: Update Security Onion logo
-  * May 2012
-    * Issue 239: autossh tunnel from sensor to server needs to be more robust
-    * Issue 205: Bro's http.log needs to be per-interface
-    * Issue 264: NSM package is missing the bro cron job
-    * Issue 265: Upgrade httpry_agent to http_agent to support Bro logs
-    * Issue 266: Remove httpry from NSM scripts
-    * Issue 261: Add Mark Baggett's reassembler.py
   * June/July/August/September/October 2012
     * Issue 247:  Big Distro Rebuild (BDR)
       * Development on the existing 32-bit version of Security Onion will stop so that we can focus on the future
