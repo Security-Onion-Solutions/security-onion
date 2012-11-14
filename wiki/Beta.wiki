@@ -59,10 +59,7 @@ sudo add-apt-repository -y ppa:securityonion/test
 sudo apt-get update
 sudo apt-get -y install securityonion-all 
 }}}
-  * If you got any errors when installing the Security Onion packages, did you pay attention to the previous step marked IMPORTANT?  You may need to update your kernel and reboot to get the pf_ring kernel module to build correctly:
-{{{
-sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
-}}}
+  * If you got any errors when installing the Security Onion packages, please see the DKMS/pf_ring known issue below.
   * Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
 {{{
 sudo sosetup
@@ -83,7 +80,7 @@ The instructions above used the securityonion-all metapackage to install ALL of 
 
 = Known Issues =
 
-===pf_ring DKMS module===
+===DKMS unable to build pf_ring kernel module===
 If you forgot to run the following command before installing our packages:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
