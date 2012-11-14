@@ -43,7 +43,7 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
 {{{
 ssh -X username@ip.of.securityonion.server
 }}}
-  * Apply any available Ubuntu updates (including new kernel packages) and reboot (this is required for the pf_ring DKMS module to build properly):
+  * IMPORTANT! Apply any available Ubuntu updates (including new kernel packages) and reboot (this is required for the pf_ring DKMS module to build properly):
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
@@ -58,6 +58,10 @@ sudo apt-get -y install python-software-properties
 sudo add-apt-repository -y ppa:securityonion/test
 sudo apt-get update
 sudo apt-get -y install securityonion-all 
+}}}
+  * If you got any errors when installing the Security Onion packages, did you pay attention to the previous step marked IMPORTANT?  You may need to update your kernel and reboot to get the pf_ring kernel module to build correctly:
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
   * Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
 {{{
@@ -89,6 +93,10 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --keyserver-options h
 If you got errors while building the pf_ring DKMS module, do the following:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
+}}}
+After the machine restarts, check to see if the pf_ring module got built and loaded correctly:
+{{{
+lsmod |grep pf_ring
 }}}
 
 ===OSSEC Upgrade===
