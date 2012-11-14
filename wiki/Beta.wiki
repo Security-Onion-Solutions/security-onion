@@ -96,6 +96,11 @@ After the machine restarts, check to see if the pf_ring module got built and loa
 {{{
 lsmod |grep pf_ring
 }}}
+If there is no output (the pf_ring module didn't get built/loaded), you can try reinstalling the pfring-module package:
+{{{
+sudo apt-get install --reinstall securityonion-pfring-module
+}}}
+If it still fails, perform a fresh installation and follows the steps at the top of the page exactly.
 
 ===add-apt-repository and proxies===
 From Brian Sims:
