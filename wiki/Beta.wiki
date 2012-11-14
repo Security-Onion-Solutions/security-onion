@@ -84,7 +84,11 @@ The instructions above used the securityonion-all metapackage to install ALL of 
 = Known Issues =
 
 ===pf_ring DKMS module===
-If you got errors while building the pf_ring DKMS module, do the following:
+If you forgot to run the following command before installing our packages:
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
+}}}
+then you could get into a situation where DKMS is unable to build your pf_ring kernel module because you're not running the most recent kernel.  This will result in cascading errors in our package installation.  The good news is it looks like if you then run that command, it should sort everything out:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
