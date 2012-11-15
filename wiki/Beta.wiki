@@ -122,8 +122,8 @@ sudo apt-get -y install securityonion-all
 PRADS is a replacement for both PADS and SANCP.  Currently, PRADS does not capture the service banner like PADS used to:<br>
 https://github.com/gamelinux/prads/issues/19<br>
 
-===daemonlogger and netsniff-ng===
-We still need to replace daemonlogger with netsniff-ng for higher performance.
+===netsniff-ng===
+We've replaced daemonlogger with netsniff-ng for higher performance, but we still need to configure it to process our BPF and run as a non-root user.
 
 ===sphinxsearch===
 There is a known issue with sphinxsearch (used by ELSA) not starting properly on boot.  As a quick-and-dirty bandaid until we have a proper fix, I modified my /etc/init.d/sphinxsearch as follows:<br>
