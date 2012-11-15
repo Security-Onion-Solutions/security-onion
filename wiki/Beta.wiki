@@ -99,8 +99,8 @@ sudo apt-get install --reinstall securityonion-pfring-module
 }}}
 If it still fails, start over with a fresh Ubuntu installation and follows the steps at the top of the page exactly.
 
-===add-apt-repository and proxies===
-From Brian Sims:
+===Proxy configuration===
+If you use a proxy on your network for outbound Internet connections, you may need to configure Ubuntu for your proxy to allow it to download updates.  Please see our [Proxy] page and make sure you set all 3 variables (http_proxy, https_proxy, and ftp_proxy).  If you still have issues downloading updates through your proxy, please see this note from Brian Sims:
 "it doesn't look like add-apt-repository, as noted in the install instructions plays nice, by default, with http proxies.   With both the http_proxy environment variable configured as well as being in apt.conf (apt itself works, as does wget, etc), add-apt-respository eventually just fails with a cryptic "Error reading /securityonion/test/ubuntu: couldn't connect to host".    The repo is added to /etc/apt/sources.list.d, but the part that fails is the key retrieval.  Looks like a fairly common problem, solution seems to be to use apt-key afterwards, where you can specify a proxy as an argument on the command line, last argument is the SO keyid."
 {{{
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --keyserver-options http-proxy="http://user:pass@foo.bar:3128" --recv-keys E1E6759023F386C7
