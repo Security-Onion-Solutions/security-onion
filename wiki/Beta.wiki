@@ -52,7 +52,7 @@ sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 {{{
 echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections  
 }}}
-  * Add our test repo and install ALL packages.  This could take 15 minutes or more depending on your CPU/Internet: 
+  * Add our test repo and install ALL Security Onion packages.  This could take 15 minutes or more depending on the speed of your CPU and Internet connection: 
 {{{
 sudo apt-get -y install python-software-properties
 sudo add-apt-repository -y ppa:securityonion/test
