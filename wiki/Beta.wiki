@@ -119,8 +119,9 @@ sudo apt-get -y install securityonion-all
 }}}
 
 ===PRADS===
-PRADS is a replacement for both PADS and SANCP.  Currently, PRADS does not capture the service banner like PADS used to:<br>
+PRADS is a replacement for both PADS and SANCP.  Known issues with PRADS:<br>
 https://github.com/gamelinux/prads/issues/19<br>
+https://github.com/gamelinux/prads/issues/30<br>
 
 ===netsniff-ng===
 We've replaced daemonlogger with netsniff-ng for higher performance, but we still need to configure it to process our BPF and run as a non-root user.
