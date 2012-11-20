@@ -52,7 +52,7 @@ touch ~/.Xauthority
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
   * If you're running a VM, now would be a good time to snapshot it so you can revert later if you need to.
-  * Log back in (over SSH -X if remote) and configure MySQL not to prompt for root password: 
+  * Log back in (over "ssh -X" if remote) and configure MySQL not to prompt for root password: 
 {{{
 echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections  
 }}}
@@ -69,7 +69,7 @@ sudo apt-get -y install securityonion-all
 sudo sosetup
 }}}
   * The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
-  * After rebooting, log back in (over SSH -X if remote) and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk your through the rest of the configuration.
+  * After rebooting, log back in (over "ssh -X" if remote) and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk your through the rest of the configuration.
   * Once you've completed the Setup wizard, open the Chromium web browser and go to https://localhost for links to Squert, Snorby, and ELSA.
   * To launch the Sguil client, find the icon in the Security Onion menu (Xubuntu/Lubuntu) or just type:
 {{{
