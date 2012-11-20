@@ -42,10 +42,8 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
   * If you installed a GUI, login using the username/password you specified in the Ubuntu installer.  If you installed Ubuntu Server (no GUI), you'll want to SSH into your new installation from another machine (with an X server) using the -X option to enable X-Forwarding:
 {{{
 ssh -X username@ip.of.securityonion.server
-}}}
-If you need to do this on an Ubuntu instance in EC2, you will need to create an .Xauthority file in the home directory:
-{{{
-touch .Xauthority
+# Once logged in, you may get a message concerning .Xauthority.  This file should get created automatically, but if it doesn't you can create it manually:
+touch ~/.Xauthority
 }}}
   * IMPORTANT! Apply any available Ubuntu updates (including new kernel packages) and REBOOT (this is required for the pf_ring DKMS module to build properly):
 {{{
