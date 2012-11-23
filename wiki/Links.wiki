@@ -39,8 +39,8 @@ http://tadaka.net/downloads/SecurityOnion-UTOS2012.pdf
 
 Mark Hillick: SecurityOnion on a netbook with port mirroring on WRT54g<br>
 http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html<br>
-Zero Slides @ IrissCon : http://blog.markofu.com/2012/11/zero-slides-irisscon.html<br>
-Peeling back your Network Layers with Security Onion : https://speakerdeck.com/markofu/peeling-back-your-network-layers-with-security-onion<br>
+Zero Slides @ IrissCon<br> http://blog.markofu.com/2012/11/zero-slides-irisscon.html<br>
+Peeling back your Network Layers with Security Onion<br> https://speakerdeck.com/markofu/peeling-back-your-network-layers-with-security-onion<br>
 
 Mark Hillick: HackEire<br>
 http://www.hackeire.net/2011/11/hackeire-2011-ramblings-part-1.html<br>
