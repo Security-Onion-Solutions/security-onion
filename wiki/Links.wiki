@@ -37,12 +37,12 @@ http://www.youtube.com/watch?v=KUnAJe8_ysw
 Jason Wood: 2012 UTOSC - Peeling Back the Security Onion - Slides<br>
 http://tadaka.net/downloads/SecurityOnion-UTOS2012.pdf
 
-Mark Hillick: SecurityOnion on a netbook with port mirroring on WRT54g<br>
+Mark Hillick: Security Onion on a netbook <br>
 http://blog.markofu.com/2012/05/securityonion-on-netbook-with-port.html<br>
-Zero Slides @ IrissCon<br> http://blog.markofu.com/2012/11/zero-slides-irisscon.html<br>
+Zero Slides @ IrissCon <br> http://blog.markofu.com/2012/11/zero-slides-irisscon.html<br>
 Peeling back your Network Layers with Security Onion<br> https://speakerdeck.com/markofu/peeling-back-your-network-layers-with-security-onion<br>
 
-Mark Hillick: HackEire<br>
+Mark Hillick: HackEire <br>
 http://www.hackeire.net/2011/11/hackeire-2011-ramblings-part-1.html<br>
 http://www.hackeire.net/2011/12/hackeire-2011-ramblings-part-2.html
 
