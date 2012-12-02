@@ -129,7 +129,9 @@ https://github.com/gamelinux/prads/issues/19<br>
 https://github.com/gamelinux/prads/issues/30<br>
 
 ===netsniff-ng===
-We've replaced daemonlogger with netsniff-ng for higher performance, but we still need to configure it to process our BPF and run as a non-root user.  If you have any problems with netsniff-ng starting, you may still have the old netsniff-ng package.  You can remove it by doing the following:
+We've replaced daemonlogger with netsniff-ng for higher performance, but we still need to configure it to process our BPF and run as a non-root user.<br>
+<br>
+If you have any problems with netsniff-ng starting, you may still have the old netsniff-ng package.  You can remove it by doing the following:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get remove --purge netsniff-ng
 }}}
