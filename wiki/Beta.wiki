@@ -133,6 +133,7 @@ We've replaced daemonlogger with netsniff-ng for higher performance, but we stil
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get remove --purge netsniff-ng
 }}}
+Also be aware that netsniff-ng will fail on startup if it doesn't detect link on the NIC.
 
 ===sphinxsearch===
 There is a known issue with sphinxsearch (used by ELSA) not starting properly on boot.  As a quick-and-dirty bandaid until we have a proper fix, I modified my /etc/init.d/sphinxsearch as follows:<br>
@@ -153,9 +154,6 @@ The following ELSA issues are known and are being worked on:
 
 ===Bro path===
 Bro binaries are in /opt/bro/bin/, which is not in your $PATH by default.  We'll be updating the $PATH variable in a future package.
-
-===pcap_agent===
-Sometimes the pcap_agent doesn't start correctly.
 
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):<br>
