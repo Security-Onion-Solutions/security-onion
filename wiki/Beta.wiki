@@ -153,9 +153,6 @@ The following ELSA issues are known and are being worked on:
   * Incorrect or missing parsers for Bro's dns.log, http.log, notice.log, capture_loss.log and software.log
   * UnixDate error message
 
-===Bro path===
-Bro binaries are in /opt/bro/bin/, which is not in your $PATH by default.  We'll be updating the $PATH variable in a future package.
-
 = Feedback =
 If you have questions or problems, please send a detailed email to our TESTING mailing list (NOT our normal 10.04 mailing list):<br>
 [MailingLists Security Onion Mailing Lists]
