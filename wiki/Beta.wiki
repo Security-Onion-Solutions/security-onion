@@ -44,7 +44,7 @@ Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onio
 ssh -X username@ip.of.securityonion.server
 
 # Once logged in, you may get a message concerning .Xauthority.  
-# This file should get created automatically, but if it doesn't, you can create it manually:
+# This file should be created automatically, but if it doesn't (occassionally this has happened on AWS instances), you can create it manually:
 touch ~/.Xauthority
 }}}
   * IMPORTANT! Apply any available Ubuntu updates (including new kernel packages) and REBOOT (this is required for the pf_ring DKMS module to build properly):
