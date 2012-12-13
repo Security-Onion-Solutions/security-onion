@@ -3,6 +3,9 @@
 = Thanks =
 Security Onion would like to thank the following open-source projects for their contribution to our community!
 
+= Note =
+Please note that this is a combined list of tools for Security Onion 10.04 and Security Onion 12.04.  Security Onion 12.04 has some new tools that weren't included in Security Onion 10.04 (like ELSA) and some tools have been removed (like Zenmap).
+
 == abcip ==
 <a href="http://sourceforge.net/projects/abcip/">http://sourceforge.net/projects/abcip/</a><br>
 "A simple packet crafting tool that turns text commands into pcaps. Optionally build a DAQ and Snort can directly read commands or raw payload data - no pcap required. Packets can exhibit any flaw or anomaly desired. Syntax is flexible and powerful."
