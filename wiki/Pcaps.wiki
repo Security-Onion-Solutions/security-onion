@@ -2,7 +2,7 @@
 
 = Links =
 
-  * https://www.openpacket.org/
+  * https://www.openpacket.org/ (Security Onion 12.04 contains some pcaps from openpacket.org.  You can find them at /opt/samples/.)
 
   * http://www.netresec.com/?page=PcapFiles
 
