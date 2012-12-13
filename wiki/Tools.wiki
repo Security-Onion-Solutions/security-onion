@@ -43,6 +43,10 @@ Security Onion would like to thank the following open-source projects for their 
 <a href="http://leonward.wordpress.com/dumbpig/">http://leonward.wordpress.com/dumbpig/</a><br>
 "Dumbpig is an automated bad-grammar[sik] detector for snort rules. It parses each rule in a file and reports on badly formatted entries, incorrect usage, and alerts to possible performance issues. It should be considered as work in progress and all users should only work with the latest code available."
 
+== ELSA ==
+http://code.google.com/p/enterprise-log-search-and-archive/
+"ELSA is a centralized syslog framework built on Syslog-NG, MySQL, and Sphinx full-text search. It provides a fully asynchronous web-based query interface that normalizes logs and makes searching billions of them for arbitrary strings as easy as searching the web. It also includes tools for assigning permissions for viewing the logs as well as email based alerts, scheduled queries, and graphing."
+
 == fwsnort ==
 <a href="http://cipherdyne.org/fwsnort/">http://cipherdyne.org/fwsnort/</a><br>
 "fwsnort parses the rules files included in the SNORT ® intrusion detection system and builds an equivalent iptables ruleset for as many rules as possible. fwsnort utilizes the iptables string match module (together with a custom patch that adds a --hex-string option to the iptables user space code which is now integrated with iptables) to detect application level attacks."
