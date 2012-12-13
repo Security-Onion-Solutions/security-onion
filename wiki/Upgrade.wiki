@@ -7,7 +7,7 @@ If you're behind a proxy server, make sure that you've configured your proxy ser
 sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
 }}}
 
-= Please note there is no in-place upgrade from Security Onion 10.04 to Security Onion 12.04 since most folks will be migrating from 32-bit to 64-bit.=
+== Please note there is no in-place upgrade from Security Onion 10.04 to Security Onion 12.04 since most folks will be migrating from 32-bit to 64-bit.==
 
 = Security Onion 12.04 Update Procedure =
 
