@@ -59,7 +59,7 @@ echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selecti
   * Add our test repo: 
 {{{
 sudo apt-get -y install python-software-properties
-sudo add-apt-repository -y ppa:securityonion/test
+sudo add-apt-repository -y ppa:securityonion/stable
 sudo apt-get update
 }}}
   * Install securityonion-all (or one of our more targeted metapackages from the list below).  This could take 15 minutes or more depending on the speed of your CPU and Internet connection:
