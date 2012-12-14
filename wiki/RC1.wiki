@@ -22,9 +22,9 @@ Please keep in mind that this is a Release Candidate and there may still be roug
   * as much Disk as your server holds!<br>
 
 =Ubuntu 12.04 vs Ubuntu 12.10=
-Ubuntu 12.04 is an LTS (Long Term Support) release and is fully tested/supported for Security Onion.<br>
+Ubuntu *12.04* is an LTS (Long Term Support) release and is fully tested/supported for Security Onion.<br>
 
-*Ubuntu 12.10 is NOT an LTS release and is NOT tested/supported for Security Onion.*
+Ubuntu *12.10* is *NOT* an LTS release and is *NOT* tested/supported for Security Onion.
 
 = Installation Instructions =
 
