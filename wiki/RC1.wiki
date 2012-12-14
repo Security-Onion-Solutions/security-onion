@@ -56,7 +56,7 @@ sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 {{{
 echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections  
 }}}
-  * Add our test repo: 
+  * Add our stable repo: 
 {{{
 sudo apt-get -y install python-software-properties
 sudo add-apt-repository -y ppa:securityonion/stable
