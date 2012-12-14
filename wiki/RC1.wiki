@@ -29,7 +29,7 @@ Ubuntu 12.04 is an LTS (Long Term Support) release and is fully tested/supported
 = Installation Instructions =
 
   * Please read these instructions CAREFULLY and follow them EXACTLY.  Commands have been formatted for easy copy/paste to avoid typos.
-  * Download your desired flavor of Ubuntu 12.04.  You should be able to use 32-bit or 64-bit, but 64-bit is highly recommended (assuming your hardware supports it):
+  * Download your desired flavor of *Ubuntu 12.04*.  You should be able to use 32-bit or 64-bit, but 64-bit is highly recommended (assuming your hardware supports it):
    * Ubuntu Server (no GUI)- http://www.ubuntu.com/download/server
    * Ubuntu Desktop - http://www.ubuntu.com/download/desktop
    * Kubuntu - http://www.kubuntu.org/getkubuntu/download
