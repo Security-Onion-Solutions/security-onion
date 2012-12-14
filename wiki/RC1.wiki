@@ -117,15 +117,14 @@ If you use a proxy on your network for outbound Internet connections, you may ne
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --keyserver-options http-proxy="http://user:pass@foo.bar:3128" --recv-keys E1E6759023F386C7
 }}}
 
-
 ===PRADS===
 PRADS is a replacement for both PADS and SANCP.  Known issues with PRADS:<br>
 https://github.com/gamelinux/prads/issues/19<br>
 
 ===netsniff-ng===
-We've replaced daemonlogger with netsniff-ng for higher performance, but it's currently running as root.  The next version of netsniff-ng will support running as a non-root user.<br>
+netsniff-ng currently runs as root.  The next version of netsniff-ng will support running as a non-root user.<br>
 <br>
-If you have any problems with netsniff-ng starting, you may still have the old netsniff-ng package.  You can remove it by doing the following:
+If your box was upgraded from Beta and you have problems with netsniff-ng starting, you may still have the old netsniff-ng package.  You can remove it by doing the following:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get remove --purge netsniff-ng
 }}}
