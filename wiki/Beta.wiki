@@ -2,7 +2,7 @@
 
 = Introduction =
 
-We've completed the Beta phase and have announced Release Candidate 1.  Please see the [RC1 RC1 page].
+*NOTE!* We've completed the Beta phase and have announced Release Candidate 1.  Please see the [RC1 RC1 page].
 
 All of our packages are in an Ubuntu Launchpad PPA.  That means you can start with your preferred flavor of Ubuntu 12.04, add our PPA and packages, and be up and running in just a few minutes!
 
