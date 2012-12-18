@@ -99,7 +99,7 @@ Our Setup script automatically configures both Snorby and ELSA to be able to piv
   * Click the ELSA menu and click Preferences.
   * Create a new Preference called "openfpc_username" and enter your *Sguil* username.
   * Create a new Preference called "openfpc_password" and enter your *Sguil* password.
-  * Close the Preferences windows and reload the ELSA page.
+  * Close the Preferences window and reload the ELSA page.
 
 = Known Issues =
 
