@@ -47,6 +47,7 @@ ssh -X username@ip.of.securityonion.server
 # This file should be created automatically, but if it doesn't (occassionally this has happened on AWS instances), you can create it manually:
 touch ~/.Xauthority
 }}}
+  * Verify that you have Internet connectivity.  If necessary, configure your proxy settings as described later on this page.
   * IMPORTANT! Apply any available Ubuntu updates (including new kernel packages) and REBOOT (this is required for the pf_ring DKMS module to build properly):
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
