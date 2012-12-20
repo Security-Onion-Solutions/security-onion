@@ -15,7 +15,7 @@ Please keep in mind that this is a Release Candidate and there may still be roug
 
 = Hardware Recommendations =
   * 64-bit<br>
-  * Two or more NICs (one for management, one or more for sniffing), I've had good experience with Intel<br>
+  * Two or more NICs (one for management, one or more for sniffing), I've had good experience with Intel cards<br>
   * as much RAM as your server holds!<br>
   * as much Disk as your server holds!<br>
 
