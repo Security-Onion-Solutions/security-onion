@@ -77,7 +77,7 @@ sudo apt-get -y install securityonion-all
   * If you got any errors when installing the Security Onion packages, please see the DKMS/pf_ring known issue below.
 
 = Setup =
-  * Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
+  * Run the Setup wizard.  If you installed with the Security Onion ISO image, just double-click the Setup icon on the desktop.  Otherwise, type the following (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
 {{{
 sudo sosetup
 }}}
