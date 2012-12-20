@@ -21,14 +21,22 @@ Please keep in mind that this is a Release Candidate and there may still be roug
   * as much RAM as your server holds!<br>
   * as much Disk as your server holds!<br>
 
-=Ubuntu 12.04 vs Ubuntu 12.10=
-Ubuntu *12.04* is an LTS (Long Term Support) release and is fully tested/supported for Security Onion.<br>
+= Installation =
+If this is your first time trying Security Onion 12.04, we recommend the pre-built Security Onion ISO image.  It's based on Xubuntu 12.04 64-bit and has all Security Onion packages already installed.
 
-Ubuntu *12.10* is *NOT* an LTS release and is *NOT* tested/supported for Security Onion.
+== Installing with the Security Onion ISO Image ==
+  * Click the following link:
+https://sourceforge.net/projects/security-onion/files/12.04/
+  * Click the 20121220 ISO image to begin the download. Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that  Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i"). Once the ISO image download has completed, verify the checksum.
+  * Boot the ISO image.
+  * Boot Menu appears.  You can choose Install or you can choose the Live Desktop environment and then double-click the Install icon on the desktop.
+  * Follow the prompts and reboot into your new installation.
+  * Login using the username/password you specified during installation.
+  * Proceed to the Setup section.
 
-= Installation Instructions =
-
+== Installing with your preferred flavor of Ubuntu 12.04 ==
   * Please read these instructions CAREFULLY and follow them EXACTLY.  Commands have been formatted for easy copy/paste to avoid typos.
+  * Ubuntu *12.04* is an LTS (Long Term Support) release and is fully tested/supported for Security Onion.  Ubuntu *12.10* is *NOT* an LTS release and is *NOT* tested/supported for Security Onion.
   * Download your desired flavor of Ubuntu *12.04*.  You should be able to use 32-bit or 64-bit, but 64-bit is highly recommended (assuming your hardware supports it):
    * Ubuntu Server (no GUI)- http://www.ubuntu.com/download/server
    * Ubuntu Desktop - http://www.ubuntu.com/download/desktop
@@ -68,6 +76,8 @@ sudo apt-get update
 sudo apt-get -y install securityonion-all 
 }}}
   * If you got any errors when installing the Security Onion packages, please see the DKMS/pf_ring known issue below.
+
+= Setup =
   * Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
 {{{
 sudo sosetup
