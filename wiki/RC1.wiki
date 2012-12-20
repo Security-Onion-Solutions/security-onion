@@ -31,7 +31,9 @@ All of our Security Onion packages are in an Ubuntu Launchpad PPA.  So if you do
   * Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
   * Follow the prompts and reboot into your new installation.
   * Login using the username/password you specified during installation.
-  * Proceed to the [RC1#Setup Setup section].
+  * Double-click the Setup icon.  The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
+  * After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk your through the rest of the configuration.
+  * Once you've completed the Setup wizard, use the Desktop icons to login to Sguil, Squert, Snorby, or ELSA.
 
 == Installing with your preferred flavor of Ubuntu 12.04 ==
   * Please read these instructions CAREFULLY and follow them EXACTLY.  Commands have been formatted for easy copy/paste to avoid typos.
@@ -77,17 +79,19 @@ sudo apt-get -y install securityonion-all
   * If you got any errors when installing the Security Onion packages, please see the DKMS/pf_ring known issue below.
 
 = Setup =
-  * Run the Setup wizard.  If you installed with the Security Onion ISO image, just double-click the Setup icon on the desktop.  Otherwise, type the following (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
+  * Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
 {{{
 sudo sosetup
 }}}
   * The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
   * After rebooting, log back in (over "ssh -X" if remote) and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk your through the rest of the configuration.
   * Once you've completed the Setup wizard, open the Chromium web browser and go to https://localhost for links to Squert, Snorby, and ELSA.
-  * To launch the Sguil client, find the icon on the Desktop (Security Onion ISO image), in the Security Onion menu (Xubuntu/Lubuntu) or just type the following at a terminal:
+  * To launch the Sguil client, find the icon in the Security Onion menu (Xubuntu/Lubuntu) or just type the following at a terminal:
 {{{
 sguil.tk
 }}}
+
+= Tuning and Maintenance =  
   * For more information on tuning and maintenance, take a look at our [Installation] guide for the old 10.04 version.
 
 = Metapackages =
