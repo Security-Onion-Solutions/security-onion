@@ -5,7 +5,7 @@
 Security Onion 12.04 RC1 is now available and ready for testing!  Thanks to everybody who has helped get us this far!
 
 = Warning! =
-Please keep in mind that this is a Release Candidate and there may still be rough edges.  If it breaks, you get to keep both pieces!
+This is a Release Candidate, but there may still be rough edges.  If it breaks, you get to keep both pieces!
 
 = RAM Minimum Requirements =
 512MB - 1GB RAM for the core OS (512MB for Ubuntu Server with no GUI)<br>
