@@ -32,7 +32,7 @@ All of our Security Onion packages are in an Ubuntu Launchpad PPA.  So if you do
   * Boot Menu appears.  You can choose Install or you can choose the Live Desktop environment and then double-click the Install icon on the desktop.
   * Follow the prompts and reboot into your new installation.
   * Login using the username/password you specified during installation.
-  * Proceed to the Setup section (http://code.google.com/p/security-onion/wiki/RC1?ts=1356025899&updated=RC1#Setup).
+  * Proceed to the Setup section [RC1#Setup].
 
 == Installing with your preferred flavor of Ubuntu 12.04 ==
   * Please read these instructions CAREFULLY and follow them EXACTLY.  Commands have been formatted for easy copy/paste to avoid typos.
