@@ -32,7 +32,6 @@ All of our Security Onion packages are in an Ubuntu Launchpad PPA.  So if you do
   * Boot Menu appears.  You can choose Install or you can choose the Live Desktop environment and then double-click the Install icon on the desktop.
   * Follow the prompts and reboot into your new installation.
   * Login using the username/password you specified during installation.
-  * Verify that you have Internet connectivity. If necessary, configure your proxy settings as described later on this page.
   * Proceed to the Setup section.
 
 == Installing with your preferred flavor of Ubuntu 12.04 ==
