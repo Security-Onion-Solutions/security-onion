@@ -77,8 +77,6 @@ sudo apt-get update
 sudo apt-get -y install securityonion-all 
 }}}
   * If you got any errors when installing the Security Onion packages, please see the DKMS/pf_ring known issue below.
-
-= Setup =
   * Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):
 {{{
 sudo sosetup
@@ -89,6 +87,12 @@ sudo sosetup
   * To launch the Sguil client, find the icon in the Security Onion menu (Xubuntu/Lubuntu) or just type the following at a terminal:
 {{{
 sguil.tk
+}}}
+
+= Sample pcaps =
+Security Onion includes some sample pcaps in /opt/samples/.  You can replay them using tcpreplay as follows (assuming eth1 is your sniffing interface):
+{{{
+sudo tcpreplay -i eth1 -M10 /opt/samples/*.pcap
 }}}
 
 = Tuning and Maintenance =  
