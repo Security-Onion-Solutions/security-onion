@@ -96,7 +96,7 @@ sudo tcpreplay -i eth1 -M10 /opt/samples/*.pcap
 }}}
 
 = Tuning and Maintenance =  
-  * For more information on tuning and maintenance, take a look at our [Installation] guide for the old 10.04 version.
+For more information on tuning and maintenance, take a look at our [Installation] guide for the old 10.04 version.
 
 = Metapackages =
 The instructions above used the securityonion-all metapackage to install ALL of our individual packages (about 350MB).  We have some more focused metapackages that you can use for a more focused deployment:
