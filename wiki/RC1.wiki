@@ -4,8 +4,6 @@
 
 Security Onion 12.04 RC1 is now available and ready for testing!  Thanks to everybody who has helped get us this far!
 
-All of our packages are in an Ubuntu Launchpad PPA.  That means you can start with your preferred flavor of Ubuntu 12.04, add our PPA and packages, and be up and running in just a few minutes!
-
 = Warning! =
 Please keep in mind that this is a Release Candidate and there may still be rough edges.  If it breaks, you get to keep both pieces!
 
@@ -23,6 +21,8 @@ Please keep in mind that this is a Release Candidate and there may still be roug
 
 = Installation =
 If this is your first time trying Security Onion 12.04, we recommend the pre-built Security Onion ISO image.  It's based on Xubuntu 12.04 64-bit and has all Security Onion packages already installed.
+
+All of our Security Onion packages are in an Ubuntu Launchpad PPA.  So if you don't want to use our ISO image (perhaps you'd like a stripped down sensor based on Ubuntu Server with no GUI) and you have experience with Ubuntu, you can start with your preferred flavor of Ubuntu 12.04, add our PPA and packages, and be up and running in just a few minutes!
 
 == Installing with the Security Onion ISO Image ==
   * Click the following link: https://sourceforge.net/projects/security-onion/files/12.04/
