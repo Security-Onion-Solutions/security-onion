@@ -30,7 +30,7 @@ All of our Security Onion packages are in an Ubuntu Launchpad PPA.  So if you do
   * Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
   * Follow the prompts and reboot into your new installation.
   * Login using the username/password you specified during installation.
-  * Verify that you have Internet connectivity.  If necessary, configure your proxy settings as described later on this page.
+  * Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
   * IMPORTANT! Apply any available updates using the graphical package manager or from the command line:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade
