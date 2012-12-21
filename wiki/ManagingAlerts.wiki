@@ -183,7 +183,7 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      {{{
      sudo vi /etc/pulledpork/disablesid.conf
      }}}
-     For Security Onion 12.04:
+  For Security Onion 12.04:
      {{{
      sudo vi /etc/nsm/pulledpork/disablesid.conf
      }}}
