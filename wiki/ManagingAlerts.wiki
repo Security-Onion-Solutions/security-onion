@@ -181,8 +181,8 @@ In a Server/Slave Security Onion environment, you only need to change the config
 As mentioned before, take care in disabling signatures as it can be likely that a more appropriate response is warranted.  
   # Edit the disablesid.conf configuration file:
      {{{
-     sudo vi /etc/pulledpork/disablesid.conf #Security Onion 10.04
      sudo vi /etc/nsm/pulledpork/disablesid.conf #Security Onion 12.04
+     sudo vi /etc/pulledpork/disablesid.conf #Security Onion 10.04
      }}}
      You can also access the disablesid.conf file by clicking Applications->IDS Rules->Disable Downloaded Rules.  You will need to provide your password.
 
@@ -193,21 +193,22 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      }}}
   # Run the rule update on the server:
      {{{
-     sudo /usr/local/bin/pulledpork_update.sh
+     sudo /usr/bin/rule-update.sh #Security Onion 12.04
+     sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
      }}}
   # Run the rule update on the slave machines:
      {{{
-     sudo /usr/local/bin/pulledpork_update.sh
+     sudo /usr/bin/rule-update.sh #Security Onion 12.04
+     sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
      }}}
 
-*PLEASE NOTE*: In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to */usr/bin/rule-update*.
 
 ==Rewrite the signature==
 Sometimes a signature is simply written too broadly for the particular use on a sensor.  In this case, a small rewrite to the signature can make it so we can weed out. 
 In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rules
    # Edit the /etc/nsm/rules/local.rules file
      {{{
-     sudo vi /etc/nsm/rules/local.rules
+     sudo vi /etc/nsm/rules/local.rules #Security Onion 10.04
      }}}
      You can also access the local.rules file by clicking on Applications->IDS Rules->Add Local Rules.  You will need to provide your password.
    # Snort configuration files are in the following format
@@ -231,7 +232,7 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
      alert udp $HOME_NET any -> !$OVERACTIVE any (msg:"GPL SNMP public access udp"; content:"public"; fast_pattern:only; reference:bugtraq,2112; reference:bugtraq,4088; reference:bugtraq,4089; reference:cve,1999-0517; reference:cve,2002-0012; reference:cve,2002-0013; classtype:attempted-recon; sid:9001411; rev:1;)
      }}}
      We also gave the alert a unique signature id (sid) by bumping it into the 90,000,000 range and set the revision to 1.
-   # Now that we have a signature that will generate alerts a little more selectively, we need to disable the original signature.  Like above, we edit the /etc/pulledpork/disablesid.conf file and add:
+   # Now that we have a signature that will generate alerts a little more selectively, we need to disable the original signature.  Like above, we edit the disablesid.conf file and add:
    {{{
    1:2101411
    }}}
@@ -240,15 +241,14 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
    sudo /usr/local/bin/pulledpork_update.sh
    }}}
    
-*PLEASE NOTE* : In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to */usr/bin/rule-update*.
 
 ==modifysid.conf==
 Another option is to use PulledPork's modifysid.conf to do the above.  There are several examples in the modifysid.conf file, so we won't repeat them here.  Edit the modifysid.conf configuration file:
      {{{
-     sudo vi /etc/pulledpork/modifysid.conf
+     sudo vi /etc/nsm/pulledpork/modifysid.conf #Security Onion 12.04
+     sudo vi /etc/pulledpork/modifysid.conf #Security Onion 10.04
      }}}
 
-*PLEASE NOTE*: In the current Security Onion 12.04 Beta, the PulledPork directory is */etc/nsm/pulledpork/*.
 
 ==Threshold==
 COMING SOON
@@ -318,7 +318,8 @@ To set the sguild server to autoconfigure events, you need to edit the file /etc
    }}}
   # restart the sguil server
    {{{
-   sudo /usr/local/sbin/nsm_server_ps-restart
+   sudo /usr/sbin/nsm_server_ps-restart #Security Onion 12.04
+   sudo /usr/local/sbin/nsm_server_ps-restart #Security Onion 10.04
    }}}
 
 ==Why is pulledpork ignoring disabled rules in downloaded.rules==
@@ -338,7 +339,7 @@ If you try to disable the first two rules without disabling the third rule (whic
    1:2013410
    1:2013411
   }}}
-When you run sudo pulledpork_update.sh, watch the "Setting Flowbit State..." section and you can see that if you disable all three (or however many rules share that flowbit) that the "Enabled XX flowbits" line is decrimented and all three rules should then be disabled in your downloaded.rules.
+When you run sudo rule-update.sh (12.04) or pulledpork_update.sh (10.04), watch the "Setting Flowbit State..." section and you can see that if you disable all three (or however many rules share that flowbit) that the "Enabled XX flowbits" line is decrimented and all three rules should then be disabled in your downloaded.rules.
 
 ==Sguil Days To Keep==
 You can configure Sguil's database retention by editing securityonion.conf and changing the DAYSTOKEEP setting (the default is 365 days):
