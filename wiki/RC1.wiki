@@ -30,6 +30,11 @@ All of our Security Onion packages are in an Ubuntu Launchpad PPA.  So if you do
   * Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
   * Follow the prompts and reboot into your new installation.
   * Login using the username/password you specified during installation.
+  * Verify that you have Internet connectivity.  If necessary, configure your proxy settings as described later on this page.
+  * IMPORTANT! Apply any available updates using the graphical package manager or from the command line:
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade
+}}}
   * Double-click the Setup icon.  The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
   * After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.
   * Once you've completed the Setup wizard, use the Desktop icons to login to Sguil, Squert, Snorby, or ELSA.
