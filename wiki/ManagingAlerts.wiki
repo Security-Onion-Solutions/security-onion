@@ -179,13 +179,10 @@ Security Onion uses PulledPork (a perl script maintained by JJ Cummings) that do
 In a Server/Slave Security Onion environment, you only need to change the configuration file on the server and the rule-update script will sync with the signatures from the Server.
    
 As mentioned before, take care in disabling signatures as it can be likely that a more appropriate response is warranted.  
-  # Edit the disablesid.conf configuration file. For Security Onion 10.04:
+  # Edit the disablesid.conf configuration file:
      {{{
-     sudo vi /etc/pulledpork/disablesid.conf
-     }}}
-  For Security Onion 12.04:
-     {{{
-     sudo vi /etc/nsm/pulledpork/disablesid.conf
+     sudo vi /etc/pulledpork/disablesid.conf #Security Onion 10.04
+     sudo vi /etc/nsm/pulledpork/disablesid.conf #Security Onion 12.04
      }}}
      You can also access the disablesid.conf file by clicking Applications->IDS Rules->Disable Downloaded Rules.  You will need to provide your password.
 
