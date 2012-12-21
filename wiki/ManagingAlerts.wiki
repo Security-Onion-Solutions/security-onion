@@ -208,7 +208,7 @@ Sometimes a signature is simply written too broadly for the particular use on a 
 In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rules
    # Edit the /etc/nsm/rules/local.rules file
      {{{
-     sudo vi /etc/nsm/rules/local.rules #Security Onion 10.04
+     sudo vi /etc/nsm/rules/local.rules
      }}}
      You can also access the local.rules file by clicking on Applications->IDS Rules->Add Local Rules.  You will need to provide your password.
    # Snort configuration files are in the following format
@@ -238,7 +238,8 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
    }}}
    # Run a rule update:
    {{{
-   sudo /usr/local/bin/pulledpork_update.sh
+   sudo /usr/bin/rule-update #Security Onion 12.04
+   sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
    }}}
    
 
