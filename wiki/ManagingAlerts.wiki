@@ -3,7 +3,7 @@ Author: Scott Runnels
 Date: 2012/01/18
 
 =Overview=
-SecurityOnion generates a lot of valuable information for you the second you plug it into a TAP or SPAN port.  Between Bro logs, session data from sancp, full packet capture from Daemonlogger, and HTTP session information from HTTPry you have, in a very short amount of time, enough information to begin making identifying areas of interest and making positive changes to your security stance.
+SecurityOnion generates a lot of valuable information for you the second you plug it into a TAP or SPAN port.  Between Bro logs, session data from prads, and full packet capture from netsniff-ng, you have, in a very short amount of time, enough information to begin making identifying areas of interest and making positive changes to your security stance.
 
 However, Network Security Monitoring, as a practice, is not a solution you can plug into your network, make sure you see blinking lights and tell people you are "secure."  It requires active intervention from an analyst to qualify the quantity of information presented.  One of those regular interventions is to ensure that you are tuning properly and proactively attempting to reach an acceptable level of signal to noise.
   
@@ -193,12 +193,12 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      }}}
   # Run the rule update on the server:
      {{{
-     sudo /usr/bin/rule-update.sh #Security Onion 12.04
+     sudo /usr/bin/rule-update #Security Onion 12.04
      sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
      }}}
   # Run the rule update on the slave machines:
      {{{
-     sudo /usr/bin/rule-update.sh #Security Onion 12.04
+     sudo /usr/bin/rule-update #Security Onion 12.04
      sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
      }}}
 
@@ -340,7 +340,7 @@ If you try to disable the first two rules without disabling the third rule (whic
    1:2013410
    1:2013411
   }}}
-When you run sudo rule-update.sh (12.04) or pulledpork_update.sh (10.04), watch the "Setting Flowbit State..." section and you can see that if you disable all three (or however many rules share that flowbit) that the "Enabled XX flowbits" line is decrimented and all three rules should then be disabled in your downloaded.rules.
+When you run sudo rule-update (12.04) or pulledpork_update.sh (10.04), watch the "Setting Flowbit State..." section and you can see that if you disable all three (or however many rules share that flowbit) that the "Enabled XX flowbits" line is decrimented and all three rules should then be disabled in your downloaded.rules.
 
 ==Sguil Days To Keep==
 You can configure Sguil's database retention by editing securityonion.conf and changing the DAYSTOKEEP setting (the default is 365 days):
