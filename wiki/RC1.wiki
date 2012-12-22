@@ -26,7 +26,7 @@ All of our Security Onion packages are in an Ubuntu Launchpad PPA.  So if you do
 
 == Installing with the Security Onion ISO Image ==
   * Click the following link: https://sourceforge.net/projects/security-onion/files/12.04/
-  * Click the 20121221 ISO image to begin the download. Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that  Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").  Once the ISO image download has completed, verify the checksum.
+  * Click the most recent ISO image to begin the download. Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that  Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").  Once the ISO image download has completed, verify the checksum.
   * Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
   * Follow the prompts and reboot into your new installation.
   * Login using the username/password you specified during installation.
