@@ -1,11 +1,14 @@
 #summary Security Onion 12.04 Installation Procedure
 
+= What's the quickest way to install Security Onion? =
+Install our <a href="https://sourceforge.net/projects/security-onion/files/12.04/">ISO image (based on Xubuntu 12.04 64-bit)</a>, then run through the Setup wizard on the Desktop.
+
 = What's the recommended procedure for installing Security Onion? =
 
-== If you just want to quickly evaluate Security Onion, try our ISO image (based on Xubuntu 12.04 64-bit): ==
+== If you just want to quickly evaluate Security Onion, use our ISO image (based on Xubuntu 12.04 64-bit): ==
   # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface and a minimum of 2GB RAM total, 4GB RAM recommended. Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
   # Click the following link: https://sourceforge.net/projects/security-onion/files/12.04/
-  # Click the most recent ISO image to begin the download. Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that  Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").  Once the ISO image download has completed, verify the checksum.
+  # Click the most recent ISO image to begin the download. Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").  Once the ISO image download has completed, verify the checksum.
   # Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
   # Follow the prompts and reboot into your new installation.  Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
