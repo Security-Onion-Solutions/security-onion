@@ -39,7 +39,7 @@ sudo sosetup
 <br>
 == If you're going to be deploying Security Onion in production, follow these steps:==
   # Before you start, make sure your sensor(s) are capable by checking the Hardware page.<br>
-  # Download the ISO image for your prefered Ubuntu distribution or download the <a href="http://sourceforge.net/projects/security-onion/files/">Security Onion Live 12.04 distribution</a>. Also download/record the MD5SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
+  # Download the ISO image for your prefered Ubuntu distribution or download the <a href="http://sourceforge.net/projects/security-onion/files/12.04/">Security Onion Live 12.04 distribution</a>. Also download/record the MD5SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
   # If deploying a distributed environment (a master server and one or more slave sensors), you’ll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master server first.<br>
   # Using the downloaded ISO, install the operating system. If prompted to install any additional packages, the only option you should choose is OpenSSH Server (openssh-server). Specifically, do NOT choose MySQL. All other required dependencies will be installed automatically.<br>
   # When asked about partitioning, there are a few things to keep in mind:
