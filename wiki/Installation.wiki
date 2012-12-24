@@ -1,4 +1,4 @@
-#summary UNDER CONSTRUCTION - Security Onion 12.04 Installation Procedure
+#summary Security Onion 12.04 Installation Procedure
 
 = What's the recommended procedure for installing Security Onion? =
 
