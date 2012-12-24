@@ -1,61 +1,129 @@
-#summary Security Onion Installation Procedure
-
-= Please read the following before downloading! =
-
-This page is for the old Security Onion based on Ubuntu 10.04.  If you're looking for the new Security Onion 12.04 RC1, please see the [RC1] page.
+#summary UNDER CONSTRUCTION - Security Onion 12.04 Installation Procedure
 
 = What's the recommended procedure for installing Security Onion? =
 
-== If you just want to quickly evaluate Security Onion, follow these steps: ==
-  # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface.  Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
-  # <a href="http://sourceforge.net/projects/security-onion/files/">Download the ISO image</a>, verify its checksum, and boot from it.<br>
+== If you just want to quickly evaluate Security Onion Live 12.04 Distribution, follow these steps: ==
+  # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface and a minimum of 2GB RAM total, 4GB RAM recommended. Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
+  # <a href="http://sourceforge.net/projects/security-onion/files/">Download the Security Onion Live 12.04 ISO image</a>, verify its checksum, boot from it and install the operating system.<br>
   # Run through the Xubuntu installer.<br>
   # Reboot into your new installation and double-click the Setup shortcut.  Follow the prompts.<br>
-  # Analyze alerts using Sguil, Squert, or Snorby.<br>
+  # Analyze alerts using Sguil, Squert, Snorby, ELSA or capME.<br>
+<br>
+== If you want to quickly evaluate Security Onion on an Ubuntu Distribution other than Security Onion Live ISO, follow these steps: ==
+  # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface and a minimum of 2GB RAM total, 4GB RAM recommended. Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
+  # Download the ISO image for your prefered Ubuntu distribution, verify its checksum, boot from it and install the operating system.<br>
+  # Reboot into your new installation and patch:<br>
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
+}}}
+  # Reboot and log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
+  # Configure MySQL not to prompt for root password:<br>
+{{{
+echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections
+}}}
+  # Add the Security Onion stable repository:<br>
+{{{
+sudo apt-get -y install python-software-properties
+sudo add-apt-repository -y ppa:securityonion/stable
+sudo apt-get update
+}}}
+  # Install securityonion-all:<br>
+{{{
+sudo apt-get -y install securityonion-all
+}}}
+  # Run the Setup wizard:<br>
+{{{
+sudo sosetup
+}}}
+  # Follow the prompts.<br>
+  # Analyze alerts using Sguil, Squert, Snorby, ELSA or capME.<br>
 <br>
 == If you're going to be deploying Security Onion in production, follow these steps:==
-  # Before you start, make sure your sensor(s) are capable.  Check the [Hardware] page.<br>
-  # <a href="http://sourceforge.net/projects/security-onion/files/">Click here and scroll to the bottom of the page.</a>  Click the ISO image to begin the download.  Also download/record the MD5/SHA1 checksums for the ISO image. There is an accompanying .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i"). Once the ISO image download has completed, verify the checksum.<br>
-  # (If deploying a master server and one or more slave sensors, you'll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master first.)<br>
-  # Boot the ISO and select Install (either from the boot menu or from the Live desktop).<br>
-  # Follow the prompts in the installer.  When asked about partitioning, there are a few things to keep in mind:
-    * If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don't have any Grub booting issues.  
-    * The Sguil database on the server (doesn't exist on sensor-only installations) can grow fairly large (100GB or more for decent-size networks).  It's stored at /var/lib/mysql/, so you may want to put /var on a dedicated partition/disk and assign a good amount of disk space to it.  Also see the DAYSTOKEEP instructions near the end of this procedure.
-    * Sensors store full packet captures at /nsm/sensor_data/, so you may want to put /nsm on a dedicated partition/disk and assign as much disk space as possible (1TB or more).  
-  # Reboot into your new installation and login with the credentials you specified in the installer.<br>
-  # <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">Configure networking.</a><br>
-  # If you're behind a proxy, <a href="http://code.google.com/p/security-onion/wiki/Proxy">configure your proxy settings</a>.<br>
-  # If your machine has more than 4GB of RAM, <a href="https://help.ubuntu.com/community/EnablingPAE">install the PAE kernel</a>.<br>
-  # Increase kernel network buffers:<br>
+  # Before you start, make sure your sensor(s) are capable by checking the Hardware page.<br>
+  # Download the ISO image for your prefered Ubuntu distribution or download the <a href="http://sourceforge.net/projects/security-onion/files/">Security Onion Live 12.04 distribution</a>. Also download/record the MD5SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
+  # If deploying a distributed environment (a master server and one or more slave sensors), you’ll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master server first.<br>
+  # Using the downloaded ISO, install the operating system. If prompted to install any additional packages, the only option you should choose is OpenSSH Server (openssh-server). Specifically, do NOT choose MySQL. All other required dependencies will be installed automatically.<br>
+  # When asked about partitioning, there are a few things to keep in mind:
+   * If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don’t have any Grub booting issues.
+   * The Sguil database on the server (doesn’t exist on sensor-only installations) can grow fairly large (100GB or more for decent-size networks). It’s stored at /var/lib/mysql/, so you may want to put /var on a dedicated partition/disk and assign a good amount of disk space to it. Also see the DAYSTOKEEP instructions near the end of this procedure.
+   * Sensors store full packet captures at /nsm/sensor_data/, so you may want to put /nsm on a dedicated partition/disk and assign as much disk space as possible (1TB or more). For larger volumes you might also consider using XFS for the /nsm partition.
+  # When installation completes, reboot into your new installation and login with the credentials you specified during installation.<br>
+  # If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href="https://help.ubuntu.com/community/EnablingPAE">install the PAE kernel</a>.<br>
+  # IMPORTANT! Apply any available Ubuntu updates (including new kernel packages) and REBOOT. (This step is required for the pf_ring DKMS module to build properly.)<br>
 {{{
-echo "net.core.netdev_max_backlog = 10000
-net.core.rmem_default = 50000000
-net.core.rmem_max = 50000000
-net.ipv4.tcp_mem = 194688 259584 389376
-net.ipv4.tcp_rmem = 1048576 4194304 33554432" | sudo tee /etc/sysctl.d/30-securityonion.conf
-sudo sysctl -p /etc/sysctl.d/30-securityonion.conf
+sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
-  # Install Ubuntu updates using the Update Manager in the upper right corner OR from the command-line using the following:
+  # If you’re running a VM, now would be a good time to snapshot it so you can revert later if you need to.<br>
+  # f you installed from the Security Onion Live 12.04 Distribution ISO, you can skip to step 14.<br>
+  # Log back in (over “ssh -X” if remote) and configure MySQL not to prompt for root password:<br>
 {{{
-sudo apt-get update && sudo apt-get dist-upgrade
+echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections
 }}}
-    * <a href="http://code.google.com/p/security-onion/wiki/tcl">tcl/tk updates are on hold and you should NOT attempt to manually install any tcl/tk updates!</a><br>
-    * You may want to <a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates">configure Ubuntu to automatically install updates</a>.<br>
-    * Now that Ubuntu 12.04.1 has been released, it will be offered as an upgrade.  <a href="http://securityonion.blogspot.com/2012/08/security-onion-and-ubuntu-12041.html">Do NOT accept this offer to upgrade</a>.<br>
-  # <a href="http://code.google.com/p/security-onion/wiki/Upgrade">Install Security Onion updates</a>.<br>
-  # Reboot.<br>
-  # Double-click the Setup shortcut on the Desktop and follow the prompts.  If this is a sensor that will report to a master server, then Setup will prompt you for an SSH account on the master server that has sudo privileges.  (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that you have network connectivity and no firewall rules that would block this traffic.)  Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors.  To do this, create a new user using the adduser command and then add the user to the admin group.  Once Setup is complete, the user can be removed from the admin group.  For example, suppose you're setting up a server and two separate sensors:
-    * SERVER
-      * run through Setup
-    * FIRST SENSOR
+    * If using “-X”, Once logged in, you may get a message concerning the .Xauthority file. This file should be created automatically, but if it doesn't (occasionally this has happened on AWS instances), you can create it manually:
+{{{
+touch ~/.Xauthority
+}}}
+  # Add the Security Onion stable repository:<br>
+{{{
+sudo apt-get -y install python-software-properties
+sudo add-apt-repository -y ppa:securityonion/stable
+sudo apt-get update
+}}}
+  # Install securityonion-all packages. This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
+{{{
+sudo apt-get -y install securityonion-all
+}}}
+  # Run the Setup wizard (if you get a zenity Gtk-WARNING, then you need to make sure you used "ssh -X" to enable X-Forwarding):<br>
+{{{
+sudo sosetup
+}}}
+  # The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.<br>
+   * When prompted whether you would like to configure /etc/network/interfaces now, choose “Yes, configure /etc/network/interfaces!.”
+   * If you have more than one network interface, you’ll be asked which to specify which one should be the management interface.
+   * You’ll then be asked to choose DHCP or static addressing for the management interface. It is highly recommended you choose static.
+   * Choosing static, you’ll be prompted to enter a static IP address for your management interface, the network’s subnet mask, gateway IP address, DNS server IP addresses (separated by spaces), and your local domain.
+   * You’ll then be prompted to select any additional interfaces that will be used for sniffing/monitoring network traffic.
+   * When prompted, choose “Yes, make changes and reboot!”
+  # After rebooting, log back in (over “ssh -X” if remote) and start the Setup wizard again (sudo sosetup). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
+  # If this is a standalone system (Security Onion server and sensor running on the same host, you can choose Quick Setup, which will prompt you to specify the sniffing interface to monitor and user account information for Sguil, Squert, ELSA and Snorby. You’ll also be asked whether you want to enable ELSA before the setup completes. Otherwise, choose Advanced Setup.<br>
+  # Choose whether the host being configured will be Standalone, Server, or Sensor.<br>
+   * Standalone
+    * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.
+    * If you have multiple CPU cores available:
+     * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the IDS_LB_PROCS variable in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf).
+     * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the lb_procs variable in /opt/bro/etc/node.cfg).
+    * You’ll be asked which IDS ruleset you would like to use.
+    * You will then be prompted for user account information for Sguil, Squert, ELSA and Snorby.
+    * You’ll be asked whether you want to enable ELSA.
+    * You’ll be prompted to proceed with making the changes to setup Security Onion.
+   * Server
+    * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.
+    * If you have multiple CPU cores available:
+     * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the IDS_LB_PROCS variable in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf).
+     * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the lb_procs variable in /opt/bro/etc/node.cfg).
+    * You’ll be asked which IDS ruleset you would like to use.
+    * You will then be prompted for user account information for Sguil, Squert, ELSA and Snorby.
+    * You’ll be asked whether you want to enable ELSA.
+    * You’ll be prompted to proceed with making the changes to setup Security Onion.
+   * Sensor
+    * You will be prompted for an SSH account on the master server that has sudo privileges. (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that your server has been set up and you have network connectivity and no firewall rules that would block this traffic.) Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors. To do this, create a new user using the adduser command and then add the user to the admin group. Once Setup is complete, the user can be removed from the admin group. For example, suppose you’re setting up a server and two separate sensors:
+     * SERVER
+      * run through sosetup
+     * FIRST SENSOR
       * create an account on the SERVER and add it to the admin group
-      * run through Setup on the SENSOR
+      * run through sosetup on the SENSOR
       * on the SERVER, remove the account from the admin group, but leave the account active
-    * SECOND SENSOR
+     * SECOND SENSOR
       * create a second account on the SERVER and add it to the admin group
-      * run through Setup on the second SENSOR
+      * run through SETUP on the second SENSOR
       * on the SERVER, remove the account from the admin group, but leave the account active
-  # If you're monitoring IP address ranges other than the private RFC1918 address space (192.168.0.0/16,10.0.0.0/8,172.16.0.0/12), you should update your sensor configuration with the correct IP ranges.  Sensor configuration files can be found in /etc/nsm/HOSTNAME-INTERFACE/.  Modify either snort.conf or suricata.yaml (depending on which IDS engine you chose during Setup) and update the HOME_NET variable.  Also update the HOME_NET variable in sancp.conf (may just want to use 0.0.0.0) and the network variable in pads.conf.  Then update Bro's network configuration in /usr/local/etc/networks.cfg.  Finally, restart the sensor processes:
+     * You’ll be asked which network interface should be monitored.
+     * If you have multiple CPU cores available:
+      * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the IDS_LB_PROCS variable in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf).
+      * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the lb_procs variable in /opt/bro/etc/node.cfg).
+     * You’ll be asked whether you want to enable ELSA. (ELSA is a distributed log archiving platform, so each sensor’s events stored in ELSA will be stored locally at each sensor and queried from the server which acts as a central interface.)
+  # If you’re monitoring IP address ranges other than private RFC1918 address space (192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12), you should update your sensor configuration with the correct IP ranges. Sensor configuration files can be found in /etc/nsm/HOSTNAME-INTERFACE/. Modify either snort.conf or suricata.yaml (depending on which IDS engine you chose during sosetup) and update the HOME_NET variable. Also update the HOME_NET variable in sancp.conf (may just want to use 0.0.0.0) and the network variable in pads.conf. Then update Bro’s network configuration in /opt/bro/etc/networks.cfg.<br>
+  # Restart the sensor processes:<br>
 {{{
 sudo nsm_sensor_ps-restart
 }}}
@@ -63,27 +131,27 @@ sudo nsm_sensor_ps-restart
 {{{
 curl http://testmyids.com
 }}}
-  # Full-time analysts should run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor.  This allows you to investigate pcaps without fear of impacting your production server/sensors.  To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr.  For a list of available screen resolutions, simply execute "xrandr".  To set the screen resolution (replace W and H with the actual Width and Height desired):
+  # Full-time analysts should run Security Onion in a VM on their workstation, then launch the Sguil client and connect to the IP/hostname of their production Sguil sensor. This allows you to investigate pcaps without fear of impacting your production server/sensors. To change the resolution of your Security Onion VM, install the Virtual Tools for your virtualization solution or use xrandr. For a list of available screen resolutions, simply execute “xrandr”. To set the screen resolution (replace W and H with the actual Width and Height desired):<br>
 {{{
 xrandr -s WxH
 }}}
-  # Login to Sguil, Squert (https://server/squert/), or Snorby (https://server:3000) and review your IDS alerts.  Use the additional NSM data types in Sguil and Bro logs (/nsm/bro/logs/) for in-depth analysis.<br>
-  # Be aware that Snorby uses highcharts.  Read the <a href="http://shop.highsoft.com/highcharts.html">highcharts license</a> to determine if you need to purchase a commercial license.  If you feel that you would be required to purchase a commercial license but are unwilling/unable to, please <a href="http://code.google.com/p/security-onion/wiki/FAQ">disable/remove Snorby</a> (See: "How do I disable Snorby?").<br>
-  # Harden your server and sensors by disabling any unneeded services and [Firewall firewalling] off any unused ports.
-  # Run the following to see how your sensor is coping with the load.  You should check this on a daily basis to make sure your sensor is not dropping packets.  Consider adding it to a cronjob and having it emailed to you (see the "configure email" link below).
+  # Login to Sguil and review your IDS alerts. Squert, Snorby and ELSA can be accessed by visiting https://server/ for additional in-depth analysis.<br>
+  # Be aware that Snorby uses highcharts. Read the <a href="http://shop.highsoft.com/highcharts.html">highcharts license</a> to determine if you need to purchase a commercial license. If you feel that you would be required to purchase a commercial license but are unwilling/unable to, please <a href="http://code.google.com/p/security-onion/wiki/FAQ">disable/remove Snorby</a> (See: “How do I disable Snorby?”).<br>
+  # Harden your server and sensors by disabling any unneeded services and <a href="http://code.google.com/p/security-onion/wiki/Firewall">firewalling</a> off any unused ports.<br>
+  # Run the following to see how your sensor is coping with the load. You should check this on a daily basis to make sure your sensor is not dropping packets. Consider adding it to a cronjob and having it emailed to you (see the “configure email” link below).<br>
 {{{
 sudo sostat | less
 }}}
-  # Please note that any IDS/NSM system needs to be tuned for the network it's monitoring.  Please see [ManagingAlerts].  You should only run the signatures you really care about.
-  # Also note that you should be looking at and categorizing events every day with the goal being to categorize all events every day.  Even if you don't use the Sguil console for your primary analysis, you need to log into into it periodically and F8 old events to keep the RealTime queue from getting too big.  Neglecting to do so may result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis.  Please see the <a href="http://nsmwiki.org/Sguil_Client">Sguil client page on NSMwiki</a>.<br> 
-  # On the server running the Sguil database, set the DAYSTOKEEP variable in /etc/nsm/securityonion.conf to however many days you want to keep in your archive.  The default is 365, but you may need to adjust it based on your organization's detection/response policy and your available disk space.
-  # You should also tune [http_agent].
-  # Optional: Exclude unnecessary traffic from your monitoring using [BPF].
+  # Please note that any IDS/NSM system needs to be tuned for the network it’s monitoring. Please see <a href="http://code.google.com/p/security-onion/wiki/ManagingAlerts">ManagingAlerts</a>. You should only run the signatures you really care about.<br>
+  # Also note that you should be looking at and categorizing events every day with the goal being to categorize all events every day. Even if you don’t use the Sguil console for your primary analysis, you need to log into it periodically and F8 old events to keep the real time queue from getting too big. Neglecting to do so will result in database/Sguil issues as the number of uncategorized events continues to increase on a daily basis. Please see the <a href="http://nsmwiki.org/Sguil_Client">Sguil client page on NSMwiki</a>.<br>
+  # On the server running the Sguil database, set the DAYSTOKEEP variable in /etc/nsm/securityonion.conf to however many days you want to keep in your archive. The default is 365, but you may need to adjust it based on your organization’s detection/response policy and your available disk space.<br>
+  # You should also tune <a href="http://code.google.com/p/security-onion/wiki/http_agent">http_agent</a>.<br>
+  # Optional: exclude unnecessary traffic from your monitoring using <a href="http://code.google.com/p/security-onion/wiki/BPF">BPF</a>.<br>
   # Optional: add new Sguil user accounts with the following:<br>
 {{{
 sudo /usr/local/sbin/nsm_server_user-add
 }}}
-  # Optional, but highly recommended: [Email configure email for alerting and reporting]
-  # Optional: Need "remote desktop" access to your Security Onion sensor? Install [FreeNX] or <a href="http://www.xrdp.org/">xrdp</a> (sudo apt-get install xrdp).
-  # Read more about the tools contained in Security Onion: [Tools]
+  # Optional, but highly recommended: configure email for alerting and reporting.
+  # Optional: need “remote desktop” access to your Security Onion sensor or server? Install <a href="http://code.google.com/p/security-onion/wiki/FreeNX">FreeNX</a> or <a href="http://www.xrdp.org/">xrdp</a> (sudo apt-get install xrdp).
+  # Read more about the tools contained in Security Onion: <a href="http://code.google.com/p/security-onion/wiki/Tools">Tools</a> 
   # Refer back to this document often, as it is updated quite regularly.
