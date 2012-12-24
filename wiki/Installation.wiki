@@ -153,7 +153,7 @@ sudo sostat | less
 {{{
 sudo nsm_server_user-add
 }}}
-  # Optional, but highly recommended: configure [email] for alerting and reporting.
+  # Optional, but highly recommended: configure [Email email] for alerting and reporting.
   # Optional: need “remote desktop” access to your Security Onion sensor or server? Install <a href="http://code.google.com/p/security-onion/wiki/FreeNX">FreeNX</a> or <a href="http://www.xrdp.org/">xrdp</a> (sudo apt-get install xrdp).
   # Read more about the tools contained in Security Onion: <a href="http://code.google.com/p/security-onion/wiki/Tools">Tools</a> 
   # Refer back to this document often, as it is updated quite regularly.
