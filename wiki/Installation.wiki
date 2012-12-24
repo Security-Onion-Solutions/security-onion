@@ -39,7 +39,12 @@ sudo apt-get -y install python-software-properties
 sudo add-apt-repository -y ppa:securityonion/stable
 sudo apt-get update
 }}}
-  # Install securityonion-all:<br>
+  # Install one of our metapackages:<br>
+   * securityonion-client (about 50MB)
+   * securityonion-sensor (about 50MB)
+   * securityonion-elsa and securityonion-elsa-extras (about 50MB)
+   * securityonion-server (about 200MB)
+   * securityonion-all (all of the above)
 {{{
 sudo apt-get -y install securityonion-all
 }}}
