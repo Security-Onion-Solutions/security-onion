@@ -122,6 +122,8 @@ sudo sosetup
       * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the IDS_LB_PROCS variable in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf).
       * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the lb_procs variable in /opt/bro/etc/node.cfg).
      * You’ll be asked whether you want to enable ELSA. (ELSA is a distributed log archiving platform, so each sensor’s events stored in ELSA will be stored locally at each sensor and queried from the server which acts as a central interface.)
+
+= Tuning / Miscellaneous =
   # If you’re monitoring IP address ranges other than private RFC1918 address space (192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12), you should update your sensor configuration with the correct IP ranges. Sensor configuration files can be found in /etc/nsm/HOSTNAME-INTERFACE/. Modify either snort.conf or suricata.yaml (depending on which IDS engine you chose during sosetup) and update the HOME_NET variable. Also update the HOME_NET variable in sancp.conf (may just want to use 0.0.0.0) and the network variable in pads.conf. Then update Bro’s network configuration in /opt/bro/etc/networks.cfg.<br>
   # Restart the sensor processes:<br>
 {{{
@@ -149,7 +151,7 @@ sudo sostat | less
   # Optional: exclude unnecessary traffic from your monitoring using <a href="http://code.google.com/p/security-onion/wiki/BPF">BPF</a>.<br>
   # Optional: add new Sguil user accounts with the following:<br>
 {{{
-sudo /usr/local/sbin/nsm_server_user-add
+sudo nsm_server_user-add
 }}}
   # Optional, but highly recommended: configure email for alerting and reporting.
   # Optional: need “remote desktop” access to your Security Onion sensor or server? Install <a href="http://code.google.com/p/security-onion/wiki/FreeNX">FreeNX</a> or <a href="http://www.xrdp.org/">xrdp</a> (sudo apt-get install xrdp).
