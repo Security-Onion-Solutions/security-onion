@@ -5,7 +5,7 @@
 == If you just want to quickly evaluate Security Onion Live 12.04 Distribution, follow these steps: ==
   # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface and a minimum of 2GB RAM total, 4GB RAM recommended. Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
   # <a href="http://sourceforge.net/projects/security-onion/files/12.04/">Download the Security Onion Live 12.04 ISO image</a>, verify its checksum, boot from it and follow the prompts in the Xubuntu installer.<br>
-  # Reboot into your new installation and double-click the Setup shortcut.  Follow the prompts.<br>
+  # Reboot into your new installation and double-click the Setup shortcut.  Choose "Quick Setup" and follow the prompts.<br>
   # Analyze alerts using Sguil, Squert, Snorby, ELSA or capME.<br>
 <br>
 == If you want to quickly evaluate Security Onion on an Ubuntu Distribution other than Security Onion Live ISO, follow these steps: ==
