@@ -1,9 +1,9 @@
 #summary Security Onion 12.04 Installation Procedure
 
 = What's the QUICKEST way to install Security Onion? =
-  # Install our <a href="https://sourceforge.net/projects/security-onion/files/12.04/">ISO image (based on Xubuntu 12.04 64-bit)</a>.
-  # Reboot.
-  # Run through the Setup wizard on the Desktop.
+  # Download and boot our <a href="https://sourceforge.net/projects/security-onion/files/12.04/">ISO image (based on Xubuntu 12.04 64-bit)</a>.
+  # Follow the prompts in the Xubuntu installer and reboot.
+  # Double-click the Setup wizard on the Desktop and follow the prompts.
 
 = What's the RECOMMENDED procedure for installing Security Onion? =
 
