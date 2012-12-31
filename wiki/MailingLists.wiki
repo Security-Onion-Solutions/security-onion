@@ -16,11 +16,11 @@ http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
 =Mailing Lists=
 ==Security-Onion==
-This mailing list is for announcements and general user support questions.  Use this list if you're using the old version of Security Onion based on Ubuntu 10.04.  Please do NOT use this list if your questions are about the new Security Onion 12.04 Beta (use the Testing list below).
+This mailing list is for announcements and general user support questions.
 
 http://groups.google.com/group/security-onion
 
 ==Security-Onion-Testing==
-Subscribe to this mailing list if you'd like to test upcoming versions of Security Onion packages before they are released.  Use this list if you're using the new beta version of Security Onion based on Ubuntu 12.04.
+Subscribe to this mailing list if you'd like to test upcoming versions of Security Onion packages before they are released.
 
 http://groups.google.com/group/security-onion-testing
