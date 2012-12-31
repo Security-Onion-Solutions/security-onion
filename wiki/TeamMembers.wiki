@@ -9,25 +9,12 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Scott Runnels
   * We need package maintainers for the next major version of the distro!
 
-*Testing/QA Team*
+*Marketing Team*
   * Doug Burks
   * Scott Runnels
-  * Liam Randall
-  * Heine Lysemose
-  * Eric Ooi
-  * Craig Shannon
-  * Dustin Webber
-  * Seth Hall
-  * Tom De Vries
-  * Joe Stevensen
-  * David Zawdie
-  * Scott Burkhart
-  * Sunil Gupta
-  * Victor Julien
   * Mark Hillick
-  * Jason Boss
-  * Kevin Swysgood
-  * We can always use more testers!  If interested, please join the <a href="http://groups.google.com/group/security-onion-testing">security-onion-testing mailing list</a>.
+  * Brad Shoop
+  * We need more folks to help spread the word about Security Onion by blogging, tweeting, and other social media.
 
 *Documentation Team*
   * Doug Burks
@@ -40,16 +27,12 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Joe Hargis
   * Brad Shoop
 
-*Marketing Team*
-  * Doug Burks
-  * Scott Runnels
-  * Mark Hillick
-  * Brad Shoop
-  * We need more folks to help spread the word about Security Onion by blogging, tweeting, and other social media.
+*Testing/QA Team*
+  * Too many to list!  
+  * If you'd like to do testing/QA, please join the <a href="http://groups.google.com/group/security-onion-testing">security-onion-testing mailing list</a>.
 
 *Artwork*
   * Jack Blanchard
-  * We need more folks to design artwork for the next major version of the distro.
 
 = Help Wanted =
 Security Onion needs more volunteers in all of the areas defined above.  If Security Onion has provided value to you and/or your organization, please consider giving back to the community by donating your time to the above needs!  If interested, please contact Doug Burks via email (if you're on our mailing list you know what the address is).  Thanks!
