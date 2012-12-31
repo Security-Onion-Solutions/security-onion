@@ -2,10 +2,7 @@
 
 = Having problems?  Try the suggestions below. =
 
-  * Are you running the latest version of Security Onion?
-{{{
-sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
-}}}
+  * Are you running the [Upgrade latest version of Security Onion]?
   * Check the [FAQ].
   * Search the [MailingLists Security Onion Mailing Lists].
   * Search the documentation and mailing lists of the tools contained within Security Onion: [Tools]
