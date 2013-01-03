@@ -72,7 +72,7 @@ sudo sosetup
 sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
 }}}
   # If you’re running a VM, now would be a good time to snapshot it so you can revert later if you need to.<br>
-  # f you installed from the Security Onion Live 12.04 Distribution ISO, you can skip to step 14.<br>
+  # If you installed from the Security Onion Live 12.04 Distribution ISO, you can skip to step 14.<br>
   # Log back in (over “ssh -X” if remote) and configure MySQL not to prompt for root password:<br>
 {{{
 echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections
