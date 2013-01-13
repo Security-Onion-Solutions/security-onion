@@ -1,0 +1,75 @@
+Example ELSA Queries, a.k.a. "Martin's Greatest Hits"
+
+= Introduction =
+
+The following are posts from Martin Holste, the author of ELSA, extracted from the Security Onion and Security Onion Testing mailing lists, that provide insight and working examples of the power of ELSA's query capabilities.
+
+
+= 12/11/12 - security-onion-testing =
+
+In any case, be sure to check out the documentation for subsearches (https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Subsearches) as that's where you get the really powerful queries from.
+
+The queries from today were like this (note that you can always replace "groupby" with using the "Report On" menu button):
+
+Find today's summary of alerts for "current events" and "trojan" alerts
+{{{
+   sig_msg:current_events sig_msg:trojan groupby:sig_msg
+}}}
+Choose "ET POLICY Proxy Judge Discovery/Evasion (prxjdg.cgi)" from the signature list, which executes:
+{{{
+   sig_msg:"ET POLICY Proxy Judge Discovery/Evasion (prxjdg.cgi)"
+}}}
+Get a sense for the distribution of the alert over different IP's by pivoting on dstip (or look at the field summary at the top and notice that there is just one unique entry for srcip)
+{{{
+   sig_msg:"ET POLICY Proxy Judge Discovery/Evasion (prxjdg.cgi)" groupby:dstip
+}}}
+Notice that there's just one entry for srcip and drill down on it
+{{{
+   10.0.1.1 class:snort groupby:sig_msg
+}}}
+Find some other alerts but nothing concrete, mine for data in URL's (via Bro)
+{{{
+   10.0.1.1 class:bro_http groupby:site
+}}}
+see the Polish site and drill-down
+{{{
+   site:www.aksarat.pl
+}}}
+Click "Info" and choose the getPcap plugin to see the content of the request
+
+As a follow-up, look at the URI structure and see if other sites are being used for this checkin
+uri:check.rsp groupby:site
+
+Get a feel for how often the check-in occurs
+{{{
+   uri:check.rsp groupby:hour
+}}}
+Change granularity to per-minute
+{{{
+   uri:check.rsp groupby:minute limit:1000
+}}}
+Be alerted in the future by clicking "Results..." and choosing "Create alert" so anytime uri:check.rsp shows up you get an email.
+
+= 1/12/13 - security-onion =
+
+Once you start looking at connections in ELSA with geoip, you can also use the "whois" plugin in the same way to see a description of the destination network.  So, from Brad's dashboard, you could run this query in the ELSA query box:
+{{{
+   icmp udp tcp class=BRO_CONN groupby:BRO_CONN.dstip | whois
+}}}
+Then, you can do some post-search filters to remove any well-known hosts like this:
+{{{
+   icmp udp tcp class=BRO_CONN groupby:BRO_CONN.dstip | whois | filter(descr,google)
+}}}
+Or maybe you want to see TCP traffic not to port 80/443:
+{{{
+   tcp class=BRO_CONN groupby:BRO_CONN.dstip -dstport:80 -dstport:443 | whois
+}}}
+Or, find only things destined for a high port with a certain byte count (you'll need to wait for the latest ELSA version to make it into SecurityOnion to get the bytes_in field):
+{{{
+   +tcp class=BRO_CONN groupby:BRO_CONN.dstip +dstport>=1000 +bytes_in>1000000 | whois
+}}}
+Now for something a bit more advanced.  Using the latest version of ELSA, you can check for any high bytes transferred to the outside from hosts that recently had a "TROJAN" Snort alert:
+{{{
+   sig_msg:trojan class:snort groupby:srcip | remote > foreach(${remote} class=BRO_CONN groupby:BRO_CONN.dstip +dstport>=1000 +bytes_in>1000000 | whois | filter descr,google)
+}}}
+So now we're checking any remote host (as in not on the home network) involved in a Trojan incident for transferring more than a megabyte of data to an IP not owned by Google.
