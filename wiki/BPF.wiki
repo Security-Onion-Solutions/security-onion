@@ -1,7 +1,25 @@
 #summary BPF support in Security Onion
 
-= Snort/Suricata/Daemonlogger =
+= New Security Onion 12.04 =
 
+== Global bpf.conf ==
+In Security Onion 12.04, you can specify your BPF in one location (/etc/nsm/rules/bpf.conf).  Bro automatically monitors this file for changes and will update as needed.  Other services (such as Snort/Suricata, prads, and netsniff-ng) will need to be restarted for the change to take effect.
+
+== Granular bpf.conf ==
+Each process on each interface has its own bpf file, but by default the per-process bpf files are symlinked to the interface bpf and the interface bpf is symlinked to the global bpf.conf:
+{{{
+lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-bro.conf -> bpf.conf
+lrwxrwxrwx 1 root  root    23 Jan 13 21:47 bpf.conf -> /etc/nsm/rules/bpf.conf
+lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-ids.conf -> bpf.conf
+lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-pcap.conf -> bpf.conf
+lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-prads.conf -> bpf.conf
+}}}
+
+If you need to specify a bpf per-interface or per-process, you can simply replace the default symlinks with the desired bpf file and restart services as necessary.
+
+= Old Security Onion 10.04 =
+
+== Snort/Suricata/daemonlogger ==
 As of Security Onion 20120329, we have support for a central bpf.conf that is passed to Snort, Suricata, and daemonlogger.
 
 First, make sure you're running Security Onion 20120329 or higher:<br>
@@ -19,7 +37,7 @@ Once you've added your BPF to the proper bpf.conf file(s) for your sensor interf
 sudo nsm_sensor_ps-restart
 }}}
 
-= Bro =
+== Bro ==
 
 Since there is one Bro config for ALL interfaces on the machine (as opposed to Snort/Suricata/Daemonlogger where we have one config for each interface), it cannot use the above configuration.  The recommended way to configure a BPF for Bro is to add the following to /usr/local/share/bro/site/local.bro:
 {{{
