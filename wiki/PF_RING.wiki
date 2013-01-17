@@ -1,0 +1,29 @@
+#summary Spinning up multiple instances of Snort/Suricata and Bro using PF_RING
+
+= Setup =
+
+Setup will automatically ask you how many instances you'd like (assuming
+you choose Advanced Setup and you have multiple cores) and will tell you
+how to adjust after the fact.
+
+= Tuning =
+
+If you want to change it after running Setup, you can do something like:
+{{{
+sudo nsm_sensor_ps-stop
+}}}
+# edit /etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf and change IDS_LB_PROCS
+to desired number of cores
+{{{
+sudo nsm_sensor_ps-start
+}}}
+
+If running Snort, the script automatically spawns $IDS_LB_PROCS instances
+of Snort (using PF_RING), barnyard2, and snort_agent.
+If running Suricata, the script automatically copies IDS_LB_PROCS into
+suricata.yaml and then Suricata spins up the PF_RING instances itself.
+
+For Bro, you would edit /opt/bro/etc/node.cfg and change the lb_procs
+variable, then do:
+sudo broctl install
+sudo broctl restart
