@@ -24,7 +24,7 @@ sudo nsm_sensor_ps-start
 
 If running Snort, the script automatically spawns $IDS_LB_PROCS instances
 of Snort (using PF_RING), barnyard2, and snort_agent.<br>
-If running Suricata, the script automatically copies IDS_LB_PROCS into
+If running Suricata, the script automatically copies $IDS_LB_PROCS into
 suricata.yaml and then Suricata spins up the PF_RING instances itself.
 
 == Bro ==
