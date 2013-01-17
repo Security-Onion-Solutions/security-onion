@@ -9,21 +9,25 @@ how to adjust after the fact.
 = Tuning =
 
 If you want to change it after running Setup, you can do something like:
+  * Stop sensor processes:
 {{{
 sudo nsm_sensor_ps-stop
 }}}
-# edit /etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf and change IDS_LB_PROCS
+  * Edit /etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf and change IDS_LB_PROCS
 to desired number of cores
+  * Start sensor processes:
 {{{
 sudo nsm_sensor_ps-start
 }}}
 
 If running Snort, the script automatically spawns $IDS_LB_PROCS instances
-of Snort (using PF_RING), barnyard2, and snort_agent.
+of Snort (using PF_RING), barnyard2, and snort_agent.<br>
 If running Suricata, the script automatically copies IDS_LB_PROCS into
 suricata.yaml and then Suricata spins up the PF_RING instances itself.
 
-For Bro, you would edit /opt/bro/etc/node.cfg and change the lb_procs
+For Bro, you would edit {{{/opt/bro/etc/node.cfg}}} and change the {{{lb_procs}}}
 variable, then do:
+{{{
 sudo broctl install
 sudo broctl restart
+}}}
