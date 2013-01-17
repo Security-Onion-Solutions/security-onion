@@ -13,8 +13,7 @@ If you want to change it after running Setup, you can do something like:
 {{{
 sudo nsm_sensor_ps-stop
 }}}
-  * Edit /etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf and change IDS_LB_PROCS
-to desired number of cores
+  * Edit /etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf and change IDS_LB_PROCS to desired number of cores
   * Start sensor processes:
 {{{
 sudo nsm_sensor_ps-start
