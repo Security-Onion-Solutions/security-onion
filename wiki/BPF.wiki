@@ -17,7 +17,7 @@ lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-pcap.conf -> bpf.conf
 lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-prads.conf -> bpf.conf
 }}}
 
-If you need to specify a bpf per-interface or per-process, you can simply replace the default symlinks with the desired bpf file and restart services as necessary.
+If you need to specify a bpf per-interface or per-process, you can simply replace the default symlink(s) with the desired bpf file(s) and restart service(s) as necessary.
 
 == Old Security Onion 10.04 ==
 
