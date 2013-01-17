@@ -10,3 +10,14 @@ Please note that this is all subject to change!
       * Issue 146: ELSA (web-based interface for logs)
   * December 2012
     * Security Onion 12.04 RC1
+    * Security Onion 12.04 Final Release
+  * January 2013
+    * Fix pkill bug in Setup script
+    * Update Snorby
+    * Update Suricata
+    * Update Snort
+    * Update Sguil
+    * Update PF_RING
+    * ELSA - include YUI library
+    * Security Onion 12.04.1
+   
