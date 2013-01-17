@@ -19,5 +19,7 @@ Please note that this is all subject to change!
     * Update Sguil
     * Update PF_RING
     * ELSA - include YUI library
+    * Make it easier to disable services.
+  * February 2013
     * Security Onion 12.04.1
    
