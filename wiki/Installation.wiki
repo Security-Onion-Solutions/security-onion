@@ -200,7 +200,6 @@ sudo sostat | less
 {{{
 sudo chmod 0 /usr/bin/http_agent.tcl
 }}}
-<br>
   # Tune the number of PF_RING instances for Snort/Suricata and Bro: [PF_RING]
   # Optional: exclude unnecessary traffic from your monitoring using <a href="http://code.google.com/p/security-onion/wiki/BPF">BPF</a>.<br>
   # Optional: add new Sguil user accounts with the following:<br>
