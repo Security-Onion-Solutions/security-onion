@@ -1,13 +1,5 @@
 #summary The Future of Security Onion
 Please note that this is all subject to change!
-  * June/July/August/September/October/November 2012
-    * Issue 247:  Big Distro Rebuild (BDR)
-      * Development on the existing 32-bit version of Security Onion will stop so that we can focus on the future
-      * Launchpad PPA so that all updates (Ubuntu and Security Onion) are done via apt-get
-      * ISO image will be based on Xubuntu 12.04 64-bit, but you'll be able to use your preferred flavor of Ubuntu and just add our PPA
-      * There will be no in-place upgrade path since we're moving from 32-bit to 64-bit
-      * Snort, Suricata, and Bro will use pf_ring for higher performance
-      * Issue 146: ELSA (web-based interface for logs)
   * December 2012
     * Security Onion 12.04 RC1
     * Security Onion 12.04 Final Release
