@@ -10,8 +10,8 @@ Please note that this is all subject to change!
     * ELSA - include YUI library
     * Make it easier to disable services.
   * February 2013
+    * Update PF_RING
     * Update Suricata
     * Update Snort
-    * Update PF_RING
     * Security Onion 12.04.1
    
