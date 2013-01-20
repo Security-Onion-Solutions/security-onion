@@ -1,8 +1,5 @@
 #summary The Future of Security Onion
 Please note that this is all subject to change!
-  * December 2012
-    * Security Onion 12.04 RC1
-    * Security Onion 12.04 Final Release
   * January 2013
     * Issue285: Fix pkill bug in Setup script
     * Issue286: Update Snorby to 2.5.4
