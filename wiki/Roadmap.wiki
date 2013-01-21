@@ -4,6 +4,7 @@ Please note that this is all subject to change!
     * Issue285: Fix pkill bug in Setup script
     * Issue286: Update Snorby to 2.5.4
     * Issue287: Update Sguil for improved error handling
+    * Issue288: Fix bugs in Setup script when selecting Server-Only
     * ELSA - include YUI library
     * Make it easier to disable services.
   * February 2013
