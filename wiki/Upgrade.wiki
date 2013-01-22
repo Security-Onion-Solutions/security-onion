@@ -15,3 +15,5 @@ Since all of our packages are in a standard Ubuntu Launchpad PPA, you can use st
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade
 }}}
+
+Please also see the [MySQLUpdates recommended procedure for updating the MySQL packages].
