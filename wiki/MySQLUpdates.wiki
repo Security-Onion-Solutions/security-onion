@@ -1,0 +1,31 @@
+#summary Recommended procedure for updating MySQL
+
+= Introduction =
+
+Updating the Ubuntu MySQL packages can be problematic due to autossh port forwarding and a bug in our current version of ELSA.  Here's the recommended procedure to ensure a smooth update.
+
+= Procedure =
+
+Stop all services:
+{{{
+sudo service nsm stop
+sudo service syslog-ng stop
+sudo service apache2 stop
+sudo pkill autossh
+sudo pkill perl
+}}}
+
+Check the process listing and verify all nsm/syslog-ng/apache/autossh/perl processes have stopped:
+{{{
+ps aux
+}}}
+
+Install the MySQL updates:
+{{{
+sudo apt-get update && sudo apt-get dist-upgrade
+}}}
+
+Reboot:
+{{{
+sudo reboot
+}}}
