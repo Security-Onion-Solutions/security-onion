@@ -6,6 +6,7 @@ Please note that this is all subject to change!
     * Issue287: Update Sguil for improved error handling
     * Issue288: Fix bugs in Setup script when selecting Server-Only
     * Issue289: ELSA - include YUI library
+    * Issue290: Update ELSA
     * Make it easier to disable services.
   * February 2013
     * Update netsniff-ng to allow running as non-root user
