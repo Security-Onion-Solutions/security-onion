@@ -24,7 +24,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
   # After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.
   # Once you've completed the Setup wizard, use the Desktop icons to login to Sguil, Squert, Snorby, or ELSA.
 <br>
-== If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 12.04 (not using our ISO image), follow these steps: ==
+== If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 12.04 32-bit/64-bit (not using our ISO image), follow these steps: ==
   # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface and a minimum of 2GB RAM total, 4GB RAM recommended. Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
   # Download the ISO image for your prefered flavor of Ubuntu *12.04*, verify its checksum,  and boot from it.<br>
   # Follow the prompts and reboot into your new installation.
