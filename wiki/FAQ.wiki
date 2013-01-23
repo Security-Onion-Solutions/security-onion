@@ -185,9 +185,9 @@ sudo /usr/local/bin/pulledpork_update.sh
 PLEASE NOTE: In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to /usr/bin/rule-update.
 
 = How do I add a new user to Sguil? =
-You can add new Sguil user accounts with the following (if prompted for server name, enter "securityonion"):<br>
+You can add new Sguil user accounts with the following:<br>
 {{{
-sudo /usr/local/sbin/nsm_server_user-add
+sudo nsm_server_user-add
 }}}
 
 = I get periodic MySQL crashes and/or error code 24 "out of resources" when searching in Sguil.  How do I fix that? =
@@ -224,7 +224,7 @@ All known issues with the dashboard and sensor cache job have been resolved with
 = I've forgotten my Snorby password.  How do I reset it? =
 First, open the Rails console:
 {{{
-cd /usr/local/share/snorby/
+cd /opt/snorby/
 sudo RAILS_ENV=production bundle exec rails c
 }}}
 In the Rails console, reset your Snorby password as follows:
@@ -238,7 +238,7 @@ quit
 = Why isn't Snorby showing GeoIP data properly? =
 Try forcing the GeoIP job to run by doing the following.  First, open the Rails console:
 {{{
-cd /usr/local/share/snorby/
+cd /opt/snorby/
 sudo RAILS_ENV=production bundle exec rails c
 }}}
 In the Rails console, initiate the GeoIP job:
