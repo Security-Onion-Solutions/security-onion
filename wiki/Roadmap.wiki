@@ -7,6 +7,7 @@ Please note that this is all subject to change!
     * Issue288: Fix bugs in Setup script when selecting Server-Only
     * Issue289: ELSA - include YUI library
     * Issue290: Update ELSA
+    * Issue292: cronjob to reload syslog-ng at midnight
     * Make it easier to disable services.
   * February 2013
     * Update netsniff-ng to allow running as non-root user
