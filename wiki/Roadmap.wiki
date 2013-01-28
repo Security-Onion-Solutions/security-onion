@@ -9,6 +9,7 @@ Please note that this is all subject to change!
     * Issue290: Update ELSA
     * Issue292: cronjob to reload syslog-ng at midnight
   * February 2013
+    * Update Snorby to 2.5.6 or higher.
     * Make it easier to disable services.
     * Update netsniff-ng to allow running as non-root user
     * Update NSM scripts to run netsniff-ng as non-root user
