@@ -3,18 +3,18 @@ Please note that this is all subject to change!
   * January 2013
     * Issue285: Fix pkill bug in Setup script
     * Issue286: Update Snorby to 2.5.4
-    * Issue287: Update Sguil for improved error handling
     * Issue288: Fix bugs in Setup script when selecting Server-Only
+    * Issue293: Update Snorby to 2.5.6
+  * February 2013
     * Issue289: ELSA - include YUI library
     * Issue290: Update ELSA
     * Issue292: cronjob to reload syslog-ng at midnight
-    * Issue293: Update Snorby to 2.5.6
-  * February 2013
-    * Make it easier to disable services.
+    * Issue287: Update Sguil for improved error handling
     * Update netsniff-ng to allow running as non-root user
     * Update NSM scripts to run netsniff-ng as non-root user
     * Update PF_RING
     * Update Suricata
     * Update Snort
+    * Make it easier to disable services.
     * Security Onion 12.04.1
    
