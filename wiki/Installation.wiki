@@ -187,7 +187,11 @@ curl http://testmyids.com
 xrandr -s WxH
 }}}
   # Login to Sguil and review your IDS alerts. Squert, Snorby and ELSA can be accessed by visiting https://server/ for additional in-depth analysis.<br>
-  # Be aware that Snorby uses highcharts. Read the <a href="http://shop.highsoft.com/highcharts.html">highcharts license</a> to determine if you need to purchase a commercial license. If you feel that you would be required to purchase a commercial license but are unwilling/unable to, please <a href="http://code.google.com/p/security-onion/wiki/FAQ#How_do_I_disable_Snorby?">disable/remove Snorby</a>.<br>
+  # Be aware that Snorby uses highcharts. Read the <a href="http://shop.highsoft.com/highcharts.html">highcharts license</a> to determine if you need to purchase a commercial license. If you feel that you would be required to purchase a commercial license but are unwilling/unable to, you can <a href="http://code.google.com/p/security-onion/wiki/FAQ#How_do_I_disable_Snorby?">disable/remove Snorby altogether</a> or de-activate HighCharts:
+{{{
+sudo mv /opt/snorby/public/javascripts/highcharts.js /opt/snorby/public/javascripts/highcharts.js.DISABLED
+}}}
+After doing this, the charts on the bottom half of the Snorby Dashboard will be blank, but nothing else in Snorby should be affected.<br>
   # Harden your server and sensors by disabling any unneeded services and <a href="http://code.google.com/p/security-onion/wiki/Firewall">firewalling</a> off any unused ports.<br>
   # Run the following to see how your sensor is coping with the load. You should check this on a daily basis to make sure your sensor is not dropping packets. Consider adding it to a cronjob and having it emailed to you (see the “configure email” link below).<br>
 {{{
