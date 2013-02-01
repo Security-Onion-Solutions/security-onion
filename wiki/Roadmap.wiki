@@ -10,6 +10,7 @@ Please note that this is all subject to change!
     * Issue290: Update ELSA
     * Issue292: cronjob to reload syslog-ng at midnight
     * Issue287: Update Sguil for improved error handling
+    * Increase sleep value in /etc/init/securityonion.conf
     * Update netsniff-ng to allow running as non-root user
     * Update NSM scripts to run netsniff-ng as non-root user
     * Update PF_RING
