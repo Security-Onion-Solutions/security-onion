@@ -16,6 +16,6 @@ Please note that this is all subject to change!
     * Update PF_RING
     * Update Suricata
     * Update Snort
-    * Make it easier to disable services.
+    * Make it easier to disable services
     * Security Onion 12.04.1
    
