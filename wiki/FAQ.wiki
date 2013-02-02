@@ -165,19 +165,19 @@ and then re-run the upgrade.<br>
   # Close the Screensaver Preferences window.<br>
 
 = I'm currently running Snort.  How do I switch to Suricata? =
-First, make sure you're running the latest version of Security Onion.  Then run the following commands:
 {{{
 sudo nsm_sensor_ps-stop --only-snort-alert
 sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf
 sudo rule-update 
+sudo nsm_sensor_ps-start
 }}}
 
 = I'm currently running Suricata.  How do I switch to Snort? =
-First, make sure you're running the latest version of Security Onion.  Then run the following commands:
 {{{
-sudo nsm_sensor_ps-stop --only-snort-alert
+sudo nsm_sensor_ps-stop
 sudo sed -i 's|ENGINE=suricata|ENGINE=snort|g' /etc/nsm/securityonion.conf
 sudo rule-update
+sudo nsm_sensor_ps-start
 }}}
 
 = How do I add a new user to Sguil? =
