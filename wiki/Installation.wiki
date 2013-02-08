@@ -134,17 +134,17 @@ sudo sosetup
     * You’ll be asked whether you want to enable ELSA.
     * You’ll be prompted to proceed with making the changes to setup Security Onion.
    * Sensor
-    * You will be prompted for an SSH account on the master server that has sudo privileges. (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that your server has been set up and you have network connectivity and no firewall rules that would block this traffic.) Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors. To do this, create a new user using the adduser command and then add the user to the admin group. Once Setup is complete, the user can be removed from the admin group. For example, suppose you’re setting up a server and two separate sensors:
+    * You will be prompted for an SSH account on the master server that has sudo privileges. (Note: the management interface on the sensor must be able to SSH to the management interface on the server, so please make sure that your server has been set up and you have network connectivity and no firewall rules that would block this traffic.) Consider creating a separate SSH account on the master server for each sensor so that if a sensor is ever compromised, its individual account can be disabled without affecting the other sensors. To do this, create a new user using the adduser command and then add the user to the sudo group. Once Setup is complete, the user can be removed from the sudo group. For example, suppose you’re setting up a server and two separate sensors:
      * SERVER
       * run through sosetup
      * FIRST SENSOR
-      * create an account on the SERVER and add it to the admin group
+      * create an account on the SERVER and add it to the sudo group
       * run through sosetup on the SENSOR
-      * on the SERVER, remove the account from the admin group, but leave the account active
+      * on the SERVER, remove the account from the sudo group, but leave the account active
      * SECOND SENSOR
-      * create a second account on the SERVER and add it to the admin group
+      * create a second account on the SERVER and add it to the sudo group
       * run through SETUP on the second SENSOR
-      * on the SERVER, remove the account from the admin group, but leave the account active
+      * on the SERVER, remove the account from the sudo group, but leave the account active
      * You’ll be asked which network interface should be monitored.
      * If you have multiple CPU cores available:
       * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the IDS_LB_PROCS variable in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf).
