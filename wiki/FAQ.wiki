@@ -166,7 +166,7 @@ and then re-run the upgrade.<br>
 
 = I'm currently running Snort.  How do I switch to Suricata? =
 {{{
-sudo nsm_sensor_ps-stop --only-snort-alert
+sudo nsm_sensor_ps-stop
 sudo sed -i 's|ENGINE=snort|ENGINE=suricata|g' /etc/nsm/securityonion.conf
 sudo rule-update 
 sudo nsm_sensor_ps-start
