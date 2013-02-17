@@ -1,6 +1,6 @@
 #summary Security Onion Mailing Lists
 
-=Check FAQ and Wiki First=
+=Check Wiki First=
 Before sending an email to our mailing list, check to see if your question has already been answered by one of the following:
 
 [Help]
