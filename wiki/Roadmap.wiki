@@ -14,6 +14,7 @@ Please note that this is all subject to change!
     * Issue295: Increase sleep value in /etc/init/securityonion.conf
     * Issue296: Run snort as non-root user
     * Issue297: Run snort/suricata with unique PF_RING cluster-id per interface
+    * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Update netsniff-ng to allow running as non-root user
     * Update NSM scripts to run netsniff-ng as non-root user
     * Update PF_RING
