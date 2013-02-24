@@ -12,6 +12,8 @@ Please note that this is all subject to change!
     * Issue287: Update Sguil for improved error handling
     * Issue294: Barnyard2-1.12
     * Increase sleep value in /etc/init/securityonion.conf
+    * Run snort as non-root user
+    * Run snort/suricata with unique PF_RING cluster-id per interface
     * Update netsniff-ng to allow running as non-root user
     * Update NSM scripts to run netsniff-ng as non-root user
     * Update PF_RING
