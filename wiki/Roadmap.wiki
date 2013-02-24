@@ -16,6 +16,7 @@ Please note that this is all subject to change!
     * Issue297: Run snort/suricata with unique PF_RING cluster-id per interface
     * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Issue299: sphinx.conf - swap "3307" with "9312"
+    * Issue300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
     * Update netsniff-ng to allow running as non-root user
     * Update NSM scripts to run netsniff-ng as non-root user
     * Update PF_RING
