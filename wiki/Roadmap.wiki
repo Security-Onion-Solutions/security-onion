@@ -6,14 +6,14 @@ Please note that this is all subject to change!
     * Issue288: Fix bugs in Setup script when selecting Server-Only
     * Issue293: Update Snorby to 2.5.6
   * February 2013
+    * Issue292: cronjob to reload syslog-ng at midnight
+    * Issue296: Run snort as non-root user
+    * Issue297: Run snort/suricata with unique PF_RING cluster-id per interface
     * Issue289: ELSA - include YUI library
     * Issue290: Update ELSA
-    * Issue292: cronjob to reload syslog-ng at midnight
     * Issue287: Update Sguil for improved error handling
     * Issue294: Barnyard2-1.12
     * Issue295: Increase sleep value in /etc/init/securityonion.conf
-    * Issue296: Run snort as non-root user
-    * Issue297: Run snort/suricata with unique PF_RING cluster-id per interface
     * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Issue299: sphinx.conf - swap "3307" with "9312"
     * Issue300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
