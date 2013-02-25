@@ -1,4 +1,4 @@
-#An Introduction to Security Onion.
+#summary An Introduction to Security Onion.
 
 = Overview =
 
