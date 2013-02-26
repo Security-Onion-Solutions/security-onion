@@ -10,6 +10,7 @@ Please note that this is all subject to change!
     * Issue295: Increase sleep value in /etc/init/securityonion.conf
     * Issue296: Run snort as non-root user
     * Issue297: Run snort/suricata with unique PF_RING cluster-id per interface
+  * March 2013
     * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Issue299: sphinx.conf - swap "3307" with "9312"
     * Issue289: ELSA - include YUI library
