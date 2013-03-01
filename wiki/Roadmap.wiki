@@ -18,6 +18,7 @@ Please note that this is all subject to change!
     * Issue300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
     * Issue287: Update Sguil for improved error handling
     * Issue294: Barnyard2-1.12
+    * Issue301: sosetup bug in /etc/network/interfaces config when configuring server-only (no sniffing interfaces)
     * Update netsniff-ng to allow running as non-root user
     * Update NSM scripts to run netsniff-ng as non-root user
     * Update PF_RING
