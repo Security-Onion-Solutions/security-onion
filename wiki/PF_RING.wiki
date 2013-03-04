@@ -34,7 +34,8 @@ variable, then do:
 sudo broctl install && sudo broctl start
 }}}
 
-NOTE! An issue was recently discovered in Bro 2.1 when monitoring multiple interfaces with PF_RING that could result in traffic loss.  This issue is targeted for resolution in Bro 2.2.  In the meantime, if you're monitoring multiple interfaces with Bro, please disable Bro's PF_RING load balancing as follows:
+= Bro 2.1 with multiple interfaces =
+An issue was recently discovered in Bro 2.1 when monitoring multiple interfaces with PF_RING that could result in traffic loss.  This issue is targeted for resolution in Bro 2.2.  In the meantime, if you're monitoring multiple interfaces with Bro, please disable Bro's PF_RING load balancing as follows:
 {{{
 sudo broctl stop
 sudo sed -i 's|^lb_method=pf_ring|#lb_method=pf_ring|g' /opt/bro/etc/node.cfg
