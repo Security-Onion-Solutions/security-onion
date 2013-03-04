@@ -20,8 +20,9 @@ ps aux
 }}}
   # Install the MySQL updates.  Other updates (such as securityonion-snorby) may require MySQL to be running, so only update MySQL by itself:
 {{{
-sudo apt-get update && sudo apt-get install mysql-server
+sudo apt-get update && sudo apt-get install mysql-server mysql-server-core-5.5 mysql-server-5.5
 }}}
+If you're prompted concerning locally modified config files, keep your currently-installed version.  This is especially important in the case of log nodes where we've changed the MySQL port from its default of 3306 to 50000.
   # Reboot:
 {{{
 sudo reboot
