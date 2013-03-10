@@ -1,4 +1,4 @@
-#summary Installing SO in a Virtualbox VM and introductory workflow with Sguil.
+#summary Installing SO in a Virtualbox VM and introduction to tools, configuration and workflow with Sguil.
 
 = # BETA # =
 If you notice any inconsistencies or errors in the steps provided below, please let us know on the Security Onion mailing list (https://groups.google.com/forum/?fromgroups#!forum/security-onion). Thanks in advance! 
