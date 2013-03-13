@@ -13,6 +13,7 @@ Please note that this is all subject to change!
   * March 2013
     * Issue302: PF_RING 5.5.2
     * Issue301: sosetup bug in /etc/network/interfaces config when configuring server-only (no sniffing interfaces)
+    * Issue305:	/etc/init/securityonion.conf should only sleep at boot and not during Setup
     * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Issue299: sphinx.conf - swap "3307" with "9312"
     * Issue289: ELSA - include YUI library
