@@ -26,6 +26,7 @@ Please note that this is all subject to change!
     * Update NSM scripts to run netsniff-ng as non-root user
     * Update Suricata
     * Update Snort
+    * Update PRADS
     * Make it easier to disable services
     * Make pcap size configurable by user
     * Make WARN_DISK_USAGE and CRIT_DISK_USAGE configurable by user
