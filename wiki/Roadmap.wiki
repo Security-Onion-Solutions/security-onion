@@ -14,7 +14,7 @@ Please note that this is all subject to change!
     * Issue302: PF_RING 5.5.2
     * Issue301: sosetup bug in /etc/network/interfaces config when configuring server-only (no sniffing interfaces)
     * Issue305:	/etc/init/securityonion.conf should only sleep at boot and not during Setup
-    * Issue306:	Increase initial sleep from 5 seconds to 10 so that sguild won't try to start before MySQL
+    * Issue306:	Consolidate two sleeps in /etc/init/securityonion.conf into one that runs regardless of server/sensor
     * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Issue299: sphinx.conf - swap "3307" with "9312"
     * Issue289: ELSA - include YUI library
