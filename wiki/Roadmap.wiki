@@ -21,15 +21,16 @@ Please note that this is all subject to change!
     * Issue290: Update ELSA
     * Issue300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
     * Issue269: Update Snort
+    * Issue308: Update Suricata
+    * Issue309: Update PRADS
+    * Issue310: Update netsniff-ng
+    * Issue311: Update NSM scripts to run netsniff-ng as non-root user
+    * Issue312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
+    * Issue313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
+    * Issue314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
+    * Issue315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
     * Issue287: Update Sguil for improved error handling
     * Issue294: Barnyard2-1.12
     * Issue303: sensor_cleandisk function needs to look for unified2 files in proper directories
-    * Update netsniff-ng to allow running as non-root user
-    * Update NSM scripts to run netsniff-ng as non-root user
-    * Update Suricata
-    * Update PRADS
-    * Make it easier to disable services
-    * Make pcap size configurable by user
-    * Make WARN_DISK_USAGE and CRIT_DISK_USAGE configurable by user
-    * Security Onion 12.04.1
+    * Issue316: Security Onion 12.04.1 ISO image
    
