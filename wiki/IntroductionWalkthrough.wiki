@@ -87,7 +87,7 @@ Security Onion includes a number of useful links on the desktop in addition to t
 
 If you want to take some time to experiment with the tools, Security Onion includes some sample packet capture files we can replay to generate event data. I highly recommend physically disabling the network connection from your host operating system prior to replaying the packets. Since we're using a VM, simply unplugging the physical network connection or disabling wireless on the host system where your VM is running will work. We will be replaying samples of live traffic, some of which are malicious, so use caution. The samples provided are available in /opt/samples/ and once we're disconnected from the network, we can replay them by opening up a terminal and typing:
 {{{
-sudo tcpreplay -i eth0 -t /opt/samples/*.pcap
+sudo tcpreplay -i eth1 -M10 /opt/samples/*.pcap
 }}}
 If you have the Sguil client up and running, you'll see events start to roll in to the console. You now have a decent sample of data to play with. Let's dig into one example to get a feeling for the capabilities at our disposal.
 
