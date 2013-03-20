@@ -20,8 +20,8 @@ Please note that this is all subject to change!
     * Issue289: ELSA - include YUI library
     * Issue290: Update ELSA
     * Issue300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
-    * Issue269: Update Snort
     * Issue308: Update Suricata
+    * Issue269: Update Snort
     * Issue309: Update PRADS
     * Issue310: Update netsniff-ng
     * Issue311: Update NSM scripts to run netsniff-ng as non-root user
