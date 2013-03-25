@@ -27,9 +27,10 @@
   # Follow the prompts and reboot into your new installation.
   # Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # IMPORTANT! Apply any available updates using the graphical package manager or from the command line and REBOOT:
+  # [Upgrade Install updates.]
+  # Reboot:
 {{{
-sudo apt-get update && sudo apt-get dist-upgrade && sudo reboot
+sudo reboot
 }}}
   # Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
   # Configure MySQL not to prompt for root password:<br>
