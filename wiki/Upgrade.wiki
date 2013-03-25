@@ -1,14 +1,5 @@
 #summary Security Onion Upgrade Procedure
 
-= Security Onion 10.04 Update Procedure =
-
-If you're behind a proxy server, make sure that you've configured your proxy server settings as shown <a href="http://code.google.com/p/security-onion/wiki/Proxy">here</a>.  Then run the following command (be sure to copy the entire line):
-{{{
-sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
-}}}
-
-== Please note there is no in-place upgrade from Security Onion 10.04 to Security Onion 12.04 since most folks will be migrating from 32-bit to 64-bit.==
-
 = Security Onion 12.04 Update Procedure =
 
 Since all of our packages are in a standard Ubuntu Launchpad PPA, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion).  For example:
@@ -26,3 +17,12 @@ You may be prompted to update your kernel packages and PF_RING at the same time.
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade
 }}}
+
+= Security Onion 10.04 Update Procedure =
+
+If you're behind a proxy server, make sure that you've configured your proxy server settings as shown <a href="http://code.google.com/p/security-onion/wiki/Proxy">here</a>.  Then run the following command (be sure to copy the entire line):
+{{{
+sudo -i "curl -L http://sourceforge.net/projects/security-onion/files/security-onion-upgrade.sh > ~/security-onion-upgrade.sh && bash ~/security-onion-upgrade.sh"
+}}}
+
+== Please note there is no in-place upgrade from Security Onion 10.04 to Security Onion 12.04 since most folks will be migrating from 32-bit to 64-bit.==
