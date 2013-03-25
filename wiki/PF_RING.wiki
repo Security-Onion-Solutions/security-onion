@@ -45,4 +45,4 @@ sudo broctl install && sudo broctl start
 For more information on the Bro issue, please see <a href="http://tracker.bro-ids.org/bro/ticket/943">Bro Ticket #943</a>.
 
 = Updating =
-Please see the [upgrade Update] page for notes on updating the PF_RING kernel module.
+Please see the [Upgrade Update] page for notes on updating the PF_RING kernel module.
