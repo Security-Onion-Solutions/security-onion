@@ -28,9 +28,9 @@ Please note that this is all subject to change!
     * Issue310: Update netsniff-ng
     * Issue311: Update NSM scripts to run netsniff-ng as non-root user
     * Issue312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
-    * Issue313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
+    * Issue313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
   * May 2013
     * Issue287: Update Sguil for improved error handling
     * Issue294: Barnyard2-1.12
