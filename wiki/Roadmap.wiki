@@ -17,8 +17,8 @@ Please note that this is all subject to change!
     * Issue306:	Consolidate two sleeps in /etc/init/securityonion.conf into one that runs regardless of server/sensor
     * Issue309: Update PRADS
     * Issue308: Update Suricata
-    * Issue269: Update Snort
     * Issue188:	NSM watchdog should also check/restart sguild
+    * Issue269: Update Snort
     * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Issue299: sphinx.conf - swap "3307" with "9312"
     * Issue289: ELSA - include YUI library
