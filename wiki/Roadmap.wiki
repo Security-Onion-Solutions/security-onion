@@ -33,7 +33,7 @@ Please note that this is all subject to change!
     * Issue313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
   * May 2013
     * Issue287: Update Sguil for improved error handling
-    * Issue294: Barnyard2-1.12
+    * Issue294: Barnyard2-1.13
     * Issue303: sensor_cleandisk function needs to look for unified2 files in proper directories
     * Issue317:	Setup should disable Bro's PF_RING config when monitoring multiple NICs
     * Issue318: Update NSM scripts to force netsniff-ng to write to proper directory
