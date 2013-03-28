@@ -39,4 +39,6 @@ Please note that this is all subject to change!
     * Issue317:	Setup should disable Bro's PF_RING config when monitoring multiple NICs
     * Issue318: Update NSM scripts to force netsniff-ng to write to proper directory
     * Issue316: Security Onion 12.04.1 ISO image
+  * June 2013
+    * Issue240:	Squert 1.0
    
