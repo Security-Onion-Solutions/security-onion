@@ -19,7 +19,7 @@ Please note that this is all subject to change!
     * Issue308: Update Suricata
     * Issue188:	NSM watchdog should also check/restart sguild
     * Issue269: Update Snort
-    * Issue175:	ETPRO invalid snort rules
+    * Issue175:	Add SCADA variables to snort.conf for ETPRO ruleset
     * Issue298: Build new sphinx package with --enable-id64 compile-time option
     * Issue299: sphinx.conf - swap "3307" with "9312"
     * Issue289: ELSA - include YUI library
