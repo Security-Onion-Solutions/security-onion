@@ -18,20 +18,20 @@ Please note that this is all subject to change!
     * Issue309: Update PRADS
     * Issue308: Update Suricata
     * Issue188:	NSM watchdog should also check/restart sguild
+  * April 2013
     * Issue269: Update Snort to 2.9.4.1
     * Issue175:	Add SCADA variables to snort.conf for ETPRO ruleset
-    * Issue298: Build new sphinx package with --enable-id64 compile-time option
-    * Issue299: sphinx.conf - swap "3307" with "9312"
-    * Issue289: ELSA - include YUI library
-    * Issue290: Update ELSA
-    * Issue300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
-  * April 2013
     * Issue310: Update netsniff-ng
     * Issue311: Update NSM scripts to run netsniff-ng as non-root user
     * Issue312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
     * Issue314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
     * Issue313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
+    * Issue298: Build new sphinx package with --enable-id64 compile-time option
+    * Issue299: sphinx.conf - swap "3307" with "9312"
+    * Issue289: ELSA - include YUI library
+    * Issue290: Update ELSA
+    * Issue300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
   * May 2013
     * Issue287: Update Sguil for improved error handling
     * Issue294: Barnyard2-1.13
