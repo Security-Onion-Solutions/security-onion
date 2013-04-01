@@ -24,11 +24,11 @@ http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
 =Mailing Lists=
 ==Security-Onion==
-This mailing list is for announcements and general user support questions.
+The security-onion mailing list is for announcements and general user support questions:
 
 http://groups.google.com/group/security-onion
 
 ==Security-Onion-Testing==
-Subscribe to this mailing list if you'd like to test upcoming versions of Security Onion packages before they are released.
+The security-onion-testing mailing list is for those who'd like to help test upcoming versions of Security Onion packages before they are released:
 
 http://groups.google.com/group/security-onion-testing
