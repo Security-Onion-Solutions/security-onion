@@ -24,6 +24,8 @@ Please note that this is all subject to change!
     * Issue 310: Update netsniff-ng
     * Issue 311: Update NSM scripts to run netsniff-ng as non-root user
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
+    * Issue 318: Update NSM scripts to force netsniff-ng to write to proper directory
+    * Issue 303: Update NSM scripts so that sensor_cleandisk looks for unified2 files in proper directories
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
     * Issue 312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
@@ -36,9 +38,7 @@ Please note that this is all subject to change!
     * Issue 319: Snort 2.9.4.5
     * Issue 287: Update Sguil for improved error handling
     * Issue 294: Barnyard2-1.13
-    * Issue 303: sensor_cleandisk function needs to look for unified2 files in proper directories
     * Issue 317: Setup should disable Bro's PF_RING config when monitoring multiple NICs
-    * Issue 318: Update NSM scripts to force netsniff-ng to write to proper directory
     * Issue 316: Security Onion 12.04.1 ISO image
   * June 2013
     * Issue 240: Squert 1.0
