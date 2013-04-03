@@ -88,8 +88,9 @@ sudo apt-get -y install python-software-properties
 {{{
 sudo add-apt-repository -y ppa:securityonion/stable
 }}}
-  # Note from jonh:  "when I did the {{{add-apt-repository -y ppa:securityonion/stable}}} command it gave a bunch of lines of errors with the final line being {{{ValueError: cannot convert float NaN to integer}}}. This appears to be a known bug: <a href="https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/1063350">https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/1063350</a>. The reported workaround of downgrading python-software-properties got me past that error."
+  # If you got a ValueError when running the previous command, please see the following note from jonh; otherwise, continue to the next step.  "when I did the {{{add-apt-repository -y ppa:securityonion/stable}}} command it gave a bunch of lines of errors with the final line being {{{ValueError: cannot convert float NaN to integer}}}. This appears to be a known bug: <a href="https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/1063350">https://bugs.launchpad.net/ubuntu/+source/software-properties/+bug/1063350</a>. The reported workaround of downgrading python-software-properties got me past that error."
 {{{
+# Only run this if you got a ValueError in the previous step!
 sudo apt-get install python-software-properties=0.82.7
 }}}
   # Update:<br>
