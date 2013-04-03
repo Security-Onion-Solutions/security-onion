@@ -13,19 +13,19 @@ Please note that this is all subject to change!
   * March 2013
     * Issue 302: PF_RING 5.5.2
     * Issue 301: sosetup bug in /etc/network/interfaces config when configuring server-only (no sniffing interfaces)
-    * Issue 305:	/etc/init/securityonion.conf should only sleep at boot and not during Setup
-    * Issue 306:	Consolidate two sleeps in /etc/init/securityonion.conf into one that runs regardless of server/sensor
+    * Issue 305: /etc/init/securityonion.conf should only sleep at boot and not during Setup
+    * Issue 306: Consolidate two sleeps in /etc/init/securityonion.conf into one that runs regardless of server/sensor
     * Issue 309: Update PRADS
     * Issue 308: Update Suricata
-    * Issue 188:	NSM watchdog should also check/restart sguild
+    * Issue 188: NSM watchdog should also check/restart sguild
   * April 2013
     * Issue 269: Update Snort to 2.9.4.1
-    * Issue 175:	Add SCADA variables to snort.conf for ETPRO ruleset
+    * Issue 175: Add SCADA variables to snort.conf for ETPRO ruleset
     * Issue 310: Update netsniff-ng
     * Issue 311: Update NSM scripts to run netsniff-ng as non-root user
-    * Issue 312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
+    * Issue 312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue 298: Build new sphinx package with --enable-id64 compile-time option
     * Issue 299: sphinx.conf - swap "3307" with "9312"
