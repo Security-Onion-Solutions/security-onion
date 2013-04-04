@@ -13,11 +13,11 @@ There are two special cases to be aware of when updating:
 If you've already run Setup, please see the [MySQLUpdates recommended procedure for updating the MySQL packages].
 
   * PF_RING and new kernel packages
-You may be prompted to update your kernel packages and PF_RING at the same time.  If you do so, the PF_RING kernel module will get built for your current kernel and not for the newly installed kernel.  You should install JUST the updated kernel packages, reboot, and then install the updated PF_RING packages so that the module gets built properly for the new kernel.  If you accidentally install both the kernel and PF_RING packages at the same time and then reboot and find out that PF_RING services are failing, you can force PF_RING to build against the new kernel by simply running the update command again:
+You may be prompted to update your kernel packages and PF_RING at the same time.  If you do so, the PF_RING kernel module will get built for your current kernel and not for the newly installed kernel.  You should install JUST the updated kernel packages, reboot, and then install the updated PF_RING packages so that the module gets built properly for the new kernel.  If you accidentally install both the kernel and PF_RING packages at the same time and then reboot and find out that PF_RING services are failing, you can try running the update command again:
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade
 }}}
-If that doesn't work, then try forcing the DKMS module to rebuild:
+If that doesn't force the PF_RING kernel module to get rebuilt, then try reinstalling the securityonion-pfring-module package:
 {{{
 sudo apt-get install --reinstall securityonion-pfring-module
 }}}
