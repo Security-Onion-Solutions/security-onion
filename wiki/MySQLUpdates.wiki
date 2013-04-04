@@ -6,7 +6,7 @@ Updating the Ubuntu MySQL packages can be problematic due to autossh port forwar
 
 = Procedure =
 
-  # Stop all services:
+  # Stop all relevant services:
 {{{
 sudo service nsm stop
 sudo service syslog-ng stop
