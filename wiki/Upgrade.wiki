@@ -17,6 +17,10 @@ You may be prompted to update your kernel packages and PF_RING at the same time.
 {{{
 sudo apt-get update && sudo apt-get dist-upgrade
 }}}
+If that doesn't work, then try forcing the DKMS module to rebuild:
+{{{
+sudo apt-get install --reinstall securityonion-pfring-module
+}}}
 
 = Security Onion 10.04 Update Procedure =
 
