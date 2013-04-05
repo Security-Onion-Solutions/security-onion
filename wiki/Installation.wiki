@@ -14,7 +14,7 @@
   # Download the ISO image from that Sourceforge page or via <a href="http://port111.com/george/securityonion-12.04-20121224_iso.torrent">Torrent</a>.
   # Once the ISO image download has completed, verify the checksum.
   # Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
-  # Follow the prompts in the Xubuntu installer and reboot into your new installation.  Login using the username/password you specified during installation.
+  # Follow the prompts in the Xubuntu installer.  If prompted with an "encrypt home folder" option DO NOT enable this feature.  Reboot into your new installation.  Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
   # [Upgrade Install updates.]
   # Double-click the Setup icon.  The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
@@ -24,7 +24,7 @@
 == If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 12.04 32-bit/64-bit (not using our ISO image), follow these steps: ==
   # Hardware requirements: you'll need at least 1GB RAM for each monitored network interface and a minimum of 2GB RAM total, 4GB RAM recommended. Be aware that full packet capture may fill your disk quickly, so size your storage appropriately.<br>
   # Download the ISO image for your prefered flavor of Ubuntu *12.04*, verify its checksum,  and boot from it.<br>
-  # Follow the prompts and reboot into your new installation.
+  # Follow the prompts in the installer.  If prompted with an "encrypt home folder" option, DO NOT enable this feature.  Reboot into your new installation.
   # Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
   # [Upgrade Install updates.]
@@ -58,7 +58,7 @@ sudo sosetup
   # Before you start, make sure your sensor(s) are capable by checking the [Hardware] page.<br>
   # Download the ISO image for your prefered flavor of Ubuntu *12.04* 32-bit/*64-bit* or download our Security Onion ISO image using the instructions above. Also download/record the MD5/SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
   # If deploying a distributed environment (a master server and one or more slave sensors), you’ll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master server first.<br>
-  # Using the downloaded ISO, install the operating system. If prompted to install any additional packages, the only option you should choose is OpenSSH Server (openssh-server). Specifically, do NOT choose MySQL. All other required dependencies will be installed automatically.<br>
+  # Using the downloaded ISO, install the operating system. If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If prompted to install any additional packages, the only option you should choose is OpenSSH Server (openssh-server). Specifically, do NOT choose MySQL. All other required dependencies will be installed automatically.<br>
   # When asked about partitioning, there are a few things to keep in mind:
    * If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don’t have any Grub booting issues.
    * The Sguil database on the server (doesn’t exist on sensor-only installations) can grow fairly large (100GB or more for decent-size networks). It’s stored at /var/lib/mysql/, so you may want to put /var on a dedicated partition/disk and assign a good amount of disk space to it. Also see the DAYSTOKEEP instructions near the end of this procedure.
