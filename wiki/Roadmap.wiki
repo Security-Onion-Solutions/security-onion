@@ -22,6 +22,7 @@ Please note that this is all subject to change!
     * Issue 269: Update Snort to 2.9.4.1
     * Issue 175: Add SCADA variables to snort.conf for ETPRO ruleset
     * Issue 310: Update netsniff-ng
+    * Issue 320: Update NSM scripts so that nsm_sensor_ps-restart includes $PCAP_OPTIONS
     * Issue 311: Update NSM scripts to run netsniff-ng as non-root user
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 318: Update NSM scripts to force netsniff-ng to write to proper directory
