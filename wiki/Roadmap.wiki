@@ -24,9 +24,9 @@ Please note that this is all subject to change!
     * Issue 310: Update netsniff-ng
     * Issue 320: Update NSM scripts so that nsm_sensor_ps-restart includes $PCAP_OPTIONS
     * Issue 311: Update NSM scripts to run netsniff-ng as non-root user
-    * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 318: Update NSM scripts to force netsniff-ng to write to proper directory
     * Issue 303: Update NSM scripts so that sensor_cleandisk looks for unified2 files in proper directories
+    * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
     * Issue 312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
