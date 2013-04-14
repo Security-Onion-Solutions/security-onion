@@ -2,12 +2,10 @@
 
 = Configuration =
 
-== New Security Onion 12.04 ==
-
-=== Global bpf.conf ===
+== Global bpf.conf ==
 In Security Onion 12.04, you can specify your BPF in one location (/etc/nsm/rules/bpf.conf).  Bro automatically monitors this file for changes and will update as needed.  Other services (such as Snort/Suricata, prads, and netsniff-ng) will need to be restarted for the change to take effect.
 
-=== Granular bpf.conf ===
+== Granular bpf.conf ==
 Each process on each interface has its own bpf file, but by default the per-process bpf files are symlinked to the interface bpf and the interface bpf is symlinked to the global bpf.conf:
 {{{
 lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-bro.conf -> bpf.conf
@@ -18,38 +16,6 @@ lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-prads.conf -> bpf.conf
 }}}
 
 If you need to specify a bpf per-interface or per-process, you can simply replace the default symlink(s) with the desired bpf file(s) and restart service(s) as necessary.
-
-== Old Security Onion 10.04 ==
-
-=== Snort/Suricata/daemonlogger ===
-As of Security Onion 20120329, we have support for a central bpf.conf that is passed to Snort, Suricata, and daemonlogger.
-
-First, make sure you're running Security Onion 20120329 or higher:<br>
-http://securityonion.blogspot.com/2012/03/security-onion-20120329-now-available.html
-
-This update will create a bpf.conf file for each sensor interface on your system.  For example, if you have two sensor interfaces (eth0 and eth1), you'll now have two bpf.conf files:<br>
-/etc/nsm/$HOSTNAME-eth0/bpf.conf<br>
-/etc/nsm/$HOSTNAME-eth1/bpf.conf
-
-The NSM scripts now pass the "-F /etc/nsm/$HOSTNAME-$INTERFACE/bpf.conf" to Snort and Suricata and "-f /etc/nsm/$HOSTNAME-$INTERFACE/bpf.conf" to daemonlogger.  However, Suricata's afpacket mode currently doesn't support bpf.  I've created Suricata feature request #440 for this:<br>
-<a href="https://redmine.openinfosecfoundation.org/issues/440">https://redmine.openinfosecfoundation.org/issues/440</a>
-
-Once you've added your BPF to the proper bpf.conf file(s) for your sensor interface(s), restart the sensor processes using the following command:
-{{{
-sudo nsm_sensor_ps-restart
-}}}
-
-=== Bro ===
-
-Since there is one Bro config for ALL interfaces on the machine (as opposed to Snort/Suricata/Daemonlogger where we have one config for each interface), it cannot use the above configuration.  The recommended way to configure a BPF for Bro is to add the following to /usr/local/share/bro/site/local.bro:
-{{{
-redef cmd_line_bpf_filter = "whatever your filter is";
-}}}
-Then, push the new configuration and restart Bro:
-{{{
-sudo broctl install
-sudo broctl restart
-}}}
 
 = BPF Examples =
 
