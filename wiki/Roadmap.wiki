@@ -39,6 +39,7 @@ Please note that this is all subject to change!
     * Issue 319: Snort 2.9.4.5
     * Issue 287: Update Sguil for improved error handling
     * Issue 294: Barnyard2-1.13
+    * Issue 321: Snorby 2.6.0
     * Issue 317: Setup should disable Bro's PF_RING config when monitoring multiple NICs
     * Issue 316: Security Onion 12.04.1 ISO image
   * June 2013
