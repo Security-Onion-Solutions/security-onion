@@ -77,3 +77,30 @@ So now we're checking any remote host (as in not on the home network) involved i
 = 1/22/13 - [security-onion] Is it possible to launch ELSA from command line? =
 
 You can use the command-line version of ELSA by navigating to /opt/elsa/web/ (I think that's the right directory on SO) and using the "cli.pl" script.  The "-q" parameter is for query, so it would look like perl cli.pl -q "example.com" and you can use "-f" to change the result format from TSV to JSON.
+
+= 4/16/2013 - [ELSA] What is the best way to query for a list of all internal RFC1918 hosts sending / receiving traffic outside the US? =
+
+Great question!
+
+If you're using a firewall to create the flow records:
+{{{
+host:<my firewall> class:firewall_connection_end srcip>=10.0.0.0 srcip<=10.255.255.255 srcip>=192.168.0.0 srcip<=192.168.255.255 srcip>=172.16.0.0 srcip<=172.16.255.255 groupby:dstip | geoip | filter(cc,us)
+}}}
+You will probably want to run a prior search for just 
+{{{
+ srcip>=10.0.0.0 srcip<=10.255.255.255 srcip>=192.168.0.0 srcip<=192.168.255.255 srcip>=172.16.0.0 srcip<=172.16.255.255
+}}}
+Then save that as a saved search and give it the name rfc1918.  Then, you can reduce the above query to this:
+{{{
+host:<my firewall> class:firewall_connection_end $rfc1918 groupby:dstip | geoip | filter(cc,us)
+}}}
+If you leave off the "host:<my firewall>" term, then it will still work but only search temp indexes.
+
+For data extrusion, one of my favorites is to do something similar, but with HTTP POST's:
+{{{
++method:post $rfc1918 groupby:dstip | geoip | filter(cc,us)
+}}}
+Or Java user agents:
+{{{
++user_agent:java $rfc1918 groupby:dstip | geoip | filter(cc,us)
+}}}
