@@ -9,7 +9,7 @@ http://www.dual-comm.com/port-mirroring-LAN_switch.htm<br>
 Dirt cheap and versatile:<br>
 http://www.roc-noc.com/mikrotik/routerboard/rb250gs.html<br>
 
-Netgear GS105E:<br>
+Netgear GS105E (requires Windows app for config):<br>
 http://www.netgear.com/business/products/switches/prosafe-plus-switches/gs105e.aspx<br>
 
 = NIC =
