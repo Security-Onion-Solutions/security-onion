@@ -92,11 +92,16 @@ sendmail = /usr/sbin/sendmail
 }}}
 Then update and restart Bro:
 {{{
-sudo broctl install
-sudo broctl restart
+sudo broctl install && sudo broctl restart
 }}}
 
-You should then start receiving hourly connection summary emails.  You may also want to receive emails for Bro notices.  To do that, uncomment the following line in local.bro (Security Onion 12.04 - /opt/bro/share/bro/site/local.bro | Security Onion 10.04 - /usr/local/share/bro/site/local.bro:
+You should then start receiving hourly connection summary emails.  If you don't want the connection summary emails, you can add the following to broctl.cfg:
+{{{
+tracesummary=
+}}}
+(Don't forget to update and restart Bro as shown above.)
+
+You may want to receive emails for Bro notices.  To do that, uncomment the following line in local.bro (Security Onion 12.04 - /opt/bro/share/bro/site/local.bro | Security Onion 10.04 - /usr/local/share/bro/site/local.bro:
 {{{
 # redef Notice::policy += { [$action = Notice::ACTION_ALARM, $priority = 0] };
 }}}
