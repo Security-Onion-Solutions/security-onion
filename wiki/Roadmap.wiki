@@ -27,9 +27,10 @@ Please note that this is all subject to change!
     * Issue 318: Update NSM scripts to force netsniff-ng to write to proper directory
     * Issue 303: Update NSM scripts so that sensor_cleandisk looks for unified2 files in proper directories
     * Issue 298: Build new sphinx package with --enable-id64 compile-time option
+    * Issue 324: sphinx should check for proper permissions before starting
     * Issue 299: sphinx.conf - swap "3307" with "9312"
     * Issue 289: ELSA - include YUI library
-    * Issue 290: Update ELSA
+    * Issue 290: Update ELSA to r713
     * Issue 300: /etc/elsa_web.conf needs 127.0.0.1 to have ports defined as well
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
