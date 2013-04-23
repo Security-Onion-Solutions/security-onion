@@ -12,6 +12,9 @@ http://www.roc-noc.com/mikrotik/routerboard/rb250gs.html<br>
 Netgear GS105E (requires Windows app for config):<br>
 http://www.netgear.com/business/products/switches/prosafe-plus-switches/gs105e.aspx<br>
 
+More exhaustive list of enterprise switches with port mirroring:<br>
+http://www.miarec.com/knowledge/switches-port-mirroring<br>
+
 = NIC =
 You'll need at least two network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get a good quality network card.  I've had good experiences with Intel.
 
