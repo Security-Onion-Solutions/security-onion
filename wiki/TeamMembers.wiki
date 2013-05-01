@@ -13,7 +13,7 @@ Security Onion needs more volunteers in all of the areas defined below.  If Secu
 
 *Support Team*
   * Too many to list!
-  * If you'd like help out other Security Onion users, please join the <a href="http://groups.google.com/group/security-onion">security-onion mailing list</a> and/or <a href="http://webchat.freenode.net/?channels=securityonion">IRC channel> and start answering questions!
+  * If you'd like help out other Security Onion users, please join the <a href="http://groups.google.com/group/security-onion">security-onion mailing list</a> and/or <a href="http://webchat.freenode.net/?channels=securityonion">IRC channel</a> and start answering questions!
 
 *Testing/QA Team*
   * Too many to list!  
