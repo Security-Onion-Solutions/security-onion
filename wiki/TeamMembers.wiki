@@ -4,13 +4,16 @@
 
 Security Onion is made possible by the hard work of the following folks!  (If I've missed anybody, please let me know.)
 
+= Help Wanted =
+Security Onion needs more volunteers in all of the areas defined below.  If Security Onion has provided value to you and/or your organization, please consider giving back to the community by donating your time to the above needs!  If interested, please contact Doug Burks via email (if you're on our mailing list you know what the address is).  Thanks!
+
 *Core Development Team*
   * Doug Burks
   * Scott Runnels
 
 *Support Team*
   * Too many to list!
-  * If you'd like help out other Security Onion users, please join the <a href="http://groups.google.com/group/security-onion">security-onion mailing list</a> and start answering questions!
+  * If you'd like help out other Security Onion users, please join the <a href="http://groups.google.com/group/security-onion">security-onion mailing list</a> and/or <a href="http://webchat.freenode.net/?channels=securityonion">IRC channel> and start answering questions!
 
 *Testing/QA Team*
   * Too many to list!  
@@ -36,6 +39,3 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
 
 *Artwork*
   * Jack Blanchard
-
-= Help Wanted =
-Security Onion needs more volunteers in all of the areas defined above.  If Security Onion has provided value to you and/or your organization, please consider giving back to the community by donating your time to the above needs!  If interested, please contact Doug Burks via email (if you're on our mailing list you know what the address is).  Thanks!
