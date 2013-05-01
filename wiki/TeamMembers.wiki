@@ -8,6 +8,10 @@ Security Onion is made possible by the hard work of the following folks!  (If I'
   * Doug Burks
   * Scott Runnels
 
+*Support Team*
+  * Too many to list!
+  * If you'd like help out other Security Onion users, please join the <a href="http://groups.google.com/group/security-onion">security-onion mailing list</a> and start answering questions!
+
 *Testing/QA Team*
   * Too many to list!  
   * If you'd like to do testing/QA, please join the <a href="http://groups.google.com/group/security-onion-testing">security-onion-testing mailing list</a>.
