@@ -243,6 +243,37 @@ Snorby::Jobs::GeoipUpdatedbJob.new(true).perform
 quit
 }}}
 
+= Why are the timestamps in ELSA (r713) not in UTC? =
+
+If you access ELSA from a browser whose local timezone is not UTC
+*and* you haven't enabled the use_utc setting in your ELSA
+Preferences, then each search rolls the From time back the same number
+of hours as the UTC offset.  For example, suppose you login to ELSA
+and notice that the From defaults to:
+2013-05-05 18:01:50
+When you then perform a search, the From changes to:
+2013-05-05 14:01:50
+
+The workaround is to enable the use_utc setting in your ELSA
+Preferences (which is probably a good idea anyway to ensure that your
+timestamps in ELSA match your timestamps in Sguil/Squert/Snorby):
+
+1. Navigate to ELSA -> Preferences: 
+
+[http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs.png]
+
+2. Select Actions -> Add New Preference: 
+
+[http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_add.png]
+
+3. Enter the following into the new Preference: 
+{{{
+Type = default_settings
+Name = use_utc
+Value = 1
+}}}
+[http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_utc.png]
+
 = How do I disable Snorby? =
 1. Disable Snorby in the Apache configuration:
 {{{
