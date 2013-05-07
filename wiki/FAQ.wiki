@@ -12,7 +12,7 @@
 [Upgrade Upgrade Procedure]
 
 = Why is my disk filling up? =
-Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
+Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
 
 = Why do apt-get and the Update Manager show tcl8.5 as held back? =
 [tcl tcl notes]
@@ -36,7 +36,7 @@ This is related to the previous question.  See [tcl tcl notes].
 = Where can I read more about the tools contained within Security Onion? =
 [Tools]
 
-= How do I configure a BPF for Snort/Suricata/Daemonlogger/Bro? =
+= How do I configure a BPF for Snort/Suricata/Bro? =
 [BPF]
 
 = Why does Security Onion use UTC? =
@@ -48,7 +48,7 @@ Trying to use a non-UTC timezone can result in the following:<br>
 - Time zones that have daylight saving time have a one-hour time warp twice a year.  This manifests itself in Sguil not being able to pull transcripts for events within that one-hour time period.  This is avoided by using UTC, since there is no daylight saving time.<br>
 - Something similar can happen on a daily basis under certain conditions.  If there is a discrepancy between the OS timezone and the Sguil UTC settings, then Sguil will be unable to pull transcripts for events in a window of time around midnight coinciding with the timezone's offset from UTC.<br>
 Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
-The Setup wizard (/usr/local/bin/setup) does the following to set the OS and all services to UTC:
+The Setup wizard (/usr/bin/sosetup) does the following to set the OS and all services to UTC:
 {{{
 echo "Etc/UTC" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
@@ -329,7 +329,7 @@ server<br>
 Definition: A set of processes that receive data from sensors and allow analysts to see and investigate that data.  The set of processes includes sguild, mysql, and snorby.  The server is also responsible for ruleset management.<br>
 Naming convention: The collection of server processes has a server name separate from the hostname of the box.  Security Onion always sets the server name to "securityonion".<br>
 Configuration files: /etc/nsm/securityonion/<br>
-Controlled by:  /usr/local/sbin/nsm_server <br>
+Controlled by:  /usr/sbin/nsm_server <br>
 <br>
 server box<br>
 Definition: A machine running the server processes.  May optionally be running sensor processes.<br>
@@ -337,11 +337,11 @@ Example 1: User runs Quick Setup on machine with hostname securityonion and two 
 Example 2: User runs Advanced Setup and chooses Server.  Setup creates a server only (no sensor processes).<br>
 <br>
 sensor<br>
-Definition: A set of processes listening on a network interface.  The set of processes currently includes Snort/Suricata, daemonlogger, sancp, argus, pads, httpry, and bro (although this is in constant flux as we add new capabilities and find better tools for existing capabilities).<br>
+Definition: A set of processes listening on a network interface.  The set of processes currently includes Snort/Suricata, netsniff-ng, argus, prads, and bro (although this is in constant flux as we add new capabilities and find better tools for existing capabilities).<br>
 Naming convention: $HOSTNAME-$INTERFACE<br>
 Configuration files: /etc/nsm/$HOSTNAME-$INTERFACE/<br>
 Example: sensor1-eth0<br>
-Controlled by:  /usr/local/sbin/nsm_sensor<br>
+Controlled by:  /usr/sbin/nsm_sensor<br>
 <br>
 sensor box<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
