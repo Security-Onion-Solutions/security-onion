@@ -243,7 +243,7 @@ Snorby::Jobs::GeoipUpdatedbJob.new(true).perform
 quit
 }}}
 
-= Why are the timestamps in ELSA (r713) not in UTC? =
+= Why are the timestamps in ELSA not in UTC? =
 
 If you access ELSA from a browser whose local timezone is not UTC
 *and* you haven't enabled the use_utc setting in your ELSA
