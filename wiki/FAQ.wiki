@@ -11,6 +11,9 @@
 = How do I install Security Onion updates? =
 [Upgrade Upgrade Procedure]
 
+= Why is my disk filling up? =
+Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
+
 = Why do apt-get and the Update Manager show tcl8.5 as held back? =
 [tcl tcl notes]
 
@@ -35,6 +38,25 @@ This is related to the previous question.  See [tcl tcl notes].
 
 = How do I configure a BPF for Snort/Suricata/Daemonlogger/Bro? =
 [BPF]
+
+= Why does Security Onion use UTC? =
+Security Onion uses UTC because that is the recommended/required setting for Sguil:<br>
+<a href="http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html">http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html</a><br>
+<a href="https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem">https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem</a><br>
+<br>
+Trying to use a non-UTC timezone can result in the following:<br>
+- Time zones that have daylight saving time have a one-hour time warp twice a year.  This manifests itself in Sguil not being able to pull transcripts for events within that one-hour time period.  This is avoided by using UTC, since there is no daylight saving time.<br>
+- Something similar can happen on a daily basis under certain conditions.  If there is a discrepancy between the OS timezone and the Sguil UTC settings, then Sguil will be unable to pull transcripts for events in a window of time around midnight coinciding with the timezone's offset from UTC.<br>
+Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
+The Setup wizard (/usr/local/bin/setup) does the following to set the OS and all services to UTC:
+{{{
+echo "Etc/UTC" | sudo tee /etc/timezone
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+sudo service rsyslog restart
+sudo cp /etc/localtime /var/ossec/etc/localtime
+sudo chown root:ossec /var/ossec/etc/localtime
+sudo service ossec restart
+}}}
 
 = Where can I find interesting pcaps to replay? =
 [Pcaps]
@@ -62,28 +84,6 @@ Usually this happens when you clone a VM.  VMware asks if you moved it or copied
 {{{
 sudo rm /etc/udev/rules.d/70-persistent-net.rules
 sudo reboot
-}}}
-
-= Why is my disk filling up? =
-Sguil uses daemonlogger to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/NAME_OF_SENSOR/dailylogs/.  There is an hourly cronjob at /etc/cron.d/sensor-clean that should delete old pcaps when the disk reaches 90% of capacity.  It's important to properly size your disk storage so that you avoid filling the disk to 100% before the next hourly purge runs.<br>
-
-= Why does Security Onion use UTC? =
-Security Onion uses UTC because that is the recommended/required setting for Sguil:<br>
-<a href="http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html">http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html</a><br>
-<a href="https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem">https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem</a><br>
-<br>
-Trying to use a non-UTC timezone can result in the following:<br>
-- Time zones that have daylight saving time have a one-hour time warp twice a year.  This manifests itself in Sguil not being able to pull transcripts for events within that one-hour time period.  This is avoided by using UTC, since there is no daylight saving time.<br>
-- Something similar can happen on a daily basis under certain conditions.  If there is a discrepancy between the OS timezone and the Sguil UTC settings, then Sguil will be unable to pull transcripts for events in a window of time around midnight coinciding with the timezone's offset from UTC.<br>
-Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
-The Setup wizard (/usr/local/bin/setup) does the following to set the OS and all services to UTC:
-{{{
-echo "Etc/UTC" | sudo tee /etc/timezone
-sudo dpkg-reconfigure --frontend noninteractive tzdata
-sudo service rsyslog restart
-sudo cp /etc/localtime /var/ossec/etc/localtime
-sudo chown root:ossec /var/ossec/etc/localtime
-sudo service ossec restart
 }}}
 
 = What do I need to modify in order to have the log files stored on a different mount point? =
@@ -137,25 +137,6 @@ Security Onion 12.04 has full 64-bit support which supports more than 4GB RAM by
 = How do I disable the graphical Network Manager and configuring networking from the command line? =
 
 <a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">http://code.google.com/p/security-onion/wiki/NetworkConfiguration</a>
-
-= Why can't I upgrade past version 20110628? = 
-
-If your /etc/nsm/securityonion.conf says:<br>
-{{{
-VERSION=20110628
-}}}
-<br>
-and if running the upgrade says:<br>
-{{{
-Your Security Onion installation is up to date.
-}}}
-<br>
-then a previous upgrade from 20110628 to 20110709 was interrupted.  This upgrade changed the config file format from spaces to equal signs.  Edit the VERSION in /etc/nsm/securityonion.conf as follows:<br>
-{{{
-VERSION=20110709
-}}}
-<br>
-and then re-run the upgrade.<br>
 
 = I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver? =
   # Click Applications.<br>
@@ -372,3 +353,22 @@ Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<b
 = Where do I send questions/problems/suggestions? =
 
 [MailingLists Security Onion Mailing Lists]
+
+= Why can't I upgrade past version 20110628? = 
+
+If your /etc/nsm/securityonion.conf says:<br>
+{{{
+VERSION=20110628
+}}}
+<br>
+and if running the upgrade says:<br>
+{{{
+Your Security Onion installation is up to date.
+}}}
+<br>
+then a previous upgrade from 20110628 to 20110709 was interrupted.  This upgrade changed the config file format from spaces to equal signs.  Edit the VERSION in /etc/nsm/securityonion.conf as follows:<br>
+{{{
+VERSION=20110709
+}}}
+<br>
+and then re-run the upgrade.<br>
