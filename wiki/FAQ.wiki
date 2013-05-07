@@ -226,7 +226,7 @@ quit
 
 = Why are the timestamps in ELSA not in UTC? =
 
-By default, ELSA will use display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC by setting the use_utc Preference.
+By default, ELSA will display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC by with the use_utc setting in your ELSA Preferences panel.
 
 Known issue in ELSA r713:  If you access ELSA from a browser whose local timezone is not UTC *and* you haven't enabled the use_utc setting in your ELSA Preferences, then each search rolls the From time back the same number of hours as the UTC offset.  For example, suppose you login to ELSA and notice that the From defaults to:
 2013-05-05 18:01:50
