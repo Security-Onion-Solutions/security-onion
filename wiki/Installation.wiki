@@ -158,6 +158,32 @@ The instructions above used the securityonion-all metapackage to install ALL of 
   * securityonion-elsa and securityonion-elsa-extras (about 50MB)
   * securityonion-server (about 200MB)
 
+= ELSA and timezones =
+
+By default, ELSA will display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC by configuring the use_utc setting in your ELSA Preferences panel.
+
+Known issue in ELSA 713:  If you access ELSA from a browser whose local timezone is not UTC *and* you haven't enabled the use_utc setting in your ELSA Preferences, then each search rolls the From time back the same number of hours as the UTC offset.  For example, suppose you login to ELSA and notice that the From defaults to 2013-05-05 18:01:50. When you then perform a search, the From changes to 2013-05-05 14:01:50.
+
+The workaround is to enable the use_utc setting in your ELSA
+Preferences (which is probably a good idea anyway to ensure that your
+timestamps in ELSA match your timestamps in Sguil/Squert/Snorby):
+
+1. Navigate to ELSA -> Preferences: 
+
+[http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs.png]
+
+2. Select Actions -> Add New Preference: 
+
+[http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_add.png]
+
+3. Enter the following into the new Preference: 
+{{{
+Type = default_settings
+Name = use_utc
+Value = 1
+}}}
+[http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_utc.png]
+
 = CapME =
 Our Setup script automatically configures both Snorby and ELSA to be able to pivot to CapME for full transcripts.  The CapME page will prompt you for username/password and you will enter your normal Sguil/Squert/ELSA username/password.  You have the option of automatically authenticating, but be aware that this will send your username/password in the GET request, so it will be displayed in the browser bar in plaintext.
 
