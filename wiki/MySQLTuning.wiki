@@ -1,0 +1,18 @@
+#summary Tuning suggestions for MySQL
+
+= mysqltuner =
+
+Run mysqltuner to get some initial recommendations.
+
+= /etc/mysql/my.cnf =
+
+Implement mysqltuner's recommendations in /etc/mysql/my.cnf.  Changes don't effect until MySQL is restarted and you should ensure that Sguil and other services aren't using MySQL before shutting it down.
+
+= Variables =
+
+Here are some common variables that will probably need to be tuned for your system:
+
+* key_buffer
+* max_connections
+* table_cache
+* open-files-limit
