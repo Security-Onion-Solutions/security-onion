@@ -6,7 +6,7 @@ Run mysqltuner to get some initial recommendations.
 
 = /etc/mysql/my.cnf =
 
-Implement mysqltuner's recommendations in /etc/mysql/my.cnf.  Changes don't effect until MySQL is restarted and you should ensure that Sguil and other services aren't using MySQL before shutting it down.
+Implement mysqltuner's recommendations in /etc/mysql/my.cnf.  Changes don't take effect until MySQL is restarted and you should ensure that Sguil and other services aren't using MySQL before shutting it down.
 
 = Variables =
 
