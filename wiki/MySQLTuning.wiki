@@ -12,7 +12,7 @@ Implement mysqltuner's recommendations in /etc/mysql/my.cnf.  Changes don't take
 
 Here are some common variables that will probably need to be tuned for your system:
 
-* key_buffer
-* max_connections
-* table_cache
-* open-files-limit
+  * key_buffer
+  * max_connections
+  * table_cache
+  * open-files-limit
