@@ -6,6 +6,7 @@ Run mysqltuner to get some initial recommendations:
 {{{
 # Install mysqltuner if you haven't already
 sudo apt-get install mysqltuner
+
 # Run mysqltuner
 sudo mysqltuner
 }}}
