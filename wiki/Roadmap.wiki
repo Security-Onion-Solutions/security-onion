@@ -43,6 +43,7 @@ Please note that this is all subject to change!
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
     * Issue 312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
+    * Issue 268: Update	NSM scripts so that OSSEC and Bro sections respect --sensor-name option
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue 287: Update Sguil for improved error handling
     * Issue 294: Barnyard2-1.13
