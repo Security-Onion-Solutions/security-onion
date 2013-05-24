@@ -37,6 +37,7 @@ Please note that this is all subject to change!
     * Issue 332: Update pcap samples
     * Issue 319: Snort 2.9.4.6
     * Issue 321: Snorby 2.6.1
+    * Issue 334: sancp_agent failing to load new sancp data after reconnecting to sguild
     * Issue 333: PF_RING 5.5.3
   * June 2013
     * Issue 316: Security Onion 12.04.1 ISO image
