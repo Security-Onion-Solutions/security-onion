@@ -23,3 +23,7 @@ Here are some common variables that will probably need to be tuned for your syst
   * max_connections
   * table_cache
   * open-files-limit
+
+= MySQL slow to start on boot =
+
+At boot time, MySQL checks all tables, which can take a long time.  If you wish to disable this check, comment out "check_for_crashed_tables" in /etc/mysql/debian-start.
