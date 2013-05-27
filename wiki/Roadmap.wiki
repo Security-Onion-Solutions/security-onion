@@ -39,6 +39,7 @@ Please note that this is all subject to change!
     * Issue 321: Snorby 2.6.2
     * Issue 334: Sguil agents intermittently failing to reconnect to sguild
     * Issue 333: PF_RING 5.5.3
+    * Issue 335: Enabling ELSA should configure OSSEC to send alerts to local syslog
   * June 2013
     * Issue 316: Security Onion 12.04.1 ISO image
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
