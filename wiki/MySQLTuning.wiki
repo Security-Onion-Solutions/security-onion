@@ -11,9 +11,12 @@ sudo apt-get install mysqltuner
 sudo mysqltuner
 }}}
 
-= /etc/mysql/my.cnf =
+= /etc/mysql/my.cnf vs /etc/mysql/conf.d/ =
 
-Implement mysqltuner's recommendations in /etc/mysql/my.cnf.  Changes don't take effect until MySQL is restarted and you should ensure that Sguil and other services aren't using MySQL before shutting it down.
+Implement mysqltuner's recommendations in /etc/mysql/my.cnf or create a new file in /etc/mysql/conf.d/ with the changes.  We recommend /etc/mysql/conf.d/ so that your changes don't get overwritten during MySQL package upgrades.
+
+= Restart MySQL =
+Changes don't take effect until MySQL is restarted and you should ensure that Sguil and other services aren't using MySQL before shutting it down.
 
 = Variables =
 
