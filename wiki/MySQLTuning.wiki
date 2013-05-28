@@ -20,12 +20,14 @@ Changes don't take effect until MySQL is restarted and you should ensure that Sg
 
 = Variables =
 
-Here are some common variables that will probably need to be tuned for your system:
+The first variable that you'll probably need to tune is open-files-limit:
+https://code.google.com/p/security-onion/wiki/FAQ#I_get_periodic_MySQL_crashes_and/or_error_code_24_"out_of_r
 
+Here are some other common variables that will probably need to be tuned for your system:
+
+  * table_cache
   * key_buffer
   * max_connections
-  * table_cache
-  * open-files-limit
 
 = MySQL slow to start on boot =
 
