@@ -21,7 +21,7 @@ Changes don't take effect until MySQL is restarted and you should ensure that Sg
 = Variables =
 
 The first variable that you'll probably need to tune is open-files-limit:
-<a href="https://code.google.com/p/security-onion/wiki/FAQ#I_get_periodic_MySQL_crashes_and/or_error_code_24_"out_of_r">error_code_24 out-of-resources</a>
+<a href="https://code.google.com/p/security-onion/wiki/FAQ#I_get_periodic_MySQL_crashes_and/or_error_code_24_\"out_of_r">error_code_24 out-of-resources</a>
 
 Here are some other common variables that will probably need to be tuned for your system:
 
