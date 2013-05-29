@@ -4,7 +4,7 @@ Previously, when a user ran Setup and enabled ELSA, they would be able to log in
 
 If you've already run Setup and would like to configure OSSEC to send alerts to ELSA, you can manually perform the following steps.
 {{{
-sed -i 's|  <rules>|  <syslog_output>\
+sudo sed -i 's|  <rules>|  <syslog_output>\
       <server>127.0.0.1</server>\
   </syslog_output>\
 \
