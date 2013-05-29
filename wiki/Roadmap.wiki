@@ -16,7 +16,7 @@ Please note that this is all subject to change!
     * Issue 305: /etc/init/securityonion.conf should only sleep at boot and not during Setup
     * Issue 306: Consolidate two sleeps in /etc/init/securityonion.conf into one that runs regardless of server/sensor
     * Issue 309: Update PRADS
-    * Issue 308: Update Suricata
+    * Issue 308: Suricata 1.4.1
     * Issue 188: NSM watchdog should also check/restart sguild
   * April 2013
     * Issue 269: Update Snort to 2.9.4.1
@@ -40,6 +40,7 @@ Please note that this is all subject to change!
     * Issue 334: Sguil agents intermittently failing to reconnect to sguild
     * Issue 335: Enabling ELSA should configure OSSEC to send alerts to local syslog
     * Issue 333: PF_RING 5.5.3
+    * Issue 337: Suricata 1.4.2
   * June 2013
     * Issue 316: Security Onion 12.04.1 ISO image
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
