@@ -42,6 +42,7 @@ Please note that this is all subject to change!
     * Issue 333: PF_RING 5.5.3
     * Issue 337: Suricata 1.4.2
   * June 2013
+    * Issue 339: PF_RING 5.5.4 pf_ring.c from svn
     * Issue 316: Security Onion 12.04.1 ISO image
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
