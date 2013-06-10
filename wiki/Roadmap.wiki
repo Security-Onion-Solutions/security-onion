@@ -50,6 +50,5 @@ Please note that this is all subject to change!
     * Issue 268: Update	NSM scripts so that OSSEC and Bro sections respect --sensor-name option
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue 287: Update Sguil for improved error handling
-    * Issue 294: Barnyard2-1.13
     * Issue 240: Squert 1.0
    
