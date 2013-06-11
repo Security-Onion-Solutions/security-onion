@@ -15,8 +15,7 @@ alert tcp any any -> $HOME_NET 7789 (msg: "Vote for Security Onion Toolsmith Too
 reference: url,http://holisticinfosec.blogspot.com/2011/12/choose-2011-toolsmith-tool-of-year.html; 
 content: "toolsmith"; flow:to_server; nocase; sid:9000547; rev:1)     
 }}}
-  # Update sid-msg.map and restart snort and barnyard:
-     regenerate the sid-msg.map file, and restart the snort process.
+  # Update sid-msg.map and restart snort/suricata and barnyard:
      {{{
 sudo rule-update
      }}}
