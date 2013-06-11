@@ -17,8 +17,7 @@ content: "toolsmith"; flow:to_server; nocase; sid:9000547; rev:1)
 sudo rule-update
      }}}
   # If you built the rule correctly, then snort should be back up and running. 
-  # Generate some traffic to trigger the alert.
-     To generate traffic we are going to use the python library scapy to craft packets with specific information to ensure we trigger the alert with the information we want.
+  # Generate some traffic to trigger the alert.  To generate traffic we are going to use the python library scapy to craft packets with specific information to ensure we trigger the alert with the information we want.
      {{{
 sudo scapy
      }}}
