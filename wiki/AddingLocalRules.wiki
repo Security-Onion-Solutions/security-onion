@@ -15,17 +15,12 @@ alert tcp any any -> $HOME_NET 7789 (msg: "Vote for Security Onion Toolsmith Too
 reference: url,http://holisticinfosec.blogspot.com/2011/12/choose-2011-toolsmith-tool-of-year.html; 
 content: "toolsmith"; flow:to_server; nocase; sid:9000547; rev:1)     
 }}}
-  # Restart snort.
-     There are two ways to restart snort.  
-     The first method of restarting snort, restarts only the snort processes.  Restarting snort in this way means that the sid-msg.map file that maps signature IDs to their corresponding messages (in this case: 9000547 -> "Vote for Security Onion Toolsmith Tool of 2011!") will not be generated until the nightly pulledpork_update.sh cronjob.
+  # Update sid-msg.map and restart snort and barnyard:
+     regenerate the sid-msg.map file, and restart the snort process.
      {{{
-sudo nsm_sensor_ps-restart --only-snort     
+sudo rule-update
      }}}
-     The second method of restarting snort involves directly calling the pulledpork_update.sh script which will update to the most recent set of signatures, regenerate the sid-msg.map file, and restart the snort process.
-     {{{
-sudo /usr/local/bin/pulledpork_update.sh
-     }}}
-     (PLEASE NOTE: In the current Security Onion 12.04 Beta, pulledpork_update.sh has been renamed to /usr/bin/rule-update.)  If you built the rule correctly, then snort should be back up and running. 
+  # If you built the rule correctly, then snort should be back up and running. 
   # Generate some traffic to trigger the alert.
      To generate traffic we are going to use the python library scapy to craft packets with specific information to ensure we trigger the alert with the information we want.
      {{{
