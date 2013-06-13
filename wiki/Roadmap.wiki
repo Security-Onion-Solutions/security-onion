@@ -44,6 +44,7 @@ Please note that this is all subject to change!
   * June 2013
     * Issue 339: PF_RING 5.5.4 pf_ring.c from svn
     * Issue 316: Security Onion 12.04.1 ISO image
+    * Issue 340: rule-update needs to copy /usr/local/lib/snort_dynamicrules/
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
     * Issue 312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
