@@ -39,6 +39,11 @@ This is related to the previous question.  See [tcl tcl notes].
 = How do I configure a BPF for Snort/Suricata/Bro? =
 [BPF]
 
+= Why won't the ISO image boot on my machine? =
+  * Did you verify the checksum of the downloaded ISO as described on the [Installation] page?  
+  * Does your machine support 64-bit?  If not, then you'll need to obtain a 64-bit machine to use our 64-bit ISO image (recommended) or use your 32-bit machine by installing Ubuntu 12.04 32-bit and adding our PPA and packages as described on the [Installation] page.
+  * If you think your machine does support 64-bit, but you're still having problems with our 64-bit ISO image, try downloading the Ubuntu 12.04 64-bit ISO image and seeing if it runs.  If it doesn't, then you should verify your 64-bit compatibility.
+
 = Why does Security Onion use UTC? =
 Security Onion uses UTC because that is the recommended/required setting for Sguil:<br>
 <a href="http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html">http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html</a><br>
