@@ -54,5 +54,6 @@ Please note that this is all subject to change!
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue 287: Update Sguil for improved error handling
     * Issue 240: Squert 1.0
+    * Issue 331: securityonion-elsa should depend on mysql
     * Issue 343: Add more Bro logs to ELSA
    
