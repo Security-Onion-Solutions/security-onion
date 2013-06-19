@@ -58,6 +58,7 @@ Please note that this is all subject to change!
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue 347: New Sguil client transcript option to run through tcpudpflow.bro
     * Issue 348: Update CapME with a new option to query Bro conn.log via ELSA
+    * Issue 350: Modify Sguil client to allow pivoting to ELSA
     * Issue 344: Security Onion 12.04.2 ISO image
   * August 2013
     * Issue 287: Update Sguil for improved error handling
