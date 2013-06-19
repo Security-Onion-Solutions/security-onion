@@ -62,4 +62,6 @@ Please note that this is all subject to change!
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
     * Issue 343: Add more Bro logs to ELSA
+  * September 2013
+    * Issue 345: Security Onion 12.04.3 ISO image
    
