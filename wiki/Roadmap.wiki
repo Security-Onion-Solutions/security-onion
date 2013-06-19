@@ -59,6 +59,7 @@ Please note that this is all subject to change!
   * August 2013
     * Issue 287: Update Sguil for improved error handling
     * Issue 240: Squert 1.0
+    * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
     * Issue 343: Add more Bro logs to ELSA
