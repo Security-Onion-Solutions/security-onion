@@ -47,6 +47,7 @@ Please note that this is all subject to change!
     * Issue 340: rule-update needs to copy /usr/local/lib/snort_dynamicrules/
     * Issue 342: Allow more granular rule tuning (per physical sensor)
     * Issue 325: rule-update needs to check for privileges
+    * Issue 326: rule-update needs to check for /etc/nsm/rules/backup/
   * July 2013
     * Issue 341: nsm_sensor_ps-start needs "sleep 2s" between netsniff-ng and pcap_agent
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
