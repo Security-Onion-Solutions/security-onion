@@ -49,6 +49,7 @@ Please note that this is all subject to change!
     * Issue 325: rule-update needs to check for privileges
     * Issue 326: rule-update needs to check for /etc/nsm/rules/backup/
     * Issue 349: rule-update needs to copy OSSEC local_rules.xml from master to sensor
+    * Issue 353: rule-update should remove unneeded messages from PulledPork output
   * July 2013
     * Issue 341: nsm_sensor_ps-start needs "sleep 2s" between netsniff-ng and pcap_agent
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
