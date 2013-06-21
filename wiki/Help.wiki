@@ -19,7 +19,7 @@ sudo service nsm restart
 {{{
 pgrep -lf autossh
 }}}
-  * If you're having problems with Snorby, check the log files in /usr/local/share/snorby/log/ and /var/log/apache2/ and see if its processes are running:
+  * If you're having problems with Snorby, check the log files in /opt/snorby/log/ and /var/log/apache2/ and see if its processes are running:
 {{{
 pgrep -lf delayed_job
 }}}
