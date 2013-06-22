@@ -45,6 +45,7 @@ Please note that this is all subject to change!
     * Issue 339: PF_RING 5.5.4 pf_ring.c from svn
     * Issue 316: Security Onion 12.04.1 ISO image
     * Issue 340: rule-update needs to copy /usr/local/lib/snort_dynamicrules/
+    * Issue 355: Add "Copy IP Address" to Sguil client's right-click context menu
     * Issue 342: Allow more granular rule tuning (per physical sensor)
     * Issue 325: rule-update needs to check for privileges
     * Issue 326: rule-update needs to check for /etc/nsm/rules/backup/
