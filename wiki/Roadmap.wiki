@@ -51,8 +51,8 @@ Please note that this is all subject to change!
     * Issue 326: rule-update needs to check for /etc/nsm/rules/backup/
     * Issue 349: rule-update needs to copy OSSEC local_rules.xml from master to sensor
     * Issue 353: rule-update should remove unneeded messages from PulledPork output
-    * Issue 354: Suricata 1.4.3
   * July 2013
+    * Issue 354: Suricata 1.4.3
     * Issue 341: nsm_sensor_ps-start needs "sleep 5s" between netsniff-ng and pcap_agent
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
