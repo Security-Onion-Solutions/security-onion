@@ -56,6 +56,7 @@ Please note that this is all subject to change!
     * Issue 314: Update NSM scripts so that netsniff-ng pcap size is configurable by user
     * Issue 354: Suricata 1.4.3
     * Issue 315: Update NSM scripts so that WARN_DISK_USAGE and CRIT_DISK_USAGE are configurable by user
+    * Issue 358: Update Setup so that Advanced Setup asks about CRIT_DISK_USAGE
     * Issue 312: Update NSM scripts to allow $SERVICE=yes/no in securityonion.conf and/or sensor.conf
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue 268: Update	NSM scripts so that OSSEC and Bro sections respect --sensor-name option
