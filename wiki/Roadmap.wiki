@@ -75,5 +75,6 @@ Please note that this is all subject to change!
     * Issue 343: Add more Bro logs to ELSA
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
   * September 2013
+    * Issue 360: Suricata 1.4.4 or later
     * Issue 345: Security Onion 12.04.3 ISO image
    
