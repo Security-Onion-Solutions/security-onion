@@ -61,6 +61,7 @@ Please note that this is all subject to change!
     * Issue 313: Update Setup so that Advanced Setup asks about enabling/disabling individual services
     * Issue 268: Update	NSM scripts so that OSSEC and Bro sections respect --sensor-name option
     * Issue 351: Update /etc/init/securityonion.conf to start Xplico (controlled by user in /etc/nsm/securityonion.conf)
+    * Issue 359: nsm_server_ps-restart --if-stale leaves orphaned sguild processes
     * Issue 348: Update CapME with a new option to query Bro conn.log via ELSA
     * Issue 347: New Sguil client transcript option to run through tcpudpflow.bro
     * Issue 344: Security Onion 12.04.2 ISO image
