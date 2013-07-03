@@ -64,6 +64,7 @@ Please note that this is all subject to change!
     * Issue 347: New Sguil client transcript option to run through tcpudpflow.bro
     * Issue 344: Security Onion 12.04.2 ISO image
   * August 2013
+    * Issue 357: Snort 2.9.5
     * Issue 287: Update Sguil for improved error handling
     * Issue 240: Squert 1.0
     * Issue 346: New ELSA packages
