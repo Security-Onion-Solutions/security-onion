@@ -64,6 +64,7 @@ Please note that this is all subject to change!
     * Issue 268: Update	NSM scripts so that OSSEC and Bro sections respect --sensor-name option
     * Issue 351: Update /etc/init/securityonion.conf to start Xplico (controlled by user in /etc/nsm/securityonion.conf)
     * Issue 347: New Sguil client transcript option to run through tcpudpflow.bro
+    * Issue 367: CapMe should use the new Bro transcript option
     * Issue 344: Security Onion 12.04.2 ISO image
   * August 2013
     * Issue 364: Remove "after 1000" from CapMe's cliscript.tcl
