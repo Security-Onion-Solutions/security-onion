@@ -68,6 +68,7 @@ Please note that this is all subject to change!
     * Issue 344: Security Onion 12.04.2 ISO image
   * August 2013
     * Issue 368: /usr/bin/rule-update should check for "Suricata"
+    * Issue 323: Create sguild-passwd-user script
     * Issue 363: netsniff-ng: log and print statistics
     * Issue 365: CapMe color coding
     * Issue 364: Remove "after 1000" from CapMe's cliscript.tcl
