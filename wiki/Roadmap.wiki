@@ -74,6 +74,7 @@ Please note that this is all subject to change!
     * Issue 365: CapMe color coding
     * Issue 364: Remove "after 1000" from CapMe's cliscript.tcl
     * Issue 366: Setup doesn't need to prompt if there is no Internet connection
+    * Issue 371: sosetup-network should require the user to choose static/DHCP for management interface
     * Issue 357: Snort 2.9.5
     * Issue 287: Update Sguil for improved error handling
     * Issue 240: Squert 1.0
