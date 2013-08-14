@@ -74,6 +74,7 @@ Please note that this is all subject to change!
     * Issue 370: soup: a script to handle Ubuntu/SO updates properly (mysql-server and pfring)
     * Issue 323: Create sguild-passwd-user script
     * Issue 363: netsniff-ng: log and print statistics
+    * Issue 374: Update hostname.bro and interface.bro
     * Issue 366: Setup doesn't need to prompt if there is no Internet connection
     * Issue 371: sosetup-network should require the user to choose static/DHCP for management interface
     * Issue 357: Snort 2.9.5
