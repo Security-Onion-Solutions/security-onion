@@ -81,8 +81,6 @@ Please note that this is all subject to change!
     * Issue 373: Setup doesn't correctly configure VRT+ETNOGPL
     * Issue 371: sosetup-network should require the user to choose static/DHCP for management interface
     * Issue 380: Update securityonion-et-rules package and include tarball
-    * Issue 357: Snort 2.9.5
-    * Issue 287: Update Sguil for improved error handling
     * Issue 240: Squert 1.0
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
@@ -90,8 +88,10 @@ Please note that this is all subject to change!
     * Issue 343: Add more Bro logs to ELSA
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
   * September 2013
+    * Issue 357: Snort 2.9.5
     * Issue 360: Suricata 1.4.4 or later
     * Issue 345: Security Onion 12.04.3 ISO image
     * Issue 376: netsniff-ng: specify ring buffer size
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
-   
+    * Issue 382: Update Argus packages
+    * Issue 287: Update Sguil for improved error handling
