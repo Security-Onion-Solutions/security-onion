@@ -2,11 +2,28 @@
 
 = Security Onion 12.04 Update Procedure =
 
-We recommend using the "soup" script (see http://securityonion.blogspot.com/2013/08/new-securityonion-packages.html) to automatically install updates while avoiding the MySQL/PF_RING issues described below.
+== soup - Security Onion UPdate ==
+
+We recommend using the "soup" script to automatically install updates while avoiding the MySQL/PF_RING issues described below.
 {{{
 sudo soup
 }}}
 
+If you get the following error:
+{{{
+sudo: soup: command not found
+}}}
+
+then do the following:
+{{{
+sudo apt-get update && sudo apt-get install securityonion-sostat
+}}}
+
+For more information, please see:
+<a href="http://securityonion.blogspot.com/2013/08/new-securityonion-packages.html">http://securityonion.blogspot.com/2013/08/new-securityonion-packages.html</a>
+
+== Standard Ubuntu package management tools ==
+ 
 Since all of our packages are in a standard Ubuntu Launchpad PPA, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion).  However, there are some caveats to be aware of:
 
   * MySQL - if you've already run Setup, please see the [MySQLUpdates recommended procedure for updating the MySQL packages].
