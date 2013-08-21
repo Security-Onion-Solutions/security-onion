@@ -1,5 +1,9 @@
 #summary Random Links to other sites talking about Security Onion
 
+Internet Storm Center: Snort on VMWare ESXi:<br>
+https://isc.sans.edu/diary/Running+Snort+on+VMWare+ESXi/15899
+https://isc.sans.edu/diary/Running+Snort+on+ESXi+using+the+Distributed+Switch/16391
+
 Brett Cunningham (@jbc22) and Micah Kays (cczkays): Honeypot - Adventures with Security Onion<br>
 http://marryware.blogspot.com/2012/07/honeypot-adventures-with-security-onion.html
 
