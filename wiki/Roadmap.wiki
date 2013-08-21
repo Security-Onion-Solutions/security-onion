@@ -78,6 +78,7 @@ Please note that this is all subject to change!
     * Issue 374: Update hostname.bro and interface.bro
     * Issue 366: Setup doesn't need to prompt if there is no Internet connection
     * Issue 381: Update Setup so that if no Internet access, run pulledpork -n
+    * Issue 373: Setup doesn't correctly configure VRT+ETNOGPL
     * Issue 371: sosetup-network should require the user to choose static/DHCP for management interface
     * Issue 380: Update securityonion-et-rules package and include tarball
     * Issue 357: Snort 2.9.5
