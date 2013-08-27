@@ -89,7 +89,7 @@ Please note that this is all subject to change!
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
   * September 2013
     * Issue 357: Snort 2.9.5.3
-    * Issue 360: Suricata 1.4.4 or later
+    * Issue 360: Suricata 1.4.5
     * Issue 345: Security Onion 12.04.3 ISO image
     * Issue 376: netsniff-ng: specify ring buffer size
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
