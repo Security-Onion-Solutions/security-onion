@@ -82,16 +82,17 @@ Please note that this is all subject to change!
     * Issue 371: sosetup-network should require the user to choose static/DHCP for management interface
     * Issue 380: Update securityonion-et-rules package and include tarball
     * Issue 240: Squert 1.1
-    * Issue 346: New ELSA packages
-    * Issue 331: securityonion-elsa should depend on mysql
-    * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
-    * Issue 343: Add more Bro logs to ELSA
-    * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
   * September 2013
+    * Issue 384: Update PF_RING
     * Issue 357: Snort 2.9.5.3
     * Issue 360: Suricata 1.4.5
     * Issue 345: Security Onion 12.04.3 ISO image
     * Issue 376: netsniff-ng: specify ring buffer size
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
     * Issue 382: Update Argus packages
+    * Issue 346: New ELSA packages
+    * Issue 331: securityonion-elsa should depend on mysql
+    * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
+    * Issue 343: Add more Bro logs to ELSA
+    * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
     * Issue 287: Update Sguil for improved error handling
