@@ -1,5 +1,9 @@
 #summary Where to find pcaps to test your Security Onion installation with
 
+= /opt/samples/ =
+
+Security Onion 12.04 comes with several pcap samples in /opt/samples.
+
 = Links =
 
   * https://www.openpacket.org/ (Security Onion 12.04 contains some pcaps from openpacket.org.  You can find them at /opt/samples/.)
