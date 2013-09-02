@@ -316,13 +316,13 @@ To change this behavior you must modify the PHP code:<br>
  - replace demo.xplico.org with your host name (used in the url)<br>
 
 = How do I run ntop on Security Onion? =
+In the old Security Onion 10.04, Snorby was running on port 3000 (which ntop also defaults to).  In Security Onion 12.04, Snorby no longer runs on port 3000, so this shouldn't be an issue.
+
 ntop defaults to port 3000, which is already being used by Snorby.  You can change ntop's port by editing /etc/default/ntop like this:
 {{{
 GETOPT="-w 0 -W 4000"
 }}}
 This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!
-
-In Security Onion 12.04, Snorby no longer runs on port 3000, so this shouldn't be an issue.
 
 = What's the difference between a "server" and a "sensor"? =
 box<br>
