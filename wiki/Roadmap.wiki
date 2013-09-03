@@ -83,7 +83,7 @@ Please note that this is all subject to change!
     * Issue 380: Update securityonion-et-rules package and include tarball
     * Issue 240: Squert 1.1
   * September 2013
-    * Issue 384: Update PF_RING
+    * Issue 384: PF_RING 5.6.1
     * Issue 357: Snort 2.9.5.3
     * Issue 360: Suricata 1.4.5
     * Issue 345: Security Onion 12.04.3 ISO image
