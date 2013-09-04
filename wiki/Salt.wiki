@@ -26,13 +26,15 @@ In addition, Salt is a full configuration management system, so you can script a
 Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
 http://docs.saltstack.com/topics/tutorials/firewall.html
 
-= New Deployments =
+= Initial installation/configuration =
+
+== New Deployments ==
 
 Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.
 
-= Salting an Existing Deployment =
+== Salting an Existing Deployment ==
 
-== Configure the Master Server first ==
+=== Configure the Master Server first ===
 
 {{{
 # Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
@@ -64,7 +66,7 @@ sudo salt '*' test.ping
 sudo salt '*' state.highstate
 }}}
 
-== Now configure salt-minion on a Sensor ==
+=== Now configure salt-minion on a Sensor ===
 {{{
 # Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
 sudo apt-get update && sudo apt-get install securityonion-onionsalt
@@ -83,7 +85,7 @@ echo "master: $MASTER" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
 sudo service salt-minion restart
 }}}
 
-== Now return to the Master and accept the new minion ==
+=== Now return to the Master and accept the new minion ===
 {{{
 # Edit /opt/onionsalt/salt/top.sls and add the new minion as a "sensor"
 
@@ -99,3 +101,7 @@ sudo salt '*' test.ping
 # Tell salt to do an update
 sudo salt '*' state.highstate
 }}}
+
+= Adding Users and SSH keys =
+
+Add your user accounts to /opt/onionsalt/pillar/users/init.sls.  For each user account, you can add an SSH Public Key to /opt/onionsalt/salt/users/keys/USERNAME.id_rsa.pub (replacing USERNAME with the user's actual username).
