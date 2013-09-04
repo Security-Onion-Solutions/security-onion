@@ -62,12 +62,10 @@ sudo apt-get update && sudo apt-get install securityonion-onionsalt
 sudo service salt-master stop
 
 # Disable salt-master
-[ -f /etc/init/salt-master.conf ] && sudo mv
-/etc/init/salt-master.conf /etc/init/salt-master.DISABLED
+[ -f /etc/init/salt-master.conf ] && sudo mv /etc/init/salt-master.conf /etc/init/salt-master.DISABLED
 
 # Configure minion
-echo "master: $SERVERNAME_OR_IP_ADDRESS" | sudo tee -a
-/etc/salt/minion.d/onionsalt.conf
+echo "master: $SERVERNAME_OR_IP_ADDRESS" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
 
 # Restart minion
 sudo service salt-minion restart
