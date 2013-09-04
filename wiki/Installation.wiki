@@ -52,7 +52,7 @@ sudo apt-get -y install securityonion-all
 sudo sosetup
 }}}
   # Follow the prompts.<br>
-  # Analyze alerts using Sguil, Squert, Snorby, ELSA or capME.<br>
+  # Analyze alerts using the Sguil client, or open a browser to https://localhost where you can access Squert, Snorby, and ELSA.<br>
 <br>
 == If you're going to be deploying Security Onion in production, follow these steps:==
   # Before you start, make sure your sensor(s) are capable by checking the [Hardware] page.<br>
