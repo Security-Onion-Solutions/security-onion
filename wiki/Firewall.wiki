@@ -78,7 +78,7 @@ Then add a rule like the following for the IP addresses or subnet that you'll be
 sudo ufw allow proto tcp from a.b.c.d to any port 22,443,444,3154,7734,9876
 }}}
 
-Once you've added these new rules, then you can remove the default "allow from ANY" rules.
+Once you've added these new rules, then you can remove the default "allow from Anywhere" rules.
 
 == More Info==
 For more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
