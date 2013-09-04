@@ -40,8 +40,10 @@ sudo apt-get update && sudo apt-get install securityonion-onionsalt
 
 # Edit /opt/onionsalt/salt/top.sls and add your master as a "backend"
 
-# Open salt ports in firewall (you may want to only allow from your sensor IP addresses)
-sudo ufw allow salt
+# Open salt ports in firewall:
+# sudo ufw allow salt
+# OR preferably just allow from your sensor IP addresses like this:
+# sudo ufw allow proto tcp from a.b.c.d to any port 4505,4506
 
 # Configure minion
 echo "master: localhost" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
