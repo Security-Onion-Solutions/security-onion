@@ -6,7 +6,7 @@
 
 http://docs.saltstack.com/
 
-= What is \OnionSalt? =
+= What is OnionSalt? =
 
 "OnionSalt is a tool created to manage multiple Security Onion sensors."
 
