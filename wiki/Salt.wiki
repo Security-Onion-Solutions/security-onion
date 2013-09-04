@@ -3,11 +3,13 @@
 = What is Salt? =
 
 "Salt delivers a dynamic communication bus for infrastructures that can be used for orchestration, remote execution, configuration management and much more."
+
 http://docs.saltstack.com/
 
 = What is OnionSalt? =
 
 "OnionSalt is a tool created to manage multiple Security Onion sensors."
+
 https://github.com/TOoSmOotH/onionsalt
 
 = Firewall Requirements =
