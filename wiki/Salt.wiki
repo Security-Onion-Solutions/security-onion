@@ -31,7 +31,7 @@ sudo apt-get update && sudo apt-get install securityonion-onionsalt
 
 # Edit /opt/onionsalt/salt/top.sls and add your master as a "backend"
 
-# Open salt ports in firewall
+# Open salt ports in firewall (you may want to only allow from your sensor IP addresses)
 sudo ufw allow salt
 
 # Configure minion
