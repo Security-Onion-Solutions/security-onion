@@ -74,7 +74,7 @@ sudo service salt-minion restart
 
 == Now return to the Master and accept the new minion ==
 {{{
-# add your sensor as a "sensor" in /opt/onionsalt/salt/top.sls
+# Edit /opt/onionsalt/salt/top.sls and add the new minion as a "sensor"
 
 # list the salt keys:
 sudo salt-key -L
