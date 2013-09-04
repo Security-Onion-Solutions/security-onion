@@ -62,7 +62,7 @@ By default, a master server allows connections to the following ports from *any*
   * 444 - Snorby
   * 3154 - ELSA
   * 7734 - Sguil client
-  * 9876 - Xplico
+  * 7736 - sensor connection to sguild
 
 You may want to restrict those ports to only accepting connections from a subset of IP addresses.  
 
@@ -78,7 +78,7 @@ Then add a rule like the following for the IP addresses or subnet that you'll be
 sudo ufw allow proto tcp from a.b.c.d to any port 22,443,444,3154,7734,9876
 }}}
 
-Once you've added these new rules, then you can remove the default allow from ANY rules.
+Once you've added these new rules, then you can remove the default "allow from ANY" rules.
 
 == More Info==
 For more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
