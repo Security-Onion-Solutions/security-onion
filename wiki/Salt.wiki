@@ -5,6 +5,11 @@
 "Salt delivers a dynamic communication bus for infrastructures that can be used for orchestration, remote execution, configuration management and much more."
 http://docs.saltstack.com/
 
+= What is OnionSalt? =
+
+"OnionSalt is a tool created to manage multiple Security Onion sensors."
+https://github.com/TOoSmOotH/onionsalt
+
 = Firewall Requirements =
 
 Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
@@ -12,7 +17,7 @@ http://docs.saltstack.com/topics/tutorials/firewall.html
 
 = New Deployments =
 
-Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure everything for you.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.
+Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.
 
 = Salting an Existing Deployment =
 
