@@ -16,8 +16,8 @@ https://github.com/TOoSmOotH/onionsalt
 
 Please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install securityonion-onionsalt and nothing will change for you.  Should you decide to install securityonion-onionsalt, you get the following features out of the box:
 
-- manage user accounts, sudoers, and SSH keys from one location and have it replicate to all sensors
-- have sensors check for new IDS rules every 15 minutes, copy files, and restart engines as necessary
+  * manage user accounts, sudoers, and SSH keys from one location and have it replicate to all sensors
+  * have sensors check for new IDS rules every 15 minutes, copy files, and restart engines as necessary
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
 
