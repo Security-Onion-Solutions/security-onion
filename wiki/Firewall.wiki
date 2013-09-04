@@ -56,7 +56,15 @@ sudo ufw allow proto tcp from 172.30.15.10/32 to 172.30.15.16 port 80
 
 ==Tightening the firewall on a master server==
 
-By default, a master server allows connections to ports 22, 7734, and 7736 from ANY.  You may want to restrict that to a subset of IP addresses.  
+By default, a master server allows connections to the following ports from *any* IP address:
+22 - SSH
+443 - Squert/CapMe
+444 - Snorby
+3154 - ELSA
+7734 - Sguil client
+9876 - Xplico
+
+You may want to restrict those ports to only accepting connections from a subset of IP addresses.  
 
 NOTE! Before attempting any firewall changes, you should always ensure you have a backup plan should you accidentally block your own connection.  So make sure that you have DRAC/KVM/physical or some other form of access.  
 
