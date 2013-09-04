@@ -30,7 +30,8 @@ http://docs.saltstack.com/topics/tutorials/firewall.html
 
 == New Deployments ==
 
-Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.
+Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.  To add users and SSH keys, skip to:
+https://code.google.com/p/security-onion/wiki/Salt#Adding_Users_and_SSH_keys
 
 == Salting an Existing Deployment ==
 
