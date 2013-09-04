@@ -57,12 +57,12 @@ sudo ufw allow proto tcp from 172.30.15.10/32 to 172.30.15.16 port 80
 ==Tightening the firewall on a master server==
 
 By default, a master server allows connections to the following ports from *any* IP address:
-22 - SSH
-443 - Squert/CapMe
-444 - Snorby
-3154 - ELSA
-7734 - Sguil client
-9876 - Xplico
+  * 22 - SSH
+  * 443 - Squert/CapMe
+  * 444 - Snorby
+  * 3154 - ELSA
+  * 7734 - Sguil client
+  * 9876 - Xplico
 
 You may want to restrict those ports to only accepting connections from a subset of IP addresses.  
 
