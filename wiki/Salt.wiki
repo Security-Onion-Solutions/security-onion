@@ -26,8 +26,8 @@ Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it 
 == Master Server ==
 
 {{{
-# Install securityonion-onionsalt
-sudo apt-get install securityonion-onionsalt
+# Install securityonion-onionsalt (will also install salt-master and salt-minion)
+sudo apt-get update && sudo apt-get install securityonion-onionsalt
 
 # Edit /opt/onionsalt/salt/top.sls and add your master as a "backend"
 
@@ -55,8 +55,8 @@ sudo salt '*' state.highstate
 
 == Sensor ==
 {{{
-# Install securityonion-onionsalt
-sudo apt-get install securityonion-onionsalt
+# Install securityonion-onionsalt (will also install salt-master and salt-minion)
+sudo apt-get update && sudo apt-get install securityonion-onionsalt
 
 # Stop the running salt-master
 sudo service salt-master stop
