@@ -23,7 +23,7 @@ Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it 
 
 = Salting an Existing Deployment =
 
-== Master Server ==
+== Configure the Master Server first ==
 
 {{{
 # Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
@@ -53,7 +53,7 @@ sudo salt '*' test.ping
 sudo salt '*' state.highstate
 }}}
 
-== Sensor ==
+== Now configure salt-minion on a Sensor ==
 {{{
 # Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
 sudo apt-get update && sudo apt-get install securityonion-onionsalt
@@ -72,7 +72,7 @@ echo "master: $MASTER" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
 sudo service salt-minion restart
 }}}
 
-== Back at the Master ==
+== Now return to the Master and accept the new minion ==
 {{{
 # add your sensor as a "sensor" in /opt/onionsalt/salt/top.sls
 
