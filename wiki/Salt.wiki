@@ -65,7 +65,8 @@ sudo service salt-master stop
 [ -f /etc/init/salt-master.conf ] && sudo mv /etc/init/salt-master.conf /etc/init/salt-master.DISABLED
 
 # Configure minion
-echo "master: $SERVERNAME_OR_IP_ADDRESS" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
+MASTER=`grep SENSOR_SERVER_HOST /etc/nsm/*/sensor.conf |head -1 |cut -d\" -f2`
+echo "master: $MASTER" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
 
 # Restart minion
 sudo service salt-minion restart
