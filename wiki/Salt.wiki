@@ -1,0 +1,84 @@
+#summary Using Salt for configuration management
+
+= What is Salt? =
+
+"Salt delivers a dynamic communication bus for infrastructures that can be used for orchestration, remote execution, configuration management and much more."
+http://docs.saltstack.com/
+
+= Firewall Requirements =
+
+Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
+http://docs.saltstack.com/topics/tutorials/firewall.html
+
+= New Deployments =
+
+Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure everything for you.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.
+
+= Salting an Existing Deployment =
+
+== Master Server ==
+
+{{{
+# Install securityonion-onionsalt
+sudo apt-get install securityonion-onionsalt
+
+# Edit /opt/onionsalt/salt/top.sls and add your master as a "backend"
+
+# Open salt ports in firewall
+sudo ufw allow salt
+
+# Configure minion
+echo "master: localhost" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
+
+# Restart minion
+sudo service salt-minion restart
+
+# list the salt keys:
+sudo salt-key -L
+
+# You should see an unaccepted salt key for the minion, add it:
+sudo salt-key -a '*'
+
+# Verify that the master can communicate with the minion:
+sudo salt '*' test.ping
+
+# Tell salt to do an update
+sudo salt '*' state.highstate
+}}}
+
+== Sensor ==
+{{{
+# Install securityonion-onionsalt
+sudo apt-get install securityonion-onionsalt
+
+# Stop the running salt-master
+sudo service salt-master stop
+
+# Disable salt-master
+[ -f /etc/init/salt-master.conf ] && sudo mv
+/etc/init/salt-master.conf /etc/init/salt-master.DISABLED
+
+# Configure minion
+echo "master: $SERVERNAME_OR_IP_ADDRESS" | sudo tee -a
+/etc/salt/minion.d/onionsalt.conf
+
+# Restart minion
+sudo service salt-minion restart
+}}}
+
+== Back at the Master ==
+{{{
+# add your sensor as a "sensor" in /opt/onionsalt/salt/top.sls
+
+# list the salt keys:
+sudo salt-key -L
+
+# You should see an unaccepted salt key for the sensor, add it:
+sudo salt-key -a '*'
+
+# Verify that the master can communicate with all minions:
+sudo salt '*' test.ping
+
+# Tell salt to do an update
+sudo salt '*' state.highstate
+}}}
