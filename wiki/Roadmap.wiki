@@ -92,6 +92,7 @@ Please note that this is all subject to change!
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
     * Issue 382: Update Argus packages
     * Issue 387: Squert 1.1.1
+  * October 2013
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
