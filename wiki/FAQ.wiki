@@ -263,15 +263,11 @@ quit
 {{{
 sudo a2dissite snorby
 }}}
-2. Edit the barnyard2.conf for each sensor: 
+2. Comment out the output database line in all barnyard2.conf files on all sensors:
 {{{
-sudo nano /etc/nsm/$HOSTNAME-$INTERFACE/barnyard2.conf
+sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2.conf
 }}}
-3. Remove or comment out the output database line:
-{{{
-output database: alert, mysql, user=root dbname=snorby host=127.0.0.1
-}}}
-4. Restart barnyard2:
+3. Restart barnyard2 on all sensors:
 {{{
 sudo nsm_sensor_ps-restart --only-barnyard2
 }}}
