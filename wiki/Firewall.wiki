@@ -60,6 +60,8 @@ By default, a master server allows connections to the following ports from *any*
   * 22 - SSH
   * 443 - Squert/CapMe
   * 444 - Snorby
+  * 514 - Syslog
+  * 1514/udp - OSSEC
   * 3154 - ELSA
   * 7734 - Sguil client
   * 7736 - sensor connection to sguild
@@ -74,6 +76,18 @@ First, add a rule like the following for each of your sensors (replacing a.b.c.d
 sudo ufw allow proto tcp from a.b.c.d to any port 22,7736
 }}}
 
+===Firewall rules to allow syslog devices===
+Next add a rule like the following for the IP addresses that will be sending syslog (port 514 tcp and udp):
+{{{
+sudo ufw allow from a.b.c.d to any port 514
+}}}
+
+===Firewall rules to allow OSSEC agents===
+Next add a rule like the following for the IP addresses that will be running the OSSEC agent (port 1514 udp):
+{{{
+sudo ufw allow proto udp from a.b.c.d to any port 1514
+}}}
+
 ===Firewall rules to allow analysts/administrators to connect to master===
 Then add a rule like the following for the IP addresses or subnet that you'll be using to connect to the master as an analyst/administrator to ports 22 (SSH), 443 (Squert/CapMe), 444 (Snorby), 3154 (ELSA), 7734 (Sguil client), 9876 (Xplico):
 {{{
@@ -86,6 +100,8 @@ Once you've added these new rules, then you can remove the default "allow from A
 sudo ufw delete allow 22/tcp 
 sudo ufw delete allow 443/tcp
 sudo ufw delete allow 444/tcp
+sudo ufw delete allow 514
+sudo ufw delete allow 1514/udp
 sudo ufw delete allow 3154/tcp
 sudo ufw delete allow 7734/tcp
 sudo ufw delete allow 7736/tcp
