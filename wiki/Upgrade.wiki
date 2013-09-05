@@ -9,6 +9,11 @@ If you're updating your Security Onion box over an SSH connection and your conne
 # start byobu
 byobu
 
+# you're now ready to update
+}}}
+
+Byobu is very handy and we recommend running it all the time to avoid forgetting about it before an update:
+{{{
 # enable byobu at every login
 byobu-enable
 }}} 
