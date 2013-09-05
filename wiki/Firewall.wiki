@@ -107,6 +107,43 @@ sudo ufw delete allow 7734/tcp
 sudo ufw delete allow 7736/tcp
 }}}
 
+==Tightening the firewall on a sensor==
+
+By default, a sensor allows connections to the following ports from *any* IP address:
+  * 22 - SSH
+  * 514 - Syslog
+  * 1514/udp - OSSEC
+
+You may want to restrict those ports to only accepting connections from a subset of IP addresses.  
+
+NOTE! Before attempting any firewall changes, you should always ensure you have a backup plan should you accidentally block your own connection.  So make sure that you have DRAC/KVM/physical or some other form of access.  
+
+===Firewall rules to allow syslog devices===
+First, add a rule like the following for the IP addresses that will be sending syslog (port 514 tcp and udp):
+{{{
+sudo ufw allow from a.b.c.d to any port 514
+}}}
+
+===Firewall rules to allow OSSEC agents===
+Next add a rule like the following for the IP addresses that will be running the OSSEC agent (port 1514 udp):
+{{{
+sudo ufw allow proto udp from a.b.c.d to any port 1514
+}}}
+
+===Firewall rules to allow analysts/administrators to connect to master===
+Then add a rule like the following for the IP addresses or subnet that you'll be using to connect to the sensor as an analyst/administrator to ports 22:
+{{{
+sudo ufw allow proto tcp from a.b.c.d to any port 22
+}}}
+
+===Remove default "allow from Anywhere" rules===
+Once you've added these new rules, then you can remove the default "allow from Anywhere" rules.
+{{{
+sudo ufw delete allow 22/tcp 
+sudo ufw delete allow 514
+sudo ufw delete allow 1514/udp
+}}}
+
 == More Info==
 For more info you can visit the UFW documentation [https://help.ubuntu.com/community/UFW site]
 
