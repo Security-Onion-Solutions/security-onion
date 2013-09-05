@@ -2,9 +2,9 @@
 
 = Security Onion 12.04 Update Procedure =
 
-== Updating Remotely ==
+== Initiating an update over SSH ==
 
-If you're updating your Security Onion box remotely (over an SSH connection) and your connection drops, then your update process may be left in an inconsistent state.  It is therefore recommended to run byobu or some other screen/tmux-like utility so that your session will continue to run on the Security Onion box even if your connection drops.  For more information about byobu, please see:
+If you're updating your Security Onion box over an SSH connection and your connection drops, then your update process may be left in an inconsistent state.  It is therefore recommended to run byobu or some other screen/tmux-like utility so that your session will continue to run on the Security Onion box even if your connection drops.  For more information about byobu, please see:
 https://help.ubuntu.com/community/Byobu
 
 == soup - Security Onion UPdate ==
