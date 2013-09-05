@@ -12,7 +12,7 @@ sudo apt-get install byobu
 # start byobu
 byobu
 
-# enable byobu at every login
+# configure byobu to start at every login automatically
 byobu-enable
 
 # you're now ready to update
