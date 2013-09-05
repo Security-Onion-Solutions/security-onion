@@ -68,11 +68,13 @@ You may want to restrict those ports to only accepting connections from a subset
 
 NOTE! Before attempting any firewall changes, you should always ensure you have a backup plan should you accidentally block your own connection.  So make sure that you have DRAC/KVM/physical or some other form of access.  
 
+===Firewall rules to allow sensors to connect to master===
 First, add a rule like the following for each of your sensors (replacing a.b.c.d with the actual IP address of the sensor) to connect to ports 22 (SSH) and 7736 (sguild):
 {{{
 sudo ufw allow proto tcp from a.b.c.d to any port 22,7736
 }}}
 
+===Firewall rules to allow analysts/administrators to connect to master===
 Then add a rule like the following for the IP addresses or subnet that you'll be using to connect to the master as an analyst/administrator to ports 22 (SSH), 443 (Squert/CapMe), 444 (Snorby), 3154 (ELSA), 7734 (Sguil client), 9876 (Xplico):
 {{{
 sudo ufw allow proto tcp from a.b.c.d to any port 22,443,444,3154,7734,9876
