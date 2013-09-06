@@ -265,7 +265,7 @@ sudo a2dissite snorby
 }}}
 2. Comment out the output database line in all barnyard2.conf files on all sensors:
 {{{
-sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2.conf
+sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf
 }}}
 3. Restart barnyard2 on all sensors:
 {{{
