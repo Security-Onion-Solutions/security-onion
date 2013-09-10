@@ -24,6 +24,7 @@ In addition, Salt is a full configuration management system, so you can script a
 = Firewall Requirements =
 
 Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
+
 http://docs.saltstack.com/topics/tutorials/firewall.html
 
 = Initial installation/configuration =
