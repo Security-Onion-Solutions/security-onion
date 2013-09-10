@@ -76,6 +76,12 @@ First, add a rule like the following for each of your sensors (replacing a.b.c.d
 sudo ufw allow proto tcp from a.b.c.d to any port 22,7736
 }}}
 
+If you're running [Salt], then sensors need to connect to ports 4505/tcp and 4506/tcp:
+{{{
+sudo ufw allow proto tcp from a.b.c.d to any port 22,4505,4506,7736
+}}}
+
+
 ===Firewall rules to allow syslog devices===
 Next add a rule like the following for the IP addresses that will be sending syslog (port 514 tcp and udp):
 {{{
