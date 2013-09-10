@@ -102,7 +102,7 @@ sudo salt-key -a '*'
 # Verify that the master can communicate with all minions:
 sudo salt '*' test.ping
 
-# Tell salt to do an update
+# Tell all minions to do an update
 sudo salt '*' state.highstate
 }}}
 
