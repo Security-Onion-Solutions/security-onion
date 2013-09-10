@@ -26,8 +26,6 @@ In addition, Salt is a full configuration management system, so you can script a
 Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
 http://docs.saltstack.com/topics/tutorials/firewall.html
 
-Also see our [Firewall] page.
-
 = Initial installation/configuration =
 
 == New Deployments ==
@@ -49,6 +47,7 @@ sudo apt-get update && sudo apt-get install securityonion-onionsalt
 # sudo ufw allow salt
 # OR preferably just allow from your sensor IP addresses like this:
 # sudo ufw allow proto tcp from a.b.c.d to any port 4505,4506
+# Also see our [Firewall] page.
 
 # Configure minion
 echo "master: localhost" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
