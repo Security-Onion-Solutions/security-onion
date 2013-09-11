@@ -23,7 +23,7 @@ In addition, Salt is a full configuration management system, so you can script a
 
 = Warning =
 
-Please be advised that our Salt integration is still considered experimental at the moment.
+Please be advised that our Salt integration is still considered experimental.
 
 = Firewall Requirements =
 
