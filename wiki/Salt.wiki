@@ -21,6 +21,10 @@ Please note that Salt is totally optional.  If you're happy with your current me
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
 
+= Warning =
+
+Please be advised that our Salt integration is still considered experimental at the moment.
+
 = Firewall Requirements =
 
 Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
