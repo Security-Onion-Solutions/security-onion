@@ -101,3 +101,4 @@ Please note that this is all subject to change!
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
     * Issue 287: Update Sguil for improved error handling
+    * Issue 390: PulledPork 0.7.0 or higher
