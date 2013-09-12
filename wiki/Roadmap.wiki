@@ -102,3 +102,4 @@ Please note that this is all subject to change!
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
     * Issue 287: Update Sguil for improved error handling
     * Issue 390: PulledPork 0.7.0 or higher
+    * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
