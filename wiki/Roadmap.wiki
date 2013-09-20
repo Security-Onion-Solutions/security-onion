@@ -88,18 +88,21 @@ Please note that this is all subject to change!
     * Issue 360: Suricata 1.4.5
     * Issue 386: Initial integration of onionsalt configuration management
     * Issue 345: Security Onion 12.04.3 ISO image
+  * October 2013
     * Issue 376: netsniff-ng: specify ring buffer size
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
     * Issue 382: Update Argus packages
     * Issue 387: Squert 1.1.1
-  * October 2013
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
     * Issue 343: Add more Bro logs to ELSA
     * Issue 385: Additional log parsers (non-Bro) for ELSA
+  * November 2013
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
     * Issue 287: Update Sguil for improved error handling
     * Issue 390: PulledPork 0.7.0 or higher
     * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
+  * December 2013
+    * Issue 395: Bro 2.2
