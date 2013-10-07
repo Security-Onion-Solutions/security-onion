@@ -91,6 +91,7 @@ Please note that this is all subject to change!
   * October 2013
     * Issue 376: netsniff-ng: specify ring buffer size
     * Issue 394: syslog-ng memory leak
+    * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
     * Issue 382: Update Argus packages
     * Issue 387: Squert 1.1.1
@@ -106,7 +107,6 @@ Please note that this is all subject to change!
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
     * Issue 287: Update Sguil for improved error handling
     * Issue 390: PulledPork 0.7.0 or higher
-    * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
   * December 2013
     * Issue 395: Bro 2.2
     * Issue 396: Setup should give the option of enabling file extraction in Bro
