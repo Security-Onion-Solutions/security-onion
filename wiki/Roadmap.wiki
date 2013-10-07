@@ -95,7 +95,7 @@ Please note that this is all subject to change!
     * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
     * Issue 382: Update Argus packages
-    * Issue 387: Squert 1.1.1
+    * Issue 387: Squert 1.1.3
     * Issue 398: Snort 2.9.5.5
     * Issue 397: Suricata 1.4.6
     * Issue 346: New ELSA packages
