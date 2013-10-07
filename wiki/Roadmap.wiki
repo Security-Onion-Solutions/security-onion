@@ -90,6 +90,7 @@ Please note that this is all subject to change!
     * Issue 345: Security Onion 12.04.3 ISO image
   * October 2013
     * Issue 376: netsniff-ng: specify ring buffer size
+    * Issue 400: Add option to Advanced Setup to enable netsniff-ng mmap I/O
     * Issue 394: syslog-ng memory leak
     * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
