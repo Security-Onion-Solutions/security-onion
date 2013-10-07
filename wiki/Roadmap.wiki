@@ -94,10 +94,9 @@ Please note that this is all subject to change!
     * Issue 394: syslog-ng memory leak
     * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
-    * Issue 382: Update Argus packages
     * Issue 387: Squert 1.1.3
-    * Issue 398: Snort 2.9.5.5
     * Issue 397: Suricata 1.4.6
+    * Issue 398: Snort 2.9.5.5
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
@@ -108,6 +107,7 @@ Please note that this is all subject to change!
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
     * Issue 287: Update Sguil for improved error handling
     * Issue 390: PulledPork 0.7.0 or higher
+    * Issue 382: Update Argus packages
   * December 2013
     * Issue 395: Bro 2.2
     * Issue 396: Setup should give the option of enabling file extraction in Bro
