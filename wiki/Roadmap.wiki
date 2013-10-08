@@ -94,6 +94,7 @@ Please note that this is all subject to change!
     * Issue 394: syslog-ng memory leak
     * Issue 391: Setup should write log file to /tmp and then copy to /var/log/nsm/sosetup.log when done
     * Issue 377: Move Argus config to argus.conf so that users can change without modifying NSM scripts
+    * Issue 401: ossec_agent.conf should set DAEMON to 0
     * Issue 387: Squert 1.1.3
     * Issue 397: Suricata 1.4.6
     * Issue 398: Snort 2.9.5.5
