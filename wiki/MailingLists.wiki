@@ -20,6 +20,7 @@ sudo sostat
 }}}
 
 On 2013/10/12, we released sostat-redacted, which will automatically redact IPv4 addresses:
+
 http://securityonion.blogspot.com/2013/10/new-securityonion-sostat-package.html
 
 {{{
