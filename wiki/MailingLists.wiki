@@ -13,6 +13,10 @@ Before sending an email to our mailing list, check to see if your question has a
 Please keep in mind that our mailing lists are moderated, so your email will have to be approved before it is published to the list.  If at first you don't see your email appear in the mailing list, there is no need to re-send your email.  It has been queued and will be approved if appropriate.
 
 =Questions/Problems=
+
+In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
+http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
+
 In many cases, we'll end up asking for the output of the following command, so please include it in your email (redacting sensitive info as necessary)
 :<br>
 {{{
@@ -28,9 +32,6 @@ sudo sostat-redacted
 }}}
 
 sostat-redacted will automatically redact any IPv4 addresses, but there may be additional sensitive info that you still need to redact manually.
-
-In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
-http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
 =Mailing Lists=
 ==Security-Onion==
