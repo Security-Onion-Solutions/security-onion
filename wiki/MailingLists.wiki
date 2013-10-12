@@ -19,13 +19,15 @@ In many cases, we'll end up asking for the output of the following command, so p
 sudo sostat
 }}}
 
-On 2013/10/12, we released sostat-redacted, which will automatically redact IPv4 addresses:
+On 2013/10/12, we released sostat-redacted:
 
 http://securityonion.blogspot.com/2013/10/new-securityonion-sostat-package.html
 
 {{{
 sudo sostat-redacted
 }}}
+
+sostat-redacted will automatically redact any IPv4 addresses, but there may be additional sensitive info that you still need to redact manually.
 
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
