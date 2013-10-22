@@ -76,6 +76,11 @@ set SERVER_HOST [SERVER-IP]
 SERVERNAME=[SERVER-IP]
 }}}
 
+  * /etc/elsa_web.conf
+{{{
+"pcap_url": "https://[SERVER-IP]/capme"
+}}}
+
   * /etc/salt/minion.d/onionsalt.conf
 {{{
 master: [SERVER-IP]
@@ -85,6 +90,6 @@ master: [SERVER-IP]
 You may be able to use sed to update all files at once using something like this:
 {{{
 sudo service nsm stop
-sudo sed -i 's|OLD.SERVER.IP.ADDR|NEW.SERVER.IP.ADDR|g' /etc/nsm/*/*agent* /etc/nsm/*/sensor.conf /root/.ssh/securityonion_ssh.conf /etc/salt/minion.d/onionsalt.conf
+sudo sed -i 's|OLD.SERVER.IP.ADDR|NEW.SERVER.IP.ADDR|g' /etc/nsm/*/*agent* /etc/nsm/*/sensor.conf /root/.ssh/securityonion_ssh.conf /etc/salt/minion.d/onionsalt.conf /etc/elsa_web.conf
 sudo service nsm start
 }}}
