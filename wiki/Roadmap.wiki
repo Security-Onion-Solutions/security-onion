@@ -105,6 +105,7 @@ Please note that this is all subject to change!
     * Issue 343: Add more Bro logs to ELSA
     * Issue 385: Additional log parsers (non-Bro) for ELSA
   * November 2013
+    * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
     * Issue 287: Update Sguil for improved error handling
