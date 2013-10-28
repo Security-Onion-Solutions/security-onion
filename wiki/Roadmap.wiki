@@ -99,6 +99,7 @@ Please note that this is all subject to change!
     * Issue 402: Create sostat-redacted to automatically redact IPv4 addresses from sostat output
     * Issue 387: Squert 1.1.5
     * Issue 404: redirect tcpflow xml output to /dev/null
+    * Issue 405: Optimize network buffers
     * Issue 398: Snort 2.9.5.5
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
