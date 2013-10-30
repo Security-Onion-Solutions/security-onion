@@ -302,6 +302,15 @@ sudo nsm_sensor_ps-restart --only-barnyard2
 If that still doesn't fix it, you may have to perform MySQL surgery on the database "securityonion_db" as described in the Sguil FAQ:
 <a href="http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error">http://nsmwiki.org/Sguil_FAQ#Barnyard_dies_at_startup.2C_with_.22Duplicate_Entry.22_error</a>
 
+= Why does the Snorby worker fail with "ERROR: Process ID out of range."? =
+The root cause is that the Snorby worker got into a failed state with the /opt/snorby/tmp/pids/delayed_job.pid file being empty. Snorby reads in the contents of this pid file and if it's empty, it results in "ERROR: Process ID out of range.".  Removing the empty pid file allows Snorby to start correctly.
+{{{
+sudo mv /opt/snorby/tmp/pids/delayed_job.pid /tmp/
+sudo reboot
+}}}
+For more info, please see:
+https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion
+
 = How do I access Xplico with a hostname instead of IP address? =
 From Gianluca Costa:<br>
 <br>
