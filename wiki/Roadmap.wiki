@@ -114,3 +114,4 @@ Please note that this is all subject to change!
   * December 2013
     * Issue 395: Bro 2.2
     * Issue 396: Setup should give the option of enabling file extraction in Bro
+    * Issue 406: sguil-db-purge needs to purge history table as well
