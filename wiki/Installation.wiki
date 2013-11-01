@@ -184,6 +184,9 @@ Value = 1
 }}}
 [http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_utc.png]
 
+= Squert =
+Please note that Squert now has the ability to retrieve transcripts and categorize events, but you'll need to edit /var/www/squert/.inc/config.php and insert your Sguil/Squert  username/password to enable this functionality.
+
 = CapME =
 Our Setup script automatically configures both Snorby and ELSA to be able to pivot to CapME for full transcripts.  The CapME page will prompt you for username/password and you will enter your normal Sguil/Squert/ELSA username/password.  You have the option of automatically authenticating, but be aware that this will send your username/password in the GET request, so it will be displayed in the browser bar in plaintext.
 
