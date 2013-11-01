@@ -100,6 +100,7 @@ Please note that this is all subject to change!
     * Issue 387: Squert 1.1.5
   * November 2013
     * Issue 405: Optimize network buffers
+    * Issue 407: Increase frequency of /etc/cron.d/sensor-clean
     * Issue 398: Snort 2.9.5.5
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
