@@ -118,3 +118,6 @@ Please note that this is all subject to change!
     * Issue 395: Bro 2.2
     * Issue 396: Setup should give the option of enabling file extraction in Bro
     * Issue 406: sguil-db-purge needs to purge history table as well
+    * Issue 412: OSSEC 2.7.1 or higher
+    * Issue 294: Barnyard2-1.13
+    * Issue 411: Have only one copy of barnyard2 that updates signature reference table
