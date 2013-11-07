@@ -121,3 +121,4 @@ Please note that this is all subject to change!
     * Issue 412: OSSEC 2.7.1 or higher
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
+    * Issue 413: Extend CapMe to pull pcap file
