@@ -103,7 +103,7 @@ Please note that this is all subject to change!
     * Issue 407: Increase frequency of /etc/cron.d/sensor-clean
     * Issue 408: Add "broctl netstats" to sostat
     * Issue 410: sostat should display the count of days archived in pcap and Bro logs
-    * Issue 417: sostat - change $HOSTNAME-* to *
+    * Issue 417: sostat - remove $HOSTNAME-
     * Issue 398: Snort 2.9.5.5
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
