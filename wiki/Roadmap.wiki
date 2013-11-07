@@ -112,6 +112,7 @@ Please note that this is all subject to change!
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
+    * Issue 416: Increase default MySQL open-files-limit
     * Issue 287: Update Sguil for improved error handling
     * Issue 390: PulledPork 0.7.0 or higher
   * December 2013
