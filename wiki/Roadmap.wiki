@@ -101,6 +101,7 @@ Please note that this is all subject to change!
   * November 2013
     * Issue 405: Optimize network buffers
     * Issue 407: Increase frequency of /etc/cron.d/sensor-clean
+    * Issue 419: Delete Snorby pid file at boot
     * Issue 408: Add "broctl netstats" to sostat
     * Issue 410: sostat should display the count of days archived in pcap and Bro logs
     * Issue 417: sostat - remove $HOSTNAME-
