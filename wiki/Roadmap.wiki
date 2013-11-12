@@ -105,6 +105,7 @@ Please note that this is all subject to change!
     * Issue 408: Add "broctl netstats" to sostat
     * Issue 410: sostat should display the count of days archived in pcap and Bro logs
     * Issue 417: sostat - remove $HOSTNAME-
+    * Issue 422: Enhancement: Bro average packet loss in sostat
     * Issue 398: Snort 2.9.5.5
     * Issue 395: Bro 2.2
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
