@@ -12,7 +12,7 @@ However, Network Security Monitoring, as a practice, is not a solution you can p
 Given the large number of analyst tools available in SecurityOnion by default there are multiple ways to see signatures that are producing too many alerts.  We'll take a look at identifying the alerts using Snorby, Squert, Sguil, and the command line.  
 
 ==From Snorby==
-You can access the Snorby interface from a web browser using the URL [https://IP_ADDRESS:3000] and supplying the username and password you set during the setup of SecurityOnion.  If you're using the new Security Onion 12.04, it would be [https://IP_ADDRESS:444].
+You can access the Snorby interface from a web browser using the URL [https://IP_ADDRESS:444] and supplying the email address and password you set during the setup of SecurityOnion.
 
 The following screenshots are from a test network where I have left the sensors untuned.  I've selected "This Year" to show all events in the last year and each screenshot below shows the output when Signatures, Sources, and Destinations are selected.
 
@@ -181,8 +181,7 @@ In a Server/Slave Security Onion environment, you only need to change the config
 As mentioned before, take care in disabling signatures as it can be likely that a more appropriate response is warranted.  
   # Edit the disablesid.conf configuration file:
      {{{
-     sudo vi /etc/nsm/pulledpork/disablesid.conf #Security Onion 12.04
-     sudo vi /etc/pulledpork/disablesid.conf #Security Onion 10.04
+     sudo vi /etc/nsm/pulledpork/disablesid.conf
      }}}
      You can also access the disablesid.conf file by clicking Applications->IDS Rules->Disable Downloaded Rules.  You will need to provide your password.
 
@@ -193,13 +192,11 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      }}}
   # Run the rule update on the server:
      {{{
-     sudo /usr/bin/rule-update #Security Onion 12.04
-     sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
+     sudo /usr/bin/rule-update
      }}}
   # Run the rule update on the slave machines:
      {{{
-     sudo /usr/bin/rule-update #Security Onion 12.04
-     sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
+     sudo /usr/bin/rule-update
      }}}
 
 
@@ -238,21 +235,19 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
    }}}
    # Run a rule update:
    {{{
-   sudo /usr/bin/rule-update #Security Onion 12.04
-   sudo /usr/local/bin/pulledpork_update.sh #Security Onion 10.04
+   sudo /usr/bin/rule-update
    }}}
    
 
 ==modifysid.conf==
 Another option is to use PulledPork's modifysid.conf to do the above.  There are several examples in the modifysid.conf file, so we won't repeat them here.  Edit the modifysid.conf configuration file:
      {{{
-     sudo vi /etc/nsm/pulledpork/modifysid.conf #Security Onion 12.04
-     sudo vi /etc/pulledpork/modifysid.conf #Security Onion 10.04
+     sudo vi /etc/nsm/pulledpork/modifysid.conf
      }}}
 
 
 ==Threshold==
-COMING SOON
+See /etc/nsm/rules/threshold.conf
 
 ==Suppressions==
 A suppression rule allows you to make some finer grained decisions about certain rules without the onus of rewriting them.  With this functionality we can suppress rules based on their signature, the source or destination address and even the IP or full CIDR network block.  This way, you still have the basic ruleset, but the situations in which they fire are altered.  It's important to note that with this functionality, care should be given to the suppressions being written to make sure they do not suppress legitimate alerts.
@@ -267,7 +262,7 @@ The format for a suppression is very straight forward.  Below is the basic forma
 
 suppress gen_id *gen-id*, sig_id *sid-id*, track *[by_src|by_dst]*, ip *IP/MASK-BITS*
 
-We can simply transplant the known information for the bold text above and place the following in our threshold.conf file (for SecurityOnion 10.04 based version, check the configuration file being loaded with snort or suricata, for the SecurityOnion 12.04 based version use /etc/nsm/rules/threshold.conf):
+We can simply transplant the known information for the bold text above and place the following in /etc/nsm/rules/threshold.conf:
 
 {{{
 suppress gen_id 1, sig_id 2101411, track by_src, ip 172.16.42.109
@@ -319,8 +314,7 @@ To set the sguild server to autoconfigure events, you need to edit the file /etc
    }}}
   # restart the sguil server
    {{{
-   sudo /usr/sbin/nsm_server_ps-restart #Security Onion 12.04
-   sudo /usr/local/sbin/nsm_server_ps-restart #Security Onion 10.04
+   sudo /usr/sbin/nsm_server_ps-restart
    }}}
 
 ==Why is pulledpork ignoring disabled rules in downloaded.rules==
@@ -340,7 +334,7 @@ If you try to disable the first two rules without disabling the third rule (whic
    1:2013410
    1:2013411
   }}}
-When you run sudo rule-update (12.04) or pulledpork_update.sh (10.04), watch the "Setting Flowbit State..." section and you can see that if you disable all three (or however many rules share that flowbit) that the "Enabled XX flowbits" line is decrimented and all three rules should then be disabled in your downloaded.rules.
+When you run sudo rule-update, watch the "Setting Flowbit State..." section and you can see that if you disable all three (or however many rules share that flowbit) that the "Enabled XX flowbits" line is decrimented and all three rules should then be disabled in your downloaded.rules.
 
 ==Sguil Days To Keep==
 You can configure Sguil's database retention by editing securityonion.conf and changing the DAYSTOKEEP setting (the default is 365 days):
