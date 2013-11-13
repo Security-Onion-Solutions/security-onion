@@ -35,7 +35,7 @@ Clicking on "View Rule" we get a window displaying the exact rule that generated
 ==From Squert==
 You can access the Squert interface from a web browser using the URL:  [https://IP_ADDRESS/squert/].  You will need to log in using the username and password you set for Sguil.
 
-The following screenshots are from the same test network with an untuned sensor.  In squert, the information we need is provided on the first page.  We can see the top signatures, top sources, and top destionations.  Again we see that we have one signature generating too many alerts and the same pair of IP Addresses.
+The following screenshots are from the same test network with an untuned sensor.  In squert, the information we need is provided on the first page.  We can see the top signatures, top sources, and top destinations.  Again we see that we have one signature generating too many alerts and the same pair of IP Addresses.
 
 [http://security-onion.googlecode.com/svn/wiki/images/managing-rules/securityonion-squert-01a.png]
 
