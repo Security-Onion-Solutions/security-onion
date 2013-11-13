@@ -3,16 +3,16 @@ Author: Scott Runnels
 Date: 2012/01/18
 
 =Overview=
-SecurityOnion generates a lot of valuable information for you the second you plug it into a TAP or SPAN port.  Between Bro logs, session data from prads, and full packet capture from netsniff-ng, you have, in a very short amount of time, enough information to begin making identifying areas of interest and making positive changes to your security stance.
+Security Onion generates a lot of valuable information for you the second you plug it into a TAP or SPAN port.  Between Bro logs, session data from prads, and full packet capture from netsniff-ng, you have, in a very short amount of time, enough information to begin making identifying areas of interest and making positive changes to your security stance.
 
 However, Network Security Monitoring, as a practice, is not a solution you can plug into your network, make sure you see blinking lights and tell people you are "secure."  It requires active intervention from an analyst to qualify the quantity of information presented.  One of those regular interventions is to ensure that you are tuning properly and proactively attempting to reach an acceptable level of signal to noise.
   
 
 =Identifying overly active signature=
-Given the large number of analyst tools available in SecurityOnion by default there are multiple ways to see signatures that are producing too many alerts.  We'll take a look at identifying the alerts using Snorby, Squert, Sguil, and the command line.  
+Given the large number of analyst tools available in Security Onion by default there are multiple ways to see signatures that are producing too many alerts.  We'll take a look at identifying the alerts using Snorby, Squert, Sguil, and the command line.  
 
 ==From Snorby==
-You can access the Snorby interface from a web browser using the URL [https://IP_ADDRESS:444] and supplying the email address and password you set during the setup of SecurityOnion.
+You can access the Snorby interface from a web browser using the URL [https://IP_ADDRESS:444] and supplying the email address and password you set during the setup of Security Onion.
 
 The following screenshots are from a test network where I have left the sensors untuned.  I've selected "This Year" to show all events in the last year and each screenshot below shows the output when Signatures, Sources, and Destinations are selected.
 
