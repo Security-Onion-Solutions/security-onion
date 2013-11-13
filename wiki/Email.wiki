@@ -6,23 +6,17 @@ This page describes how to configure email for alerting and reporting.  Applicat
 = How do I configure Snorby to send emails? =
 Modify Snorby's mail_config.rb file on the master server as needed for your mail server:
 {{{
-# Security Onion 12.04
 /opt/snorby/config/initializers/mail_config.rb
 
-# Security Onion 10.04
-/usr/local/share/snorby/config/initializers/mail_config.rb
 }}}
 Then restart the Snorby delayed_job process:
 {{{
 sudo pkill -f delayed_job
 
-# Security Onion 12.04
 sudo su www-data -c "cd /opt/snorby; bundle exec rake snorby:update RAILS_ENV=production"
 
-# Security Onion 10.04
-sudo su www-data -c "cd /usr/local/share/snorby; bundle exec rake snorby:update RAILS_ENV=production"
 }}}
-You can also modify snorby_config.yml (Security Onion 12.04 - /opt/snorby/config/snorby_config.yml | Security Onion 10.04 - /usr/local/share/snorby/config/snorby_config.yml) and change the "domain" setting in the Production section to be the FQDN or IP address of your Snorby server.  However, the resulting link in the email will still be incorrect since it will be http instead of https and it will be missing the port 3000 designation.
+You can also modify /opt/snorby/config/snorby_config.yml and change the "domain" setting in the Production section to be the FQDN or IP address of your Snorby server.  However, the resulting link in the email will still be incorrect since it will be http instead of https and it will be missing the port 3000 designation.
 
 = How do I configure Sguil to send alerts via email?<br> =
 Modify /etc/nsm/securityonion/sguild.email (on the master server) as needed and restart sguild:
@@ -49,11 +43,7 @@ Modify /var/ossec/etc/ossec.conf as follows:
 }}}
 Then restart OSSEC:
 {{{
-# Security Onion 12.04
 sudo service ossec-hids-server restart
-
-# Security Onion 10.04
-sudo service ossec restart
 }}}
 
 = How do I configure the OS itself to send emails? =
@@ -85,7 +75,7 @@ EMAIL=YourUsername@YourDomain.com
 }}}
 
 = How do I configure Bro to send emails? =
-Edit broctl.cfg (Security Onion 12.04 - /opt/bro/etc/broctl.cfg | Security Onion 10.04 - /usr/local/etc/broctl.cfg) and set the following:
+Edit /opt/bro/etc/broctl.cfg and set the following:
 {{{
 MailTo = YourUsername@YourDomain.com
 sendmail = /usr/sbin/sendmail
@@ -100,7 +90,7 @@ You should then start receiving hourly connection summary emails.  If you don't 
 tracesummary=
 }}}
 
-You may want to receive emails for Bro notices.  To do that, uncomment the following line in local.bro (Security Onion 12.04 - /opt/bro/share/bro/site/local.bro | Security Onion 10.04 - /usr/local/share/bro/site/local.bro) and update/restart Bro as shown above:
+You may want to receive emails for Bro notices.  To do that, uncomment the following line in /opt/bro/share/bro/site/local.bro and update/restart Bro as shown above:
 {{{
 # redef Notice::policy += { [$action = Notice::ACTION_ALARM, $priority = 0] };
 }}}
