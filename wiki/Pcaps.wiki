@@ -38,4 +38,4 @@ Security Onion 12.04 comes with several pcap samples in /opt/samples.
 
 = tcpreplay =
 You can use tcpreplay to replay any of these pcaps on your Security Onion sensor.  For example, please see 
-[http://securityonion.blogspot.com/2011/01/introduction-to-sguil-and-squert-part-3.html here] for a quick, easy use-case and what you should see in the Sguil console.
+[http://blog.securityonion.net/2011/01/introduction-to-sguil-and-squert-part-3.html here] for a quick, easy use-case and what you should see in the Sguil console.
