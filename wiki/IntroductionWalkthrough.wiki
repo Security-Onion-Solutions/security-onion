@@ -65,7 +65,7 @@ When setup is finished you'll see several informative prompts providing you valu
     * sancp.conf - configuration file used to define variables and configuration settings specific to SANCP.
     * prads.conf - configuration file used to define variables and configuration settings specific to PRADS.
   * "If you have any questions or problems, please visit our website where you can find the following links: FAQ, Wiki, Mailing Lists, IRC channel and more!" - If you need help or assistance, it's not far away. The Security Onion Mailing List is the most efficient means of getting community support or help if you experience problems or have questions.
-    * Security Onion - http://securityonion.blogspot.com/
+    * Security Onion - http://blog.securityonion.net/
     * Security Onion Google Code Project - http://code.google.com/p/security-onion/
     * FAQ - http://code.google.com/p/security-onion/wiki/FAQ
     * Wiki - http://code.google.com/p/security-onion/w/list
