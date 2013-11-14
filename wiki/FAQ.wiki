@@ -235,7 +235,7 @@ A few options:
 
 = Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically? =
 All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
-<a href="http://securityonion.blogspot.com/2012/03/security-onion-20120321-now-available.html">http://securityonion.blogspot.com/2012/03/security-onion-20120321-now-available.html</a>
+<a href="http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html">http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html</a>
 
 = I've forgotten my Snorby password.  How do I reset it? =
 First, open the Rails console:
@@ -314,6 +314,9 @@ sudo reboot
 }}}
 For more info, please see:
 https://groups.google.com/d/topic/snorby/te4R1E6-VH4/discussion
+
+We now delete the pid file at boot by default, so you should just be able to reboot to resolve this issue:
+http://blog.securityonion.net/2013/11/new-snort-nsm-and-sostat-packages.html
 
 = How do I access Xplico with a hostname instead of IP address? =
 From Gianluca Costa:<br>
