@@ -39,7 +39,7 @@ sudo apt-get update && sudo apt-get install securityonion-sostat
 }}}
 
 For more information, please see:
-<a href="http://securityonion.blogspot.com/2013/08/new-securityonion-packages.html">http://securityonion.blogspot.com/2013/08/new-securityonion-packages.html</a>
+<a href="http://blog.securityonion.net/2013/08/new-securityonion-packages.html">http://blog.securityonion.net/2013/08/new-securityonion-packages.html</a>
 
 == Standard Ubuntu package management tools ==
  
