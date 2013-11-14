@@ -27,7 +27,7 @@ sudo sostat
 
 On 2013/10/12, we released sostat-redacted:
 
-http://securityonion.blogspot.com/2013/10/new-securityonion-sostat-package.html
+http://blog.securityonion.net/2013/10/new-securityonion-sostat-package.html
 
 {{{
 sudo sostat-redacted
