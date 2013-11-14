@@ -9,10 +9,10 @@ Bro will automatically email you when it stops seeing traffic on an interface.  
 
 = OSSEC and ifconfig =
 (Background):
-http://securityonion.blogspot.com/2011/11/how-do-i-receive-email-when-my-sensor.html
+http://blog.securityonion.net/2011/11/how-do-i-receive-email-when-my-sensor.html
 
 (Final, robust solution):
-http://securityonion.blogspot.com/2011/11/follow-up-on-ossec-alerts-for-packet.html
+http://blog.securityonion.net/2011/11/follow-up-on-ossec-alerts-for-packet.html
 
 = Script to check for lack of IDS alerts =
 Here's another option contributed by Jerry Shenk:
