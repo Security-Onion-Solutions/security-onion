@@ -125,6 +125,7 @@ Please note that this is all subject to change!
     * Issue 416: Increase default MySQL open-files-limit
     * Issue 287: Update Sguil for improved error handling
     * Issue 390: PulledPork 0.7.0 or higher
+    * Issue 425: Pulledpork should request ET rules using proper Suricata version
     * Issue 406: sguil-db-purge needs to purge history table as well
     * Issue 412: OSSEC 2.7.1 or higher
     * Issue 294: Barnyard2-1.13
