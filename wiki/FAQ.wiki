@@ -124,13 +124,14 @@ sudo reboot
 = What do I need to modify in order to have the log files stored on a different mount point? =
 
 There are two ways to do this:<br>
-- Mount a separate drive to /nsm.  This can be done in the Ubuntu installer or after installation is complete.<br>
+- Mount a separate drive to /nsm.  This can be done in the Ubuntu installer, or after installation is complete but before running Setup.<br>
 OR<br>
 - Make /nsm a symlink to the new logging location.  If you do this, you'll need to do the following to avoid AppArmor issues:<br>
- - go to /etc/apparmor.d<br>
- - edit usr.sbin.mysqld, copy the nsm line, and change /nsm to the new location<br>
- - edit usr.sbin.tcpdump, copy the nsm line, and change /nsm to the new location<br>
- - service apparmor restart<br>
+ - sudo service nsm stop<br>
+ - go to /etc/apparmor.d/local/<br>
+ - edit usr.sbin.mysqld, copy the /nsm line, and change /nsm to the new location<br>
+ - edit usr.sbin.tcpdump, copy the /nsm line, and change /nsm to the new location<br>
+ - sudo service apparmor restart<br>
 
 = How do I stop monitoring an interface? =
 Execute the following command, replacing HOSTNAME-INTERFACE with the name of the sensor:
