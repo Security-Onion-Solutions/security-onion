@@ -132,6 +132,7 @@ OR<br>
  - edit usr.sbin.mysqld, copy the /nsm line, and change /nsm to the new location<br>
  - edit usr.sbin.tcpdump, copy the /nsm line, and change /nsm to the new location<br>
  - sudo service apparmor restart<br>
+ - sudo service nsm start
 
 = How do I stop monitoring an interface? =
 Execute the following command, replacing HOSTNAME-INTERFACE with the name of the sensor:
