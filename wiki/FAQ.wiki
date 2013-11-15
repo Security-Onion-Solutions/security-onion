@@ -139,7 +139,7 @@ sudo unmount /mnt
 # Rename the existing /nsm
 sudo mv /nsm /nsm-backup
 # Update /etc/fstab to mount the new drive to /nsm
-sudo vim /etc/fstab
+sudo vi /etc/fstab
 # Mount the new /nsm
 sudo mount /nsm
 # Start all services
@@ -157,8 +157,11 @@ sudo mv /nsm /nsm-backup
 # Make /nsm a symlink to the new logging location
 sudo ln -s /nsm /mnt/nsm
 # go to /etc/apparmor.d/local/
+cd /etc/apparmor.d/local/
 # edit usr.sbin.mysqld, copy the /nsm line, and change /nsm to the new location
+sudo vi usr.sbin.mysqld
 # edit usr.sbin.tcpdump, copy the /nsm line, and change /nsm to the new location
+sudo vi usr.sbin.tcpdump
 # Restart apparmor
 sudo service apparmor restart
 # Start all services
