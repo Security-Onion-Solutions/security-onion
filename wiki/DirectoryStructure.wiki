@@ -5,11 +5,11 @@
 == /nsm ==
 Backup, Bro, sensor (if configured as sensor), and server (if configured as server) data.
 
-== /nsm/backup ==
-Backup of Security Onion update scripts/files.
-
 == /nsm/bro ==
 Bro IDS logs.
+
+== /nsm/elsa ==
+ELSA data.
 
 == /nsm/sensor_data ==
 Sensor data including argus, IDS alerts, and full pcap organized by sensor name ($HOSTNAME-$INTERFACE).
