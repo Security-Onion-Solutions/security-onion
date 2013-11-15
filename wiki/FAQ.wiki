@@ -126,26 +126,42 @@ sudo reboot
 Before doing this in production, make sure you practice this on a non-production system!
 
 There are two ways to do this:
-  * Mount a separate drive to /nsm.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in /nsm to the new drive using something like this:
+  * FIRST METHOD.  Mount a separate drive to /nsm.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in /nsm to the new drive using something like this:
 {{{
+# Stop all services
 sudo service nsm stop
+# Mount the new drive to a temporary location in the filesystem
 sudo mount /dev/sdb2 /mnt
+# Copy the existing data from /nsm to the temporary location
 sudo cp -av /nsm/* /mnt/
+# Unmount the new drive from the temporary location
 sudo unmount /mnt
+# Rename the existing /nsm
 sudo mv /nsm /nsm-backup
-sudo vim /etc/fstab # make changes here to mount /dev/sdb2 as /nsm
+# Update /etc/fstab to mount the new drive to /nsm
+sudo vim /etc/fstab
+# Mount the new /nsm
 sudo mount /nsm
+# Start all services
 sudo service nsm start
 }}}
 OR<br>
-  * Make /nsm a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
+  * SECOND METHOD.  Make /nsm a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
 {{{
+# Stop all services
 sudo service nsm stop
+# Copy existing data from /nsm to new mount point
+sudo cp -av /nsm/* /mnt/nsm
+# Rename existing /nsm
+sudo mv /nsm /nsm-backup
 # Make /nsm a symlink to the new logging location
+sudo ln -s /nsm /mnt/nsm
 # go to /etc/apparmor.d/local/
 # edit usr.sbin.mysqld, copy the /nsm line, and change /nsm to the new location
 # edit usr.sbin.tcpdump, copy the /nsm line, and change /nsm to the new location
+# Restart apparmor
 sudo service apparmor restart
+# Start all services
 sudo service nsm start
 }}}
 = How do I stop monitoring an interface? =
