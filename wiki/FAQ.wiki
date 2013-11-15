@@ -126,7 +126,7 @@ sudo reboot
 Before doing this in production, make sure you practice this on a non-production system!
 
 There are two ways to do this:
-  * FIRST METHOD.  Mount a separate drive to /nsm.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in /nsm to the new drive using something like this:
+  * FIRST METHOD - Mount a separate drive to /nsm.  This can be done in the Ubuntu installer, or after installation is complete. If doing this after running Setup, then you'll need to copy the existing data in /nsm to the new drive using something like this:
 {{{
 # Stop all services
 sudo service nsm stop
@@ -146,7 +146,7 @@ sudo mount /nsm
 sudo service nsm start
 }}}
 OR<br>
-  * SECOND METHOD.  Make /nsm a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
+  * SECOND METHOD - Make /nsm a symlink to the new logging location.  If you do this, you'll need to do something like the following to avoid AppArmor issues:
 {{{
 # Stop all services
 sudo service nsm stop
