@@ -113,7 +113,7 @@ Please note that this is all subject to change!
     * Issue 420: Setup should no longer disable Bro PF_RING since it should work in 2.2
     * Issue 396: Setup should give the option of enabling file extraction in Bro
     * Issue 415: Setup should ask user about DAYSTOKEEP and DAYSTOREPAIR
-    * Issue 362: speed improvements for sguil-db-purge
+    * Issue 362: sguil-db-purge - add DAYSTOREPAIR option
     * Issue 346: New ELSA packages
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
