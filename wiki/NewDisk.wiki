@@ -1,4 +1,4 @@
-If you have /nsm filling your root partition and want to add a new disk dedicated to /nsm, here are a few options.
+#summary Adding a new disk for /nsm
 
 Before doing this in production, make sure you practice this on a non-production system!
 
