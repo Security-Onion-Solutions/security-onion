@@ -1,5 +1,7 @@
 #summary Security Onion 12.04 RC1
 
+*NOTE!* We're no longer in Beta/RC.  Please see the [Installation Installation page].
+
 = Introduction =
 
 Security Onion 12.04 RC1 is now available and ready for testing!  Thanks to everybody who has helped get us this far!
