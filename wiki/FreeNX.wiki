@@ -76,14 +76,14 @@ At this point the Security Onion server is ready to go with FreeNX but your desk
   # Now we need to head back over to the FreeNX server to create the /opt/xstart.sh script referenced in step 4. This will fix the second issue mentioned at the beginning of this blog post regarding the XFCE v.s Xubuntu UI icons. NOTE: Step 10 in the FreeNX Server install left you sitting at a $ prompt in your home directory on the FreeNX server.
   # Create the following script that will set up all of the correct environment variables and execute the proper environment when you log in with the NXClient. Use your favorite editor or echo them into a file.
 
-Security Onion 10.04:
+Security Onion 10.04 (you shouldn't be using this anymore):
 {{{
     #!/bin/sh
     export XDG_CONFIG_DIRS='/etc/xdg/xdg-xubuntu:/etc/xdg'
     exec /usr/share/xubuntu/session.sh
 }}}
 
-Security Onion 12.04 BETA:
+Security Onion 12.04:
 {{{
     #!/bin/sh
     export XDG_CONFIG_DIRS='/etc/xdg/xdg-xubuntu:/etc/xdg'
