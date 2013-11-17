@@ -109,6 +109,7 @@ Please note that this is all subject to change!
     * Issue 398: Snort 2.9.5.5
     * Issue 423: Bug in broctl netstats percentage calculation
     * Issue 395: Bro 2.2
+    * Issue 426: Update http_agent for Bro 2.2
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
     * Issue 420: Setup should no longer disable Bro PF_RING since it should work in 2.2
     * Issue 424: Setup should write out changes to /etc/network/interfaces and then prompt for reboot
