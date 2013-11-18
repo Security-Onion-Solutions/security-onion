@@ -136,3 +136,4 @@ Please note that this is all subject to change!
     * Issue 413: Extend CapMe to pull pcap file
   * January 2014
     * Issue 418: netsniff-ng 0.58 or higher
+    * Issue 427: Snort 2.9.5.6
