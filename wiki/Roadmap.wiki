@@ -123,6 +123,7 @@ Please note that this is all subject to change!
     * Issue 385: Additional log parsers (non-Bro) for ELSA
   * December 2013
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
+    * Issue 429: nsm_server_clear needs latest Squert database updates
     * Issue 350: Modify Sguil client to allow pivoting directly to ELSA query
     * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
     * Issue 416: Increase default MySQL open-files-limit
