@@ -141,3 +141,4 @@ Please note that this is all subject to change!
   * January 2014
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 427: Snort 2.9.5.6
+    * Issue 432: 12.04.4 ISO image
