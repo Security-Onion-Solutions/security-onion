@@ -146,7 +146,7 @@ Please note that this is all subject to change!
     * Issue 385: Additional log parsers (non-Bro) for ELSA
     * Issue 438: /etc/cron.d/elsa updates
     * Issue 435: PF_RING min_num_slots
-    * Issue 436: sosetup-network: minor modifications for consistency and enable BPF JIT compiler
+    * Issue 436: sosetup-network: replace ifconfig with iproute2's ip tool
     * Issue 437: sostat: more detailed interface stats via ip(8)
     * Issue 439: /etc/cron.d/sensor-newday updates
     * Issue 440: BPF JIT addition to /etc/sysctl.d/10-securityonion.conf
