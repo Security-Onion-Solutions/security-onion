@@ -149,3 +149,4 @@ Please note that this is all subject to change!
     * Issue 436: sosetup-network: minor modifications for consistency and enable BPF JIT compiler
     * Issue 437: sostat: more detailed interface stats via ip(8)
     * Issue 439: /etc/cron.d/sensor-newday updates
+    * Issue 440: BPF JIT addition to /etc/sysctl.d/10-securityonion.conf
