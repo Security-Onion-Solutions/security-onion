@@ -146,3 +146,4 @@ Please note that this is all subject to change!
     * Issue 385: Additional log parsers (non-Bro) for ELSA
     * Issue 438: /etc/cron.d/elsa updates
     * Issue 435: PF_RING min_num_slots
+    * Issue 439: /etc/cron.d/sensor-newday updates
