@@ -125,9 +125,9 @@ Please note that this is all subject to change!
     * Issue 430: Update wiki for Bro 2.2
     * Issue 438: /etc/cron.d/elsa updates
     * Issue 442: securityonion-elsa-extras - fix BRO_NOTICE parsers
-    * Issue 413: Extend CapMe to pull pcap file
     * Issue 436: sosetup-network: replace ifconfig with iproute2's ip tool
     * Issue 441: sosetup-network shouldn't stop network-manager
+    * Issue 413: Extend CapMe to pull pcap file
     * Issue 437: sostat: more detailed interface stats via ip(8)
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
