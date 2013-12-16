@@ -124,7 +124,8 @@ Please note that this is all subject to change!
     * Issue 434: nsm_sensor_ps-start shouldn't call sensor_cleandisk anymore
     * Issue 430: Update wiki for Bro 2.2
     * Issue 438: /etc/cron.d/elsa updates
-    * Issue 442: securityonion-elsa-extras - fix BRO_NOTICE parsers
+    * Issue 442: securityonion-elsa-extras: fix BRO_NOTICE parsers
+    * Issue 444: securityonion-elsa-extras: wrong mysql directory in /etc/elsa_node.conf
     * Issue 436: sosetup-network: replace ifconfig with iproute2's ip tool
     * Issue 441: sosetup-network shouldn't stop network-manager
     * Issue 413: Extend CapMe to pull pcap file
