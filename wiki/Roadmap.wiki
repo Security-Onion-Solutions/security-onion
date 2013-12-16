@@ -145,6 +145,7 @@ Please note that this is all subject to change!
   * January 2014
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 427: Snort 2.9.5.6
+    * Issue 443: Suricata 1.4.7 or higher
     * Issue 432: 12.04.4 ISO image
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
