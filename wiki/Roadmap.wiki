@@ -154,3 +154,4 @@ Please note that this is all subject to change!
     * Issue 435: PF_RING min_num_slots
     * Issue 439: /etc/cron.d/sensor-newday updates
     * Issue 440: BPF JIT addition to /etc/sysctl.d/10-securityonion.conf
+    * Issue 445: Bro 2.2.1 or higher
