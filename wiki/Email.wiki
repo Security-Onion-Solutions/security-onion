@@ -90,20 +90,15 @@ You should then start receiving hourly connection summary emails.  If you don't 
 tracesummary=
 }}}
 
-You may want to receive emails for Bro notices.  To do that, uncomment the following line in /opt/bro/share/bro/site/local.bro and update/restart Bro as shown above:
+You may want to receive emails for Bro notices.  To do that, add the following to /opt/bro/share/bro/site/local.bro and update/restart Bro as shown above:
 {{{
-# redef Notice::policy += { [$action = Notice::ACTION_ALARM, $priority = 0] };
+hook Notice::policy(n: Notice::Info)
+            {
+            add n$actions[Notice::ACTION_ALARM];
+            }
 }}}
-
-If that's too much email, you might want to comment out that line again and instead only email selected notices by placing the following at the *very bottom (after all the @load statements)* like this:
-{{{
-redef Notice::emailed_types += {
-       HTTP::Incorrect_File_Type,
-       HTTP::SQL_Injection_Victim,
-       SSH::Interesting_Hostname_Login,
-       HTTP::Malware_Hash_Registry_Match,
-};
-}}}
+Also see:
+http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/007185.html
 
 = How can I get an email alert when my sensor stops seeing traffic? =
 If you configured Bro as shown above, it should automatically do this for you.  More options can be found on the [SensorStopsSeeingTraffic] page.
