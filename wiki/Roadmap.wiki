@@ -131,6 +131,7 @@ Please note that this is all subject to change!
     * Issue 413: Extend CapMe to pull pcap file
     * Issue 437: sostat: more detailed interface stats via ip(8)
     * Issue 429: nsm_server_clear needs latest Squert database updates
+    * Issue 446: Setup should delete /var/lib/sphinxsearch/data/binlog*
   * January 2014
     * Issue 427: Snort 2.9.5.6
     * Issue 443: Suricata 1.4.7 or higher
