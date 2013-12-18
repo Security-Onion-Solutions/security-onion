@@ -68,7 +68,7 @@ sudo cp /etc/localtime /var/ossec/etc/localtime
 sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
 }}}
-Please note that, although we require the OS timezone to be UTC, our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.
+Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone, but be aware that this may cause issues when pivoting to CapME to access full packet capture since it's expecting UTC timestamps.
 
 = Why are the timestamps in ELSA not in UTC? =
 
