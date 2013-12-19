@@ -51,7 +51,7 @@ http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.ht
   * If you think your machine does support 64-bit, but you're still having problems with our 64-bit ISO image, try downloading the Ubuntu 12.04 64-bit ISO image and seeing if it runs.  If it doesn't, then you should verify your 64-bit compatibility.
 
 = Why does Security Onion use UTC? =
-Security Onion uses UTC because that is the recommended/required setting for Sguil:<br>
+Security Onion uses UTC/GMT because that is the recommended/required setting for Sguil:<br>
 <a href="http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html">http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html</a><br>
 <a href="https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem">https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem</a><br>
 <br>
@@ -68,13 +68,13 @@ sudo cp /etc/localtime /var/ossec/etc/localtime
 sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
 }}}
-Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone, but be aware that this may cause issues when pivoting to CapME to access full packet capture since it's expecting UTC timestamps.
+Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  However, be aware that pivoting from Snorby to CapME to access full packet capture won't work correctly by default since CapMe is expecting UTC timestamps.  You can avoid this in Snorby after clicking "Packet Capture Options" and "Custom" by changing the End Time by the opposite of your UTC offset.  For example, if you're in Eastern Time (GMT-05:00), then add 5 hours to the End Time.  A similar issue occurs in the current version of Squert, but it should be resolved in the next version.
 
 = Why are the timestamps in ELSA not in UTC? =
 
-By default, ELSA will display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC by configuring the use_utc setting in your ELSA Preferences panel.
+By default, ELSA will display timestamps in the timezone of your local browser.  You can force ELSA to always display timestamps in UTC/GMT by configuring the use_utc setting in your ELSA Preferences panel.
 
-Known issue in ELSA 713:  If you access ELSA from a browser whose local timezone is not UTC *and* you haven't enabled the use_utc setting in your ELSA Preferences, then each search rolls the From time back the same number of hours as the UTC offset.  For example, suppose you login to ELSA and notice that the From defaults to 2013-05-05 18:01:50. When you then perform a search, the From changes to 2013-05-05 14:01:50.
+Known issue in ELSA 713 (old ELSA package):  If you access ELSA from a browser whose local timezone is not UTC *and* you haven't enabled the use_utc setting in your ELSA Preferences, then each search rolls the From time back the same number of hours as the UTC offset.  For example, suppose you login to ELSA and notice that the From defaults to 2013-05-05 18:01:50. When you then perform a search, the From changes to 2013-05-05 14:01:50.
 
 The workaround is to enable the use_utc setting in your ELSA
 Preferences (which is probably a good idea anyway to ensure that your
