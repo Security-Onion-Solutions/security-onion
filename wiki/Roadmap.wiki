@@ -157,4 +157,5 @@ Please note that this is all subject to change!
     * Issue 331: securityonion-elsa should depend on mysql
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
     * Issue 385: Additional log parsers (non-Bro) for ELSA
+    * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
     * Issue 445: Bro 2.2.1 or higher
