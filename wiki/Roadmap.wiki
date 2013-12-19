@@ -129,6 +129,7 @@ Please note that this is all subject to change!
     * Issue 436: sosetup-network: replace ifconfig with iproute2's ip tool
     * Issue 441: sosetup-network shouldn't stop network-manager
     * Issue 413: Extend CapMe to pull pcap file
+    * Issue 449: CapMe: add timeout:0 to ELSA query
     * Issue 437: sostat: more detailed interface stats via ip(8)
     * Issue 429: nsm_server_clear needs latest Squert database updates
     * Issue 446: Setup should delete /var/lib/sphinxsearch/data/binlog`*`
