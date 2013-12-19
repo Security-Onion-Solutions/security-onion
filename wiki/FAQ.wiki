@@ -68,7 +68,7 @@ sudo cp /etc/localtime /var/ossec/etc/localtime
 sudo chown root:ossec /var/ossec/etc/localtime
 sudo service ossec restart
 }}}
-Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  However, be aware that there may be issues when pivoting to full packet capture from Squert (will be resolved in the next version) and Snorby.  Pivoting from Snorby to CapME to access full packet capture won't work correctly by default since CapMe is expecting UTC timestamps.  You can avoid this in Snorby after clicking "Packet Capture Options" and "Custom" by changing the End Time by the opposite of your UTC offset.  For example, if you're in Eastern Time (GMT-05:00), then add 5 hours to the End Time.
+Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.  However, be aware that there may be issues when pivoting to full packet capture from Squert (will be resolved in the next version) and Snorby.  Pivoting from Snorby to CapME to access full packet capture won't work correctly by default since CapMe is expecting UTC timestamps.  You can avoid this in Snorby after clicking "Packet Capture Options" and "Custom" by changing the End Time by the opposite of your UTC offset.  For example, if you're in Eastern Time (GMT-05:00), then add 5 hours to the End Time.
 
 = Why are the timestamps in ELSA not in UTC? =
 
