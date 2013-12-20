@@ -141,6 +141,7 @@ Please note that this is all subject to change!
     * Issue 443: Suricata 1.4.7 or higher
     * Issue 435: PF_RING min_num_slots
     * Issue 439: /etc/cron.d/sensor-newday updates
+    * Issue 453: /etc/cron.d/sensor-newday should restart autossh tunnel
     * Issue 440: BPF JIT addition to /etc/sysctl.d/10-securityonion.conf
     * Issue 432: 12.04.4 ISO image
   * February 2014
