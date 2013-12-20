@@ -36,7 +36,8 @@ sudo broctl install && sudo broctl start
 }}}
 
 = Bro 2.1 with multiple interfaces =
-Bro 2.1 is unable to monitor multiple interfaces with PF_RING.  This issue has been resolved in Bro 2.2.
+Bro 2.1 is unable to monitor multiple interfaces with PF_RING.  This issue has been resolved in Bro 2.2 and our Bro 2.2 packages were released on 12/10/2013:
+http://blog.securityonion.net/2013/12/bro-22-and-elsa-15-packages-now.html
 
 = Updating =
 Please see the [Upgrade Update] page for notes on updating the PF_RING kernel module.
