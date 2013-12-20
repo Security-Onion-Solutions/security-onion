@@ -16,7 +16,7 @@ If you want to change the number of PF_RING instances after running Setup, you c
 {{{
 sudo nsm_sensor_ps-stop
 }}}
-  * Edit {{{/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf}}} and change IDS_LB_PROCS to desired number of cores.
+  * Edit {{{/etc/nsm/$HOSTNAME-$INTERFACE/sensor.conf}}} and change the {{{IDS_LB_PROCS}}} variable to desired number of cores.
   * Start sensor processes:
 {{{
 sudo nsm_sensor_ps-start
@@ -29,9 +29,14 @@ suricata.yaml and then Suricata spins up the PF_RING instances itself.
 
 == Bro ==
 For Bro, you would do the following:
+
+  * Stop bro:
 {{{
 sudo broctl stop
-# edit /opt/bro/etc/node.cfg and change the lb_procs variable, then do:
+}}}
+  * Edit {{{/opt/bro/etc/node.cfg}}} and change the {{{lb_procs}}} variable to the desired number of cores.
+  * Start bro:
+{{{
 sudo broctl install && sudo broctl start
 }}}
 
