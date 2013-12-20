@@ -21,6 +21,10 @@ byobu-enable
 For more information about byobu, please see:
 https://help.ubuntu.com/community/Byobu
 
+== Distributed deployments ==
+
+Always update the master server first before updating sensors.
+
 == soup - Security Onion UPdate ==
 
 We recommend using the "soup" script to automatically install updates while avoiding the MySQL/PF_RING issues described below.
