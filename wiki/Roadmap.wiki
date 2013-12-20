@@ -135,6 +135,7 @@ Please note that this is all subject to change!
     * Issue 429: nsm_server_clear needs latest Squert database updates
     * Issue 451: nsm_sensor_clean should purge old files in /nsm/bro/extracted
     * Issue 446: Setup should delete /var/lib/sphinxsearch/data/binlog`*`
+    * Issue 452: Setup phase 2 should populate sniffing interfaces from /etc/network/interfaces
   * January 2014
     * Issue 427: Snort 2.9.5.6
     * Issue 443: Suricata 1.4.7 or higher
