@@ -28,21 +28,15 @@ If running Suricata, the script automatically copies $IDS_LB_PROCS into
 suricata.yaml and then Suricata spins up the PF_RING instances itself.
 
 == Bro ==
-For Bro, you would edit {{{/opt/bro/etc/node.cfg}}} and change the {{{lb_procs}}}
-variable, then do:
+For Bro, you would do the following:
 {{{
+sudo broctl stop
+# edit /opt/bro/etc/node.cfg and change the lb_procs variable, then do:
 sudo broctl install && sudo broctl start
 }}}
 
 = Bro 2.1 with multiple interfaces =
-An issue was recently discovered in Bro 2.1 when monitoring multiple interfaces with PF_RING that could result in traffic loss.  This issue is targeted for resolution in Bro 2.2.  In the meantime, if you're monitoring multiple interfaces with Bro, please disable Bro's PF_RING load balancing as follows:
-{{{
-sudo broctl stop
-sudo sed -i 's|^lb_method=pf_ring|#lb_method=pf_ring|g' /opt/bro/etc/node.cfg
-sudo sed -i 's|^lb_procs|#lb_procs|g' /opt/bro/etc/node.cfg
-sudo broctl install && sudo broctl start
-}}}
-For more information on the Bro issue, please see <a href="http://tracker.bro-ids.org/bro/ticket/943">Bro Ticket #943</a>.
+Bro 2.1 is unable to monitor multiple interfaces with PF_RING.  This issue has been resolved in Bro 2.2.
 
 = Updating =
 Please see the [Upgrade Update] page for notes on updating the PF_RING kernel module.
