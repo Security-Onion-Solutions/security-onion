@@ -134,6 +134,7 @@ Please note that this is all subject to change!
     * Issue 437: sostat: more detailed interface stats via ip(8)
     * Issue 429: nsm_server_clear needs latest Squert database updates
     * Issue 451: nsm_sensor_clean should purge old files in /nsm/bro/extracted
+    * Issue 454: Disabling PADS agent blocks PRADS and results in no SANCP records flowing
     * Issue 446: Setup should delete /var/lib/sphinxsearch/data/binlog`*`
     * Issue 452: Setup phase 2 should populate sniffing interfaces from /etc/network/interfaces
   * January 2014
