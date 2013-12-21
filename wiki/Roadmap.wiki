@@ -138,6 +138,8 @@ Please note that this is all subject to change!
     * Issue 446: Setup should delete /var/lib/sphinxsearch/data/binlog`*`
     * Issue 452: Setup phase 2 should populate sniffing interfaces from /etc/network/interfaces
   * January 2014
+    * Issue 455: securityonion-web-page: update hyperlink
+    * Issue 456: securityonion-web-page: add example ELSA queries
     * Issue 427: Snort 2.9.5.6
     * Issue 443: Suricata 1.4.7 or higher
     * Issue 435: PF_RING min_num_slots
