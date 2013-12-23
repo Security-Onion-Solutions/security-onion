@@ -134,6 +134,7 @@ Please note that this is all subject to change!
     * Issue 437: sostat: more detailed interface stats via ip(8)
     * Issue 457: sostat: add /proc/net/pf_ring/info
     * Issue 458: sostat: include pf_ring Slots
+    * Issue 459: sostat: netsniff-ng loss output incorrect when running BPF
     * Issue 429: nsm_server_clear needs latest Squert database updates
     * Issue 451: nsm_sensor_clean should purge old files in /nsm/bro/extracted
     * Issue 454: Disabling PADS agent blocks PRADS and results in no SANCP records flowing
