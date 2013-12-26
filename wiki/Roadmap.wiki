@@ -171,4 +171,5 @@ Please note that this is all subject to change!
     * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
     * Issue 460: Fix tunnel.log entry in syslog-ng.conf
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
+    * Issue 369: Arpwatch
     * Issue 445: Bro 2.2.1 or higher
