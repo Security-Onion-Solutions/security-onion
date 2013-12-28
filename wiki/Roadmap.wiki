@@ -141,6 +141,7 @@ Please note that this is all subject to change!
     * Issue 435: Setup should allow you to set PF_RING min_num_slots
     * Issue 446: Setup should delete /var/lib/sphinxsearch/data/binlog`*`
     * Issue 452: Setup phase 2 should populate sniffing interfaces from /etc/network/interfaces
+    * Issue 460: Fix tunnel.log entry in syslog-ng.conf
   * January 2014
     * Issue 455: securityonion-web-page: update hyperlink
     * Issue 456: securityonion-web-page: add example ELSA queries
@@ -169,7 +170,6 @@ Please note that this is all subject to change!
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
     * Issue 385: Additional log parsers (non-Bro) for ELSA
     * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
-    * Issue 460: Fix tunnel.log entry in syslog-ng.conf
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 369: Arpwatch
     * Issue 445: Bro 2.2.1 or higher
