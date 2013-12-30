@@ -132,24 +132,24 @@ Please note that this is all subject to change!
     * Issue 457: sostat: add /proc/net/pf_ring/info
     * Issue 458: sostat: include pf_ring Slots
     * Issue 459: sostat: netsniff-ng loss output incorrect when running BPF
-    * Issue 413: Extend CapMe to pull pcap file
-    * Issue 449: CapMe: add timeout:0 to ELSA query
-    * Issue 450: CapMe: add support for Snorby timezones
     * Issue 429: nsm_server_clear needs latest Squert database updates
     * Issue 451: nsm_sensor_clean should purge old files in /nsm/bro/extracted
     * Issue 454: Disabling PADS agent blocks PRADS and results in no SANCP records flowing
+    * Issue 439: /etc/cron.d/sensor-newday updates
+    * Issue 453: /etc/cron.d/sensor-newday should restart autossh tunnel
+    * Issue 440: BPF JIT addition to /etc/sysctl.d/10-securityonion.conf
     * Issue 435: Setup should allow you to set PF_RING min_num_slots
     * Issue 446: Setup should delete /var/lib/sphinxsearch/data/binlog`*`
     * Issue 452: Setup phase 2 should populate sniffing interfaces from /etc/network/interfaces
-    * Issue 460: Fix tunnel.log entry in syslog-ng.conf
   * January 2014
+    * Issue 413: Extend CapMe to pull pcap file
+    * Issue 449: CapMe: add timeout:0 to ELSA query
+    * Issue 450: CapMe: add support for Snorby timezones
+    * Issue 460: Fix tunnel.log entry in syslog-ng.conf
     * Issue 455: securityonion-web-page: update hyperlink
     * Issue 456: securityonion-web-page: add example ELSA queries
     * Issue 427: Snort 2.9.5.6
     * Issue 443: Suricata 1.4.7 or higher
-    * Issue 439: /etc/cron.d/sensor-newday updates
-    * Issue 453: /etc/cron.d/sensor-newday should restart autossh tunnel
-    * Issue 440: BPF JIT addition to /etc/sysctl.d/10-securityonion.conf
     * Issue 432: 12.04.4 ISO image
   * February 2014
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
