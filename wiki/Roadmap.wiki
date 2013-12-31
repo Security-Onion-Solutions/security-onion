@@ -173,4 +173,4 @@ Please note that this is all subject to change!
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 369: Arpwatch
     * Issue 445: Bro 2.2.1 or higher
-    * Issue 461: sostat: check for /proc/net/pf_ring/*-*
+    * Issue 461: sostat: check for /proc/net/pf_ring/`*`-`*`
