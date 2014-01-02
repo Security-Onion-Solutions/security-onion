@@ -1,5 +1,4 @@
 #summary Updates released in 2013
-Please note that this is all subject to change!
   * January 2013
     * Issue 285: Fix pkill bug in Setup script
     * Issue 286: Update Snorby to 2.5.4
