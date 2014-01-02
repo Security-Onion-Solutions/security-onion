@@ -24,6 +24,7 @@ Please note that this is all subject to change!
     * Issue 412: OSSEC 2.7.1 or higher
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
+    * Issue 462: Snort 2.9.6.0
   * March 2014
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 331: securityonion-elsa should depend on mysql
