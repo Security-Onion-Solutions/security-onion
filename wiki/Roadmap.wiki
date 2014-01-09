@@ -9,6 +9,7 @@ Please note that this is all subject to change!
     * Issue 456: securityonion-web-page: add example ELSA queries
     * Issue 427: Snort 2.9.5.6
     * Issue 443: Suricata 1.4.7
+    * Issue 466: securityonion-web-page: change elsa/menu.php to fix Tunnel query
     * Issue 461: sostat: improve pf_ring output
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 463: Setup should prompt for ELSA log_size_limit
