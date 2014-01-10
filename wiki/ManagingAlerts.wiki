@@ -183,7 +183,6 @@ As mentioned before, take care in disabling signatures as it can be likely that 
      {{{
      sudo vi /etc/nsm/pulledpork/disablesid.conf
      }}}
-     You can also access the disablesid.conf file by clicking Applications->IDS Rules->Disable Downloaded Rules.  You will need to provide your password.
 
   # Append the signature you wish to disable in the format gid:sid.  The generator ID is most likely going to be a "1" in most cases.  You can check the generator ID by checking the exact signature.  If a gid is not listed, it is assumed to be "1".
      {{{
@@ -207,7 +206,6 @@ In Security Onion, locally created rules are stored in /etc/nsm/rules/local.rule
      {{{
      sudo vi /etc/nsm/rules/local.rules
      }}}
-     You can also access the local.rules file by clicking on Applications->IDS Rules->Add Local Rules.  You will need to provide your password.
    # Snort configuration files are in the following format
      Snort rules are incredibly flexible, this is a bird's eye view of the rule format
      {{{
