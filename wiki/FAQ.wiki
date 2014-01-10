@@ -50,8 +50,8 @@ http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.ht
   * Does your machine support 64-bit?  If not, then you'll need to obtain a 64-bit machine to use our 64-bit ISO image (recommended) or use your 32-bit machine by installing Ubuntu 12.04 32-bit and adding our PPA and packages as described on the [Installation] page.
   * If you think your machine does support 64-bit, but you're still having problems with our 64-bit ISO image, try downloading the Ubuntu 12.04 64-bit ISO image and seeing if it runs.  If it doesn't, then you should verify your 64-bit compatibility.
   * If the ISO image boots, but the Live Desktop doesn't appear properly, it may be an issue with your video card.  Try the nomodeset option as described here:<br>
-https://groups.google.com/d/topic/security-onion/UKE5-dqybQ4/discussion
-https://groups.google.com/d/topic/security-onion/51JZWXZfBho/discussion
+https://groups.google.com/d/topic/security-onion/UKE5-dqybQ4/discussion<br>
+https://groups.google.com/d/topic/security-onion/51JZWXZfBho/discussion<br>
 If you have an nvidia graphics chipset, you can do the following after installation:
 {{{
 sudo apt-get remove nvidia-173
