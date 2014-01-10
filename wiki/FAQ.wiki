@@ -52,7 +52,8 @@ http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.ht
   * If the ISO image boots, but the Live Desktop doesn't appear properly, it may be an issue with your video card.  Try the nomodeset option as described here:<br>
 https://groups.google.com/d/topic/security-onion/UKE5-dqybQ4/discussion<br>
 https://groups.google.com/d/topic/security-onion/51JZWXZfBho/discussion<br>
-If you have an nvidia graphics chipset, you can do the following after installation:
+<br>
+If that works but you are left with low resolution and you have an nvidia graphics chipset, you can do the following AFTER installation:
 {{{
 sudo apt-get remove nvidia-173
 sudo apt-get remove nvidia-96
