@@ -8,6 +8,7 @@ Please note that this is all subject to change!
     * Issue 455: securityonion-web-page: update hyperlink
     * Issue 456: securityonion-web-page: add example ELSA queries
     * Issue 466: securityonion-web-page: change elsa/menu.php to fix Tunnel query
+    * Issue 469: securityonion-web-page: add SSH queries for country and status
     * Issue 461: sostat: improve pf_ring output
     * Issue 427: Snort 2.9.5.6
     * Issue 443: Suricata 1.4.7
