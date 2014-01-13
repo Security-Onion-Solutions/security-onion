@@ -16,7 +16,7 @@
   # Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
   # Follow the prompts in the Xubuntu installer.  If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  Reboot into your new installation.  Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # [Upgrade Install updates.]
+  # [Upgrade Install updates and reboot.]
   # Double-click the Setup icon.  The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
   # After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.
   # Once you've completed the Setup wizard, use the Desktop icons to login to Sguil, Squert, Snorby, or ELSA.
@@ -27,11 +27,7 @@
   # Follow the prompts in the installer.  If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  Reboot into your new installation.
   # Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # [Upgrade Install updates.]
-  # Reboot:
-{{{
-sudo reboot
-}}}
+  # Install updates and reboot.
   # Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
   # Configure MySQL not to prompt for root password:<br>
 {{{
@@ -65,11 +61,7 @@ sudo sosetup
    * Sensors store full packet captures at /nsm/sensor_data/, so you may want to put /nsm on a dedicated partition/disk and assign as much disk space as possible (1TB or more). For larger volumes you might also consider using XFS for the /nsm partition.
   # When installation completes, reboot into your new installation and login with the credentials you specified during installation.<br>
   # If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href="https://help.ubuntu.com/community/EnablingPAE">install the PAE kernel</a>.<br>
-  # [Upgrade Install updates.]
-  # Reboot:
-{{{
-sudo reboot
-}}}
+  # [Upgrade Install updates and reboot.]
   # If you’re running a VM, now would be a good time to snapshot it so you can revert later if you need to.<br>
   # If you installed from the Security Onion Live 12.04 Distribution ISO, you can skip to the "Update" step.<br>
   # Log back in (over “ssh -X” if remote) and configure MySQL not to prompt for root password:<br>
