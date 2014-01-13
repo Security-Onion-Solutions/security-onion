@@ -27,7 +27,7 @@
   # Follow the prompts in the installer.  If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  Reboot into your new installation.
   # Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # Install updates and reboot.
+  # Install all Ubuntu updates and reboot.
   # Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
   # Configure MySQL not to prompt for root password:<br>
 {{{
