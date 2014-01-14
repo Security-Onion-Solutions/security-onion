@@ -32,7 +32,7 @@ sudo cp -av /nsm/* /mnt/nsm
 # Rename existing /nsm
 sudo mv /nsm /nsm-backup
 # Make /nsm a symlink to the new logging location
-sudo ln -s /nsm /mnt/nsm
+sudo ln -s /mnt/nsm /nsm
 # go to /etc/apparmor.d/local/
 cd /etc/apparmor.d/local/
 # edit usr.sbin.mysqld, copy the /nsm line, and change /nsm to the new location
