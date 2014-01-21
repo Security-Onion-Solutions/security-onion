@@ -12,6 +12,8 @@ sudo apt-get install byobu
 # start byobu
 byobu
 
+# if you receive a "Sessions should be nested with care" error, you can safely ignore
+
 # configure byobu to start at every login automatically
 byobu-enable
 
