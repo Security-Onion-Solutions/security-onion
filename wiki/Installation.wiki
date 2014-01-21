@@ -20,8 +20,10 @@ This Installation Guide consists of four different methods of installation:
   * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you're_going_to_be_deploying_Security_Onion_in_productio">RECOMMENDED Method for Production Deployment</a>
 
 After installing using one of the four methods listed above, you'll want to review some of the sections at the bottom of this page:
-  * ELSA_and_Timezones
-  * Squert
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#ELSA_and_timezones">ELSA_and_Timezones</a>
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#Squert">Squert</a>
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#CapME">CapMe</a>
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#Tuning_/_Miscellaneous">Tuning/Miscellaneous</a>
 
 = What's the QUICKEST way to install Security Onion? =
   # Download our ISO image (based on Xubuntu 12.04 64-bit) from <a href="https://sourceforge.net/projects/security-onion/files/12.04.3/">Sourceforge</a> or via <a href="http://www.port111.com/securityonion-12.04.3-20130904.iso.torrent">Torrent</a> and verify the checksum using the checksums provided on the Sourceforge page.
