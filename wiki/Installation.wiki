@@ -5,7 +5,7 @@ Welcome to the Security Onion Installation Guide!
 
 To install Security Onion, you're going to either install our Security Onion ISO image or install a standard Ubuntu 12.04 ISO image and then add our Security Onion PPA and packages.  This Installation Guide consists of four different methods of installation:
   * <a href="https://code.google.com/p/security-onion/wiki/Installation#What's_the_QUICKEST_way_to_install_Security_Onion?">QUICKEST Method</a>
-  * RECOMMENDED Method for Quickly Evaluating Security Onion using our ISO image
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you_just_want_to_quickly_evaluate_Security_Onion,_use_our_ISO">RECOMMENDED Method for Quickly Evaluating Security Onion using our ISO image</a>
   * RECOMMENDED Method for Quickly Evaluating Security Onion using your preferred flavor of Ubuntu 12.04
   * RECOMMENDED Method for Production Deployment
 
