@@ -130,7 +130,7 @@ sudo sosetup
    * You’ll then be prompted to select any additional interfaces that will be used for sniffing/monitoring network traffic.
    * When prompted, choose “Yes, make changes and reboot!”
   # After rebooting, log back in (over “ssh -X” if remote) and start the Setup wizard again (sudo sosetup). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
-  # If this is a standalone system (Security Onion server and sensor running on the same host, you can choose Quick Setup, which will prompt you to specify the sniffing interface to monitor and user account information for Sguil, Squert, ELSA and Snorby. You’ll also be asked whether you want to enable ELSA before the setup completes. Otherwise, choose Advanced Setup.<br>
+  # Select Advanced Setup.<br>
   # Choose whether the host being configured will be Standalone, Server, or Sensor.<br>
    * Standalone
     * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.
