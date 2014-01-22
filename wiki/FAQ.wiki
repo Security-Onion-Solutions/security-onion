@@ -119,6 +119,9 @@ Value = 1
 = What can I do to decrease the size of my MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
+= What can I do if I can't connect to sguild due to a high number of uncategorized events? =
+http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html
+
 = Can Security Onion run in IPS mode? =
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
