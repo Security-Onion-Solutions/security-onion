@@ -118,7 +118,7 @@ sudo apt-get update
 {{{
 sudo apt-get -y install securityonion-all
 }}}
-  # OPTIONAL: If you want to use Salt to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but its much more automated if you do it before Setup. https://code.google.com/p/security-onion/wiki/Salt<br>
+  # OPTIONAL: If you want to use Salt to manage your deployment, also install securityonion-onionsalt.  You can do this before or after Setup, but it's much easier if you do it before Setup. https://code.google.com/p/security-onion/wiki/Salt<br>
 {{{
 sudo apt-get -y install securityonion-onionsalt
 }}}
