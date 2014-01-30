@@ -12,9 +12,9 @@ Please note that this is all subject to change!
     * Issue 461: sostat: improve pf_ring output
     * Issue 427: Snort 2.9.5.6
     * Issue 443: Suricata 1.4.7
+  * February 2014
     * Issue 463: Setup should prompt for ELSA log_size_limit
     * Issue 470: sosetup: Add verbiage to ELSA screen about running on sensors
-  * February 2014
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 432: 12.04.4 ISO image
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
