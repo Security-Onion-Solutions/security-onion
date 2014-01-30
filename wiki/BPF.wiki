@@ -3,7 +3,7 @@
 = Configuration =
 
 == Global bpf.conf ==
-You can specify your BPF in /etc/nsm/rules/bpf.conf on your master server and, by default, it will apply to all processes on all interfaces in your entire deployment.  If you have separate sensors reporting to that master server, they will copy /etc/nsm/rules/bpf.conf as part of the daily rule-update cron job (or you can run it manually).  Once the sensor has the updated bpf.conf, Bro automatically monitors this file for changes and will update itself as needed.  Other services (such as Snort/Suricata, prads, and netsniff-ng) will need to be restarted for the change to take effect.
+You can specify your BPF in /etc/nsm/rules/bpf.conf on your master server and, by default, it will apply to all processes on all interfaces in your entire deployment.  If you have separate sensors reporting to that master server, they will copy /etc/nsm/rules/bpf.conf as part of the daily rule-update cron job (or you can run it manually) which will also restart Snort/Suricata so that the BPF change will take effect.  Bro automatically monitors bpf.conf for changes and will update itself as needed.  Other services (such as prads and netsniff-ng) will need to be restarted manually for the change to take effect.
 
 == Granular bpf.conf ==
 Each process on each interface has its own bpf file, but by default the per-process bpf files are symlinked to the interface bpf and the interface bpf is then symlinked to the global bpf.conf:
