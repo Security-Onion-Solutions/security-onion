@@ -5,6 +5,7 @@ Dr. Johannes Ullrich of the SANS Internet Storm Center posted a <a href="http://
 {{{
 #!/bin/bash
 
+export PATH=/opt/bro/bin:$PATH
 BRO_LOGS="/nsm/bro/logs"
 TODAY=`date +%Y-%m-%d`
 YESTERDAY=`date -d yesterday +%Y-%m-%d`
