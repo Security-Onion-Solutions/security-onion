@@ -17,6 +17,7 @@ Please note that this is all subject to change!
     * Issue 470: sosetup: Add verbiage to ELSA screen about running on sensors
     * Issue 474: sosetup: increase default query_timeout in /etc/elsa_web.conf
     * Issue 471: sostat-redacted should redact IPv6 addresses
+    * Issue 476: sostat: add verbosity for troubleshooting ELSA
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 475: CapMe should check for active pcap_agent
     * Issue 432: 12.04.4 ISO image
