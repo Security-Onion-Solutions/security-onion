@@ -16,12 +16,12 @@ Please note that this is all subject to change!
     * Issue 463: Setup should prompt for ELSA log_size_limit
     * Issue 470: sosetup: Add verbiage to ELSA screen about running on sensors
     * Issue 474: sosetup: increase default query_timeout in /etc/elsa_web.conf
+    * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
+    * Issue 416: Increase default MySQL open-files-limit
     * Issue 471: sostat-redacted should redact IPv6 and MAC addresses
     * Issue 476: sostat: add verbosity for troubleshooting ELSA
     * Issue 477: ELSA menu should include BRO_CONN groupby:node
     * Issue 478: securityonion-elsa-extras: randomize API key in master's elsa_web.conf
-    * Issue 388: Configure MySQL to create an innodb file per table to prevent ibdata1 growing indefinitely
-    * Issue 416: Increase default MySQL open-files-limit
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 475: CapMe should check for active pcap_agent
     * Issue 432: 12.04.4 ISO image
