@@ -16,7 +16,7 @@ Please note that this is all subject to change!
     * Issue 463: Setup should prompt for ELSA log_size_limit
     * Issue 470: sosetup: Add verbiage to ELSA screen about running on sensors
     * Issue 474: sosetup: increase default query_timeout in /etc/elsa_web.conf
-    * Issue 471: sostat-redacted should redact IPv6 addresses
+    * Issue 471: sostat-redacted should redact IPv6 and MAC addresses
     * Issue 476: sostat: add verbosity for troubleshooting ELSA
     * Issue 477: ELSA menu should include BRO_CONN groupby:node
     * Issue 478: securityonion-elsa-extras: randomize API key in master's elsa_web.conf
