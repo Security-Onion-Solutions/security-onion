@@ -19,6 +19,7 @@ Please note that this is all subject to change!
     * Issue 471: sostat-redacted should redact IPv6 addresses
     * Issue 476: sostat: add verbosity for troubleshooting ELSA
     * Issue 477: ELSA menu should include BRO_CONN groupby:node
+    * Issue 478: securityonion-elsa-extras: randomize API key in master's elsa_web.conf
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 475: CapMe should check for active pcap_agent
     * Issue 432: 12.04.4 ISO image
