@@ -33,7 +33,7 @@ http://blog.securityonion.net/2013/10/new-securityonion-sostat-package.html
 sudo sostat-redacted
 }}}
 
-sostat-redacted will automatically redact any IPv4 addresses, but there may be additional sensitive info that you still need to redact manually.
+sostat-redacted will automatically redact any IPv4/IPv6/MAC addresses, but there may be additional sensitive info that you still need to redact manually.
 
 =Mailing Lists=
 ==Security-Onion==
