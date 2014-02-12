@@ -15,10 +15,11 @@ Customizing for your network
   * [ThirdPartyIntegration]
 
 Tuning
-  * [PF_RING PF_RING]
   * [ManagingAlerts ManagingAlerts]
-  * [MySQLTuning MySQLTuning]
+  * [AddingLocalRules Adding Local Rules]
   * [BPF BPF]
+  * [PF_RING PF_RING]
+  * [MySQLTuning MySQLTuning]
 
 Updating
   * [Upgrade Updating]
