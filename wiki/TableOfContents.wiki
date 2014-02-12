@@ -2,6 +2,11 @@ Getting Started
   * [Installation Download/Install]
   * [IntroductionWalkthrough Walkthrough]
 
+Tuning
+  * [PF_RING PF_RING]
+  * [ManagingAlerts ManagingAlerts]
+  * [MySQLTuning MySQLTuning]
+
 Help
   * [FAQ FAQ]
   * [Help Help]
