@@ -8,6 +8,9 @@ Tuning
   * [ManagingAlerts ManagingAlerts]
   * [MySQLTuning MySQLTuning]
 
+Usage
+  * [ELSAQueryTips ELSA Query Tips]
+
 Help
   * [FAQ FAQ]
   * [Help Help]
