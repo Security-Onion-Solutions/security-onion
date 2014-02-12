@@ -3,7 +3,7 @@
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
   * [Upgrade Updating]
-  * [IntroductionWalkthrough Walkthrough with VirtualBox]
+  * [IntroductionWalkthrough VirtualBox Walkthrough]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
 ==Customizing for your network==
