@@ -13,6 +13,7 @@ Customizing for your network
   * [Email]
   * [NetworkConfiguration]
   * [ThirdPartyIntegration]
+  * [ChangingIPAddress Changing IP Addresses]
 
 Tuning
   * [ManagingAlerts ManagingAlerts]
