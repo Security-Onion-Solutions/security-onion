@@ -1,7 +1,7 @@
 #summary Table of Contents
 Getting Started
   * [Installation Download/Install]
-  * [IntroductionWalkthrough Walkthrough]
+  * [IntroductionWalkthrough Walkthrough with VirtualBox]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
 Hardening
