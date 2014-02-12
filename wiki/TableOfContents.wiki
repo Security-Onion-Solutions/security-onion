@@ -4,13 +4,14 @@ Getting Started
   * [IntroductionWalkthrough Walkthrough]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
-Customizing for your network
-  * [Proxy Proxy]
-  * [Email Email]
-  * [NetworkConfiguration]
-
 Hardening
   * [Firewall Firewall]
+
+Customizing for your network
+  * [Proxy]
+  * [Email]
+  * [NetworkConfiguration]
+  * [ThirdPartyIntegration]
 
 Tuning
   * [PF_RING PF_RING]
