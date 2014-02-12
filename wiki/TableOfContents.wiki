@@ -27,8 +27,8 @@
   * [DNSAnomalyDetection DNS Anomaly Detection script]
 
 ==Help==
-  * [FAQ FAQ]
-  * [Help Help]
+  * [Help]
+  * [FAQ]
   * [MailingLists Mailing Lists]
 
 ==Known Issues==
