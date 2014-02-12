@@ -7,10 +7,10 @@
   * [IntroductionWalkthrough VirtualBox Walkthrough]
 
 ==Customizing for your network==
-  * [NetworkConfiguration]
+  * [NetworkConfiguration Network Configuration]
   * [Firewall Firewall/Hardening]
-  * [Proxy]
-  * [Email]
+  * [Proxy Proxy Configuration]
+  * [Email Email Configuration]
   * [ThirdPartyIntegration Integrating with other systems]
   * [ChangingIPAddress Changing IP Addresses]
 
