@@ -5,36 +5,36 @@
   * [IntroductionWalkthrough Walkthrough with VirtualBox]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
-Hardening
+==Hardening==
   * [Firewall Firewall]
 
-Customizing for your network
+==Customizing for your network==
   * [Proxy]
   * [Email]
   * [NetworkConfiguration]
   * [ThirdPartyIntegration]
   * [ChangingIPAddress Changing IP Addresses]
 
-Tuning
+==Tuning==
   * [ManagingAlerts ManagingAlerts]
   * [AddingLocalRules Adding Local Rules]
   * [BPF BPF]
   * [PF_RING PF_RING]
   * [MySQLTuning MySQLTuning]
 
-Updating
+==Updating==
   * [Upgrade Updating]
 
-Tricks and Tips
+==Tricks and Tips==
   * [ELSAQueryTips ELSA Query Tips]
   * [DNSAnomalyDetection DNS Anomaly Detection script]
   * [Salt]
 
-Help
+==Help==
   * [FAQ FAQ]
   * [Help Help]
   * [MailingLists Mailing Lists]
 
-Known Issues
+==Known Issues==
   * [2013 Issues Resolved in 2013]
   * [Roadmap Issues Scheduled for 2014]
