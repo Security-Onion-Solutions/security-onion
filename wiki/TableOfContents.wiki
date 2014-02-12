@@ -1,5 +1,5 @@
 #summary Table of Contents
-Getting Started
+=Getting Started=
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
   * [IntroductionWalkthrough Walkthrough with VirtualBox]
