@@ -1,4 +1,5 @@
   * [FAQ FAQ]
   * [Installation Download/Install]
-  * [Help Help]
-  * [MailingLists Mailing Lists]
+  * Help
+    * [Help Help]
+    * [MailingLists Mailing Lists]
