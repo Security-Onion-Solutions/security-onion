@@ -23,7 +23,8 @@ Tuning
 Updating
   * [Upgrade Updating]
 
-Usage
+Tricks and Tips
+  * [DNSAnomalyDetection DNS Anomaly Detection script]
   * [ELSAQueryTips ELSA Query Tips]
 
 Help
