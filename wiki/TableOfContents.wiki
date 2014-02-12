@@ -23,8 +23,8 @@
 
 ==Tricks and Tips==
   * [ELSAQueryTips ELSA Query Tips]
-  * [DNSAnomalyDetection DNS Anomaly Detection script]
   * [Salt Using Salt to manage Sensors]
+  * [DNSAnomalyDetection DNS Anomaly Detection script]
 
 ==Help==
   * [FAQ FAQ]
