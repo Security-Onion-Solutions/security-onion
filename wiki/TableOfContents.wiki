@@ -28,6 +28,7 @@ Updating
 Tricks and Tips
   * [ELSAQueryTips ELSA Query Tips]
   * [DNSAnomalyDetection DNS Anomaly Detection script]
+  * [Salt]
 
 Help
   * [FAQ FAQ]
