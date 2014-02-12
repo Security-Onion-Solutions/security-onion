@@ -1,5 +1,8 @@
 Getting Started
   * [Installation Download/Install]
+  * [IntroductionWalkthrough Walkthrough]
+
+Help
   * [FAQ FAQ]
   * [Help Help]
   * [MailingLists Mailing Lists]
