@@ -1,6 +1,7 @@
 Getting Started
   * [Installation Download/Install]
   * [IntroductionWalkthrough Walkthrough]
+  * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
 Tuning
   * [PF_RING PF_RING]
