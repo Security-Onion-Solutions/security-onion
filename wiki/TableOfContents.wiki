@@ -4,6 +4,9 @@ Getting Started
   * [IntroductionWalkthrough Walkthrough]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
+Hardening
+  * [Firewall Firewall]
+
 Tuning
   * [PF_RING PF_RING]
   * [ManagingAlerts ManagingAlerts]
