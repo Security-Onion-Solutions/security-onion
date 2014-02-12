@@ -26,6 +26,7 @@ Please note that this is all subject to change!
     * Issue 475: CapMe should check for active pcap_agent
     * Issue 432: 12.04.4 ISO image
   * March 2014
+    * Issue 485: sosetup-network: mention MTU and other custom config can be manually added to /etc/network/interfaces
     * Issue 479: Setup should verify that it can resolve server hostname before trying to connect
     * Issue 480: Setup running on sensor should automatically create autossh account on server
     * Issue 481: Add skip interactive option to soup
