@@ -11,7 +11,7 @@
   * [Firewall Firewall]
   * [Proxy]
   * [Email]
-  * [ThirdPartyIntegration Integration with other systems]
+  * [ThirdPartyIntegration Integrating with other systems]
   * [ChangingIPAddress Changing IP Addresses]
 
 ==Tuning==
