@@ -13,6 +13,8 @@ Tuning
   * [MySQLTuning MySQLTuning]
   * [BPF BPF]
 
+Updating
+  * [Upgrade Updating]
 Usage
   * [ELSAQueryTips ELSA Query Tips]
 
