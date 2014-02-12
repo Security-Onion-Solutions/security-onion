@@ -1,5 +1,6 @@
 #summary Table of Contents
 Getting Started
+  * [Hardware Hardware Requirements]
   * [Installation Download/Install]
   * [IntroductionWalkthrough Walkthrough with VirtualBox]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
