@@ -5,13 +5,11 @@
   * [IntroductionWalkthrough Walkthrough with VirtualBox]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
-==Hardening==
-  * [Firewall Firewall]
-
 ==Customizing for your network==
+  * [NetworkConfiguration]
+  * [Firewall Firewall]
   * [Proxy]
   * [Email]
-  * [NetworkConfiguration]
   * [ThirdPartyIntegration]
   * [ChangingIPAddress Changing IP Addresses]
 
