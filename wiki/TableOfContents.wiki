@@ -1,10 +1,10 @@
 #summary Table of Contents
 ==Getting Started==
+  * [IntroductionToSecurityOnion Introduction]
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
   * [Upgrade Updating]
   * [IntroductionWalkthrough VirtualBox Walkthrough]
-  * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
 ==Customizing for your network==
   * [NetworkConfiguration]
