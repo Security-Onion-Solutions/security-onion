@@ -24,7 +24,7 @@
 ==Tricks and Tips==
   * [ELSAQueryTips ELSA Query Tips]
   * [DNSAnomalyDetection DNS Anomaly Detection script]
-  * [Salt]
+  * [Salt Using Salt to manage Sensors]
 
 ==Help==
   * [FAQ FAQ]
