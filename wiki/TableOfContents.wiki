@@ -8,7 +8,7 @@
 
 ==Customizing for your network==
   * [NetworkConfiguration]
-  * [Firewall Firewall]
+  * [Firewall Firewall/Hardening]
   * [Proxy]
   * [Email]
   * [ThirdPartyIntegration Integrating with other systems]
