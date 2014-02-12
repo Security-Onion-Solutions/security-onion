@@ -8,8 +8,8 @@
 
 ==Customizing for your network==
   * [NetworkConfiguration Network Configuration]
-  * [Firewall Firewall/Hardening]
   * [Proxy Proxy Configuration]
+  * [Firewall Firewall/Hardening]
   * [Email Email Configuration]
   * [ThirdPartyIntegration Integrating with other systems]
   * [ChangingIPAddress Changing IP Addresses]
