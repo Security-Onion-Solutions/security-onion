@@ -2,6 +2,7 @@
 ==Getting Started==
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
+  * [Upgrade Updating]
   * [IntroductionWalkthrough Walkthrough with VirtualBox]
   * [IntroductionToSecurityOnion Introduction To SecurityOnion]
 
@@ -19,9 +20,6 @@
   * [BPF BPF]
   * [PF_RING PF_RING]
   * [MySQLTuning MySQLTuning]
-
-==Updating==
-  * [Upgrade Updating]
 
 ==Tricks and Tips==
   * [ELSAQueryTips ELSA Query Tips]
