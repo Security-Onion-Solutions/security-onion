@@ -1,7 +1,5 @@
 #summary Table of Contents
 
-#sidebar  
-
 ==Getting Started==
   * [IntroductionToSecurityOnion Introduction]
   * [Hardware Hardware Requirements]
