@@ -20,7 +20,7 @@ You'll need at least two network interfaces: one for management (preferably conn
 
 = RAM =
 
-You should plan on a BARE MINIMUM of 1GB RAM for each interface that you're monitoring. The more RAM, the better! If you're buying a new server, go ahead and max out the RAM (it's cheap!). 
+You should plan on 1-2GB RAM for the OS and additionally a BARE MINIMUM of 1GB RAM for each interface that you're monitoring. The more RAM, the better! If you're buying a new server, go ahead and max out the RAM (it's cheap!). 
 
 = Storage =
 You need LOTS of storage as Security Onion does full packet capture and it can fill a disk quickly. We have an hourly cronjob that purges old pcaps once the disk reaches 90% capacity. However, if you have a small disk and/or are monitoring a large amount of traffic, you may fill that last 10% before the next hourly purge. Additionally, the purge scripts are designed with the idea that you want to keep at LEAST 1 day's worth of full packet capture on disk, so they won't delete any pcaps with today's date on them. For example, suppose you are monitoring a 50 Mb/s link, here are some quick calculations: 50Mb/s = 6.25 MB/s = 375 MB/minute = 22,500 MB/hour = 540,000 MB/day. So you're going to need about 540GB for one day's worth of pcaps (multiply this by the number of days you want to keep on disk for investigative/forensic purposes). Note that this is just pcaps (other logs will take up additional storage), so you may want to round up to the next terabyte to ensure sufficient storage. The more disk space you have, the more log retention you'll have for doing investigations after the fact. Disk is cheap, get all you can!
