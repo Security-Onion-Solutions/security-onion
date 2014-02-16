@@ -1,4 +1,5 @@
 #summary Table of Contents
+#sidebar NonExistantSidebar
 
 ==Getting Started==
   * [IntroductionToSecurityOnion Introduction]
