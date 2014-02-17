@@ -22,9 +22,9 @@ You'll need at least two network interfaces: one for management (preferably conn
 
 == Bare Minimum ==
 {{{
- 1GB - OS (no GUI)
-+1GB - GUI
-+1GB for each interface that you're monitoring
+  1GB - OS (no GUI)
++ 1GB - GUI
++ 1GB for each interface that you're monitoring
 }}}
 
 == Recommended == 
