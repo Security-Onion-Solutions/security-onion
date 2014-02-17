@@ -28,11 +28,11 @@
   * [Salt Using Salt to manage Sensors]
   * [DNSAnomalyDetection DNS Anomaly Detection script]
 
-==Known Issues==
-  * [2013 Issues Resolved in 2013]
-  * [Roadmap Issues Scheduled for 2014]
-
 ==Help==
   * [Help]
   * [FAQ]
   * [MailingLists Mailing Lists]
+
+==Known Issues==
+  * [2013 Issues Resolved in 2013]
+  * [Roadmap Issues Scheduled for 2014]
