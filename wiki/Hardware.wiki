@@ -21,9 +21,11 @@ You'll need at least two network interfaces: one for management (preferably conn
 = RAM =
 
 == Bare Minimum ==
+{{{
  1GB - OS (no GUI)
 +1GB - GUI
 +1GB for each interface that you're monitoring
+}}}
 
 == Recommended == 
 The more RAM, the better! If you're buying a new server, go ahead and max out the RAM (it's cheap!). 
