@@ -30,7 +30,7 @@ Please note that this is all subject to change!
     * Issue 485: sosetup-network: mention MTU and other custom config can be manually added to /etc/network/interfaces
     * Issue 479: Setup should verify that it can resolve server hostname before trying to connect
     * Issue 480: Setup running on sensor should automatically create autossh account on server
-    * Issue 489: sosetup: capture rmmod/insmod output
+    * Issue 489: sosetup: capture rmmod output
     * Issue 481: Add skip interactive option to soup
     * Issue 483: sostat-redacted should redact usernames
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
