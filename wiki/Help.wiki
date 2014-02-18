@@ -24,5 +24,5 @@ pgrep -lf autossh
 pgrep -lf delayed_job
 }}}
   * Are you able to duplicate the problem on a fresh Security Onion installation?
-  * Check the <a href="http://code.google.com/p/security-onion/issues/list">Issue Tracker</a> to see if this is a known issue that we are working on.
+  * Check the [Roadmap] to see if this is a known issue that we are working on.
   * If all else fails, please see [MailingLists].
