@@ -22,9 +22,9 @@ You'll need at least two network interfaces: one for management (preferably conn
 
 == Bare Minimum ==
 {{{
-  1 GB - OS (no GUI)
-+ 1 GB - GUI
-+ 1 GB for each interface that you're monitoring
+  1 GB for the core OS (no GUI)
++ 1 GB if you run a GUI
++ 1 GB MINIMUM for each interface that you're monitoring
 }}}
 So the bare minimum amount of RAM if you want to run our ISO image (GUI) and monitor one interface is 3 GB RAM.
 
