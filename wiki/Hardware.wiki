@@ -26,7 +26,7 @@ You'll need at least two network interfaces: one for management (preferably conn
 + 1 GB if you run a GUI
 + 1 GB MINIMUM for each interface that you're monitoring
 }}}
-So the bare minimum amount of RAM if you want to run our ISO image (GUI) and monitor one interface is 3 GB RAM.
+So if you want to run our ISO image (GUI) and monitor one interface, then the bare minimum amount of RAM needed is 3 GB.
 
 == Recommended == 
 The more RAM, the better! If you're buying a new server, go ahead and max out the RAM (it's cheap!). 
