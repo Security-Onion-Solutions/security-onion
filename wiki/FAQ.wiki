@@ -113,11 +113,6 @@ http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
 
-= Why do I get segfaults when booting on VMware ESX? =
-This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>
-http://ubuntuforums.org/showthread.php?t=1674759<br>
-https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422<br>
-
 = Why does my VMware image rename eth0 to eth1? =
 Usually this happens when you clone a VM.  VMware asks if you moved it or copied it.  If you select "copied", it will change the MAC address to avoid duplication.  At the next boot, Ubuntu's udev will see a new MAC address and create a new network interface (eth1).  To fix this:
 {{{
@@ -371,6 +366,11 @@ available as a port/package most systems.
 See http://www.tcltk.com/iwidgets/ for more info.
 }}}
 This is related to the previous question.  See [tcl tcl notes].
+
+= Why do I get segfaults when booting on VMware ESX? =
+This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>
+http://ubuntuforums.org/showthread.php?t=1674759<br>
+https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422<br>
 
 = Why can't I upgrade past version 20110628? = 
 
