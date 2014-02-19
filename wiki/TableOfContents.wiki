@@ -29,7 +29,7 @@
   * [DNSAnomalyDetection DNS Anomaly Detection script]
 
 ==Help==
-  * [Troubleshooting]
+  * [Help Troubleshooting]
   * [FAQ]
   * [Passwords]
   * [MailingLists Mailing Lists]
