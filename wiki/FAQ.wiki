@@ -113,6 +113,14 @@ http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
 
+= Where can I get the source code? =
+You can download the full source code for any of our packages like this:
+{{{
+apt-get source PACKAGE-NAME
+}}}
+where PACKAGE-NAME is usually something like securityonion-snort.  Here's a list of all of our packages:
+https://launchpad.net/~securityonion/+archive/stable
+
 = Why does my VMware image rename eth0 to eth1? =
 Usually this happens when you clone a VM.  VMware asks if you moved it or copied it.  If you select "copied", it will change the MAC address to avoid duplication.  At the next boot, Ubuntu's udev will see a new MAC address and create a new network interface (eth1).  To fix this:
 {{{
