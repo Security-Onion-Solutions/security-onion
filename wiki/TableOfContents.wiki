@@ -31,6 +31,7 @@
 ==Help==
   * [Help]
   * [FAQ]
+  * [Passwords]
   * [MailingLists Mailing Lists]
 
 ==Known Issues==
