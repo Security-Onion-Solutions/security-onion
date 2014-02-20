@@ -56,15 +56,6 @@ Trying to use a non-UTC timezone can result in the following:<br>
 - Time zones that have daylight saving time have a one-hour time warp twice a year.  This manifests itself in Sguil not being able to pull transcripts for events within that one-hour time period.  This is avoided by using UTC, since there is no daylight saving time.<br>
 - Something similar can happen on a daily basis under certain conditions.  If there is a discrepancy between the OS timezone and the Sguil UTC settings, then Sguil will be unable to pull transcripts for events in a window of time around midnight coinciding with the timezone's offset from UTC.<br>
 Additionally, UTC comes in quite handy when you have sensors in different time zones and/or are trying to correlate events with other systems or teams.<br>
-The Setup wizard (/usr/bin/sosetup) does the following to set the OS and all services to UTC:
-{{{
-echo "Etc/UTC" | sudo tee /etc/timezone
-sudo dpkg-reconfigure --frontend noninteractive tzdata
-sudo service rsyslog restart
-sudo cp /etc/localtime /var/ossec/etc/localtime
-sudo chown root:ossec /var/ossec/etc/localtime
-sudo service ossec restart
-}}}
 Our three primary web interfaces (Snorby, Squert, and ELSA) all allow you to render event timestamps in your local timezone.  ELSA by default will render timestamps in the timezone of your local browser (more info below) and Squert and Snorby allow you to change your timezone.  However, be aware that if you set a timezone in Squert, you'll be unable to request a transcript (this will be resolved in the next version).  If you set your local timezone in Snorby, make sure that you also set the same timezone in CapMe's timezone.php:<br>
 http://blog.securityonion.net/2014/01/new-capme-package-allows-you-to.html
 
