@@ -1,26 +1,11 @@
 #summary Hardware requirements for a production deployment
 
-= Packets =
-You need some way of getting packets into your sensor.  Usually this is via tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
-
-Shear simplicity and portability (USB-powered):<br>
-http://www.dual-comm.com/port-mirroring-LAN_switch.htm<br>
-
-Dirt cheap and versatile:<br>
-http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html<br>
-
-Netgear GS105E (requires Windows app for config):<br>
-http://www.netgear.com/business/products/switches/prosafe-plus-switches/gs105e.aspx<br>
-
-More exhaustive list of enterprise switches with port mirroring:<br>
-http://www.miarec.com/knowledge/switches-port-mirroring<br>
-
 = NIC =
 You'll need at least two network interfaces: one for management (preferably connected to a dedicated management network) and then one or more for sniffing (connected to tap or span).  Make sure you get a good quality network card.  I've had good experiences with Intel.
 
 = RAM =
 
-RAM usage is highly dependent on the services that you enable and the network/bandwidth you're monitoring.  The following RAM estimates are a rough guideline and assume that you're going to be running Snort/Suricata and Bro.  Your mileage may vary!
+RAM usage is highly dependent on the services that you enable and the network/bandwidth you're monitoring.  The following RAM estimates are a rough guideline and assume that you're going to be running Snort/Suricata, Bro, and full packet capture.  Your mileage may vary!
 
 If you just want to quickly evaluate Security Onion in a VM, the bare minimum amount of RAM needed is 3GB.  More is obviously better!
 
@@ -44,3 +29,18 @@ You need LOTS of storage as Security Onion does full packet capture and it can f
 
 = 32-bit vs 64-bit =
 All of our packages are available in both 32-bit and 64-bit versions, but 64-bit is highly recommended due to the increased performance.
+
+= Packets =
+You need some way of getting packets into your sensor.  Usually this is via tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
+
+Shear simplicity and portability (USB-powered):<br>
+http://www.dual-comm.com/port-mirroring-LAN_switch.htm<br>
+
+Dirt cheap and versatile:<br>
+http://www.roc-noc.com/mikrotik/routerboard/RB260GS.html<br>
+
+Netgear GS105E (requires Windows app for config):<br>
+http://www.netgear.com/business/products/switches/prosafe-plus-switches/gs105e.aspx<br>
+
+More exhaustive list of enterprise switches with port mirroring:<br>
+http://www.miarec.com/knowledge/switches-port-mirroring<br>
