@@ -20,7 +20,7 @@ You'll need at least two network interfaces: one for management (preferably conn
 
 = RAM =
 
-The following RAM estimates are a rough guideline and assume that you're going to be running Snort/Suricata and Bro.  Your mileage may vary!
+RAM usage is highly dependent on the services that you enable and the network/bandwidth you're monitoring.  The following RAM estimates are a rough guideline and assume that you're going to be running Snort/Suricata and Bro.  Your mileage may vary!
 
 If you just want to quickly evaluate Security Onion in a VM, the bare minimum amount of RAM needed is 3GB.  More is obviously better!
 
