@@ -20,7 +20,7 @@ You'll need at least two network interfaces: one for management (preferably conn
 
 = RAM =
 
-The following RAM estimates are a rough guideline.  Your mileage may vary!
+The following RAM estimates are a rough guideline and assume that you're going to be running Snort/Suricata and Bro.  Your mileage may vary!
 
 If you just want to quickly evaluate Security Onion in a VM, the bare minimum amount of RAM needed is 3GB.  More is obviously better!
 
@@ -31,9 +31,9 @@ If you're deploying Security Onion in production on a small network (50Mbps or l
 + 1 GB if you choose to enable ELSA
 + 1 GB MINIMUM for each interface that you're monitoring
 }}}
-So if you want to run our ISO image (GUI), ELSA, and monitor one interface, then the bare minimum amount of RAM needed is 4 GB.  Again, more is obviously better!
+So if you want to run our ISO image (GUI), ELSA, and monitor one interface, then the bare minimum amount of RAM needed is 4 GB, but you should probably plan on at least 8GB RAM.  Again, more is obviously better!
 
-If you're deploying Security Onion in production to a medium network (50Mbps - 500Mbps), you should plan on 64GB - 128GB RAM or more.  
+If you're deploying Security Onion in production to a medium network (50Mbps - 500Mbps), you should plan on 16GB - 128GB RAM or more.  
 
 If you're deploying Security Onion in production to a large network (500Mbps - 1000Mbps), you should plan on 128GB - 256GB RAM or more.  
 
