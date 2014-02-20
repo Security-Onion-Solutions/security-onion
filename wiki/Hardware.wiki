@@ -31,7 +31,7 @@ You need LOTS of storage as Security Onion does full packet capture and it can f
 All of our packages are available in both 32-bit and 64-bit versions, but 64-bit is highly recommended due to the increased performance.
 
 = Packets =
-You need some way of getting packets into your sensor.  Usually this is via tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
+You need some way of getting packets into your sensor interface(s).  If you're just evaluating Security Onion, you can replay [Pcaps pcaps].  For a production deployment, you'll need a tap or SPAN/monitor port.  Here are some inexpensive tap/span solutions:<br>
 
 Shear simplicity and portability (USB-powered):<br>
 http://www.dual-comm.com/port-mirroring-LAN_switch.htm<br>
@@ -44,3 +44,5 @@ http://www.netgear.com/business/products/switches/prosafe-plus-switches/gs105e.a
 
 More exhaustive list of enterprise switches with port mirroring:<br>
 http://www.miarec.com/knowledge/switches-port-mirroring<br>
+
+For more enterprise tap solutions, take a look at Net Optics and Arista.
