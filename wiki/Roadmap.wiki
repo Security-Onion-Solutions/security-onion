@@ -46,6 +46,7 @@ Please note that this is all subject to change!
     * Issue 330: ossec.conf changes
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
+    * Issue 491: New Squert package
   * April 2014
     * Issue 462: Snort 2.9.6.0
     * Issue 465: Suricata 2.0
