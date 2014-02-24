@@ -37,6 +37,12 @@ Just to contribute, and for others to reference, here are some examples of what 
 !(host xxx.xxx.xxx.xxx)
 }}}
 
+= VLAN =
+Note 2014-02-24: BPF support for VLAN filtering may be broken in certain 3.x kernels.  Please see:
+https://groups.google.com/d/topic/security-onion/DLvzwRYVdxg/discussion
+http://seclists.org/tcpdump/2013/q1/35
+https://groups.google.com/d/topic/netsniff-ng/L2Ozks6DqAE/discussion
+
 From Seth Hall regarding VLAN tags:
 
 {{{
