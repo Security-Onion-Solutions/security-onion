@@ -17,14 +17,14 @@ Please be courteous and respectful.  Disrespectful emails can result in being ba
 
 =Questions/Problems=
 
-==Start new threads instead of replying to old ones==
+==Start a new thread instead of replying to an old one==
 Please search the mailing list to see if you can find similar issues that may help you.  However, please do not reply to old threads with your new issue.  Instead, please start a new thread and provide a hyperlink to the related discussion at https://groups.google.com/forum/#!forum/security-onion.
 
-==Please provide sufficient technical info so that we can better help you==
+==Provide sufficient technical info==
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
-==Please include sostat-redacted output==
+==Include sostat-redacted output==
 In many cases, we'll end up asking for the output of the following command, so please include it in your email (redacting sensitive info as necessary)
 :<br>
 {{{
