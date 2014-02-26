@@ -21,7 +21,7 @@ Please search the mailing list to see if you can find similar issues that may he
 In order to be as effective and efficient as possible, please consider the following when posing your question/problem to the group:
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
-==sostat and sostat-redacted==
+==Please include sostat-redacted output==
 In many cases, we'll end up asking for the output of the following command, so please include it in your email (redacting sensitive info as necessary)
 :<br>
 {{{
