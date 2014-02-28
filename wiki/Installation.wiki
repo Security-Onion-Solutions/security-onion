@@ -24,6 +24,10 @@ After installing using one of the four methods listed above, you'll want to revi
   * <a href="https://code.google.com/p/security-onion/wiki/Installation#CapME">CapMe</a>
   * <a href="https://code.google.com/p/security-onion/wiki/Installation#Tuning_/_Miscellaneous">Tuning/Miscellaneous</a>
 
+= UEFI =
+If you have a new machine with UEFI, please see:
+https://help.ubuntu.com/community/UEFI
+
 = What's the QUICKEST way to install Security Onion? =
   # Download our ISO image (based on Xubuntu 12.04 64-bit) from <a href="https://sourceforge.net/projects/security-onion/files/12.04.4/">Sourceforge</a> or via <a href="http://port111.com/securityonion-12.04.4-20140222.iso.torrent">Torrent</a> and verify the checksum using the checksums provided on the Sourceforge page.
   # Boot the ISO image, follow the prompts in the Xubuntu installer to install to your hard drive, and then reboot into your new installation.
