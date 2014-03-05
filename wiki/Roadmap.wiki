@@ -30,6 +30,7 @@ Please note that this is all subject to change!
     * Issue 494: sostat should display ELSA v_indexes
     * Issue 483: sostat-redacted should redact usernames
     * Issue 481: Add skip interactive option to soup
+    * Issue 497: sostat should ignore "Cannot set NIC flags!" in netsniff-ng.log
     * Issue 495: securityonion-web-page: OSSEC logs query should exclude MARK
     * Issue 485: sosetup-network: mention MTU and other custom config can be manually added to /etc/network/interfaces
     * Issue 479: Setup should verify that it can resolve server hostname before trying to connect
