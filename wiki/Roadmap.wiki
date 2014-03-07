@@ -39,6 +39,7 @@ Please note that this is all subject to change!
     * Issue 489: sosetup: capture rmmod output
     * Issue 496: setup: VRT policy screen should be a radio button
     * Issue 499: Setup: fix backup path in /etc/network/interfaces
+    * Issue 500: Setup: restart starman
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
