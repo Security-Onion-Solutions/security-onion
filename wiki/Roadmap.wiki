@@ -40,6 +40,7 @@ Please note that this is all subject to change!
     * Issue 496: setup: VRT policy screen should be a radio button
     * Issue 499: Setup: fix backup path in /etc/network/interfaces
     * Issue 500: Setup: restart starman
+    * Issue 504: Setup: avoid running securityonion_elsa_register.rb twice
     * Issue 501: /etc/init/securityonion.conf needs to check that variables were only declared once
     * Issue 502: securityonion-elsa-node-perl: add libtext-csv-perl as a dependency
     * Issue 503: securityonion-elsa-extras: parsers for BRO_INTEL feed
