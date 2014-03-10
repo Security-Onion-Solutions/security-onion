@@ -27,9 +27,9 @@ Please note that this is all subject to change!
     * Issue 448: When changing time zone in Squert, it needs to revert to UTC when requesting transcripts
     * Issue 432: 12.04.4 ISO image
   * March 2014
-    * Issue 505: rule-update: check to see if barnyard and IDS engine are enabled
     * Issue 495: securityonion-web-page: OSSEC logs query should exclude MARK
     * Issue 498: securityonion-web-page: add DNS IXFR query
+    * Issue 505: rule-update: check to see if barnyard and IDS engine are enabled
     * Issue 481: soup: Add skip interactive option
     * Issue 494: sostat should display ELSA v_indexes
     * Issue 483: sostat-redacted should redact usernames
