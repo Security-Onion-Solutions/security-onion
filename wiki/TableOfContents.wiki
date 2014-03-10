@@ -27,7 +27,6 @@
   * [ELSAQueryTips ELSA Query Tips]
   * [Salt Using Salt to manage Sensors]
   * [DNSAnomalyDetection DNS Anomaly Detection script]
-  * [ThirdPartyIntegration Third Party Integration]
 
 ==Help==
   * [Help Troubleshooting]
