@@ -45,6 +45,7 @@ Please note that this is all subject to change!
     * Issue 501: /etc/init/securityonion.conf needs to check that variables were only declared once
     * Issue 502: securityonion-elsa-node-perl: add libtext-csv-perl as a dependency
     * Issue 503: securityonion-elsa-extras: parsers for BRO_INTEL feed
+    * Issue 506: securityonion-web-page: add FTP command query
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
