@@ -65,6 +65,7 @@ Please note that this is all subject to change!
     * Issue 491: New Squert package
   * April 2014
     * Issue 483: sostat-redacted should redact usernames
+    * Issue 509: sostat-quick
     * Issue 462: Snort 2.9.6.0
     * Issue 465: Suricata 2.0
     * Issue 418: netsniff-ng 0.58 or higher
