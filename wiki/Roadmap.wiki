@@ -34,6 +34,8 @@ Please note that this is all subject to change!
     * Issue 494: sostat should display ELSA v_indexes
     * Issue 497: sostat should ignore "Cannot set NIC flags!" in netsniff-ng.log
     * Issue 508: sostat should include full process output but exclude usernames
+    * Issue 502: securityonion-elsa-node-perl: add libtext-csv-perl as a dependency
+    * Issue 503: securityonion-elsa-extras: parsers for BRO_INTEL feed
     * Issue 485: sosetup-network: mention MTU and other custom config can be manually added to /etc/network/interfaces
     * Issue 479: Setup should verify that it can resolve server hostname before trying to connect
     * Issue 480: Setup running on sensor should automatically create autossh account on server
@@ -43,8 +45,6 @@ Please note that this is all subject to change!
     * Issue 500: Setup: restart starman
     * Issue 504: Setup: avoid running securityonion_elsa_register.rb twice
     * Issue 501: /etc/init/securityonion.conf needs to check that variables were only declared once
-    * Issue 502: securityonion-elsa-node-perl: add libtext-csv-perl as a dependency
-    * Issue 503: securityonion-elsa-extras: parsers for BRO_INTEL feed
     * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 506: securityonion-web-page: add FTP command query
     * Issue 492: CapMe needs to handle UDP better
