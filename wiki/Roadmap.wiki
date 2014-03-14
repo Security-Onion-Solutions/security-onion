@@ -38,6 +38,7 @@ Please note that this is all subject to change!
     * Issue 503: securityonion-elsa-extras: parsers for BRO_INTEL feed
     * Issue 485: sosetup-network: mention MTU and other custom config can be manually added to /etc/network/interfaces
     * Issue 499: sosetup-network: fix backup path in /etc/network/interfaces
+    * Issue 511: sosetup-network: management interface selection should be a radiolist
     * Issue 479: sosetup: should verify that it can resolve server hostname before trying to connect
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 489: sosetup: capture rmmod output
