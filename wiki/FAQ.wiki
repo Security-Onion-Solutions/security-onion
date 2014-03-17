@@ -322,6 +322,11 @@ GETOPT="-w 0 -W 4000"
 }}}
 This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!
 
+= Why does Bro log "Failed to open GeoIP database" and "Fell back to GeoIP Country database"? =
+
+The GeoIP CITY database is not free and thus we cannot include it in the distro.  Bro fails to find it and falls back to the GeoIP COUNTRY database (which is free).  As long as you are seeing some country codes in your conn.log, then everything should be fine.  If you really need the CITY database, see this thread for some options:<br>
+https://groups.google.com/d/topic/security-onion-testing/gtc-8ZTuCi4/discussion
+
 = What's the difference between a "server" and a "sensor"? =
 box<br>
 Definition: A physical or virtual machine running the Security Onion operating system.<br>
