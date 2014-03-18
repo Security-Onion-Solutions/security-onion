@@ -25,7 +25,7 @@ In order to be as effective and efficient as possible, please consider the follo
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
 ==Include sostat-redacted output==
-In many cases, we'll end up asking for the output of the following command, so please include it in your email:<br>
+In many cases, we'll end up asking for the output of the following command, so please attach it to your email in plain text format (.txt):<br>
 {{{
 sudo sostat-redacted
 }}}
