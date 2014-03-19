@@ -76,6 +76,7 @@ Please note that this is all subject to change!
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
     * Issue 385: Additional log parsers (non-Bro) for ELSA
     * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
+    * Issue 512: ELSA syslog-ng.conf filter f_bro_headers
     * Issue 467: ELSA dashboard for Snort performance
     * Issue 369: Arpwatch
     * Issue 445: Bro 2.2.1 or higher
