@@ -9,14 +9,7 @@ RAM usage is highly dependent on the services that you enable and the network/ba
 
 If you just want to quickly evaluate Security Onion in a VM, the bare minimum amount of RAM needed is 3GB.  More is obviously better!
 
-If you're deploying Security Onion in production on a small network (50Mbps or less), then calculate your bare minimum as follows:
-{{{
-  1 GB for the core OS (no GUI)
-+ 1 GB if you run a GUI
-+ 1 GB if you choose to enable ELSA
-+ 1 GB MINIMUM for each interface that you're monitoring
-}}}
-So if you want to run our ISO image (GUI), ELSA, and monitor one interface, then the bare minimum amount of RAM needed is 4 GB, but you should probably plan on at least 8GB RAM.  Again, more is obviously better!
+If you're deploying Security Onion in production on a small network (50Mbps or less), you should plan on 8GB RAM or more.  Again, more is obviously better!
 
 If you're deploying Security Onion in production to a medium network (50Mbps - 500Mbps), you should plan on 16GB - 128GB RAM or more.  
 
