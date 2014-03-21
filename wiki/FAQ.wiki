@@ -356,6 +356,19 @@ Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<b
 = What's the directory structure of /nsm? =
 [DirectoryStructure /nsm Directory Structure]
 
+= Where do I put my custom ELSA parsers? =
+Place your custom ELSA parsers in a subdirectory of /etc/elsa/patterns.d/ and then use the following code to merge them:
+{{{
+# Become root
+sudo -i
+
+# Merge with pdbtool
+PATTERNS_DIR=/etc/elsa/patterns.d/
+DEST_PATTERN=/opt/elsa/node/conf/patterndb.xml
+cp $DEST_PATTERN $DEST_PATTERN.bak
+pdbtool merge -p $DEST_PATTERN --recursive -D $PATTERNS_DIR
+}}}
+
 = Where do I send questions/problems/suggestions? =
 
 [MailingLists Security Onion Mailing Lists]
