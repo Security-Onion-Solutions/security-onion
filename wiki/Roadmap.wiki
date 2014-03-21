@@ -42,6 +42,7 @@ Please note that this is all subject to change!
     * Issue 489: sosetup: capture rmmod output
     * Issue 479: sosetup: should verify that it can resolve server hostname before trying to connect
     * Issue 496: sosetup: VRT policy screen should be a radiolist
+    * Issue 514: sosetup: fix df /nsm check
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
