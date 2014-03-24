@@ -43,9 +43,6 @@ Please note that this is all subject to change!
     * Issue 479: sosetup: should verify that it can resolve server hostname before trying to connect
     * Issue 496: sosetup: VRT policy screen should be a radiolist
     * Issue 514: sosetup: fix df /nsm check
-    * Issue 480: sosetup: running on sensor should automatically create autossh account on server
-    * Issue 500: sosetup: restart starman
-    * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
     * Issue 501: /etc/init/securityonion.conf needs to check that variables were only declared once
     * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 506: securityonion-web-page: add FTP command query
@@ -64,14 +61,17 @@ Please note that this is all subject to change!
     * Issue 330: ossec.conf changes
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
-    * Issue 491: New Squert package
   * April 2014
+    * Issue 480: sosetup: running on sensor should automatically create autossh account on server
+    * Issue 500: sosetup: restart starman
+    * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
     * Issue 483: sostat-redacted should redact usernames
     * Issue 509: sostat-quick
     * Issue 510: sostat: change "ELSA Date Range" to "ELSA Index Date Range"
     * Issue 515: sostat: avoid displaying "ELSA Log Node SSH Tunnels:" if there are no SSH tunnels
     * Issue 462: Snort 2.9.6.0
     * Issue 465: Suricata 2.0
+    * Issue 491: New Squert package
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
