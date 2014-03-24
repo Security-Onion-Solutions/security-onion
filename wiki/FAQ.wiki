@@ -189,14 +189,19 @@ sudo nsm_server_user-add
 }}}
 
 = I get periodic MySQL crashes and/or error code 24 "out of resources" when searching in Sguil.  How do I fix that? =
+Recent versions of Setup should set MySQL's open-files-limit to 90000 to avoid this problem:
+http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html
+
+If you ran Setup before February 2014, you can set this manually as follows.
+
 First, stop sguil and mysql:
 {{{
 sudo nsm_server_ps-stop
 sudo service mysql stop
 }}}
-Next, edit /etc/mysql/my.cnf and add the following in the [mysqld] section:
+Next, edit /etc/mysql/my.cnf and add the following in the [mysqld] section (please use hyphens not underscores):
 {{{
-open-files-limit        = 4096
+open-files-limit        = 90000
 }}}
 Finally, start mysql and sguil:
 {{{
@@ -205,8 +210,6 @@ sudo nsm_server_ps-start
 }}}
 For more information, please see:<br>
 <a href="http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F">http://nsmwiki.org/Sguil_FAQ#I.27m_seeing_error_code_24_from_MySQL._How_do_I_fix_that.3F</a><br>
-
-If you continue to get "out of resources", you'll need to increase 4096 to a higher number.
 
 = How can I remote control my Security Onion box? =
 A few options:
