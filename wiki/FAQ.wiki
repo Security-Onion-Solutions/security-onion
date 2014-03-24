@@ -372,6 +372,9 @@ cp $DEST_PATTERN $DEST_PATTERN.bak
 pdbtool merge -p $DEST_PATTERN --recursive -D $PATTERNS_DIR
 }}}
 
+= Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct? =
+Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion
+
 = Where do I send questions/problems/suggestions? =
 
 [MailingLists Security Onion Mailing Lists]
