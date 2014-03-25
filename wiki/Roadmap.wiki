@@ -44,6 +44,7 @@ Please note that this is all subject to change!
     * Issue 496: sosetup: VRT policy screen should be a radiolist
     * Issue 514: sosetup: fix df /nsm check
     * Issue 501: /etc/init/securityonion.conf needs to check that variables were only declared once
+    * Issue 516: Update sysctl settings
     * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 506: securityonion-web-page: add FTP command query
   * April 2014
