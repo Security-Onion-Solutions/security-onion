@@ -42,7 +42,7 @@ Please see the [Upgrade] page.
 [NewDisk Adding a New Disk for /nsm]
 
 = How do I disable the graphical Network Manager and configuring networking from the command line? =
-<a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">http://code.google.com/p/security-onion/wiki/NetworkConfiguration</a>
+[NetworkConfiguration Network Configuration]
 
 = How do I enable/disable processes? =
 http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.html
