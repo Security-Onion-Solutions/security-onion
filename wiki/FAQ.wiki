@@ -47,6 +47,9 @@ Please see the [Upgrade] page.
 = Where do I send questions/problems/suggestions? =
 [MailingLists security-onion mailing list]
 
+= What's the directory structure of /nsm? =
+[DirectoryStructure /nsm Directory Structure]
+
 = How do I enable/disable processes? =
 http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.html
 
@@ -354,9 +357,6 @@ Controlled by:  /usr/sbin/nsm_sensor<br>
 sensor box<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
 Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
-
-= What's the directory structure of /nsm? =
-[DirectoryStructure /nsm Directory Structure]
 
 = Where do I put my custom ELSA parsers? =
 Place your custom ELSA parsers in a subdirectory of /etc/elsa/patterns.d/ and then use the following code to merge them:
