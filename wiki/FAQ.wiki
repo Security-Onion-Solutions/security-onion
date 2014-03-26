@@ -26,8 +26,20 @@ Please see the [Upgrade] page.
 = How do I configure a BPF for Snort/Suricata/Bro? =
 [BPF]
 
+= Where can I find interesting pcaps to replay? =
+[Pcaps]
+
+= What are the default firewall settings and how do I change them? =
+[Firewall]
+
+= Can I be alerted when an interface stops receiving traffic? =
+[SensorStopsSeeingTraffic]
+
 = How do I enable/disable processes? =
 http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.html
+
+= What can I do to decrease the size of my MySQL database? =
+You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
 = Why is my disk filling up? =
 Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/.  /etc/cron.d/sensor-clean is a cronjob that runs every 5 minutes that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
@@ -86,18 +98,6 @@ Name = use_utc
 Value = 1
 }}}
 [http://security-onion.googlecode.com/svn/wiki/images/elsa/elsa_prefs_utc.png]
-
-= Where can I find interesting pcaps to replay? =
-[Pcaps]
-
-= What are the default firewall settings and how do I change them? =
-[Firewall]
-
-= Can I be alerted when an interface stops receiving traffic? =
-[SensorStopsSeeingTraffic]
-
-= What can I do to decrease the size of my MySQL database? =
-You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
 = What does it mean if I have a high number of Sguil Uncategorized Events? =
 
