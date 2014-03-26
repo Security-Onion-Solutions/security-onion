@@ -12,7 +12,7 @@
 [Proxy Proxy Configuration]
 
 = Why do I get Snorby/Suricata/Bro errors after upgrading the kernel and pfring packages? =
-Please see the [Upgrade] page.
+[Upgrade Updating]
 
 = What is the password for root/mysql/Sguil/Squert/Snorby/ELSA? =
 [Passwords]
