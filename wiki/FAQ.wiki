@@ -44,6 +44,9 @@ Please see the [Upgrade] page.
 = How do I disable the graphical Network Manager and configuring networking from the command line? =
 [NetworkConfiguration Network Configuration]
 
+= Where do I send questions/problems/suggestions? =
+[MailingLists security-onion mailing list]
+
 = How do I enable/disable processes? =
 http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.html
 
@@ -370,10 +373,6 @@ pdbtool merge -p $DEST_PATTERN --recursive -D $PATTERNS_DIR
 
 = Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct? =
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion
-
-= Where do I send questions/problems/suggestions? =
-
-[MailingLists Security Onion Mailing Lists]
 
 = Why do apt-get and the Update Manager show tcl8.5 as held back? =
 [tcl tcl notes]
