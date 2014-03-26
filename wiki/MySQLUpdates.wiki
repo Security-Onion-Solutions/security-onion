@@ -7,7 +7,7 @@ It's no longer necessary to perform the steps listed here as long as you use "so
 sudo soup
 }}}
 
-For more information, please see the [Upgrading Updating] page.
+For more information, please see the [Upgrade Updating] page.
 
 = Introduction =
 
