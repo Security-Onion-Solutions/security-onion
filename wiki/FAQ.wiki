@@ -99,8 +99,19 @@ Value = 1
 = What can I do to decrease the size of my MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
-= What can I do if I can't connect to sguild due to a high number of uncategorized events? =
-http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html
+= What does it mean if I have a high number of Sguil Uncategorized Events? =
+
+Sguild has to load uncategorized events into memory when it starts and it won't accept connections until that's complete. 
+
+You can either: 
+
+- wait for sguild to start up (may take a LONG time), then log into Sguil, and F8 LOTS of events 
+
+OR 
+
+- stop sguild (sudo nsm_server_ps-stop) and manually categorize events using mysql (see http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html) OR lower your DAYSTOKEEP setting in /etc/nsm/securityonion.conf and run "sudo sguil-db-purge".
+
+To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See /etc/nsm/securityonion/autocat.conf.
 
 = Can Security Onion run in IPS mode? =
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
