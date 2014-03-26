@@ -2,12 +2,7 @@
 
 = Use Soup =
 
-It's no longer necessary to perform the steps listed here as long as you use "soup" to perform updates:
-{{{
-sudo soup
-}}}
-
-For more information, please see the [Upgrade Updating] page.
+It's no longer necessary to perform the steps listed here as long as you use "soup" to perform updates.  For more information, please see the [Upgrade Updating] page.
 
 = Introduction =
 
