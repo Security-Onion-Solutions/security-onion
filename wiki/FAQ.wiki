@@ -161,10 +161,10 @@ For more information, please see:<br>
 In Security Onion 12.04, you can install our packages on top of Ubuntu Server (minimal installation, no GUI).
 
 = How do I get Security Onion to recognize more than 4GB of RAM? =
-Install the PAE kernel as described here:<br>
-<a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a>
+If you have a 64-bit machine, use our 64-bit ISO image or use a 64-bit version of Ubuntu.
 
-Security Onion 12.04 has full 64-bit support which supports more than 4GB RAM by default.
+If you have a 32-bit machine, you'll need to use a 32-bit version of Ubuntu and then install the PAE kernel as described here:<br>
+<a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a>
 
 = How do I disable the graphical Network Manager and configuring networking from the command line? =
 
@@ -230,10 +230,6 @@ A few options:
 
 = How can I add and test local rules? = 
 [AddingLocalRules Adding local rules and testing them with scapy]
-
-= Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically? =
-All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
-<a href="http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html">http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html</a>
 
 = I've forgotten my Snorby password.  How do I reset it? =
 First, open the Rails console:
@@ -327,15 +323,6 @@ To change this behavior you must modify the PHP code:<br>
  - file /opt/xplico/xi/cake/dispatcher.php<br>
  - replace demo.xplico.org with your host name (used in the url)<br>
 
-= How do I run ntop on Security Onion? =
-In the old Security Onion 10.04, Snorby was running on port 3000 (which ntop also defaults to).  In Security Onion 12.04, Snorby no longer runs on port 3000, so this shouldn't be an issue.
-
-ntop defaults to port 3000, which is already being used by Snorby.  You can change ntop's port by editing /etc/default/ntop like this:
-{{{
-GETOPT="-w 0 -W 4000"
-}}}
-This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!
-
 = Why does Bro log "Failed to open GeoIP database" and "Fell back to GeoIP Country database"? =
 
 The GeoIP CITY database is not free and thus we cannot include it in the distro.  Bro fails to find it and falls back to the GeoIP COUNTRY database (which is free).  As long as you are seeing some country codes in your conn.log, then everything should be fine.  If you really need the CITY database, see this thread for some options:<br>
@@ -407,6 +394,19 @@ This is related to the previous question.  See [tcl tcl notes].
 This is a known issue with Ubuntu 10.04 and ESXi 4.1 and is unrelated to Security Onion.  Please see:<br>
 http://ubuntuforums.org/showthread.php?t=1674759<br>
 https://bugs.launchpad.net/ubuntu/+source/linux/+bug/659422<br>
+
+= Why is the Snorby dashboard not displaying correctly?  Why do I have to restart the Sensor Cache job periodically? =
+All known issues with the dashboard and sensor cache job have been resolved with the release of Snorby 2.5.1 in Security Onion 20120321:<br>
+<a href="http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html">http://blog.securityonion.net/2012/03/security-onion-20120321-now-available.html</a>
+
+= How do I run ntop on Security Onion? =
+In the old Security Onion 10.04, Snorby was running on port 3000 (which ntop also defaults to).  In Security Onion 12.04, Snorby no longer runs on port 3000, so this shouldn't be an issue.
+
+ntop defaults to port 3000, which is already being used by Snorby.  You can change ntop's port by editing /etc/default/ntop like this:
+{{{
+GETOPT="-w 0 -W 4000"
+}}}
+This will disable http and enable https on port 4000.  Thanks to Rod Green for the tip!
 
 = Why can't I upgrade past version 20110628? = 
 
