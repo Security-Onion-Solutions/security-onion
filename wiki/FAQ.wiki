@@ -32,8 +32,17 @@ Please see the [Upgrade] page.
 = What are the default firewall settings and how do I change them? =
 [Firewall]
 
+= How can I add and test local rules? = 
+[AddingLocalRules Adding local rules and testing them with scapy]
+
 = Can I be alerted when an interface stops receiving traffic? =
 [SensorStopsSeeingTraffic]
+
+= What do I need to modify in order to have the log files stored on a different mount point? =
+[NewDisk Adding a New Disk for /nsm]
+
+= How do I disable the graphical Network Manager and configuring networking from the command line? =
+<a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">http://code.google.com/p/security-onion/wiki/NetworkConfiguration</a>
 
 = How do I enable/disable processes? =
 http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.html
@@ -132,10 +141,6 @@ sudo rm /etc/udev/rules.d/70-persistent-net.rules
 sudo reboot
 }}}
 
-= What do I need to modify in order to have the log files stored on a different mount point? =
-
-[NewDisk Adding a New Disk for /nsm]
-
 = How do I change the fonts in the Sguil client? =
 
 In the Sguil client, click the File menu and then go to "Change Font".  You can change both the Standard and Fixed fonts.
@@ -165,10 +170,6 @@ If you have a 64-bit machine, use our 64-bit ISO image or use a 64-bit version o
 
 If you have a 32-bit machine, you'll need to use a 32-bit version of Ubuntu and then install the PAE kernel as described here:<br>
 <a href="https://help.ubuntu.com/community/EnablingPAE">https://help.ubuntu.com/community/EnablingPAE</a>
-
-= How do I disable the graphical Network Manager and configuring networking from the command line? =
-
-<a href="http://code.google.com/p/security-onion/wiki/NetworkConfiguration">http://code.google.com/p/security-onion/wiki/NetworkConfiguration</a>
 
 = I'm running Security Onion in a VM and the screensaver is using lots of CPU.  How do I change/disable the screensaver? =
   # Click Applications.<br>
@@ -227,9 +228,6 @@ A few options:
   * You can use [FreeNX] but there tend to be issues with tcl/tk (described in the linked article)
   * <a href="http://www.xrdp.org/">xrdp</a> - sudo apt-get install xrdp 
   * "ssh -X" - any program started in the SSH session will be displayed on your local desktop (requires a local X server)
-
-= How can I add and test local rules? = 
-[AddingLocalRules Adding local rules and testing them with scapy]
 
 = I've forgotten my Snorby password.  How do I reset it? =
 First, open the Rails console:
