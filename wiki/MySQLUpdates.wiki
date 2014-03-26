@@ -2,7 +2,10 @@
 
 = Use Soup =
 
-It's no longer necessary to perform the steps listed here as long as you use "sudo soup" to perform updates.  
+It's no longer necessary to perform the steps listed here as long as you use "soup" to perform updates:
+{{{
+sudo soup
+}}}
 
 = Introduction =
 
