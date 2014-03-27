@@ -48,6 +48,7 @@ Please note that this is all subject to change!
     * Issue 518: NSM scripts: run "broctl install" when (re)starting Bro
     * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 506: securityonion-web-page: add FTP command query
+    * Issue 519: onionsalt: improve ids/bro/ossec updates
   * April 2014
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
