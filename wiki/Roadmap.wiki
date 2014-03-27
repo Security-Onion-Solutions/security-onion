@@ -70,6 +70,7 @@ Please note that this is all subject to change!
     * Issue 509: sostat-quick
     * Issue 510: sostat: change "ELSA Date Range" to "ELSA Index Date Range"
     * Issue 515: sostat: avoid displaying "ELSA Log Node SSH Tunnels:" if there are no SSH tunnels
+    * Issue 517: sostat: only display "Top 50 URLs for yesterday" if http_agent is enabled
     * Issue 462: Snort 2.9.6.0
     * Issue 465: Suricata 2.0
   * May 2014
