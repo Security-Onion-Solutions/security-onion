@@ -25,12 +25,14 @@ In order to be as effective and efficient as possible, please consider the follo
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
 ==Include sostat-redacted output==
-Please run the following command and attach the output to your email in plain text format (.txt) OR use a service like http://pastebin.com :<br>
+Please run the following command:
 {{{
 sudo sostat-redacted
 }}}
 
 sostat-redacted will automatically redact any IPv4/IPv6/MAC addresses, but there may be additional sensitive info that you still need to redact manually.
+
+Attach the output to your email in plain text format (.txt) OR use a service like http://pastebin.com.
 
 =Mailing Lists=
 ==Security-Onion==
