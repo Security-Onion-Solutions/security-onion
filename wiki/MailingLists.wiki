@@ -25,7 +25,7 @@ In order to be as effective and efficient as possible, please consider the follo
 http://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
 ==Include sostat-redacted output==
-Please run the following command and attach the output to your email in plain text format (.txt):<br>
+Please run the following command and attach the output to your email in plain text format (.txt) OR use a service like http://pastebin.com:<br>
 {{{
 sudo sostat-redacted
 }}}
