@@ -65,7 +65,7 @@ Please note that this is all subject to change!
     * Issue 330: ossec.conf changes
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
-    * Issue 520: Setup should configure /etc/ssh/sshd_config with ClientAliveInterval 60 and ClientAliveCountMax 3
+    * Issue 520: Configure /etc/ssh/sshd_config with ClientAliveInterval 60 and ClientAliveCountMax 3
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
