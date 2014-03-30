@@ -44,10 +44,10 @@ Please note that this is all subject to change!
     * Issue 496: sosetup: VRT policy screen should be a radiolist
     * Issue 514: sosetup: fix df /nsm check
   * April 2014
-    * Issue 453: /etc/cron.d/sensor-newday should restart autossh tunnel
     * Issue 501: /etc/init/securityonion.conf needs to check that variables were only declared once
     * Issue 516: Update sysctl settings
     * Issue 518: NSM scripts: run "broctl install" when (re)starting Bro
+    * Issue 520: Configure /etc/ssh/sshd_config with ClientAliveInterval 60 and ClientAliveCountMax 3
     * Issue 506: securityonion-web-page: add FTP command query
     * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 519: onionsalt: improve ids/bro/ossec updates
@@ -65,7 +65,6 @@ Please note that this is all subject to change!
     * Issue 330: ossec.conf changes
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
-    * Issue 520: Configure /etc/ssh/sshd_config with ClientAliveInterval 60 and ClientAliveCountMax 3
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
