@@ -51,6 +51,11 @@ Please note that this is all subject to change!
     * Issue 506: securityonion-web-page: add FTP command query
     * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 519: onionsalt: improve ids/bro/ossec updates
+    * Issue 483: sostat-redacted should redact usernames
+    * Issue 509: sostat-quick
+    * Issue 510: sostat: change "ELSA Date Range" to "ELSA Index Date Range"
+    * Issue 515: sostat: avoid displaying "ELSA Log Node SSH Tunnels:" if there are no SSH tunnels
+    * Issue 517: sostat: only display "Top 50 URLs for yesterday" if http_agent is enabled
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
@@ -68,11 +73,6 @@ Please note that this is all subject to change!
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
-    * Issue 483: sostat-redacted should redact usernames
-    * Issue 509: sostat-quick
-    * Issue 510: sostat: change "ELSA Date Range" to "ELSA Index Date Range"
-    * Issue 515: sostat: avoid displaying "ELSA Log Node SSH Tunnels:" if there are no SSH tunnels
-    * Issue 517: sostat: only display "Top 50 URLs for yesterday" if http_agent is enabled
     * Issue 462: Snort 2.9.6.0
     * Issue 465: Suricata 2.0
   * May 2014
