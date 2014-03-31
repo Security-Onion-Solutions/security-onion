@@ -44,12 +44,12 @@ Please note that this is all subject to change!
     * Issue 496: sosetup: VRT policy screen should be a radiolist
     * Issue 514: sosetup: fix df /nsm check
   * April 2014
+    * Issue 506: securityonion-web-page: add FTP command query
+    * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 501: /etc/init/securityonion.conf needs to check that variables were only declared once
     * Issue 516: Update sysctl settings
     * Issue 518: NSM scripts: run "broctl install" when (re)starting Bro
     * Issue 520: Configure /etc/ssh/sshd_config with ClientAliveInterval 60 and ClientAliveCountMax 3
-    * Issue 506: securityonion-web-page: add FTP command query
-    * Issue 507: securityonion-web-page: add queries for BRO_INTEL
     * Issue 519: onionsalt: improve ids/bro/ossec updates
     * Issue 483: sostat-redacted should redact usernames
     * Issue 509: sostat-quick
