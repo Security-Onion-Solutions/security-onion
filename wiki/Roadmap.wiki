@@ -50,6 +50,7 @@ Please note that this is all subject to change!
     * Issue 516: Update sysctl settings
     * Issue 518: NSM scripts: run "broctl install" when (re)starting Bro
     * Issue 520: Configure /etc/ssh/sshd_config with ClientAliveInterval 60 and ClientAliveCountMax 3
+    * Issue 521: Replace test.com domain in /etc/nsm/ossec/ossec_agent.conf
     * Issue 519: onionsalt: improve ids/bro/ossec updates
     * Issue 483: sostat-redacted should redact usernames
     * Issue 509: sostat-quick
@@ -73,7 +74,6 @@ Please note that this is all subject to change!
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
-    * Issue 521: Setup: copy domain from /etc/network/interfaces into /etc/nsm/ossec/ossec_agent.conf
     * Issue 462: Snort 2.9.6.0
     * Issue 465: Suricata 2.0
   * May 2014
