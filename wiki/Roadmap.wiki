@@ -76,6 +76,7 @@ Please note that this is all subject to change!
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
     * Issue 522: Setup should handle more than 10 interfaces correctly
+    * Issue 525: Setup: configure all available sniffing interfaces and prompt for which interfaces to enable
     * Issue 462: Snort 2.9.6.0
     * Issue 465: Suricata 2.0
   * June 2014
