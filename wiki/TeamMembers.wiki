@@ -36,6 +36,8 @@ Security Onion needs more volunteers in all of the areas defined below.  If Secu
   * Lawrence Abrams
   * Mark Hillick
   * Joe Hargis
+  * Dennis Distler
+  * Jon Schipp
 
 *Artwork*
   * Jack Blanchard
