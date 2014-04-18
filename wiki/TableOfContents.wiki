@@ -33,6 +33,7 @@
   * [FAQ]
   * [Passwords]
   * [MailingLists Mailing Lists]
+  * [TeamMembers Help Wanted]
 
 ==Known Issues==
   * [2013 Issues Resolved in 2013]
