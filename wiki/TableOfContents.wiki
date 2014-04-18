@@ -22,6 +22,7 @@
   * [BPF BPF]
   * [PF_RING PF_RING]
   * [MySQLTuning MySQLTuning]
+  * [NewDisk Adding a new disk]
 
 ==Tricks and Tips==
   * [ELSAQueryTips ELSA Query Tips]
