@@ -28,7 +28,7 @@
   * [ELSAQueryTips ELSA Query Tips]
   * [Salt Using Salt to manage Sensors]
   * [DNSAnomalyDetection DNS Anomaly Detection script]
-  * [ConnectingtoSguil]
+  * [ConnectingtoSguil Connecting to Sguild]
 
 ==Help==
   * [Help Troubleshooting]
