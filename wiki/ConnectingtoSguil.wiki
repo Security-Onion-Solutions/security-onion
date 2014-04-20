@@ -18,11 +18,10 @@ http://jonschipp.com/seconion/sguil-local.png
 
 After, choose which sensors you would like to monitor for this sguil session and then click Start Sguil.
 
-
 ==Connect Remotely via SSH w/ X11 Forwarding==
 
 This method requires SSH and an X11 server installed on the machine from which you will be
-connecting from. If you're using OSX install the XQuartz package.
+connecting from. If you're using OSX install the XQuartz package, Windows try ciXwin, Linux and BSD family use Xorg.
 
 Connect to the SecurityOnion server via SSH while passing the X11 forwarding option ( -X ). 
 
