@@ -60,7 +60,7 @@ to connect to sguild on your production SecurityOnion instance.
 For this section I will be using VMware Fusion on OSX.
 
 Install SecurityOnion in a Virtual Machine and configure the network adapter to use NAT mode (easiest)
-by going to your VM's settings.
+by going to your VM's settings. This will work if you have per-IP/host ACL's too since the same IP address will be used.
 
 http://jonschipp.com/seconion/sguil-network-adapter.png
 
