@@ -17,7 +17,7 @@ https://github.com/TOoSmOotH/onionsalt
 Please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install securityonion-onionsalt and nothing will change for you.  Should you decide to install securityonion-onionsalt, the following data will replicate from the master server out to the sensors every 15 minutes:
 
   * user accounts and sudoers in /opt/onionsalt/pillar/users/init.sls
-  * user ssh keys in opt/onionsalt/salt/users/keys/
+  * user ssh keys in /opt/onionsalt/salt/users/keys/
   * Bro scripts in /opt/bro/share/bro/policy/
   * NIDS rules in /etc/nsm/rules/ (Snort/Suricata/barnyard will restart as necessary)
   * HIDS rules in /var/ossec/rules/local_rules.xml (OSSEC will restart as necessary)
