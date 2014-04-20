@@ -127,9 +127,9 @@ and its sub-contents to the destination location. First, we must stop all proces
 be writing or using the databases.
 
 {{{
-$ service nsm stop
-$ service mysql stop
-$ service sphinxsearch stop
+sudo service nsm stop
+sudo service mysql stop
+sudo service sphinxsearch stop
 }}}
 
 Now, we need to make sure all other nsm-related processes are stopped. To double-check,
@@ -137,27 +137,28 @@ run lsof on the nsm mount point to list any processes that have open file descri
 or nearly everything, that comes up in the list.
 
 {{{
-$ lsof /nsm
+lsof /nsm
 }}}
 
 Next, let’s copy the data over to the new location leaving the original intact. You can use cp or rsync
-or another similar tool but be sure to preserve permissions ( -p ) and copy recursively ( -r ):
+or another similar tool but be sure to preserve permissions ( -p ) and copy recursively ( -r ). Both 
+examples are listed below, choose one:
 
 {{{
-$ cp -rp /var/lib/mysql /nsm
-$ rsync -avpr var/lib/mysql /nsm
+sudo cp -rp /var/lib/mysql /nsm
+sudo rsync -avpr var/lib/mysql /nsm
 }}}
 
 Once that’s finished, rename or backup the original just in case something goes wrong.
 
 {{{
-$ mv /var/lib/mysql /var/lib/mysql.bak
+sudo mv /var/lib/mysql /var/lib/mysql.bak
 }}}
 
 Next, create a symbolic link from /var/lib/mysql to the new location:
 
 {{{
-$ ln -s /nsm/mysql /var/lib/mysql
+ln -s /nsm/mysql /var/lib/mysql
 }}}
 
 Ubuntu uses AppArmor to add an additional layer of security to running applications.
@@ -165,10 +166,13 @@ We must tell apparmor about the new mysql database locations otherwise it will p
 the system from using it.
 
 {{{
-$ service apparmor stop
+sudo service apparmor stop
 }}}
 
 Edit /etc/apparmor.d/usr.sbin.mysqld to reflect the following patch which adds the new location:
+{{{
+sudo vim /etc/apparmor.d/usr.sbin.mysqld
+}}}
 
 {{{
 --- a/apparmor.d/usr.sbin.mysqld
@@ -190,8 +194,8 @@ Edit /etc/apparmor.d/usr.sbin.mysqld to reflect the following patch which adds t
 Finally, start all the processes back up.
 
 {{{
-$ service apparmor start
-$ service mysql start
-$ service sphinxsearch start
-$ service nsm start
+sudo service apparmor start
+sudo service mysql start
+sudo service sphinxsearch start
+sudo service nsm start
 }}}
