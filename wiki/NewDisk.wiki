@@ -158,7 +158,7 @@ sudo mv /var/lib/mysql /var/lib/mysql.bak
 Next, create a symbolic link from /var/lib/mysql to the new location:
 
 {{{
-ln -s /nsm/mysql /var/lib/mysql
+sudo ln -s /nsm/mysql /var/lib/mysql
 }}}
 
 Ubuntu uses AppArmor to add an additional layer of security to running applications.
