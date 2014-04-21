@@ -16,6 +16,10 @@ https://github.com/TOoSmOotH/onionsalt
 
 Please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install securityonion-onionsalt and nothing will change for you.  
 
+= Warning =
+
+Please be advised that our Salt integration is still considered experimental.
+
 = Features =
 When you install and enable securityonion-onionsalt, the following data will replicate from the master server out to the sensors every 15 minutes:
 
@@ -26,10 +30,6 @@ When you install and enable securityonion-onionsalt, the following data will rep
   * HIDS rules in /var/ossec/rules/local_rules.xml (OSSEC will restart as necessary)
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
-
-= Warning =
-
-Please be advised that our Salt integration is still considered experimental.
 
 = Firewall Requirements =
 
