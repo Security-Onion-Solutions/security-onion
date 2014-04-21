@@ -53,7 +53,7 @@ and pivot into a number of applications like Wireshark, ELSA, and Network Minor.
 == Directly Connecting to Sguild Remotely ==
 
 To directly connect to a Sguild server one must possess a working Sguil client.
-Squil may not be easy or available for install on certain operating systems. Because of this
+Sguil may not be easy or available for install on certain operating systems. Because of this
 I recommend installing SecurityOnion in a virtual machine on your workstation and use that
 to connect to sguild on your production SecurityOnion instance.
 
