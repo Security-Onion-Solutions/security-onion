@@ -14,7 +14,10 @@ https://github.com/TOoSmOotH/onionsalt
 
 = Salt and OnionSalt are optional packages =
 
-Please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install securityonion-onionsalt and nothing will change for you.  Should you decide to install securityonion-onionsalt, the following data will replicate from the master server out to the sensors every 15 minutes:
+Please note that Salt is totally optional.  If you're happy with your current method of sensor management, then you don't have to install securityonion-onionsalt and nothing will change for you.  
+
+= Features =
+When you install and enable securityonion-onionsalt, the following data will replicate from the master server out to the sensors every 15 minutes:
 
   * user accounts and sudoers in /opt/onionsalt/pillar/users/init.sls
   * user ssh keys in /opt/onionsalt/salt/users/keys/
