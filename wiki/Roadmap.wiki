@@ -53,6 +53,7 @@ Please note that this is all subject to change!
     * Issue 521: Replace test.com domain in /etc/nsm/ossec/ossec_agent.conf
     * Issue 519: onionsalt: improve ids/bro/ossec updates
     * Issue 524: Setup should test connection to master server using ssh instead of nc
+    * Issue 529: nsm: check for null dns domain before updating ossec_agent.conf
     * Issue 483: sostat-redacted should redact usernames
     * Issue 509: sostat-quick
     * Issue 510: sostat: change "ELSA Date Range" to "ELSA Index Date Range"
