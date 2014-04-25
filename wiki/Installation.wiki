@@ -2,7 +2,7 @@
 
 = Welcome to the Security Onion Installation Guide! =
 
-To install Security Onion, you're going to either install our Security Onion ISO image *or* install a standard Ubuntu 12.04 ISO image and then add our Security Onion PPA and packages.  
+To install Security Onion, you're going to either install our Security Onion ISO image *or* install a standard Ubuntu 12.04 ISO image and then add our Security Onion PPA and packages.  Please keep in mind that our PPA and packages are only compatible with Ubuntu 12.04.
 
 = ALWAYS verify the checksum of ANY downloaded ISO image = 
 Regardless of whether you're downloading our Security Onion ISO image or whether you're starting with an Ubuntu 12.04 ISO image, you should ALWAYS verify the checksum of the downloaded ISO image.  
@@ -26,9 +26,6 @@ After installing using one of the four methods listed above, you'll want to revi
 = UEFI =
 If you have a new machine with UEFI, please see:
 https://help.ubuntu.com/community/UEFI
-
-= Ubuntu 12.04 =
-If you're going to be installing your own version of Ubuntu and then adding our PPA and packages, please remember that our PPA and packages are only compatible with Ubuntu 12.04.
 
 = What's the QUICKEST way to install Security Onion? =
   # Download our ISO image (based on Xubuntu 12.04 64-bit) from <a href="https://sourceforge.net/projects/security-onion/files/12.04.4/">Sourceforge</a> or via <a href="http://port111.com/securityonion-12.04.4-20140222.iso.torrent">Torrent</a> and verify the checksum using the checksums provided on the Sourceforge page.
