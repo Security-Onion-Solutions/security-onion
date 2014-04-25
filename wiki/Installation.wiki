@@ -14,9 +14,9 @@ https://help.ubuntu.com/community/HowToMD5SUM
 = Overview = 
 This Installation Guide consists of four different methods of installation:
   * <a href="https://code.google.com/p/security-onion/wiki/Installation#What's_the_QUICKEST_way_to_install_Security_Onion?">*Quickest* Method</a>
-  * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you_just_want_to_quickly_evaluate_Security_Onion,_use_our_ISO">RECOMMENDED Method for QUICKLY EVALUATING Security Onion using the SECURITY ONION ISO image</a>
-  * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you_want_to_quickly_evaluate_Security_Onion_on_your_preferred">RECOMMENDED Method for QUICKLY EVALUATING Security Onion using YOUR PREFERRED FLAVOR OF UBUNTU 12.04</a>
-  * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you're_going_to_be_deploying_Security_Onion_in_productio">RECOMMENDED Method for PRODUCTION DEPLOYMENT</a>
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you_just_want_to_quickly_evaluate_Security_Onion,_use_our_ISO">*Recommended* Method for *quickly evaluating* Security Onion using the *Security Onion ISO image*</a>
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you_want_to_quickly_evaluate_Security_Onion_on_your_preferred">*Recommended* Method for *quickly evaluating* Security Onion using *your preferred flavor of Ubuntu 12.04*</a>
+  * <a href="https://code.google.com/p/security-onion/wiki/Installation#If_you're_going_to_be_deploying_Security_Onion_in_productio">*Recommended* Method for *production deployment*</a>
 
 After installing using one of the four methods listed above, you'll want to review some of the sections at the bottom of this page:
   * <a href="https://code.google.com/p/security-onion/wiki/Installation#ELSA_and_timezones">ELSA_and_Timezones</a>
