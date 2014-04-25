@@ -60,6 +60,7 @@ Please note that this is all subject to change!
     * Issue 510: sostat: change "ELSA Date Range" to "ELSA Index Date Range"
     * Issue 515: sostat: avoid displaying "ELSA Log Node SSH Tunnels:" if there are no SSH tunnels
     * Issue 517: sostat: only display "Top 50 URLs for yesterday" if http_agent is enabled
+    * Issue 531: sostat: improve checking of autossh tunnels
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
   * May 2014
