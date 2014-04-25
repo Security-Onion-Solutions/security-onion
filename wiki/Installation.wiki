@@ -80,7 +80,7 @@ sudo sosetup
 <br>
 == If you're going to be deploying Security Onion in production, follow these steps:==
   # First, check the [Hardware Hardware Requirements] page.
-  # Download the ISO image for your prefered flavor of Ubuntu *12.04* 32-bit/*64-bit* or download our Security Onion ISO image using the instructions above. Also download/record the MD5/SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
+  # Download the ISO image for your prefered flavor of Ubuntu 12.04 32-bit/64-bit or download our Security Onion ISO image using the instructions above. Also download/record the MD5/SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
   # If deploying a distributed environment (a master server and one or more slave sensors), you’ll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master server first.  Please note that sensors need to connect to the master server on ports 22 and 7736.  If you choose to enable salt for sensor management, they will also need to be able to connect to the master server on ports 4505 and 4506.<br>
   # Using the downloaded ISO, install the operating system. If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  If prompted to install any additional packages, the only option you should choose is OpenSSH Server (openssh-server). Specifically, do NOT choose MySQL. All other required dependencies will be installed automatically.<br>
   # When asked about partitioning, there are a few things to keep in mind:
