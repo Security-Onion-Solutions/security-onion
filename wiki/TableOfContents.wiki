@@ -17,7 +17,7 @@
   * [ChangingIPAddress Changing IP Addresses]
 
 ==Tuning==
-  * [ManagingAlerts ManagingAlerts]
+  * [ManagingAlerts Managing Alerts]
   * [AddingLocalRules Adding Local Rules]
   * [BPF BPF]
   * [PF_RING PF_RING]
