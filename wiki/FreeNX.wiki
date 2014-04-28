@@ -1,12 +1,12 @@
 #summary Installing FreeNX
 = Overview =
 
-Note from Doug Burks: We don't really recommend or support FreeNX, but some folks like to use it, so here are the notes from Lance Honer.  If you choose to install FreeNX, you should harden your server and tighten its UFW firewall:
+*Note from Doug Burks: We don't really recommend or support FreeNX, but some folks like to use it, so here are the notes from Lance Honer.  If you choose to install FreeNX, you should harden your server and tighten its UFW firewall:
 https://code.google.com/p/security-onion/wiki/Firewall
 
 Also see the Ubuntu page on FreeNX (especially the section entitled "Using custom SSH keys"):
 https://help.ubuntu.com/community/FreeNX
-
+*
 Author:  Lance Honer
 
 Here's a quick writeup for how to get FreeNX installed and playing nicely with Sguil on your Security Onion installation. Check out the [http://en.wikipedia.org/wiki/NX_technology Wikipedia page on NX Technology] for some background information but in a nutshell FreeNX is remote desktop for Linux and near local console speeds over network connections of any speed. This type of access is very useful when working with Security Onion since you may want to use tools included on the Security Onion distribution to analyze the data captured by the IDS sensors but not have local access to the server e.g. working at your desktop while the server is in the data center. 
