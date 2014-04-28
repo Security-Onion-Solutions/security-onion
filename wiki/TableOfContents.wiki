@@ -30,6 +30,7 @@
   * [DNSAnomalyDetection DNS Anomaly Detection script]
   * [ConnectingtoSguil Connecting to Sguild]
   * [Pcaps Pcaps for Testing]
+  * [FreeNX]
 
 ==Help==
   * [Help Troubleshooting]
