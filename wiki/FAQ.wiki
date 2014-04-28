@@ -51,7 +51,7 @@
 [DirectoryStructure /nsm Directory Structure]
 
 = Will Security Onion move to Ubuntu 14.04? =
-We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported for 3 more years. 
+We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases 
 
 = How do I enable/disable processes? =
 http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.html
