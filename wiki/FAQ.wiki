@@ -8,11 +8,11 @@
 = How do I install Security Onion updates? =
 [Upgrade Upgrade Procedure]
 
-= What do I need to do if I'm behind a proxy? =
-[Proxy Proxy Configuration]
-
 = Why do I get Snorby/Suricata/Bro errors after upgrading the kernel and pfring packages? =
 [Upgrade Updating]
+
+= What do I need to do if I'm behind a proxy? =
+[Proxy Proxy Configuration]
 
 = What is the password for root/mysql/Sguil/Squert/Snorby/ELSA? =
 [Passwords]
