@@ -90,13 +90,13 @@ Go to /etc/apparmor.d/local/
 cd /etc/apparmor.d/local/
 }}}
 
-Edit usr.sbin.mysqld, copy the /nsm line, and change /nsm to the new location
+Edit usr.sbin.mysqld, copy the /nsm line(s), and change /nsm to the new location
 
 {{{
 sudo vi usr.sbin.mysqld
 }}}
 
-Edit usr.sbin.tcpdump, copy the /nsm line, and change /nsm to the new location
+Edit usr.sbin.tcpdump, copy the /nsm line(s), and change /nsm to the new location
 
 {{{
 sudo vi usr.sbin.tcpdump
