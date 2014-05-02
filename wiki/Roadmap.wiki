@@ -72,8 +72,6 @@ Please note that this is all subject to change!
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
     * Issue 406: sguil-db-purge needs to purge history table as well
     * Issue 428: sguil-db-purge should check for existence of tables
-    * Issue 412: OSSEC 2.7.1 or higher
-    * Issue 330: ossec.conf changes
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
@@ -84,12 +82,15 @@ Please note that this is all subject to change!
     * Issue 527: Setup: when choosing sensor-only and entering server name, do not allow the hostname or IP address of the sensor itself
     * Issue 528: Re-running Setup should wipe ELSA databases
     * Issue 532: Limit what autossh keys can do
-    * Issue 462: Snort 2.9.6.1
-    * Issue 465: Suricata 2.0
   * June 2014
+    * Issue 462: Snort 2.9.6.1 or higher
+    * Issue 465: Suricata 2.0 or higher
+    * Issue 535: PF_RING 6.0 or higher
     * Issue 287: Sguil 0.9
     * Issue 491: Squert 1.2
     * Issue 418: netsniff-ng 0.58 or higher
+    * Issue 412: OSSEC 2.7.1 or higher
+    * Issue 330: ossec.conf changes
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
