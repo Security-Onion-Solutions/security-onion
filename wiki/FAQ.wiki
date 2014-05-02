@@ -272,6 +272,10 @@ quit
 {{{
 sudo a2dissite snorby
 }}}
+  # Reload Apache configuration:
+{{{
+sudo service apache2 reload
+}}}
   # Set SNORBY_ENABLED=no in /etc/nsm/securityonion.conf.
   # Comment out the output database line in all barnyard2.conf files on all sensors:
 {{{
