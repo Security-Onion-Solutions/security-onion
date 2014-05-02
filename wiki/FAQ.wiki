@@ -276,7 +276,7 @@ sudo a2dissite snorby
 {{{
 sudo service apache2 reload
 }}}
-  # Prevent Snorby working from starting on boot by setting SNORBY_ENABLED=no in /etc/nsm/securityonion.conf.
+  # Prevent Snorby worker from starting on boot by setting SNORBY_ENABLED=no in /etc/nsm/securityonion.conf.
   # Comment out the output database line in all barnyard2.conf files on all sensors:
 {{{
 sudo sed -i 's|output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|#output database: alert, mysql, user=root dbname=snorby host=127.0.0.1|g' /etc/nsm/*/barnyard2*.conf
