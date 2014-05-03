@@ -102,3 +102,4 @@ Please note that this is all subject to change!
     * Issue 369: Arpwatch
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 445: Bro 2.2.1 or higher
+    * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't happen early enough
