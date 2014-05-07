@@ -82,6 +82,8 @@ Please note that this is all subject to change!
     * Issue 527: Setup: when choosing sensor-only and entering server name, do not allow the hostname or IP address of the sensor itself
     * Issue 528: Re-running Setup should wipe ELSA databases
     * Issue 532: Limit what autossh keys can do
+    * Issue 537: sostat-quick: check for root
+    * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
   * June 2014
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0 or higher
