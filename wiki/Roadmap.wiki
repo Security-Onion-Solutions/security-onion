@@ -81,6 +81,7 @@ Please note that this is all subject to change!
     * Issue 525: Setup: configure all available sniffing interfaces and prompt for which interfaces to enable
     * Issue 527: Setup: when choosing sensor-only and entering server name, do not allow the hostname or IP address of the sensor itself
     * Issue 528: Re-running Setup should wipe ELSA databases
+    * Issue 539: Changes to the Install Script to support more network card naming stuff
     * Issue 532: Limit what autossh keys can do
     * Issue 537: sostat-quick: check for root
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
