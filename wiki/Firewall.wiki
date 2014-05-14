@@ -2,7 +2,7 @@
 #labels Phase-Deploy
 
 = UFW - Uncomplicated Firewall=
-The default firewall configuration tool for Ubuntu is ufw. By default UFW is enabled on security onion.
+The default firewall configuration tool for Ubuntu is ufw. By default UFW is enabled on Security Onion.
 
 ==Enable/Disable=
 {{{
