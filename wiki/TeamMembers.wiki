@@ -38,6 +38,7 @@ Security Onion needs more volunteers in all of the areas defined below.  If Secu
   * Joe Hargis
   * Dennis Distler
   * Jon Schipp
+  * Kevin Branch
 
 *Artwork*
   * Jack Blanchard
