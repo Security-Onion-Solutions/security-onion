@@ -31,7 +31,7 @@
   * [ConnectingtoSguil Connecting to Sguild]
   * [Pcaps Pcaps for Testing]
   * [FreeNX]
-  * [WipingSnorby]
+  * [WipingSnorby Wiping the Snorby database]
 
 ==Help==
   * [Help Troubleshooting]
