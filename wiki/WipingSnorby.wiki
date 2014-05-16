@@ -11,11 +11,11 @@ https://groups.google.com/d/topic/security-onion/m4uu2PSa_eg/discussion
 
 Quoting Kevin Branch:
 
-I recently had a problem with a broken Snorby database that was jamming barnyard2 and thus breaking pretty much anything Suricata-alert related in my SO system.  My final solution was to completely wipe out the Snorby application along with it's data and start fresh.  I did not want to rebuild SO.  This is the method that worked well for me, and since I seem to remember someone asking a while back about resetting Snorby while leaving SO intact, I offer it here to the wider group.  Refinements are welcome.
+ I recently had a problem with a broken Snorby database that was jamming barnyard2 and thus breaking pretty much anything Suricata-alert related in my SO system.  My final solution was to completely wipe out the Snorby application along with it's data and start fresh.  I did not want to rebuild SO.  This is the method that worked well for me, and since I seem to remember someone asking a while back about resetting Snorby while leaving SO intact, I offer it here to the wider group.  Refinements are welcome.
 
-The following procedure will completely wipe out all of your Snorby data and any custom configurations you have made to Snorby, restoring Snorby to like-new condition while leaving the rest of SO alone.  I have only tested this on a standalone install of SO.
+ The following procedure will completely wipe out all of your Snorby data and any custom configurations you have made to Snorby, restoring Snorby to like-new condition while leaving the rest of SO alone.  I have only tested this on a standalone install of SO.
 
-Get to the CLI of your SO box.
+ Get to the CLI of your SO box.
 
 {{{
 # Become root
