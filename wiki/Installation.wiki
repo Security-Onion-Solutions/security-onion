@@ -136,7 +136,9 @@ sudo sosetup
    * You’ll then be asked to choose DHCP or static addressing for the management interface. It is highly recommended you choose static.
    * Choosing static, you’ll be prompted to enter a static IP address for your management interface, the network’s subnet mask, gateway IP address, DNS server IP addresses (separated by spaces), and your local domain.
    * You’ll then be prompted to select any additional interfaces that will be used for sniffing/monitoring network traffic.
-   * When prompted, choose “Yes, make changes and reboot!”
+   * When prompted, choose “Yes, make changes!"
+   * If you need to adjust any network settings manually (e.g. MTU), you may edit /etc/network/interfaces before rebooting.
+   * When ready to reboot, click "Yes, reboot!”
   # After rebooting, log back in (over “ssh -X” if remote) and start the Setup wizard again (sudo sosetup). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
   # Select Advanced Setup.<br>
   # Choose whether the host being configured will be Standalone, Server, or Sensor.<br>
