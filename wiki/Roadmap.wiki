@@ -63,6 +63,8 @@ Please note that this is all subject to change!
     * Issue 531: sostat: improve checking of autossh tunnels
   * May 2014
     * Issue 533: sostat-redacted: fix ssh_port redact
+  * June 2014
+    * Issue 542: Setup: when disabling salt, avoid modifying salt package files
     * Issue 540: Update Salt packages/scripts
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
@@ -86,7 +88,7 @@ Please note that this is all subject to change!
     * Issue 532: Limit what autossh keys can do
     * Issue 537: sostat-quick: check for root
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
-  * June 2014
+  * July 2014
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.1 or higher
     * Issue 535: PF_RING 6.0 or higher
