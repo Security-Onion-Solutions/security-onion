@@ -67,6 +67,7 @@ Please note that this is all subject to change!
     * Issue 542: Setup: when disabling salt, avoid modifying salt package files
     * Issue 540: Update Salt packages/scripts
     * Issue 537: sostat-quick: check for root
+    * Issue 399: rule-update should allow LOCAL_NIDS_RULE_TUNING to be yes or true
     * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
