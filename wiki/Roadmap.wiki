@@ -66,17 +66,14 @@ Please note that this is all subject to change!
   * June 2014
     * Issue 542: Setup: when disabling salt, avoid modifying salt package files
     * Issue 540: Update Salt packages/scripts
-    * Issue 492: CapMe needs to handle UDP better
-    * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
-    * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
-    * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
-    * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
-    * Issue 390: PulledPork 0.7.0 or higher
-    * Issue 425: Pulledpork should request ET rules using proper Suricata version
-    * Issue 406: sguil-db-purge needs to purge history table as well
-    * Issue 428: sguil-db-purge should check for existence of tables
+    * Issue 537: sostat-quick: check for root
+    * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
+    * Issue 406: sguil-db-purge needs to purge history table as well
+    * Issue 428: sguil-db-purge should check for existence of tables
+    * Issue 390: PulledPork 0.7.0 or higher
+    * Issue 425: Pulledpork should request ET rules using proper Suricata version
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
@@ -88,12 +85,15 @@ Please note that this is all subject to change!
     * Issue 539: Changes to the Install Script to support more network card naming stuff
     * Issue 532: Limit what autossh keys can do
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
-    * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
-    * Issue 537: sostat-quick: check for root
   * July 2014
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.1 or higher
     * Issue 535: PF_RING 6.0 or higher
+    * Issue 492: CapMe needs to handle UDP better
+    * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
+    * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
+    * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
+    * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 287: Sguil 0.9
     * Issue 491: Squert 1.2
     * Issue 418: netsniff-ng 0.58 or higher
