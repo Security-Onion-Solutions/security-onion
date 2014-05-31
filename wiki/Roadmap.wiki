@@ -86,6 +86,7 @@ Please note that this is all subject to change!
     * Issue 539: Changes to the Install Script to support more network card naming stuff
     * Issue 532: Limit what autossh keys can do
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
+    * Issue 545: Setup: add comments to /etc/nsm/securityonion.conf
   * July 2014
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.1 or higher
