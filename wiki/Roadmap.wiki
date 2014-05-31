@@ -107,8 +107,8 @@ Please note that this is all subject to change!
     * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
     * Issue 512: ELSA syslog-ng.conf filter f_bro_headers
     * Issue 467: ELSA dashboard for Snort performance
-    * Issue 369: Arpwatch
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
-    * Issue 445: Bro 2.2.1 or higher
+    * Issue 445: Bro 2.3
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
+    * Issue 369: Arpwatch
