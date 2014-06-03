@@ -44,7 +44,7 @@ For more information, please see:
 
 == Standard Ubuntu package management tools ==
  
-Since all of our packages are in a standard Ubuntu Launchpad PPA, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion).  However, there are some caveats to be aware of:
+The "soup" command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
 
   * MySQL - if you've already run Setup, please see the [MySQLUpdates recommended procedure for updating the MySQL packages].
 
