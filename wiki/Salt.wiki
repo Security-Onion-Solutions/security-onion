@@ -67,7 +67,7 @@ sudo salt '*' cmd.run '/opt/bro/bin/broctl restart'
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
 
 = Using Salt to Install Updates Across Your Entire Deployment =
-You can use Salt to install updates across your entire deployment, but please remember to always update your master server first:
+You can use Salt and Soup to install updates across your entire deployment, but please remember to always update your master server first:
 {{{
 # Update Master first
 # If MySQL and/or kernel updates are installed, it will reboot
