@@ -78,6 +78,24 @@ sudo soup -y
 sudo salt '*' cmd.run 'soup -y'
 }}}
 
+= Modifying Salt config files =
+If you need to modify the values in /etc/salt/master or /etc/salt/minion, please pay attention to this note at the top:
+{{{
+# /etc/salt/master
+# Per default, the master will automatically include all config files
+# from master.d/*.conf (master.d is a directory in the same directory
+# as the main master config file)
+#default_include: master.d/*.conf
+}}}
+{{{
+# /etc/salt/minion
+# Per default the minion will automatically include all config files
+# from minion.d/*.conf (minion.d is a directory in the same directory
+# as the main minion config file).
+#default_include: minion.d/*.conf
+}}}
+Instead of modifying /etc/salt/master or /etc/salt/minion directly, please add your custom settings in /etc/salt/master.d/*.conf or /etc/salt/minion.d/*.conf, respectively.
+
 = Salting an Existing Deployment =
 
 == Configure the Master Server first ==
