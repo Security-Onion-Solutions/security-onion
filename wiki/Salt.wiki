@@ -23,7 +23,7 @@ Please be advised that our Salt integration is still considered experimental.
 = Remote Execution =
 Want to execute a command on all your sensors at once?
 {{{
-sudo salt '*' cmd.run 'YourCommandHere'
+sudo salt '*' cmd.run 'InsertYourCommandHere'
 }}}
 
 = Using Salt to Install Updates Across Your Entire Deployment =
