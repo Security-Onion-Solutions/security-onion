@@ -79,7 +79,7 @@ sudo salt '*' cmd.run 'soup -y'
 }}}
 
 = Modifying Salt config files =
-If you need to modify the values in /etc/salt/master or /etc/salt/minion, please pay attention to this note at the top:
+If you need to modify the values in /etc/salt/master or /etc/salt/minion, please pay attention to this note at the top of each file:
 {{{
 # /etc/salt/master
 # Per default, the master will automatically include all config files
