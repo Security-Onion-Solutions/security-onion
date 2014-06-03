@@ -20,6 +20,12 @@ Please note that Salt is totally optional.  If you're happy with your current me
 
 Please be advised that our Salt integration is still considered experimental.
 
+= Checking Status =
+Want to verify all your sensors are up?
+{{{
+sudo salt '*' test.ping
+}}}
+
 = Remote Execution =
 Want to execute a command on all your sensors at once?
 {{{
