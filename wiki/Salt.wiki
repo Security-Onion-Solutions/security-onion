@@ -31,6 +31,7 @@ You can use Salt to install updates across your entire deployment, please rememb
 {{{
 # Update Master first, if MySQL and/or kernel updates are installed, it will reboot
 sudo soup -y
+
 # After Master server is fully updated, now update the rest of the deployment
 # If MySQL and/or kernel updates are installed, the sensors will reboot
 sudo salt '*' cmd.run 'soup -y'
