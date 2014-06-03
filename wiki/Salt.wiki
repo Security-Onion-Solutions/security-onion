@@ -20,6 +20,21 @@ Please note that Salt is totally optional.  If you're happy with your current me
 
 Please be advised that our Salt integration is still considered experimental.
 
+= Remote Execution =
+Want to execute a command on all your sensors at once?
+{{{
+sudo salt '*' cmd.run 'YourCommandHere'
+}}}
+
+= Using Salt to run Soup =
+If you want to run Soup on all your sensors to install the latest updates, please remember to always update your master server first:
+{{{
+# Update Master first, if MySQL and/or kernel updates are installed, it will reboot
+sudo soup -y
+# After Master server is fully updated, now update the rest of the deployment
+sudo salt '*' cmd.run 'soup -y'
+}}}
+
 = Features =
 When you install and enable securityonion-onionsalt, the following data will replicate from the master server out to the sensors every 15 minutes:
 
@@ -28,7 +43,7 @@ When you install and enable securityonion-onionsalt, the following data will rep
   * NIDS rules in /etc/nsm/rules/ (Snort/Suricata/barnyard will automatically restart as necessary)
   * HIDS rules in /var/ossec/rules/local_rules.xml (OSSEC will automatically restart as necessary)
   * Bro scripts in /opt/bro/share/bro/policy/
-    * Bro does not restart automatically, but you can do this easily with salt from your master server:
+    * Bro does not restart automatically, but you can easily use salt on your master server to tell all your Bro instances to update and restart:
 {{{
 # Force all Salt minions to update Bro scripts
 sudo salt '*' cmd.run 'salt-call state.highstate'
