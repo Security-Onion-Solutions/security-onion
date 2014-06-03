@@ -26,12 +26,13 @@ Want to execute a command on all your sensors at once?
 sudo salt '*' cmd.run 'YourCommandHere'
 }}}
 
-= Using Salt to run Soup =
-If you want to run Soup on all your sensors to install the latest updates, please remember to always update your master server first:
+= Using Salt to Install Updates Across Your Entire Deployment =
+You can use Salt to install updates across your entire deployment, please remember to always update your master server first:
 {{{
 # Update Master first, if MySQL and/or kernel updates are installed, it will reboot
 sudo soup -y
 # After Master server is fully updated, now update the rest of the deployment
+# If MySQL and/or kernel updates are installed, the sensors will reboot
 sudo salt '*' cmd.run 'soup -y'
 }}}
 
