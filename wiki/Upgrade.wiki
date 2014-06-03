@@ -42,6 +42,9 @@ sudo apt-get update && sudo apt-get install securityonion-sostat
 For more information, please see:
 <a href="http://blog.securityonion.net/2013/08/new-securityonion-packages.html">http://blog.securityonion.net/2013/08/new-securityonion-packages.html</a>
 
+== Using salt and soup to Update your entire Deployment ==
+https://code.google.com/p/security-onion/wiki/Salt#Using_Salt_to_Install_Updates_Across_Your_Entire_Deployment
+
 == Standard Ubuntu package management tools ==
  
 The "soup" command described above is the recommended method to install updates.  However, you can use standard Ubuntu package management tools to update ALL packages (Ubuntu and Security Onion), but there are some caveats to be aware of:
