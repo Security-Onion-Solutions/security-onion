@@ -26,6 +26,9 @@ Sensors need to be able to connect to the master server on ports 4505/tcp and 45
 
 http://docs.saltstack.com/topics/tutorials/firewall.html
 
+= Installation =
+For new deployments, Advanced Setup checks to see if the securityonion-onionsalt package is installed and, if so, asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  For existing deployments, please see SaltingAnExistingDeployment.
+
 = Checking Status =
 Want to verify all your sensors are up?
 {{{
@@ -71,15 +74,9 @@ sudo soup -y
 sudo salt '*' cmd.run 'soup -y'
 }}}
 
-= Initial installation/configuration =
+= Salting an Existing Deployment =
 
-== New Deployments ==
-
-Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.
-
-== Salting an Existing Deployment ==
-
-=== Configure the Master Server first ===
+== Configure the Master Server first ==
 
 {{{
 # Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
@@ -113,7 +110,7 @@ sudo salt '*' test.ping
 sudo salt '*' state.highstate
 }}}
 
-=== Now configure salt-minion on a Sensor ===
+== Now configure salt-minion on a Sensor ==
 {{{
 # Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
 sudo apt-get update && sudo apt-get install securityonion-onionsalt
@@ -132,7 +129,7 @@ echo "master: $MASTER" | sudo tee -a /etc/salt/minion.d/onionsalt.conf
 sudo service salt-minion restart
 }}}
 
-=== Now return to the Master and accept the new minion ===
+== Now return to the Master and accept the new minion ==
 {{{
 # Edit /opt/onionsalt/salt/top.sls and add the new minion as a "sensor"
 
