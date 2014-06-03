@@ -25,12 +25,17 @@ When you install and enable securityonion-onionsalt, the following data will rep
 
   * user accounts and sudoers in /opt/onionsalt/pillar/users/init.sls
   * user ssh keys in /opt/onionsalt/salt/users/keys/
-  * NIDS rules in /etc/nsm/rules/ (Snort/Suricata/barnyard will restart as necessary)
-  * HIDS rules in /var/ossec/rules/local_rules.xml (OSSEC will restart as necessary)
+  * NIDS rules in /etc/nsm/rules/ (Snort/Suricata/barnyard will automatically restart as necessary)
+  * HIDS rules in /var/ossec/rules/local_rules.xml (OSSEC will automatically restart as necessary)
   * Bro scripts in /opt/bro/share/bro/policy/
     * Bro does not restart automatically, but you can do this easily with salt from your master server:
 {{{
-sudo salt '*' cmd.run 'sudo /opt/bro/bin/broctl install  && sudo /opt/bro/bin/broctl restart'
+# Force all Salt minions to update Bro scripts
+sudo salt '*' cmd.run 'salt-call state.highstate'
+# Install new Bro scripts
+sudo salt '*' cmd.run '/opt/bro/bin/broctl install'
+# Restart Bro
+sudo salt '*' cmd.run '/opt/bro/bin/broctl restart'
 }}}
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
