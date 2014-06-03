@@ -43,6 +43,7 @@ When you install and enable securityonion-onionsalt, the following data will rep
 
   * user accounts and sudoers in /opt/onionsalt/pillar/users/init.sls
   * user ssh keys in /opt/onionsalt/salt/users/keys/
+    * For each user account in /opt/onionsalt/pillar/users/init.sls, you can add an SSH Public Key to /opt/onionsalt/salt/users/keys/USERNAME.id_rsa.pub (replacing USERNAME with the user's actual username)
   * NIDS rules in /etc/nsm/rules/ (Snort/Suricata/barnyard will automatically restart as necessary)
   * HIDS rules in /var/ossec/rules/local_rules.xml (OSSEC will automatically restart as necessary)
   * Bro scripts in /opt/bro/share/bro/policy/
@@ -68,8 +69,7 @@ http://docs.saltstack.com/topics/tutorials/firewall.html
 
 == New Deployments ==
 
-Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.  To add users and SSH keys, skip to:
-https://code.google.com/p/security-onion/wiki/Salt#Adding_Users_and_SSH_keys
+Advanced Setup now asks if you want to enable Salt.  Simply answer "Yes" and it will configure salt-master and/or salt-minion services and open firewall ports as necessary.  Security Onion Masters run both salt-master and salt-minion whereas Security Onion sensors only run salt-minion.
 
 == Salting an Existing Deployment ==
 
@@ -142,7 +142,3 @@ sudo salt '*' test.ping
 # Tell all minions to do an update
 sudo salt '*' state.highstate
 }}}
-
-= Adding Users and SSH keys =
-
-Add your user accounts to /opt/onionsalt/pillar/users/init.sls.  For each user account, you can add an SSH Public Key to /opt/onionsalt/salt/users/keys/USERNAME.id_rsa.pub (replacing USERNAME with the user's actual username).
