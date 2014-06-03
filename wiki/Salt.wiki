@@ -94,7 +94,7 @@ If you need to modify the values in /etc/salt/master or /etc/salt/minion, please
 # as the main minion config file).
 #default_include: minion.d/*.conf
 }}}
-Instead of modifying /etc/salt/master or /etc/salt/minion directly, please add your custom settings in /etc/salt/master.d/*.conf or /etc/salt/minion.d/*.conf, respectively.
+Instead of modifying /etc/salt/master or /etc/salt/minion directly, please add your custom settings in /etc/salt/master.d/`*`.conf or /etc/salt/minion.d/`*`.conf, respectively.
 
 = Salting an Existing Deployment =
 
