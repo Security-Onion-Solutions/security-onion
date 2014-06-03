@@ -20,6 +20,12 @@ Please note that Salt is totally optional.  If you're happy with your current me
 
 Please be advised that our Salt integration is still considered experimental.
 
+= Firewall Requirements =
+
+Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
+
+http://docs.saltstack.com/topics/tutorials/firewall.html
+
 = Checking Status =
 Want to verify all your sensors are up?
 {{{
@@ -30,18 +36,6 @@ sudo salt '*' test.ping
 Want to execute a command on all your sensors at once?
 {{{
 sudo salt '*' cmd.run 'InsertYourCommandHere'
-}}}
-
-= Using Salt to Install Updates Across Your Entire Deployment =
-You can use Salt to install updates across your entire deployment, please remember to always update your master server first:
-{{{
-# Update Master first
-# If MySQL and/or kernel updates are installed, it will reboot
-sudo soup -y
-
-# After Master server is fully updated, now update the rest of the deployment
-# If MySQL and/or kernel updates are installed, the sensors will reboot
-sudo salt '*' cmd.run 'soup -y'
 }}}
 
 = Features =
@@ -65,11 +59,17 @@ sudo salt '*' cmd.run '/opt/bro/bin/broctl restart'
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
 
-= Firewall Requirements =
+= Using Salt to Install Updates Across Your Entire Deployment =
+You can use Salt to install updates across your entire deployment, please remember to always update your master server first:
+{{{
+# Update Master first
+# If MySQL and/or kernel updates are installed, it will reboot
+sudo soup -y
 
-Sensors need to be able to connect to the master server on ports 4505/tcp and 4506/tcp:
-
-http://docs.saltstack.com/topics/tutorials/firewall.html
+# After Master server is fully updated, now update the rest of the deployment
+# If MySQL and/or kernel updates are installed, the sensors will reboot
+sudo salt '*' cmd.run 'soup -y'
+}}}
 
 = Initial installation/configuration =
 
