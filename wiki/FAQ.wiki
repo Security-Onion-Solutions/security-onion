@@ -243,10 +243,10 @@ A few options:
 
 = Why does the Snorby dashboard show all zeroes? =
 Please do the following:
-- click "More Options"
-- click "Force Cache Update"
-- Dashboard will display "Current caching"
-- once that disappears, then refresh the Dashboard page
+  * click "More Options"
+  * click "Force Cache Update"
+  * Dashboard will display "Current caching"
+  * once that disappears, then refresh the Dashboard page
 
 If that doesn't help, try rebooting.
 
