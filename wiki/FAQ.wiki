@@ -241,6 +241,18 @@ A few options:
   * <a href="http://www.xrdp.org/">xrdp</a> - sudo apt-get install xrdp - requires an rdp client
   * You can use [FreeNX] but we don't recommend or support it
 
+= Why does the Snorby dashboard show all zeroes? =
+Please do the following:
+- click "More Options"
+- click "Force Cache Update"
+- Dashboard will display "Current caching"
+- once that disappears, then refresh the Dashboard page
+
+If that doesn't help, try rebooting.
+
+If that still doesn't help, please see:
+https://github.com/Snorby/snorby/issues/340
+
 = I've forgotten my Snorby password.  How do I reset it? =
 First, open the Rails console:
 {{{
