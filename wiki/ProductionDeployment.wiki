@@ -1,51 +1,5 @@
 #summary Production Deployment
 
-= What's the RECOMMENDED procedure for installing Security Onion? =
-
-== If you just want to quickly evaluate Security Onion, use our ISO image (based on Xubuntu 12.04 64-bit): ==
-  # First, check the [Hardware Hardware Requirements] page.
-  # Click the following link: https://sourceforge.net/projects/security-onion/files/12.04.4/
-  # Download/record the MD5/SHA1 checksums for the ISO image. You can download the .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").
-  # Download the ISO image from that Sourceforge page or via <a href="http://port111.com/securityonion-12.04.4-20140222.iso.torrent">Torrent</a>.
-  # Once the ISO image download has completed, verify the checksum.
-  # Boot the ISO image into the Live Desktop environment and then double-click the Install icon on the desktop.
-  # Follow the prompts in the Xubuntu installer.  If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  Reboot into your new installation.  Login using the username/password you specified during installation.
-  # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # [Upgrade Install updates and reboot.]
-  # Double-click the Setup icon.  The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
-  # After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.
-  # Once you've completed the Setup wizard, use the Desktop icons to login to Sguil, Squert, Snorby, or ELSA.
-<br>
-== If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 12.04 32-bit/64-bit (not using our ISO image), follow these steps: ==
-  # First, check the [Hardware Hardware Requirements] page.
-  # Download the ISO image for your prefered flavor of Ubuntu *12.04*, verify its checksum,  and boot from it.<br>
-  # Follow the prompts in the installer.  If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  Reboot into your new installation.
-  # Login using the username/password you specified during installation.
-  # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # If you used an Ubuntu 12.04 release after 12.04.3, then you may have an incompatible kernel.  Ubuntu 12.04.4 ships with kernel 3.11 which is not compatible with our current version of PF_RING.  You'll need to install the older 3.8 kernel packages (including headers) and remove 3.11.
-  # Install all Ubuntu updates and reboot.
-  # Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
-  # Configure MySQL not to prompt for root password:<br>
-{{{
-echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections
-}}}
-  # Add the Security Onion stable repository:<br>
-{{{
-sudo apt-get -y install python-software-properties
-sudo add-apt-repository -y ppa:securityonion/stable
-sudo apt-get update
-}}}
-  # Install the securityonion-all metapackage:<br>
-{{{
-sudo apt-get -y install securityonion-all
-}}}
-  # Run the Setup wizard:<br>
-{{{
-sudo sosetup
-}}}
-  # Follow the prompts.<br>
-  # Analyze alerts using the Sguil client, or open a browser to https://localhost where you can access Squert, Snorby, and ELSA.<br>
-<br>
 == If you're going to be deploying Security Onion in production, follow these steps:==
   # First, check the [Hardware Hardware Requirements] page.
   # Download the ISO image for your prefered flavor of Ubuntu 12.04 32-bit/64-bit or download our Security Onion ISO image using the instructions above. Also download/record the MD5/SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
