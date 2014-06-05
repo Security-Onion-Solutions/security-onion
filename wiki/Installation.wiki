@@ -19,8 +19,9 @@ https://help.ubuntu.com/community/UEFI
 We have different Installation Guides to cover various use cases.  Please choose the appropriate Installation Guide for your use case.
 
 If you just want to *quickly evaluate* Security Onion, choose one of the following:
-  * [QuickISOImage Quickly Evaluating Security Onion using our ISO image]
-  * [InstallingOnUbuntu Quickly Evaluating Security Onion using your preferred flavor of Ubuntu]
+  * [QuickISOImage Quickly Evaluating Security Onion using *our ISO image*]
+OR
+  * [InstallingOnUbuntu Quickly Evaluating Security Onion using *your preferred flavor of Ubuntu*]
 
 If you're deploying Security Onion in *production*, please see:
   * [ProductionDeployment Production Deployment]
