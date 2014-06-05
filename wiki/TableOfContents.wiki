@@ -7,6 +7,7 @@
   * [Installation Download/Install]
   * [PostInstallation After Installation]
   * [CapMeAuthentication CapME Authentication]
+  * [TimeZones UTC and Time Zones]
   * [Upgrade Updating]
   * [IntroductionWalkthrough VirtualBox Walkthrough]
 
