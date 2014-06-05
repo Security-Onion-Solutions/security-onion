@@ -99,5 +99,5 @@ sudo sosetup
      * You will be prompted to designate how many IDS processes you would like to run. (This setting can be modified later by changing the IDS_LB_PROCS variable in /etc/nsm/HOSTNAME-INTERFACE/sensor.conf).
      * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the lb_procs variable in /opt/bro/etc/node.cfg).
     * You’ll be asked whether you want to enable ELSA. (ELSA is a distributed log archiving platform, so each sensor’s events stored in ELSA will be stored locally at each sensor and queried from the server which acts as a central interface.)
-
-[PostInstallation Post Installation]
+    
+Proceed to [PostInstallation Post Installation].
