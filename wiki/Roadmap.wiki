@@ -97,10 +97,10 @@ Please note that this is all subject to change!
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
-    * Issue 287: Sguil 0.9
-    * Issue 491: Squert 1.2
+    * Issue 287: Sguil 0.9 or higher
+    * Issue 491: Squert 1.3.0 or higher
     * Issue 418: netsniff-ng 0.58 or higher
-    * Issue 412: OSSEC 2.7.1 or higher
+    * Issue 412: OSSEC 2.8 or higher
     * Issue 330: ossec.conf changes
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
