@@ -13,4 +13,5 @@
   # Double-click the Setup icon.  The Setup wizard will walk you through configuring /etc/network/interfaces and will then reboot.
   # After rebooting, log back in and start the Setup wizard again.  It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.
   # Once you've completed the Setup wizard, use the Desktop icons to login to Sguil, Squert, Snorby, or ELSA.
-<br>
+
+Please review [PostInstallation Post Installation].
