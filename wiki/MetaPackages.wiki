@@ -1,8 +1,8 @@
 #summary Metapackages
 
 = Metapackages =
-The instructions above used the securityonion-all metapackage to install ALL of our individual packages (about 350MB).  We have some more focused metapackages that you can use for a more focused deployment:
   * securityonion-client (about 50MB)
   * securityonion-sensor (about 50MB)
   * securityonion-elsa and securityonion-elsa-extras (about 50MB)
   * securityonion-server (about 200MB)
+  * securityonion-all (all of the above)
