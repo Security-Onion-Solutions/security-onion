@@ -29,3 +29,5 @@ sudo sosetup
 }}}
   # Follow the prompts.<br>
   # Analyze alerts using the Sguil client, or open a browser to https://localhost where you can access Squert, Snorby, and ELSA.<br>
+
+Please review the [PostInstallation Post Installation] page.
