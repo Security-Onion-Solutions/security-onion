@@ -5,6 +5,7 @@
   * [IntroductionToSecurityOnion Introduction]
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
+    * [InstallingOnUbuntu Installing Ubuntu and Adding our PPA/packages]
     * [ProductionDeployment Production Deployment]
   * [PostInstallation After Installation]
   * [CapMeAuthentication CapME Authentication]
