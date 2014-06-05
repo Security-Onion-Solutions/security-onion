@@ -141,7 +141,7 @@ sudo apt-get update && sudo apt-get install securityonion-onionsalt
 sudo service salt-master stop
 
 # Disable salt-master
-[ -f /etc/init/salt-master.conf ] && sudo mv /etc/init/salt-master.conf /etc/init/salt-master.DISABLED
+[ -f /etc/init/salt-master.conf ] && echo "manual" | sudo tee /etc/init/salt-master.override
 
 # Configure minion
 MASTER=`grep SENSOR_SERVER_HOST /etc/nsm/*/sensor.conf |head -1 |cut -d\" -f2`
