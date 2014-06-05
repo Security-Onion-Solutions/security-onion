@@ -5,6 +5,7 @@
   * [IntroductionToSecurityOnion Introduction]
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
+    * [ProductionDeployment Production Deployment]
   * [PostInstallation After Installation]
   * [CapMeAuthentication CapME Authentication]
   * [TimeZones UTC and Time Zones]
