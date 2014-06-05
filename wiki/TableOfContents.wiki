@@ -5,6 +5,7 @@
   * [IntroductionToSecurityOnion Introduction]
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
+  * [PostInstallation After Installation]
   * [Upgrade Updating]
   * [IntroductionWalkthrough VirtualBox Walkthrough]
 
