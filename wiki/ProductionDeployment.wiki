@@ -11,6 +11,7 @@
    * Sensors store full packet captures at /nsm/sensor_data/, so you may want to put /nsm on a dedicated partition/disk and assign as much disk space as possible (1TB or more). For larger volumes you might also consider using XFS for the /nsm partition.
   # When installation completes, reboot into your new installation and login with the credentials you specified during installation.<br>
   # If you’re running a VM, now would be a good time to snapshot it so you can revert later if you need to.<br>
+  # Verify that you have Internet connectivity. If necessary, configure your [proxy proxy settings].
   # If you installed from the Security Onion Live 12.04 Distribution ISO, run "sudo soup", reboot if prompted, and then skip to the "Setup wizard" step below.<br>
   # If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href="https://help.ubuntu.com/community/EnablingPAE">install the PAE kernel</a>.<br>
   # If you used an Ubuntu release after 12.04.3, then you may have an incompatible kernel.  12.04.4 ships with kernel 3.11 which is not compatible with our current version of PF_RING.  You'll need to install the older 3.8 kernel packages (including headers) and remove 3.11.
