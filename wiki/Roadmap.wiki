@@ -88,6 +88,7 @@ Please note that this is all subject to change!
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
     * Issue 545: Setup: add comments to /etc/nsm/securityonion.conf
     * Issue 546: Setup: change true/false options to yes/no
+    * Issue 547: Setup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
   * July 2014
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.1 or higher
