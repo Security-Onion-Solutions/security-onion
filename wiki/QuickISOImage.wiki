@@ -1,6 +1,6 @@
 #summary Quickly evaluating Security Onion using our ISO image
 
-== If you just want to quickly evaluate Security Onion, use our ISO image (based on Xubuntu 12.04 64-bit): ==
+== If you just want to quickly evaluate Security Onion using our ISO image (based on Xubuntu 12.04 64-bit): ==
   # First, check the [Hardware Hardware Requirements] page.
   # Click the following link: https://sourceforge.net/projects/security-onion/files/12.04.4/
   # Download/record the MD5/SHA1 checksums for the ISO image. You can download the .md5 file or you can use the MD5/SHA1 checksums that Sourceforge displays when clicking the Information (view details) button to the right of the ISO image (it's a circle with an "i").
