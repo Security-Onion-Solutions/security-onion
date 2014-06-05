@@ -40,7 +40,7 @@ sudo apt-get install python-software-properties=0.82.7
 {{{
 sudo apt-get update
 }}}
-  # Install the securityonion-all metapackage (or one of the more focused metapackages from the list below). This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
+  # Install the securityonion-all metapackage (or one of the more focused [MetaPackages metapackages]. This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
 {{{
 sudo apt-get -y install securityonion-all
 }}}
@@ -100,9 +100,4 @@ sudo sosetup
      * You will be prompted to designate how many Bro processes you would like to run. (This setting can be modified later by changing the lb_procs variable in /opt/bro/etc/node.cfg).
     * You’ll be asked whether you want to enable ELSA. (ELSA is a distributed log archiving platform, so each sensor’s events stored in ELSA will be stored locally at each sensor and queried from the server which acts as a central interface.)
 
-= Metapackages =
-The instructions above used the securityonion-all metapackage to install ALL of our individual packages (about 350MB).  We have some more focused metapackages that you can use for a more focused deployment:
-  * securityonion-client (about 50MB)
-  * securityonion-sensor (about 50MB)
-  * securityonion-elsa and securityonion-elsa-extras (about 50MB)
-  * securityonion-server (about 200MB)
+[PostInstallation Post Installation]
