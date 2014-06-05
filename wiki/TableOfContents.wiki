@@ -6,6 +6,7 @@
   * [Hardware Hardware Requirements]
   * [Installation Download/Install]
   * [PostInstallation After Installation]
+  * [CapMeAuthentication CapME Authentication]
   * [Upgrade Updating]
   * [IntroductionWalkthrough VirtualBox Walkthrough]
 
