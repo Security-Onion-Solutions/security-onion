@@ -35,7 +35,7 @@
   * [Pcaps Pcaps for Testing]
   * [FreeNX]
   * [WipingSnorby Wiping the Snorby database]
-  * [DeployingNtopng]
+  * [DeployingNtopng Installing NtopNG]
 
 ==Help==
   * [Help Troubleshooting]
