@@ -23,7 +23,7 @@ We have different Installation Guides to cover various use cases.  Please choose
 
 == Quickly Evaluating Security Onion ==
 If you just want to *quickly evaluate* Security Onion, choose one of the following:
-  * [QuickISOImage Quickly Evaluating Security Onion using *our ISO image*]
+  * [QuickISOImage Download our Security Onion ISO image and Quickly Evaluate]
 OR
   * [InstallingOnUbuntu Quickly Evaluating Security Onion using *your preferred flavor of Ubuntu 12.04*]
 
