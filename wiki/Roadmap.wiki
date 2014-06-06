@@ -71,6 +71,7 @@ Please note that this is all subject to change!
     * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
     * Issue 294: Barnyard2-1.13
     * Issue 411: Have only one copy of barnyard2 that updates signature reference table
+    * Issue 550: securityonion-server: add barnyard2 as a dependency
     * Issue 406: sguil-db-purge needs to purge history table as well
     * Issue 428: sguil-db-purge should check for existence of tables
     * Issue 390: PulledPork 0.7.0 or higher
