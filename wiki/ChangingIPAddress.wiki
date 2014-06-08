@@ -22,6 +22,8 @@ OR
 
 == Changing Sensor IP ==
 
+Modern versions of the NSM scripts should be doing this automatically, so you should no longer have to manually update /opt/bro/etc/node.cfg when your sensor IP address changes.
+
   * /opt/bro/etc/node.cfg:
 {{{
 host=[SENSOR-IP]
@@ -33,6 +35,7 @@ sudo sed -i 's|OLD.SENSOR.IP.ADDR|NEW.SENSOR.IP.ADDR|g' /opt/bro/etc/node.cfg
 sudo broctl install
 sudo broctl restart
 }}}
+
 
 == Changing Server IP ==
 
