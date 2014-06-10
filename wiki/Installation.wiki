@@ -22,7 +22,8 @@ https://help.ubuntu.com/community/UEFI
 We have different Installation Guides to cover various use cases.  Please choose the appropriate Installation Guide for your use case.
 
 == Quickly Evaluating Security Onion ==
-If you just want to *quickly evaluate* Security Onion, choose one of the following:
+If you just want to *quickly evaluate* Security Onion, choose one of the following.  If you're a first time user, please choose the first option.
+
   * [QuickISOImage Download our Security Onion ISO image and Quickly Evaluate]
 OR
   * [InstallingOnUbuntu Quickly Evaluating Security Onion using *your preferred flavor of Ubuntu 12.04*]
