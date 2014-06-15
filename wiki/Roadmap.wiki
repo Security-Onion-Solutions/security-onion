@@ -75,7 +75,7 @@ Please note that this is all subject to change!
     * Issue 551: rule-update: have server use barnyard2 to update Snorby reference table
     * Issue 399: rule-update should allow LOCAL_NIDS_RULE_TUNING to be yes or true
     * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
-    * Issue 390: PulledPork 0.7.0 or higher
+    * Issue 390: PulledPork 0.7.0
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
