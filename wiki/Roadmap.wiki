@@ -94,9 +94,9 @@ Please note that this is all subject to change!
     * Issue 547: Setup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * Issue 549: securityonion-web-page: add ELSA query for Sites Hosting CABs
   * July 2014
+    * Issue 535: PF_RING 6.0 or higher
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.1 or higher
-    * Issue 535: PF_RING 6.0 or higher
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
