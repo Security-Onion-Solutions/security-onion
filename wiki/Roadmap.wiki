@@ -78,6 +78,7 @@ Please note that this is all subject to change!
     * Issue 552: rule-update: run PulledPork with -P option to process tarball
     * Issue 390: PulledPork 0.7.0
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
+    * Issue 549: securityonion-web-page: add ELSA query for Sites Hosting CABs
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
@@ -92,7 +93,6 @@ Please note that this is all subject to change!
     * Issue 545: Setup: add comments to /etc/nsm/securityonion.conf
     * Issue 546: Setup: change true/false options to yes/no
     * Issue 547: Setup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
-    * Issue 549: securityonion-web-page: add ELSA query for Sites Hosting CABs
   * July 2014
     * Issue 535: PF_RING 6.0 or higher
     * Issue 462: Snort 2.9.6.1 or higher
