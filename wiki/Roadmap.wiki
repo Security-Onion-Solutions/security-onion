@@ -76,10 +76,10 @@ Please note that this is all subject to change!
     * Issue 399: rule-update should allow LOCAL_NIDS_RULE_TUNING to be yes or true
     * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
     * Issue 555: NSM: replace "2>1" with "2>&1"
-    * Issue 552: rule-update: run PulledPork with -P option to process tarball
+    * Issue 549: securityonion-web-page: add ELSA query for Sites Hosting CABs
     * Issue 390: PulledPork 0.7.0
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
-    * Issue 549: securityonion-web-page: add ELSA query for Sites Hosting CABs
+    * Issue 552: rule-update: run PulledPork with -P option to process tarball
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
