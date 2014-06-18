@@ -75,6 +75,7 @@ Please note that this is all subject to change!
     * Issue 551: rule-update: have server use barnyard2 to update Snorby reference table
     * Issue 399: rule-update should allow LOCAL_NIDS_RULE_TUNING to be yes or true
     * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
+    * Issue 555: NSM: replace "2>1" with "2>&1"
     * Issue 552: rule-update: run PulledPork with -P option to process tarball
     * Issue 390: PulledPork 0.7.0
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
