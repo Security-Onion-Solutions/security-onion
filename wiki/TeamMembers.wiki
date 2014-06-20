@@ -39,6 +39,7 @@ Security Onion needs more volunteers in all of the areas defined below.  If Secu
   * Dennis Distler
   * Jon Schipp
   * Kevin Branch
+  * Josh More
 
 *Artwork*
   * Jack Blanchard
