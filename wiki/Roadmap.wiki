@@ -77,6 +77,7 @@ Please note that this is all subject to change!
     * Issue 544: rule-update: notify user if LOCAL_NIDS_RULE_TUNING=true
     * Issue 555: NSM: replace "2>1" with "2>&1"
     * Issue 549: securityonion-web-page: add ELSA query for Sites Hosting CABs
+    * Issue 556: rule-update: add so-snorby-fix-sigs script
     * Issue 390: PulledPork 0.7.0
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
     * Issue 552: rule-update: run PulledPork with -P option to process tarball
