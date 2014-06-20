@@ -11,8 +11,6 @@
   # Reboot into your new installation.
   # Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # 
-  # Install all Ubuntu updates and reboot.
   # Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).
   # Configure MySQL not to prompt for root password:
 {{{
@@ -32,7 +30,8 @@ sudo apt-get -y install securityonion-all
 {{{
 sudo sosetup
 }}}
-  # Follow the prompts.<br>
-  # Analyze alerts using the Sguil client, or open a browser to https://localhost where you can access Squert, Snorby, and ELSA.<br>
+  # Follow the prompts.
+  # Analyze alerts using the Sguil client, or open a browser to https://localhost where you can access Squert, Snorby, and ELSA.
+  # Follow the [Upgrade] process.
 
 Please review the [PostInstallation Post Installation] page.
