@@ -1,7 +1,7 @@
 #summary UTC and Time Zones
 
 = Why does Security Onion use UTC? =
-Security Onion uses UTC/GMT because that is the recommended/required setting for Sguil:<br>
+When you run the Security Onion Setup, it sets the timezone to UTC/GMT because that is the recommended/required setting for Sguil:<br>
 <a href="http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html">http://osdir.com/ml/security.sguil.general/2008-09/msg00003.html</a><br>
 <a href="https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem">https://forums.snort.org/forums/linux/topics/barnyard-sguil-time-problem</a><br>
 <br>
