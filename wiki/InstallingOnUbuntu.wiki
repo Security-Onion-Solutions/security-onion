@@ -2,14 +2,19 @@
 
 == If you want to quickly evaluate Security Onion on your preferred flavor of Ubuntu 12.04 32-bit/64-bit (not using our ISO image), follow these steps: ==
   # First, check the [Hardware Hardware Requirements] page.
-  # Download the ISO image for your preferred flavor of Ubuntu *12.04*, verify its checksum,  and boot from it.<br>
-  # Follow the prompts in the installer.  If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  Reboot into your new installation.
+  # Download the ISO image for your preferred flavor of Ubuntu *12.04.3*, verify its checksum,  and boot from it.<br>
+    * If you used an Ubuntu 12.04 release after 12.04.3, then you may have an incompatible kernel.  Ubuntu 12.04.4 ships with kernel 3.11 which is not compatible with our current version of PF_RING.  It's best to install a 12.04.3 release and work from there.
+    * If you are starting with a 12.04.4 or later, you'll need to install the older 3.8 kernel packages (including headers) and remove 3.11.
+  # Follow the prompts in the installer, but see the two notes below first.  
+    * When prompted to "encrypt home folder" option, DO NOT enable this feature.
+    * When asked about automatic updates, DO NOT enable automatic updates.  
+  # Reboot into your new installation.
   # Login using the username/password you specified during installation.
   # Verify that you have Internet connectivity.  If necessary, configure your [Proxy proxy settings].
-  # If you used an Ubuntu 12.04 release after 12.04.3, then you may have an incompatible kernel.  Ubuntu 12.04.4 ships with kernel 3.11 which is not compatible with our current version of PF_RING.  You'll need to install the older 3.8 kernel packages (including headers) and remove 3.11.
+  # 
   # Install all Ubuntu updates and reboot.
-  # Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).<br>
-  # Configure MySQL not to prompt for root password:<br>
+  # Log back in (using “ssh -X” if you’re installing on Ubuntu Server or a headless distro).
+  # Configure MySQL not to prompt for root password:
 {{{
 echo "debconf debconf/frontend select noninteractive" | sudo debconf-set-selections
 }}}
