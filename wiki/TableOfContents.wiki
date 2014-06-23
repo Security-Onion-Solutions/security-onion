@@ -24,7 +24,7 @@
   * [AddingLocalRules Adding Local Rules]
   * [BPF BPF]
   * [PF_RING PF_RING]
-  * [MySQLTuning MySQLTuning]
+  * [MySQLTuning MySQL Tuning]
   * [NewDisk Adding a new disk]
 
 ==Tricks and Tips==
