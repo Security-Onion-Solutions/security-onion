@@ -82,6 +82,7 @@ Please note that this is all subject to change!
     * Issue 390: PulledPork 0.7.0
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
     * Issue 552: rule-update: run PulledPork with -P option to process tarball
+  * July 2014
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
@@ -96,13 +97,13 @@ Please note that this is all subject to change!
     * Issue 545: Setup: add comments to /etc/nsm/securityonion.conf
     * Issue 546: Setup: change true/false options to yes/no
     * Issue 547: Setup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
-  * July 2014
     * Issue 535: PF_RING 6.0 or higher
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.1 or higher
     * Issue 445: Bro 2.3
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
+  * August 2014
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
@@ -124,6 +125,6 @@ Please note that this is all subject to change!
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
     * Issue 369: Arpwatch
-  * August 2014
+  * September 2014
     * Issue 553: NetworkMiner 1.6
     * Issue 554: 12.04.5 ISO image
