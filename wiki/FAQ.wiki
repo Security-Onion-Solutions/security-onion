@@ -104,7 +104,7 @@ To keep Uncategorized Events from getting too high, you should log into Sguil/Sq
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
 http://packetpushers.net/show-95-security-onion-with-doug-burks-or-why-ids-rules-and-ips-drools/
 
-= What does it mean if barnyard2 keeps failing with errors like "Returned signature_id is not equal to updated signature_id"? =
+= Why does barnyard2 keep failing with errors like "Returned signature_id is not equal to updated signature_id"? =
 Please see:
 http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
 
