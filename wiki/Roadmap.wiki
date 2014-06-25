@@ -99,7 +99,7 @@ Please note that this is all subject to change!
     * Issue 547: Setup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * Issue 535: PF_RING 6.0 or higher
     * Issue 462: Snort 2.9.6.1 or higher
-    * Issue 465: Suricata 2.0.1 or higher
+    * Issue 465: Suricata 2.0.2 or higher
     * Issue 445: Bro 2.3
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
