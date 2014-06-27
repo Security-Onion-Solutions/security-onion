@@ -3,11 +3,11 @@
 == If you're going to be deploying Security Onion in production, follow these steps:==
   # First, check the [Hardware Hardware Requirements] page.
   # Download the ISO image for your preferred flavor of Ubuntu 12.04 32-bit/64-bit or download our Security Onion ISO image using the instructions [QuickISOImage here]. Also download/record the MD5/SHA1 checksums for the ISO image and verify the checksum when the download has completed.<br>
-  # If deploying a distributed environment (a master server and one or more slave sensors), you’ll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master server first.  Please note that sensors need to connect to the master server on ports 22 and 7736.  If you choose to enable salt for sensor management, they will also need to be able to connect to the master server on ports 4505 and 4506.<br>
+  # If deploying a distributed environment (a master server and one or more slave sensors), you’ll need to perform the remaining steps on the server and all sensors, but make sure you install/configure the master server first.  For best performance, the master server should be dedicated to just being a server for the other sensor boxes (the master server should have no sniffing interfaces of its own).  Please note that sensors need to connect to the master server on ports 22 and 7736.  If you choose to enable salt for sensor management, they will also need to be able to connect to the master server on ports 4505 and 4506.<br>
   # Using the downloaded ISO, install the operating system. If prompted with an "encrypt home folder" option, DO NOT enable this feature.  If asked about automatic updates, DO NOT enable automatic updates.  If prompted to install any additional packages, the only option you should choose is OpenSSH Server (openssh-server). Specifically, do NOT choose MySQL. All other required dependencies will be installed automatically.<br>
   # When asked about partitioning, there are a few things to keep in mind:
    * If you have more than 2TB of disk space, you will probably want to create a dedicated /boot partition at the beginning of the disk to ensure that you don’t have any Grub booting issues.
-   * The Sguil database on the server (doesn’t exist on sensor-only installations) can grow fairly large (100GB or more for decent-size networks). It’s stored at /var/lib/mysql/, so you may want to put /var on a dedicated partition/disk and assign a good amount of disk space to it. Also see the DAYSTOKEEP instructions near the end of this procedure.
+   * The Sguil database on the server (doesn’t exist on sensor-only installations) can grow fairly large (100GB or more for decent-size networks). It’s stored at /var/lib/mysql/, so you may want to put /var on a dedicated partition/disk and assign a good amount of disk space to it. Also see the DAYSTOKEEP instructions on the Post-Installation page.
    * Sensors store full packet captures at /nsm/sensor_data/, so you may want to put /nsm on a dedicated partition/disk and assign as much disk space as possible (1TB or more). For larger volumes you might also consider using XFS for the /nsm partition.
   # When installation completes, reboot into your new installation and login with the credentials you specified during installation.<br>
   # If you’re running a VM, now would be a good time to snapshot it so you can revert later if you need to.<br>
@@ -64,7 +64,7 @@ sudo sosetup
    * When ready to reboot, click "Yes, reboot!”
   # After rebooting, log back in (over “ssh -X” if remote) and start the Setup wizard again (sudo sosetup). It will detect that you have already configured /etc/network/interfaces and will walk you through the rest of the configuration.<br>
   # Select Advanced Setup.<br>
-  # Choose whether the host being configured will be Standalone, Server, or Sensor.<br>
+  # Choose whether the host being configured will be Standalone, Server, or Sensor.  If deploying a distributed environment (a master server and one or more slave sensors), the master server should be dedicated to just being a server for the other sensor boxes (the master server should have no sniffing interfaces of its own).  So the first box should be configured using "Server" and the remaining boxes should be configured using "Sensor".<br>
    * Standalone
     * You will be prompted to specify which IDS Engine (Snort or Suricata) you would like to use.
     * If you have multiple CPU cores available:
