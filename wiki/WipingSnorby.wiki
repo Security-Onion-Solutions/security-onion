@@ -59,6 +59,9 @@ shred -u /opt/snorby/db/seeds.rb >> $LOG 2>&1
 # review the log if you wish
 less log.txt
 
+# update Snorby's reference tables
+rule-update
+
 # get a fresh start
-shutdown -r now
+reboot
 }}}
