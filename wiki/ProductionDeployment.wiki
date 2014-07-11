@@ -41,7 +41,7 @@ sudo apt-get install python-software-properties=0.82.7
 {{{
 sudo apt-get update
 }}}
-  # Install the securityonion-all metapackage (or one of the more focused [MetaPackages metapackages]. This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
+  # Install the securityonion-all metapackage (or one of the more focused [MetaPackages metapackages]). This could take 15 minutes or more depending on the speed of your CPU and Internet connection.<br>
 {{{
 sudo apt-get -y install securityonion-all
 }}}
