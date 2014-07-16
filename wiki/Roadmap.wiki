@@ -53,6 +53,7 @@ Please note that this is all subject to change!
     * Issue 521: Replace test.com domain in /etc/nsm/ossec/ossec_agent.conf
     * Issue 519: onionsalt: improve ids/bro/ossec updates
     * Issue 524: Setup should test connection to master server using ssh instead of nc
+    * Issue 528: Re-running Setup should wipe ELSA databases
     * Issue 529: nsm: check for null dns domain before updating ossec_agent.conf
     * Issue 530: nsm: change sshd_config ClientAliveInterval to 30
     * Issue 483: sostat-redacted should redact usernames
@@ -90,7 +91,6 @@ Please note that this is all subject to change!
     * Issue 525: Setup: configure all available sniffing interfaces and prompt for which interfaces to enable
     * Issue 527: Setup: when choosing sensor-only and entering server name, do not allow the hostname or IP address of the sensor itself
     * Issue 543: Setup: if no Internet access, notify user that we're setting LOCAL_NIDS_RULE_TUNING=yes
-    * Issue 528: Re-running Setup should wipe ELSA databases
     * Issue 539: Changes to the Install Script to support more network card naming stuff
     * Issue 532: Limit what autossh keys can do
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
