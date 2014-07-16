@@ -84,19 +84,14 @@ Please note that this is all subject to change!
     * Issue 390: PulledPork 0.7.0
     * Issue 425: Pulledpork should request ET rules using proper Suricata version
     * Issue 552: rule-update: run PulledPork with -P option to process tarball
-    * Issue 480: sosetup: running on sensor should automatically create autossh account on server
-    * Issue 500: sosetup: restart starman (may not be necessary)
-    * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
-    * Issue 522: Setup should handle more than 10 interfaces correctly
-    * Issue 525: Setup: configure all available sniffing interfaces and prompt for which interfaces to enable
-    * Issue 527: Setup: when choosing sensor-only and entering server name, do not allow the hostname or IP address of the sensor itself
-    * Issue 543: Setup: if no Internet access, notify user that we're setting LOCAL_NIDS_RULE_TUNING=yes
-    * Issue 539: Changes to the Install Script to support more network card naming stuff
-    * Issue 532: Limit what autossh keys can do
+    * Issue 522: sosetup should handle more than 10 interfaces correctly
+    * Issue 525: sosetup: configure all available sniffing interfaces and prompt for which interfaces to enable
+    * Issue 527: sosetup: when choosing sensor-only and entering server name, do not allow the hostname or IP address of the sensor itself
+    * Issue 543: sosetup: if no Internet access, notify user that we're setting LOCAL_NIDS_RULE_TUNING=yes
+    * Issue 539: sosetup: support more network card naming stuff
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
-    * Issue 545: Setup: add comments to /etc/nsm/securityonion.conf
-    * Issue 546: Setup: change true/false options to yes/no
-    * Issue 547: Setup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
+    * Issue 545: sosetup: add comments to /etc/nsm/securityonion.conf
+    * Issue 546: sosetup: change true/false options to yes/no
     * Issue 535: PF_RING 6.0 or higher
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.2 or higher
@@ -113,6 +108,11 @@ Please note that this is all subject to change!
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 412: OSSEC 2.8 or higher
     * Issue 330: ossec.conf changes
+    * Issue 480: sosetup: running on sensor should automatically create autossh account on server
+    * Issue 500: sosetup: restart starman (may not be necessary)
+    * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
+    * Issue 532: sosetup: Limit what autossh keys can do
+    * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
