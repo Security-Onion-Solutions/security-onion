@@ -104,6 +104,7 @@ Please note that this is all subject to change!
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 548: NSM: run barnyard2 as non-root user
+    * Issue 561: nsm_server_backup-config should check FORCE_YES
     * Issue 287: Sguil 0.9 or higher
     * Issue 491: Squert 1.3.0 or higher
     * Issue 418: netsniff-ng 0.58 or higher
