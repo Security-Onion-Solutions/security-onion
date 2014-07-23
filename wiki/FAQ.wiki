@@ -59,11 +59,11 @@ https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 = Why are the timestamps in ELSA not in UTC? =
 [TimeZones UTC and Time Zones]
 
+= How do I enable/disable processes? =
+[DisablingProcesses Disabling Processes]
+
 = Will Security Onion move to Ubuntu 14.04? =
 We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases 
-
-= How do I enable/disable processes? =
-http://blog.securityonion.net/2013/07/new-nsm-and-setup-packages-allow-you-to.html
 
 = What can I do to decrease the size of my MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
