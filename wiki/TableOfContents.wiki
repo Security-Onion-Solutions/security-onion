@@ -22,6 +22,7 @@
 ==Tuning==
   * [ManagingAlerts Managing Alerts]
   * [AddingLocalRules Adding Local Rules]
+  * [DisablingProcesses Disabling Processes]
   * [BPF BPF]
   * [PF_RING PF_RING]
   * [MySQLTuning MySQL Tuning]
