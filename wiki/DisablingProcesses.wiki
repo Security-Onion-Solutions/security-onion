@@ -14,7 +14,7 @@ to:
 {{{
 HTTP_AGENT_ENABLED="no"
 }}}
-to prevent http_agent from restarting the next time the NSM scripts are run.  A quick way to do this for all /etc/nsm/*/sensor.conf files on one box is to use the sed command as follows:
+to prevent http_agent from restarting the next time the NSM scripts are run.  A quick way to do this for all /etc/nsm/`*`/sensor.conf files on one box is to use the sed command as follows:
 {{{
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 }}}
