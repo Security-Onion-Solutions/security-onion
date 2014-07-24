@@ -86,7 +86,7 @@ Please note that this is all subject to change!
     * Issue 552: rule-update: run PulledPork with -P option to process tarball
     * Issue 522: sosetup should handle more than 10 interfaces correctly
     * Issue 525: sosetup: configure all available sniffing interfaces and prompt for which interfaces to enable
-    * Issue 527: sosetup: when choosing sensor-only and entering server name, do not allow the hostname or IP address of the sensor itself
+    * Issue 527: sosetup: when choosing sensor-only and entering server name, don't allow hostname/IP of the sensor itself
     * Issue 543: sosetup: if no Internet access, notify user that we're setting LOCAL_NIDS_RULE_TUNING=yes
     * Issue 539: sosetup: support more network card naming stuff
     * Issue 538: sosetup: add references to sostat, sostat-redacted and sostat-quick
