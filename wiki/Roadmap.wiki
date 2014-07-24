@@ -93,6 +93,8 @@ Please note that this is all subject to change!
     * Issue 545: sosetup: add comments to /etc/nsm/securityonion.conf
     * Issue 546: sosetup: change true/false options to yes/no
     * Issue 560: rule-update: run PulledPork with -T option if ENGINE=suricata
+    * Issue 565: Setup: run PulledPork with -T option if ENGINE=suricata
+    * Issue 564: Setup: avoid breaking ELSA syslog-ng.conf
     * Issue 535: PF_RING 6.0 or higher
     * Issue 462: Snort 2.9.6.1 or higher
     * Issue 465: Suricata 2.0.2 or higher
