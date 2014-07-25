@@ -95,9 +95,9 @@ Please note that this is all subject to change!
     * Issue 564: sosetup: avoid breaking ELSA syslog-ng.conf
     * Issue 565: sosetup: run PulledPork with -T option if ENGINE=suricata
     * Issue 560: rule-update: run PulledPork with -T option if ENGINE=suricata
-    * Issue 535: PF_RING 6.0 or higher
-    * Issue 462: Snort 2.9.6.1 or higher
-    * Issue 465: Suricata 2.0.2 or higher
+    * Issue 535: PF_RING 6.0.1
+    * Issue 462: Snort 2.9.6.2
+    * Issue 465: Suricata 2.0.2
     * Issue 445: Bro 2.3
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
