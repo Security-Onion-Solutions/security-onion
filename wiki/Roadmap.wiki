@@ -96,7 +96,8 @@ Please note that this is all subject to change!
     * Issue 565: sosetup: run PulledPork with -T option if ENGINE=suricata
     * Issue 560: rule-update: run PulledPork with -T option if ENGINE=suricata
     * Issue 562: securityonion-web-page: break OSSEC alerts out into separate queries
-    * Issue 563: securityonion-web-page: add link for training/support    * Issue 535: PF_RING 6.0.1
+    * Issue 563: securityonion-web-page: add link for training/support
+    * Issue 535: PF_RING 6.0.1
     * Issue 462: Snort 2.9.6.2
     * Issue 465: Suricata 2.0.2
     * Issue 445: Bro 2.3
