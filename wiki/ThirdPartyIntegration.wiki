@@ -15,7 +15,7 @@ Configure /etc/syslog-ng/syslog-ng.conf with a new "destination" to forward to y
 
 2 options:
 
-- Edit ALL /etc/nsm/HOSTNAME-INTERFACE/barnyard2*.conf files on ALL sensors with a new "output" to send IDS alerts to your external systems and then restart all barnyard2 instances:
+- Edit ALL /etc/nsm/HOSTNAME-INTERFACE/barnyard2`*`.conf files on ALL sensors with a new "output" to send IDS alerts to your external systems and then restart all barnyard2 instances:
 {{{
 sudo nsm_sensor_ps-restart --only-barnyard2
 }}}
