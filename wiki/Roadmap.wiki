@@ -119,19 +119,19 @@ Please note that this is all subject to change!
     * Issue 412: OSSEC 2.8 or higher
     * Issue 330: ossec.conf changes
     * Issue 568: New package securityonion-samples-jackcr
+    * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
+    * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
+    * Issue 369: Arpwatch
+    * Issue 553: NetworkMiner 1.6
+  * September 2014
+    * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
+    * Issue 554: 12.04.5 ISO image
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
     * Issue 532: sosetup: Limit what autossh keys can do
     * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
-    * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
-    * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
-    * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
-    * Issue 369: Arpwatch
-  * September 2014
-    * Issue 553: NetworkMiner 1.6
-    * Issue 554: 12.04.5 ISO image
-    * Issue 559: Setup: support for NIC bonding configuration
+    * Issue 559: sosetup: support for NIC bonding configuration
     * Issue 558: Add VirusTotal uploader
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
