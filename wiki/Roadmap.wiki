@@ -123,6 +123,7 @@ Please note that this is all subject to change!
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 369: Arpwatch
     * Issue 553: NetworkMiner 1.6
+    * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
   * September 2014
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
     * Issue 554: 12.04.5 ISO image
