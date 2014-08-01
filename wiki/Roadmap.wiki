@@ -125,14 +125,6 @@ Please note that this is all subject to change!
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
     * Issue 532: sosetup: Limit what autossh keys can do
     * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
-    * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
-    * Issue 331: securityonion-elsa: update dependencies
-    * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
-    * Issue 385: Additional log parsers (non-Bro) for ELSA
-    * Issue 513: securityonion-elsa-extras: when adding sources to syslog-ng.conf, do not search-and-replace using "log"
-    * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
-    * Issue 512: ELSA syslog-ng.conf filter f_bro_headers
-    * Issue 467: ELSA dashboard for Snort performance
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
@@ -142,3 +134,11 @@ Please note that this is all subject to change!
     * Issue 554: 12.04.5 ISO image
     * Issue 559: Setup: support for NIC bonding configuration
     * Issue 558: Add VirusTotal uploader
+    * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
+    * Issue 331: securityonion-elsa: update dependencies
+    * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
+    * Issue 385: Additional log parsers (non-Bro) for ELSA
+    * Issue 513: securityonion-elsa-extras: when adding sources to syslog-ng.conf, do not search-and-replace using "log"
+    * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
+    * Issue 512: ELSA syslog-ng.conf filter f_bro_headers
+    * Issue 467: ELSA dashboard for Snort performance
