@@ -125,6 +125,7 @@ Please note that this is all subject to change!
     * Issue 553: NetworkMiner 1.6
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
   * September 2014
+    * Issue 572: securityonion-et-rules: update for new ISO
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
     * Issue 554: 12.04.5 ISO image
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
