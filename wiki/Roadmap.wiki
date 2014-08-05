@@ -107,7 +107,6 @@ Please note that this is all subject to change!
     * Issue 445: Bro 2.3
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
-    * Issue 566: NSM: make /etc/nsm/sensortab compatible with Bro Input Framework
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
