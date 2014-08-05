@@ -99,11 +99,11 @@ Please note that this is all subject to change!
     * Issue 563: securityonion-web-page: add link for training/support
   * August 2014
     * Issue 569: securityonion-server: add p0f as a dependency
-    * Issue 570: CapMe: Ignore extra data from ELSA cli.pl
     * Issue 535: PF_RING 6.0.1
     * Issue 462: Snort 2.9.6.2
     * Issue 567: Snort Daq 2.0.2
     * Issue 465: Suricata 2.0.2
+    * Issue 570: CapMe: Ignore extra data from ELSA cli.pl
     * Issue 445: Bro 2.3
     * Issue 484: securityonion-bro-scripts: update APT1 scripts with Seth's changes for certificate matching
     * Issue 414: Bro script should lookup interface in /etc/nsm/sensortab to obtain sensorname
