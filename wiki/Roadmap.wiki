@@ -116,8 +116,8 @@ Please note that this is all subject to change!
     * Issue 491: Squert 1.3.0 or higher
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 412: OSSEC 2.8 or higher
-    * Issue 330: ossec.conf changes
     * Issue 573: OSSEC setmaxagents
+    * Issue 330: ossec.conf changes
     * Issue 568: New package securityonion-samples-jackcr
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
