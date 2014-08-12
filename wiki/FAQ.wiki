@@ -68,13 +68,13 @@ Some users running the Snort engine with the VRT ruleset are experiencing barnya
 http://blog.securityonion.net/2014/06/new-securityonion-rule-update-package.html
 
 = Ubuntu is asking if I want to upgrade to Ubuntu 14.04.  Should I? =
-No, please do not upgrade to Ubuntu 14.04.  Security Onion is not designed for Ubuntu 14.04.
-
-= Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? =
-No, the PF_RING packages currently in our stable repo are not compatible with the Linux 3.13 kernel in the newer HWE stack.  We should be releasing new PF_RING packages in the next few weeks that are compatible with the Linux 3.13 kernel.
+No, please do not upgrade to Ubuntu 14.04.  Security Onion is not compatible with Ubuntu 14.04.
 
 = Will Security Onion move to Ubuntu 14.04? =
 We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases 
+
+= Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? =
+No, the PF_RING packages currently in our stable repo are not compatible with the Linux 3.13 kernel in the newer HWE stack.  We should be releasing new PF_RING packages in the next few weeks that are compatible with the Linux 3.13 kernel.
 
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
