@@ -62,8 +62,11 @@ https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 = How do I enable/disable processes? =
 [DisablingProcesses Disabling Processes]
 
-= Ubuntu is asking if I want to upgrade to 14.04.  Should I? =
+= Ubuntu is asking if I want to upgrade to Ubuntu 14.04.  Should I? =
 No, please do not upgrade to Ubuntu 14.04.  Security Onion is not designed for Ubuntu 14.04.
+
+= Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? =
+No, the PF_RING packages currently in our stable repo are not compatible with the Linux 3.13 kernel in the newer HWE stack.  We should be releasing new PF_RING packages in the next few weeks that are compatible with the Linux 3.13 kernel.
 
 = Will Security Onion move to Ubuntu 14.04? =
 We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases 
