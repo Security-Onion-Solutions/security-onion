@@ -20,9 +20,6 @@ If you don't want your sensors to inherit bpf.conf from the master server and/or
 = Argus =
 Currently, our argus configuration doesn't read from our global bpf.conf.  You should be able to add your bpf to your argus.conf file in /etc/nsm/HOSTNAME-INTERFACE/.
 
-= Bro =
-There may be an issue with Bro monitoring multiple interfaces and applying a different BPF to each interface.  For example, if you have Bro configured to monitor eth1 and eth2 and check /nsm/bro/logs/current/reporter.log, Bro may not consistently pick up the BPF for each interface.  Until this issue is resolved, you should probably just keep bpf-bro.conf as the default symlink OR ensure that each bpf-bro.conf contains the same exact BPF.
-
 = BPF Examples =
 
 From Phillip Wang:
