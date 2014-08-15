@@ -136,6 +136,7 @@ Please note that this is all subject to change!
     * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * Issue 559: sosetup: support for NIC bonding configuration
     * Issue 558: Add VirusTotal uploader
+    * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
