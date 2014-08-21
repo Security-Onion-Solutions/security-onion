@@ -125,6 +125,7 @@ Please note that this is all subject to change!
     * Issue 287: Sguil 0.9 or higher
     * Issue 491: Squert 1.3.0 or higher
     * Issue 579: Update salt
+    * Issue 580: onionsalt should copy OSSEC agent.conf and local_decoder.xml
   * October 2014
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 492: CapMe needs to handle UDP better
