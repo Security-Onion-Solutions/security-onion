@@ -116,6 +116,7 @@ Please note that this is all subject to change!
     * Issue 568: New package securityonion-samples-jackcr
     * Issue 553: NetworkMiner 1.6
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
+    * Issue 581: NSM: stop netsniff-ng if CRIT_DISK_USAGE exceeded and no more pcaps to delete
   * September 2014
     * Issue 572: securityonion-et-rules: update for new ISO
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
