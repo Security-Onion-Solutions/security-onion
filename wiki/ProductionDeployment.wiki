@@ -89,6 +89,7 @@ sudo sosetup
       * run through sosetup
      * FIRST SENSOR
       * create an account on the SERVER and add it to the sudo group
+        * The account created must have a full home directory. If you do not create it when you create the account, copy /etc/skel to /home/$user and do chown -R $user:$user /home/$user , where "$user" is the username of the new account. This is needed so the .ssh directory may be created to manage the connection.
       * run through sosetup on the SENSOR
       * on the SERVER, remove the account from the sudo group, but leave the account active
      * SECOND SENSOR
