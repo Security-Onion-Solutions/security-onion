@@ -15,7 +15,15 @@ lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-pcap.conf -> bpf.conf
 lrwxrwxrwx 1 root  root     8 Jan 13 21:47 bpf-prads.conf -> bpf.conf
 }}}
 
-If you don't want your sensors to inherit bpf.conf from the master server and/or you need to specify a bpf per-interface or per-process, you can simply replace the default symlink(s) with the desired bpf file(s) and restart service(s) as necessary.
+If you don't want your sensors to inherit bpf.conf from the master server and/or you need to specify a bpf per-interface or per-process, you can simply replace the default symlink(s) with the desired bpf file(s) and restart service(s) as necessary.  For example, suppose you want to apply a BPF to Snort only:
+{{{
+# Remove the default Snort BPF symlink
+sudo rm bpf-ids.conf
+# Create your own Snort BPF file
+sudo vi bpf-ids.conf
+# Restart Snort
+sudo nsm_sensor_ps-restart --only-snort-alert
+}}}
 
 = Argus =
 Currently, our argus configuration doesn't read from our global bpf.conf.  You should be able to add your bpf to your argus.conf file in /etc/nsm/HOSTNAME-INTERFACE/.
