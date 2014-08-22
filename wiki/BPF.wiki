@@ -19,7 +19,7 @@ If you don't want your sensors to inherit bpf.conf from the master server and/or
 {{{
 # Remove the default Snort BPF symlink
 sudo rm bpf-ids.conf
-# Create your own Snort BPF file
+# Create a new Snort BPF file and add your custom BPF
 sudo vi bpf-ids.conf
 # Restart Snort
 sudo nsm_sensor_ps-restart --only-snort-alert
