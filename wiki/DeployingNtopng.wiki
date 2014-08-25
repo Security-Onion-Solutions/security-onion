@@ -4,6 +4,14 @@
 
 How to install and get started with Ntopng on a Security Onion box
 
+= Author =
+
+This page was written by Kevin Branch.
+
+= No Support =
+
+Since ntopng is not an official part of Security Onion, we don't provide official support for it.
+
 = Details =
 
 {{{
