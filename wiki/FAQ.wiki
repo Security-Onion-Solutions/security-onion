@@ -363,10 +363,17 @@ Definition: A machine having one or more sensors that transmit to a central serv
 Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
 
 = Where do I put my custom ELSA parsers? =
-Create a new subdirectory in /etc/elsa/patterns.d/, add your parsers to the new subdirectory, and then use the following code to merge them:
+Create a new subdirectory in /etc/elsa/patterns.d/, add your parsers to the new subdirectory, and then use pdbtool to merge the entire /etc/elsa/patterns.d/ directory into /opt/elsa/node/conf/patterndb.xml.  For example:
 {{{
 # Become root
 sudo -i
+
+# Create a new subdirectory in /etc/elsa/patterns.d/
+mkdir /etc/elsa/patterns.d/local/
+
+# Add file(s) to your new subdirectory containing your new parsers
+vi /etc/elsa/patterns.d/local/my_new_log_parser_1
+vi /etc/elsa/patterns.d/local/my_new_log_parser_2
 
 # Merge with pdbtool
 PATTERNS_DIR=/etc/elsa/patterns.d/
