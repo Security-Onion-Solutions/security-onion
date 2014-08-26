@@ -26,3 +26,4 @@ pgrep -lf delayed_job
   * Are you able to duplicate the problem on a fresh Security Onion installation?
   * Check the [Roadmap] to see if this is a known issue that we are working on.
   * If all else fails, please send an email to our [MailingLists security-onion mailing list].
+  * Need training or commercial support?  http://www.securityonionsolutions.com
