@@ -113,11 +113,11 @@ Please note that this is all subject to change!
     * Issue 412: OSSEC 2.8 or higher
     * Issue 573: OSSEC setmaxagents
     * Issue 330: ossec.conf changes
+    * Issue 581: NSM: avoid filling disk if CRIT_DISK_USAGE exceeded in one day
+  * September 2014
     * Issue 568: New package securityonion-samples-jackcr
     * Issue 553: NetworkMiner 1.6
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
-    * Issue 581: NSM: avoid filling disk if CRIT_DISK_USAGE exceeded in one day
-  * September 2014
     * Issue 572: securityonion-et-rules: update for new ISO
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
