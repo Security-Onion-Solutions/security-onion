@@ -101,7 +101,7 @@ Instead of modifying /etc/salt/master or /etc/salt/minion directly, please add y
 == Configure the Master Server first ==
 
 {{{
-# Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
+# Make sure the necessary packages are installed and updated
 sudo apt-get update && sudo apt-get install securityonion-onionsalt
 
 # Edit /opt/onionsalt/salt/top.sls and add your master as a "backend"
@@ -140,7 +140,7 @@ sudo salt '*' state.highstate
 
 == Now configure salt-minion on a Sensor ==
 {{{
-# Install securityonion-onionsalt (will also install salt-master, salt-minion, and their dependencies)
+# Make sure the necessary packages are installed and updated
 sudo apt-get update && sudo apt-get install securityonion-onionsalt
 
 # Stop the running salt-master
