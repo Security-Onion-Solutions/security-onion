@@ -52,7 +52,7 @@ The "soup" command described above is the recommended method to install updates.
   * MySQL - if you've already run Setup, please see the [MySQLUpdates recommended procedure for updating the MySQL packages].
 
   * PF_RING and new kernel packages
-You may be prompted to update your kernel packages and PF_RING at the same time.  If you do so, the PF_RING kernel module will get built for your current kernel and not for the newly installed kernel and upon reboot services will fail.  To avoid this, you should install just the PF_RING kernel module by itself and then install the kernel and any other remaining package updates.  Here's a one-liner that will do that: 
+You may be prompted to update your kernel packages and PF_RING at the same time.  If you do so, the PF_RING kernel module may get built for your current kernel and not for the newly installed kernel and upon reboot services will fail.  To avoid this, you should install just the PF_RING kernel module by itself and then install the kernel and any other remaining package updates.  Here's a one-liner that will do that: 
 {{{
 sudo apt-get update ; sudo apt-get install securityonion-pfring-module ; sudo apt-get dist-upgrade
 }}}
