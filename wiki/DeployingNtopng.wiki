@@ -16,7 +16,7 @@ Since ntopng is not an official part of Security Onion, we don't provide officia
 
 {{{
 # Ntopng depends on this package
-apt-get install redis-server rrdtool
+apt-get install redis-server libhiredis0.10 rrdtool
 
 # Get the latest ntopng deb packages from http://www.nmon.net
 DEB_FILE_1=`curl -s http://www.nmon.net/packages/ubuntu/12.04/x64/ntopng/ 2>&1 | grep ntopng_ | tail -n1 | cut -d\" -f8`
