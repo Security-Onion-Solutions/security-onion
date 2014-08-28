@@ -114,6 +114,7 @@ Please note that this is all subject to change!
     * Issue 573: OSSEC setmaxagents
     * Issue 330: ossec.conf changes
     * Issue 581: NSM: avoid filling disk if CRIT_DISK_USAGE exceeded in one day
+    * Issue 582: NSM: only run "broctl cron" if Bro is enabled
   * September 2014
     * Issue 568: New package securityonion-samples-jackcr
     * Issue 553: NetworkMiner 1.6
