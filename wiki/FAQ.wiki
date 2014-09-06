@@ -78,7 +78,8 @@ No, please do not upgrade to Ubuntu 14.04, as it is incompatible with Security O
 We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be fully supported until April 2017: https://wiki.ubuntu.com/Releases 
 
 = Ubuntu is saying that my kernel has reached EOL (End Of Life).  Should I update to the newer HWE stack? =
-No, the PF_RING packages currently in our stable repo are not compatible with the Linux 3.13 kernel in the newer HWE stack.  We should be releasing new PF_RING packages in the next few weeks that are compatible with the Linux 3.13 kernel.
+Please see:
+http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
 
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
