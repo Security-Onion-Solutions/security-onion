@@ -116,6 +116,7 @@ Please note that this is all subject to change!
     * Issue 553: NetworkMiner 1.6
     * Issue 581: NSM: avoid filling disk if CRIT_DISK_USAGE exceeded in one day
     * Issue 582: NSM: only run "broctl cron" if Bro is enabled
+    * Issue 587: Setup: allow for automated setup using answer file
     * Issue 412: OSSEC 2.8 or higher
     * Issue 573: OSSEC setmaxagents
     * Issue 330: ossec.conf changes
