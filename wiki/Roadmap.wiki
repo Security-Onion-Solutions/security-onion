@@ -139,6 +139,7 @@ Please note that this is all subject to change!
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 548: NSM: run barnyard2 as non-root user
+    * Issue 588: NSM: purge old OSSEC logs
     * Issue 561: nsm_server_backup-config should check FORCE_YES
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
