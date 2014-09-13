@@ -123,6 +123,7 @@ Please note that this is all subject to change!
     * Issue 536: ISO: deleting desktop icons for live user sometimes doesn't work properly
     * Issue 584: ISO: 14.04 HWE stack
     * Issue 554: 12.04.5 ISO image
+    * Issue 590: Setup: sosetup.conf SALT="YES"
     * Issue 586: Bro 2.3.1
     * Issue 589: OSSEC 2.8.1
   * October 2014
