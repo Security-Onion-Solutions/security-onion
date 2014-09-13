@@ -14,7 +14,6 @@
   # Verify that you have Internet connectivity. If necessary, configure your [Proxy proxy settings].
   # If you installed from the Security Onion Live 12.04 Distribution ISO, run "sudo soup", reboot if prompted, and then skip to the "Setup wizard" step below.<br>
   # If your machine is running a 32 bit version of Ubuntu and you have more than 4GB of RAM, <a href="https://help.ubuntu.com/community/EnablingPAE">install the PAE kernel</a>.<br>
-  # If you used an Ubuntu release after 12.04.3, then you may have an incompatible kernel.  12.04.4 ships with kernel 3.11 which is not compatible with our current version of PF_RING.  You'll need to install the older 3.8 kernel packages (including headers) and remove 3.11.
   # Install all Ubuntu updates and reboot.
   # Log back in (over “ssh -X” if remote) and configure MySQL not to prompt for root password:<br>
 {{{
