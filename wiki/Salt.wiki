@@ -177,3 +177,6 @@ sudo salt '*' test.ping
 # Tell all minions to do an update
 sudo salt '*' state.highstate
 }}}
+
+= Additional Reading =
+http://www.geekempire.com/2014/09/onionsalt-saltstack-cheat-sheer.html
