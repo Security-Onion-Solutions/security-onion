@@ -125,7 +125,6 @@ Please note that this is all subject to change!
     * Issue 554: 12.04.5 ISO image
     * Issue 590: Setup: sosetup.conf SALT="yes"
     * Issue 586: Bro 2.3.1
-    * Issue 591: Bro Intel Whitelist
     * Issue 589: OSSEC 2.8.1
   * October 2014
     * Issue 579: Update salt
@@ -136,6 +135,7 @@ Please note that this is all subject to change!
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
     * Issue 583: securityonion-web-page: update "All OSSEC Logs" query
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
+    * Issue 591: Bro Intel Whitelist
     * Issue 382: Update Argus packages
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 492: CapMe needs to handle UDP better
@@ -147,6 +147,7 @@ Please note that this is all subject to change!
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 369: Arpwatch
+    * Issue 592: sosetup: add -y option
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
     * Issue 500: sosetup: restart starman (may not be necessary)
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
