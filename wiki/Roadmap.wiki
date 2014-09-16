@@ -165,3 +165,4 @@ Please note that this is all subject to change!
     * Issue 447: ELSA syslog-ng.conf rewrite r_pipes
     * Issue 512: ELSA syslog-ng.conf filter f_bro_headers
     * Issue 467: ELSA dashboard for Snort performance
+    * Issue 594: securityonion-sudoers: 10_securityonion
