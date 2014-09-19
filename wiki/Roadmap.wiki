@@ -147,6 +147,7 @@ Please note that this is all subject to change!
     * Issue 561: nsm_server_backup-config should check FORCE_YES
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
+    * Issue 598: so-snorby-wipe
     * Issue 369: Arpwatch
     * Issue 597: sosetup: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
