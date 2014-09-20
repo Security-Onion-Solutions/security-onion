@@ -62,6 +62,15 @@ https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 = How do I enable/disable processes? =
 [DisablingProcesses Disabling Processes]
 
+= I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. =
+This is a known issue with VMware Fusion 6.  You can either:
+
+- go into the VM configuration and disable 3D in the video adapter
+
+OR
+
+- upgrade the VM hardware level (may require upgrading to VMware Fusion 7)
+
 = I recently updated barnyard and now I'm not getting any Snort alerts. =
 Some users running the Snort engine with the VRT ruleset are experiencing barnyard2 failing with errors like "Returned signature_id is not equal to updated signature_id".  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called so-snorby-fix-sigs and included it in the rule-update package.  If you're running the Snort engine with the VRT ruleset, please run so-snorby-fix-sigs and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
 
