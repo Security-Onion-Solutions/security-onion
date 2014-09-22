@@ -134,6 +134,7 @@ Please note that this is all subject to change!
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
     * Issue 583: securityonion-web-page: update "All OSSEC Logs" query
+    * Issue 599: securityonion-web-page: highlight current ELSA query
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 591: Bro Intel Whitelist
     * Issue 382: Update Argus packages
