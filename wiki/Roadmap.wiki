@@ -151,7 +151,6 @@ Please note that this is all subject to change!
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 598: so-snorby-wipe
-    * Issue 369: Arpwatch
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
     * Issue 592: sosetup: add -y option
     * Issue 593: sosetup: checking for Internet access takes a while if DNS doesn't immediately fail
@@ -162,8 +161,10 @@ Please note that this is all subject to change!
     * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * Issue 559: sosetup: support for NIC bonding configuration
     * Issue 601: ISO: add foremost
+    * Issue 602: 12.04.5.1 ISO image
   * November 2014
     * Issue 558: Add VirusTotal uploader
+    * Issue 369: Arpwatch
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
