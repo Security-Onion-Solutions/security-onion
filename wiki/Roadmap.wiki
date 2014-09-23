@@ -126,6 +126,7 @@ Please note that this is all subject to change!
     * Issue 590: Setup: sosetup.conf SALT="yes"
     * Issue 586: Bro 2.3.1
     * Issue 589: OSSEC 2.8.1
+    * Issue 600: Suricata 2.0.4
   * October 2014
     * Issue 579: Update salt
     * Issue 580: onionsalt should copy OSSEC agent.conf and local_decoder.xml
