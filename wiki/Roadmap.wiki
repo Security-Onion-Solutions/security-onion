@@ -142,6 +142,7 @@ Please note that this is all subject to change!
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
+    * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 548: NSM: run barnyard2 as non-root user
@@ -151,7 +152,6 @@ Please note that this is all subject to change!
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 598: so-snorby-wipe
     * Issue 369: Arpwatch
-    * Issue 597: sosetup: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
     * Issue 592: sosetup: add -y option
     * Issue 593: sosetup: checking for Internet access takes a while if DNS doesn't immediately fail
