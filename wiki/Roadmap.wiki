@@ -164,6 +164,7 @@ Please note that this is all subject to change!
     * Issue 602: 12.04.5.1 ISO image
   * November 2014
     * Issue 603: securityonion-bro-scripts: drwatson
+    * Issue 604: ELSA: parsers for Bro drwatson logs
     * Issue 558: Add VirusTotal uploader
     * Issue 369: Arpwatch
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
