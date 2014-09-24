@@ -151,6 +151,7 @@ Please note that this is all subject to change!
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 598: so-snorby-wipe
+    * Issue 605: sosetup: replace tmp with mktemp
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
     * Issue 592: sosetup: add -y option
     * Issue 593: sosetup: checking for Internet access takes a while if DNS doesn't immediately fail
