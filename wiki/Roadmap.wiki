@@ -130,6 +130,7 @@ Please note that this is all subject to change!
   * October 2014
     * Issue 579: Update salt
     * Issue 580: onionsalt should copy OSSEC agent.conf and local_decoder.xml
+    * Issue 609: Onionsalt should copy /opt/bro/share/bro/intel/
     * Issue 606: securityonion-bro-scripts: create /opt/bro/share/bro/intel/
     * Issue 287: Sguil 0.9 or higher
     * Issue 491: Squert 1.3.0 or higher
