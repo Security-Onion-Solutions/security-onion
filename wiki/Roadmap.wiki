@@ -169,6 +169,7 @@ Please note that this is all subject to change!
     * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * Issue 559: sosetup: support for NIC bonding configuration
     * Issue 601: ISO: add foremost
+    * Issue 614: ISO: add securityonion-samples-shellshock
     * Issue 602: 12.04.5.1 ISO image
   * November 2014
     * Issue 603: securityonion-bro-scripts: drwatson
