@@ -157,6 +157,7 @@ Please note that this is all subject to change!
     * Issue 611: nsm_sensor_clean: replace server with sensor
     * Issue 598: so-snorby-wipe
     * Issue 608: Update bash scripts to use /bin/sh
+    * Issue 613: sosetup: if user chooses VRT rules, enable Community as well
     * Issue 605: sosetup: replace tmp with mktemp
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
     * Issue 592: sosetup: add -y option
