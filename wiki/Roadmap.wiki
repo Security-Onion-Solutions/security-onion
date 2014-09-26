@@ -125,6 +125,7 @@ Please note that this is all subject to change!
     * Issue 554: 12.04.5 ISO image
     * Issue 590: Setup: sosetup.conf SALT="yes"
     * Issue 586: Bro 2.3.1
+    * Issue 613: sosetup: if user chooses VRT rules, enable Community as well
     * Issue 612: securityonion-bro-scripts: include ShellShock detection
     * Issue 606: securityonion-bro-scripts: create /opt/bro/share/bro/intel/
     * Issue 579: Update salt
@@ -157,7 +158,6 @@ Please note that this is all subject to change!
     * Issue 611: nsm_sensor_clean: replace server with sensor
     * Issue 598: so-snorby-wipe
     * Issue 608: Update bash scripts to use /bin/sh
-    * Issue 613: sosetup: if user chooses VRT rules, enable Community as well
     * Issue 605: sosetup: replace tmp with mktemp
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
     * Issue 592: sosetup: add -y option
