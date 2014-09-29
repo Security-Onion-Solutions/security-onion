@@ -146,6 +146,7 @@ Please note that this is all subject to change!
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
+    * Issue 615: NSM: add "exit 0" where necessary
     * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
