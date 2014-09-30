@@ -134,12 +134,12 @@ Please note that this is all subject to change!
     * Issue 600: Suricata 2.0.4
     * Issue 589: OSSEC 2.8.1
   * October 2014
+    * Issue 583: securityonion-web-page: update "All OSSEC Logs" query
+    * Issue 599: securityonion-web-page: highlight current ELSA query
     * Issue 287: Sguil 0.9 or higher
     * Issue 491: Squert 1.3.0 or higher
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
-    * Issue 583: securityonion-web-page: update "All OSSEC Logs" query
-    * Issue 599: securityonion-web-page: highlight current ELSA query
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 591: Bro Intel Whitelist
     * Issue 382: Update Argus packages
