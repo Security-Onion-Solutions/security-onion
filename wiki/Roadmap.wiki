@@ -133,8 +133,8 @@ Please note that this is all subject to change!
     * Issue 613: sosetup: if user chooses VRT rules, enable Community as well
     * Issue 600: Suricata 2.0.4
     * Issue 616: securityonion-bro-scripts: ShellShock Qmail SMTP "MAIL FROM" attack vector
-    * Issue 589: OSSEC 2.8.1
   * October 2014
+    * Issue 589: OSSEC 2.8.1
     * Issue 583: securityonion-web-page: update "All OSSEC Logs" query
     * Issue 599: securityonion-web-page: highlight current ELSA query
     * Issue 287: Sguil 0.9 or higher
