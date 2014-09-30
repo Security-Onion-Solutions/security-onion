@@ -131,8 +131,8 @@ Please note that this is all subject to change!
     * Issue 580: onionsalt should copy OSSEC agent.conf and local_decoder.xml
     * Issue 609: Onionsalt should copy /opt/bro/share/bro/intel/
     * Issue 613: sosetup: if user chooses VRT rules, enable Community as well
-    * Issue 589: OSSEC 2.8.1
     * Issue 600: Suricata 2.0.4
+    * Issue 589: OSSEC 2.8.1
   * October 2014
     * Issue 287: Sguil 0.9 or higher
     * Issue 491: Squert 1.3.0 or higher
