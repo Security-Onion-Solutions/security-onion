@@ -134,9 +134,10 @@ Please note that this is all subject to change!
     * Issue 600: Suricata 2.0.4
     * Issue 616: securityonion-bro-scripts: ShellShock Qmail SMTP "MAIL FROM" attack vector
   * October 2014
-    * Issue 589: OSSEC 2.8.1
+    * Issue 617: securityonion-web-page: add queries for Bro ShellShock Notices
     * Issue 583: securityonion-web-page: update "All OSSEC Logs" query
     * Issue 599: securityonion-web-page: highlight current ELSA query
+    * Issue 589: OSSEC 2.8.1
     * Issue 287: Sguil 0.9 or higher
     * Issue 491: Squert 1.3.0 or higher
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
