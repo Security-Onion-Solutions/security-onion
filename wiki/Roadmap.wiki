@@ -139,7 +139,7 @@ Please note that this is all subject to change!
     * Issue 599: securityonion-web-page: highlight current ELSA query
     * Issue 618: securityonion-bro-scripts: ShellShock Add shellscripts as a post-exploit detection mechanism
     * Issue 589: OSSEC 2.8.1
-    * Issue 621: sostat: add sostat-interface and sostat-interface-delta
+    * Issue 621: sostat: add sostat-interface
     * Issue 287: Sguil 0.9 or higher
     * Issue 491: Squert 1.3.0 or higher
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
