@@ -101,4 +101,4 @@ Also see:
 http://mailman.icsi.berkeley.edu/pipermail/bro/2013-December/007185.html
 
 = How can I get an email alert when my sensor stops seeing traffic? =
-If you configured Bro as shown above, it should automatically do this for you.  More options can be found on the [SensorStopsSeeingTraffic] page.
+If you configured OSSEC or Bro as shown above, they should automatically do this for you.  More options can be found on the [SensorStopsSeeingTraffic] page.
