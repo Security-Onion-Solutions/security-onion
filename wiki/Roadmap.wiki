@@ -163,6 +163,7 @@ Please note that this is all subject to change!
     * Issue 611: nsm_sensor_clean: replace server with sensor
     * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
     * Issue 598: so-snorby-wipe
+  * November 2014
     * Issue 608: Update bash scripts to use /bin/sh
     * Issue 605: sosetup: replace tmp with mktemp
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
@@ -177,7 +178,7 @@ Please note that this is all subject to change!
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
     * Issue 602: 12.04.5.1 ISO image
-  * November 2014
+  * December 2014
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
     * Issue 558: Add VirusTotal uploader
