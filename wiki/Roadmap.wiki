@@ -145,11 +145,7 @@ Please note that this is all subject to change!
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
-    * Issue 591: Bro Intel Whitelist
     * Issue 382: Update Argus packages
-    * Issue 418: netsniff-ng 0.58 or higher
-    * Issue 492: CapMe needs to handle UDP better
-    * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 615: NSM: add "exit 0" where necessary
     * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
@@ -164,6 +160,10 @@ Please note that this is all subject to change!
     * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
     * Issue 598: so-snorby-wipe
   * November 2014
+    * Issue 591: Bro Intel Whitelist
+    * Issue 418: netsniff-ng 0.58 or higher
+    * Issue 492: CapMe needs to handle UDP better
+    * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 608: Update bash scripts to use /bin/sh
     * Issue 605: sosetup: replace tmp with mktemp
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
