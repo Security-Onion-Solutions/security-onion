@@ -144,6 +144,8 @@ Please note that this is all subject to change!
     * Issue 622: Update http_agent for Sguil 0.9
     * Issue 623: Update ossec_agent for Sguil 0.9
     * Issue 624: Update CapMe for Sguil 0.9
+    * Issue 625: Update NSM for Sguil 0.9
+    * Issue 626: Update Setup for Sguil 0.9
     * Issue 491: Squert 1.4.0
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
