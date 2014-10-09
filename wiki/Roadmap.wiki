@@ -149,6 +149,7 @@ Please note that this is all subject to change!
     * Issue 491: Squert 1.4.0
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
+    * Issue 627: securityonion-web-page: separate syslog-ng into program and host queries
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 382: Update Argus packages
     * Issue 615: NSM: add "exit 0" where necessary
