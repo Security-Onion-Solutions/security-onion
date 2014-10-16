@@ -141,6 +141,7 @@ Please note that this is all subject to change!
     * Issue 589: OSSEC 2.8.1
     * Issue 621: sostat: add sostat-interface
     * Issue 628: securityonion-web-page: add ELSA queries for SSLv3
+    * Issue 629: securityonion-web-page: disable SSLv3 in Apache ssl.conf
     * Issue 627: securityonion-web-page: separate syslog-ng into program and host queries
     * Issue 287: Sguil 0.9
     * Issue 622: Update http_agent for Sguil 0.9
