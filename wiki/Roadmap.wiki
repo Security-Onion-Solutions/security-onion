@@ -141,6 +141,7 @@ Please note that this is all subject to change!
     * Issue 589: OSSEC 2.8.1
     * Issue 621: sostat: add sostat-interface
     * Issue 628: securityonion-web-page: add ELSA queries for SSLv3
+    * Issue 633: securityonion-elsa-extras: parse ssl_version and ssl_cipher out of Bro ssl.log
     * Issue 629: securityonion-web-page: disable SSLv3 in Apache ssl.conf
     * Issue 627: securityonion-web-page: separate syslog-ng into program and host queries
     * Issue 631: securityonion-web-page: collapse query categories by default
