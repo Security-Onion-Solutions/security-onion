@@ -153,6 +153,7 @@ Please note that this is all subject to change!
     * Issue 625: Update NSM for Sguil 0.9
     * Issue 626: Update Setup for Sguil 0.9
     * Issue 491: Squert 1.4.0
+    * Issue 638: securityonion-ossec-rules: add rule to ignore Squert POST
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
