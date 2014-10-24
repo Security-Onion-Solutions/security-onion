@@ -154,6 +154,7 @@ Please note that this is all subject to change!
     * Issue 626: Update Setup for Sguil 0.9
     * Issue 491: Squert 1.4.0
     * Issue 638: securityonion-ossec-rules: add rule to ignore Squert POST
+  * November 2014
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
@@ -173,7 +174,7 @@ Please note that this is all subject to change!
     * Issue 598: so-snorby-wipe
     * Issue 636: Snort 2.9.7.0
     * Issue 637: Snort DAQ 2.0.4
-  * November 2014
+  * December 2014
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 492: CapMe needs to handle UDP better
@@ -193,7 +194,7 @@ Please note that this is all subject to change!
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
     * Issue 602: 12.04.5.1 ISO image
-  * December 2014
+  * January 2015
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
     * Issue 558: Add VirusTotal uploader
