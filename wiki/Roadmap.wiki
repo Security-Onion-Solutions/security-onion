@@ -171,6 +171,7 @@ Please note that this is all subject to change!
     * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
     * Issue 598: so-snorby-wipe
     * Issue 636: Snort 2.9.7.0
+    * Issue 637: Snort DAQ 2.0.4
   * November 2014
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
