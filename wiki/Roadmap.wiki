@@ -176,6 +176,7 @@ Please note that this is all subject to change!
     * Issue 636: Snort 2.9.7.0
     * Issue 637: Snort DAQ 2.0.4
     * Issue 639: rule-update should disable Suricata rules if running Snort
+    * Issue 642: Update Salt packages/scripts to 2014.7.0
   * December 2014
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
