@@ -153,7 +153,7 @@ Please note that this is all subject to change!
     * Issue 624: Update CapMe for Sguil 0.9
     * Issue 625: Update NSM for Sguil 0.9
     * Issue 626: Update Setup for Sguil 0.9
-    * Issue 491: Squert 1.4.0
+    * Issue 491: Squert 1.5.0
     * Issue 638: securityonion-ossec-rules: add rule to ignore Squert POST
   * November 2014
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
