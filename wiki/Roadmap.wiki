@@ -148,9 +148,9 @@ Please note that this is all subject to change!
     * Issue 633: securityonion-elsa-extras: parse ssl_version and ssl_cipher out of Bro ssl.log
     * Issue 640: securityonion-web-page: previous update broke ssl symlink
     * Issue 287: Sguil 0.9
-    * Issue 622: Update http_agent for Sguil 0.9
-    * Issue 623: Update ossec_agent for Sguil 0.9
-    * Issue 624: Update CapMe for Sguil 0.9
+    * Issue 622: Update http_agent for Sguil 0.9 and move from SSL to TLS
+    * Issue 623: Update ossec_agent for Sguil 0.9 and move from SSL to TLS
+    * Issue 624: Update CapMe for Sguil 0.9 and move from SSL to TLS
     * Issue 625: Update NSM for Sguil 0.9
     * Issue 626: Update Setup for Sguil 0.9
     * Issue 491: Squert 1.5.0
