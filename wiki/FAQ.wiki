@@ -90,6 +90,13 @@ We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be full
 Please see:
 http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
 
+= Why does sostat show a high number of ELSA Buffers in Queue? =
+There are usually 2 main reasons for this:
+1.  low on RAM
+2.  ungraceful shutdown (perhaps power outage) resulted in database corruption
+Take a look at the ELSA log files in /nsm/elsa/data/elsa/log/ and look for errors.  If there are errors related to MySQL, please see this thread:
+https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion
+
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
