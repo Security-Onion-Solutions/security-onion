@@ -110,8 +110,10 @@ rule-update now runs barnyard2 to update Snorby's reference table:
 http://blog.securityonion.net/2014/06/new-barnyard2-nsm-rule-update-and.html
 
 Since barnyard2 isn't processing any actual unified2 data, it outputs the following errors:
+{{{
 ERROR: Unable to open directory '' (No such file or directory)
 ERROR: Unable to find the next spool file!
+}}}
 
 This is normal.  
 
