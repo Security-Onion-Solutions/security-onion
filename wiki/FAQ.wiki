@@ -99,9 +99,14 @@ OR
 
 - ungraceful shutdown (perhaps power outage) resulted in database corruption
 
+Take a look at the ELSA log files in /nsm/elsa/data/elsa/log/ and look for errors.  If there are errors related to MySQL, please see this thread:
+
+https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion
+
 = Why does rule-update show barnyard2 errors? =
 
 rule-update now runs barnyard2 to update Snorby's reference table:
+
 http://blog.securityonion.net/2014/06/new-barnyard2-nsm-rule-update-and.html
 
 Since barnyard2 isn't processing any actual unified2 data, it outputs the following errors:
@@ -109,9 +114,6 @@ ERROR: Unable to open directory '' (No such file or directory)
 ERROR: Unable to find the next spool file!
 
 This is normal.  
-
-Take a look at the ELSA log files in /nsm/elsa/data/elsa/log/ and look for errors.  If there are errors related to MySQL, please see this thread:
-https://groups.google.com/d/topic/security-onion/O3uBjCR5jYk/discussion
 
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
