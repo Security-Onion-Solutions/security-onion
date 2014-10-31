@@ -71,7 +71,8 @@ SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 EMAIL=YourUsername@YourDomain.com
 
-01 12    * * *   root    HOSTNAME=`hostname`; /usr/bin/sostat | mail -s "$HOSTNAME stats" $EMAIL
+01 12    * * *   root    HOSTNAME=`hostname`; /usr/bin/sostat 2>&1 | mail -s "$HOSTNAME stats" $EMAIL
+
 }}}
 
 = How do I configure Bro to send emails? =
