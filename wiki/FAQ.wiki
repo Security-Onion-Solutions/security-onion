@@ -2,6 +2,9 @@
 
 = NOTE: This FAQ was originally written for Security Onion 10.04.  Not all FAQ entries have been updated for Security Onion 12.04 yet. =
 
+= Why won't the ISO image boot on my machine? =
+[TroubleBooting]
+
 = What's the recommended procedure for installing Security Onion? =
 [Installation Installation Procedure]
 
@@ -122,22 +125,6 @@ You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
 = Why is my disk filling up? =
 Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/.  /etc/cron.d/sensor-clean is a cronjob that runs every minute that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
-
-= Why won't the ISO image boot on my machine? =
-  * Did you verify the checksum of the downloaded ISO as described on the [Installation] page?  
-  * Does your machine support 64-bit?  (If you're trying to run a 64-bit VM, then your 64-bit processor must support virtualization and virtualization must be enabled in the BIOS.)  If not, then you'll need to obtain a 64-bit machine to use our 64-bit ISO image (recommended) or use your 32-bit machine by installing Ubuntu 12.04 32-bit and adding our PPA and packages as described on the [Installation] page.
-  * If you think your machine does support 64-bit, but you're still having problems with our 64-bit ISO image, try downloading the Ubuntu 12.04 64-bit ISO image and seeing if it runs.  If it doesn't, then you should verify your 64-bit compatibility.
-  * If the ISO image boots, but the Live Desktop doesn't appear properly, it may be an issue with your video card.  Try the nomodeset option on the boot menu:<br>
-http://blog.securityonion.net/2014/02/security-onion-12044-iso-image-now.html<br>
-https://groups.google.com/d/topic/security-onion/UKE5-dqybQ4/discussion<br>
-https://groups.google.com/d/topic/security-onion/51JZWXZfBho/discussion<br>
-<br>
-If that works but you are left with low resolution and you have an nvidia graphics chipset, you can do the following AFTER installation:
-{{{
-sudo apt-get remove nvidia-173
-sudo apt-get remove nvidia-96
-sudo apt-get install nvidia-current
-}}}
 
 = What does it mean if I have a high number of Sguil Uncategorized Events? =
 
