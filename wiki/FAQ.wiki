@@ -121,7 +121,7 @@ This is normal.
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
 
 = Why is my disk filling up? =
-Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/.  /etc/cron.d/sensor-clean is a cronjob that runs every 5 minutes that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
+Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/.  /etc/cron.d/sensor-clean is a cronjob that runs every minute that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
 
 = Why won't the ISO image boot on my machine? =
   * Did you verify the checksum of the downloaded ISO as described on the [Installation] page?  
