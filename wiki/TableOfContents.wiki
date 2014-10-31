@@ -31,6 +31,7 @@
 
 ==Tricks and Tips==
   * [ELSAQueryTips ELSA Query Tips]
+  * [CustomELSAParsers Custom ELSA Parsers]
   * [Salt Using Salt to manage Sensors]
   * [DNSAnomalyDetection DNS Anomaly Detection script]
   * [ConnectingtoSguil Connecting to Sguild]
