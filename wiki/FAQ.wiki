@@ -65,6 +65,9 @@ https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 = How do I enable/disable processes? =
 [DisablingProcesses Disabling Processes]
 
+= Where do I put my custom ELSA parsers? =
+[CustomELSAParsers]
+
 = I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. =
 This is a known issue with certain versions of VMware.  You can either:
 
@@ -385,26 +388,6 @@ Controlled by:  /usr/sbin/nsm_sensor<br>
 sensor box<br>
 Definition: A machine having one or more sensors that transmit to a central server.  Does not run server processes.  Pulls ruleset from server box.  (In some contexts, I refer to this a slave pulling rules from the master.)<br>
 Example: A machine named sensor1 having sensors sensor1-eth0 and sensor1-eth1.<br>
-
-= Where do I put my custom ELSA parsers? =
-Create a new subdirectory in /etc/elsa/patterns.d/, add your parsers to the new subdirectory, and then use pdbtool to merge the entire /etc/elsa/patterns.d/ directory into /opt/elsa/node/conf/patterndb.xml.  For example:
-{{{
-# Become root
-sudo -i
-
-# Create a new subdirectory in /etc/elsa/patterns.d/
-mkdir /etc/elsa/patterns.d/local/
-
-# Add file(s) to your new subdirectory containing your new parsers
-vi /etc/elsa/patterns.d/local/my_new_log_parser_1
-vi /etc/elsa/patterns.d/local/my_new_log_parser_2
-
-# Merge with pdbtool
-PATTERNS_DIR=/etc/elsa/patterns.d/
-DEST_PATTERN=/opt/elsa/node/conf/patterndb.xml
-cp $DEST_PATTERN $DEST_PATTERN.bak
-pdbtool merge -p $DEST_PATTERN --recursive -D $PATTERNS_DIR
-}}}
 
 = Why does the ELSA web interface not recognize one of my ELSA log nodes even though the APIKEY is correct? =
 Could be due to clocks not matching between ELSA log node and ELSA web interface.  Please see: https://groups.google.com/d/topic/security-onion/K_5vWQpd8VM/discussion
