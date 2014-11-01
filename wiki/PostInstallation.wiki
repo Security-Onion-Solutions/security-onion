@@ -14,13 +14,7 @@ curl http://testmyids.com
 xrandr -s WxH
 }}}
   # Login to Sguil and review your IDS alerts. Squert, Snorby and ELSA can be accessed by visiting https://server/ for additional in-depth analysis.<br>
-  # Be aware that Snorby uses highcharts. Read the highcharts license to determine if you need to purchase a commercial license:
-
-http://shop.highsoft.com/highcharts.html
-
-http://shop.highsoft.com/faq/non-commercial#what-is-non-commercial
-
-If you feel that you would be required to purchase a commercial license but are unwilling/unable to, you can <a href="http://code.google.com/p/security-onion/wiki/FAQ#How_do_I_disable_Snorby?">disable/remove Snorby altogether</a> or de-activate HighCharts (the charts on the bottom half of the Snorby Dashboard will be blank, but nothing else in Snorby should be affected):
+  # Be aware that Snorby uses highcharts. Read the <a href="http://shop.highsoft.com/highcharts.html">highcharts</a> <a href="http://shop.highsoft.com/faq/non-commercial#what-is-non-commercial">license</a> to determine if you need to purchase a commercial license.  If you feel that you would be required to purchase a commercial license but are unwilling/unable to, you can <a href="http://code.google.com/p/security-onion/wiki/FAQ#How_do_I_disable_Snorby?">disable/remove Snorby altogether</a> or de-activate HighCharts (the charts on the bottom half of the Snorby Dashboard will be blank, but nothing else in Snorby should be affected):
 {{{
 sudo mv /opt/snorby/public/javascripts/highcharts.js /opt/snorby/public/javascripts/highcharts.js.DISABLED
 }}}
