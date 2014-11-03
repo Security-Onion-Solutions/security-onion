@@ -29,9 +29,7 @@ We recommend using the "soup" script to automatically install updates while avoi
 sudo soup
 }}}
 
-Please pay attention to the output as it may request that you take specific action, such as manually restarting services.  Also refer to the relevant blog entry for the update as there may be additional information there:
-
-http://blog.securityonion.net
+Please pay attention to the output as it may request that you take specific action, such as manually restarting services.  Also refer to the relevant blog entry for the update as there may be additional information there:  http://blog.securityonion.net
 
 If you get the following error:
 {{{
