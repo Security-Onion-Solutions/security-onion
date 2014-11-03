@@ -19,4 +19,6 @@ For certain proxies (Bluecoat in particular), you may need to change from https 
 
 https://code.google.com/p/pulledpork/issues/detail?id=154
 
+https://groups.google.com/d/topic/security-onion/NQ-dLLPxR6A/discussion
+
 https://groups.google.com/d/topic/security-onion-testing/piRYj-7Ar8M/discussion
