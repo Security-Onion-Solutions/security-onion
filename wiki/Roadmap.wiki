@@ -173,6 +173,7 @@ Please note that this is all subject to change!
     * Issue 611: nsm_sensor_clean: replace server with sensor
     * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
     * Issue 598: so-snorby-wipe
+    * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 636: Snort 2.9.7.0
     * Issue 637: Snort DAQ 2.0.4
     * Issue 639: rule-update should disable Suricata rules if running Snort
