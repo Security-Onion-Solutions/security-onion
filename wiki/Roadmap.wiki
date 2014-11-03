@@ -159,7 +159,7 @@ Please note that this is all subject to change!
     * Issue 382: Argus 3.0.8
     * Issue 636: Snort 2.9.7.0
     * Issue 637: Snort DAQ 2.0.4
-    * Issue 615: NSM: add "exit 0" where necessary
+    * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
