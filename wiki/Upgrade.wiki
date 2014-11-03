@@ -18,10 +18,6 @@ byobu-enable
 For more information about byobu, please see:
 https://help.ubuntu.com/community/Byobu
 
-== Distributed deployments ==
-
-Always update the master server first before updating sensors.
-
 == soup - Security Onion UPdate ==
 
 We recommend using the "soup" script to automatically install updates while avoiding the MySQL/PF_RING issues described below.
@@ -43,6 +39,10 @@ sudo apt-get update && sudo apt-get install securityonion-sostat
 
 For more information, please see:
 <a href="http://blog.securityonion.net/2013/08/new-securityonion-packages.html">http://blog.securityonion.net/2013/08/new-securityonion-packages.html</a>
+
+== Distributed deployments ==
+
+Always update the master server first before updating sensors.
 
 == Using salt and soup to Update your entire Deployment ==
 https://code.google.com/p/security-onion/wiki/Salt#Using_Salt_to_Install_Updates_Across_Your_Entire_Deployment
