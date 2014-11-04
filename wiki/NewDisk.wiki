@@ -29,7 +29,7 @@ sudo cp -av /nsm/* /mnt/
 Unmount the new drive from the temporary location
 
 {{{
-sudo unmount /mnt
+sudo umount /mnt
 }}}
 
 Rename the existing /nsm
