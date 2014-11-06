@@ -157,8 +157,7 @@ Please note that this is all subject to change!
     * Issue 638: securityonion-ossec-rules: add rule to ignore Squert POST
   * November 2014
     * Issue 382: Argus 3.0.8
-    * Issue 636: Snort 2.9.7.0
-    * Issue 637: Snort DAQ 2.0.4
+    * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
@@ -170,10 +169,11 @@ Please note that this is all subject to change!
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 610: NSM: ossec_agent alert level should be configurable
     * Issue 611: nsm_sensor_clean: replace server with sensor
-    * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
     * Issue 598: so-snorby-wipe
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 639: rule-update should disable Suricata rules if running Snort
+    * Issue 636: Snort 2.9.7.0
+    * Issue 637: Snort DAQ 2.0.4
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
