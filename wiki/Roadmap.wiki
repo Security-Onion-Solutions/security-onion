@@ -196,6 +196,7 @@ Please note that this is all subject to change!
     * Issue 532: sosetup: Limit what autossh keys can do
     * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
     * Issue 559: sosetup: support for NIC bonding configuration
+    * Issue 646: Sguil client highlighting issue
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
