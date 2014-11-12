@@ -158,6 +158,7 @@ Please note that this is all subject to change!
   * November 2014
     * Issue 382: Argus 3.0.8
     * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
+    * Issue 647: NSM: rotate netsniff-ng.log
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
