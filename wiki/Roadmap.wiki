@@ -159,9 +159,10 @@ Please note that this is all subject to change!
     * Issue 382: Argus 3.0.8
     * Issue 620: NSM: stop netsniff-ng only after checking all interfaces for pcaps to delete
     * Issue 647: NSM: rotate netsniff-ng.log
-    * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
+    * Issue 611: nsm_sensor_clean: replace server with sensor
+    * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 548: NSM: run barnyard2 as non-root user
     * Issue 588: NSM: purge old OSSEC logs
@@ -169,7 +170,6 @@ Please note that this is all subject to change!
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 610: NSM: ossec_agent alert level should be configurable
-    * Issue 611: nsm_sensor_clean: replace server with sensor
     * Issue 645: NSM Now Scripts don't check if a sensor is disabled before performing operations when a --sensor-name= is specified
     * Issue 598: so-snorby-wipe
     * Issue 643: Rotate logs in /var/log/nsm/
