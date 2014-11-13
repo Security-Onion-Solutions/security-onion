@@ -166,6 +166,7 @@ Please note that this is all subject to change!
     * Issue 637: Snort DAQ 2.0.4
     * Issue 648: Rebuild securityonion-pfring-daq for new DAQ
     * Issue 646: Sguil client highlighting issue
+  * December 2014
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 548: NSM: run barnyard2 as non-root user
@@ -182,7 +183,7 @@ Please note that this is all subject to change!
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
-  * December 2014
+  * January 2015
     * Issue 644: sostat-quick: check server/sensor
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
@@ -203,7 +204,7 @@ Please note that this is all subject to change!
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
     * Issue 602: 12.04.5.1 ISO image
-  * January 2015
+  * February 2015
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
     * Issue 558: Add VirusTotal uploader
