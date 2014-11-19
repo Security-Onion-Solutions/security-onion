@@ -20,6 +20,9 @@
 = What is the password for root/mysql/Sguil/Squert/Snorby/ELSA? =
 [Passwords]
 
+= I've forgotten my Snorby password.  How do I reset it? =
+[Passwords]
+
 = How do I configure email for alerting and reporting? =
 [Email]
 
@@ -67,10 +70,6 @@ https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 
 = Where do I put my custom ELSA parsers? =
 [CustomELSAParsers]
-
-= I've forgotten my Snorby password.  How do I reset it? =
-
-https://code.google.com/p/security-onion/wiki/Passwords#Reset_Snorby_Password
 
 = I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. =
 This is a known issue with certain versions of VMware.  You can either:
