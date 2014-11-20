@@ -144,7 +144,7 @@ OR
 
 - stop sguild (sudo nsm_server_ps-stop) and manually categorize events using mysql (see http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html) OR lower your DAYSTOKEEP setting in /etc/nsm/securityonion.conf and run "sudo sguil-db-purge".
 
-To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See /etc/nsm/securityonion/autocat.conf.
+To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See https://code.google.com/p/security-onion/wiki/ManagingAlerts#Autocategorize_events.
 
 = Can Security Onion run in IPS mode? =
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
