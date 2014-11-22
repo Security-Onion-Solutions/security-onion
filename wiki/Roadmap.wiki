@@ -162,11 +162,11 @@ Please note that this is all subject to change!
     * Issue 597: nsm_all_del_quick: delete /nsm/bro/logs and /nsm/bro/extracted
     * Issue 595: NSM: prevent Bro version warning
     * Issue 611: nsm_sensor_clean: replace server with sensor
+  * December 2014
     * Issue 636: Snort 2.9.7.0
     * Issue 637: Snort DAQ 2.0.4
     * Issue 648: Rebuild securityonion-pfring-daq for new DAQ
     * Issue 646: Sguil client highlighting issue
-  * December 2014
     * Issue 513: securityonion-elsa-extras: when adding sources to syslog-ng.conf, do not search-and-replace using "log"
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
