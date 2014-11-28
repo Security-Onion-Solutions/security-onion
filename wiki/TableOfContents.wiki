@@ -25,7 +25,7 @@
   * [AddingLocalRules Adding Local Rules]
   * [DisablingProcesses Disabling Processes]
   * [BPF Filtering with BPF]
-  * [PF_RING PF_RING]
+  * [PF_RING Adjusting PF_RING for traffic]
   * [MySQLTuning MySQL Tuning]
   * [NewDisk Adding a new disk]
 
