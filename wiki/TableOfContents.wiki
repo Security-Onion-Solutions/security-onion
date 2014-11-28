@@ -24,7 +24,7 @@
   * [ManagingAlerts Managing Alerts]
   * [AddingLocalRules Adding Local Rules]
   * [DisablingProcesses Disabling Processes]
-  * [BPF BPF]
+  * [BPF Filtering with BPF]
   * [PF_RING PF_RING]
   * [MySQLTuning MySQL Tuning]
   * [NewDisk Adding a new disk]
