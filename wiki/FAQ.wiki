@@ -99,6 +99,17 @@ We have no immediate plans to move to Ubuntu 14.04.  Ubuntu 12.04 should be full
 Please see:
 http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
 
+= I just updated Snort and it's now saying 'ERROR: The dynamic detection library "/usr/local/lib/snort_dynamicrules/chat.so" version 1.0 compiled with dynamic engine library version 2.1 isn't compatible with the current dynamic engine library "/usr/lib/snort_dynamicengine/libsf_engine.so" version 2.4.' =
+
+Run the following:
+{{{
+sudo mkdir /usr/local/lib/snort_dynamicrules_backup
+
+sudo mv /usr/local/lib/snort_dynamicrules/*.so /usr/local/lib/snort_dynamicrules_backup/
+
+sudo rule-update
+}}}
+
 = Why does sostat show a high number of ELSA Buffers in Queue? =
 There are usually 2 main reasons for this:
 
