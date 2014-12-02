@@ -183,6 +183,7 @@ Please note that this is all subject to change!
     * Issue 598: so-snorby-wipe
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 639: rule-update should disable Suricata rules if running Snort
+    * Issue 650: rule-update: wipe snort_dynamicrules directory
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
   * January 2015
