@@ -170,6 +170,8 @@ Please note that this is all subject to change!
     * Issue 513: securityonion-elsa-extras: when adding sources to syslog-ng.conf, do not search-and-replace using "log"
     * Issue 575: ELSA: parsers for new Bro logs added in Bro 2.3
     * Issue 578: securityonion-web-page: add ELSA queries for new Bro 2.3 logs
+    * Issue 639: rule-update should disable Suricata rules if running Snort
+    * Issue 650: rule-update: wipe snort_dynamicrules directory
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 548: NSM: run barnyard2 as non-root user
@@ -182,8 +184,6 @@ Please note that this is all subject to change!
     * Issue 649: nsm_all_del_quick: check for /etc/nsm/servertab and /etc/nsm/sensortab before trying to read
     * Issue 598: so-snorby-wipe
     * Issue 643: Rotate logs in /var/log/nsm/
-    * Issue 639: rule-update should disable Suricata rules if running Snort
-    * Issue 650: rule-update: wipe snort_dynamicrules directory
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
   * January 2015
