@@ -213,6 +213,7 @@ Please note that this is all subject to change!
     * Issue 558: Add VirusTotal uploader
     * Issue 369: Arpwatch
     * Issue 619: OnionSalt: backup /opt/onionsalt/pillar/top.sls
+    * Issue 651: ELSA: starman restart doesn't work properly
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
     * Issue 336: When configuring ELSA log node, change MySQL port using /etc/mysql/conf.d/
