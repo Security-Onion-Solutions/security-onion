@@ -183,6 +183,8 @@ Please note that this is all subject to change!
     * Issue 645: NSM Now Scripts don't check if a sensor is disabled before performing operations when a --sensor-name= is specified
     * Issue 649: nsm_all_del_quick: check for /etc/nsm/servertab and /etc/nsm/sensortab before trying to read
     * Issue 652: NSM: barnyard sending blank interface to ELSA
+    * Issue 653: NSM: nsm_sensor_ps-stop should kill the processes tailing the snort.stats files
+    * Issue 654: NSM: set SNORT_PERF_STATS in snort_agent.conf to 0 when ENGINE=suricata
     * Issue 598: so-snorby-wipe
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
