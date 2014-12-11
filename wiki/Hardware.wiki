@@ -8,7 +8,7 @@ All of our packages are available in both 32-bit and 64-bit versions, but 64-bit
 RAM usage is highly dependent on several variables:
   * the services that you enable
   * the *kinds* of traffic you're monitoring
-  * the *actual amount of traffic* you're monitoring
+  * the *actual amount of traffic* you're monitoring (example: you may be monitoring a 1Gbps link but it's only using 200Mbps most of the time)
   * the amount of packet loss that is "acceptable" to your organization
 
 The following RAM estimates are a rough guideline and assume that you're going to be running Snort/Suricata, Bro, and netsniff-ng (full packet capture) and want to minimize/eliminate packet loss.  Your mileage may vary!
