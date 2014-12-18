@@ -190,6 +190,7 @@ Please note that this is all subject to change!
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
+    * Issue 656: ELSA: update parser for bro_conn to parse country code
   * January 2015
     * Issue 644: sostat-quick: check server/sensor
     * Issue 591: Bro Intel Whitelist
