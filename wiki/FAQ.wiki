@@ -103,12 +103,12 @@ http://blog.securityonion.net/2014/08/ubuntu-hardware-enablement-hwe-stacks.html
 
 Run the following:
 {{{
-sudo mkdir /usr/local/lib/snort_dynamicrules_backup
-
-sudo mv /usr/local/lib/snort_dynamicrules/*.so /usr/local/lib/snort_dynamicrules_backup/
-
 sudo rule-update
 }}}
+
+For more information, please see:
+
+http://blog.securityonion.net/2014/12/new-version-of-securityonion-rule.html
 
 = Why does sostat show a high number of ELSA Buffers in Queue? =
 There are usually 2 main reasons for this:
