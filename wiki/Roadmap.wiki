@@ -191,6 +191,7 @@ Please note that this is all subject to change!
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
     * Issue 656: ELSA: update parser for bro_conn to parse country code
+    * Issue 657: ELSA: email check
   * January 2015
     * Issue 644: sostat-quick: check server/sensor
     * Issue 591: Bro Intel Whitelist
