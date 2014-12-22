@@ -173,6 +173,7 @@ Please note that this is all subject to change!
     * Issue 639: rule-update should disable Suricata rules if running Snort
     * Issue 650: rule-update: wipe snort_dynamicrules directory
     * Issue 655: Suricata 2.0.5
+    * Issue 658: NSM: fix umask on Snort unified2 output
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 548: NSM: run barnyard2 as non-root user
