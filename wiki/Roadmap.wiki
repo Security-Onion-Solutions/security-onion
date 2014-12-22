@@ -174,9 +174,9 @@ Please note that this is all subject to change!
     * Issue 650: rule-update: wipe snort_dynamicrules directory
     * Issue 655: Suricata 2.0.5
     * Issue 658: NSM: fix umask on Snort unified2 output
+    * Issue 548: NSM: run barnyard2 as non-root user
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
-    * Issue 548: NSM: run barnyard2 as non-root user
     * Issue 588: NSM: purge old OSSEC logs
     * Issue 561: nsm_server_backup-config should check FORCE_YES
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
