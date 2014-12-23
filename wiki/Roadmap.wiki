@@ -176,6 +176,8 @@ Please note that this is all subject to change!
     * Issue 658: NSM: fix umask on Snort unified2 output
     * Issue 548: NSM: run barnyard2 as non-root user
     * Issue 649: nsm_all_del_quick: check for /etc/nsm/servertab and /etc/nsm/sensortab before trying to read
+    * Issue 598: so-snorby-wipe
+  * January 2015
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 588: NSM: purge old OSSEC logs
@@ -187,13 +189,10 @@ Please note that this is all subject to change!
     * Issue 652: NSM: barnyard sending blank interface to ELSA
     * Issue 653: NSM: nsm_sensor_ps-stop should kill the processes tailing the snort.stats files
     * Issue 654: NSM: set SNORT_PERF_STATS in snort_agent.conf to 0 when ENGINE=suricata
-    * Issue 598: so-snorby-wipe
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
     * Issue 656: ELSA: update parser for bro_conn to parse country code
-    * Issue 657: ELSA: email check
-  * January 2015
     * Issue 644: sostat-quick: check server/sensor
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
@@ -220,6 +219,7 @@ Please note that this is all subject to change!
     * Issue 558: Add VirusTotal uploader
     * Issue 369: Arpwatch
     * Issue 619: OnionSalt: backup /opt/onionsalt/pillar/top.sls
+    * Issue 657: ELSA: email check
     * Issue 651: ELSA: starman restart doesn't work properly
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
     * Issue 331: securityonion-elsa: update dependencies
