@@ -178,6 +178,7 @@ Please note that this is all subject to change!
     * Issue 649: nsm_all_del_quick: check for /etc/nsm/servertab and /etc/nsm/sensortab before trying to read
     * Issue 598: so-snorby-wipe
     * Issue 656: ELSA: update parser for bro_conn to parse country code
+    * Issue 659: securityonion-web-page: add ELSA query for bro_conn groupby:resp_country_code
   * January 2015
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
