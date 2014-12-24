@@ -177,6 +177,7 @@ Please note that this is all subject to change!
     * Issue 548: NSM: run barnyard2 as non-root user
     * Issue 649: nsm_all_del_quick: check for /etc/nsm/servertab and /etc/nsm/sensortab before trying to read
     * Issue 598: so-snorby-wipe
+    * Issue 656: ELSA: update parser for bro_conn to parse country code
   * January 2015
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
@@ -185,14 +186,13 @@ Please note that this is all subject to change!
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
     * Issue 610: NSM: ossec_agent alert level should be configurable
-    * Issue 645: NSM Now Scripts don't check if a sensor is disabled before performing operations when a --sensor-name= is specified
+    * Issue 645: NSM scripts don't check if a sensor is disabled before performing operations when a --sensor-name= is specified
     * Issue 652: NSM: barnyard sending blank interface to ELSA
     * Issue 653: NSM: nsm_sensor_ps-stop should kill the processes tailing the snort.stats files
     * Issue 654: NSM: set SNORT_PERF_STATS in snort_agent.conf to 0 when ENGINE=suricata
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
-    * Issue 656: ELSA: update parser for bro_conn to parse country code
     * Issue 644: sostat-quick: check server/sensor
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
