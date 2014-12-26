@@ -177,6 +177,7 @@ Please note that this is all subject to change!
     * Issue 548: NSM: run barnyard2 as non-root user
     * Issue 649: nsm_all_del_quick: check for /etc/nsm/servertab and /etc/nsm/sensortab before trying to read
     * Issue 598: so-snorby-wipe
+    * Issue 610: NSM: ossec_agent alert level should be configurable
     * Issue 656: ELSA: update parser for bro_conn to parse country code
     * Issue 659: securityonion-web-page: add ELSA query for bro_conn groupby:resp_country_code
   * January 2015
@@ -186,7 +187,6 @@ Please note that this is all subject to change!
     * Issue 561: nsm_server_backup-config should check FORCE_YES
     * Issue 523: sensor-clean: add option to skip removal of bro or argus logs
     * Issue 534: NSM: Patches for adding PCAP snap length for Netsniff-NG
-    * Issue 610: NSM: ossec_agent alert level should be configurable
     * Issue 645: NSM scripts don't check if a sensor is disabled before performing operations when a --sensor-name= is specified
     * Issue 652: NSM: barnyard sending blank interface to ELSA
     * Issue 653: NSM: nsm_sensor_ps-stop should kill the processes tailing the snort.stats files
