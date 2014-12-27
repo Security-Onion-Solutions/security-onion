@@ -195,6 +195,7 @@ Please note that this is all subject to change!
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 642: Update Salt packages/scripts to 2014.7.0
+    * Issue 619: OnionSalt: backup /opt/onionsalt/pillar/top.sls
     * Issue 644: sostat-quick: check server/sensor
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
@@ -220,7 +221,6 @@ Please note that this is all subject to change!
     * Issue 604: ELSA: parsers for Bro drwatson logs
     * Issue 558: Add VirusTotal uploader
     * Issue 369: Arpwatch
-    * Issue 619: OnionSalt: backup /opt/onionsalt/pillar/top.sls
     * Issue 657: ELSA: email check
     * Issue 651: ELSA: starman restart doesn't work properly
     * Issue 464: Consider changing default query_timeout in /etc/elsa_web.conf
