@@ -181,6 +181,8 @@ Please note that this is all subject to change!
     * Issue 660: Setup: add OSSEC_AGENT_LEVEL to /etc/nsm/securityonion.conf
     * Issue 656: ELSA: update parser for bro_conn to parse country code
     * Issue 659: securityonion-web-page: add ELSA query for bro_conn groupby:resp_country_code
+    * Issue 642: Update Salt packages/scripts to 2014.7.0
+    * Issue 619: OnionSalt: backup /opt/onionsalt/pillar/top.sls
   * January 2015
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
@@ -194,8 +196,6 @@ Please note that this is all subject to change!
     * Issue 654: NSM: set SNORT_PERF_STATS in snort_agent.conf to 0 when ENGINE=suricata
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
-    * Issue 642: Update Salt packages/scripts to 2014.7.0
-    * Issue 619: OnionSalt: backup /opt/onionsalt/pillar/top.sls
     * Issue 644: sostat-quick: check server/sensor
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
