@@ -13,11 +13,10 @@ Please note that this is all subject to change!
     * Issue 642: Update Salt packages/scripts to 2014.7.0
     * Issue 619: Onionsalt: backup /opt/onionsalt/pillar/top.sls
     * Issue 661: Onionsalt: replicate /usr/local/lib/snort_dynamicrules/
-    * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
-    * Issue 304: sosetup: support unique interface names
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
+    * Issue 662: ISO: add securityonion-samples-mta
     * Issue 602: 12.04.5.1 ISO image
   * February 2015
     * Issue 615: NSM: add "exit $RET" where necessary
@@ -38,6 +37,8 @@ Please note that this is all subject to change!
     * Issue 492: CapMe needs to handle UDP better
     * Issue 493: CapMe: send credentials interactively to avoid exposing on command line
     * Issue 608: Update bash scripts to use /bin/sh
+    * Issue 547: sosetup: if enabling salt on a sensor, check top.sls to make sure it doesn't already exist
+    * Issue 304: sosetup: support unique interface names
     * Issue 605: sosetup: replace tmp with mktemp
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
     * Issue 592: sosetup: add -y option
