@@ -16,6 +16,7 @@ Please note that this is all subject to change!
     * Issue 663: sosetup: sosetup.conf SGUIL_CLIENT_PASSWORD_1 should say Sguil/Squert/ELSA/Snorby
     * Issue 664: sosetup: run Bro as non-root user
     * Issue 665: NSM: run Bro as non-root user
+    * Issue 666: sostat: run Bro as non-root user
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
