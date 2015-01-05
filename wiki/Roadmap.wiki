@@ -14,6 +14,7 @@ Please note that this is all subject to change!
     * Issue 619: Onionsalt: backup /opt/onionsalt/pillar/top.sls
     * Issue 661: Onionsalt: replicate /usr/local/lib/snort_dynamicrules/
     * Issue 663: sosetup: sosetup.conf SGUIL_CLIENT_PASSWORD_1 should say Sguil/Squert/ELSA/Snorby
+    * Issue 664: sosetup: run Bro as non-root user
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
