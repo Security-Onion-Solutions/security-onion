@@ -56,6 +56,7 @@ Please note that this is all subject to change!
   * March 2015
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
+    * Issue 668: ELSA: pdbtool errors
     * Issue 558: Add VirusTotal uploader
     * Issue 369: Arpwatch
     * Issue 657: ELSA: email check
