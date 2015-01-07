@@ -8,6 +8,12 @@ As of 2015/01/06, we have a new utility called so-snorby-wipe which should handl
 
 http://blog.securityonion.net/2015/01/new-nsm-and-setup-packages-resolve.html
 
+So you should be able to simply run the following:
+{{{
+sudo so-snorby-wipe
+}}}
+and follow the prompts.
+
 If you need to run this process manually, then see the steps below.
 
 = Details =
