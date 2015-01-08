@@ -3,13 +3,10 @@
 = Where do I put my custom ELSA parsers? =
 Create a new subdirectory in /etc/elsa/patterns.d/, add your parsers to the new subdirectory, and then use pdbtool to merge the entire /etc/elsa/patterns.d/ directory into /opt/elsa/node/conf/patterndb.xml.  For example:
 {{{
-# Become root
-sudo -i
-
 # Create a new subdirectory in /etc/elsa/patterns.d/
 sudo mkdir /etc/elsa/patterns.d/local/
 
-# Add file(s) to your new subdirectory containing your new parsers
+# Add parser(s) to your new subdirectory
 sudo nano /etc/elsa/patterns.d/local/my_new_log_parser_1
 sudo nano /etc/elsa/patterns.d/local/my_new_log_parser_2
 
