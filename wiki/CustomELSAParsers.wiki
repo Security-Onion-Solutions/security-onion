@@ -21,3 +21,7 @@ sudo pdbtool merge -p /opt/elsa/node/conf/patterndb.xml --recursive -D /etc/elsa
 # Restart syslog-ng
 sudo service syslog-ng restart
 }}}
+
+Also see:
+
+https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Adding_Parsers
