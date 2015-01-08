@@ -18,6 +18,8 @@ Please note that this is all subject to change!
     * Issue 664: sosetup: run Bro as non-root user
     * Issue 665: NSM: run Bro as non-root user
     * Issue 666: sostat: run Bro as non-root user
+    * Issue 669: ELSA: update parsers for Bro DNS and BIND
+    * Issue 668: ELSA: pdbtool errors
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
@@ -56,7 +58,6 @@ Please note that this is all subject to change!
   * March 2015
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
-    * Issue 668: ELSA: pdbtool errors
     * Issue 558: Add VirusTotal uploader
     * Issue 369: Arpwatch
     * Issue 657: ELSA: email check
