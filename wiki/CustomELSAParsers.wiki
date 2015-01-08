@@ -18,10 +18,6 @@ sudo cp /opt/elsa/node/conf/patterndb.xml /opt/elsa/node/conf/patterndb.xml.bak
 # Merge all patterns into new patterndb.xml
 sudo pdbtool merge -p /opt/elsa/node/conf/patterndb.xml --recursive -D /etc/elsa/patterns.d/
 
-# Test one last time
-pdbtool test /opt/elsa/node/conf/patterndb.xml
-
 # Restart syslog-ng
 sudo service syslog-ng restart
-
 }}}
