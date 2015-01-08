@@ -7,15 +7,20 @@ Create a new subdirectory in /etc/elsa/patterns.d/, add your parsers to the new 
 sudo -i
 
 # Create a new subdirectory in /etc/elsa/patterns.d/
-mkdir /etc/elsa/patterns.d/local/
+sudo mkdir /etc/elsa/patterns.d/local/
 
 # Add file(s) to your new subdirectory containing your new parsers
-vi /etc/elsa/patterns.d/local/my_new_log_parser_1
-vi /etc/elsa/patterns.d/local/my_new_log_parser_2
+sudo nano /etc/elsa/patterns.d/local/my_new_log_parser_1
+sudo nano /etc/elsa/patterns.d/local/my_new_log_parser_2
 
 # Merge with pdbtool
-PATTERNS_DIR=/etc/elsa/patterns.d/
-DEST_PATTERN=/opt/elsa/node/conf/patterndb.xml
-cp $DEST_PATTERN $DEST_PATTERN.bak
-pdbtool merge -p $DEST_PATTERN --recursive -D $PATTERNS_DIR
+sudo cp /opt/elsa/node/conf/patterndb.xml /opt/elsa/node/conf/patterndb.xml.bak
+sudo pdbtool merge -p /opt/elsa/node/conf/patterndb.xml --recursive -D /etc/elsa/patterns.d/
+
+# Test
+pdbtool test /opt/elsa/node/conf/patterndb.xml
+
+# Restart syslog-ng
+sudo service syslog-ng restart
+
 }}}
