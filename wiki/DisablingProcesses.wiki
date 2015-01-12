@@ -21,7 +21,7 @@ sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/se
 }}}
 
 = Sguil Agent =
-If you disable a Sguil agent but it continues to appear in Sguil's "Agent Status" tab, stop sguild, go into the securityonion_db database and set the "active" field to N, and then restart sguild:
+If you use the Sguil client and want to remove the disabled agent from Sguil's "Agent Status" tab, then stop sguild, set the sensor's "active" field to N in the database, and then restart sguild:
 {{{
 # Stop sguild
 sudo nsm_server_ps-stop
