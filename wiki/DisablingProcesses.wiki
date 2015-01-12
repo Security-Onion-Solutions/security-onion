@@ -1,5 +1,6 @@
 #summary Disabling Services after Setup
 
+= Disabling a process =
 If you've already run Setup and want to disable a certain sensor service, you can simply stop the running service and then change the corresponding config value from "yes" to "no" to prevent it from restarting the next time the NSM scripts are run. 
 
 For example, suppose you access Bro's HTTP logs via ELSA, so you want to disable http_agent to prevent those HTTP logs from being duplicated into the Sguil database.  You would first stop the running http_agent service:
@@ -19,5 +20,10 @@ to prevent http_agent from restarting the next time the NSM scripts are run.  A 
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 }}}
 
-If you disable a Sguil agent but it continues to appear in Sguil's "Agent Status" tab, set the "active" field to N:
-http://blog.inliniac.net/2007/11/14/deactivating-a-group-of-sensors-in-sguil-070-cvs/
+= Sguil Agent =
+If you disable a Sguil agent but it continues to appear in Sguil's "Agent Status" tab, stop sguild, go into the securityonion_db database and set the "active" field to N, and then restart sguild:
+{{{
+sudo nsm_server_ps-stop
+mysql -uroot -Dsecurityonion_db -e 'update sensor set active="N" where hostname="HOSTNAME-INTERFACE-INSTANCE";'
+sudo nsm_server_ps-stop
+}}}
