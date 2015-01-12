@@ -74,6 +74,9 @@ https://code.google.com/p/security-onion/wiki/MailingLists#Moderation
 = How do I wipe the Snorby database? =
 [WipingSnorby Wiping Snorby database]
 
+= I disabled some Sguil agents but they still appear in Sguil's "Agent Status" tab. =
+https://code.google.com/p/security-onion/wiki/DisablingProcesses#Sguil_Agent
+
 = I'm running the Security Onion 12.04.5 ISO image and Chromium crashes and/or displays a black screen. =
 This is a known issue with certain versions of VMware.  You can either:
 
@@ -159,10 +162,6 @@ OR
 - stop sguild (sudo nsm_server_ps-stop) and manually categorize events using mysql (see http://taosecurity.blogspot.com/2013/02/recovering-from-suricata-gone-wild.html) OR lower your DAYSTOKEEP setting in /etc/nsm/securityonion.conf and run "sudo sguil-db-purge".
 
 To keep Uncategorized Events from getting too high, you should log into Sguil/Squert on a daily/weekly basis and categorize events.  If you don't ever want to use Sguil/Squert, you can create an autocat to automatically categorize incoming events.  See https://code.google.com/p/security-onion/wiki/ManagingAlerts#Autocategorize_events.
-
-= I disabled some Sguil agents but they still appear in Sguil's "Agent Status" tab. =
-Set the "active" field to N:
-http://blog.inliniac.net/2007/11/14/deactivating-a-group-of-sensors-in-sguil-070-cvs/
 
 = Can Security Onion run in IPS mode? =
 Running Security Onion as an IPS requires manual configuration and is not supported.  I talked about this on the Packet Pushers podcast:
