@@ -23,7 +23,12 @@ sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/se
 = Sguil Agent =
 If you disable a Sguil agent but it continues to appear in Sguil's "Agent Status" tab, stop sguild, go into the securityonion_db database and set the "active" field to N, and then restart sguild:
 {{{
+# Stop sguild
 sudo nsm_server_ps-stop
+
+# Set active="N", replacing HOSTNAME-INTERFACE-INSTANCE with your actual HOSTNAME, INTERFACE, and INSTANCE
 mysql -uroot -Dsecurityonion_db -e 'update sensor set active="N" where hostname="HOSTNAME-INTERFACE-INSTANCE";'
+
+# Restart sguild
 sudo nsm_server_ps-stop
 }}}
