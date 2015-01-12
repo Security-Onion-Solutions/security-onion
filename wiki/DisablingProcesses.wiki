@@ -18,3 +18,6 @@ to prevent http_agent from restarting the next time the NSM scripts are run.  A 
 {{{
 sudo sed -i 's|HTTP_AGENT_ENABLED="yes"|HTTP_AGENT_ENABLED="no"|g' /etc/nsm/*/sensor.conf
 }}}
+
+If you disable a Sguil agent but it continues to appear in Sguil's "Agent Status" tab, set the "active" field to N:
+http://blog.inliniac.net/2007/11/14/deactivating-a-group-of-sensors-in-sguil-070-cvs/
