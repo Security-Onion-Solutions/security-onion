@@ -30,5 +30,5 @@ sudo nsm_server_ps-stop
 mysql -uroot -Dsecurityonion_db -e 'update sensor set active="N" where hostname="HOSTNAME-INTERFACE-INSTANCE";'
 
 # Restart sguild
-sudo nsm_server_ps-stop
+sudo nsm_server_ps-start
 }}}
