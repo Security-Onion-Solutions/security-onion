@@ -21,6 +21,7 @@ Please note that this is all subject to change!
     * Issue 668: ELSA: pdbtool errors
     * Issue 669: ELSA: update parsers for Bro DNS and BIND
     * Issue 670: securityonion-web-page: add queries for updated bro_dns parser
+    * Issue 671: NSM: /etc/cron.d/sensor-clean needs 2>&1
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
