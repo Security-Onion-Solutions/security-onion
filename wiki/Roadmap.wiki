@@ -11,6 +11,7 @@ Please note that this is all subject to change!
     * Issue 656: ELSA: update parser for bro_conn to parse country code
     * Issue 659: securityonion-web-page: add ELSA query for bro_conn groupby:resp_country_code
     * Issue 667: New packages for shellshock and malware-traffic-analysis samples
+    * Issue 673: Suricata 2.0.6
     * Issue 642: Update Salt packages/scripts to 2014.7.0
     * Issue 619: Onionsalt: backup /opt/onionsalt/pillar/top.sls
     * Issue 661: Onionsalt: replicate /usr/local/lib/snort_dynamicrules/
