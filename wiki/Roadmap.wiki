@@ -28,6 +28,7 @@ Please note that this is all subject to change!
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
     * Issue 662: ISO: add securityonion-samples-mta
+    * Issue 675: ISO: add xfsprogs
     * Issue 602: 12.04.5.1 ISO image
   * February 2015
     * Issue 615: NSM: add "exit $RET" where necessary
