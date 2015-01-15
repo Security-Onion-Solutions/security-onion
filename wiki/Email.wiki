@@ -75,6 +75,11 @@ EMAIL=YourUsername@YourDomain.com
 
 }}}
 
+If you don't already have the "mail" utility, you can try installing:
+{{{
+sudo apt-get install mailutils
+}}}
+
 = How do I configure Bro to send emails? =
 Edit /opt/bro/etc/broctl.cfg and set the following:
 {{{
