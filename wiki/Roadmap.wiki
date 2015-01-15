@@ -60,6 +60,7 @@ Please note that this is all subject to change!
     * Issue 532: sosetup: Limit what autossh keys can do
     * Issue 559: sosetup: support for NIC bonding configuration
   * March 2015
+    * Issue 674: ELSA: update bro_notice parser to parse src and dst fields
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
     * Issue 558: Add VirusTotal uploader
