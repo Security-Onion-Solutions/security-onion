@@ -19,6 +19,7 @@ Please note that this is all subject to change!
     * Issue 664: sosetup: run Bro as non-root user
     * Issue 666: sostat: run Bro as non-root user
     * Issue 665: NSM: run Bro as non-root user
+    * Issue 676: Run Sguil as non-root user
     * Issue 671: NSM: /etc/cron.d/sensor-clean needs 2>&1
     * Issue 668: ELSA: pdbtool errors
     * Issue 669: ELSA: update parsers for Bro DNS and BIND
