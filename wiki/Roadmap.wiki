@@ -33,6 +33,7 @@ Please note that this is all subject to change!
     * Issue 602: 12.04.5.1 ISO image
   * February 2015
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
+    * Issue 678: rule-update: /etc/cron.d/rule-update should have 2>&1
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 588: NSM: purge old OSSEC logs
