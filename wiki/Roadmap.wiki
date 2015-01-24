@@ -21,9 +21,6 @@ Please note that this is all subject to change!
     * Issue 665: NSM: run Bro as non-root user
     * Issue 676: NSM: run Sguil as non-root user
     * Issue 671: NSM: /etc/cron.d/sensor-clean needs 2>&1
-    * Issue 668: ELSA: pdbtool errors
-    * Issue 669: ELSA: update parsers for Bro DNS and BIND
-    * Issue 670: securityonion-web-page: add queries for updated bro_dns parser
     * Issue 672: sguil-db-purge: check for UNCAT_MAX
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
@@ -32,6 +29,9 @@ Please note that this is all subject to change!
     * Issue 675: ISO: add xfsprogs
     * Issue 602: 12.04.5.1 ISO image
   * February 2015
+    * Issue 668: ELSA: pdbtool errors
+    * Issue 669: ELSA: update parsers for Bro DNS and BIND
+    * Issue 670: securityonion-web-page: add queries for updated bro_dns parser
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
     * Issue 678: rule-update: /etc/cron.d/rule-update should have 2>&1
     * Issue 679: rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
