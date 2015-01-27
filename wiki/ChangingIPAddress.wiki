@@ -32,8 +32,7 @@ host=[SENSOR-IP]
 == Automating the change of the sensor IP ==
 {{{
 sudo sed -i 's|OLD.SENSOR.IP.ADDR|NEW.SENSOR.IP.ADDR|g' /opt/bro/etc/node.cfg
-sudo broctl install
-sudo broctl restart
+sudo nsm_sensor_ps-restart --only-bro
 }}}
 
 
