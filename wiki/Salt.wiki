@@ -58,10 +58,8 @@ When you install and enable securityonion-onionsalt, the following data will rep
 {{{
 # Force all Salt minions to update Bro scripts
 sudo salt '*' cmd.run 'salt-call state.highstate'
-# Install new Bro scripts
-sudo salt '*' cmd.run '/opt/bro/bin/broctl install'
 # Restart Bro
-sudo salt '*' cmd.run '/opt/bro/bin/broctl restart'
+sudo salt '*' cmd.run 'nsm_sensor_ps-restart --only-bro'
 }}}
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
