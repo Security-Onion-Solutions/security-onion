@@ -144,7 +144,8 @@ ERROR: Unable to find the next spool file!
 This is normal.  
 
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
-You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.
+You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.  Also see UNCAT_MAX:
+http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
 
 = Why is my disk filling up? =
 Sguil uses netsniff-ng to record full packet captures to disk.  These pcaps are stored in /nsm/sensor_data/HOSTNAME-INTERFACE/dailylogs/.  /etc/cron.d/sensor-clean is a cronjob that runs every minute that should delete old pcaps when the disk reaches your defined disk usage threshold (90% by default).  It's important to properly size your disk storage so that you avoid filling the disk to 100% between purges.<br>
