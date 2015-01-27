@@ -32,12 +32,12 @@ For Bro, you would do the following:
 
   * Stop bro:
 {{{
-sudo broctl stop
+sudo nsm_sensor_ps-stop --only-bro
 }}}
   * Edit {{{/opt/bro/etc/node.cfg}}} and change the {{{lb_procs}}} variable to the desired number of cores.
   * Start bro:
 {{{
-sudo broctl install && sudo broctl start
+sudo nsm_sensor_ps-start --only-bro
 }}}
 
 = Updating =
