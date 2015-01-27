@@ -88,7 +88,7 @@ sendmail = /usr/sbin/sendmail
 }}}
 Then update and restart Bro:
 {{{
-sudo broctl install && sudo broctl restart
+sudo nsm_sensor_ps-restart --only-bro
 }}}
 
 You should then start receiving hourly connection summary emails.  If you don't want the connection summary emails, you can add the following to broctl.cfg and update and restart Bro as shown above:
