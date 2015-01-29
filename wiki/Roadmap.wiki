@@ -34,6 +34,7 @@ Please note that this is all subject to change!
     * Issue 675: ISO: add xfsprogs
     * Issue 602: 12.04.5.1 ISO image
     * Issue 681: rule-update: wipe snort_dynamicrules directory on sensor
+    * Issue 682: rule-update: update Snorby signature_lookup
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
     * Issue 678: rule-update: /etc/cron.d/rule-update should have 2>&1
     * Issue 679: rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
