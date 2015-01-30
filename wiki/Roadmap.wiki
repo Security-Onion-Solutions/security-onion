@@ -24,6 +24,7 @@ Please note that this is all subject to change!
     * Issue 671: NSM: /etc/cron.d/sensor-clean needs 2>&1
     * Issue 684: NSM: nsm_server_ps-start needs to create /var/log/sguild/ if it doesn't already exist
     * Issue 686: NSM: nsm_server_ps-start needs to set permissions on /var/log/nsm/so-elsa/ properly
+    * Issue 687: NSM: nsm_sensor_ps-start should set permissions on /var/log/nsm/ properly
     * Issue 668: ELSA: pdbtool errors
     * Issue 669: ELSA: update parsers for Bro DNS and BIND
     * Issue 670: securityonion-web-page: add queries for updated bro_dns parser
