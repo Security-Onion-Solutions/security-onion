@@ -29,6 +29,7 @@ Please note that this is all subject to change!
     * Issue 680: Bro 2.3.2
   * February 2015
     * Issue 683: securityonion-et-rules: update for new ISO
+    * Issue 685: securityonion-web-page: update links
     * Issue 632: ISO: add bridge-utils
     * Issue 601: ISO: add foremost
     * Issue 614: ISO: add securityonion-samples-shellshock
