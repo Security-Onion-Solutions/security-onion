@@ -38,6 +38,7 @@ Please note that this is all subject to change!
     * Issue 662: ISO: add securityonion-samples-mta
     * Issue 675: ISO: add xfsprogs
     * Issue 602: 12.04.5.1 ISO image
+  * March 2015
     * Issue 681: rule-update: wipe snort_dynamicrules directory on sensor
     * Issue 682: rule-update: update Snorby signature_lookup
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
@@ -72,7 +73,7 @@ Please note that this is all subject to change!
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
     * Issue 532: sosetup: Limit what autossh keys can do
     * Issue 559: sosetup: support for NIC bonding configuration
-  * March 2015
+  * April 2015
     * Issue 674: ELSA: update bro_notice parser to parse src and dst fields
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
