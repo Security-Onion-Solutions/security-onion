@@ -6,7 +6,7 @@ How to install and get started with Ntopng on a Security Onion box
 
 = Author =
 
-This page was written by Kevin Branch.  This process was last tested on 1/30/2015 when ntopng was at version 1.2.2, rev 8661.  At that time, the newer nightly build revision was broken, so I changed this process to use the stable repo instead of the nightly build repo.
+This page was written by Kevin Branch.  This process was last successfully tested on 1/30/2015 when ntopng was at version 1.2.2, rev 8661.  At that time, the newer nightly build revision 8884 was broken, so this process now references the stable repo instead of the nightly build repo.
 
 = No Support =
 
