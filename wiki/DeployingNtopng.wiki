@@ -6,7 +6,11 @@ How to install and get started with Ntopng on a Security Onion box
 
 = Author =
 
-This page was written by Kevin Branch.  This process was last successfully tested on 1/30/2015 when ntopng was at version 1.2.2, rev 8661.  At that time, the newer nightly build revision 8884 was broken, so this process now references the stable repo instead of the nightly build repo.
+This page was written by Kevin Branch.  
+
+= Testing =
+
+This procedure was last successfully tested by Kevin on 1/30/2015 when the latest stable ntopng was at version 1.2.2, rev `8661`.  At that time, the newer nightly build revision `8884` was broken, so this article now references the stable repo instead of the nightly build repo.
 
 = No Support =
 
@@ -25,6 +29,7 @@ apt-get --reinstall install securityonion-pfring-*
 = Are your http requests for ntop getting redirected to https? =
 
 Something in Security Onion appear to use HSTS to mark the SO host name for HTTPS-only use, so when you use a browser that honors HSTS -- like Chrome -- to access your ntop instance via the same host name as your other SO apps, it will redirect you to https which isn't what ntop is listening on.  The ideal solution is to enable https support in ntop, but I've not had luck with that yet.  The other options are to access ntop via the raw IP number of the SO box, or to set up an additional DNS name that points at your SO system, and use that name exclusively for reaching ntop.
+
 = Installation Details =
 
 {{{
