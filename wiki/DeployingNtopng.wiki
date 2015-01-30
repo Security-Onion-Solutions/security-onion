@@ -6,7 +6,7 @@ How to install and get started with Ntopng on a Security Onion box
 
 = Author =
 
-This page was written by Kevin Branch.
+This page was written by Kevin Branch.  Last tested 1/30/2015.
 
 = No Support =
 
@@ -31,11 +31,11 @@ Something in Security Onion appear to use HSTS to mark the SO host name for HTTP
 # Ntopng depends on this package
 apt-get install redis-server libhiredis0.10 rrdtool libnl1
 
-# Fetch and install the latest nightly build of the ntopng and ntopng-data deb packages
-DEB_FILE_1=`curl -s http://www.nmon.net/apt/12.04/x64/ 2>&1 | grep ntopng_ | tail -n1 | cut -d\" -f8`
-DEB_FILE_2=`curl -s http://www.nmon.net/apt/12.04/all/ 2>&1 | grep ntopng-data | tail -n1 | cut -d\" -f8`
-wget http://www.nmon.net/apt/12.04/x64/$DEB_FILE_1
-wget http://www.nmon.net/apt/12.04/all/$DEB_FILE_2
+# Fetch and install the latest stable build of the ntopng and ntopng-data deb packages
+DEB_FILE_1=`curl -s http://www.nmon.net/apt-stable/12.04/x64/ 2>&1 | grep ntopng_ | tail -n1 | cut -d\" -f8`
+DEB_FILE_2=`curl -s http://www.nmon.net/apt-stable/12.04/all/ 2>&1 | grep ntopng-data | tail -n1 | cut -d\" -f8`
+wget http://www.nmon.net/apt-stable/12.04/x64/$DEB_FILE_1
+wget http://www.nmon.net/apt-stable/12.04/all/$DEB_FILE_2
 dpkg -i $DEB_FILE_1 
 dpkg -i $DEB_FILE_2
 
