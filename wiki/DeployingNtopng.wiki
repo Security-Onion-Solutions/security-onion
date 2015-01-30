@@ -6,7 +6,7 @@ How to install and get started with Ntopng on a Security Onion box
 
 = Author =
 
-This page was written by Kevin Branch.  He last tested this process on *1/30/2015*.
+This page was written by Kevin Branch.
 
 = No Support =
 
