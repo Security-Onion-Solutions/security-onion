@@ -12,9 +12,9 @@ This page was written by Kevin Branch.  He last tested this process on *1/30/201
 
 Since ntopng is not an official part of Security Onion, we don't provide official support for it.
 
-= About the ntop apt repository =
+= About the ntopng apt repository =
 
-Don't add it to your Security Onion system.  As nice as it would be to have ntop-ng be updated as part of the "soup" process, adding the ntop apt repository to your apt sources appears to break Security Onion because it will cause the pfring package from the ntop repo to be installed in parallel to the Security Onion securityonion-pfring-`*` packages, which generally aren't on the same PFRING version, causing various applications to fail. 
+Don't add it to your Security Onion system.  As nice as it would be to have ntop-ng be updated as part of the "soup" process, adding the ntopng apt repository to your apt sources appears to break Security Onion because it will cause the pfring package from the ntopng repo to be installed in parallel to the Security Onion securityonion-pfring-`*` packages, which generally aren't on the same PFRING version, causing various applications to fail. 
 
 If you've already been broken by this, I believe that after removing the ntop repository from your apt sources, the following will put things back to normal:
 {{{
