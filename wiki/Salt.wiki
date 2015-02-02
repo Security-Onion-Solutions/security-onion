@@ -61,7 +61,8 @@ sudo salt '*' cmd.run 'salt-call state.highstate'
 # Restart Bro
 sudo salt '*' cmd.run 'nsm_sensor_ps-restart --only-bro'
 }}}
-  * Bro intel in /opt/bro/share/bro/intel/.  You'll need to restart Bro as shown above if you add any intel files to the default intel.dat.  After that initial Bro restart, Bro should be watching the intel files with the Input framework which should automatically notice if the files ever change (new intel is added).  In many cases, you won't need to restart Bro if you're just adding intel to the existing intel file(s).
+  * Bro intel in /opt/bro/share/bro/intel/
+    * You'll need to restart Bro as shown above if you add any intel files to the default intel.dat.  After that initial Bro restart, Bro should be watching the intel files with the Input framework which should automatically notice if the files ever change (new intel is added).  In many cases, you won't need to restart Bro if you're just adding intel to the existing intel file(s).
 
 In addition, Salt is a full configuration management system, so you can script anything that you want to deploy across your army of sensors.
 
