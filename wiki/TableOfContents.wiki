@@ -11,6 +11,7 @@
   * [TimeZones UTC and Time Zones]
   * [Upgrade Updating]
   * [IntroductionWalkthrough VirtualBox Walkthrough]
+  * [Videos]
 
 ==Customizing for your network==
   * [NetworkConfiguration Network Configuration]
