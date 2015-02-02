@@ -2,4 +2,4 @@
 
 <wiki:video url="https://www.youtube.com/watch?v=dyLbgrdagaA&list=PLMN5wm-C5YjyieO63g8LbaiWTSJRj0DBe"/>
 
-<wiki:video url="http://www.youtube.com/embed/dyLbgrdagaA?list=PLMN5wm-C5YjyieO63g8LbaiWTSJRj0DBe" width="640" height="360"/>
+<wiki:gadget url="http://www.youtube.com/embed/dyLbgrdagaA?list=PLMN5wm-C5YjyieO63g8LbaiWTSJRj0DBe" width="640" height="360"/>
