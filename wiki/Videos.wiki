@@ -1,3 +1,3 @@
 #summary Security Onion Videos
 
-<wiki:video url="https://www.youtube.com/watch?v=dyLbgrdagaA&list=PLMN5wm-C5YjyieO63g8LbaiWTSJRj0DBe"/>
+<wiki:video url="https://www.youtube.com/watch?v=dyLbgrdagaA&list=PLMN5wm-C5YjyieO63g8LbaiWTSJRj0DBe" width="640"/>
