@@ -23,13 +23,13 @@ Please note that this is all subject to change!
     * Issue 676: NSM: run Sguil as non-root user
     * Issue 671: NSM: /etc/cron.d/sensor-clean needs 2>&1
   * February 2015
-    * Issue 684: NSM: nsm_server_ps-start needs to create /var/log/sguild/ if it doesn't already exist
-    * Issue 686: NSM: nsm_server_ps-start needs to set permissions on /var/log/nsm/so-elsa/ properly
-    * Issue 687: NSM: nsm_sensor_ps-start should set permissions on /var/log/nsm/ properly
     * Issue 668: ELSA: pdbtool errors
     * Issue 669: ELSA: update parsers for Bro DNS and BIND
     * Issue 670: securityonion-web-page: add queries for updated bro_dns parser
     * Issue 685: securityonion-web-page: update links
+    * Issue 684: NSM: nsm_server_ps-start needs to create /var/log/sguild/ if it doesn't already exist
+    * Issue 686: NSM: nsm_server_ps-start needs to set permissions on /var/log/nsm/so-elsa/ properly
+    * Issue 687: NSM: nsm_sensor_ps-start should set permissions on /var/log/nsm/ properly
     * Issue 680: Bro 2.3.2
     * Issue 683: securityonion-et-rules: update for new ISO
     * Issue 632: ISO: add bridge-utils
