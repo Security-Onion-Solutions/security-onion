@@ -143,6 +143,9 @@ ERROR: Unable to find the next spool file!
 
 This is normal.  
 
+= I just rebooted and it looks like the services aren't starting automatically. =
+/etc/init/securityonion.conf waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
+
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.  Also see UNCAT_MAX:
 http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
