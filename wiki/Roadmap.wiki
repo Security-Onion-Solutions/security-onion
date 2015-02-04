@@ -30,6 +30,8 @@ Please note that this is all subject to change!
     * Issue 684: NSM: nsm_server_ps-start needs to create /var/log/sguild/ if it doesn't already exist
     * Issue 686: NSM: nsm_server_ps-start needs to set permissions on /var/log/nsm/so-elsa/ properly
     * Issue 687: NSM: nsm_sensor_ps-start should set permissions on /var/log/nsm/ properly
+    * Issue 689: NSM: add USE_DNS option to ossec_agent.conf
+    * Issue 688: ossec_agent: add option to disable DNS lookups
     * Issue 680: Bro 2.3.2
     * Issue 683: securityonion-et-rules: update for new ISO
     * Issue 632: ISO: add bridge-utils
@@ -44,7 +46,6 @@ Please note that this is all subject to change!
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
     * Issue 678: rule-update: /etc/cron.d/rule-update should have 2>&1
     * Issue 679: rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
-    * Issue 688: ossec_agent: add option to disable DNS lookups
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 588: NSM: purge old OSSEC logs
