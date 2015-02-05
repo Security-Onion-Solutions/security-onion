@@ -47,6 +47,7 @@ Please note that this is all subject to change!
     * Issue 678: rule-update: /etc/cron.d/rule-update should have 2>&1
     * Issue 679: rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
     * Issue 690: http_agent: ---disable-inotify	
+    * Issue 691: NSM: chown -R $BRO_USER:$BRO_GROUP /nsm/bro >/dev/null 2>&1
     * Issue 615: NSM: add "exit $RET" where necessary
     * Issue 392: Patch for lib-nsm-common-utils from Mark Seiden
     * Issue 588: NSM: purge old OSSEC logs
