@@ -61,6 +61,7 @@ Please note that this is all subject to change!
     * Issue 643: Rotate logs in /var/log/nsm/
     * Issue 571: securityonion-web-page: add Security Onion cheat sheet PDF
     * Issue 644: sostat-quick: check server/sensor
+    * Issue 692: sostat: list number of ELSA buffers in queue and warn if higher than 10
     * Issue 591: Bro Intel Whitelist
     * Issue 418: netsniff-ng 0.58 or higher
     * Issue 492: CapMe needs to handle UDP better
