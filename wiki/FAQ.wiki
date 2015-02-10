@@ -86,6 +86,14 @@ OR
 
 - upgrade the VM hardware level (may require upgrading to a new version of VMware)
 
+= Why does soup fail with an error message like "find: `/usr/lib/python2.7/dist-packages/salt/': No such file or directory"? =
+This is a bug in the salt packages that can manifest when skipping salt versions.  Resolve with the following:
+{{{
+sudo mkdir -p /usr/lib/python2.7/dist-packages/salt/
+sudo apt-get -f install
+sudo soup
+}}}
+
 = I recently updated barnyard and now I'm not getting any Snort alerts. =
 Some users running the Snort engine with the VRT ruleset are experiencing barnyard2 failing with errors like "Returned signature_id is not equal to updated signature_id".  This is due to some wrong entries in the database left by the previous version of barnyard2.  One of the barnyard2 developers wrote a MySQL script to fix these entries and I've packaged it into a shell script called so-snorby-fix-sigs and included it in the rule-update package.  If you're running the Snort engine with the VRT ruleset, please run so-snorby-fix-sigs and follow the directions (including shutting down all barnyard2 instances before proceeding with the database changes).
 
