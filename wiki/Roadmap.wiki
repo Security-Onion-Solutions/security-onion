@@ -71,6 +71,7 @@ Please note that this is all subject to change!
     * Issue 304: sosetup: support unique interface names
     * Issue 605: sosetup: replace tmp with mktemp
     * Issue 596: sosetup: sensor should stop/disable Apache and Snorby worker
+    * Issue 693: sosetup: improve input validation for email address
     * Issue 592: sosetup: add -y option
     * Issue 593: sosetup: checking for Internet access takes a while if DNS doesn't immediately fail
     * Issue 480: sosetup: running on sensor should automatically create autossh account on server
