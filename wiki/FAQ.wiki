@@ -154,6 +154,14 @@ This is normal.
 = I just rebooted and it looks like the services aren't starting automatically. =
 /etc/init/securityonion.conf waits 60 seconds after boot to ensure network interfaces are fully initialized before starting services.
 
+= It looks like ELSA is purging data before I hit log_size_limit. =
+Please see:
+
+https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
+
+https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Low_volume_configuration_tuning
+
+
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.  Also see UNCAT_MAX:
 http://blog.securityonion.net/2015/01/new-version-of-sguil-db-purge-helps.html
