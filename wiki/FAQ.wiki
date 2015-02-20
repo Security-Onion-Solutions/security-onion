@@ -157,10 +157,11 @@ This is normal.
 = It looks like ELSA is purging data before I hit log_size_limit. =
 Please see:
 
-https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
-
 https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Low_volume_configuration_tuning
 
+https://groups.google.com/forum/#!searchin/enterprise-log-search-and-archive/%22allowed_temp_percent%22/enterprise-log-search-and-archive/auUSYj77ctw/mzF-YqVa5KMJ
+
+https://groups.google.com/d/topic/security-onion/xLxTGQs30ho/discussion
 
 = What can I do to decrease the size of my securityonion_db (sguild) MySQL database? =
 You can lower the DAYSTOKEEP setting in /etc/nsm/securityonion.conf.  Also see UNCAT_MAX:
