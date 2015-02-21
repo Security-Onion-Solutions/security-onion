@@ -264,6 +264,13 @@ You can add new Sguil user accounts with the following:<br>
 sudo nsm_server_user-add
 }}}
 
+= How do I get ELSA to display bar charts? =
+ELSA's bar charts require flash, so one option would be to replace Chromium with <a href="http://www.google.com/chrome/">Google Chrome</a> (which includes flash).  If you install Chrome on Security Onion and want to make it your default browser so that you can pivot from Sguil to Chrome, do the following:
+{{{
+cd /etc/alternatives
+sudo rm x-www-browser
+sudo ln -s /usr/bin/google-chrome-stable x-www-browser
+}}}
 = I get periodic MySQL crashes and/or error code 24 "out of resources" when searching in Sguil.  How do I fix that? =
 Recent versions of Setup should set MySQL's open-files-limit to 90000 to avoid this problem:
 http://blog.securityonion.net/2014/02/new-securityonion-setup-package.html
