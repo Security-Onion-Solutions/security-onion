@@ -22,6 +22,8 @@ sudo pdbtool merge -p /opt/elsa/node/conf/patterndb.xml --recursive -D /etc/elsa
 sudo service syslog-ng restart
 }}}
 
-Also see:
+= How do I write custom ELSA parsers? =
 
 https://code.google.com/p/enterprise-log-search-and-archive/wiki/Documentation#Adding_Parsers
+
+http://www.balabit.com/sites/default/files/documents/syslog-ng-ose-3.3-guides/en/syslog-ng-ose-v3.3-guide-admin-en/html/reference_patterndb_schemes.html
