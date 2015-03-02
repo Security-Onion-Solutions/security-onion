@@ -42,6 +42,7 @@ Please note that this is all subject to change!
     * Issue 602: 12.04.5.1 ISO image
   * March 2015
     * Issue 695: Suricata 2.0.7
+    * Issue 696: ELSA custom menu
     * Issue 681: rule-update: wipe snort_dynamicrules directory on sensor
     * Issue 682: rule-update: update Snorby signature_lookup
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
