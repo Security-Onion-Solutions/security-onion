@@ -51,6 +51,7 @@ Please note that this is all subject to change!
     * Issue 679: rule-update: /etc/cron.d/rule-update should run pulledpork as unprivileged user
     * Issue 690: http_agent: ---disable-inotify	
     * Issue 699: NSM: Bro node.cfg host=localhost
+    * Issue 700: Setup: Bro node.cfg host=localhost
     * Issue 698: NSM: nsm_server_del line 170 echo_msg 0 "Deleting server: $SERVER_NAME"
     * Issue 691: NSM: chown -R $BRO_USER:$BRO_GROUP /nsm/bro >/dev/null 2>&1
     * Issue 615: NSM: add "exit $RET" where necessary
