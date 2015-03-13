@@ -47,6 +47,7 @@ Please note that this is all subject to change!
     * Issue 698: NSM: nsm_server_del line 170 echo_msg 0 "Deleting server: $SERVER_NAME"
     * Issue 699: NSM: Bro node.cfg host=localhost
     * Issue 700: Setup: Bro node.cfg host=localhost
+    * Issue 702: Snort 2.9.7.2
     * Issue 681: rule-update: wipe snort_dynamicrules directory on sensor
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
     * Issue 678: rule-update: /etc/cron.d/rule-update should have 2>&1
