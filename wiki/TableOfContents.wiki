@@ -42,6 +42,7 @@
   * [DeployingNtopng Installing NtopNG]
 
 ==Help==
+  * [Support]
   * [Help Troubleshooting]
   * [FAQ]
   * [Passwords]
