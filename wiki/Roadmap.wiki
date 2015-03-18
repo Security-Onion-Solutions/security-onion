@@ -49,6 +49,7 @@ Please note that this is all subject to change!
     * Issue 700: Setup: Bro node.cfg host=localhost
     * Issue 702: Snort 2.9.7.2
     * Issue 703: Move from Google Code to Github
+    * Issue 705: ossec_agent: improvements from Brian Kellogg
     * Issue 681: rule-update: wipe snort_dynamicrules directory on sensor
     * Issue 677: rule-update: create /usr/local/lib/snort_dynamicrules/ if it doesn't already exist
     * Issue 678: rule-update: /etc/cron.d/rule-update should have 2>&1
