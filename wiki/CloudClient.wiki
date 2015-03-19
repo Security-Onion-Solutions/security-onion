@@ -252,3 +252,7 @@ If you have issues with packet loss, you may need to set one or more of the foll
 If you do, remember to set in both of the following locations:
   * /etc/openvpn/server.conf (on OpenVPN server)
   * /etc/openvpn/client.conf (on OpenVPN client)
+Then restart OpenVPN:
+{{{
+sudo service openvpn restart
+}}}
