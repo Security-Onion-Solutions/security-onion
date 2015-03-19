@@ -186,8 +186,8 @@ sudo apt-get install openvpn
 
 Copy crt files to /etc/openvpn/:
 {{{
-sudo cp /home/USERNAME/client* /etc/openvpn/
-sudo cp /home/USERNAME/ca.crt /etc/openvpn/
+sudo cp client* /etc/openvpn/
+sudo cp ca.crt /etc/openvpn/
 }}}
 
 Create OpenVPN client.conf:
@@ -198,9 +198,8 @@ sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/ope
 Edit config:
 {{{
 sudo vi /etc/openvpn/client.conf
-# find the "remote my-server-1 1194" line and replace my-server-1 with
-# the hostname or IP address of your OpenVPN server
-# also change "dev tun" to "dev tap"
+# change "dev tun" to "dev tap"
+# find the "remote my-server-1 1194" line and replace my-server-1 with the hostname or IP address of your OpenVPN server
 }}}
 
 Restart OpenVPN client:
