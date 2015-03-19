@@ -74,7 +74,10 @@ sudo cp server.crt server.key ca.crt dh1024.pem ta.key ../../
 Create a script that OpenVPN will call when the tunnel comes up:
 {{{
 sudo vi /etc/openvpn/up.sh
-# This script should contain the following:
+}}}
+
+up.sh should contain the following:
+{{{
 #!/bin/sh
 
 BR=$1
@@ -86,7 +89,10 @@ DEV=$2
 Create a script that OpenVPN will call when the tunnel goes down:
 {{{
 sudo vi /etc/openvpn/down.sh
-# It should contain the following:
+}}}
+
+down.sh should contain the following:
+{{{
 #!/bin/sh
 
 BR=$1
