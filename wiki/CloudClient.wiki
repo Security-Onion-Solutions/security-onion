@@ -1,0 +1,233 @@
+#summary Security Onion Cloud Client
+
+= Introduction =
+
+Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger or netsniff-ng as a virtual tap to copy all traffic from a production box to an OpenVPN bridge that transports the traffic to our Security Onion sensor.
+
+= Warning! =
+
+This cloud client is considered experimental.  Use at your own risk!
+
+= References =
+
+This is based on Josh Brower's great work:
+
+http://www.slideshare.net/DefensiveDepth/so-conference-2014
+
+http://www.sans.org/reading-room/whitepapers/detection/security-onion-cloud-client-network-security-monitoring-cloud-34335
+
+The OpenVPN configuration shown below is based on the following guides:
+
+https://help.ubuntu.com/community/OpenVPN
+
+https://help.ubuntu.com/lts/serverguide/openvpn.html
+
+= Security Onion Sensor =
+
+We first start with our Security Onion sensor.  Follow our [Installation] guide, but stop before running our Setup wizard.  We need to create our OpenVPN bridge so that when we run Setup, we can select br0.
+
+Start by installing OpenVPN:
+{{{
+sudo apt-get update
+sudo apt-get install openvpn
+}}}
+
+Next, copy files to the /etc/openvpn/easy-rsa/ directory:
+{{{
+sudo mkdir /etc/openvpn/easy-rsa/ 
+sudo cp -R /usr/share/doc/openvpn/examples/easy-rsa/2.0/* /etc/openvpn/easy-rsa/ 
+}}}
+
+Edit /etc/openvpn/easy-rsa/vars:
+{{{
+sudo vi /etc/openvpn/easy-rsa/vars
+# Change these lines at the bottom so that they reflect your new CA.
+export KEY_COUNTRY="US"
+export KEY_PROVINCE="CA"
+export KEY_CITY="SanFrancisco"
+export KEY_ORG="Fort-Funston"
+export KEY_EMAIL="me@myhost.mydomain"
+# Also change any lines with "changeme"
+}}}
+
+Setup the CA and create the first server certificate:
+{{{
+cd /etc/openvpn/easy-rsa/ ## move to the easy-rsa directory
+sudo chown -R root:sudo .  ## make this directory writable by the system administrators
+sudo chmod g+w . ## make this directory writable by the system administrators
+source ./vars ## execute your new vars file
+./clean-all  ## Setup the easy-rsa directory (Deletes all keys)
+./build-dh  ## takes a while consider backgrounding
+./pkitool --initca ## creates ca cert and key
+./pkitool --server server ## creates a server cert and key
+## If you get this error: 
+##    "The correct version should have a comment that says: easy-rsa version 2.x"
+## Try This:
+##     sudo ln -s openssl-1.0.0.cnf openssl.cnf
+## Refer to: https://bugs.launchpad.net/ubuntu/+source/openvpn/+bug/998918
+cd keys
+openvpn --genkey --secret ta.key  ## Build a TLS key
+sudo cp server.crt server.key ca.crt dh1024.pem ta.key ../../
+# The Certificate Authority is now setup and the needed keys are in /etc/openvpn/
+}}}
+
+Create a script that OpenVPN will call when the tunnel comes up:
+{{{
+sudo vi /etc/openvpn/up.sh
+# This script should contain the following:
+#!/bin/sh
+
+BR=$1
+DEV=$2
+/sbin/ip link set "$DEV" up promisc on
+/sbin/brctl addif $BR $DEV
+}}}
+
+Create a script that OpenVPN will call when the tunnel goes down:
+{{{
+sudo vi /etc/openvpn/down.sh
+# It should contain the following:
+#!/bin/sh
+
+BR=$1
+DEV=$2
+
+/sbin/brctl delif $BR $DEV
+/sbin/ip link set "$DEV" down
+}}}
+
+Make both of these scripts executable:
+{{{
+sudo chmod +x /etc/openvpn/up.sh /etc/openvpn/down.sh
+}}}
+
+Create OpenVPN server.conf:
+{{{
+sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/openvpn/
+sudo gzip -d /etc/openvpn/server.conf.gz
+}}}
+
+Edit /etc/openvpn/server.conf and make the following changes:
+{{{
+dev tap
+up "/etc/openvpn/up.sh br0"
+}}}
+
+Run Security Onion Setup Phase 1 ONLY and allow it to reboot:
+{{{
+sudo sosetup
+}}}
+
+Add the following lines to /etc/network/interfaces:
+{{{
+# OpenVPN Bridge
+auto br0
+iface br0 inet static
+  address 0.0.0.0
+  bridge_ports none
+}}}
+
+Bring up the bridge:
+{{{
+sudo ifup br0
+}}}
+
+Restart OpenVPN server:
+{{{
+sudo service openvpn restart
+}}}
+
+Check log for errors:
+{{{
+tail -f /var/log/syslog
+}}}
+
+Verify tap0 came up:
+{{{
+ifconfig
+}}}
+
+Run Security Onion Setup Phase 2 and choose to monitor br0:
+{{{
+sudo sosetup
+}}}
+
+Open port 1194 in firewall:
+{{{
+sudo ufw allow 1194
+}}}
+
+Generate client cert (replacing "client" with the name of the cloud client you want to add):
+{{{
+cd /etc/openvpn/easy-rsa/ ## move to the easy-rsa directory
+source ./vars             ## execute the vars file
+KEY_CN=client ./pkitool client
+}}}
+
+Copy generated files to cloud client:
+{{{
+scp /etc/openvpn/easy-rsa/keys/client* username@hostname:~/
+scp /etc/openvpn/easy-rsa/keys/ca.crt username@hostname:~/
+}}}
+
+= Cloud client =
+
+Install openvpn:
+{{{
+sudo apt-get update
+sudo apt-get install openvpn
+}}}
+
+Copy crt files to /etc/openvpn/:
+{{{
+sudo cp /home/USERNAME/client* /etc/openvpn/
+sudo cp /home/USERNAME/ca.crt /etc/openvpn/
+}}}
+
+Create OpenVPN client.conf:
+{{{
+sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/
+}}}
+
+Edit config:
+{{{
+sudo vi /etc/openvpn/client.conf
+# find the "remote my-server-1 1194" line and replace my-server-1 with
+# the hostname or IP address of your OpenVPN server
+# also change "dev tun" to "dev tap"
+}}}
+
+Restart OpenVPN client:
+{{{
+sudo service openvpn restart
+}}}
+
+Check log for errors:
+{{{
+tail -f /var/log/syslog
+}}}
+
+Verify that tap0 came up:
+{{{
+ifconfig
+}}}
+
+Copy traffic from eth0 to tap0.
+IMPORTANT! You must exclude port 1194 (openvpn traffic)!
+{{{
+sudo daemonlogger -i eth0 -o tap0 not port 1194
+}}}
+
+You may need to disable NIC offloading functions.
+For example, if the cloud client's main ethernet interface is eth0:
+{{{
+for i in rx tx sg tso ufo gso gro lro; do ethtool -K eth0 $i off; done
+}}}
+
+= Optional =
+You may need to set one or more of the following options:
+  * change proto from udp to tcp
+  * disable compression ("comp-lzo")
+If you do, remember to set in both of the following locations:
+  * /etc/openvpn/server.conf (on OpenVPN server)
+  * /etc/openvpn/client.conf (on OpenVPN client)
