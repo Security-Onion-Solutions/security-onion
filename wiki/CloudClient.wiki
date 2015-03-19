@@ -117,6 +117,7 @@ Edit /etc/openvpn/server.conf and make the following changes:
 {{{
 dev tap
 up "/etc/openvpn/up.sh br0"
+down "/etc/openvpn/down.sh br0"
 }}}
 
 Run Security Onion Setup Phase 1 ONLY and allow it to reboot:
