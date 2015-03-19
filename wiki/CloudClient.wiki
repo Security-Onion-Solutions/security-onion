@@ -245,8 +245,8 @@ sudo tcpdump -nnvvAi br0
 
 When you ran Setup phase 2 you configured Security Onion to monitor br0, so you should be getting IDS alerts and Bro logs.
 
-= Optional =
-You may need to set one or more of the following options:
+= OpenVPN tuning =
+If you have issues with packet loss, you may need to set one or more of the following OpenVPN options:
   * change proto from udp to tcp
   * disable compression ("comp-lzo")
 If you do, remember to set in both of the following locations:
