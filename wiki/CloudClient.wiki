@@ -212,17 +212,32 @@ Verify that tap0 came up:
 ifconfig
 }}}
 
+Disable NIC offloading functions on main ethernet interface.
+For example, if the cloud client's main ethernet interface is eth0:
+{{{
+for i in rx tx sg tso ufo gso gro lro; do ethtool -K eth0 $i off; done
+}}}
+
 Copy traffic from eth0 to tap0.
 IMPORTANT! You must exclude port 1194 (openvpn traffic)!
 {{{
 sudo daemonlogger -i eth0 -o tap0 not port 1194
 }}}
 
-You may need to disable NIC offloading functions.
-For example, if the cloud client's main ethernet interface is eth0:
+The last two steps will need to be done at every boot, so you may want to add them to /etc/rc.local or some other startup file.
+
+= Check traffic =
+Your Security Onion sensor should now be seeing traffic from your Cloud Client.  Verify as follows:
 {{{
-for i in rx tx sg tso ufo gso gro lro; do ethtool -K eth0 $i off; done
+sudo tcpdump -nnvvAi tap0
 }}}
+
+tap0 should be a member of br0, so you should see the same traffic on br0:
+{{{
+sudo tcpdump -nnvvAi br0
+}}}
+
+When you ran Setup phase 2 you configured Security Onion to monitor br0, so you should be getting IDS alerts and Bro logs.
 
 = Optional =
 You may need to set one or more of the following options:
