@@ -266,18 +266,10 @@ ifconfig
 }}}
 
 Disable NIC offloading functions on main ethernet interface.
-For example, if the cloud client's main ethernet interface is eth0:
+Add the following to the eth0 stanza of /etc/network/interfaces:
 {{{
-for i in rx tx sg tso ufo gso gro lro; do ethtool -K eth0 $i off; done
+  post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 }}}
-
-Copy traffic from eth0 to tap0.
-IMPORTANT! You must exclude port 1194 (openvpn traffic)!
-{{{
-sudo daemonlogger -i eth0 -o tap0 not port 1194
-}}}
-
-The last two steps will need to be done at every boot, so you may want to add them to /etc/rc.local or some other startup file.
 
 = Check traffic =
 Your Security Onion sensor should now be seeing traffic from your Cloud Client.  Verify as follows:
