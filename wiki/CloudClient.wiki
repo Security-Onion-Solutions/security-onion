@@ -105,11 +105,7 @@ sudo cp server.crt server.key ca.crt dh1024.pem ta.key ../../
 
 Create a script that OpenVPN will call when the tunnel comes up:
 {{{
-sudo vi /etc/openvpn/up.sh
-}}}
-
-up.sh should contain the following:
-{{{
+cat << EOF | sudo tee -a /etc/openvpn/up.sh
 #!/bin/sh
 
 BR=$1
@@ -118,15 +114,12 @@ DEV=$2
 /sbin/brctl addif $BR $DEV
 
 for i in rx tx sg tso ufo gso gro lro; do ethtool -K $DEV $i off; done
+EOF
 }}}
 
 Create a script that OpenVPN will call when the tunnel goes down:
 {{{
-sudo vi /etc/openvpn/down.sh
-}}}
-
-down.sh should contain the following:
-{{{
+cat << EOF | sudo tee -a /etc/openvpn/down.sh
 #!/bin/sh
 
 BR=$1
@@ -134,6 +127,7 @@ DEV=$2
 
 /sbin/brctl delif $BR $DEV
 /sbin/ip link set "$DEV" down
+EOF
 }}}
 
 Make both of these scripts executable:
@@ -147,16 +141,15 @@ sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/
 sudo gzip -d /etc/openvpn/server.conf.gz
 }}}
 
-Edit /etc/openvpn/server.conf:
+Modify /etc/openvpn/server.conf:
 {{{
-sudo vi /etc/openvpn/server.conf
-}}}
-
-Make the following changes:
-{{{
-dev tap
+sudo sed -i 's|^dev tun$|;dev tun|g' /etc/openvpn/server.conf
+sudo sed -i 's|^;dev tap|dev tap|g' /etc/openvpn/server.conf
+sudo sed -i 's|^comp-lzo|;comp-lzo|g' /etc/openvpn/server.conf
+cat << EOF | sudo tee -a /etc/openvpn/server.conf
 up "/etc/openvpn/up.sh br0"
 down "/etc/openvpn/down.sh br0"
+EOF
 }}}
 
 Restart OpenVPN server:
@@ -206,26 +199,22 @@ Create OpenVPN client.conf:
 sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/
 }}}
 
-Edit config:
+Modify /etc/openvpn/client.conf:
 {{{
-sudo vi /etc/openvpn/client.conf
-}}}
-
-Make the following changes:
-{{{
-# change "dev tun" to "dev tap"
-# find the "remote my-server-1 1194" line and replace my-server-1 with the hostname or IP address of your OpenVPN server
-# add the following:
+sudo sed -i 's|^dev tun$|;dev tun|g' /etc/openvpn/server.conf
+sudo sed -i 's|^;dev tap|dev tap|g' /etc/openvpn/server.conf
+sudo sed -i 's|^comp-lzo|;comp-lzo|g' /etc/openvpn/server.conf
+cat << EOF | sudo tee -a /etc/openvpn/server.conf
 up "/etc/openvpn/up.sh"
 down "/etc/openvpn/down.sh"
+EOF
 }}}
+
+Find the "remote my-server-1 1194" line in /etc/openvpn/client.conf and replace my-server-1 with the hostname or IP address of your OpenVPN server.
 
 Create a script that OpenVPN will call when the tunnel comes up:
 {{{
-sudo vi /etc/openvpn/up.sh
-}}}
-
-up.sh should contain the following:
+cat << EOF | sudo tee -a /etc/openvpn/up.sh
 {{{
 #!/bin/sh
 
@@ -235,18 +224,16 @@ OUT=$1
 daemonlogger -i $IN -o $OUT 'not port 1194' &
 
 for i in rx tx sg tso ufo gso gro lro; do ethtool -K $OUT $i off; done
+EOF
 }}}
 
 Create a script that OpenVPN will call when the tunnel goes down:
 {{{
-sudo vi /etc/openvpn/down.sh
-}}}
-
-down.sh should contain the following:
-{{{
+cat << EOF | sudo tee -a /etc/openvpn/down.sh
 #!/bin/sh
 
 pkill daemonlogger
+EOF
 }}}
 
 Make both of these scripts executable:
