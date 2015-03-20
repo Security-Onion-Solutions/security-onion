@@ -228,7 +228,7 @@ cat << EOF | sudo tee -a /etc/openvpn/up.sh
 IN=eth0
 OUT=\$1
 
-daemonlogger -i \$IN -o \$OUT 'not port 1194' &
+daemonlogger -d -i \$IN -o \$OUT 'not port 1194'
 
 for i in rx tx sg tso ufo gso gro lro; do ethtool -K \$OUT \$i off; done
 EOF
