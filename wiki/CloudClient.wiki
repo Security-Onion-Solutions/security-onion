@@ -40,7 +40,7 @@ cat << EOF | sudo tee -a /etc/network/interfaces
 auto br0
 iface br0 inet manual
   bridge_ports none
-  post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
+  post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K \$IFACE \$i off; done
 EOF
 }}}
 
