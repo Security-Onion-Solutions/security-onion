@@ -34,7 +34,7 @@ We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1
 sudo sosetup
 }}}
 
-Add br0 to /etc/network/interfaces:
+Add br0 to /etc/network/interfaces and disable offloading functions:
 {{{
 cat << EOF | sudo tee -a /etc/network/interfaces
 # Bridge for OpenVPN tap0
@@ -108,7 +108,7 @@ sudo cp server.crt server.key ca.crt dh1024.pem ta.key ../../
 # The Certificate Authority is now setup and the needed keys are in /etc/openvpn/
 }}}
 
-Create a script that OpenVPN will call when the tunnel comes up:
+Create a script that OpenVPN will call when the tunnel comes up to add tap0 to br0 and disable offloading functions on tap0:
 {{{
 cat << EOF | sudo tee -a /etc/openvpn/up.sh
 #!/bin/sh
@@ -221,7 +221,7 @@ EOF
 
 Find the "remote my-server-1 1194" line in /etc/openvpn/client.conf and replace my-server-1 with the hostname or IP address of your OpenVPN server.
 
-Create a script that OpenVPN will call when the tunnel comes up:
+Create a script that OpenVPN will call when the tunnel comes up to start daemonlogger and disable offloading functions on tap0:
 {{{
 cat << EOF | sudo tee -a /etc/openvpn/up.sh
 #!/bin/sh
@@ -265,7 +265,7 @@ ifconfig
 }}}
 
 Disable NIC offloading functions on main ethernet interface.
-Add the following to the eth0 stanza of /etc/network/interfaces:
+Add the following to your eth stanza in /etc/network/interfaces:
 {{{
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 }}}
