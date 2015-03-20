@@ -6,7 +6,7 @@ Many folks ask how they can use Security Onion to monitor and defend their cloud
 
 = Technical Overview =
 
-The cloud client uses daemonlogger to copy all packets from eth0 to tap0 (an OpenVPN bridge).  This OpenVPN bridge transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor).
+The cloud client uses daemonlogger to copy all packets from eth0 to tap0 (an OpenVPN bridge).  This OpenVPN bridge transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor) to ensure that Snort, Bro, etc. all see traffic as it appeared on the wire.
 
 = References =
 
@@ -281,3 +281,9 @@ sudo tcpdump -nnvvAi br0
 }}}
 
 When you ran Setup phase 2 you configured Security Onion to monitor br0, so you should be getting IDS alerts and Bro logs.
+
+= Hardening =
+Once you get everything working properly, you should configure OpenVPN (server and client) to run as a limited user.
+
+= Tuning =
+If your cloud box is seeing lots of traffic, daemonlogger may not be able to keep up.  You may need to switch to netsniff-ng for higher performance.  Don't forget to run netsniff-ng as a limited user!
