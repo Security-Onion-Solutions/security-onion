@@ -33,7 +33,7 @@ We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1
 sudo sosetup
 }}}
 
-Add br0 /etc/network/interfaces:
+Add br0 to /etc/network/interfaces:
 {{{
 cat << EOF | sudo tee -a /etc/network/interfaces
 # Bridge for OpenVPN tap0
