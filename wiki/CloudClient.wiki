@@ -37,7 +37,7 @@ iface br0 inet manual
   bridge_ports none
   up ip link set $IFACE promisc on arp off up
   down ip link set $IFACE promisc off down
-  post-up ethtool -G $IFACE rx 4096; for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
+  post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 }}}
 
 Reboot:
