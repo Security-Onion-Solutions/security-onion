@@ -215,7 +215,6 @@ Find the "remote my-server-1 1194" line in /etc/openvpn/client.conf and replace 
 Create a script that OpenVPN will call when the tunnel comes up:
 {{{
 cat << EOF | sudo tee -a /etc/openvpn/up.sh
-{{{
 #!/bin/sh
 
 IN=eth0
