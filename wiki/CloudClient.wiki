@@ -24,9 +24,40 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 = Security Onion Sensor =
 
-We first start with our Security Onion sensor.  Follow our [Installation] guide, but stop before running our Setup wizard.  We need to create our OpenVPN bridge so that when we run Setup, we can select br0.
+We first start with our Security Onion sensor.  Follow our [Installation] guide, but stop before running our Setup wizard.  
 
-Start by installing OpenVPN:
+Run Security Onion Setup Phase 1 (Network Configuration) but DON'T reboot at the end:
+{{{
+sudo sosetup
+}}}
+
+Add the following lines to /etc/network/interfaces:
+{{{
+# OpenVPN Bridge
+auto br0
+iface br0 inet manual
+  bridge_ports none
+  up ip link set $IFACE promisc on arp off up
+  down ip link set $IFACE promisc off down
+  post-up ethtool -G $IFACE rx 4096; for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
+}}}
+
+Reboot:
+{{{
+sudo reboot
+}}}
+
+Run Security Onion Setup Phase 2 and choose to monitor br0:
+{{{
+sudo sosetup
+}}}
+
+Open port 1194 in firewall:
+{{{
+sudo ufw allow 1194
+}}}
+
+Install OpenVPN:
 {{{
 sudo apt-get update
 sudo apt-get install openvpn
@@ -120,25 +151,6 @@ up "/etc/openvpn/up.sh br0"
 down "/etc/openvpn/down.sh br0"
 }}}
 
-Run Security Onion Setup Phase 1 ONLY and allow it to reboot:
-{{{
-sudo sosetup
-}}}
-
-Add the following lines to /etc/network/interfaces:
-{{{
-# OpenVPN Bridge
-auto br0
-iface br0 inet static
-  address 0.0.0.0
-  bridge_ports none
-}}}
-
-Bring up the bridge:
-{{{
-sudo ifup br0
-}}}
-
 Restart OpenVPN server:
 {{{
 sudo service openvpn restart
@@ -152,16 +164,6 @@ tail -f /var/log/syslog
 Verify tap0 came up:
 {{{
 ifconfig
-}}}
-
-Run Security Onion Setup Phase 2 and choose to monitor br0:
-{{{
-sudo sosetup
-}}}
-
-Open port 1194 in firewall:
-{{{
-sudo ufw allow 1194
 }}}
 
 Generate client cert (replacing "client" with the name of the cloud client you want to add):
