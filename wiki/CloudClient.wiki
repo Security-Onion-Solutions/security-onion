@@ -116,6 +116,8 @@ BR=$1
 DEV=$2
 /sbin/ip link set "$DEV" up promisc on
 /sbin/brctl addif $BR $DEV
+
+for i in rx tx sg tso ufo gso gro lro; do ethtool -K $DEV $i off; done
 }}}
 
 Create a script that OpenVPN will call when the tunnel goes down:
