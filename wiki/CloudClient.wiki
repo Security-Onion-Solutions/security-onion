@@ -287,4 +287,4 @@ When you ran Setup phase 2 you configured Security Onion to monitor br0, so you 
 Once you get everything working properly, you should configure OpenVPN (server and client) and daemonlogger to run as a limited user.
 
 = Tuning =
-If your cloud box is seeing lots of traffic, daemonlogger may not be able to keep up.  You may need to switch to netsniff-ng for higher performance.  Don't forget to run netsniff-ng as a limited user!
+If your cloud box is seeing lots of traffic, daemonlogger may not be able to keep up, resulting in packet loss.  You may need to switch to netsniff-ng for higher performance.  Don't forget to run netsniff-ng as a limited user!
