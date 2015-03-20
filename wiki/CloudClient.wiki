@@ -2,11 +2,14 @@
 
 = Introduction =
 
-Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger as a virtual tap to copy all traffic from a production box to an OpenVPN bridge that transports the traffic to our Security Onion sensor.
+Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger or netsniff-ng as a virtual tap.  This virtual tap will copy all traffic from our production cloud box to an OpenVPN bridge that transports the traffic to our Security Onion sensor where it is then analyzed.
 
 = Technical Overview =
 
-The cloud client uses daemonlogger to copy all packets from eth0 to tap0 (an OpenVPN bridge).  This OpenVPN bridge transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor) to ensure that Snort, Bro, etc. all see traffic as it appeared on the wire.
+The cloud client uses daemonlogger or netsniff-ng to copy all packets from eth0 to tap0 (an OpenVPN bridge).  This OpenVPN bridge transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor) to ensure that Snort, Bro, etc. all see traffic as it appeared on the wire.
+
+= Daemonlogger vs netsniff-ng =
+This guide is written using daemonlogger because it is more likely to be available on most cloud boxes.  If netsniff-ng is available, it can provide higher performance (less packet loss), and you would just need to change the calls from daemonlogger to netsniff-ng and translate the options to the equivalent netsniff-ng options.
 
 = References =
 
