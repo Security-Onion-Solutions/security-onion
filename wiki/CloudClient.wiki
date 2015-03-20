@@ -145,7 +145,12 @@ sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/
 sudo gzip -d /etc/openvpn/server.conf.gz
 }}}
 
-Edit /etc/openvpn/server.conf and make the following changes:
+Edit /etc/openvpn/server.conf:
+{{{
+sudo vi /etc/openvpn/server.conf
+}}}
+
+Make the following changes:
 {{{
 dev tap
 up "/etc/openvpn/up.sh br0"
