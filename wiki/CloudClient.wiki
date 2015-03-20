@@ -2,11 +2,11 @@
 
 = Introduction =
 
-Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger or netsniff-ng as a virtual tap to copy all traffic from a production box to an OpenVPN bridge that transports the traffic to our Security Onion sensor.
+Many folks ask how they can use Security Onion to monitor and defend their cloud environments.  Most cloud environments don't provide anything like a tap or span port, but we can use daemonlogger as a virtual tap to copy all traffic from a production box to an OpenVPN bridge that transports the traffic to our Security Onion sensor.
 
-= Warning! =
+= Technical Overview =
 
-This cloud client is considered experimental.  Use at your own risk!
+The cloud client uses daemonlogger to copy all packets from eth0 to tap0 (an OpenVPN bridge).  This OpenVPN bridge transports the packets to the cloud sensor, where tap0 is a member of bridge br0.  The standard Security Onion stack sniffs br0.  NIC offloading functions must be disabled on all of these interfaces (eth0 and tap0 on cloud client, and tap0 and br0 on cloud sensor).
 
 = References =
 
@@ -21,6 +21,10 @@ The OpenVPN configuration shown below is based on the following guides:
 https://help.ubuntu.com/community/OpenVPN
 
 https://help.ubuntu.com/lts/serverguide/openvpn.html
+
+= Warning! =
+
+This cloud client is considered experimental.  Use at your own risk!
 
 = Security Onion Sensor =
 
