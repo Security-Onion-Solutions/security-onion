@@ -213,6 +213,41 @@ Make the following changes:
 {{{
 # change "dev tun" to "dev tap"
 # find the "remote my-server-1 1194" line and replace my-server-1 with the hostname or IP address of your OpenVPN server
+# add the following:
+up "/etc/openvpn/up.sh"
+down "/etc/openvpn/down.sh"
+}}}
+
+Create a script that OpenVPN will call when the tunnel comes up:
+{{{
+sudo vi /etc/openvpn/up.sh
+}}}
+
+up.sh should contain the following:
+{{{
+#!/bin/sh
+
+IN=eth0
+OUT=$1
+
+daemonlogger -i $IN -o $OUT 'not port 1194' &
+}}}
+
+Create a script that OpenVPN will call when the tunnel goes down:
+{{{
+sudo vi /etc/openvpn/down.sh
+}}}
+
+down.sh should contain the following:
+{{{
+#!/bin/sh
+
+pkill daemonlogger
+}}}
+
+Make both of these scripts executable:
+{{{
+sudo chmod +x /etc/openvpn/up.sh /etc/openvpn/down.sh
 }}}
 
 Restart OpenVPN client:
