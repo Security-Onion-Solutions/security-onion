@@ -24,9 +24,7 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 = Security Onion Sensor =
 
-We first start with our Security Onion sensor.  Follow our [Installation] guide, but stop before running our Setup wizard.  
-
-Run Security Onion Setup Phase 1 (Network Configuration) but DON'T reboot at the end:
+We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1 (Network Configuration) but DON'T reboot at the end:
 {{{
 sudo sosetup
 }}}
