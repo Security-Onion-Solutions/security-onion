@@ -150,7 +150,9 @@ Modify /etc/openvpn/server.conf:
 sudo sed -i 's|^dev tun$|;dev tun|g' /etc/openvpn/server.conf
 sudo sed -i 's|^;dev tap|dev tap|g' /etc/openvpn/server.conf
 sudo sed -i 's|^comp-lzo|;comp-lzo|g' /etc/openvpn/server.conf
+
 cat << EOF | sudo tee -a /etc/openvpn/server.conf
+
 up "/etc/openvpn/up.sh br0"
 down "/etc/openvpn/down.sh br0"
 EOF
@@ -208,7 +210,9 @@ Modify /etc/openvpn/client.conf:
 sudo sed -i 's|^dev tun$|;dev tun|g' /etc/openvpn/client.conf
 sudo sed -i 's|^;dev tap|dev tap|g' /etc/openvpn/client.conf
 sudo sed -i 's|^comp-lzo|;comp-lzo|g' /etc/openvpn/client.conf
+
 cat << EOF | sudo tee -a /etc/openvpn/client.conf
+
 up "/etc/openvpn/up.sh"
 down "/etc/openvpn/down.sh"
 EOF
