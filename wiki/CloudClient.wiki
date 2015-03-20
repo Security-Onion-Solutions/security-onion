@@ -24,7 +24,7 @@ https://help.ubuntu.com/lts/serverguide/openvpn.html
 
 = Warning! =
 
-This cloud client is considered experimental.  Use at your own risk!
+*This cloud client is considered experimental.  Use at your own risk!*
 
 = Security Onion Sensor =
 
