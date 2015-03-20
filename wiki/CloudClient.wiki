@@ -112,12 +112,12 @@ Create a script that OpenVPN will call when the tunnel comes up:
 cat << EOF | sudo tee -a /etc/openvpn/up.sh
 #!/bin/sh
 
-BR=$1
-DEV=$2
-/sbin/ip link set "$DEV" up promisc on
-/sbin/brctl addif $BR $DEV
+BR=\$1
+DEV=\$2
+/sbin/ip link set "\$DEV" up promisc on
+/sbin/brctl addif \$BR \$DEV
 
-for i in rx tx sg tso ufo gso gro lro; do ethtool -K $DEV $i off; done
+for i in rx tx sg tso ufo gso gro lro; do ethtool -K \$DEV \$i off; done
 EOF
 }}}
 
@@ -126,11 +126,11 @@ Create a script that OpenVPN will call when the tunnel goes down:
 cat << EOF | sudo tee -a /etc/openvpn/down.sh
 #!/bin/sh
 
-BR=$1
-DEV=$2
+BR=\$1
+DEV=\$2
 
-/sbin/brctl delif $BR $DEV
-/sbin/ip link set "$DEV" down
+/sbin/brctl delif \$BR \$DEV
+/sbin/ip link set "\$DEV" down
 EOF
 }}}
 
