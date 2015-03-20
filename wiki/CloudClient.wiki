@@ -33,15 +33,17 @@ We first start with our Security Onion sensor.  Run Security Onion Setup Phase 1
 sudo sosetup
 }}}
 
-Add the following lines to /etc/network/interfaces:
+Add br0 /etc/network/interfaces:
 {{{
-# OpenVPN Bridge
+cat << EOF | sudo tee -a /etc/network/interfaces
+# Bridge for OpenVPN tap0
 auto br0
 iface br0 inet manual
   bridge_ports none
   up ip link set $IFACE promisc on arp off up
   down ip link set $IFACE promisc off down
   post-up for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
+EOF
 }}}
 
 Reboot:
