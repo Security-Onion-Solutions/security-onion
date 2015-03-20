@@ -9,7 +9,7 @@ The cloud client uses daemonlogger or netsniff-ng to copy all packets from eth0 
 = Daemonlogger vs netsniff-ng =
 This guide is written using daemonlogger because it is more likely to be available on most cloud boxes.  If netsniff-ng is available, it can provide higher performance (less packet loss), and you would just need to change the calls from daemonlogger to netsniff-ng and translate the options to the equivalent netsniff-ng options.
 
-= References =
+= References and Thanks =
 
 This is based on Josh Brower's great work:
 
