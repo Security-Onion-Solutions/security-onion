@@ -55,7 +55,7 @@ Run Security Onion Setup Phase 2 and choose to monitor br0:
 sudo sosetup
 }}}
 
-Open port 1194 in firewall:
+Open OpenVPN port 1194 in firewall:
 {{{
 sudo ufw allow 1194
 }}}
