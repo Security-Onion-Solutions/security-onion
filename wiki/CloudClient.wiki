@@ -188,10 +188,10 @@ scp /etc/openvpn/easy-rsa/keys/ca.crt username@hostname:~/
 
 = Cloud client =
 
-Install openvpn:
+Install openvpn and daemonlogger:
 {{{
 sudo apt-get update
-sudo apt-get install openvpn
+sudo apt-get install openvpn daemonlogger
 }}}
 
 Copy crt files to /etc/openvpn/:
