@@ -221,7 +221,7 @@ EOF
 
 Find the "remote my-server-1 1194" line in /etc/openvpn/client.conf and replace my-server-1 with the hostname or IP address of your OpenVPN server.
 
-Create a script that OpenVPN will call when the tunnel comes up to start daemonlogger and disable offloading functions on tap0:
+Create a script that OpenVPN will call when the tunnel comes up to disable offloading functions on tap0 and start daemonlogger.  The daemonlogger BPF at minimum should exclude the OpenVPN traffic on port 1194 ('not port 1194').  You may need to restrict this BPF even further if there is other traffic you do not wish to send across the OpenVPN tunnel.
 {{{
 cat << EOF | sudo tee -a /etc/openvpn/up.sh
 #!/bin/sh
