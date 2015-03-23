@@ -48,6 +48,7 @@ Please note that this is all subject to change!
     * Issue 699: NSM: Bro node.cfg host=localhost
     * Issue 700: Setup: Bro node.cfg host=localhost
     * Issue 702: Snort 2.9.7.2
+  * April 2015
     * Issue 703: Move from Google Code to Github
     * Issue 705: ossec_agent: improvements from Brian Kellogg
     * Issue 681: rule-update: wipe snort_dynamicrules directory on sensor
@@ -89,7 +90,7 @@ Please note that this is all subject to change!
     * Issue 504: sosetup: avoid running securityonion_elsa_register.rb twice
     * Issue 532: sosetup: Limit what autossh keys can do
     * Issue 559: sosetup: support for NIC bonding configuration
-  * April 2015
+  * May 2015
     * Issue 603: securityonion-bro-scripts: drwatson
     * Issue 604: ELSA: parsers for Bro drwatson logs
     * Issue 558: Add VirusTotal uploader
