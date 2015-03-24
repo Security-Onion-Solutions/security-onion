@@ -1,0 +1,1 @@
+[Security Onion Video Playlist](https://www.youtube.com/watch?v=dyLbgrdagaA&list=PLMN5wm-C5YjyieO63g8LbaiWTSJRj0DBe)
