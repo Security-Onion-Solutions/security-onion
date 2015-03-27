@@ -1,3 +1,6 @@
+# security-onion
+This repo contains the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki) and [Issue Tracker](https://github.com/Security-Onion-Solutions/security-onion/issues) for Security Onion.
+
 ## Looking for documentation? 
 Please proceed to the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki).
 
