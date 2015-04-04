@@ -1,5 +1,5 @@
 # security-onion
-This repo contains the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki) and [Roadmap ](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap) for Security Onion.
+This repo contains the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki) and [Roadmap ](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap) for [Security Onion](http://securityonion.net/).
 
 ## Looking for documentation? 
 Please proceed to the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki).
