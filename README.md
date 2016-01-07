@@ -1,5 +1,5 @@
 ## security-onion project
-This repo contains the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki), [Roadmap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap), and [Checksums](https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums.txt) for [Security Onion](http://securityonion.net/).
+This repo contains the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki), [Checksums](https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums.txt), and  [Roadmap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap)  for [Security Onion](http://securityonion.net/).
 
 #### Looking for documentation? 
 Please proceed to the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki).
