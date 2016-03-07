@@ -7,7 +7,7 @@ https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityon
 Signing key:  
 https://raw.githubusercontent.com/Security-Onion-Solutions/security-onion/master/KEYS  
 
-For example, here are the steps you can use on most Linux distributions to download and verify our ISO image.
+For example, here are the steps you can use on most Linux distributions to download and verify our Security Onion ISO image.
 
 Download the signing key:  
 ```
