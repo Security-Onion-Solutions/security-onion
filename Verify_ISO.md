@@ -19,9 +19,12 @@ Import the signing key:
 gpg --import KEYS
 ```
 
-Look for a line that shows the key:
+Double-check the fingerprint:
 ```
-gpg: key ED6CF680: public key "Doug Burks <doug.burks@gmail.com>" imported
+gpg --fingerprint doug.burks@gmail.com
+pub   4096R/ED6CF680 2012-06-29
+      Key fingerprint = BD56 2813 E345 A068 5FBB  91D3 788F 62F8 ED6C F680
+uid                  Doug Burks <doug.burks@gmail.com>
 ```
 
 Download the signature file for the ISO:  
