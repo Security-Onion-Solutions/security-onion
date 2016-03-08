@@ -19,13 +19,6 @@ Import the signing key:
 gpg --import KEYS
 ```
 
-Double-check the fingerprint:
-```
-gpg --fingerprint doug.burks
-pub   4096R/ED6CF680 2012-06-29
-      Key fingerprint = BD56 2813 E345 A068 5FBB  91D3 788F 62F8 ED6C F680
-```
-
 Download the signature file for the ISO:  
 ```
 wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityonion-14.04.3.1.iso.sig
@@ -39,6 +32,15 @@ wget https://github.com/Security-Onion-Solutions/security-onion/releases/downloa
 Verify the downloaded ISO image using the signature file:  
 ```
 gpg --verify securityonion-14.04.3.1.iso.sig securityonion-14.04.3.1.iso
+```
+
+The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
+```
+gpg: Signature made Tue 23 Feb 2016 04:27:02 PM UTC using RSA key ID ED6CF680
+gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: BD56 2813 E345 A068 5FBB  91D3 788F 62F8 ED6C F680
 ```
 
 Once you've verified the ISO image, you're ready to proceed to our Installation guide:  
