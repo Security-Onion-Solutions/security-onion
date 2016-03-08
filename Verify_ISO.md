@@ -19,6 +19,11 @@ Import the signing key:
 gpg --import KEYS
 ```
 
+Look for a line that shows the key:
+```
+gpg: key ED6CF680: public key "Doug Burks <doug.burks@gmail.com>" imported
+```
+
 Download the signature file for the ISO:  
 ```
 wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityonion-14.04.3.1.iso.sig
