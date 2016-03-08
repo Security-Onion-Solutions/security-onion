@@ -21,10 +21,9 @@ gpg --import KEYS
 
 Double-check the fingerprint:
 ```
-gpg --fingerprint doug.burks@gmail.com
+gpg --fingerprint doug.burks
 pub   4096R/ED6CF680 2012-06-29
       Key fingerprint = BD56 2813 E345 A068 5FBB  91D3 788F 62F8 ED6C F680
-uid                  Doug Burks <doug.burks@gmail.com>
 ```
 
 Download the signature file for the ISO:  
