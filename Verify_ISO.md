@@ -40,3 +40,6 @@ Verify the downloaded ISO image using the signature file:
 ```
 gpg --verify securityonion-14.04.3.1.iso.sig securityonion-14.04.3.1.iso
 ```
+
+Once you've verified the ISO image, you're ready to proceed to our Installation guide:  
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Installation
