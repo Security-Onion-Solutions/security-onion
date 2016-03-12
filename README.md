@@ -4,8 +4,8 @@ This repo contains the [Wiki](https://github.com/Security-Onion-Solutions/securi
 #### Looking for documentation? 
 Please proceed to the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki).
 
-#### Want to validate the checksum of the downloaded ISO image?
-Please proceed to the [Checksums](https://github.com/Security-Onion-Solutions/security-onion/blob/master/checksums.txt) page.
+#### Want to verify the Security Onion ISO image?
+Please proceed to the [Verify ISO](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md) page.
 
 #### Want to see what lies ahead for Security Onion?
 Please proceed to the [Roadmap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap).
