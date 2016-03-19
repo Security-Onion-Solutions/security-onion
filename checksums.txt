@@ -1,3 +1,8 @@
+14.04.4.1 TEST ISO image
+md5sum d0a7f91f8749c2665fd99efbfba3d53e
+sha1sum 5cbc5f75ec8f734c0315dded62dcdcdc866c6b7e
+sha256sum 4750d2221c726abc7afc9d2c2883e2be6c6fbb2838f7ad861cefdc940d56c587
+
 14.04.3.1 STABLE ISO image (same as RC2)
 md5sum ec8a8be90ef071b778575c2364250797
 sha1sum c930d40dd0201fc41e2f160106f465a826dd2d50
