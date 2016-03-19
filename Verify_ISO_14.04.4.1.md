@@ -1,7 +1,7 @@
 ISO image:  
 https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.4.1/securityonion-14.04.4.1.iso  
 
-Signature for current ISO image:  
+Signature for ISO image:  
 https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityonion-14.04.4.1.iso.sig  
 
 Signing key:  
