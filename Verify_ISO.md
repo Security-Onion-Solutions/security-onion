@@ -1,8 +1,8 @@
-Current ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.3.1/securityonion-14.04.3.1.iso  
+ISO image:  
+https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.4.1/securityonion-14.04.4.1.iso  
 
-Signature for current ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityonion-14.04.3.1.iso.sig  
+Signature for ISO image:  
+https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityonion-14.04.4.1.iso.sig  
 
 Signing key:  
 https://raw.githubusercontent.com/Security-Onion-Solutions/security-onion/master/KEYS  
@@ -21,22 +21,22 @@ gpg --import KEYS
 
 Download the signature file for the ISO:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityonion-14.04.3.1.iso.sig
+wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/securityonion-14.04.4.1.iso.sig
 ```
 
 Download the ISO image:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.3.1/securityonion-14.04.3.1.iso
+wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.4.1/securityonion-14.04.4.1.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
 ```
-gpg --verify securityonion-14.04.3.1.iso.sig securityonion-14.04.3.1.iso
+gpg --verify securityonion-14.04.4.1.iso.sig securityonion-14.04.4.1.iso
 ```
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Tue 23 Feb 2016 04:27:02 PM UTC using RSA key ID ED6CF680
+gpg: Signature made Sat 19 Mar 2016 12:02:50 PM UTC using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
