@@ -2,7 +2,7 @@
 This repo contains the [ISO image](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md), [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki), and  [Roadmap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap)  for [Security Onion](http://securityonion.net/).
 
 #### Want to download and verify the Security Onion ISO image?
-Please proceed to the [Verify ISO](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md) page.
+Please proceed to the [Verify_ISO](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md) page.
 
 #### Looking for documentation? 
 Please proceed to the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki).
