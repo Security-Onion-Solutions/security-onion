@@ -1,5 +1,5 @@
 ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.1/securityonion-14.04.5.1.iso  
+https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.1_20160903/securityonion-14.04.5.1.iso
 
 Signature for ISO image:  
 https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-14.04.5.1.iso.sig  
@@ -26,7 +26,7 @@ wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/
 
 Download the ISO image:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.1/securityonion-14.04.5.1.iso
+wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.1_20160903/securityonion-14.04.5.1.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
