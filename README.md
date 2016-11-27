@@ -11,7 +11,7 @@ Please proceed to the [Wiki](https://github.com/Security-Onion-Solutions/securit
 Please proceed to the [Roadmap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap).
 
 #### Looking for source code?  
-This repo stores no source code.  You can get the source for any of our packages by doing the following at a terminal:
+This repo stores no source code.  You can get the source for any of our packages by doing the following at a terminal (replacing PACKAGE-NAME with the name of the package that you want the source for):
 ```
 apt-get source PACKAGE-NAME
 ```
