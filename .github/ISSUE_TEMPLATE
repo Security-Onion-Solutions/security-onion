@@ -1,0 +1,10 @@
+This issue tracker is primarily used to track issues that need to be fixed and are added to our Roadmap:
+https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap
+
+If you are creating an issue just to ask a question, you will likely get faster and better responses by posting to our mailing list instead:
+https://github.com/Security-Onion-Solutions/security-onion/wiki/MailingLists
+
+If you have found a bug in Security Onion, you can continue with creating an issue here, but please make sure you have done the following:
+- duplicated the issue on a fresh installation of the latest version
+- include sostat-redacted output when relevant
+- provide information about your system and how you installed Security Onion
