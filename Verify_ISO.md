@@ -1,4 +1,4 @@
-14.04.5.3 ISO image built on 2017/09/05
+### 14.04.5.3 ISO image built on 2017/09/05
 
 **Please note!** This ISO image includes the **EXPERIMENTAL** Elastic stack!
 
@@ -14,6 +14,7 @@ OR
 - Install your preferred flavor of Ubuntu 14.04 and then add our PPA and packages:<br>
 https://github.com/Security-Onion-Solutions/security-onion/wiki/InstallingOnUbuntu
 
+### Download and Verify
 If you do want to proceed with the new 14.04.5.3 ISO image, please read on!
 
 14.04.5.3 ISO image:  
