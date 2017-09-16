@@ -6,7 +6,7 @@ The Elastic components are included in the ISO image and Setup gives you an opti
 
 If you **do** want to proceed with the new 14.04.5.3 ISO image, please skip down to the "Download and Verify" section.  If you would prefer an ISO image with no Elastic components at all, you have a few options:
 
-- Use the older Security Onion 14.04.5.2 ISO image and then run `sudo soup`:<br>
+- Use the older Security Onion 14.04.5.2 ISO image (and then run `sudo soup`):<br>
 https://github.com/Security-Onion-Solutions/security-onion/blob/master/old/Verify_ISO_14.04.5.2.md
 
 OR 
