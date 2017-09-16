@@ -14,7 +14,7 @@ OR
 - Install your preferred flavor of Ubuntu 14.04 and then add our PPA and packages:
 https://github.com/Security-Onion-Solutions/security-onion/wiki/InstallingOnUbuntu
 
-If you do want to proceed with the new 14.04.5.3, please read on!
+If you do want to proceed with the new 14.04.5.3 ISO image, please read on!
 
 14.04.5.3 ISO image:  
 https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.3/securityonion-14.04.5.3.iso
