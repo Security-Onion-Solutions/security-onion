@@ -54,7 +54,7 @@ gpg --verify securityonion-14.04.5.4.iso.sig securityonion-14.04.5.4.iso
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Wed 06 Sep 2017 08:09:04 AM EDT using RSA key ID ED6CF680
+gpg: Signature made Mon 30 Oct 2017 02:22:44 PM EDT using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
