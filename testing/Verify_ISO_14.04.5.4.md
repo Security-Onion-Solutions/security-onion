@@ -1,4 +1,4 @@
-### 14.04.5.4 ISO image built on 2017/10/30
+### 14.04.5.4 ISO image built on 2017/10/31
 
 **Please note!** This ISO image includes the **EXPERIMENTAL** Elastic stack!
 
@@ -17,7 +17,7 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/InstallingOnUbun
 ### Download and Verify
 
 14.04.5.4 ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.4/securityonion-14.04.5.4.iso
+https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.4_20171031/securityonion-14.04.5.4.iso
 
 Signature for ISO image:  
 https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-14.04.5.4.iso.sig  
@@ -44,7 +44,7 @@ wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/
 
 Download the ISO image:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.4/securityonion-14.04.5.4.iso
+wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.4_20171031/securityonion-14.04.5.4.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
@@ -54,7 +54,7 @@ gpg --verify securityonion-14.04.5.4.iso.sig securityonion-14.04.5.4.iso
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Mon 30 Oct 2017 02:22:44 PM EDT using RSA key ID ED6CF680
+gpg: Signature made Tue 31 Oct 2017 04:10:50 PM EDT using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
