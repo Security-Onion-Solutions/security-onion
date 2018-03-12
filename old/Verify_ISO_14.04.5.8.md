@@ -1,10 +1,10 @@
-### 14.04.5.9 ISO image built on 2018/03/05
+### 14.04.5.8 ISO image built on 2018/02/14
 
 **Please note!** This ISO image includes the **EXPERIMENTAL** Elastic stack!
 
 The Elastic components are included in the ISO image and Setup gives you an option of Stable Setup (ELSA) or Experimental Setup (Elastic).  If you do not want to try the new Elastic stack, you can choose Stable Setup.  
 
-If you **do** want to proceed with the new 14.04.5.9 ISO image, please skip down to the "Download and Verify" section.  If you would prefer an ISO image with no Elastic components at all, you have a few options:
+If you **do** want to proceed with the new 14.04.5.8 ISO image, please skip down to the "Download and Verify" section.  If you would prefer an ISO image with no Elastic components at all, you have a few options:
 
 - Use the older Security Onion 14.04.5.2 ISO image (and then run `sudo soup`):<br>
 https://github.com/Security-Onion-Solutions/security-onion/blob/master/old/Verify_ISO_14.04.5.2.md
@@ -16,11 +16,11 @@ https://github.com/Security-Onion-Solutions/security-onion/wiki/InstallingOnUbun
 
 ### Download and Verify
 
-14.04.5.9 ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.9_20180305/securityonion-14.04.5.9.iso
+14.04.5.8 ISO image:  
+https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.8_20180214/securityonion-14.04.5.8.iso
 
 Signature for ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-14.04.5.9.iso.sig  
+https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-14.04.5.8.iso.sig  
 
 Signing key:  
 https://raw.githubusercontent.com/Security-Onion-Solutions/security-onion/master/KEYS  
@@ -39,22 +39,22 @@ gpg --import KEYS
 
 Download the signature file for the ISO:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-14.04.5.9.iso.sig
+wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-14.04.5.8.iso.sig
 ```
 
 Download the ISO image:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.9_20180305/securityonion-14.04.5.9.iso
+wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v14.04.5.8_20180214/securityonion-14.04.5.8.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
 ```
-gpg --verify securityonion-14.04.5.9.iso.sig securityonion-14.04.5.9.iso
+gpg --verify securityonion-14.04.5.8.iso.sig securityonion-14.04.5.8.iso
 ```
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Mon 05 Mar 2018 04:02:28 PM EST using RSA key ID ED6CF680
+gpg: Signature made Wed 14 Feb 2018 12:50:30 PM EST using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
