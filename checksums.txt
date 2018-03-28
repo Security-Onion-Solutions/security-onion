@@ -1,3 +1,8 @@
+14.04.5.11 ISO image
+md5sum ee6dd85c45b751ab4a185b25b199d284
+sha1sum eb8d7e305ed30b1fd155bdf10a19cabdaafc033e
+sha256sum 06dd85bbdffe95f48472ed26d562c1e52341fbd8cbe2a8014a660decfceb7d09
+
 14.04.5.10 ISO image
 md5sum ea5b9f51f3a84411493185d70dc4727c
 sha1sum 0a7db39b521dbcf627a7c6e38dd0500d05f005b5
