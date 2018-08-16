@@ -16,6 +16,10 @@ We ask for testing before we release updates.  Please join our [security-onion-t
 
 * If you're unable to find an open issue addressing the problem, send a detailed email to the [security-onion group](https://groups.google.com/forum/#!forum/security-onion).  We'll triage the issue and then open a Github Issue if necessary.
 
+#### **Want to help us work on issues?**
+
+* We've put issues on the [Roadmap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap) in a rough order of prioritization and scheduling.  Issues listed under a certain month are already being worked on.  Take a look at the issues under "Beyond" and see if there are issues you are interested in tackling.  Please keep in mind that some of these issues may be older and thus no longer accurate or applicable.  When in doubt, please feel free to reach out to the [security-onion group](https://groups.google.com/forum/#!forum/security-onion) for clarification and guidance.
+
 #### **Are you looking for source code?**
 
 * You can get the source for any of our packages by doing the following at a terminal (replacing PACKAGE-NAME with the name of the package that you want the source for):
