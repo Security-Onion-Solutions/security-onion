@@ -10,7 +10,7 @@ We ask for testing before we release updates.  Please join our [security-onion-t
 
 #### **Did you find a bug?**
 
-* **Do not open up a GitHub issue if the bug is a security vulnerability in Security Onion**, and instead to refer to [security](security).
+* **Do not open up a GitHub issue if the bug is a security vulnerability in Security Onion**, and instead refer to [security](https://github.com/Security-Onion-Solutions/security-onion/wiki/Security).
 
 * **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/Security-Onion-Solutions/security-onion/issues).
 
@@ -30,7 +30,7 @@ Docker images can be found at [https://hub.docker.com/u/securityonionsolutions/]
 
 #### **Do you want to contribute to the Security Onion documentation?**
 
-* If you want to add or make changes to the [wiki](wiki), please send modifications to the [security-onion group](https://groups.google.com/forum/#!forum/security-onion) and we'll review and post.
+* If you want to add or make changes to the [wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki), please send modifications to the [security-onion group](https://groups.google.com/forum/#!forum/security-onion) and we'll review and post.
 
 Thanks! :heart: :heart: :heart:
 
