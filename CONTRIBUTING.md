@@ -28,7 +28,7 @@ apt-get source PACKAGE-NAME
 ```
 Some of our packages have their own Github repos at [Security-Onion-Solutions](https://github.com/Security-Onion-Solutions).
 
-Packages are built and hosted at [https://launchpad.net/~securityonion/+archive/ubuntu/stable](https://launchpad.net/~securityonion/+archive/ubuntu/stable).
+Packages are built and hosted at [https://launchpad.net/~securityonion/+archive/ubuntu/stable](https://launchpad.net/~securityonion/+archive/ubuntu/stable).  For more about the Launchpad build process, please see https://help.launchpad.net/Packaging/PPA.
 
 Docker images can be found at [https://hub.docker.com/u/securityonionsolutions/](https://hub.docker.com/u/securityonionsolutions/).  Dockerfiles used to build those Docker images can be found at [https://github.com/Security-Onion-Solutions/securityonion-docker](https://github.com/Security-Onion-Solutions/securityonion-docker).
 
