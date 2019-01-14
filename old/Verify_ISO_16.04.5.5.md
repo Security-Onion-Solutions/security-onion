@@ -1,12 +1,12 @@
-### 16.04.5.6 ISO image built on 2019/01/10
+### 16.04.5.5 ISO image built on 2018/12/12
 
 ### Download and Verify
 
-16.04.5.6 ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.5.6_20190110/securityonion-16.04.5.6.iso
+16.04.5.5 ISO image:  
+https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.5.5_20181212/securityonion-16.04.5.5.iso
 
 Signature for ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.5.6.iso.sig  
+https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.5.5.iso.sig  
 
 Signing key:  
 https://raw.githubusercontent.com/Security-Onion-Solutions/security-onion/master/KEYS  
@@ -25,22 +25,22 @@ gpg --import KEYS
 
 Download the signature file for the ISO:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.5.6.iso.sig
+wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.5.5.iso.sig
 ```
 
 Download the ISO image:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.5.6_20190110/securityonion-16.04.5.6.iso
+wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.5.5_20181212/securityonion-16.04.5.5.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
 ```
-gpg --verify securityonion-16.04.5.6.iso.sig securityonion-16.04.5.6.iso
+gpg --verify securityonion-16.04.5.5.iso.sig securityonion-16.04.5.5.iso
 ```
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Thu 10 Jan 2019 08:11:38 AM EST using RSA key ID ED6CF680
+gpg: Signature made Thu 13 Dec 2018 10:31:48 AM EST using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
