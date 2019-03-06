@@ -10,7 +10,7 @@ This repo contains the [ISO image](https://github.com/Security-Onion-Solutions/s
 Please proceed to the [Verify_ISO](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md) page.
 
 #### Looking for documentation? 
-Please proceed to the [Wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki).
+[![Documentation Status](https://readthedocs.org/projects/securityonion/badge/?version=latest)](https://securityonion.readthedocs.io/en/latest/?badge=latest)
 
 #### Need Help?
 Please proceed to the [Help page](https://github.com/Security-Onion-Solutions/security-onion/wiki/Help).
