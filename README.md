@@ -16,7 +16,7 @@ Please proceed to the [Verify_ISO](https://github.com/Security-Onion-Solutions/s
 Please proceed to the [Help page](https://securityonion.net/docs/help).
 
 #### Have Questions?
-Please send questions to the [Security Onion mailing list](https://securityonion.net/docs//MailingLists).
+Please send questions to the [Security Onion mailing list](https://securityonion.net/docs/MailingLists).
 
 #### Want to see what lies ahead for Security Onion?
 Please proceed to the [Projects](https://github.com/Security-Onion-Solutions/security-onion/projects) page.
