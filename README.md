@@ -28,3 +28,6 @@ apt-get source PACKAGE-NAME
 ```
 
 Some of our packages have their own Github repos at [Security-Onion-Solutions](https://github.com/Security-Onion-Solutions).
+
+#### Security Onion Solutions
+Looking for training, professional services, or hardware appliances?  Check out https://securityonionsolutions.com.
