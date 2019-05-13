@@ -3,14 +3,14 @@
 First, thanks for being a part of the Security Onion community!  We appreciate any and all contributions!
 
 #### Mailing List
-The biggest thing that we need help with right now is supporting users on the [security-onion group](https://groups.google.com/forum/#!forum/security-onion).  Please see the [group guidelines](https://github.com/Security-Onion-Solutions/security-onion/wiki/MailingLists).
+The biggest thing that we need help with right now is supporting users on the [security-onion group](https://groups.google.com/forum/#!forum/security-onion).  Please see the [group guidelines](https://securityonion.net/docs/MailingLists).
 
 #### QA
 We ask for testing before we release updates.  Please join our [security-onion-testing group](https://groups.google.com/forum/#!forum/security-onion-testing) and help us avoid regressions!
 
 #### **Did you find a bug?**
 
-* **Do not open up a GitHub issue if the bug is a security vulnerability in Security Onion**, and instead refer to [security](https://github.com/Security-Onion-Solutions/security-onion/wiki/Security).
+* **Do not open up a GitHub issue if the bug is a security vulnerability in Security Onion**, and instead refer to https://securityonion.net/docs/Security.
 
 * **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/Security-Onion-Solutions/security-onion/issues).
 
@@ -18,7 +18,7 @@ We ask for testing before we release updates.  Please join our [security-onion-t
 
 #### **Want to help us work on issues?**
 
-* We've put issues on the [Roadmap](https://github.com/Security-Onion-Solutions/security-onion/wiki/Roadmap) in a rough order of prioritization and scheduling.  Issues listed under a certain month are already being worked on.  Take a look at the issues under "Beyond" and see if there are issues you are interested in tackling.  Please keep in mind that some of these issues may be older and thus no longer accurate or applicable.  When in doubt, please feel free to reach out to the [security-onion group](https://groups.google.com/forum/#!forum/security-onion) for clarification and guidance.
+* Take a look at the unassigned issues at https://github.com/Security-Onion-Solutions/security-onion/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+no%3Aassignee and see if there are issues you are interested in tackling.  Please keep in mind that some of these issues may be older and thus no longer accurate or applicable.  When in doubt, please feel free to reach out to the [security-onion group](https://groups.google.com/forum/#!forum/security-onion) for clarification and guidance.
 
 #### **Are you looking for source code?**
 
@@ -34,7 +34,7 @@ Docker images can be found at [https://hub.docker.com/u/securityonionsolutions/]
 
 #### **Do you want to contribute to the Security Onion documentation?**
 
-* If you want to add or make changes to the [wiki](https://github.com/Security-Onion-Solutions/security-onion/wiki), please send modifications to the [security-onion group](https://groups.google.com/forum/#!forum/security-onion) and we'll review and post.
+* If you want to add or make changes to the [documentation](https://securityonion.net/docs), please see https://securityonion.readthedocs.io/en/latest/about.html#contributing.
 
 Thanks! :heart: :heart: :heart:
 
