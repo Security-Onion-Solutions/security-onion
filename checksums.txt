@@ -1,3 +1,8 @@
+16.04.6.1 ISO image
+md5sum 18d69c98493dfa2030ea5397f58d7dab
+sha1sum 0dc6d716ae35d44dd5ac5d4d4074c9b65f9d7e2e
+sha256sum 596099531fde1492cc433453b4fa123cb018b0fcbbb8f94efd1f10087aa82d7a
+
 16.04.5.6 ISO image
 md5sum bbe687c6bb0c58ff04aff857b915f0c9
 sha1sum b986922f9d66c0a50aaa4fcfe8ba60dc0e6cf090
