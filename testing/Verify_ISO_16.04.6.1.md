@@ -1,9 +1,9 @@
-### 16.04.6.1 ISO image built on 2019/05/13
+### 16.04.6.1 ISO image built on 2019/05/14
 
 ### Download and Verify
 
 16.04.6.1 ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.6.1_20190513/securityonion-16.04.6.1.iso
+https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.6.1_20190514/securityonion-16.04.6.1.iso
 
 Signature for ISO image:  
 https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.6.1.iso.sig  
@@ -30,7 +30,7 @@ wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/
 
 Download the ISO image:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.6.1_20190513/securityonion-16.04.6.1.iso
+wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.6.1_20190514/securityonion-16.04.6.1.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
@@ -40,7 +40,7 @@ gpg --verify securityonion-16.04.6.1.iso.sig securityonion-16.04.6.1.iso
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Mon 13 May 2019 02:37:14 PM EDT using RSA key ID ED6CF680
+gpg: Signature made Tue 14 May 2019 08:30:43 AM EDT using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
