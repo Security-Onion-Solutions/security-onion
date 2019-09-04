@@ -48,4 +48,4 @@ Primary key fingerprint: BD56 2813 E345 A068 5FBB  91D3 788F 62F8 ED6C F680
 ```
 
 Once you've verified the ISO image, you're ready to proceed to our Installation guide:  
-https://github.com/Security-Onion-Solutions/security-onion/wiki/Installation
+https://securityonion.net/docs/Installation
