@@ -1,12 +1,12 @@
-### 16.04.6.3 ISO image built on 2019/11/26
+### 16.04.6.4 ISO image built on 2020/02/06
 
 ### Download and Verify
 
-16.04.6.3 ISO image:  
-https://download.securityonion.net/file/Security-Onion-16/securityonion-16.04.6.3.iso
+16.04.6.4 ISO image:  
+https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.6.4_20200206/securityonion-16.04.6.4.iso
 
 Signature for ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.6.3.iso.sig  
+https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.6.4.iso.sig  
 
 Signing key:  
 https://raw.githubusercontent.com/Security-Onion-Solutions/security-onion/master/KEYS  
@@ -25,22 +25,22 @@ gpg --import KEYS
 
 Download the signature file for the ISO:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.6.3.iso.sig
+wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.6.4.iso.sig
 ```
 
 Download the ISO image:  
 ```
-wget https://download.securityonion.net/file/Security-Onion-16/securityonion-16.04.6.3.iso
+wget https://github.com/Security-Onion-Solutions/security-onion/releases/download/v16.04.6.4_20200206/securityonion-16.04.6.4.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
 ```
-gpg --verify securityonion-16.04.6.3.iso.sig securityonion-16.04.6.3.iso
+gpg --verify securityonion-16.04.6.4.iso.sig securityonion-16.04.6.4.iso
 ```
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Tue 26 Nov 2019 05:46:15 PM EST using RSA key ID ED6CF680
+gpg: Signature made Fri 07 Feb 2020 08:34:39 AM EST using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
