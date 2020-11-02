@@ -4,7 +4,7 @@ Security Onion is a free and open source Linux distribution for threat hunting, 
 For more information about Security Onion, please see our [main website](https://securityonion.net), [blog](https://blog.securityonion.net), and [docs](https://docs.securityonion.net/en/16.04/).
 
 #### This Repo
-This repo provides access to the [Security Onion 16.04 ISO image](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md) and tracks [issues](https://github.com/Security-Onion-Solutions/security-onion/issues) for [Security Onion 16.04](https://securityonion.net/).
+This repo provides access to the [Security Onion 16.04 ISO image](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md) and tracks [issues for Security Onion 16.04](https://github.com/Security-Onion-Solutions/security-onion/issues).
 
 #### Want to download and verify the Security Onion ISO image?
 Please proceed to the [Verify_ISO](https://github.com/Security-Onion-Solutions/security-onion/blob/master/Verify_ISO.md) page.
