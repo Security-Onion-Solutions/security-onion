@@ -1,12 +1,12 @@
-### 16.04.7.3 ISO image built on 2021/03/04
+### 16.04.7.2 ISO image built on 2020/12/14
 
 ### Download and Verify
 
-16.04.7.3 ISO image:  
-https://download.securityonion.net/file/Security-Onion-16/securityonion-16.04.7.3.iso
+16.04.7.2 ISO image:  
+https://download.securityonion.net/file/Security-Onion-16/securityonion-16.04.7.2.iso
 
 Signature for ISO image:  
-https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.7.3.iso.sig  
+https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.7.2.iso.sig  
 
 Signing key:  
 https://raw.githubusercontent.com/Security-Onion-Solutions/security-onion/master/KEYS  
@@ -25,22 +25,22 @@ gpg --import KEYS
 
 Download the signature file for the ISO:  
 ```
-wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.7.3.iso.sig
+wget https://github.com/Security-Onion-Solutions/security-onion/raw/master/sigs/securityonion-16.04.7.2.iso.sig
 ```
 
 Download the ISO image:  
 ```
-wget https://download.securityonion.net/file/Security-Onion-16/securityonion-16.04.7.3.iso
+wget https://download.securityonion.net/file/Security-Onion-16/securityonion-16.04.7.2.iso
 ```
 
 Verify the downloaded ISO image using the signature file:  
 ```
-gpg --verify securityonion-16.04.7.3.iso.sig securityonion-16.04.7.3.iso
+gpg --verify securityonion-16.04.7.2.iso.sig securityonion-16.04.7.2.iso
 ```
 
 The output should show "Good signature" and the Primary key fingerprint should match what's shown below:
 ```
-gpg: Signature made Thu 04 Mar 2021 03:48:50 PM EST using RSA key ID ED6CF680
+gpg: Signature made Wed 16 Dec 2020 09:05:42 AM EST using RSA key ID ED6CF680
 gpg: Good signature from "Doug Burks <doug.burks@gmail.com>"
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
